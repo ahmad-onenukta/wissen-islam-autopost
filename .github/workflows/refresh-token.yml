@@ -1,0 +1,26 @@
+name: Token erneuern
+
+on:
+  schedule:
+    - cron: "0 5 1,15 * *"   # am 1. und 15. jeden Monats (Token laeuft nach 60 Tagen ab)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Long-Lived-Token verlaengern
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          set -e
+          RES=$(curl -sS "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${IG_TOKEN}")
+          NEW=$(echo "$RES" | jq -r '.access_token // empty')
+          EXP=$(echo "$RES" | jq -r '.expires_in // empty')
+          if [ -z "$NEW" ]; then echo "Refresh fehlgeschlagen: $RES"; exit 1; fi
+          echo "Neuer Token gueltig fuer $((EXP/86400)) Tage"
+          gh secret set IG_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"

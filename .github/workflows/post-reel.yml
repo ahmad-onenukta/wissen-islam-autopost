@@ -1,0 +1,45 @@
+name: Reel posten
+
+on:
+  schedule:
+    - cron: "0 16 * * *"   # taeglich 18:00 Berlin (Sommerzeit) / 17:00 (Winterzeit)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Nur testen, nicht posten"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-reel
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Reel veroeffentlichen
+        env:
+          IG_TOKEN:   ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          DRY_RUN:    ${{ inputs.dry_run }}
+        run: node scripts/post.mjs
+
+      - name: Queue zurueckschreiben
+        run: |
+          if [[ -n "$(git status --porcelain queue.json posted.json videos/)" ]]; then
+            git config user.name  "reel-bot"
+            git config user.email "reel-bot@users.noreply.github.com"
+            git add -A queue.json posted.json videos/
+            git commit -m "posted: $(date -u +%Y-%m-%d)"
+            git push
+          fi
