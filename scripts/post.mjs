@@ -46,16 +46,41 @@ try {
 if (DRY) { console.log("DRY_RUN – es wird nichts veroeffentlicht."); process.exit(0); }
 
 // --- 3. Container anlegen ----------------------------------------------------
-const videoUrl = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/videos/${next.file}`;
-console.log("Video-URL:", videoUrl);
+// Standard: resumable Upload (Datei geht direkt raus, Repo darf privat sein).
+// Fallback: video_url ueber raw.githubusercontent (nur bei oeffentlichem Repo).
+const localPath = `videos/${next.file}`;
+const useUrl = process.env.UPLOAD_MODE === "url";
+let container;
 
-const container = await api(`${USER}/media`, {
-  media_type: "REELS",
-  video_url: videoUrl,
-  caption: next.caption,
-  share_to_feed: "true",
-}, "POST");
-console.log("Container:", container.id);
+if (useUrl) {
+  const videoUrl = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/videos/${next.file}`;
+  console.log("Modus: video_url ->", videoUrl);
+  container = await api(`${USER}/media`, {
+    media_type: "REELS", video_url: videoUrl, caption: next.caption, share_to_feed: "true",
+  }, "POST");
+  console.log("Container:", container.id);
+} else {
+  const size = fs.statSync(localPath).size;
+  console.log(`Modus: resumable Upload (${(size / 1048576).toFixed(1)} MB)`);
+  container = await api(`${USER}/media`, {
+    media_type: "REELS", upload_type: "resumable", caption: next.caption, share_to_feed: "true",
+  }, "POST");
+  console.log("Container:", container.id);
+
+  const up = await fetch(`https://rupload.facebook.com/ig-api-upload/${VER}/${container.id}`, {
+    method: "POST",
+    headers: {
+      Authorization: `OAuth ${TOKEN}`,
+      offset: "0",
+      file_size: String(size),
+      "Content-Type": "application/octet-stream",
+    },
+    body: fs.readFileSync(localPath),
+  });
+  const upJson = await up.json().catch(() => ({}));
+  if (!up.ok || upJson.error) throw new Error(`Upload: ${JSON.stringify(upJson.error || upJson)}`);
+  console.log("Upload fertig:", JSON.stringify(upJson));
+}
 
 // --- 4. auf FINISHED warten (max. 5 Min) ------------------------------------
 let status = "IN_PROGRESS";
