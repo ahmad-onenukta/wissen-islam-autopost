@@ -1,0 +1,108 @@
+name: Reel produzieren
+
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Script-ID (z. B. 011)"
+        required: true
+      tempo:
+        description: "atempo (1.0 = Original)"
+        default: "1.0"
+  push:
+    paths:
+      - "scripts/0*.json"
+      - "scripts/[0-9][0-9][0-9]-*.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: produce
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Script-ID bestimmen
+        id: pick
+        run: |
+          if [[ -n "${{ inputs.id }}" ]]; then
+            echo "id=${{ inputs.id }}" >> $GITHUB_OUTPUT
+          else
+            f=$(git diff --name-only HEAD~1 HEAD -- 'scripts/[0-9][0-9][0-9]*.json' | head -1)
+            [[ -z "$f" ]] && { echo "Kein neues Script."; exit 0; }
+            echo "id=$(basename "$f" .json | cut -d- -f1)" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Schon produziert?
+        id: check
+        run: |
+          id="${{ steps.pick.outputs.id }}"
+          if [[ -z "$id" ]] || grep -q "\"id\": \"$id\"" queue.json posted.json 2>/dev/null; then
+            echo "skip=true" >> $GITHUB_OUTPUT; echo "Reel $id existiert bereits oder keine ID."
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.check.outputs.skip == 'false'
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        if: steps.check.outputs.skip == 'false'
+        with:
+          python-version: "3.12"
+      - name: ffmpeg
+        if: steps.check.outputs.skip == 'false'
+        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+
+      - name: Voice-Over + Wort-Timestamps (ElevenLabs)
+        if: steps.check.outputs.skip == 'false'
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVEN_MODEL: ${{ vars.ELEVEN_MODEL || 'eleven_v3' }}
+        run: node scripts/produce.mjs "${{ steps.pick.outputs.id }}"
+
+      - name: Remotion-Abhaengigkeiten
+        if: steps.check.outputs.skip == 'false'
+        working-directory: remotion
+        run: npm ci --no-audit --no-fund
+
+      - name: Render (align -> events -> bed -> remotion -> transcode)
+        if: steps.check.outputs.skip == 'false'
+        env:
+          REEL_ID: ${{ steps.pick.outputs.id }}
+        run: |
+          id="$REEL_ID"
+          bash render/make_reel.sh "$id" "build/$id-script.json" "build/$id-words.json" "build/$id-vo.mp3" 0 "${{ inputs.tempo || '1.0' }}"
+          ls -la out/
+
+      - name: In Queue einreihen
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          id="${{ steps.pick.outputs.id }}"
+          mp4=$(ls out/$id*.mp4 | head -1)
+          node scripts/enqueue.mjs "$id" "$mp4"
+          git pull --rebase -q || true
+          git config user.name  "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          git add -A videos/ queue.json
+          git commit -m "produced: Reel $id"
+          git push
+
+      - name: Artefakte (Debug)
+        if: always() && steps.check.outputs.skip == 'false'
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-${{ steps.pick.outputs.id }}
+          path: |
+            build/
+            out/
+          retention-days: 5
