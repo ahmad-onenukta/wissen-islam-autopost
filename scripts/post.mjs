@@ -46,41 +46,22 @@ try {
 if (DRY) { console.log("DRY_RUN – es wird nichts veroeffentlicht."); process.exit(0); }
 
 // --- 3. Container anlegen ----------------------------------------------------
-// Standard: resumable Upload (Datei geht direkt raus, Repo darf privat sein).
-// Fallback: video_url ueber raw.githubusercontent (nur bei oeffentlichem Repo).
-const localPath = `videos/${next.file}`;
-const useUrl = process.env.UPLOAD_MODE === "url";
-let container;
+// Die "Instagram API mit Instagram-Login" (graph.instagram.com) kennt KEINEN
+// resumable Upload -> video_url ist Pflicht. Repo muss dafuer oeffentlich sein.
+// Optional: VIDEO_BASE_URL (z.B. Supabase-Bucket) statt raw.githubusercontent.
+const base = process.env.VIDEO_BASE_URL
+  || `https://raw.githubusercontent.com/${REPO}/${BRANCH}/videos`;
+const videoUrl = `${base.replace(/\/$/, "")}/${encodeURIComponent(next.file)}`;
+console.log("video_url ->", videoUrl);
 
-if (useUrl) {
-  const videoUrl = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/videos/${next.file}`;
-  console.log("Modus: video_url ->", videoUrl);
-  container = await api(`${USER}/media`, {
-    media_type: "REELS", video_url: videoUrl, caption: next.caption, share_to_feed: "true",
-  }, "POST");
-  console.log("Container:", container.id);
-} else {
-  const size = fs.statSync(localPath).size;
-  console.log(`Modus: resumable Upload (${(size / 1048576).toFixed(1)} MB)`);
-  container = await api(`${USER}/media`, {
-    media_type: "REELS", upload_type: "resumable", caption: next.caption, share_to_feed: "true",
-  }, "POST");
-  console.log("Container:", container.id);
+// Erreichbarkeit pruefen, sonst klare Fehlermeldung
+const head = await fetch(videoUrl, { method: "HEAD" });
+if (!head.ok) throw new Error(`video_url nicht oeffentlich erreichbar (${head.status}). Repo auf Public stellen oder VIDEO_BASE_URL setzen.`);
 
-  const up = await fetch(`https://rupload.facebook.com/ig-api-upload/${VER}/${container.id}`, {
-    method: "POST",
-    headers: {
-      Authorization: `OAuth ${TOKEN}`,
-      offset: "0",
-      file_size: String(size),
-      "Content-Type": "application/octet-stream",
-    },
-    body: fs.readFileSync(localPath),
-  });
-  const upJson = await up.json().catch(() => ({}));
-  if (!up.ok || upJson.error) throw new Error(`Upload: ${JSON.stringify(upJson.error || upJson)}`);
-  console.log("Upload fertig:", JSON.stringify(upJson));
-}
+const container = await api(`${USER}/media`, {
+  media_type: "REELS", video_url: videoUrl, caption: next.caption, share_to_feed: "true",
+}, "POST");
+console.log("Container:", container.id);
 
 // --- 4. auf FINISHED warten (max. 5 Min) ------------------------------------
 let status = "IN_PROGRESS";
