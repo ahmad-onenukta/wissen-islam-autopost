@@ -4,23 +4,41 @@
       "at": "2026-10-20T17:10:47.581Z",
       "followers": 0,
       "views_total": 2
+    },
+    {
+      "at": "2026-10-20T21:39:18.734Z",
+      "followers": 0,
+      "views_total": 8
     }
   ],
   "account": {
     "username": "nurwissen_official",
     "followers_count": 0,
     "follows_count": 0,
-    "media_count": 1,
+    "media_count": 2,
     "id": "28768435396155579",
-    "at": "2026-10-20T17:10:47.581Z"
+    "at": "2026-10-20T21:39:18.734Z"
   },
   "reels": [
+    {
+      "id": "17984355417120782",
+      "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
+      "posted": "2026-10-20T19:41:49+0000",
+      "caption": "Kolumbus wollte nach Indien. Er landete in Amerika – und hat",
+      "views": 2,
+      "reach": 1,
+      "likes": 0,
+      "comments": 1,
+      "shares": 0,
+      "saved": 0,
+      "total_interactions": 1
+    },
     {
       "id": "17951034201271209",
       "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
       "posted": "2026-10-19T21:37:07+0000",
       "caption": "Jedes Foto auf deinem Handy folgt einer Regel, die ein Mann ",
-      "views": 2,
+      "views": 6,
       "reach": 1,
       "likes": 0,
       "comments": 1,
