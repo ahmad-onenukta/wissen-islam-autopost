@@ -58,9 +58,17 @@ console.log("video_url ->", videoUrl);
 const head = await fetch(videoUrl, { method: "HEAD" });
 if (!head.ok) throw new Error(`video_url nicht oeffentlich erreichbar (${head.status}). Repo auf Public stellen oder VIDEO_BASE_URL setzen.`);
 
-const container = await api(`${USER}/media`, {
-  media_type: "REELS", video_url: videoUrl, caption: next.caption, share_to_feed: "true",
-}, "POST");
+// Cover-Frame: Standard ist Frame 0 (bei uns Fade-in = dunkel). thumb_offset (ms) nimmt
+// einen Frame, auf dem der Hook-Text schon steht -> bessere Klickrate im Profil-Grid.
+const baseParams = { media_type: "REELS", video_url: videoUrl, caption: next.caption, share_to_feed: "true" };
+const thumbOffset = Number.isFinite(+next.thumb_offset) ? String(+next.thumb_offset) : "3000";
+let container;
+try {
+  container = await api(`${USER}/media`, { ...baseParams, thumb_offset: thumbOffset }, "POST");
+} catch (e) {
+  console.log("thumb_offset abgelehnt, ohne Cover-Frame weiter:", e.message.slice(0, 160));
+  container = await api(`${USER}/media`, baseParams, "POST");
+}
 console.log("Container:", container.id);
 
 // --- 4. auf FINISHED warten (max. 5 Min) ------------------------------------
@@ -77,6 +85,17 @@ if (status !== "FINISHED") throw new Error("Timeout beim Video-Upload");
 // --- 5. veroeffentlichen -----------------------------------------------------
 const published = await api(`${USER}/media_publish`, { creation_id: container.id }, "POST");
 console.log("VEROEFFENTLICHT. Media-ID:", published.id);
+
+// --- 5b. Erstkommentar (Frage) – startet die Unterhaltung, Reichweiten-Signal --
+// Text kommt aus queue.json (`first_comment`). Fehler hier brechen den Post nicht ab.
+if (next.first_comment) {
+  try {
+    await sleep(20000);                       // Reel kurz "ankommen" lassen
+    const c = await api(`${published.id}/comments`, { message: next.first_comment }, "POST");
+    next.first_comment_id = c.id;
+    console.log("Erstkommentar gesetzt:", c.id);
+  } catch (e) { console.log("Erstkommentar fehlgeschlagen:", e.message.slice(0, 160)); }
+}
 
 // --- 6. Queue + Log zurueckschreiben ----------------------------------------
 next.status = "posted";
