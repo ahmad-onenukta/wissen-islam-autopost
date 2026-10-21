@@ -29,17 +29,35 @@
       "at": "2026-10-21T18:40:29.936Z",
       "followers": 0,
       "views_total": 9
+    },
+    {
+      "at": "2026-10-21T23:22:30.280Z",
+      "followers": 0,
+      "views_total": 21
     }
   ],
   "account": {
     "username": "nurwissen_official",
     "followers_count": 0,
     "follows_count": 0,
-    "media_count": 2,
+    "media_count": 3,
     "id": "28768435396155579",
-    "at": "2026-10-21T18:40:29.936Z"
+    "at": "2026-10-21T23:22:30.280Z"
   },
   "reels": [
+    {
+      "id": "18106676354203367",
+      "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
+      "posted": "2026-10-21T19:43:01+0000",
+      "caption": "Ein alter Mann hält ein Hemd. Es ist voller Blut. Und er wei",
+      "views": 12,
+      "reach": 13,
+      "likes": 0,
+      "comments": 1,
+      "shares": 0,
+      "saved": 0,
+      "total_interactions": 1
+    },
     {
       "id": "17984355417120782",
       "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
