@@ -39,6 +39,11 @@
       "at": "2026-10-22T04:51:22.462Z",
       "followers": 0,
       "views_total": 27
+    },
+    {
+      "at": "2026-10-22T11:56:30.064Z",
+      "followers": 0,
+      "views_total": 38
     }
   ],
   "account": {
@@ -47,7 +52,7 @@
     "follows_count": 0,
     "media_count": 3,
     "id": "28768435396155579",
-    "at": "2026-10-22T04:51:22.462Z"
+    "at": "2026-10-22T11:56:30.064Z"
   },
   "reels": [
     {
@@ -55,13 +60,13 @@
       "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
       "posted": "2026-10-21T19:43:01+0000",
       "caption": "Ein alter Mann hält ein Hemd. Es ist voller Blut. Und er wei",
-      "views": 18,
-      "reach": 17,
-      "likes": 0,
+      "views": 29,
+      "reach": 26,
+      "likes": 1,
       "comments": 1,
       "shares": 0,
       "saved": 0,
-      "total_interactions": 1
+      "total_interactions": 2
     },
     {
       "id": "17984355417120782",
