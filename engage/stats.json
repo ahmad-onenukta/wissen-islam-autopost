@@ -59,6 +59,11 @@
       "at": "2026-10-23T00:41:38.521Z",
       "followers": 1,
       "views_total": 95
+    },
+    {
+      "at": "2026-10-23T07:34:50.122Z",
+      "followers": 1,
+      "views_total": 99
     }
   ],
   "account": {
@@ -67,7 +72,7 @@
     "follows_count": 0,
     "media_count": 3,
     "id": "28768435396155579",
-    "at": "2026-10-23T00:41:38.521Z"
+    "at": "2026-10-23T07:34:50.122Z"
   },
   "reels": [
     {
@@ -88,8 +93,8 @@
       "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
       "posted": "2026-10-20T19:41:49+0000",
       "caption": "Kolumbus wollte nach Indien. Er landete in Amerika – und hat",
-      "views": 43,
-      "reach": 37,
+      "views": 47,
+      "reach": 41,
       "likes": 0,
       "comments": 1,
       "shares": 1,
