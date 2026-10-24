@@ -2,7 +2,7 @@ name: Reel posten
 
 on:
   schedule:
-    - cron: "0 16 * * *"   # taeglich 18:00 Berlin (Sommerzeit) / 17:00 (Winterzeit)
+        - cron: "0 18 * * *"   # 18:00 UTC = 19:00 Berlin (Winterzeit); im Sommer auf "0 17" aendern
   workflow_dispatch:
     inputs:
       dry_run:
