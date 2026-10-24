@@ -2,7 +2,6 @@
   {
     "id": "010",
     "file": "010-nur.mp4",
-    "publish_at": "2026-10-19T16:00:00Z",
     "status": "posted",
     "posted_at": "2026-10-19T21:35:33.014Z",
     "media_id": "17951034201271209"
@@ -10,43 +9,38 @@
   {
     "id": "009",
     "file": "009-ki-qibla.mp4",
-    "publish_at": "2026-10-20T16:00:00Z",
     "status": "posted",
     "posted_at": "2026-10-20T19:40:15.230Z",
-    "media_id": "17984355417120782",
-    "first_comment_id": "18057286628598079"
+    "media_id": "17984355417120782"
   },
   {
     "id": "008",
     "file": "008-blut-story.mp4",
-    "publish_at": "2026-10-21T16:00:00Z",
     "status": "posted",
     "posted_at": "2026-10-21T19:41:48.261Z",
-    "media_id": "18106676354203367",
-    "first_comment_id": "18133502782730162"
+    "media_id": "18106676354203367"
   },
   {
     "id": "005",
     "file": "005-birmingham.mp4",
-    "publish_at": "2026-10-23T16:00:00Z",
     "status": "posted",
-    "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Nicht in Medina. Nicht in Istanbul.\n\nEs liegt in England – falsch einsortiert, fast hundert Jahre lang übersehen. Bis eine Doktorandin genauer hinschaute.\n\nRadiokarbon, Universität Oxford: 568 bis 645 n. Chr. Der Prophet Muhammad (saw) lebte von 570 bis 632.\n\nUnd die Suren 18 bis 20 darauf? Derselbe Text wie heute. Nur die Schrift sieht anders aus.\n\n„Wir haben diese Ermahnung herabgesandt, und Wir sind ihr Hüter.\" (15:10)\n\nWusstest du das? Schreib Ja oder Nein in die Kommentare.\n\nQuellen: University of Birmingham 2015 · Cadbury Research Library, Mingana 1572a · alislam.org\n\n#islam #koran #muslim #wissen #deutsch #geschichte #birmingham #islamwissen",
-    "first_comment": "Wusstest du, dass das älteste Koran-Fragment in Birmingham liegt? Ja oder Nein – und welche Geschichte soll als Nächstes kommen? 👇",
-    "thumb_offset": 3000,
-    "first_comment_id": "18132080659748143",
     "posted_at": "2026-10-23T19:35:00.291Z",
     "media_id": "18114527000174151"
   },
   {
     "id": "006",
     "file": "006-blut-essay.mp4",
-    "publish_at": "2026-10-24T16:00:00Z",
     "status": "posted",
-    "caption": "Das Wort „Blut\" steht genau 10-mal im Koran. 4× als Speiseverbot, 2× als Warnung vor Blutvergießen, 1× als Plage, 1× als Lüge, 1× als Zeichen – und 1× als der wichtigste Satz: „Nicht ihr Fleisch erreicht Allah, und nicht ihr Blut, sondern eure Rechtschaffenheit.\" (22:38)\n\nZähl nach. 📖\n\nWelches Wort sollen wir als Nächstes zählen? Schreib's in die Kommentare.\n\nQuellen: corpus.quran.com · alislam.org\n\n#islam #koran #muslim #wissen #deutsch #quran #glaube #koranverse",
-    "first_comment": "Hast du nachgezählt? Welches Wort sollen wir als Nächstes im Koran zählen? 👇",
-    "thumb_offset": 3000,
-    "first_comment_id": "18169576198477955",
     "posted_at": "2026-10-24T18:24:12.282Z",
     "media_id": "18138963895624373"
+  },
+  {
+    "id": "028",
+    "file": "028-algorithmus.mp4",
+    "publish_at": "2026-10-25T18:00:00Z",
+    "status": "ready",
+    "caption": "Du sagst jeden Tag seinen Namen und weißt es nicht.\n\nAl-Chwarizmi, ca. 780 bis ca. 850. Lateinisiert wurde sein Name zu „Algoritmi\" — daraus: Algorithmus. Und der Titel seines Buches wurde zu einem zweiten Wort: Algebra.\n\nDas Wichtigste ist aber: über seine Werke kamen die Ziffern 0 bis 9 nach Europa. Vorher rechnete man dort mit römischen Zahlen — versuch mal, MCMXLIV schriftlich zu multiplizieren.\n\nDas war keine Verbesserung, das war die Bedingung für alles, was danach kam: Buchhaltung, Navigation, Statik, am Ende Code.\n\nEinordnung: Die Ziffern selbst stammen aus Indien. Al-Chwarizmi hat sie nicht erfunden, sondern das Rechnen mit ihnen so beschrieben, dass es übernommen werden konnte.\n\nWusstest du, woher das Wort kommt? 👇\n\nQuelle: Encyclopaedia Britannica\n\n#islam #wissen #muslim #deutsch #geschichte #algorithmus #mathematik #islamwissen",
+    "first_comment": "Wusstest du, dass „Algorithmus\" ein Nachname ist? Und welches Wort sollen wir als Nächstes zurückverfolgen? 👇",
+    "thumb_offset": 7800
   }
 ]
