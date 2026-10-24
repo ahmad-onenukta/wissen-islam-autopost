@@ -4,15 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       id:
-        description: "Script-ID (z. B. 011)"
+        description: "Script-ID (z. B. 029)"
         required: true
       tempo:
         description: "atempo (1.0 = Original)"
         default: "1.0"
   push:
     paths:
-      - "scripts/0*.json"
-      - "scripts/[0-9][0-9][0-9]-*.json"
+      - "scripts/[0-9][0-9][0-9]*.json"
 
 permissions:
   contents: write
@@ -67,13 +66,28 @@ jobs:
         if: steps.check.outputs.skip == 'false'
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-          ELEVEN_MODEL: ${{ vars.ELEVEN_MODEL || 'eleven_v3' }}
+          ELEVEN_MODEL: ${{ vars.ELEVEN_MODEL || 'eleven_v4' }}
+          ELEVEN_VOICE: ${{ vars.ELEVEN_VOICE || 'ML23UVoFL5mI6APbRAeR' }}
         run: node scripts/produce.mjs "${{ steps.pick.outputs.id }}"
 
       - name: Remotion-Abhaengigkeiten
         if: steps.check.outputs.skip == 'false'
         working-directory: remotion
-        run: npm ci --no-audit --no-fund
+        run: npm install --no-audit --no-fund
+
+      - name: Schriften bereitstellen
+        if: steps.check.outputs.skip == 'false'
+        working-directory: remotion
+        run: |
+          # Die Fonts liegen nicht im Repo, sondern kommen aus den npm-Paketen.
+          mkdir -p public/fonts
+          for w in 500 700 800 900; do
+            cp "node_modules/@fontsource/inter/files/inter-latin-$w-normal.woff2" public/fonts/
+          done
+          for w in 400 700; do
+            cp "node_modules/@fontsource/amiri/files/amiri-arabic-$w-normal.woff2" public/fonts/
+          done
+          ls -la public/fonts/
 
       - name: Render (align -> events -> bed -> remotion -> transcode)
         if: steps.check.outputs.skip == 'false'
@@ -82,13 +96,13 @@ jobs:
         run: |
           id="$REEL_ID"
           bash render/make_reel.sh "$id" "build/$id-script.json" "build/$id-words.json" "build/$id-vo.mp3" 0 "${{ inputs.tempo || '1.0' }}"
-          ls -la out/
+          ls -la remotion/out/
 
       - name: In Queue einreihen
         if: steps.check.outputs.skip == 'false'
         run: |
           id="${{ steps.pick.outputs.id }}"
-          mp4=$(ls out/$id*.mp4 | head -1)
+          mp4=$(ls remotion/out/$id*-ig.mp4 | head -1)
           node scripts/enqueue.mjs "$id" "$mp4"
           git pull --rebase -q || true
           git config user.name  "reel-bot"
@@ -104,5 +118,5 @@ jobs:
           name: reel-${{ steps.pick.outputs.id }}
           path: |
             build/
-            out/
+            remotion/out/
           retention-days: 5
