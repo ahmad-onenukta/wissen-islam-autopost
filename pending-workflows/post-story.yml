@@ -1,0 +1,50 @@
+name: Story posten
+
+on:
+  schedule:
+    # 19:00 UTC = 20:00 Berlin (Winterzeit), also 1 h nach dem Reel.
+    # Im Sommer (CEST) auf "0 18 * * *" aendern.
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Nur testen, nicht posten"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-story
+  cancel-in-progress: false
+
+jobs:
+  story:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: ffmpeg bereitstellen
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Story veroeffentlichen
+        env:
+          IG_TOKEN:   ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          DRY_RUN:    ${{ inputs.dry_run }}
+        run: node scripts/story.mjs
+
+      - name: Queue zurueckschreiben
+        run: |
+          if [[ -n "$(git status --porcelain queue.json videos/)" ]]; then
+            git config user.name  "reel-bot"
+            git config user.email "reel-bot@users.noreply.github.com"
+            git add -A queue.json videos/
+            git commit -m "story: $(date -u +%Y-%m-%d)"
+            git push
+          fi
