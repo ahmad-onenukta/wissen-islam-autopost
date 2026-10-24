@@ -3,6 +3,7 @@ import { CalculateMetadataFunction, Composition } from "remotion";
 import { Reel, totalFrames } from "./Reel";
 import { FPS, type Script } from "./types";
 import { Essay, essayFrames } from "./essay/Essay";
+import { Cover } from "./essay/Cover";
 import type { EssayScript } from "./essay/types";
 import demo from "../../scripts/002-birmingham.json";
 import "./fonts";
@@ -23,5 +24,6 @@ export const RemotionRoot: React.FC = () => (
   <>
     <Composition id="Reel" component={Reel} durationInFrames={300} fps={FPS} width={1080} height={1920} defaultProps={{ script: demo as unknown as Script }} calculateMetadata={calculateMetadata} />
     <Composition id="Essay" component={Essay} durationInFrames={120} fps={FPS} width={1080} height={1920} defaultProps={{ script: essayDemo }} calculateMetadata={calcEssay} />
+    <Composition id="Cover" component={Cover} durationInFrames={1} fps={FPS} width={1080} height={1920} defaultProps={{ line: "Das aelteste Koran-Fragment liegt nicht in *Mekka*.", kicker: "Birmingham, England" }} />
   </>
 );
