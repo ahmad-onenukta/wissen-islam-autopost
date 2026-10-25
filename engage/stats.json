@@ -109,15 +109,20 @@
       "at": "2026-10-25T04:44:40.568Z",
       "followers": 340,
       "views_total": 89823
+    },
+    {
+      "at": "2026-10-25T11:34:10.011Z",
+      "followers": 388,
+      "views_total": 96052
     }
   ],
   "account": {
     "username": "nurwissen_official",
-    "followers_count": 340,
+    "followers_count": 388,
     "follows_count": 0,
     "media_count": 5,
     "id": "28768435396155579",
-    "at": "2026-10-25T04:44:40.568Z"
+    "at": "2026-10-25T11:34:10.011Z"
   },
   "reels": [
     {
@@ -125,65 +130,65 @@
       "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
       "posted": "2026-10-24T18:25:06+0000",
       "caption": "Das Wort „Blut\" steht genau 10-mal im Koran. 4× als Speiseve",
-      "views": 3101,
-      "reach": 2570,
-      "likes": 128,
-      "comments": 2,
-      "shares": 21,
-      "saved": 38,
-      "total_interactions": 195
+      "views": 4213,
+      "reach": 3402,
+      "likes": 187,
+      "comments": 3,
+      "shares": 26,
+      "saved": 55,
+      "total_interactions": 281
     },
     {
       "id": "18114527000174151",
       "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
       "posted": "2026-10-23T19:35:52+0000",
       "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Ni",
-      "views": 86048,
-      "reach": 68612,
-      "likes": 4370,
-      "comments": 181,
-      "shares": 1994,
-      "saved": 1209,
-      "total_interactions": 7976
+      "views": 91070,
+      "reach": 72521,
+      "likes": 4693,
+      "comments": 191,
+      "shares": 2135,
+      "saved": 1294,
+      "total_interactions": 8552
     },
     {
       "id": "18106676354203367",
       "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
       "posted": "2026-10-21T19:43:01+0000",
       "caption": "Ein alter Mann hält ein Hemd. Es ist voller Blut. Und er wei",
-      "views": 245,
-      "reach": 209,
-      "likes": 7,
-      "comments": 1,
+      "views": 267,
+      "reach": 224,
+      "likes": 8,
+      "comments": 2,
       "shares": 0,
       "saved": 1,
-      "total_interactions": 9
+      "total_interactions": 11
     },
     {
       "id": "17984355417120782",
       "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
       "posted": "2026-10-20T19:41:49+0000",
       "caption": "Kolumbus wollte nach Indien. Er landete in Amerika – und hat",
-      "views": 274,
-      "reach": 223,
-      "likes": 3,
-      "comments": 1,
+      "views": 326,
+      "reach": 262,
+      "likes": 5,
+      "comments": 2,
       "shares": 1,
-      "saved": 0,
-      "total_interactions": 5
+      "saved": 1,
+      "total_interactions": 9
     },
     {
       "id": "17951034201271209",
       "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
       "posted": "2026-10-19T21:37:07+0000",
       "caption": "Jedes Foto auf deinem Handy folgt einer Regel, die ein Mann ",
-      "views": 155,
-      "reach": 114,
-      "likes": 1,
-      "comments": 1,
+      "views": 176,
+      "reach": 131,
+      "likes": 2,
+      "comments": 2,
       "shares": 2,
       "saved": 3,
-      "total_interactions": 8
+      "total_interactions": 10
     }
   ]
 }
