@@ -1,0 +1,224 @@
+{
+ "id": "011",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
+ "thema": "Sünden",
+ "title": "Der Mann, der 100 Menschen getötet hat",
+ "hook": "Ein Mann hat 99 Menschen getötet. Dann fragt er einen Mönch: Gibt es für mich noch Vergebung? Der Mönch sagt nein. Also tötet er ihn auch.",
+ "appeal": "Du bist nie zu weit weg. Eine Handbreit reicht. Mach den einen Schritt — heute.",
+ "blocks": [
+  {
+   "top": "Ein Mann hat 99 Menschen getötet.",
+   "big": "Neunundneunzig.",
+   "visual": "stat",
+   "stat": {
+    "value": "99",
+    "sub": "MENSCHEN"
+   },
+   "light": true
+  },
+  {
+   "top": "Irgendwann hält er an und fragt:",
+   "big": "„Gibt es für mich noch *Vergebung*?“",
+   "visual": "question"
+  },
+  {
+   "top": "Man schickt ihn zu einem Mönch.",
+   "big": "Der Mönch rechnet nach und sagt: *Nein*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "Also tötet er auch ihn. *Hundert*.",
+   "visual": "stat",
+   "stat": {
+    "value": "100",
+    "sub": "MENSCHEN"
+   }
+  },
+  {
+   "top": "Und jetzt kommt der Teil,",
+   "big": "den kaum jemand kennt.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Er fragt weiter.",
+   "big": "Und der Nächste sagt etwas *anderes*.",
+   "visual": "none"
+  },
+  {
+   "top": "„Wer sollte dich von der Umkehr abhalten?",
+   "big": "Geh in jenes Dorf. Dort sind Menschen, die Gott dienen. Dien mit ihnen.“",
+   "visual": "none"
+  },
+  {
+   "top": "Er geht los.",
+   "big": "Ein Mörder. Auf dem Weg in ein Dorf, das er noch nie gesehen hat.",
+   "visual": "none"
+  },
+  {
+   "top": "Und auf halbem Weg",
+   "big": "*stirbt* er.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Jetzt streiten zwei Seiten um ihn.",
+   "big": "Die Engel der Barmherzigkeit. Und die Engel der Strafe.",
+   "visual": "compare",
+   "ca": {
+    "label": "Barmherzigkeit",
+    "value": "?",
+    "accent": true
+   },
+   "cb": {
+    "label": "Strafe",
+    "value": "?"
+   }
+  },
+  {
+   "top": "Die einen sagen:",
+   "big": "Er kam mit *reuigem* Herzen.",
+   "visual": "compare",
+   "ca": {
+    "label": "Barmherzigkeit",
+    "value": "?",
+    "accent": true
+   },
+   "cb": {
+    "label": "Strafe",
+    "value": "?"
+   }
+  },
+  {
+   "top": "Die anderen sagen:",
+   "big": "Er hat nie eine *einzige* gute Tat getan.",
+   "visual": "compare",
+   "ca": {
+    "label": "Barmherzigkeit",
+    "value": "?",
+    "accent": true
+   },
+   "cb": {
+    "label": "Strafe",
+    "value": "?"
+   }
+  },
+  {
+   "top": "Die Entscheidung:",
+   "big": "Messt die *Entfernung*. Zu welchem Dorf war er näher?",
+   "visual": "slider",
+   "slider": {
+    "a": "ALTES DORF",
+    "b": "NEUES DORF",
+    "pos": 0.5,
+    "label": "Wo lag er?"
+   }
+  },
+  {
+   "top": "Und dann lässt Gott",
+   "big": "das gute Dorf *näher* rücken. Und das alte weiter weg.",
+   "visual": "slider",
+   "slider": {
+    "a": "ALTES DORF",
+    "b": "NEUES DORF",
+    "pos": 0.52,
+    "label": "Wo lag er?"
+   }
+  },
+  {
+   "top": "Sie messen.",
+   "big": "Er liegt eine *Handbreit* näher am guten Dorf.",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "unit": "Handbreit",
+    "sub": "DER UNTERSCHIED"
+   }
+  },
+  {
+   "top": "",
+   "big": "Ihm wird *vergeben*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Hundert Morde.",
+   "big": "Und die Richtung, in die er ging, hat gereicht.",
+   "visual": "none"
+  },
+  {
+   "top": "Allah sagt:",
+   "big": "„Verzweifelt nicht an der Barmherzigkeit Allahs — Allah vergibt *alle* Sünden.“",
+   "visual": "ayah",
+   "ar": "قُلْ يَـٰعِبَادِىَ ٱلَّذِينَ أَسْرَفُوا۟ عَلَىٰٓ أَنفُسِهِمْ *لَا تَقْنَطُوا۟ مِن رَّحْمَةِ ٱللَّهِ* إِنَّ ٱللَّهَ يَغْفِرُ ٱلذُّنُوبَ جَمِيعًا",
+   "de": "„Sprich: O meine Diener, die ihr euch gegen eure eigenen Seelen vergangen habt! Verzweifelt nicht an der Barmherzigkeit Allahs, Allah vergibt alle Sünden.“",
+   "ref": "SURE 39 · VERS 54"
+  },
+  {
+   "top": "Nicht manche.",
+   "big": "*Alle*.",
+   "visual": "ayah",
+   "ar": "إِنَّ ٱللَّهَ يَغْفِرُ *ٱلذُّنُوبَ جَمِيعًا*",
+   "de": "„Allah vergibt alle Sünden.“",
+   "ref": "SURE 39 · VERS 54"
+  },
+  {
+   "top": "Die Rechnung war nicht:",
+   "big": "Wie viel hast du *falsch* gemacht?",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Sondern:",
+   "big": "In welche *Richtung* gehst du gerade?",
+   "visual": "compass"
+  },
+  {
+   "top": "Du bist nie zu weit weg.",
+   "big": "Eine Handbreit reicht.",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "unit": "Handbreit",
+    "sub": "REICHT"
+   }
+  },
+  {
+   "top": "Mach den einen Schritt.",
+   "big": "*Heute*. Nicht wenn du bereit bist.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 3470 (Buch 60, Hadith 137)",
+    "Parallelüberlieferung: Sahih Muslim 2766",
+    "Koran 39:54 (alislam.org, Ahmadiyya-Zählung)"
+   ]
+  }
+ ],
+ "vo_full": "Ein Mann hat 99 Menschen getötet. Neunundneunzig. [pause] Irgendwann hält er an und fragt: „Gibt es für mich noch Vergebung?“ [pause] Man schickt ihn zu einem Mönch. Der Mönch rechnet nach und sagt: Nein. [pause] Also tötet er auch ihn. Hundert. [pause] Und jetzt kommt der Teil, den kaum jemand kennt. [pause] Er fragt weiter. Und der Nächste sagt etwas anderes. [pause] „Wer sollte dich von der Umkehr abhalten? Geh in jenes Dorf. Dort sind Menschen, die Gott dienen. Dien mit ihnen.“ [pause] Er geht los. Ein Mörder. Auf dem Weg in ein Dorf, das er noch nie gesehen hat. [pause] Und auf halbem Weg stirbt er. [pause] Jetzt streiten zwei Seiten um ihn. Die Engel der Barmherzigkeit. Und die Engel der Strafe. [pause] Die einen sagen: Er kam mit reuigem Herzen. [pause] Die anderen sagen: Er hat nie eine einzige gute Tat getan. [pause] Die Entscheidung: Messt die Entfernung. Zu welchem Dorf war er näher? [pause] Und dann lässt Gott das gute Dorf näher rücken. Und das alte weiter weg. [pause] Sie messen. Er liegt eine Handbreit näher am guten Dorf. [pause] Ihm wird vergeben. [pause] Hundert Morde. Und die Richtung, in die er ging, hat gereicht. [pause] Allah sagt: „Verzweifelt nicht an der Barmherzigkeit Allahs — Allah vergibt alle Sünden.“ [pause] Nicht manche. Alle. [pause] Die Rechnung war nicht: Wie viel hast du falsch gemacht? [pause] Sondern: In welche Richtung gehst du gerade? [pause] Du bist nie zu weit weg. Eine Handbreit reicht. [pause] Mach den einen Schritt. Heute. Nicht wenn du bereit bist.",
+ "sources": [
+  {
+   "claim": "Mann der Kinder Israels tötet 99 Menschen, dann den Mönch (100.); ein Gelehrter schickt ihn in ein Dorf; er stirbt unterwegs; Engel der Barmherzigkeit und der Strafe streiten; Gott lässt die Dörfer rücken; er liegt eine Handbreit näher und wird vergeben",
+   "ref": "Sahih al-Bukhari 3470, Buch 60 (Propheten), Hadith 137",
+   "url": "https://sunnah.com/bukhari:3470",
+   "verified": true
+  },
+  {
+   "claim": "Koran 39:54 „Verzweifelt nicht an der Barmherzigkeit Allahs, Allah vergibt alle Sünden“",
+   "ref": "alislam.org, Sher Ali, Ahmadiyya-Zählung",
+   "url": "https://www.alislam.org/quran/39:54",
+   "verified": true
+  }
+ ],
+ "caption": "Ein Mann hat 99 Menschen getötet. Er fragt einen Mönch, ob es für ihn noch Vergebung gibt. Der sagt nein — und wird der Hundertste.\n\nDann trifft er jemanden, der etwas anderes sagt: Geh in jenes Dorf, dort dienen Menschen Gott. Er stirbt auf halbem Weg.\n\nEngel der Barmherzigkeit und Engel der Strafe streiten um ihn. Die Entscheidung fällt über die Entfernung — und Gott lässt das gute Dorf näher rücken. Er liegt eine Handbreit näher. Ihm wird vergeben.\n\n„Verzweifelt nicht an der Barmherzigkeit Allahs — Allah vergibt alle Sünden.“ (39:54)\n\nDie Frage war nie, wie viel du falsch gemacht hast. Sondern in welche Richtung du gerade gehst.\n\nQuellen: Sahih al-Bukhari 3470 · alislam.org\n\n#islam #koran #vergebung #reue #tauba #wissen #muslim #deutsch"
+}

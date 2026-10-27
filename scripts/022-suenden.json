@@ -1,0 +1,193 @@
+{
+ "id": "022",
+ "thema": "Sünden",
+ "title": "Drei Männer, ein Felsen, drei Taten",
+ "hook": "Drei Männer sind in einer Höhle eingeschlossen. Ein Felsen versperrt den Ausgang. Jeder nennt eine Tat, von der niemand wusste — und der Fels bewegt sich.",
+ "appeal": "Welche Tat hättest du zu nennen? Tu heute eine, die niemand mitbekommt. Das ist die, die dich rausholt.",
+ "blocks": [
+  {
+   "top": "Drei Männer sind in einer Höhle *eingeschlossen*.",
+   "big": "Ein Felsen versperrt den Ausgang.",
+   "visual": "none"
+  },
+  {
+   "top": "Niemand weiß, dass sie dort sind.",
+   "big": "Kein Werkzeug. Kein *Weg* raus.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Sie beschließen:",
+   "big": "Jeder nennt die *beste* Tat seines Lebens — und bittet damit.",
+   "visual": "none"
+  },
+  {
+   "top": "Und jetzt pass auf,",
+   "big": "*welche* Taten sie wählen.",
+   "visual": "question"
+  },
+  {
+   "top": "Der erste:",
+   "big": "„Ich hatte alte *Eltern*.“",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "sub": "DIE ELTERN"
+   }
+  },
+  {
+   "top": "Jeden Abend brachte er ihnen zuerst die Milch.",
+   "big": "Vor Frau und *Kindern*.",
+   "visual": "none"
+  },
+  {
+   "top": "Eines Nachts schliefen sie.",
+   "big": "Er stand mit der Schale *da*.",
+   "visual": "none"
+  },
+  {
+   "top": "Bis zum *Morgen*.",
+   "big": "Seine Kinder weinten vor Hunger an seinen Füßen.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Er weckte sie nicht.",
+   "big": "Der Fels bewegte sich — ein *Stück*.",
+   "visual": "slider",
+   "slider": {
+    "a": "ZU",
+    "b": "OFFEN",
+    "pos": 0.33,
+    "label": "Der Felsen"
+   }
+  },
+  {
+   "top": "Der zweite:",
+   "big": "„Ich *wollte* meine Cousine.“",
+   "visual": "stat",
+   "stat": {
+    "value": "2",
+    "sub": "DIE SÜNDE, DIE ER NICHT TAT"
+   }
+  },
+  {
+   "top": "Sie war in Not.",
+   "big": "Er bot ihr Geld. Sie stimmte zu.",
+   "visual": "none"
+  },
+  {
+   "top": "Und im letzten Moment sagte sie:",
+   "big": "„Fürchte Allah — öffne das Siegel nur mit *Recht*.“",
+   "visual": "none"
+  },
+  {
+   "top": "Er stand auf und ging.",
+   "big": "Und ließ ihr das *Gold*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Seine beste Tat",
+   "big": "war etwas, das er *nicht* getan hat.",
+   "visual": "slider",
+   "slider": {
+    "a": "ZU",
+    "b": "OFFEN",
+    "pos": 0.66,
+    "label": "Der Felsen"
+   }
+  },
+  {
+   "top": "Der dritte:",
+   "big": "„Ein *Arbeiter* ging, ohne seinen Lohn zu holen.“",
+   "visual": "stat",
+   "stat": {
+    "value": "3",
+    "sub": "DER LOHN"
+   }
+  },
+  {
+   "top": "Er behielt das Geld nicht.",
+   "big": "Er *investierte* es. Jahrelang.",
+   "visual": "none"
+  },
+  {
+   "top": "Als der Mann zurückkam,",
+   "big": "gab er ihm die *ganze* Herde.",
+   "visual": "none"
+  },
+  {
+   "top": "Der Fels gab nach.",
+   "big": "Sie gingen *hinaus*.",
+   "visual": "slider",
+   "slider": {
+    "a": "ZU",
+    "b": "OFFEN",
+    "pos": 1.0,
+    "label": "Der Felsen"
+   }
+  },
+  {
+   "top": "Drei Männer. Drei Taten.",
+   "big": "Und keine davon war ein *Gebet* oder eine Pilgerfahrt.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Eltern bedienen. Eine Sünde lassen.",
+   "big": "Jemandes *Lohn* nicht behalten.",
+   "visual": "none"
+  },
+  {
+   "top": "Alle drei:",
+   "big": "Dinge, die *niemand* gesehen hat.",
+   "visual": "none"
+  },
+  {
+   "top": "Welche Tat hättest du zu nennen?",
+   "big": "Tu heute eine, die *niemand* mitbekommt.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "",
+   "big": "Das ist die, die dich *rausholt*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 2272 (Buch 37, Hadith 12)",
+    "Überliefert von Abdullah ibn Umar (ra)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Drei Männer in einer Höhle, Felsen versperrt den Ausgang; jeder bittet mit einer Tat: (1) alte Eltern zuerst mit Milch versorgt, stand bis zum Morgen mit der Schale, (2) verzichtete auf die Cousine trotz Zusage und ließ ihr das Gold, (3) investierte den nicht abgeholten Lohn eines Arbeiters und gab ihm alles zurück — der Fels öffnet sich",
+   "ref": "Sahih al-Bukhari 2272, Buch 37 (Miete), Hadith 12",
+   "url": "https://sunnah.com/bukhari:2272",
+   "verified": true
+  }
+ ],
+ "caption": "Drei Männer, eingeschlossen in einer Höhle. Jeder nennt die beste Tat seines Lebens — und der Fels bewegt sich.\n\n1. Er brachte seinen alten Eltern jeden Abend zuerst die Milch. Einmal schliefen sie, und er stand bis zum Morgen mit der Schale da, während seine Kinder vor Hunger weinten.\n2. Er wollte seine Cousine, sie stimmte gegen Geld zu — und im letzten Moment ließ er es und das Gold.\n3. Ein Arbeiter holte seinen Lohn nicht ab. Er investierte ihn und gab ihm Jahre später die ganze Herde.\n\nKeine davon war ein Gebet oder eine Pilgerfahrt. Und keine hat jemand gesehen. (Bukhari 2272)\n\nTu heute eine, die niemand mitbekommt.\n\nQuellen: Sahih al-Bukhari 2272\n\n#islam #hadith #sünden #eltern #ehrlichkeit #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "Drei Männer sind in einer Höhle eingeschlossen. Ein Felsen versperrt den Ausgang. [pause] Niemand weiß, dass sie dort sind. Kein Werkzeug. Kein Weg raus. [pause] Sie beschließen: Jeder nennt die beste Tat seines Lebens — und bittet damit. [pause] Und jetzt pass auf, welche Taten sie wählen. [pause] Der erste: „Ich hatte alte Eltern.“ [pause] Jeden Abend brachte er ihnen zuerst die Milch. Vor Frau und Kindern. [pause] Eines Nachts schliefen sie. Er stand mit der Schale da. [pause] Bis zum Morgen. Seine Kinder weinten vor Hunger an seinen Füßen. [pause] Er weckte sie nicht. Der Fels bewegte sich — ein Stück. [pause] Der zweite: „Ich wollte meine Cousine.“ [pause] Sie war in Not. Er bot ihr Geld. Sie stimmte zu. [pause] Und im letzten Moment sagte sie: „Fürchte Allah — öffne das Siegel nur mit Recht.“ [pause] Er stand auf und ging. Und ließ ihr das Gold. [pause] Seine beste Tat war etwas, das er nicht getan hat. [pause] Der dritte: „Ein Arbeiter ging, ohne seinen Lohn zu holen.“ [pause] Er behielt das Geld nicht. Er investierte es. Jahrelang. [pause] Als der Mann zurückkam, gab er ihm die ganze Herde. [pause] Der Fels gab nach. Sie gingen hinaus. [pause] Drei Männer. Drei Taten. Und keine davon war ein Gebet oder eine Pilgerfahrt. [pause] Eltern bedienen. Eine Sünde lassen. Jemandes Lohn nicht behalten. [pause] Alle drei: Dinge, die niemand gesehen hat. [pause] Welche Tat hättest du zu nennen? Tu heute eine, die niemand mitbekommt. [pause] Das ist die, die dich rausholt.",
+ "palette": {
+  "bg": "#0A1430",
+  "ink": "#DCE9FF",
+  "dim": "#9FB3D9",
+  "accent": "#7FB3FF",
+  "card": "#122048",
+  "line": "#2A3A66",
+  "mute": "#6F85B3"
+ }
+}

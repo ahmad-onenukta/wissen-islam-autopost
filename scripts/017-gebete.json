@@ -1,0 +1,188 @@
+{
+ "id": "017",
+ "thema": "Gebete",
+ "title": "Das Fenster, das jede Nacht aufgeht",
+ "hook": "Jede Nacht geht ein Fenster auf. Immer zur gleichen Zeit. Und fast alle schlafen dabei.",
+ "appeal": "Stell den Wecker einmal 20 Minuten vor dem Fadschr. Einmal. Dann weißt du, warum man davon nicht mehr weg will.",
+ "blocks": [
+  {
+   "top": "Jede Nacht geht ein *Fenster* auf.",
+   "big": "Immer zur gleichen Zeit.",
+   "visual": "none"
+  },
+  {
+   "top": "Und fast alle",
+   "big": "*schlafen* dabei.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Der Prophet ﷺ hat beschrieben, was im",
+   "big": "letzten *Drittel* der Nacht passiert.",
+   "visual": "slider",
+   "slider": {
+    "a": "SONNENUNTERGANG",
+    "b": "FADSCHR",
+    "pos": 0.72,
+    "label": "Letztes Drittel"
+   }
+  },
+  {
+   "top": "Da fragt Allah:",
+   "big": "Wer ruft Mich — damit Ich ihm *antworte*?",
+   "visual": "ayah",
+   "ar": "يَنْزِلُ رَبُّنَا تَبَارَكَ وَتَعَالَىٰ كُلَّ لَيْلَةٍ *حِينَ يَبْقَىٰ ثُلُثُ ٱللَّيْلِ ٱلْآخِرُ*",
+   "de": "„Unser Herr steigt jede Nacht herab, wenn das letzte Drittel der Nacht bleibt, und fragt: Wer ruft Mich, dass Ich ihm antworte? Wer bittet Mich, dass Ich ihm gebe? Wer bittet Mich um Vergebung, dass Ich ihm vergebe?“",
+   "ref": "SAHIH AL-BUKHARI 1145"
+  },
+  {
+   "top": "Drei Fragen.",
+   "big": "Jede Nacht. *Jede*.",
+   "visual": "letters",
+   "letters": {
+    "word": "123"
+   }
+  },
+  {
+   "top": "Eins:",
+   "big": "Wer ruft Mich, dass Ich *antworte*?",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "sub": "WER RUFT MICH?"
+   }
+  },
+  {
+   "top": "Zwei:",
+   "big": "Wer bittet Mich, dass Ich *gebe*?",
+   "visual": "stat",
+   "stat": {
+    "value": "2",
+    "sub": "WER BITTET MICH?"
+   }
+  },
+  {
+   "top": "Drei:",
+   "big": "Wer bittet um Vergebung, dass Ich *vergebe*?",
+   "visual": "stat",
+   "stat": {
+    "value": "3",
+    "sub": "WER BITTET UM VERGEBUNG?"
+   }
+  },
+  {
+   "top": "Beachte:",
+   "big": "Die Antwort ist in der Frage schon *enthalten*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Er fragt nicht, ob jemand es verdient.",
+   "big": "Er fragt nur, ob jemand *da* ist.",
+   "visual": "none"
+  },
+  {
+   "top": "Und im Koran steht der Auftrag dazu:",
+   "big": "„Und wache einen Teil der Nacht im *Gebet*.“",
+   "visual": "ayah",
+   "ar": "وَمِنَ ٱللَّيْلِ *فَتَهَجَّدْ بِهِۦ* نَافِلَةً لَّكَ عَسَىٰٓ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا",
+   "de": "„Und wache einen Teil der Nacht im Gebet — als zusätzliche Pflicht für dich. Vielleicht wird dein Herr dich in einen ruhmvollen Rang erheben.“",
+   "ref": "SURE 17 · VERS 80"
+  },
+  {
+   "top": "Das Wort dafür:",
+   "big": "*Tahajjud*. Von der Wurzel für „den Schlaf abstreifen“.",
+   "visual": "letters",
+   "letters": {
+    "word": "TAHAJJUD"
+   }
+  },
+  {
+   "top": "Nicht wach bleiben.",
+   "big": "*Aufstehen*. Nach dem Schlaf.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Und das ist der Punkt.",
+   "big": "Dieses Gebet kostet dich *etwas*.",
+   "visual": "none"
+  },
+  {
+   "top": "Niemand sieht es.",
+   "big": "Es gibt keine Gemeinde, kein Lob, kein Foto.",
+   "visual": "none"
+  },
+  {
+   "top": "Nur du.",
+   "big": "Und der, der *gefragt* hat.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Du brauchst keine acht Rakat.",
+   "big": "*Zwei* reichen. Plus die drei Fragen, auf die du antwortest.",
+   "visual": "stat",
+   "stat": {
+    "value": "2",
+    "unit": "Rakat",
+    "sub": "REICHEN"
+   }
+  },
+  {
+   "top": "Stell den Wecker einmal",
+   "big": "*20 Minuten* vor dem Fadschr.",
+   "visual": "stat",
+   "stat": {
+    "value": "20",
+    "unit": "Min.",
+    "sub": "VOR FADSCHR"
+   }
+  },
+  {
+   "top": "Einmal.",
+   "big": "Dann weißt du, warum man davon nicht mehr weg *will*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 1145 (Buch 19, Hadith 26)",
+    "Koran 17:80 (alislam.org, Ahmadiyya-Zählung)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Allah steigt im letzten Drittel der Nacht herab und fragt: wer ruft Mich, wer bittet Mich, wer bittet um Vergebung",
+   "ref": "Sahih al-Bukhari 1145, Buch 19, Hadith 26",
+   "url": "https://sunnah.com/bukhari:1145",
+   "verified": true
+  },
+  {
+   "claim": "Koran 17:80 — Tahajjud als zusätzliches Nachtgebet, „ruhmvoller Rang“",
+   "ref": "alislam.org, Ahmadiyya-Zählung (Hafs 17:79)",
+   "url": "https://www.alislam.org/quran/17:80",
+   "verified": true
+  }
+ ],
+ "caption": "Jede Nacht geht ein Fenster auf — immer zur gleichen Zeit. Und fast alle schlafen dabei.\n\nIm letzten Drittel der Nacht stellt Allah drei Fragen: Wer ruft Mich, dass Ich antworte? Wer bittet Mich, dass Ich gebe? Wer bittet um Vergebung, dass Ich vergebe? (Bukhari 1145)\n\nDie Antwort steckt in der Frage. Er fragt nicht, ob jemand es verdient — nur, ob jemand da ist.\n\n„Und wache einen Teil der Nacht im Gebet.“ (17:80) Tahajjud heißt: den Schlaf abstreifen. Aufstehen. Nach dem Schlaf.\n\nZwei Rakat reichen. Stell den Wecker einmal 20 Minuten vor dem Fadschr.\n\nQuellen: Sahih al-Bukhari 1145 · alislam.org\n\n#islam #tahajjud #gebet #nacht #koran #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "Jede Nacht geht ein Fenster auf. Immer zur gleichen Zeit. [pause] Und fast alle schlafen dabei. [pause] Der Prophet sallallahu alaihi wa sallam hat beschrieben, was im letzten Drittel der Nacht passiert. [pause] Da fragt Allah: Wer ruft Mich — damit Ich ihm antworte? [pause] Drei Fragen. Jede Nacht. Jede. [pause] Eins: Wer ruft Mich, dass Ich antworte? [pause] Zwei: Wer bittet Mich, dass Ich gebe? [pause] Drei: Wer bittet um Vergebung, dass Ich vergebe? [pause] Beachte: Die Antwort ist in der Frage schon enthalten. [pause] Er fragt nicht, ob jemand es verdient. Er fragt nur, ob jemand da ist. [pause] Und im Koran steht der Auftrag dazu: „Und wache einen Teil der Nacht im Gebet.“ [pause] Das Wort dafür: Tahajjud. Von der Wurzel für „den Schlaf abstreifen“. [pause] Nicht wach bleiben. Aufstehen. Nach dem Schlaf. [pause] Und das ist der Punkt. Dieses Gebet kostet dich etwas. [pause] Niemand sieht es. Es gibt keine Gemeinde, kein Lob, kein Foto. [pause] Nur du. Und der, der gefragt hat. [pause] Du brauchst keine acht Rakat. Zwei reichen. Plus die drei Fragen, auf die du antwortest. [pause] Stell den Wecker einmal 20 Minuten vor dem Fadschr. [pause] Einmal. Dann weißt du, warum man davon nicht mehr weg will.",
+ "palette": {
+  "bg": "#1C1410",
+  "ink": "#F3E9DC",
+  "dim": "#B8A68F",
+  "accent": "#D98C3F",
+  "card": "#2A1F18",
+  "line": "#4A3A2E",
+  "mute": "#8A7866"
+ }
+}

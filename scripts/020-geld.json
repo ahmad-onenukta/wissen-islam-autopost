@@ -1,0 +1,178 @@
+{
+ "id": "020",
+ "thema": "Geld",
+ "title": "Der einzige Krieg, den Allah selbst erklärt",
+ "hook": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankündigt, sondern Krieg. Und sie steht heute in fast jedem Vertrag.",
+ "appeal": "Schau dir einen Vertrag an, den du gerade hast. Nicht die Rate — den Zinssatz. Und frag, ob es einen Weg ohne gibt.",
+ "blocks": [
+  {
+   "top": "Im Koran gibt es eine Sünde,",
+   "big": "bei der Allah nicht Strafe ankündigt.",
+   "visual": "none"
+  },
+  {
+   "top": "Sondern",
+   "big": "*Krieg*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Nicht Mord.",
+   "big": "Nicht Götzendienst. Nicht Ehebruch.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "*Zins*.",
+   "visual": "letters",
+   "letters": {
+    "word": "RIBA"
+   }
+  },
+  {
+   "top": "Der Vers:",
+   "big": "„Wenn ihr es nicht lasst — dann erwartet *Krieg* von Allah und Seinem Gesandten.“",
+   "visual": "quote",
+   "quote": "So erwartet Krieg von Allah und Seinem Gesandten.",
+   "quoteRef": "KORAN 2:280"
+  },
+  {
+   "top": "Das ist in der ganzen Schrift",
+   "big": "*einmalig* in dieser Form.",
+   "visual": "none"
+  },
+  {
+   "top": "Warum so scharf?",
+   "big": "Schau dir an, was Zins *mathematisch* ist.",
+   "visual": "question",
+   "light": true
+  },
+  {
+   "top": "Geld, das wächst,",
+   "big": "ohne dass jemand *arbeitet*.",
+   "visual": "none"
+  },
+  {
+   "top": "Kein Risiko. Kein Produkt.",
+   "big": "Keine Zeit, kein Schweiß.",
+   "visual": "compare",
+   "ca": {
+    "label": "Handel",
+    "value": "Risiko geteilt",
+    "accent": true
+   },
+   "cb": {
+    "label": "Zins",
+    "value": "Risiko einseitig"
+   }
+  },
+  {
+   "top": "Und wenn der Schuldner ausfällt,",
+   "big": "trägt er den Verlust *allein*.",
+   "visual": "none"
+  },
+  {
+   "top": "Deshalb der Vers direkt davor:",
+   "big": "„Allah lässt den Zins *schwinden* und die Mildtätigkeit wachsen.“",
+   "visual": "ayah",
+   "ar": "*يَمْحَقُ ٱللَّهُ ٱلرِّبَوٰا۟* وَيُرْبِى ٱلصَّدَقَـٰتِ",
+   "de": "„Allah lässt den Zins schwinden und die Mildtätigkeit wachsen.“",
+   "ref": "SURE 2 · VERS 277"
+  },
+  {
+   "top": "Beachte die Umkehrung.",
+   "big": "Das Wachsende *schrumpft*. Das Weggegebene *wächst*.",
+   "visual": "slider",
+   "slider": {
+    "a": "ZINS",
+    "b": "SADAQA",
+    "pos": 1.0,
+    "label": "Was wächst wirklich?"
+   }
+  },
+  {
+   "top": "Und dann kommt der Satz,",
+   "big": "der die ganze Logik *umdreht*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Wenn du aufhörst:",
+   "big": "„Dann steht euch euer *Kapital* zu — ihr tut kein Unrecht und es wird euch keines getan.“",
+   "visual": "ayah",
+   "ar": "وَإِن تُبْتُمْ *فَلَكُمْ رُءُوسُ أَمْوَٰلِكُمْ* لَا تَظْلِمُونَ وَلَا تُظْلَمُونَ",
+   "de": "„Und wenn ihr umkehrt, dann steht euch euer Kapital zu — ihr tut kein Unrecht und es wird euch keines getan.“",
+   "ref": "SURE 2 · VERS 280"
+  },
+  {
+   "top": "Dein Geld bekommst du zurück.",
+   "big": "Nur der *Aufschlag* fällt weg.",
+   "visual": "none"
+  },
+  {
+   "top": "Es geht nicht darum, arm zu sein.",
+   "big": "Es geht darum, *woher* der Zuwachs kommt.",
+   "visual": "none"
+  },
+  {
+   "top": "Und ja — das ist unbequem.",
+   "big": "Dispo, Kreditkarte, Ratenkauf, Finanzierung.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Niemand löst das in einem Tag.",
+   "big": "Aber *wissen*, was es ist, ist der Anfang.",
+   "visual": "none"
+  },
+  {
+   "top": "Schau dir einen Vertrag an,",
+   "big": "den du *gerade* hast.",
+   "visual": "none"
+  },
+  {
+   "top": "Nicht die Rate.",
+   "big": "Den *Zinssatz*. Und frag, ob es einen Weg ohne gibt.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 2:277 · 2:279–280 (alislam.org, Ahmadiyya-Zählung)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "„Allah lässt den Zins schwinden und die Mildtätigkeit wachsen“",
+   "ref": "Koran 2:277, alislam.org (Hafs 2:276)",
+   "url": "https://www.alislam.org/quran/2:277",
+   "verified": true
+  },
+  {
+   "claim": "„So erwartet Krieg von Allah und Seinem Gesandten … und wenn ihr umkehrt, steht euch euer Kapital zu“",
+   "ref": "Koran 2:280, alislam.org (Hafs 2:279)",
+   "url": "https://www.alislam.org/quran/2:280",
+   "verified": true
+  }
+ ],
+ "caption": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankündigt, sondern Krieg: „So erwartet Krieg von Allah und Seinem Gesandten.“ (2:280) Es geht um Riba — Zins.\n\nWarum so scharf? Zins ist Geld, das wächst, ohne dass jemand arbeitet. Kein Risiko, kein Produkt — und wenn der Schuldner ausfällt, trägt er den Verlust allein.\n\n„Allah lässt den Zins schwinden und die Mildtätigkeit wachsen.“ (2:277) Das Wachsende schrumpft, das Weggegebene wächst.\n\nUnd wenn du aufhörst: „Dann steht euch euer Kapital zu.“ Dein Geld bekommst du zurück — nur der Aufschlag fällt weg.\n\nSchau dir einen Vertrag an. Nicht die Rate — den Zinssatz.\n\nQuellen: alislam.org\n\n#islam #riba #zins #geld #koran #halal #wissen #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankündigt. [pause] Sondern Krieg. [pause] Nicht Mord. Nicht Götzendienst. Nicht Ehebruch. [pause] Zins. [pause] Der Vers: „Wenn ihr es nicht lasst — dann erwartet Krieg von Allah und Seinem Gesandten.“ [pause] Das ist in der ganzen Schrift einmalig in dieser Form. [pause] Warum so scharf? Schau dir an, was Zins mathematisch ist. [pause] Geld, das wächst, ohne dass jemand arbeitet. [pause] Kein Risiko. Kein Produkt. Keine Zeit, kein Schweiß. [pause] Und wenn der Schuldner ausfällt, trägt er den Verlust allein. [pause] Deshalb der Vers direkt davor: „Allah lässt den Zins schwinden und die Mildtätigkeit wachsen.“ [pause] Beachte die Umkehrung. Das Wachsende schrumpft. Das Weggegebene wächst. [pause] Und dann kommt der Satz, der die ganze Logik umdreht. [pause] Wenn du aufhörst: „Dann steht euch euer Kapital zu — ihr tut kein Unrecht und es wird euch keines getan.“ [pause] Dein Geld bekommst du zurück. Nur der Aufschlag fällt weg. [pause] Es geht nicht darum, arm zu sein. Es geht darum, woher der Zuwachs kommt. [pause] Und ja — das ist unbequem. Dispo, Kreditkarte, Ratenkauf, Finanzierung. [pause] Niemand löst das in einem Tag. Aber wissen, was es ist, ist der Anfang. [pause] Schau dir einen Vertrag an, den du gerade hast. [pause] Nicht die Rate. Den Zinssatz. Und frag, ob es einen Weg ohne gibt.",
+ "palette": {
+  "bg": "#0A1430",
+  "ink": "#DCE9FF",
+  "dim": "#9FB3D9",
+  "accent": "#7FB3FF",
+  "card": "#122048",
+  "line": "#2A3A66",
+  "mute": "#6F85B3"
+ }
+}

@@ -1,0 +1,186 @@
+{
+ "id": "019",
+ "thema": "Motivation",
+ "title": "Vor dir das Meer, hinter dir das Heer",
+ "hook": "Vor ihm das Meer. Hinter ihm eine Armee. Und sein Volk sagt: Wir sind erledigt. Seine Antwort besteht aus vier Wörtern.",
+ "appeal": "Du brauchst nicht den Weg zu sehen. Du brauchst den ersten Schritt. Mach ihn heute.",
+ "blocks": [
+  {
+   "top": "Vor ihm das *Meer*.",
+   "big": "Hinter ihm eine Armee.",
+   "visual": "map",
+   "mapFrom": "Kairo",
+   "mapTo": "Jerusalem"
+  },
+  {
+   "top": "Keine Boote. Keine Brücke.",
+   "big": "Kein Weg nach *links* oder rechts.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Sein Volk sagt:",
+   "big": "„Wir sind *erledigt*.“",
+   "visual": "quote",
+   "quote": "Wir sind erledigt!",
+   "quoteRef": "KORAN 26:62"
+  },
+  {
+   "top": "Und das war keine Panikmache.",
+   "big": "Das war eine *korrekte* Lagebeurteilung.",
+   "visual": "none"
+  },
+  {
+   "top": "Jeder Stratege hätte ihnen",
+   "big": "*zugestimmt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Dann antwortet Musa.",
+   "big": "Mit *vier* Wörtern.",
+   "visual": "letters",
+   "letters": {
+    "word": "4"
+   }
+  },
+  {
+   "top": "",
+   "big": "„*Nein*. Mit mir ist mein Herr. Er wird mich leiten.“",
+   "visual": "ayah",
+   "ar": "قَالَ كَلَّآ *إِنَّ مَعِىَ رَبِّى سَيَهْدِينِ*",
+   "de": "„Er sprach: Nein! Mit mir ist mein Herr; Er wird mich leiten.“",
+   "ref": "SURE 26 · VERS 63"
+  },
+  {
+   "top": "Lies es nochmal.",
+   "big": "Da steht *nicht*: das Meer wird sich teilen.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Da steht nicht:",
+   "big": "Ich habe einen *Plan*.",
+   "visual": "none"
+  },
+  {
+   "top": "Da steht:",
+   "big": "Er wird mich *leiten*.",
+   "visual": "none"
+  },
+  {
+   "top": "Musa wusste in diesem Moment",
+   "big": "noch *nicht*, wie es weitergeht.",
+   "visual": "none"
+  },
+  {
+   "top": "Er wusste nur,",
+   "big": "*mit wem* er dastand.",
+   "visual": "compare",
+   "ca": {
+    "label": "Was er wusste",
+    "value": "mit wem",
+    "accent": true
+   },
+   "cb": {
+    "label": "Was er nicht wusste",
+    "value": "wie"
+   }
+  },
+  {
+   "top": "Und erst *danach*",
+   "big": "kommt die Anweisung: Schlag mit dem Stab.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Die Reihenfolge ist der ganze Punkt.",
+   "big": "Erst das Vertrauen. *Dann* der Weg.",
+   "visual": "slider",
+   "slider": {
+    "a": "VERTRAUEN",
+    "b": "WEG",
+    "pos": 0.0,
+    "label": "Was kommt zuerst?"
+   }
+  },
+  {
+   "top": "Nicht:",
+   "big": "Ich vertraue, *wenn* ich den Weg sehe.",
+   "visual": "none"
+  },
+  {
+   "top": "Und genau da stehen wir.",
+   "big": "Kündigung. Diagnose. Trennung. Prüfung nicht bestanden.",
+   "visual": "none"
+  },
+  {
+   "top": "Wir wollen erst die Lösung sehen",
+   "big": "und *dann* ruhig werden.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Allah sagt:",
+   "big": "„Die sich um Uns mühen — Wir werden sie auf Unsere *Wege* leiten.“",
+   "visual": "ayah",
+   "ar": "وَٱلَّذِينَ جَـٰهَدُوا۟ فِينَا *لَنَهْدِيَنَّهُمْ سُبُلَنَا*",
+   "de": "„Und die sich um Uns mühen — Wir werden sie sicherlich auf Unsere Wege leiten.“",
+   "ref": "SURE 29 · VERS 70"
+  },
+  {
+   "top": "Zuerst die Mühe.",
+   "big": "Dann der *Weg*. Nicht umgekehrt.",
+   "visual": "none"
+  },
+  {
+   "top": "Du brauchst nicht den Weg zu sehen.",
+   "big": "Du brauchst den *ersten Schritt*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "",
+   "big": "Mach ihn *heute*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 26:63 · 29:70 (alislam.org, Ahmadiyya-Zählung)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Am Meer sagt das Volk „Wir sind erledigt“, Musa antwortet: „Nein! Mit mir ist mein Herr; Er wird mich leiten“",
+   "ref": "Koran 26:63, alislam.org (Hafs 26:62)",
+   "url": "https://www.alislam.org/quran/26:63",
+   "verified": true
+  },
+  {
+   "claim": "„Die sich um Uns mühen — Wir werden sie auf Unsere Wege leiten“",
+   "ref": "Koran 29:70, alislam.org (Hafs 29:69)",
+   "url": "https://www.alislam.org/quran/29:70",
+   "verified": true
+  }
+ ],
+ "caption": "Vor ihm das Meer, hinter ihm eine Armee. Sein Volk sagt: „Wir sind erledigt“ — und das war eine korrekte Lagebeurteilung.\n\nMusas Antwort: „Nein! Mit mir ist mein Herr; Er wird mich leiten.“ (26:63)\n\nDa steht nicht „das Meer wird sich teilen“. Da steht nicht „ich habe einen Plan“. Er wusste in dem Moment nicht, wie es weitergeht — nur, mit wem er dastand. Die Anweisung mit dem Stab kommt erst danach.\n\n„Die sich um Uns mühen — Wir werden sie auf Unsere Wege leiten.“ (29:70) Zuerst die Mühe, dann der Weg.\n\nDu brauchst nicht den Weg zu sehen. Du brauchst den ersten Schritt.\n\nQuellen: alislam.org\n\n#islam #motivation #tawakkul #koran #musa #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "Vor ihm das Meer. Hinter ihm eine Armee. [pause] Keine Boote. Keine Brücke. Kein Weg nach links oder rechts. [pause] Sein Volk sagt: „Wir sind erledigt.“ [pause] Und das war keine Panikmache. Das war eine korrekte Lagebeurteilung. [pause] Jeder Stratege hätte ihnen zugestimmt. [pause] Dann antwortet Musa. Mit vier Wörtern. [pause] „Nein. Mit mir ist mein Herr. Er wird mich leiten.“ [pause] Lies es nochmal. Da steht nicht: das Meer wird sich teilen. [pause] Da steht nicht: Ich habe einen Plan. [pause] Da steht: Er wird mich leiten. [pause] Musa wusste in diesem Moment noch nicht, wie es weitergeht. [pause] Er wusste nur, mit wem er dastand. [pause] Und erst danach kommt die Anweisung: Schlag mit dem Stab. [pause] Die Reihenfolge ist der ganze Punkt. Erst das Vertrauen. Dann der Weg. [pause] Nicht: Ich vertraue, wenn ich den Weg sehe. [pause] Und genau da stehen wir. Kündigung. Diagnose. Trennung. Prüfung nicht bestanden. [pause] Wir wollen erst die Lösung sehen und dann ruhig werden. [pause] Allah sagt: „Die sich um Uns mühen — Wir werden sie auf Unsere Wege leiten.“ [pause] Zuerst die Mühe. Dann der Weg. Nicht umgekehrt. [pause] Du brauchst nicht den Weg zu sehen. Du brauchst den ersten Schritt. [pause] Mach ihn heute.",
+ "palette": {
+  "bg": "#1C1410",
+  "ink": "#F3E9DC",
+  "dim": "#B8A68F",
+  "accent": "#D98C3F",
+  "card": "#2A1F18",
+  "line": "#4A3A2E",
+  "mute": "#8A7866"
+ }
+}

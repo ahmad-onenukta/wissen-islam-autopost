@@ -1,0 +1,170 @@
+{
+ "id": "018",
+ "thema": "Geduld / Sabr",
+ "title": "Der Mann, der nie fragte „warum ich?“",
+ "hook": "Er verliert sein Vermögen, seine Kinder und seine Gesundheit. Und in seinem ganzen Bittgebet kommt ein Wort nicht vor: warum.",
+ "appeal": "Nimm dein Bittgebet heute und streich das Wort „warum“. Was übrig bleibt, ist Sabr.",
+ "blocks": [
+  {
+   "top": "Er verliert sein Vermögen.",
+   "big": "Dann seine Kinder.",
+   "visual": "none"
+  },
+  {
+   "top": "Dann seine *Gesundheit*.",
+   "big": "",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Und in seinem ganzen Bittgebet",
+   "big": "kommt ein Wort *nicht* vor.",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "*Warum*.",
+   "visual": "none"
+  },
+  {
+   "top": "Sein Name:",
+   "big": "*Ayyub*. Im Deutschen: Hiob.",
+   "visual": "none"
+  },
+  {
+   "top": "Der Koran erzählt seine Krankheit",
+   "big": "ohne ein einziges *Detail*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Keine Diagnose. Keine Dauer.",
+   "big": "Nur: *Not*.",
+   "visual": "none"
+  },
+  {
+   "top": "Warum so knapp?",
+   "big": "Weil es nicht um die Krankheit geht.",
+   "visual": "none"
+  },
+  {
+   "top": "Es geht um *vier* Worte,",
+   "big": "die er sagt.",
+   "visual": "letters",
+   "letters": {
+    "word": "4"
+   }
+  },
+  {
+   "top": "Nicht: nimm es weg.",
+   "big": "Nicht: ich habe es nicht verdient.",
+   "visual": "none"
+  },
+  {
+   "top": "Sondern:",
+   "big": "„Mich hat *Not* ergriffen — und Du bist der Barmherzigste der Barmherzigen.“",
+   "visual": "quote",
+   "quote": "Mich hat Not ergriffen, und Du bist der Barmherzigste der Barmherzigen.",
+   "quoteRef": "KORAN 21:84"
+  },
+  {
+   "top": "Das ist alles.",
+   "big": "Er *beschreibt* seine Lage. Und dann *Ihn*.",
+   "visual": "compare",
+   "ca": {
+    "label": "Teil 1",
+    "value": "meine Not"
+   },
+   "cb": {
+    "label": "Teil 2",
+    "value": "Deine Gnade",
+    "accent": true
+   }
+  },
+  {
+   "top": "Keine Forderung.",
+   "big": "Kein Vorwurf. Keine *Verhandlung*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Und die Antwort Allahs:",
+   "big": "„Da erhörten Wir ihn und nahmen seine Not von ihm.“",
+   "visual": "ayah",
+   "ar": "*فَٱسْتَجَبْنَا لَهُۥ* فَكَشَفْنَا مَا بِهِۦ مِن ضُرٍّ وَءَاتَيْنَـٰهُ أَهْلَهُۥ وَمِثْلَهُم مَّعَهُمْ رَحْمَةً مِّنْ عِندِنَا",
+   "de": "„Da erhörten Wir ihn und nahmen seine Not von ihm und gaben ihm seine Familie und noch mehr dazu — als Barmherzigkeit von Uns.“",
+   "ref": "SURE 21 · VERS 85"
+  },
+  {
+   "top": "Nicht nur zurück.",
+   "big": "„Und noch *mehr* dazu.“",
+   "visual": "none"
+  },
+  {
+   "top": "Und die Heilung selbst?",
+   "big": "Ein Satz: „Stampf mit deinem *Fuß* auf.“",
+   "visual": "ayah",
+   "ar": "*ٱرْكُضْ بِرِجْلِكَ* هَـٰذَا مُغْتَسَلٌۢ بَارِدٌ وَشَرَابٌ",
+   "de": "„Stampf mit deinem Fuß auf! Hier ist kühles Wasser zum Waschen und zum Trinken.“",
+   "ref": "SURE 38 · VERS 43"
+  },
+  {
+   "top": "Eine Quelle.",
+   "big": "Unter seinem eigenen *Fuß*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Jahrelang hat sie dort gelegen.",
+   "big": "Er musste nur *aufstehen* und auftreten.",
+   "visual": "none"
+  },
+  {
+   "top": "Sabr ist nicht Zähne zusammenbeißen.",
+   "big": "Sabr ist: weiter *reden*, ohne zu fordern.",
+   "visual": "none"
+  },
+  {
+   "top": "Nimm dein Bittgebet heute",
+   "big": "und streich das Wort *warum*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Was übrig bleibt,",
+   "big": "ist *Sabr*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 21:84–85 · 38:42–45 (alislam.org, Ahmadiyya-Zählung)",
+    "Hiob im Koran: Ayyub (ع)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Ayyub bittet: „Mich hat Not ergriffen, und Du bist der Barmherzigste der Barmherzigen“; Allah erhört ihn, nimmt die Not und gibt ihm seine Familie und mehr dazu",
+   "ref": "Koran 21:84–85, alislam.org (Hafs 21:83–84)",
+   "url": "https://www.alislam.org/quran/21:85",
+   "verified": true
+  },
+  {
+   "claim": "„Stampf mit deinem Fuß auf — hier ist kühles Wasser zum Waschen und zum Trinken“",
+   "ref": "Koran 38:43, alislam.org (Hafs 38:42)",
+   "url": "https://www.alislam.org/quran/38:43",
+   "verified": true
+  }
+ ],
+ "caption": "Er verliert sein Vermögen, seine Kinder, seine Gesundheit. Und in seinem ganzen Bittgebet fehlt ein Wort: warum.\n\nAyyub (ع) sagt nur zwei Dinge: „Mich hat Not ergriffen“ — und „Du bist der Barmherzigste der Barmherzigen.“ (21:84) Seine Lage, und dann Sein Wesen. Keine Forderung, kein Vorwurf.\n\nDie Antwort: „Da erhörten Wir ihn … und gaben ihm seine Familie und noch mehr dazu.“ (21:85)\n\nUnd die Heilung? „Stampf mit deinem Fuß auf.“ (38:43) Die Quelle lag die ganze Zeit unter seinem Fuß — er musste nur aufstehen.\n\nSabr ist nicht Zähne zusammenbeißen. Sabr ist weiter reden, ohne zu fordern.\n\nQuellen: alislam.org\n\n#islam #sabr #geduld #koran #ayyub #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "sabrina",
+ "vo_full": "Er verliert sein Vermögen. Dann seine Kinder. [pause] Dann seine Gesundheit. [pause] Und in seinem ganzen Bittgebet kommt ein Wort nicht vor. [pause] Warum. [pause] Sein Name: Ayyub. Im Deutschen: Hiob. [pause] Der Koran erzählt seine Krankheit ohne ein einziges Detail. [pause] Keine Diagnose. Keine Dauer. Nur: Not. [pause] Warum so knapp? Weil es nicht um die Krankheit geht. [pause] Es geht um vier Worte, die er sagt. [pause] Nicht: nimm es weg. Nicht: ich habe es nicht verdient. [pause] Sondern: „Mich hat Not ergriffen — und Du bist der Barmherzigste der Barmherzigen.“ [pause] Das ist alles. Er beschreibt seine Lage. Und dann Ihn. [pause] Keine Forderung. Kein Vorwurf. Keine Verhandlung. [pause] Und die Antwort Allahs: „Da erhörten Wir ihn und nahmen seine Not von ihm.“ [pause] Nicht nur zurück. „Und noch mehr dazu.“ [pause] Und die Heilung selbst? Ein Satz: „Stampf mit deinem Fuß auf.“ [pause] Eine Quelle. Unter seinem eigenen Fuß. [pause] Jahrelang hat sie dort gelegen. Er musste nur aufstehen und auftreten. [pause] Sabr ist nicht Zähne zusammenbeißen. Sabr ist: weiter reden, ohne zu fordern. [pause] Nimm dein Bittgebet heute und streich das Wort warum. [pause] Was übrig bleibt, ist Sabr."
+}

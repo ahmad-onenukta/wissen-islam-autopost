@@ -1,0 +1,185 @@
+{
+ "id": "016",
+ "thema": "Gebete",
+ "title": "Die 40 Zentimeter, die alles entscheiden",
+ "hook": "Es gibt eine Position, in der du Allah näher bist als in jeder anderen. Und die meisten rauschen in drei Sekunden durch.",
+ "appeal": "Bleib heute im Sujud zehn Sekunden länger. Und sag Ihm, was du niemandem sagst.",
+ "blocks": [
+  {
+   "top": "Es gibt eine Position,",
+   "big": "in der du Allah *näher* bist als in jeder anderen.",
+   "visual": "none"
+  },
+  {
+   "top": "Nicht im Stehen.",
+   "big": "Nicht beim Bittgebet mit erhobenen Händen.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Der Prophet ﷺ hat gesagt:",
+   "big": "„Am *nächsten* ist der Diener seinem Herrn, wenn er sich niederwirft.“",
+   "visual": "ayah",
+   "ar": "*أَقْرَبُ مَا يَكُونُ ٱلْعَبْدُ مِنْ رَبِّهِ وَهُوَ سَاجِدٌ* فَأَكْثِرُوا ٱلدُّعَاءَ",
+   "de": "„Am nächsten ist der Diener seinem Herrn, wenn er sich niederwirft — so bittet viel.“",
+   "ref": "SAHIH MUSLIM 482"
+  },
+  {
+   "top": "Und dann der Nachsatz, den kaum einer zitiert:",
+   "big": "„*So bittet viel.*“",
+   "visual": "none"
+  },
+  {
+   "top": "Das ist eine Anweisung.",
+   "big": "Im Sujud soll etwas *gesagt* werden.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Jetzt rechne mal nach.",
+   "big": "Wie lange bist du in einem Sujud?",
+   "visual": "question"
+  },
+  {
+   "top": "Bei den meisten:",
+   "big": "*drei* Sekunden. Subhana rabbi al-a'la, hoch, runter, weiter.",
+   "visual": "stat",
+   "stat": {
+    "value": "3",
+    "unit": "Sek.",
+    "sub": "DURCHSCHNITT"
+   }
+  },
+  {
+   "top": "Die Position mit dem direktesten Zugang",
+   "big": "ist die *kürzeste* im ganzen Gebet.",
+   "visual": "none"
+  },
+  {
+   "top": "Warum gerade dort?",
+   "big": "Schau dir an, was im Sujud *passiert*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Dein Kopf — der Teil, mit dem du denkst, planst, stolz bist —",
+   "big": "liegt *unter* dem Niveau deines Herzens.",
+   "visual": "none"
+  },
+  {
+   "top": "Niedriger kann ein Mensch nicht gehen.",
+   "big": "Es gibt keine Haltung *darunter*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und genau da",
+   "big": "ist die Entfernung am *kleinsten*.",
+   "visual": "slider",
+   "slider": {
+    "a": "STEHEN",
+    "b": "SUJUD",
+    "pos": 1.0,
+    "label": "Abstand zu Ihm"
+   }
+  },
+  {
+   "top": "Im Koran sagt Allah:",
+   "big": "„Wenn Meine Diener dich nach Mir fragen: Ich bin *nahe*.“",
+   "visual": "ayah",
+   "ar": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى *فَإِنِّى قَرِيبٌ* أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ",
+   "de": "„Und wenn Meine Diener dich über Mich befragen: Ich bin nahe. Ich antworte dem Gebet des Bittenden, wenn er Mich anruft.“",
+   "ref": "SURE 2 · VERS 187"
+  },
+  {
+   "top": "Nicht: Ich höre von weit weg.",
+   "big": "*Nahe*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Und beachte die Reihenfolge im Vers:",
+   "big": "Erst *Ich bin nahe*. Dann *Ich antworte*.",
+   "visual": "compare",
+   "ca": {
+    "label": "Zuerst",
+    "value": "nahe",
+    "accent": true
+   },
+   "cb": {
+    "label": "Dann",
+    "value": "Antwort"
+   }
+  },
+  {
+   "top": "Die Nähe kommt",
+   "big": "*vor* der Antwort.",
+   "visual": "none"
+  },
+  {
+   "top": "Du musst nichts Arabisches können.",
+   "big": "Nach dem Pflicht-Tasbih darfst du in *deiner* Sprache bitten.",
+   "visual": "none"
+  },
+  {
+   "top": "Das ist der Moment,",
+   "big": "in dem der Platz schon *reserviert* ist.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Bleib heute im Sujud",
+   "big": "*zehn Sekunden* länger.",
+   "visual": "stat",
+   "stat": {
+    "value": "+10",
+    "unit": "Sek.",
+    "sub": "REICHT"
+   }
+  },
+  {
+   "top": "Und sag Ihm,",
+   "big": "was du *niemandem* sagst.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih Muslim 482 (Buch 4)",
+    "Koran 2:187 (alislam.org, Ahmadiyya-Zählung)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "„Am nächsten ist der Diener seinem Herrn, wenn er sich niederwirft — so bittet viel“ (Abu Huraira)",
+   "ref": "Sahih Muslim 482, Buch 4 (Gebet)",
+   "url": "https://sunnah.com/muslim:482",
+   "verified": true
+  },
+  {
+   "claim": "Koran 2:187 — „Ich bin nahe, Ich antworte dem Gebet des Bittenden“",
+   "ref": "alislam.org, Ahmadiyya-Zählung (Hafs 2:186)",
+   "url": "https://www.alislam.org/quran/2:187",
+   "verified": true
+  }
+ ],
+ "caption": "Es gibt eine Position, in der du Allah näher bist als in jeder anderen — und die meisten rauschen in drei Sekunden durch.\n\n„Am nächsten ist der Diener seinem Herrn, wenn er sich niederwirft — so bittet viel.“ (Muslim 482)\n\nDer Nachsatz ist eine Anweisung: im Sujud soll etwas gesagt werden. Dein Kopf liegt unter dem Niveau deines Herzens — niedriger kann ein Mensch nicht gehen.\n\nUnd im Koran: „Ich bin nahe. Ich antworte dem Gebet des Bittenden.“ (2:187) Erst die Nähe, dann die Antwort.\n\nBleib heute zehn Sekunden länger. Und sag Ihm, was du niemandem sagst.\n\nQuellen: Sahih Muslim 482 · alislam.org\n\n#islam #gebet #sujud #dua #koran #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "sabrina",
+ "vo_full": "Es gibt eine Position, in der du Allah näher bist als in jeder anderen. [pause] Nicht im Stehen. Nicht beim Bittgebet mit erhobenen Händen. [pause] Der Prophet sallallahu alaihi wa sallam hat gesagt: „Am nächsten ist der Diener seinem Herrn, wenn er sich niederwirft.“ [pause] Und dann der Nachsatz, den kaum einer zitiert: „So bittet viel.“ [pause] Das ist eine Anweisung. Im Sujud soll etwas gesagt werden. [pause] Jetzt rechne mal nach. Wie lange bist du in einem Sujud? [pause] Bei den meisten: drei Sekunden. Subhana rabbi al-a'la, hoch, runter, weiter. [pause] Die Position mit dem direktesten Zugang ist die kürzeste im ganzen Gebet. [pause] Warum gerade dort? Schau dir an, was im Sujud passiert. [pause] Dein Kopf — der Teil, mit dem du denkst, planst, stolz bist — liegt unter dem Niveau deines Herzens. [pause] Niedriger kann ein Mensch nicht gehen. Es gibt keine Haltung darunter. [pause] Und genau da ist die Entfernung am kleinsten. [pause] Im Koran sagt Allah: „Wenn Meine Diener dich nach Mir fragen: Ich bin nahe.“ [pause] Nicht: Ich höre von weit weg. Nahe. [pause] Und beachte die Reihenfolge im Vers: Erst Ich bin nahe. Dann Ich antworte. [pause] Die Nähe kommt vor der Antwort. [pause] Du musst nichts Arabisches können. Nach dem Pflicht-Tasbih darfst du in deiner Sprache bitten. [pause] Das ist der Moment, in dem der Platz schon reserviert ist. [pause] Bleib heute im Sujud zehn Sekunden länger. [pause] Und sag Ihm, was du niemandem sagst.",
+ "palette": {
+  "bg": "#0A1430",
+  "ink": "#DCE9FF",
+  "dim": "#9FB3D9",
+  "accent": "#7FB3FF",
+  "card": "#122048",
+  "line": "#2A3A66",
+  "mute": "#6F85B3"
+ }
+}
