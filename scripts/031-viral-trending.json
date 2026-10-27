@@ -1,0 +1,185 @@
+{
+ "id": "031",
+ "thema": "Viral & Trending",
+ "title": "Warum dein Kopf nach zwei Stunden Scrollen leerer ist als vorher",
+ "hook": "Du legst das Handy weg und fühlst dich leerer als vorher. Der Koran beschreibt genau diesen Zustand — und nennt den Grund in einem Halbsatz.",
+ "appeal": "Nimm heute die ersten zehn Minuten nach dem Aufwachen. Kein Handy. Nur Dhikr. Zehn Minuten.",
+ "blocks": [
+  {
+   "top": "Du legst das Handy weg",
+   "big": "und fühlst dich *leerer* als vorher.",
+   "visual": "none"
+  },
+  {
+   "top": "Nicht traurig. Nicht wütend.",
+   "big": "*Unruhig*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Der Koran beschreibt genau diesen Zustand.",
+   "big": "Und nennt den Grund in einem *Halbsatz*.",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "„Werdet nicht wie die, die *Allah vergaßen* — da ließ Er sie sich selbst vergessen.“",
+   "visual": "ayah",
+   "ar": "وَلَا تَكُونُوا۟ كَٱلَّذِينَ *نَسُوا۟ ٱللَّهَ فَأَنسَىٰهُمْ أَنفُسَهُمْ*",
+   "de": "„Und werdet nicht wie die, die Allah vergaßen, und die Er darum sich selbst vergessen ließ.“",
+   "ref": "SURE 59 · VERS 20"
+  },
+  {
+   "top": "Lies den zweiten Teil nochmal.",
+   "big": "*Sich selbst* vergessen.",
+   "visual": "none"
+  },
+  {
+   "top": "Nicht: Sie vergaßen Gott und waren dann frei.",
+   "big": "Sie verloren den Zugang zu sich *selbst*.",
+   "visual": "compare",
+   "ca": {
+    "label": "Vergessen",
+    "value": "Ihn"
+   },
+   "cb": {
+    "label": "Verloren",
+    "value": "sich selbst",
+    "accent": true
+   }
+  },
+  {
+   "top": "Und genau das beschreibt",
+   "big": "zwei Stunden *Feed* ziemlich genau.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Du weißt danach, was andere tun.",
+   "big": "Aber nicht mehr, was *du* wolltest.",
+   "visual": "none"
+  },
+  {
+   "top": "Du hast 200 Leben gesehen",
+   "big": "und *keine* Minute im eigenen verbracht.",
+   "visual": "stat",
+   "stat": {
+    "value": "200",
+    "sub": "FREMDE LEBEN"
+   }
+  },
+  {
+   "top": "Der Vers daneben",
+   "big": "nennt das *Gegenmittel*. Ein Wort.",
+   "visual": "letters",
+   "letters": {
+    "word": "DHIKR"
+   }
+  },
+  {
+   "top": "",
+   "big": "„Die glauben — und deren Herzen *Ruhe* finden im Gedenken Allahs.“",
+   "visual": "ayah",
+   "ar": "ٱلَّذِينَ ءَامَنُوا۟ *وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ* أَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
+   "de": "„Die glauben und deren Herzen Ruhe finden im Gedenken Allahs. Wahrlich, im Gedenken Allahs finden die Herzen Ruhe.“",
+   "ref": "SURE 13 · VERS 29"
+  },
+  {
+   "top": "Das Wort *tatma'inn*",
+   "big": "heißt nicht „aufgeregt sein“. Es heißt *zur Ruhe kommen*.",
+   "visual": "slider",
+   "slider": {
+    "a": "UNRUHE",
+    "b": "RUHE",
+    "pos": 1.0,
+    "label": "Was Dhikr macht"
+   }
+  },
+  {
+   "top": "Und der Vers sagt es *zweimal*.",
+   "big": "Im selben Satz.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Das ist eine Betonung,",
+   "big": "die der Koran nur selten *benutzt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Vergleich das mal mit dem Feed.",
+   "big": "Der liefert *Reiz*. Nicht Ruhe.",
+   "visual": "compare",
+   "ca": {
+    "label": "Feed",
+    "value": "Reiz"
+   },
+   "cb": {
+    "label": "Dhikr",
+    "value": "Ruhe",
+    "accent": true
+   }
+  },
+  {
+   "top": "Reiz macht wach.",
+   "big": "Und dann *hungrig* auf mehr Reiz.",
+   "visual": "none"
+  },
+  {
+   "top": "Deshalb hörst du nicht auf,",
+   "big": "obwohl es dir längst *nichts* gibt.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Du musst nicht löschen.",
+   "big": "Du musst nur *etwas anderes* zuerst tun.",
+   "visual": "none"
+  },
+  {
+   "top": "Nimm heute die ersten *zehn Minuten*",
+   "big": "nach dem Aufwachen.",
+   "visual": "stat",
+   "stat": {
+    "value": "10",
+    "unit": "Min.",
+    "sub": "OHNE HANDY"
+   }
+  },
+  {
+   "top": "Kein Handy.",
+   "big": "Nur *Dhikr*. Zehn Minuten.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 59:20 · 13:29 (alislam.org, Ahmadiyya-Zählung)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Koran 59:20 — „Werdet nicht wie die, die Allah vergaßen, und die Er darum sich selbst vergessen ließ“",
+   "ref": "alislam.org (Hafs 59:19)",
+   "url": "https://www.alislam.org/quran/59:20",
+   "verified": true
+  },
+  {
+   "claim": "Koran 13:29 — „deren Herzen Ruhe finden im Gedenken Allahs; wahrlich, im Gedenken Allahs finden die Herzen Ruhe“",
+   "ref": "alislam.org (Hafs 13:28)",
+   "url": "https://www.alislam.org/quran/13:29",
+   "verified": true
+  }
+ ],
+ "caption": "Du legst das Handy weg und fühlst dich leerer als vorher. Nicht traurig — unruhig.\n\nDer Koran beschreibt diesen Zustand: „Werdet nicht wie die, die Allah vergaßen, und die Er darum sich selbst vergessen ließ.“ (59:20)\n\nLies den zweiten Teil nochmal: sich selbst vergessen. Du weißt danach, was andere tun — aber nicht mehr, was du wolltest.\n\nUnd das Gegenmittel steht daneben: „… deren Herzen Ruhe finden im Gedenken Allahs. Wahrlich, im Gedenken Allahs finden die Herzen Ruhe.“ (13:29) Zweimal im selben Satz.\n\nDer Feed liefert Reiz, nicht Ruhe. Reiz macht wach — und hungrig auf mehr Reiz.\n\nDie ersten zehn Minuten nach dem Aufwachen: kein Handy, nur Dhikr.\n\nQuellen: alislam.org\n\n#islam #dhikr #koran #digitaldetox #achtsamkeit #wissen #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "sabrina",
+ "vo_full": "Du legst das Handy weg und fühlst dich leerer als vorher. [pause] Nicht traurig. Nicht wütend. Unruhig. [pause] Der Koran beschreibt genau diesen Zustand. Und nennt den Grund in einem Halbsatz. [pause] „Werdet nicht wie die, die Allah vergaßen — da ließ Er sie sich selbst vergessen.“ [pause] Lies den zweiten Teil nochmal. Sich selbst vergessen. [pause] Nicht: Sie vergaßen Gott und waren dann frei. Sie verloren den Zugang zu sich selbst. [pause] Und genau das beschreibt zwei Stunden Feed ziemlich genau. [pause] Du weißt danach, was andere tun. Aber nicht mehr, was du wolltest. [pause] Du hast 200 Leben gesehen und keine Minute im eigenen verbracht. [pause] Der Vers daneben nennt das Gegenmittel. Ein Wort. [pause] „Die glauben — und deren Herzen Ruhe finden im Gedenken Allahs.“ [pause] Das Wort tatma'inn heißt nicht „aufgeregt sein“. Es heißt zur Ruhe kommen. [pause] Und der Vers sagt es zweimal. Im selben Satz. [pause] Das ist eine Betonung, die der Koran nur selten benutzt. [pause] Vergleich das mal mit dem Feed. Der liefert Reiz. Nicht Ruhe. [pause] Reiz macht wach. Und dann hungrig auf mehr Reiz. [pause] Deshalb hörst du nicht auf, obwohl es dir längst nichts gibt. [pause] Du musst nicht löschen. Du musst nur etwas anderes zuerst tun. [pause] Nimm heute die ersten zehn Minuten nach dem Aufwachen. [pause] Kein Handy. Nur Dhikr. Zehn Minuten."
+}

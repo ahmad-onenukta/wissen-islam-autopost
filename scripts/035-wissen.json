@@ -1,0 +1,192 @@
+{
+ "id": "035",
+ "thema": "Wissen",
+ "title": "Das erste Wort war ein Befehl — und das zweite ein Werkzeug",
+ "hook": "Die erste Offenbarung des Korans ist kein Glaubensbekenntnis. Es ist ein Befehl. Und drei Verse später steht, womit er umgesetzt werden soll.",
+ "appeal": "Lies heute eine Seite von etwas, das dich schlauer macht. Und schreib einen Satz darüber auf. Genau in dieser Reihenfolge.",
+ "blocks": [
+  {
+   "top": "Die erste Offenbarung des Korans",
+   "big": "ist kein *Glaubensbekenntnis*.",
+   "visual": "none"
+  },
+  {
+   "top": "Es ist ein",
+   "big": "*Befehl*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "",
+   "big": "„*Lies* im Namen deines Herrn, der erschuf.“",
+   "visual": "ayah",
+   "ar": "*ٱقْرَأْ* بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+   "de": "„Lies im Namen deines Herrn, der erschuf.“",
+   "ref": "SURE 96 · VERS 2"
+  },
+  {
+   "top": "Nicht: *glaube*.",
+   "big": "Nicht: *bete*. Nicht: *kämpfe*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "*Iqra*. Lies.",
+   "visual": "letters",
+   "letters": {
+    "word": "IQRA"
+   }
+  },
+  {
+   "top": "Und das an einen Mann,",
+   "big": "der *nicht* lesen konnte.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Darin steckt die ganze Spannung.",
+   "big": "Der Befehl kam *vor* der Fähigkeit.",
+   "visual": "slider",
+   "slider": {
+    "a": "BEFEHL",
+    "b": "FÄHIGKEIT",
+    "pos": 0.0,
+    "label": "Was kam zuerst?"
+   }
+  },
+  {
+   "top": "Drei Verse später",
+   "big": "kommt das *Werkzeug*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "„Der lehrte durch die *Feder*.“",
+   "visual": "ayah",
+   "ar": "*ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ*",
+   "de": "„Der lehrte durch die Feder.“",
+   "ref": "SURE 96 · VERS 5"
+  },
+  {
+   "top": "Lesen und *Schreiben*.",
+   "big": "In den ersten fünf Versen überhaupt.",
+   "visual": "compare",
+   "ca": {
+    "label": "Vers 2",
+    "value": "Lies",
+    "accent": true
+   },
+   "cb": {
+    "label": "Vers 5",
+    "value": "die Feder"
+   }
+  },
+  {
+   "top": "Und zwar in dieser *Reihenfolge*.",
+   "big": "Erst aufnehmen. Dann *festhalten*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Warum ist das so groß?",
+   "big": "Weil Wissen ohne Schrift mit dem *Wissenden* stirbt.",
+   "visual": "none"
+  },
+  {
+   "top": "Genau deshalb kennen wir",
+   "big": "Ibn Battutas Reisen — jemand hat sie *aufgeschrieben*.",
+   "visual": "document",
+   "docTitle": "AUFGESCHRIEBEN = ERHALTEN"
+  },
+  {
+   "top": "Genau deshalb kennen wir",
+   "big": "al-Chwarizmis *Rechenwege*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und genau deshalb liegt in Birmingham",
+   "big": "ein *Pergament* aus dem 7. Jahrhundert.",
+   "visual": "none"
+  },
+  {
+   "top": "Die Feder ist das einzige Werkzeug,",
+   "big": "das *Zeit* überspringt.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Wir lesen heute mehr als jede Generation vorher.",
+   "big": "Und behalten *weniger*.",
+   "visual": "compare",
+   "ca": {
+    "label": "Gelesen",
+    "value": "viel"
+   },
+   "cb": {
+    "label": "Behalten",
+    "value": "wenig"
+   }
+  },
+  {
+   "top": "Weil der zweite Teil fehlt.",
+   "big": "Wir *schreiben* nichts mehr auf.",
+   "visual": "none"
+  },
+  {
+   "top": "Lies heute *eine* Seite",
+   "big": "von etwas, das dich schlauer macht.",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "unit": "Seite",
+    "sub": "HEUTE"
+   }
+  },
+  {
+   "top": "Und schreib *einen Satz* darüber auf.",
+   "big": "Genau in dieser Reihenfolge.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 96:2 · 96:5 (alislam.org, Ahmadiyya-Zählung)",
+    "Erste Offenbarung: Sure al-Alaq, Verse 2–6"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Koran 96:2 — „Lies im Namen deines Herrn, der erschuf“ (erste Offenbarung)",
+   "ref": "alislam.org (Hafs 96:1)",
+   "url": "https://www.alislam.org/quran/96:2",
+   "verified": true
+  },
+  {
+   "claim": "Koran 96:5 — „Der lehrte durch die Feder“",
+   "ref": "alislam.org (Hafs 96:4)",
+   "url": "https://www.alislam.org/quran/96:5",
+   "verified": true
+  }
+ ],
+ "caption": "Die erste Offenbarung des Korans ist kein Glaubensbekenntnis. Es ist ein Befehl: „Lies im Namen deines Herrn, der erschuf.“ (96:2)\n\nNicht glaube. Nicht bete. Iqra — lies. Und das an einen Mann, der nicht lesen konnte: der Befehl kam vor der Fähigkeit.\n\nDrei Verse später kommt das Werkzeug: „Der lehrte durch die Feder.“ (96:5) Lesen und Schreiben, in den ersten fünf Versen überhaupt — und in dieser Reihenfolge: erst aufnehmen, dann festhalten.\n\nWissen ohne Schrift stirbt mit dem Wissenden. Deshalb kennen wir Ibn Battutas Reisen, al-Chwarizmis Rechenwege, und deshalb liegt in Birmingham ein Pergament aus dem 7. Jahrhundert.\n\nWir lesen mehr als jede Generation vorher und behalten weniger — weil der zweite Teil fehlt.\n\nQuellen: alislam.org\n\n#islam #wissen #koran #iqra #lernen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "Die erste Offenbarung des Korans ist kein Glaubensbekenntnis. [pause] Es ist ein Befehl. [pause] „Lies im Namen deines Herrn, der erschuf.“ [pause] Nicht: glaube. Nicht: bete. Nicht: kämpfe. [pause] Iqra. Lies. [pause] Und das an einen Mann, der nicht lesen konnte. [pause] Darin steckt die ganze Spannung. Der Befehl kam vor der Fähigkeit. [pause] Drei Verse später kommt das Werkzeug. [pause] „Der lehrte durch die Feder.“ [pause] Lesen und Schreiben. In den ersten fünf Versen überhaupt. [pause] Und zwar in dieser Reihenfolge. Erst aufnehmen. Dann festhalten. [pause] Warum ist das so groß? Weil Wissen ohne Schrift mit dem Wissenden stirbt. [pause] Genau deshalb kennen wir Ibn Battutas Reisen — jemand hat sie aufgeschrieben. [pause] Genau deshalb kennen wir al-Chwarizmis Rechenwege. [pause] Und genau deshalb liegt in Birmingham ein Pergament aus dem 7. Jahrhundert. [pause] Die Feder ist das einzige Werkzeug, das Zeit überspringt. [pause] Wir lesen heute mehr als jede Generation vorher. Und behalten weniger. [pause] Weil der zweite Teil fehlt. Wir schreiben nichts mehr auf. [pause] Lies heute eine Seite von etwas, das dich schlauer macht. [pause] Und schreib einen Satz darüber auf. Genau in dieser Reihenfolge.",
+ "palette": {
+  "bg": "#0A1430",
+  "ink": "#DCE9FF",
+  "dim": "#9FB3D9",
+  "accent": "#7FB3FF",
+  "card": "#122048",
+  "line": "#2A3A66",
+  "mute": "#6F85B3"
+ }
+}

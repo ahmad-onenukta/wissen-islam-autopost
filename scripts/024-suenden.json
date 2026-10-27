@@ -1,0 +1,156 @@
+{
+ "id": "024",
+ "thema": "Sünden",
+ "title": "Zwei Dinge, mit denen du dich ins Verderben reden kannst",
+ "hook": "Der Prophet ﷺ hat eine Regel gegeben, die aus genau zwei Möglichkeiten besteht. Und die meisten brechen sie täglich.",
+ "appeal": "Bevor du heute etwas über jemanden sagst: frag dich, ob es wahr, nötig und freundlich ist. Fehlt eins — schweig.",
+ "blocks": [
+  {
+   "top": "Der Prophet ﷺ hat eine Regel gegeben,",
+   "big": "die aus *zwei* Möglichkeiten besteht.",
+   "visual": "none"
+  },
+  {
+   "top": "Nicht drei. Nicht fünf.",
+   "big": "*Zwei*.",
+   "visual": "letters",
+   "letters": {
+    "word": "12"
+   }
+  },
+  {
+   "top": "",
+   "big": "„So soll er *Gutes* sagen — oder *schweigen*.“",
+   "visual": "ayah",
+   "ar": "*فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ*",
+   "de": "„Wer an Allah und den Jüngsten Tag glaubt, soll Gutes sagen oder schweigen.“",
+   "ref": "SAHIH AL-BUKHARI 6475"
+  },
+  {
+   "top": "Da ist keine dritte Option.",
+   "big": "Kein „nur mal so gesagt“.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Kein „ich meine es ja nicht böse“.",
+   "big": "Kein „das wissen doch alle“.",
+   "visual": "none"
+  },
+  {
+   "top": "Entweder es ist *gut* —",
+   "big": "oder es bleibt *drin*.",
+   "visual": "slider",
+   "slider": {
+    "a": "GUTES SAGEN",
+    "b": "SCHWEIGEN",
+    "pos": 0.5,
+    "label": "Nur diese zwei"
+   }
+  },
+  {
+   "top": "Und beachte den Anfang des Hadithes:",
+   "big": "„Wer an Allah und den Jüngsten Tag *glaubt* …“",
+   "visual": "none"
+  },
+  {
+   "top": "Die Zunge wird hier",
+   "big": "an den *Glauben* gekoppelt. Nicht an gute Manieren.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Im selben Hadith stehen noch zwei Sätze.",
+   "big": "Sie gehören *zusammen*.",
+   "visual": "none"
+  },
+  {
+   "top": "„… soll seinen *Nachbarn* nicht schädigen.“",
+   "big": "",
+   "visual": "stat",
+   "stat": {
+    "value": "2",
+    "sub": "DER NACHBAR"
+   }
+  },
+  {
+   "top": "„… soll seinen *Gast* ehren.“",
+   "big": "",
+   "visual": "stat",
+   "stat": {
+    "value": "3",
+    "sub": "DER GAST"
+   }
+  },
+  {
+   "top": "Drei Prüfungen.",
+   "big": "Alle drei im *Nahbereich*.",
+   "visual": "none"
+  },
+  {
+   "top": "Nicht Spendensumme. Nicht Gebetszahl.",
+   "big": "Wie du *redest*, mit wem du *wohnst*, wen du *reinlässt*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Warum ist die Zunge zuerst dran?",
+   "big": "Weil sie das *billigste* Werkzeug ist.",
+   "visual": "none"
+  },
+  {
+   "top": "Sie kostet keine Kraft.",
+   "big": "Keine Vorbereitung. Keine *Entscheidung*.",
+   "visual": "none"
+  },
+  {
+   "top": "Deshalb wird am meisten damit",
+   "big": "*zerstört*.",
+   "visual": "none"
+  },
+  {
+   "top": "Ein Satz über einen Abwesenden",
+   "big": "läuft weiter, wenn du längst weg bist.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Bevor du heute etwas über jemanden sagst:",
+   "big": "Ist es *wahr*? Ist es *nötig*? Ist es *freundlich*?",
+   "visual": "letters",
+   "letters": {
+    "word": "WNF"
+   }
+  },
+  {
+   "top": "Fehlt eins —",
+   "big": "*schweig*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 6475 (Buch 81, Hadith 64)",
+    "Überliefert von Abu Huraira (ra)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "„Wer an Allah und den Jüngsten Tag glaubt, soll Gutes sagen oder schweigen“ — im selben Hadith: den Nachbarn nicht schädigen, den Gast ehren",
+   "ref": "Sahih al-Bukhari 6475, Buch 81 (ar-Riqaq), Hadith 64 (Abu Huraira)",
+   "url": "https://sunnah.com/bukhari:6475",
+   "verified": true
+  }
+ ],
+ "caption": "Der Prophet ﷺ hat eine Regel gegeben, die aus genau zwei Möglichkeiten besteht:\n\n„Wer an Allah und den Jüngsten Tag glaubt, soll Gutes sagen — oder schweigen.“ (Bukhari 6475)\n\nEs gibt keine dritte Option. Kein „nur mal so gesagt“, kein „ich meine es nicht böse“.\n\nIm selben Hadith stehen zwei weitere Sätze: den Nachbarn nicht schädigen, den Gast ehren. Drei Prüfungen — alle im Nahbereich. Nicht Spendensumme, nicht Gebetszahl.\n\nWarum die Zunge zuerst? Weil sie das billigste Werkzeug ist. Keine Kraft, keine Vorbereitung — deshalb wird am meisten damit zerstört.\n\nWahr, nötig, freundlich. Fehlt eins — schweig.\n\nQuellen: Sahih al-Bukhari 6475\n\n#islam #hadith #zunge #gheebah #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "Der Prophet sallallahu alaihi wa sallam hat eine Regel gegeben, die aus zwei Möglichkeiten besteht. [pause] Nicht drei. Nicht fünf. Zwei. [pause] „So soll er Gutes sagen — oder schweigen.“ [pause] Da ist keine dritte Option. Kein „nur mal so gesagt“. [pause] Kein „ich meine es ja nicht böse“. Kein „das wissen doch alle“. [pause] Entweder es ist gut — oder es bleibt drin. [pause] Und beachte den Anfang des Hadithes: „Wer an Allah und den Jüngsten Tag glaubt …“ [pause] Die Zunge wird hier an den Glauben gekoppelt. Nicht an gute Manieren. [pause] Im selben Hadith stehen noch zwei Sätze. Sie gehören zusammen. [pause] „… soll seinen Nachbarn nicht schädigen.“ [pause] „… soll seinen Gast ehren.“ [pause] Drei Prüfungen. Alle drei im Nahbereich. [pause] Nicht Spendensumme. Nicht Gebetszahl. Wie du redest, mit wem du wohnst, wen du reinlässt. [pause] Warum ist die Zunge zuerst dran? Weil sie das billigste Werkzeug ist. [pause] Sie kostet keine Kraft. Keine Vorbereitung. Keine Entscheidung. [pause] Deshalb wird am meisten damit zerstört. [pause] Ein Satz über einen Abwesenden läuft weiter, wenn du längst weg bist. [pause] Bevor du heute etwas über jemanden sagst: Ist es wahr? Ist es nötig? Ist es freundlich? [pause] Fehlt eins — schweig."
+}

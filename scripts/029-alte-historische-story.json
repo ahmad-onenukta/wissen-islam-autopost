@@ -1,0 +1,195 @@
+{
+ "id": "029",
+ "thema": "Alte Historische Story",
+ "title": "Das erste Krankenhaus, in dem die Rechnung niemand bekam",
+ "hook": "Die Idee, dass ein Krankenhaus dich behandelt, ohne vorher nach Geld zu fragen, ist nicht modern. Sie ist über tausend Jahre alt — und hat einen Namen.",
+ "appeal": "Beim nächsten Arztbesuch: denk daran, dass jemand diese Selbstverständlichkeit erst erfinden musste. Und dass sie aus einem Gebot kam, nicht aus einem Geschäftsmodell.",
+ "blocks": [
+  {
+   "top": "Die Idee, dass ein Krankenhaus dich behandelt,",
+   "big": "*ohne* vorher nach Geld zu fragen —",
+   "visual": "none"
+  },
+  {
+   "top": "ist nicht modern.",
+   "big": "Sie ist über *tausend* Jahre alt.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Und sie hat einen Namen:",
+   "big": "*Bimaristan*. Persisch: Ort der Kranken.",
+   "visual": "letters",
+   "letters": {
+    "word": "BIMARISTAN"
+   }
+  },
+  {
+   "top": "Der Anfang ist noch früher",
+   "big": "und *kleiner*.",
+   "visual": "none"
+  },
+  {
+   "top": "Zur Zeit des Propheten ﷺ",
+   "big": "richtet *Rufaida al-Aslamiyya* ein Zelt für Verwundete ein.",
+   "visual": "none"
+  },
+  {
+   "top": "Bei der Grabenschlacht.",
+   "big": "Die erste bekannte islamische *Pflegestation*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Dann wird daraus ein Gebäude.",
+   "big": "Anfang des 8. Jahrhunderts in *Damaskus*.",
+   "visual": "map",
+   "mapFrom": "Medina",
+   "mapTo": "Damaskus"
+  },
+  {
+   "top": "Und *805*",
+   "big": "das erste dokumentierte allgemeine Krankenhaus — in *Bagdad*.",
+   "visual": "stat",
+   "stat": {
+    "value": "805",
+    "sub": "BAGDAD"
+   }
+  },
+  {
+   "top": "Was dort anders war,",
+   "big": "klingt heute *banal*.",
+   "visual": "none"
+  },
+  {
+   "top": "Eins:",
+   "big": "Die Behandlung war für Patienten *kostenfrei*.",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "sub": "KOSTENFREI"
+   }
+  },
+  {
+   "top": "Eine Kairoer Stiftungsurkunde von 1284 formuliert es so:",
+   "big": "Die Kosten trägt das Haus — für *Reiche und Arme*, Einheimische und Fremde.",
+   "visual": "document",
+   "docTitle": "KAIRO · 1284"
+  },
+  {
+   "top": "Zwei:",
+   "big": "Getrennte *Abteilungen*.",
+   "visual": "stat",
+   "stat": {
+    "value": "2",
+    "sub": "ABTEILUNGEN"
+   }
+  },
+  {
+   "top": "Ein Brief aus Córdoba, 10. Jahrhundert,",
+   "big": "beschreibt eine *Frauenabteilung*, in der Männer nichts zu suchen hatten.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Drei — und das ist der Punkt:",
+   "big": "Eine *Prüfung*, bevor jemand behandeln durfte.",
+   "visual": "stat",
+   "stat": {
+    "value": "3",
+    "sub": "PRÜFUNG"
+   }
+  },
+  {
+   "top": "Der Kandidat schrieb erst eine *Abhandlung*.",
+   "big": "Eigene Forschung oder einen Kommentar zu Hippokrates oder Galen.",
+   "visual": "document",
+   "docTitle": "ABHANDLUNG → PRÜFUNG → LIZENZ"
+  },
+  {
+   "top": "Dann wurde er lange *befragt*.",
+   "big": "Erst danach gab es die *Lizenz*.",
+   "visual": "none"
+  },
+  {
+   "top": "Also: Approbation.",
+   "big": "Vor über *tausend* Jahren.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Und am Ende des 9. Jahrhunderts",
+   "big": "entsteht in Bagdad ein Haus unter *al-Mu'tadid*.",
+   "visual": "none"
+  },
+  {
+   "top": "Den Bau und Betrieb begleitet",
+   "big": "*ar-Razi*. Es eröffnet mit *25* Ärzten.",
+   "visual": "stat",
+   "stat": {
+    "value": "25",
+    "sub": "ÄRZTE BEI ERÖFFNUNG"
+   }
+  },
+  {
+   "top": "Augenärzte. Chirurgen. Knocheneinrichter.",
+   "big": "Also *Fachabteilungen*.",
+   "visual": "none"
+  },
+  {
+   "top": "1258 nehmen die Mongolen Bagdad.",
+   "big": "Die Krankenhäuser werden *zerstört*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Aber die Idee war schon *draußen*.",
+   "big": "Und sie steht heute in jeder Notaufnahme.",
+   "visual": "none"
+  },
+  {
+   "top": "Beim nächsten Arztbesuch:",
+   "big": "Jemand musste diese Selbstverständlichkeit erst *erfinden*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und sie kam aus einem *Gebot*.",
+   "big": "Nicht aus einem Geschäftsmodell.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "AramcoWorld: „The Islamic Roots of the Modern Hospital“ (2017)",
+    "Rufaida al-Aslamiyya · Damaskus 8. Jh. · Bagdad 805 · Kairo 1284 · al-Mu'tadid / ar-Razi"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Rufaida al-Aslamiyya richtete zur Zeit des Propheten ﷺ bei der Grabenschlacht ein Zelt für Verwundete ein; erstes muslimisches Hospital: Leprosorium in Damaskus im frühen 8. Jh.; erstes dokumentiertes allgemeines Krankenhaus 805 in Bagdad; Behandlung kostenfrei, Kairoer Urkunde 1284; Córdoba 10. Jh.: Frauenabteilung; Lizenzprüfung mit Abhandlung und Befragung; Bagdad Ende 9. Jh. unter al-Mu'tadid, ar-Razi, 25 Ärzte; Zerstörung 1258",
+   "ref": "AramcoWorld, „The Islamic Roots of the Modern Hospital“, 2017",
+   "url": "https://www.aramcoworld.com/articles/2017/the-islamic-roots-of-the-modern-hospital",
+   "verified": true
+  }
+ ],
+ "caption": "Die Idee, dass ein Krankenhaus dich behandelt, ohne vorher nach Geld zu fragen, ist über tausend Jahre alt. Sie heißt Bimaristan.\n\nDer Anfang: Rufaida al-Aslamiyya richtet zur Zeit des Propheten ﷺ bei der Grabenschlacht ein Zelt für Verwundete ein. Dann ein Haus in Damaskus im frühen 8. Jahrhundert — und 805 das erste dokumentierte allgemeine Krankenhaus in Bagdad.\n\nWas dort anders war: Behandlung kostenfrei (eine Kairoer Urkunde von 1284: für Reiche und Arme, Einheimische und Fremde). Getrennte Abteilungen. Und eine Prüfung mit Abhandlung und Befragung, bevor jemand behandeln durfte — Approbation, vor über tausend Jahren.\n\nEnde des 9. Jahrhunderts eröffnet in Bagdad ein Haus mit 25 Ärzten, begleitet von ar-Razi: Augenärzte, Chirurgen, Knocheneinrichter.\n\nQuellen: AramcoWorld 2017\n\n#islam #geschichte #medizin #bimaristan #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "Die Idee, dass ein Krankenhaus dich behandelt, ohne vorher nach Geld zu fragen — [pause] ist nicht modern. Sie ist über tausend Jahre alt. [pause] Und sie hat einen Namen: Bimaristan. Persisch: Ort der Kranken. [pause] Der Anfang ist noch früher und kleiner. [pause] Zur Zeit des Propheten sallallahu alaihi wa sallam richtet Rufaida al-Aslamiyya ein Zelt für Verwundete ein. [pause] Bei der Grabenschlacht. Die erste bekannte islamische Pflegestation. [pause] Dann wird daraus ein Gebäude. Anfang des 8. Jahrhunderts in Damaskus. [pause] Und 805 das erste dokumentierte allgemeine Krankenhaus — in Bagdad. [pause] Was dort anders war, klingt heute banal. [pause] Eins: Die Behandlung war für Patienten kostenfrei. [pause] Eine Kairoer Stiftungsurkunde von 1284 formuliert es so: Die Kosten trägt das Haus — für Reiche und Arme, Einheimische und Fremde. [pause] Zwei: Getrennte Abteilungen. [pause] Ein Brief aus Córdoba, 10. Jahrhundert, beschreibt eine Frauenabteilung, in der Männer nichts zu suchen hatten. [pause] Drei — und das ist der Punkt: Eine Prüfung, bevor jemand behandeln durfte. [pause] Der Kandidat schrieb erst eine Abhandlung. Eigene Forschung oder einen Kommentar zu Hippokrates oder Galen. [pause] Dann wurde er lange befragt. Erst danach gab es die Lizenz. [pause] Also: Approbation. Vor über tausend Jahren. [pause] Und am Ende des 9. Jahrhunderts entsteht in Bagdad ein Haus unter al-Mu'tadid. [pause] Den Bau und Betrieb begleitet ar-Razi. Es eröffnet mit 25 Ärzten. [pause] Augenärzte. Chirurgen. Knocheneinrichter. Also Fachabteilungen. [pause] 1258 nehmen die Mongolen Bagdad. Die Krankenhäuser werden zerstört. [pause] Aber die Idee war schon draußen. Und sie steht heute in jeder Notaufnahme. [pause] Beim nächsten Arztbesuch: Jemand musste diese Selbstverständlichkeit erst erfinden. [pause] Und sie kam aus einem Gebot. Nicht aus einem Geschäftsmodell.",
+ "palette": {
+  "bg": "#0A1430",
+  "ink": "#DCE9FF",
+  "dim": "#9FB3D9",
+  "accent": "#7FB3FF",
+  "card": "#122048",
+  "line": "#2A3A66",
+  "mute": "#6F85B3"
+ }
+}

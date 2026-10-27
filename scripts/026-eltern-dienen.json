@@ -1,0 +1,196 @@
+{
+ "id": "026",
+ "thema": "Eltern dienen",
+ "title": "Dreimal die Mutter, einmal der Vater",
+ "hook": "Ein Mann fragt den Propheten ﷺ, wer sein Bestes am meisten verdient. Die Antwort ist viermal — und die Reihenfolge ist kein Zufall.",
+ "appeal": "Ruf sie heute an und frag nicht „alles gut?“, sondern: Was kann ich für dich tun? Und dann tu es.",
+ "blocks": [
+  {
+   "top": "Ein Mann kommt zum Propheten ﷺ",
+   "big": "und stellt *eine* Frage.",
+   "visual": "none"
+  },
+  {
+   "top": "„Wer verdient es am meisten,",
+   "big": "dass ich ihn *gut* behandle?“",
+   "visual": "ayah",
+   "ar": "*مَنْ أَحَقُّ بِحُسْنِ صَحَابَتِى*",
+   "de": "„Wer hat das größte Recht auf meine gute Behandlung?“",
+   "ref": "SAHIH AL-BUKHARI 5971"
+  },
+  {
+   "top": "Die Antwort:",
+   "big": "„Deine *Mutter*.“",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "sub": "DEINE MUTTER"
+   }
+  },
+  {
+   "top": "Er fragt: „Und dann?“",
+   "big": "„Deine *Mutter*.“",
+   "visual": "stat",
+   "stat": {
+    "value": "2",
+    "sub": "DEINE MUTTER"
+   }
+  },
+  {
+   "top": "„Und dann?“",
+   "big": "„Deine *Mutter*.“",
+   "visual": "stat",
+   "stat": {
+    "value": "3",
+    "sub": "DEINE MUTTER"
+   }
+  },
+  {
+   "top": "„Und dann?“",
+   "big": "„Dann dein *Vater*.“",
+   "visual": "stat",
+   "stat": {
+    "value": "4",
+    "sub": "DEIN VATER"
+   }
+  },
+  {
+   "top": "Dreimal die Mutter.",
+   "big": "Dann der Vater.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Das ist keine Abwertung des Vaters.",
+   "big": "Es ist eine *Gewichtung*.",
+   "visual": "compare",
+   "ca": {
+    "label": "Mutter",
+    "value": "3×",
+    "accent": true
+   },
+   "cb": {
+    "label": "Vater",
+    "value": "1×"
+   }
+  },
+  {
+   "top": "Und der Koran sagt, *warum*.",
+   "big": "Er nennt genau drei Dinge, die sie allein getragen hat.",
+   "visual": "none"
+  },
+  {
+   "top": "„Seine Mutter trug ihn",
+   "big": "unter *Schwäche* über Schwäche.“",
+   "visual": "ayah",
+   "ar": "وَوَصَّيْنَا ٱلْإِنسَـٰنَ بِوَٰلِدَيْهِ *حَمَلَتْهُ أُمُّهُۥ وَهْنًا عَلَىٰ وَهْنٍ*",
+   "de": "„Wir haben dem Menschen Güte gegen seine Eltern zur Pflicht gemacht — seine Mutter trug ihn unter Schwäche über Schwäche.“",
+   "ref": "SURE 31 · VERS 15"
+  },
+  {
+   "top": "Tragen. Gebären. Stillen.",
+   "big": "Drei Lasten, die *niemand* teilen kann.",
+   "visual": "letters",
+   "letters": {
+    "word": "3"
+   }
+  },
+  {
+   "top": "Deshalb dreimal.",
+   "big": "Die Zahl ist eine *Rechnung*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Und dann wird es im Koran sehr konkret.",
+   "big": "Die Grenze ist nicht Anschreien.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "„Sag nicht einmal *Uff* zu ihnen.“",
+   "visual": "ayah",
+   "ar": "فَلَا تَقُل لَّهُمَآ *أُفٍّ* وَلَا تَنْهَرْهُمَا وَقُل لَّهُمَا قَوْلًا كَرِيمًا",
+   "de": "„Sag nicht einmal ‚Uff‘ zu ihnen, fahr sie nicht an, und sprich ehrerbietig zu ihnen.“",
+   "ref": "SURE 17 · VERS 24"
+  },
+  {
+   "top": "Das genervte Geräusch.",
+   "big": "Das ist die *Linie*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und beachte, wo der Vers steht:",
+   "big": "direkt nach „*Dient keinem außer Ihm*“.",
+   "visual": "slider",
+   "slider": {
+    "a": "GOTTESDIENST",
+    "b": "ELTERN",
+    "pos": 0.5,
+    "label": "Im selben Vers"
+   }
+  },
+  {
+   "top": "Zwei Sätze. Ein Vers.",
+   "big": "Näher geht es *nicht*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Ruf sie heute an.",
+   "big": "Und frag nicht „alles gut?“",
+   "visual": "none"
+  },
+  {
+   "top": "Frag:",
+   "big": "Was kann ich *für dich* tun? Und dann tu es.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 5971 (Buch 78, Hadith 2)",
+    "Koran 31:15 · 17:24 (alislam.org, Ahmadiyya-Zählung)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Ein Mann fragt, wer das größte Recht auf gute Behandlung hat; der Prophet ﷺ sagt dreimal „deine Mutter“, dann „dein Vater“",
+   "ref": "Sahih al-Bukhari 5971, Buch 78 (al-Adab), Hadith 2 (Abu Huraira)",
+   "url": "https://sunnah.com/bukhari:5971",
+   "verified": true
+  },
+  {
+   "claim": "Koran 31:15 — „seine Mutter trug ihn unter Schwäche über Schwäche“",
+   "ref": "alislam.org (Hafs 31:14)",
+   "url": "https://www.alislam.org/quran/31:15",
+   "verified": true
+  },
+  {
+   "claim": "Koran 17:24 — kein Wort des Unmuts gegen die Eltern, direkt nach dem Gebot, keinem außer Ihm zu dienen",
+   "ref": "alislam.org (Hafs 17:23)",
+   "url": "https://www.alislam.org/quran/17:24",
+   "verified": true
+  }
+ ],
+ "caption": "Ein Mann fragt den Propheten ﷺ: Wer verdient es am meisten, dass ich ihn gut behandle?\n\n„Deine Mutter.“ — „Und dann?“ — „Deine Mutter.“ — „Und dann?“ — „Deine Mutter.“ — „Und dann?“ — „Dann dein Vater.“ (Bukhari 5971)\n\nDas ist keine Abwertung des Vaters, sondern eine Gewichtung. Der Koran sagt, warum: „Seine Mutter trug ihn unter Schwäche über Schwäche.“ (31:15) Tragen, gebären, stillen — drei Lasten, die niemand teilen kann.\n\nUnd die Grenze ist nicht Anschreien: „Sag nicht einmal ‚Uff‘ zu ihnen.“ (17:24) — im selben Vers wie „Dient keinem außer Ihm“.\n\nFrag heute nicht „alles gut?“, sondern: Was kann ich für dich tun?\n\nQuellen: Sahih al-Bukhari 5971 · alislam.org\n\n#islam #eltern #mutter #koran #hadith #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "sabrina",
+ "vo_full": "Ein Mann kommt zum Propheten sallallahu alaihi wa sallam und stellt eine Frage. [pause] „Wer verdient es am meisten, dass ich ihn gut behandle?“ [pause] Die Antwort: „Deine Mutter.“ [pause] Er fragt: „Und dann?“ „Deine Mutter.“ [pause] „Und dann?“ „Deine Mutter.“ [pause] „Und dann?“ „Dann dein Vater.“ [pause] Dreimal die Mutter. Dann der Vater. [pause] Das ist keine Abwertung des Vaters. Es ist eine Gewichtung. [pause] Und der Koran sagt, warum. Er nennt genau drei Dinge, die sie allein getragen hat. [pause] „Seine Mutter trug ihn unter Schwäche über Schwäche.“ [pause] Tragen. Gebären. Stillen. Drei Lasten, die niemand teilen kann. [pause] Deshalb dreimal. Die Zahl ist eine Rechnung. [pause] Und dann wird es im Koran sehr konkret. Die Grenze ist nicht Anschreien. [pause] „Sag nicht einmal Uff zu ihnen.“ [pause] Das genervte Geräusch. Das ist die Linie. [pause] Und beachte, wo der Vers steht: direkt nach „Dient keinem außer Ihm“. [pause] Zwei Sätze. Ein Vers. Näher geht es nicht. [pause] Ruf sie heute an. Und frag nicht „alles gut?“ [pause] Frag: Was kann ich für dich tun? Und dann tu es.",
+ "palette": {
+  "bg": "#1C1410",
+  "ink": "#F3E9DC",
+  "dim": "#B8A68F",
+  "accent": "#D98C3F",
+  "card": "#2A1F18",
+  "line": "#4A3A2E",
+  "mute": "#8A7866"
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "id": "027",
+ "thema": "Hilfsbereit",
+ "title": "Sieben Plätze im Schatten — zwei kannst du heute belegen",
+ "hook": "An einem Tag, an dem es keinen Schatten gibt, wird Allah sieben Arten von Menschen beschatten. Zwei von den sieben schaffst du vor dem Schlafengehen.",
+ "appeal": "Gib heute etwas, von dem niemand erfährt. Keine Story, kein Screenshot. Nur du und Er.",
+ "blocks": [
+  {
+   "top": "An einem Tag, an dem es *keinen* Schatten gibt,",
+   "big": "wird Allah sieben Arten von Menschen beschatten.",
+   "visual": "letters",
+   "letters": {
+    "word": "7"
+   }
+  },
+  {
+   "top": "Der Prophet ﷺ hat sie *aufgezählt*.",
+   "big": "Und zwei davon schaffst du vor dem Schlafengehen.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Eins:",
+   "big": "Ein *gerechter* Herrscher.",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "sub": "GERECHT REGIEREN"
+   }
+  },
+  {
+   "top": "Zwei:",
+   "big": "Ein junger Mensch, der im Gottesdienst *aufwächst*.",
+   "visual": "stat",
+   "stat": {
+    "value": "2",
+    "sub": "JUNG UND GLÄUBIG"
+   }
+  },
+  {
+   "top": "Drei:",
+   "big": "Einer, dessen Herz an der *Moschee* hängt.",
+   "visual": "stat",
+   "stat": {
+    "value": "3",
+    "sub": "DIE MOSCHEE"
+   }
+  },
+  {
+   "top": "Vier:",
+   "big": "Zwei, die sich *nur* um Allahs willen lieben — im Treffen und im Trennen.",
+   "visual": "stat",
+   "stat": {
+    "value": "4",
+    "sub": "FREUNDSCHAFT FÜR IHN"
+   }
+  },
+  {
+   "top": "Fünf:",
+   "big": "Einer, der eine Einladung zur Sünde *abweist* — „ich fürchte Allah“.",
+   "visual": "stat",
+   "stat": {
+    "value": "5",
+    "sub": "NEIN SAGEN"
+   }
+  },
+  {
+   "top": "Sechs:",
+   "big": "Einer, der so *heimlich* spendet, dass seine linke Hand nicht weiß, was die rechte gibt.",
+   "visual": "stat",
+   "stat": {
+    "value": "6",
+    "sub": "HEIMLICH GEBEN"
+   }
+  },
+  {
+   "top": "Sieben:",
+   "big": "Einer, der Allahs *allein* gedenkt — und seine Augen werden feucht.",
+   "visual": "stat",
+   "stat": {
+    "value": "7",
+    "sub": "ALLEIN WEINEN"
+   }
+  },
+  {
+   "top": "Und jetzt zähl nach,",
+   "big": "wie viele davon *öffentlich* sind.",
+   "visual": "question",
+   "light": true
+  },
+  {
+   "top": "Der gerechte Herrscher — ja.",
+   "big": "Der Rest?",
+   "visual": "none"
+  },
+  {
+   "top": "Heimlich spenden.",
+   "big": "Allein weinen. Still nein sagen.",
+   "visual": "compare",
+   "ca": {
+    "label": "Sichtbar",
+    "value": "1 von 7"
+   },
+   "cb": {
+    "label": "Verborgen",
+    "value": "6 von 7",
+    "accent": true
+   }
+  },
+  {
+   "top": "Sechs von sieben Plätzen",
+   "big": "sind *unsichtbar*.",
+   "visual": "none"
+  },
+  {
+   "top": "Das ist kein Zufall.",
+   "big": "Es ist das *Muster*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Was niemand sieht,",
+   "big": "kann niemand *bestätigen*. Also tust du es nur für Ihn.",
+   "visual": "none"
+  },
+  {
+   "top": "Nummer sechs ist der Test unserer Zeit.",
+   "big": "Spenden ohne *Beleg*.",
+   "visual": "none"
+  },
+  {
+   "top": "Ohne Story. Ohne Screenshot.",
+   "big": "Ohne das Gefühl, dass es *zählt*, weil es jemand weiß.",
+   "visual": "none"
+  },
+  {
+   "top": "Und Nummer vier ist der zweite:",
+   "big": "ein Freund, den du *nicht* wegen Nutzen hast.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Gib heute etwas,",
+   "big": "von dem *niemand* erfährt.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "Nur du und *Er*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 1423 (Buch 24, Hadith 27)",
+    "Parallelüberlieferung: Sahih Muslim 1031"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Sieben, die Allah an einem Tag ohne Schatten beschatten wird: gerechter Herrscher; im Gottesdienst aufgewachsener junger Mensch; einer, dessen Herz an der Moschee hängt; zwei, die sich um Allahs willen lieben; einer, der eine Einladung zur Sünde abweist; einer, der so heimlich spendet, dass die linke Hand nicht weiß, was die rechte gibt; einer, der Allahs allein gedenkt und weint",
+   "ref": "Sahih al-Bukhari 1423, Buch 24 (Zakat), Hadith 27 (Abu Huraira)",
+   "url": "https://sunnah.com/bukhari:1423",
+   "verified": true
+  }
+ ],
+ "caption": "An einem Tag ohne Schatten wird Allah sieben Arten von Menschen beschatten (Bukhari 1423):\n\n1. ein gerechter Herrscher\n2. ein junger Mensch, der im Gottesdienst aufwächst\n3. einer, dessen Herz an der Moschee hängt\n4. zwei, die sich nur um Allahs willen lieben\n5. einer, der eine Einladung zur Sünde abweist\n6. einer, der so heimlich spendet, dass die linke Hand nicht weiß, was die rechte gibt\n7. einer, der Allahs allein gedenkt — und weint\n\nZähl nach, wie viele davon öffentlich sind. Einer. Sechs von sieben Plätzen sind unsichtbar — und genau deshalb tust du sie nur für Ihn.\n\nGib heute etwas, von dem niemand erfährt.\n\nQuellen: Sahih al-Bukhari 1423\n\n#islam #sadaqa #hadith #ikhlas #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "An einem Tag, an dem es keinen Schatten gibt, wird Allah sieben Arten von Menschen beschatten. [pause] Der Prophet sallallahu alaihi wa sallam hat sie aufgezählt. Und zwei davon schaffst du vor dem Schlafengehen. [pause] Eins: Ein gerechter Herrscher. [pause] Zwei: Ein junger Mensch, der im Gottesdienst aufwächst. [pause] Drei: Einer, dessen Herz an der Moschee hängt. [pause] Vier: Zwei, die sich nur um Allahs willen lieben — im Treffen und im Trennen. [pause] Fünf: Einer, der eine Einladung zur Sünde abweist — „ich fürchte Allah“. [pause] Sechs: Einer, der so heimlich spendet, dass seine linke Hand nicht weiß, was die rechte gibt. [pause] Sieben: Einer, der Allahs allein gedenkt — und seine Augen werden feucht. [pause] Und jetzt zähl nach, wie viele davon öffentlich sind. [pause] Der gerechte Herrscher — ja. Der Rest? [pause] Heimlich spenden. Allein weinen. Still nein sagen. [pause] Sechs von sieben Plätzen sind unsichtbar. [pause] Das ist kein Zufall. Es ist das Muster. [pause] Was niemand sieht, kann niemand bestätigen. Also tust du es nur für Ihn. [pause] Nummer sechs ist der Test unserer Zeit. Spenden ohne Beleg. [pause] Ohne Story. Ohne Screenshot. Ohne das Gefühl, dass es zählt, weil es jemand weiß. [pause] Und Nummer vier ist der zweite: ein Freund, den du nicht wegen Nutzen hast. [pause] Gib heute etwas, von dem niemand erfährt. [pause] Nur du und Er."
+}

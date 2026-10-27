@@ -1,0 +1,176 @@
+{
+ "id": "034",
+ "thema": "Freunde",
+ "title": "Du bist auf der Religion deines Freundes",
+ "hook": "Der Prophet ﷺ hat einen Satz gesagt, der keine Empfehlung ist, sondern eine Feststellung. Und dann einen Auftrag daraus gemacht.",
+ "appeal": "Geh heute deine letzten fünf Chats durch und frag bei jedem: Zieht der mich nach oben oder nach unten? Dann handle danach.",
+ "blocks": [
+  {
+   "top": "Der Prophet ﷺ hat einen Satz gesagt,",
+   "big": "der keine *Empfehlung* ist.",
+   "visual": "none"
+  },
+  {
+   "top": "Sondern eine",
+   "big": "*Feststellung*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "",
+   "big": "„Der Mensch ist auf der *Religion* seines engen Freundes.“",
+   "visual": "ayah",
+   "ar": "*ٱلرَّجُلُ عَلَىٰ دِينِ خَلِيلِهِ* فَلْيَنْظُرْ أَحَدُكُمْ مَنْ يُخَالِلُ",
+   "de": "„Der Mensch ist auf der Religion seines engen Freundes — so soll jeder von euch schauen, wen er sich zum engen Freund nimmt.“",
+   "ref": "TIRMIDHI 2378 · HASAN"
+  },
+  {
+   "top": "Das Wort *khalil*",
+   "big": "heißt nicht „Bekannter“.",
+   "visual": "none"
+  },
+  {
+   "top": "Es heißt: der, dem du",
+   "big": "*nichts* verheimlichst.",
+   "visual": "none"
+  },
+  {
+   "top": "Und der Satz behauptet nicht,",
+   "big": "dass du *werden könntest* wie er.",
+   "visual": "compare",
+   "ca": {
+    "label": "Nicht",
+    "value": "du könntest werden"
+   },
+   "cb": {
+    "label": "Sondern",
+    "value": "du bist schon",
+    "accent": true
+   }
+  },
+  {
+   "top": "Er sagt:",
+   "big": "Du *bist* schon auf seiner Linie.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Dann kommt der Auftrag:",
+   "big": "„So soll jeder *schauen*, wen er sich zum engen Freund nimmt.“",
+   "visual": "none"
+  },
+  {
+   "top": "Nicht: Hab keine Freunde.",
+   "big": "Sondern: *Schau hin*. Bewusst.",
+   "visual": "none"
+  },
+  {
+   "top": "Und das ist der unbequeme Teil.",
+   "big": "Die meisten Freundschaften sind nicht *gewählt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Sie sind *passiert*.",
+   "big": "Schule. Arbeit. Nachbarschaft. Gruppe.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Niemand hat dich gefragt,",
+   "big": "ob diese fünf Leute dein *Maßstab* sein sollen.",
+   "visual": "stat",
+   "stat": {
+    "value": "5",
+    "sub": "DIE NÄCHSTEN"
+   }
+  },
+  {
+   "top": "Und jetzt kombiniere das",
+   "big": "mit dem Bild vom *Moschusträger*.",
+   "visual": "compare",
+   "ca": {
+    "label": "Moschus",
+    "value": "3 Wege hoch",
+    "accent": true
+   },
+   "cb": {
+    "label": "Schmiede",
+    "value": "0"
+   }
+  },
+  {
+   "top": "Beim Guten:",
+   "big": "drei Wege nach *oben*.",
+   "visual": "none"
+  },
+  {
+   "top": "Beim Schlechten:",
+   "big": "*keiner*.",
+   "visual": "none"
+  },
+  {
+   "top": "Zusammen ergibt das eine klare Regel.",
+   "big": "Du musst nicht *predigen*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Du musst nur entscheiden,",
+   "big": "wer *nah* genug ist, um zu färben.",
+   "visual": "slider",
+   "slider": {
+    "a": "BEKANNT",
+    "b": "NAH",
+    "pos": 0.5,
+    "label": "Wer darf färben?"
+   }
+  },
+  {
+   "top": "Niemand muss aus deinem Leben *raus*.",
+   "big": "Aber nicht jeder muss *rein*.",
+   "visual": "none"
+  },
+  {
+   "top": "Geh heute deine letzten *fünf* Chats durch.",
+   "big": "Und frag bei jedem: *oben* oder *unten*?",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "Dann handle *danach*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Jami at-Tirmidhi 2378 (Buch 36, Hadith 75) — Grad: hasan",
+    "Vergleich: Sahih al-Bukhari 5534 (Moschus / Blasebalg)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "„Der Mensch ist auf der Religion seines engen Freundes (khalil) — so soll jeder von euch schauen, wen er sich zum engen Freund nimmt“ (Abu Huraira)",
+   "ref": "Jami at-Tirmidhi 2378, Buch 36, Hadith 75, Grad hasan (Darussalam)",
+   "url": "https://sunnah.com/tirmidhi:2378",
+   "verified": true
+  },
+  {
+   "claim": "Gleichnis vom Moschusträger und dem Blasebalg: beim guten Gefährten drei mögliche Gewinne, beim schlechten keiner",
+   "ref": "Sahih al-Bukhari 5534, Buch 72, Hadith 59",
+   "url": "https://sunnah.com/bukhari:5534",
+   "verified": true
+  }
+ ],
+ "caption": "„Der Mensch ist auf der Religion seines engen Freundes — so soll jeder von euch schauen, wen er sich zum engen Freund nimmt.“ (Tirmidhi 2378, hasan)\n\nDas ist keine Empfehlung, sondern eine Feststellung. Der Satz behauptet nicht, du könntest wie er werden — er sagt, du bist schon auf seiner Linie.\n\nUnd khalil heißt nicht „Bekannter“, sondern: der, dem du nichts verheimlichst.\n\nDer unbequeme Teil: Die meisten Freundschaften sind nicht gewählt, sondern passiert. Schule, Arbeit, Gruppe. Niemand hat dich gefragt, ob diese fünf Leute dein Maßstab sein sollen.\n\nNiemand muss aus deinem Leben raus. Aber nicht jeder muss rein.\n\nQuellen: Jami at-Tirmidhi 2378 · Sahih al-Bukhari 5534\n\n#islam #freunde #hadith #umgang #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "Der Prophet sallallahu alaihi wa sallam hat einen Satz gesagt, der keine Empfehlung ist. [pause] Sondern eine Feststellung. [pause] „Der Mensch ist auf der Religion seines engen Freundes.“ [pause] Das Wort khalil heißt nicht „Bekannter“. [pause] Es heißt: der, dem du nichts verheimlichst. [pause] Und der Satz behauptet nicht, dass du werden könntest wie er. [pause] Er sagt: Du bist schon auf seiner Linie. [pause] Dann kommt der Auftrag: „So soll jeder schauen, wen er sich zum engen Freund nimmt.“ [pause] Nicht: Hab keine Freunde. Sondern: Schau hin. Bewusst. [pause] Und das ist der unbequeme Teil. Die meisten Freundschaften sind nicht gewählt. [pause] Sie sind passiert. Schule. Arbeit. Nachbarschaft. Gruppe. [pause] Niemand hat dich gefragt, ob diese fünf Leute dein Maßstab sein sollen. [pause] Und jetzt kombiniere das mit dem Bild vom Moschusträger. [pause] Beim Guten: drei Wege nach oben. [pause] Beim Schlechten: keiner. [pause] Zusammen ergibt das eine klare Regel. Du musst nicht predigen. [pause] Du musst nur entscheiden, wer nah genug ist, um zu färben. [pause] Niemand muss aus deinem Leben raus. Aber nicht jeder muss rein. [pause] Geh heute deine letzten fünf Chats durch. Und frag bei jedem: oben oder unten? [pause] Dann handle danach."
+}

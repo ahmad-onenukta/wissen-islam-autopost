@@ -1,0 +1,204 @@
+{
+ "id": "032",
+ "thema": "Viral & Trending",
+ "title": "Zwei Dinge, die du hast und nicht merkst",
+ "hook": "Der Prophet ﷺ hat zwei Geschenke genannt, bei denen die meisten Menschen betrogen werden. Nicht von anderen — von sich selbst.",
+ "appeal": "Nimm dir heute eine Stunde, die du sonst verscrollst, und tu damit etwas, das in einem Jahr noch zählt.",
+ "blocks": [
+  {
+   "top": "Der Prophet ﷺ hat zwei Geschenke genannt,",
+   "big": "bei denen die meisten *betrogen* werden.",
+   "visual": "letters",
+   "letters": {
+    "word": "2"
+   }
+  },
+  {
+   "top": "Nicht von anderen.",
+   "big": "Von sich *selbst*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "",
+   "big": "„Zwei Gnaden, in denen viele Menschen *betrogen* werden: Gesundheit und freie Zeit.“",
+   "visual": "ayah",
+   "ar": "*نِعْمَتَانِ مَغْبُونٌ فِيهِمَا كَثِيرٌ مِنَ ٱلنَّاسِ* ٱلصِّحَّةُ وَٱلْفَرَاغُ",
+   "de": "„Zwei Gnaden, in denen viele Menschen betrogen werden: die Gesundheit und die freie Zeit.“",
+   "ref": "SAHIH AL-BUKHARI 6412"
+  },
+  {
+   "top": "Das Wort *maghbun*",
+   "big": "ist ein *Handelsbegriff*.",
+   "visual": "none"
+  },
+  {
+   "top": "Es heißt: beim Tausch",
+   "big": "*über den Tisch gezogen* werden.",
+   "visual": "none"
+  },
+  {
+   "top": "Also: Du hast etwas Wertvolles",
+   "big": "und gibst es für fast *nichts* her.",
+   "visual": "compare",
+   "ca": {
+    "label": "Du gibst",
+    "value": "Zeit + Kraft"
+   },
+   "cb": {
+    "label": "Du bekommst",
+    "value": "fast nichts"
+   }
+  },
+  {
+   "top": "Warum gerade *diese* zwei?",
+   "big": "Weil man beide erst merkt, wenn sie *weg* sind.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Gesundheit merkst du am ersten Tag,",
+   "big": "an dem du sie *nicht* hast.",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "sub": "GESUNDHEIT"
+   }
+  },
+  {
+   "top": "Freie Zeit merkst du,",
+   "big": "wenn du in einer Phase steckst, in der es *keine* gibt.",
+   "visual": "stat",
+   "stat": {
+    "value": "2",
+    "sub": "FREIE ZEIT"
+   }
+  },
+  {
+   "top": "Und beide hast du",
+   "big": "*ausgerechnet jetzt* — während du das hier siehst.",
+   "visual": "none"
+  },
+  {
+   "top": "Dazu passt eine ganze Sure.",
+   "big": "Sie ist *drei* Verse lang.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "„Beim Zeitalter!",
+   "big": "Wahrlich, der Mensch ist im *Verlust*.“",
+   "visual": "ayah",
+   "ar": "وَٱلْعَصْرِ *إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ*",
+   "de": "„Beim Zeitalter! Wahrlich, der Mensch ist im Verlust.“",
+   "ref": "SURE 103 · VERS 2–3"
+  },
+  {
+   "top": "Das ist die Grundannahme.",
+   "big": "*Verlust* ist der Normalzustand.",
+   "visual": "none"
+  },
+  {
+   "top": "Nicht Stillstand.",
+   "big": "*Minus*. Weil die Zeit läuft, ob du etwas tust oder nicht.",
+   "visual": "slider",
+   "slider": {
+    "a": "MINUS",
+    "b": "PLUS",
+    "pos": 0.0,
+    "label": "Standard"
+   }
+  },
+  {
+   "top": "Und dann nennt die Sure *vier* Ausnahmen.",
+   "big": "",
+   "visual": "letters",
+   "letters": {
+    "word": "4"
+   }
+  },
+  {
+   "top": "Glauben. Gute Taten.",
+   "big": "Einander zur *Wahrheit* ermahnen. Einander zur *Geduld* ermahnen.",
+   "visual": "ayah",
+   "ar": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ *وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ*",
+   "de": "„Außer denen, die glauben und gute Werke tun und einander zur Wahrheit und zur Geduld ermahnen.“",
+   "ref": "SURE 103 · VERS 4"
+  },
+  {
+   "top": "Zwei davon sind *allein* zu schaffen.",
+   "big": "Zwei brauchen *andere* Menschen.",
+   "visual": "compare",
+   "ca": {
+    "label": "Allein",
+    "value": "Glaube + Taten"
+   },
+   "cb": {
+    "label": "Gemeinsam",
+    "value": "Wahrheit + Geduld",
+    "accent": true
+   }
+  },
+  {
+   "top": "Deshalb reicht es nicht,",
+   "big": "selbst gut zu sein. Du brauchst *Leute*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Nimm dir heute eine Stunde,",
+   "big": "die du sonst *verscrollst*.",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "unit": "Std.",
+    "sub": "HEUTE"
+   }
+  },
+  {
+   "top": "Und tu damit etwas,",
+   "big": "das in einem *Jahr* noch zählt.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 6412 (Buch 81, Hadith 1)",
+    "Koran 103:2–4 (alislam.org, Ahmadiyya-Zählung)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "„Zwei Gnaden, in denen viele Menschen betrogen werden: die Gesundheit und die freie Zeit“ (Ibn Abbas)",
+   "ref": "Sahih al-Bukhari 6412, Buch 81 (ar-Riqaq), Hadith 1",
+   "url": "https://sunnah.com/bukhari:6412",
+   "verified": true
+  },
+  {
+   "claim": "Sure al-Asr: „Beim Zeitalter! Wahrlich, der Mensch ist im Verlust — außer denen, die glauben und gute Werke tun und einander zur Wahrheit und zur Geduld ermahnen.“",
+   "ref": "Koran 103:2–4, alislam.org (Hafs 103:1–3)",
+   "url": "https://www.alislam.org/quran/103:1",
+   "verified": true
+  }
+ ],
+ "caption": "„Zwei Gnaden, in denen viele Menschen betrogen werden: die Gesundheit und die freie Zeit.“ (Bukhari 6412)\n\nDas Wort maghbun ist ein Handelsbegriff: beim Tausch über den Tisch gezogen werden. Du hast etwas Wertvolles und gibst es für fast nichts her.\n\nWarum diese zwei? Weil man beide erst merkt, wenn sie weg sind. Und beide hast du ausgerechnet jetzt.\n\nDazu passt eine Sure von drei Versen: „Beim Zeitalter! Wahrlich, der Mensch ist im Verlust.“ (103:2–3) Verlust ist der Normalzustand — weil die Zeit läuft, ob du etwas tust oder nicht.\n\nDann vier Ausnahmen: Glauben, gute Werke, einander zur Wahrheit und zur Geduld ermahnen. Zwei davon brauchen andere Menschen.\n\nQuellen: Sahih al-Bukhari 6412 · alislam.org\n\n#islam #zeit #koran #hadith #alasr #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "Der Prophet sallallahu alaihi wa sallam hat zwei Geschenke genannt, bei denen die meisten betrogen werden. [pause] Nicht von anderen. Von sich selbst. [pause] „Zwei Gnaden, in denen viele Menschen betrogen werden: Gesundheit und freie Zeit.“ [pause] Das Wort maghbun ist ein Handelsbegriff. [pause] Es heißt: beim Tausch über den Tisch gezogen werden. [pause] Also: Du hast etwas Wertvolles und gibst es für fast nichts her. [pause] Warum gerade diese zwei? Weil man beide erst merkt, wenn sie weg sind. [pause] Gesundheit merkst du am ersten Tag, an dem du sie nicht hast. [pause] Freie Zeit merkst du, wenn du in einer Phase steckst, in der es keine gibt. [pause] Und beide hast du ausgerechnet jetzt — während du das hier siehst. [pause] Dazu passt eine ganze Sure. Sie ist drei Verse lang. [pause] „Beim Zeitalter! Wahrlich, der Mensch ist im Verlust.“ [pause] Das ist die Grundannahme. Verlust ist der Normalzustand. [pause] Nicht Stillstand. Minus. Weil die Zeit läuft, ob du etwas tust oder nicht. [pause] Und dann nennt die Sure vier Ausnahmen. [pause] Glauben. Gute Taten. Einander zur Wahrheit ermahnen. Einander zur Geduld ermahnen. [pause] Zwei davon sind allein zu schaffen. Zwei brauchen andere Menschen. [pause] Deshalb reicht es nicht, selbst gut zu sein. Du brauchst Leute. [pause] Nimm dir heute eine Stunde, die du sonst verscrollst. [pause] Und tu damit etwas, das in einem Jahr noch zählt.",
+ "palette": {
+  "bg": "#0A1430",
+  "ink": "#DCE9FF",
+  "dim": "#9FB3D9",
+  "accent": "#7FB3FF",
+  "card": "#122048",
+  "line": "#2A3A66",
+  "mute": "#6F85B3"
+ }
+}

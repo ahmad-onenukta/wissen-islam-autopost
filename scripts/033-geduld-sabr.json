@@ -1,0 +1,180 @@
+{
+ "id": "033",
+ "thema": "Geduld / Sabr",
+ "title": "Der Satz, der dir gehört, bevor du ihn brauchst",
+ "hook": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. Aber der Koran gibt ihn für jede Art von Schlag — und er enthält zwei Aussagen, die alles verändern.",
+ "appeal": "Lern den Satz heute. Nicht wenn du ihn brauchst — dann ist kein Kopf dafür da.",
+ "blocks": [
+  {
+   "top": "Es gibt einen Satz,",
+   "big": "den Muslime sagen, wenn jemand *stirbt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Aber der Koran gibt ihn",
+   "big": "für *jede* Art von Schlag.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Der Vers beginnt mit einer *Bedingung*:",
+   "big": "„Die, wenn ein Unglück sie trifft …“",
+   "visual": "none"
+  },
+  {
+   "top": "Nicht: wenn ein *Todesfall*.",
+   "big": "*Musiba*. Jeder Schlag.",
+   "visual": "none"
+  },
+  {
+   "top": "Kündigung. Diagnose.",
+   "big": "Prüfung durchgefallen. Vertrauen *gebrochen*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "„*Wir gehören Allah*, und zu Ihm kehren wir zurück.“",
+   "visual": "ayah",
+   "ar": "ٱلَّذِينَ إِذَآ أَصَـٰبَتْهُم مُّصِيبَةٌ قَالُوٓا۟ *إِنَّا لِلَّهِ وَإِنَّآ إِلَيْهِ رَٰجِعُونَ*",
+   "de": "„Die, wenn ein Unglück sie trifft, sagen: Wir gehören Allah, und zu Ihm werden wir zurückkehren.“",
+   "ref": "SURE 2 · VERS 157"
+  },
+  {
+   "top": "Der Satz enthält",
+   "big": "*zwei* Aussagen. Beide sind Antworten.",
+   "visual": "letters",
+   "letters": {
+    "word": "12"
+   }
+  },
+  {
+   "top": "Erste:",
+   "big": "*Wir gehören Allah*.",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "sub": "WIR GEHÖREN IHM"
+   }
+  },
+  {
+   "top": "Das ist die Antwort auf:",
+   "big": "*Warum* ist es mir weggenommen worden?",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Weil es nie *dir* gehörte.",
+   "big": "Nicht die Gesundheit. Nicht die Zeit. Nicht die Menschen.",
+   "visual": "none"
+  },
+  {
+   "top": "Es war *geliehen*.",
+   "big": "Und der Verleiher hat es zurückgeholt.",
+   "visual": "compare",
+   "ca": {
+    "label": "Gefühl",
+    "value": "geraubt"
+   },
+   "cb": {
+    "label": "Wirklichkeit",
+    "value": "zurückgegeben",
+    "accent": true
+   }
+  },
+  {
+   "top": "Zweite:",
+   "big": "*Zu Ihm kehren wir zurück*.",
+   "visual": "stat",
+   "stat": {
+    "value": "2",
+    "sub": "WIR GEHEN ZURÜCK"
+   }
+  },
+  {
+   "top": "Das ist die Antwort auf:",
+   "big": "Und *jetzt*?",
+   "visual": "none"
+  },
+  {
+   "top": "Die Rechnung ist nicht geschlossen.",
+   "big": "Sie wird *dort* geschlossen.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Deshalb ist der Satz",
+   "big": "keine *Resignation*.",
+   "visual": "none"
+  },
+  {
+   "top": "Er sagt nicht: Es ist egal.",
+   "big": "Er sagt: Es ist noch nicht *fertig*.",
+   "visual": "slider",
+   "slider": {
+    "a": "AUFGEBEN",
+    "b": "WEITER",
+    "pos": 1.0,
+    "label": "Was der Satz tut"
+   }
+  },
+  {
+   "top": "Und der Vers davor sagt,",
+   "big": "dass das kein *Zufall* ist.",
+   "visual": "none"
+  },
+  {
+   "top": "Allah kündigt die Prüfung *an*:",
+   "big": "Hunger, Verlust, Angst — und „verkünde den *Standhaften* frohe Botschaft“.",
+   "visual": "none"
+  },
+  {
+   "top": "Die frohe Botschaft kommt",
+   "big": "*vor* der Prüfung im Text.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Lern den Satz *heute*.",
+   "big": "Nicht wenn du ihn brauchst.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "Dann ist kein *Kopf* dafür da.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 2:156–157 (alislam.org, Ahmadiyya-Zählung)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Koran 2:157 — „Die, wenn ein Unglück (musiba) sie trifft, sagen: Wir gehören Allah, und zu Ihm werden wir zurückkehren“; der Vers davor (2:156) kündigt Prüfung durch Furcht, Hunger und Verlust an und verheißt den Standhaften frohe Botschaft",
+   "ref": "alislam.org (Hafs 2:155–156)",
+   "url": "https://www.alislam.org/quran/2:157",
+   "verified": true
+  }
+ ],
+ "caption": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. Aber der Koran gibt ihn für jede Art von Schlag — das Wort ist musiba: Kündigung, Diagnose, gebrochenes Vertrauen.\n\n„Die, wenn ein Unglück sie trifft, sagen: Wir gehören Allah, und zu Ihm werden wir zurückkehren.“ (2:157)\n\nDer Satz enthält zwei Antworten. „Wir gehören Allah“ antwortet auf: warum wurde es mir weggenommen? Weil es nie dir gehörte — es war geliehen. „Zu Ihm kehren wir zurück“ antwortet auf: und jetzt? Die Rechnung wird dort geschlossen.\n\nDeshalb ist der Satz keine Resignation. Er sagt nicht „es ist egal“, sondern „es ist noch nicht fertig“.\n\nLern ihn heute. Nicht wenn du ihn brauchst.\n\nQuellen: alislam.org\n\n#islam #sabr #koran #geduld #trauer #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "sabrina",
+ "vo_full": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. [pause] Aber der Koran gibt ihn für jede Art von Schlag. [pause] Der Vers beginnt mit einer Bedingung: „Die, wenn ein Unglück sie trifft …“ [pause] Nicht: wenn ein Todesfall. Musiba. Jeder Schlag. [pause] Kündigung. Diagnose. Prüfung durchgefallen. Vertrauen gebrochen. [pause] „Wir gehören Allah, und zu Ihm kehren wir zurück.“ [pause] Der Satz enthält zwei Aussagen. Beide sind Antworten. [pause] Erste: Wir gehören Allah. [pause] Das ist die Antwort auf: Warum ist es mir weggenommen worden? [pause] Weil es nie dir gehörte. Nicht die Gesundheit. Nicht die Zeit. Nicht die Menschen. [pause] Es war geliehen. Und der Verleiher hat es zurückgeholt. [pause] Zweite: Zu Ihm kehren wir zurück. [pause] Das ist die Antwort auf: Und jetzt? [pause] Die Rechnung ist nicht geschlossen. Sie wird dort geschlossen. [pause] Deshalb ist der Satz keine Resignation. [pause] Er sagt nicht: Es ist egal. Er sagt: Es ist noch nicht fertig. [pause] Und der Vers davor sagt, dass das kein Zufall ist. [pause] Allah kündigt die Prüfung an: Hunger, Verlust, Angst — und „verkünde den Standhaften frohe Botschaft“. [pause] Die frohe Botschaft kommt vor der Prüfung im Text. [pause] Lern den Satz heute. Nicht wenn du ihn brauchst. [pause] Dann ist kein Kopf dafür da.",
+ "palette": {
+  "bg": "#1C1410",
+  "ink": "#F3E9DC",
+  "dim": "#B8A68F",
+  "accent": "#D98C3F",
+  "card": "#2A1F18",
+  "line": "#4A3A2E",
+  "mute": "#8A7866"
+ }
+}

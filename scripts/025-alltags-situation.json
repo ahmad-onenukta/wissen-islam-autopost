@@ -1,0 +1,160 @@
+{
+ "id": "025",
+ "thema": "Alltags-Situation",
+ "title": "Der Test, den dein Nachbar entscheidet",
+ "hook": "Der Prophet ﷺ hat dreimal geschworen. Und dann gesagt: Dieser Mensch hat keinen Glauben. Es ging nicht um Gebet, Fasten oder Spenden.",
+ "appeal": "Frag dich, was dein Nachbar über dich sagen würde, wenn ihn niemand nach deinem Glauben fragt.",
+ "blocks": [
+  {
+   "top": "Der Prophet ﷺ hat *dreimal* geschworen.",
+   "big": "Bei Allah. Bei Allah. Bei Allah.",
+   "visual": "letters",
+   "letters": {
+    "word": "3"
+   }
+  },
+  {
+   "top": "Und dann gesagt:",
+   "big": "Dieser Mensch hat *keinen* Glauben.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Es ging *nicht* um Gebet.",
+   "big": "Nicht um Fasten. Nicht um Spenden.",
+   "visual": "none"
+  },
+  {
+   "top": "Die Gefährten fragten:",
+   "big": "„Wer, o Gesandter Allahs?“",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "„Der, dessen *Nachbar* vor seinem Unheil nicht sicher ist.“",
+   "visual": "ayah",
+   "ar": "*ٱلَّذِى لَا يَأْمَنُ جَارُهُ بَوَايِقَهُ*",
+   "de": "„Der, dessen Nachbar vor seinem Unheil nicht sicher ist.“",
+   "ref": "SAHIH AL-BUKHARI 6016"
+  },
+  {
+   "top": "Achte auf die Formulierung.",
+   "big": "Nicht: wer seinen Nachbarn *schädigt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Sondern:",
+   "big": "dessen Nachbar sich nicht *sicher fühlt*.",
+   "visual": "compare",
+   "ca": {
+    "label": "Nicht",
+    "value": "was du tust"
+   },
+   "cb": {
+    "label": "Sondern",
+    "value": "wie er sich fühlt",
+    "accent": true
+   }
+  },
+  {
+   "top": "Der Maßstab liegt nicht bei dir.",
+   "big": "Er liegt bei *ihm*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Du kannst sagen: Ich habe nie etwas getan.",
+   "big": "Die Frage ist: *Rechnet* er damit?",
+   "visual": "none"
+  },
+  {
+   "top": "Und „Nachbar“ heißt hier nicht",
+   "big": "„derselbe *Glaube*“.",
+   "visual": "none"
+  },
+  {
+   "top": "Der Mann über dir.",
+   "big": "Die Familie nebenan. Der im Treppenhaus.",
+   "visual": "none"
+  },
+  {
+   "top": "Lärm um elf. Der Parkplatz.",
+   "big": "Das Paket, das du nicht annimmst. Der Blick, den du *wegdrehst*.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Nichts davon ist eine große Sünde.",
+   "big": "Aber alles davon ist *Unsicherheit*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und daneben steht der andere Hadith:",
+   "big": "„Wer an Allah glaubt, soll seinen Nachbarn nicht *schädigen*.“",
+   "visual": "quote",
+   "quote": "Wer an Allah und den Jüngsten Tag glaubt, soll seinen Nachbarn nicht schädigen.",
+   "quoteRef": "SAHIH AL-BUKHARI 6475"
+  },
+  {
+   "top": "Zweimal dieselbe Verbindung:",
+   "big": "*Glaube* und *Nachbar* im selben Satz.",
+   "visual": "none"
+  },
+  {
+   "top": "Dein Nachbar ist der Zeuge,",
+   "big": "den du dir nicht *aussuchen* kannst.",
+   "visual": "none",
+   "light": true
+  },
+  {
+   "top": "Er sieht dich ohne Publikum.",
+   "big": "Ohne Moschee. Ohne Profil.",
+   "visual": "none"
+  },
+  {
+   "top": "Frag dich, was er über dich sagen würde,",
+   "big": "wenn ihn *niemand* nach deinem Glauben fragt.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 6016 (Buch 78, Hadith 47)",
+    "Sahih al-Bukhari 6475 (Buch 81, Hadith 64)"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Dreifacher Schwur: „Er hat keinen Glauben“ — „Der, dessen Nachbar vor seinem Unheil nicht sicher ist“",
+   "ref": "Sahih al-Bukhari 6016, Buch 78 (al-Adab), Hadith 47",
+   "url": "https://sunnah.com/bukhari:6016",
+   "verified": true
+  },
+  {
+   "claim": "„Wer an Allah und den Jüngsten Tag glaubt, soll seinen Nachbarn nicht schädigen“",
+   "ref": "Sahih al-Bukhari 6475, Buch 81, Hadith 64",
+   "url": "https://sunnah.com/bukhari:6475",
+   "verified": true
+  }
+ ],
+ "caption": "Der Prophet ﷺ hat dreimal bei Allah geschworen und dann gesagt: Dieser Mensch hat keinen Glauben.\n\nNicht wegen Gebet, Fasten oder Spenden. „Der, dessen Nachbar vor seinem Unheil nicht sicher ist.“ (Bukhari 6016)\n\nAchte auf die Formulierung: nicht wer seinen Nachbarn schädigt — sondern dessen Nachbar sich nicht sicher fühlt. Der Maßstab liegt bei ihm, nicht bei dir.\n\nLärm um elf, der Parkplatz, das Paket, das du nicht annimmst. Keine große Sünde — aber alles Unsicherheit.\n\nDein Nachbar ist der Zeuge, den du dir nicht aussuchen kannst. Er sieht dich ohne Publikum.\n\nQuellen: Sahih al-Bukhari 6016 · 6475\n\n#islam #nachbarn #hadith #adab #wissen #muslim #deutsch",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert",
+ "vo_full": "Der Prophet sallallahu alaihi wa sallam hat dreimal geschworen. Bei Allah. Bei Allah. Bei Allah. [pause] Und dann gesagt: Dieser Mensch hat keinen Glauben. [pause] Es ging nicht um Gebet. Nicht um Fasten. Nicht um Spenden. [pause] Die Gefährten fragten: „Wer, o Gesandter Allahs?“ [pause] „Der, dessen Nachbar vor seinem Unheil nicht sicher ist.“ [pause] Achte auf die Formulierung. Nicht: wer seinen Nachbarn schädigt. [pause] Sondern: dessen Nachbar sich nicht sicher fühlt. [pause] Der Maßstab liegt nicht bei dir. Er liegt bei ihm. [pause] Du kannst sagen: Ich habe nie etwas getan. Die Frage ist: Rechnet er damit? [pause] Und „Nachbar“ heißt hier nicht „derselbe Glaube“. [pause] Der Mann über dir. Die Familie nebenan. Der im Treppenhaus. [pause] Lärm um elf. Der Parkplatz. Das Paket, das du nicht annimmst. Der Blick, den du wegdrehst. [pause] Nichts davon ist eine große Sünde. Aber alles davon ist Unsicherheit. [pause] Und daneben steht der andere Hadith: „Wer an Allah glaubt, soll seinen Nachbarn nicht schädigen.“ [pause] Zweimal dieselbe Verbindung: Glaube und Nachbar im selben Satz. [pause] Dein Nachbar ist der Zeuge, den du dir nicht aussuchen kannst. [pause] Er sieht dich ohne Publikum. Ohne Moschee. Ohne Profil. [pause] Frag dich, was er über dich sagen würde, wenn ihn niemand nach deinem Glauben fragt.",
+ "palette": {
+  "bg": "#0A1430",
+  "ink": "#DCE9FF",
+  "dim": "#9FB3D9",
+  "accent": "#7FB3FF",
+  "card": "#122048",
+  "line": "#2A3A66",
+  "mute": "#6F85B3"
+ }
+}
