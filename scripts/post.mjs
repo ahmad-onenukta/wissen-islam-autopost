@@ -107,6 +107,15 @@ const log = fs.existsSync("posted.json") ? JSON.parse(fs.readFileSync("posted.js
 log.push({ id: next.id, file: next.file, media_id: published.id, posted_at: next.posted_at });
 fs.writeFileSync("posted.json", JSON.stringify(log, null, 2) + "\n");
 
+// --- 5c. YouTube Short (gleiches Video, gleiche Caption) – Fehler brechen den Post nicht ab
+try {
+  const yt = await import("./youtube.mjs");
+  if (yt.ytEnabled()) {
+    next.youtube_id = await yt.uploadShort(`videos/${next.file}`, next);
+    fs.writeFileSync("queue.json", JSON.stringify(queue, null, 2) + "\n");
+  } else console.log("YouTube uebersprungen (keine YT_* Secrets).");
+} catch (e) { console.log("YouTube fehlgeschlagen:", e.message.slice(0, 300)); }
+
 // Video loeschen – Instagram hat es jetzt, das Repo bleibt klein
 try { fs.unlinkSync(`videos/${next.file}`); console.log(`videos/${next.file} geloescht.`); } catch {}
 console.log("Queue aktualisiert.");
