@@ -1,11 +1,13 @@
 name: Reel produzieren
 
 on:
+  schedule:
+    - cron: "0 4 * * *"      # taeglich 05:00 Berlin: naechstes Script produzieren, wenn Queue < 3
   workflow_dispatch:
     inputs:
       id:
-        description: "Script-ID (z. B. 029)"
-        required: true
+        description: "Script-ID (z. B. 011) – leer = naechstes aus ORDER.txt"
+        required: false
       tempo:
         description: "atempo (1.0 = Original)"
         default: "1.0"
@@ -32,13 +34,29 @@ jobs:
       - name: Script-ID bestimmen
         id: pick
         run: |
-          if [[ -n "${{ inputs.id }}" ]]; then
-            echo "id=${{ inputs.id }}" >> $GITHUB_OUTPUT
-          else
+          id="${{ inputs.id }}"
+          f=""
+          if [[ -z "$id" && "${{ github.event_name }}" == "push" ]]; then
             f=$(git diff --name-only HEAD~1 HEAD -- 'scripts/[0-9][0-9][0-9]*.json' | head -1)
-            [[ -z "$f" ]] && { echo "Kein neues Script."; exit 0; }
-            echo "id=$(basename "$f" .json | cut -d- -f1)" >> $GITHUB_OUTPUT
+            [[ -n "$f" ]] && id=$(basename "$f" .json | cut -d- -f1)
           fi
+          if [[ -z "$id" ]]; then
+            ready=$(node -e "console.log(require('./queue.json').filter(q=>q.status==='ready'&&new Date(q.publish_at)>new Date()).length)")
+            echo "Queue ready: $ready"
+            if [[ "${{ github.event_name }}" == "schedule" && "$ready" -ge 3 ]]; then
+              echo "Queue voll genug – nichts zu tun."; echo "id=" >> $GITHUB_OUTPUT; exit 0
+            fi
+            # Reihenfolge: scripts/ORDER.txt (eine ID pro Zeile), sonst aufsteigend
+            cands=$( [[ -f scripts/ORDER.txt ]] && grep -oE '^[0-9]{3}' scripts/ORDER.txt || true )
+            cands="$cands $(ls scripts/[0-9][0-9][0-9]*.json 2>/dev/null | xargs -n1 basename | cut -d- -f1 | sed 's/\.json$//' | sort -u)"
+            for i in $cands; do
+              ls scripts/$i*.json >/dev/null 2>&1 || continue
+              grep -q "\"id\": \"$i\"" queue.json posted.json 2>/dev/null && continue
+              id="$i"; break
+            done
+          fi
+          [[ -z "$id" ]] && echo "Kein offenes Script."
+          echo "id=$id" >> $GITHUB_OUTPUT
 
       - name: Schon produziert?
         id: check
@@ -47,7 +65,7 @@ jobs:
           if [[ -z "$id" ]] || grep -q "\"id\": \"$id\"" queue.json posted.json 2>/dev/null; then
             echo "skip=true" >> $GITHUB_OUTPUT; echo "Reel $id existiert bereits oder keine ID."
           else
-            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "skip=false" >> $GITHUB_OUTPUT; echo "Produziere Reel $id"
           fi
 
       - uses: actions/setup-node@v4
@@ -68,7 +86,11 @@ jobs:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVEN_MODEL: ${{ vars.ELEVEN_MODEL || 'eleven_v4' }}
           ELEVEN_VOICE: ${{ vars.ELEVEN_VOICE || 'ML23UVoFL5mI6APbRAeR' }}
-        run: node scripts/produce.mjs "${{ steps.pick.outputs.id }}"
+        run: |
+          if [[ -z "$ELEVENLABS_API_KEY" ]]; then
+            echo "::error::Secret ELEVENLABS_API_KEY fehlt – ohne Voice-Over kein Reel."; exit 1
+          fi
+          node scripts/produce.mjs "${{ steps.pick.outputs.id }}"
 
       - name: Remotion-Abhaengigkeiten
         if: steps.check.outputs.skip == 'false'
@@ -79,7 +101,6 @@ jobs:
         if: steps.check.outputs.skip == 'false'
         working-directory: remotion
         run: |
-          # Die Fonts liegen nicht im Repo, sondern kommen aus den npm-Paketen.
           mkdir -p public/fonts
           for w in 500 700 800 900; do
             cp "node_modules/@fontsource/inter/files/inter-latin-$w-normal.woff2" public/fonts/
