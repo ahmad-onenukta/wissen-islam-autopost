@@ -76,9 +76,12 @@ jobs:
         if: steps.check.outputs.skip == 'false'
         with:
           python-version: "3.12"
-      - name: ffmpeg
+      - name: Python-Abhaengigkeiten (ffmpeg ist auf ubuntu-latest vorinstalliert)
         if: steps.check.outputs.skip == 'false'
-        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+        run: |
+          pip install -q numpy scipy
+          mkdir -p build remotion/public/audio remotion/out render
+          ffmpeg -version | head -1
 
       - name: Voice-Over + Wort-Timestamps (ElevenLabs)
         if: steps.check.outputs.skip == 'false'
