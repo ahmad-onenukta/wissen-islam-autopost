@@ -11,6 +11,10 @@ on:
         description: "Nur testen, nicht posten"
         type: boolean
         default: false
+      youtube_id:
+        description: "Nur YouTube-Short fuer diese Queue-ID hochladen (Video muss in videos/ liegen)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -47,7 +51,18 @@ jobs:
           IG_TOKEN:   ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           DRY_RUN:    ${{ inputs.dry_run }}
+          YT_CLIENT_ID:     ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: node scripts/post.mjs
+
+      - name: YouTube Short nachholen (manuell, optional)
+        if: github.event_name == 'workflow_dispatch' && inputs.youtube_id != ''
+        env:
+          YT_CLIENT_ID:     ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: node scripts/youtube.mjs "${{ inputs.youtube_id }}"
 
       - name: Queue zurueckschreiben
         run: |
