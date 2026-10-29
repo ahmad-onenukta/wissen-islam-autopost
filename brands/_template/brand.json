@@ -1,0 +1,18 @@
+{
+  "slug": "_template",
+  "name": "Neue Brand",
+  "niche": "<Nische>",
+  "language": "de",
+  "handle": { "instagram": "", "tiktok": "", "youtube": "", "facebook": "" },
+  "targets": ["instagram"],
+  "schedule": { "slot_berlin": "19:00", "per_day": 1 },
+  "renderer": { "composition": "Essay", "theme": "dark", "captions": false },
+  "palette": { "bg": "#0D0D0F", "fg": "#FFFFFF", "accent": "#E0312E", "muted": "#8A8A90" },
+  "fonts": { "latin": "Inter", "arabic": "Amiri" },
+  "voice": { "default": "robert", "model": "eleven_v4",
+    "ids": { "robert": "ML23UVoFL5mI6APbRAeR", "sabrina": "cqPdIo76zSHFDcSZpFov" } },
+  "caption": { "core_hashtags": [], "cta": "", "sources_label": "Quellen:" },
+  "fact_policy": { "doctrine": "", "primary_sources": [], "quran_numbering": null, "required": true, "taboo": [] },
+  "env_prefix": "TEMPLATE",
+  "active": false
+}
