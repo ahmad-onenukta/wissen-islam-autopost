@@ -189,15 +189,20 @@
       "at": "2026-10-29T05:51:13.482Z",
       "followers": 621,
       "views_total": 147672
+    },
+    {
+      "at": "2026-10-29T13:05:38.498Z",
+      "followers": 629,
+      "views_total": 149229
     }
   ],
   "account": {
     "username": "nurwissen_official",
-    "followers_count": 621,
+    "followers_count": 629,
     "follows_count": 0,
     "media_count": 8,
     "id": "28768435396155579",
-    "at": "2026-10-29T05:51:13.482Z"
+    "at": "2026-10-29T13:05:38.498Z"
   },
   "reels": [
     {
@@ -205,21 +210,21 @@
       "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
       "posted": "2026-10-28T21:43:39+0000",
       "caption": "Der Prophet (saw) hat einen Mann beschrieben, den er nie get",
-      "views": 1284,
-      "reach": 1110,
-      "likes": 75,
+      "views": 1958,
+      "reach": 1621,
+      "likes": 112,
       "comments": 2,
-      "shares": 11,
-      "saved": 15,
-      "total_interactions": 108
+      "shares": 27,
+      "saved": 23,
+      "total_interactions": 169
     },
     {
       "id": "18145450528572276",
       "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
       "posted": "2026-10-27T21:17:23+0000",
       "caption": "Ein Mann hat 99 Menschen getötet. Er fragt einen Mönch, ob e",
-      "views": 2794,
-      "reach": 2431,
+      "views": 2808,
+      "reach": 2441,
       "likes": 98,
       "comments": 1,
       "shares": 38,
@@ -231,8 +236,8 @@
       "permalink": "https://www.instagram.com/reel/De7jLSNDEat/",
       "posted": "2026-10-25T20:19:46+0000",
       "caption": "Du sagst jeden Tag seinen Namen und weißt es nicht.\n\nAl-Chwa",
-      "views": 319,
-      "reach": 261,
+      "views": 325,
+      "reach": 263,
       "likes": 10,
       "comments": 3,
       "shares": 0,
@@ -244,34 +249,34 @@
       "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
       "posted": "2026-10-24T18:25:06+0000",
       "caption": "Das Wort „Blut\" steht genau 10-mal im Koran. 4× als Speiseve",
-      "views": 7292,
-      "reach": 6239,
-      "likes": 292,
+      "views": 7319,
+      "reach": 6260,
+      "likes": 294,
       "comments": 3,
       "shares": 40,
       "saved": 86,
-      "total_interactions": 436
+      "total_interactions": 438
     },
     {
       "id": "18114527000174151",
       "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
       "posted": "2026-10-23T19:35:52+0000",
       "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Ni",
-      "views": 134887,
-      "reach": 107147,
-      "likes": 6542,
+      "views": 135711,
+      "reach": 107905,
+      "likes": 6603,
       "comments": 268,
-      "shares": 2736,
-      "saved": 1734,
-      "total_interactions": 11656
+      "shares": 2766,
+      "saved": 1743,
+      "total_interactions": 11762
     },
     {
       "id": "18106676354203367",
       "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
       "posted": "2026-10-21T19:43:01+0000",
       "caption": "Ein alter Mann hält ein Hemd. Es ist voller Blut. Und er wei",
-      "views": 376,
-      "reach": 306,
+      "views": 379,
+      "reach": 309,
       "likes": 10,
       "comments": 2,
       "shares": 0,
@@ -283,26 +288,26 @@
       "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
       "posted": "2026-10-20T19:41:49+0000",
       "caption": "Kolumbus wollte nach Indien. Er landete in Amerika – und hat",
-      "views": 449,
-      "reach": 355,
-      "likes": 7,
+      "views": 453,
+      "reach": 359,
+      "likes": 8,
       "comments": 2,
       "shares": 1,
       "saved": 1,
-      "total_interactions": 11
+      "total_interactions": 12
     },
     {
       "id": "17951034201271209",
       "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
       "posted": "2026-10-19T21:37:07+0000",
       "caption": "Jedes Foto auf deinem Handy folgt einer Regel, die ein Mann ",
-      "views": 271,
-      "reach": 201,
-      "likes": 3,
+      "views": 276,
+      "reach": 203,
+      "likes": 5,
       "comments": 2,
       "shares": 2,
       "saved": 3,
-      "total_interactions": 11
+      "total_interactions": 14
     }
   ]
 }
