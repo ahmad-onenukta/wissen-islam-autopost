@@ -1,0 +1,123 @@
+name: Reel produzieren
+
+on:
+  schedule:
+    - cron: "0 4 * * *"      # taeglich 05:00 Berlin: pro Brand produzieren, bis MIN_RUNWAY erreicht
+  workflow_dispatch:
+    inputs:
+      brand:
+        description: "Brand-Slug (leer = alle aktiven)"
+        required: false
+      id:
+        description: "Script-ID (z. B. 016) – leer = naechstes offene"
+        required: false
+      tempo:
+        description: "atempo (1.0 = Original)"
+        default: "1.0"
+  push:
+    paths:
+      - "scripts/[0-9][0-9][0-9]*.json"
+      - "brands/*/scripts/[0-9][0-9][0-9]*.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: produce
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      jobs: ${{ steps.plan.outputs.jobs }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - id: plan
+        env:
+          IN_BRAND: ${{ inputs.brand }}
+          IN_ID: ${{ inputs.id }}
+          MIN_RUNWAY: ${{ vars.MIN_RUNWAY || 3 }}
+        run: |
+          jobs=$(node scripts/plan_produce.mjs)
+          echo "Plan: $jobs"
+          echo "jobs=$jobs" >> $GITHUB_OUTPUT
+
+  produce:
+    needs: plan
+    if: needs.plan.outputs.jobs != '[]' && needs.plan.outputs.jobs != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        job: ${{ fromJson(needs.plan.outputs.jobs) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Abhaengigkeiten
+        run: |
+          pip install -q numpy scipy
+          mkdir -p build remotion/public/audio remotion/out
+          ffmpeg -version | head -1
+
+      - name: Voice-Over + Wort-Timestamps (ElevenLabs)
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVEN_MODEL: ${{ vars.ELEVEN_MODEL || 'eleven_v4' }}
+          BRAND: ${{ matrix.job.brand }}
+        run: |
+          if [[ -z "$ELEVENLABS_API_KEY" ]]; then echo "::error::Secret ELEVENLABS_API_KEY fehlt"; exit 1; fi
+          node scripts/produce.mjs "${{ matrix.job.id }}"
+
+      - name: Remotion-Abhaengigkeiten
+        working-directory: remotion
+        run: npm install --no-audit --no-fund
+
+      - name: Schriften
+        working-directory: remotion
+        run: |
+          mkdir -p public/fonts
+          for w in 500 700 800 900; do cp "node_modules/@fontsource/inter/files/inter-latin-$w-normal.woff2" public/fonts/; done
+          for w in 400 700; do cp "node_modules/@fontsource/amiri/files/amiri-arabic-$w-normal.woff2" public/fonts/; done
+
+      - name: Render
+        env:
+          BRAND: ${{ matrix.job.brand }}
+        run: |
+          id="${{ matrix.job.id }}"
+          bash render/make_reel.sh "$id" "build/$id-script.json" "build/$id-words.json" "build/$id-vo.mp3" 0 "${{ inputs.tempo || '1.0' }}"
+          ls -la remotion/out/
+
+      - name: In Queue einreihen + Dashboard
+        run: |
+          id="${{ matrix.job.id }}"
+          mp4=$(ls remotion/out/$id*-ig.mp4 | head -1)
+          node scripts/enqueue.mjs "$id" "$mp4" "${{ matrix.job.brand }}"
+          node scripts/dashboard.mjs
+          git pull --rebase -q || true
+          git config user.name  "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          git add -A videos/ queue.json dashboard/
+          git commit -m "produced: ${{ matrix.job.brand }}/$id"
+          git push
+
+      - name: Artefakte (Debug)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-${{ matrix.job.brand }}-${{ matrix.job.id }}
+          path: |
+            build/
+            remotion/out/
+          retention-days: 5
