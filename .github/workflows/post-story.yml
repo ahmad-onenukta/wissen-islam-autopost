@@ -2,9 +2,10 @@ name: Story posten
 
 on:
   schedule:
-    # Frueh starten, dann im Job bis zur Zielzeit warten (GitHub verschiebt
-    # geplante Laeufe bei Last). Ziel: 19:00 UTC = 20:00 Berlin, 1 h nach dem Reel.
-    - cron: "20 18 * * *"
+    # GitHub verschiebt geplante Laeufe taeglich um 2-4,5 h. Deshalb weit vor
+    # der Zielzeit starten und im Job bis 19:00 UTC = 20:00 Berlin warten.
+    - cron: "0 12 * * *"
+    - cron: "0 15 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -22,6 +23,7 @@ concurrency:
 jobs:
   story:
     runs-on: ubuntu-latest
+    timeout-minutes: 420
     steps:
       - uses: actions/checkout@v4
 
@@ -35,11 +37,16 @@ jobs:
           TARGET=$(date -u -d "today 19:00" +%s)
           NOW=$(date -u +%s)
           DIFF=$(( TARGET - NOW ))
-          if [ "$DIFF" -gt 0 ] && [ "$DIFF" -le 3600 ]; then
+          echo "Jetzt $(date -u +%H:%M) UTC, Ziel 19:00 UTC, Differenz ${DIFF}s"
+          if [ "$DIFF" -gt 21600 ]; then
+            echo "Mehr als 6 h zu frueh - dieser Lauf macht nichts."
+            exit 0
+          fi
+          if [ "$DIFF" -gt 0 ]; then
             echo "Warte ${DIFF}s bis 19:00 UTC"
             sleep "$DIFF"
           else
-            echo "Kein Warten noetig (DIFF=${DIFF}s)"
+            echo "Zielzeit bereits $(( -DIFF ))s vorbei - sofort posten"
           fi
 
       - name: ffmpeg bereitstellen
@@ -54,6 +61,7 @@ jobs:
 
       - name: Queue zurueckschreiben
         run: |
+          git pull --rebase -q || true
           if [[ -n "$(git status --porcelain queue.json videos/)" ]]; then
             git config user.name  "reel-bot"
             git config user.email "reel-bot@users.noreply.github.com"
