@@ -1,0 +1,28 @@
+{
+  "slug": "nurwissen",
+  "name": "NurWissen",
+  "niche": "Islam-Wissen, Storytelling, Zahlen-Hooks",
+  "language": "de",
+  "handle": { "instagram": "nurwissen_official", "tiktok": "", "youtube": "", "facebook": "" },
+  "targets": ["instagram", "youtube"],
+  "schedule": { "slot_berlin": "19:00", "per_day": 1 },
+  "renderer": { "composition": "Essay", "theme": "dark", "captions": false },
+  "palette": { "bg": "#0D0D0F", "fg": "#FFFFFF", "accent": "#E0312E", "muted": "#8A8A90" },
+  "fonts": { "latin": "Inter", "arabic": "Amiri" },
+  "voice": { "default": "robert", "model": "eleven_v4",
+    "ids": { "robert": "ML23UVoFL5mI6APbRAeR", "sabrina": "cqPdIo76zSHFDcSZpFov" } },
+  "caption": {
+    "core_hashtags": ["#islam", "#koran", "#muslim", "#wissen", "#deutsch"],
+    "cta": "Was hat dich daran am meisten überrascht? Schreib es in die Kommentare 👇",
+    "sources_label": "Quellen:"
+  },
+  "fact_policy": {
+    "doctrine": "Ahmadiyya Muslim Jamaat",
+    "primary_sources": ["alislam.org", "reviewofreligions.org", "ahmadiyya.de", "Siegel der Propheten"],
+    "quran_numbering": "ahmadiyya",
+    "required": true,
+    "taboo": ["Fatwas", "Polemik gegen andere Gruppen", "Politik/Konflikte", "ungeprüfte Wundergeschichten"]
+  },
+  "env_prefix": "NURWISSEN",
+  "active": true
+}
