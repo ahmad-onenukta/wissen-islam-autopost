@@ -3,192 +3,503 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Content Factory</title>
+<title>Content Factory · Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0D0D0F;--card:#16161A;--line:#26262C;--fg:#F2F2F4;--mut:#8A8A90;--acc:#E0312E;--ok:#2F9E8F;--warn:#E0A32E}
+:root{
+  --bg:#09090B; --panel:#121216; --panel2:#17171C; --line:#23232A; --line2:#2E2E36;
+  --fg:#F4F4F6; --mut:#8E8E98; --dim:#5F5F6B;
+  --acc:#E0312E; --ok:#2FA37A; --warn:#E0A32E; --info:#4C8DF6;
+  --r:16px; --sh:0 1px 0 rgba(255,255,255,.03), 0 8px 24px rgba(0,0,0,.35);
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
-header{padding:18px 16px 10px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
-h1{margin:0;font-size:19px;letter-spacing:-.3px}
-.sub{color:var(--mut);font-size:12px;margin-top:3px}
-nav{display:flex;gap:6px;overflow:auto;padding:10px 16px;border-bottom:1px solid var(--line)}
-nav button{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:13px;white-space:nowrap}
-nav button.on{background:var(--fg);color:#000;border-color:var(--fg)}
-main{padding:16px;max-width:1100px;margin:0 auto}
+html,body{margin:0;max-width:100%;overflow-x:hidden;background:var(--bg);color:var(--fg);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;-webkit-font-smoothing:antialiased}
+body{display:grid;grid-template-columns:232px 1fr;min-height:100vh}
+a{color:inherit}
+/* ---------- Sidebar ---------- */
+aside{border-right:1px solid var(--line);padding:18px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:18px;background:var(--bg)}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:-.4px;font-size:15px}
+.logo i{width:10px;height:10px;border-radius:3px;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 18%,transparent)}
+.brandsel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px}
+.brandsel select{width:100%;background:transparent;border:0;color:var(--fg);font:600 14px Inter;outline:none}
+.brandsel .meta{color:var(--mut);font-size:11px;margin-top:4px}
+.menu{display:flex;flex-direction:column;gap:2px}
+.menu button{display:flex;align-items:center;justify-content:space-between;gap:8px;background:transparent;border:0;color:var(--mut);
+  font:500 13.5px Inter;padding:9px 11px;border-radius:10px;cursor:pointer;text-align:left;width:100%}
+.menu button:hover{background:var(--panel);color:var(--fg)}
+.menu button.on{background:var(--panel2);color:var(--fg);box-shadow:inset 0 0 0 1px var(--line2)}
+.menu .badge{background:var(--line2);color:var(--fg);border-radius:999px;font-size:10.5px;padding:1px 7px;font-weight:600}
+.menu .badge.red{background:color-mix(in srgb,var(--acc) 25%,transparent);color:#FFB3B2}
+.side-foot{margin-top:auto;font-size:11px;color:var(--dim);line-height:1.6}
+.side-foot a{color:var(--mut);text-decoration:none;border-bottom:1px solid var(--line2)}
+.dot{display:inline-block;width:7px;height:7px;border-radius:99px;margin-right:6px;vertical-align:1px}
+/* ---------- Main ---------- */
+main{padding:22px 26px 60px;max-width:1500px}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap}
+h1{margin:0;font-size:23px;letter-spacing:-.6px;font-weight:700}
+.head p{margin:4px 0 0;color:var(--mut);font-size:12.5px}
+.stamp{color:var(--dim);font-size:11.5px;text-align:right}
 section{display:none}section.on{display:block}
-.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
-.card h3{margin:0 0 2px;font-size:16px}
-.kpi{display:flex;gap:16px;margin-top:10px}
-.kpi div{font-size:12px;color:var(--mut)}
-.kpi b{display:block;font-size:20px;color:var(--fg)}
-table{width:100%;border-collapse:collapse;font-size:13px}
-th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
-th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
-.pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;border:1px solid var(--line)}
-.ready{color:var(--ok);border-color:var(--ok)}.posted{color:var(--mut)}.paused{color:var(--warn);border-color:var(--warn)}
-.tgt{font-size:11px;color:var(--mut)}
-button.act{background:transparent;color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:4px 9px;font-size:12px;margin-right:4px;cursor:pointer}
-button.act:hover{border-color:var(--fg)}
-a{color:var(--fg)}
-pre{background:#0A0A0C;border:1px solid var(--line);border-radius:10px;padding:10px;overflow:auto;font-size:12px}
-.bar{height:6px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:8px}
-.bar i{display:block;height:100%;background:var(--ok)}
-.muted{color:var(--mut);font-size:12px}
-label{font-size:12px;color:var(--mut);display:block;margin:8px 0 3px}
-input,select{width:100%;background:#0A0A0C;color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px}
-.row{display:grid;gap:10px;grid-template-columns:1fr 1fr}
-.warnbox{border-color:var(--warn)}
+/* KPI */
+.kpis{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));margin-bottom:14px}
+.kpi{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--r);padding:14px 15px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.kpi .l{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.6px;font-weight:600}
+.kpi .v{font-size:27px;font-weight:700;letter-spacing:-.8px;margin-top:6px;line-height:1.1}
+.kpi .d{font-size:11.5px;color:var(--dim);margin-top:3px}
+.kpi .d b{color:var(--ok);font-weight:600}
+.kpi .d b.down{color:var(--acc)}
+.kpi svg{position:absolute;right:0;bottom:0;width:62%;height:40px;opacity:.5}
+/* panels */
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);margin-bottom:14px}
+.panel>h2{margin:0;padding:14px 16px 0;font-size:14.5px;font-weight:650;letter-spacing:-.2px}
+.panel>.hint{padding:3px 16px 0;color:var(--mut);font-size:12px}
+.panel>.body{padding:14px 16px 16px;overflow-x:auto}
+.cols2{display:grid;gap:14px;grid-template-columns:1.55fr 1fr}
+/* table */
+table{width:100%;min-width:520px;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;font-weight:650;padding:0 8px 8px;border-bottom:1px solid var(--line)}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tbody tr:hover{background:var(--panel2)}
+.ttl{font-weight:550}
+.sub{color:var(--dim);font-size:11.5px}
+/* pipeline board */
+.board{display:grid;gap:12px;grid-template-columns:repeat(5,minmax(0,1fr))}
+.col{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px;min-height:160px;max-height:72vh;overflow:auto}
+.col h3{position:sticky;top:-12px;background:var(--panel);padding-top:2px;z-index:1}
+.col h3{margin:0 0 2px;font-size:12px;text-transform:uppercase;letter-spacing:.7px;color:var(--mut);display:flex;justify-content:space-between}
+.col .cnt{color:var(--fg);font-weight:700}
+.col .desc{color:var(--dim);font-size:11px;margin-bottom:10px}
+.cardx{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--line2);border-radius:12px;padding:10px 11px;margin-bottom:8px;cursor:pointer}
+.cardx:hover{border-color:var(--line2);transform:translateY(-1px);transition:.12s}
+.cardx .id{font-size:10.5px;color:var(--dim);font-weight:600;letter-spacing:.4px}
+.cardx .t{font-size:12.5px;font-weight:550;margin-top:3px;line-height:1.35}
+.cardx .m{font-size:11px;color:var(--mut);margin-top:6px;display:flex;gap:9px;flex-wrap:wrap}
+.cardx.ok{border-left-color:var(--ok)}
+.cardx.warnc{border-left-color:var(--warn)}
+.cardx.livec{border-left-color:var(--info)}
+.cardx.accc{border-left-color:var(--acc)}
+/* pills & chips */
+.pill{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line2);border-radius:999px;padding:2px 9px;font-size:11px;color:var(--mut);font-weight:550}
+.pill.ok{color:#8FE0C2;border-color:color-mix(in srgb,var(--ok) 55%,transparent);background:color-mix(in srgb,var(--ok) 12%,transparent)}
+.pill.warn{color:#F0D08A;border-color:color-mix(in srgb,var(--warn) 55%,transparent);background:color-mix(in srgb,var(--warn) 12%,transparent)}
+.pill.bad{color:#FFB3B2;border-color:color-mix(in srgb,var(--acc) 55%,transparent);background:color-mix(in srgb,var(--acc) 12%,transparent)}
+.pill.info{color:#B8D2FF;border-color:color-mix(in srgb,var(--info) 55%,transparent);background:color-mix(in srgb,var(--info) 12%,transparent)}
+/* buttons */
+.btn{background:var(--panel2);border:1px solid var(--line2);color:var(--fg);border-radius:10px;padding:7px 12px;font:550 12.5px Inter;cursor:pointer}
+.btn:hover{border-color:var(--mut)}
+.btn.p{background:var(--fg);color:#000;border-color:var(--fg)}
+.btn.d{color:#FFB3B2;border-color:color-mix(in srgb,var(--acc) 45%,transparent)}
+.btn.s{padding:4px 9px;font-size:11.5px;border-radius:8px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+/* drawer */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);backdrop-filter:blur(2px);display:none;z-index:40}
+.scrim.on{display:block}
+.drawer{position:fixed;top:0;right:0;width:min(520px,100%);height:100%;background:var(--panel);border-left:1px solid var(--line2);
+  transform:translateX(100%);transition:transform .18s ease;z-index:41;overflow:auto;padding:20px 20px 60px}
+.drawer.on{transform:none}
+.drawer h3{margin:4px 0 2px;font-size:18px;letter-spacing:-.4px}
+.drawer .close{position:absolute;top:14px;right:16px}
+.kv{display:grid;grid-template-columns:120px 1fr;gap:6px 10px;font-size:12.5px;margin:14px 0}
+.kv div:nth-child(odd){color:var(--mut)}
+.src{border:1px solid var(--line);border-radius:10px;padding:9px 10px;margin-bottom:7px;font-size:12px;background:var(--panel2)}
+.src .c{font-weight:500}
+.src .r{color:var(--mut);font-size:11.5px;margin-top:3px}
+/* forms */
+label{display:block;font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;font-weight:600;margin:12px 0 5px}
+input,select.f{width:100%;background:#0C0C0F;border:1px solid var(--line2);border-radius:10px;color:var(--fg);padding:9px 11px;font:400 13px Inter}
+pre{background:#0C0C0F;border:1px solid var(--line);border-radius:12px;padding:11px;font-size:11.5px;overflow:auto;color:#D8D8DE}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:9px}
+.bar i{display:block;height:100%;border-radius:99px}
+.empty{color:var(--dim);font-size:12.5px;padding:10px 0}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--panel2);border:1px solid var(--line2);
+  border-radius:12px;padding:11px 14px;font-size:12.5px;z-index:50;box-shadow:var(--sh);max-width:min(620px,92vw)}
+@media(max-width:1180px){.board{grid-template-columns:repeat(3,minmax(0,1fr))}.cols2{grid-template-columns:1fr}}
+@media(max-width:860px){
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .kpi .v{font-size:22px}
+  .head{gap:8px}
+  .stamp{text-align:left}
+  body{grid-template-columns:1fr}
+  aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);flex-direction:column}
+  .menu{flex-direction:row;overflow:auto}
+  .menu button{white-space:nowrap}
+  main{padding:16px 12px 50px}
+  .board{grid-template-columns:1fr}
+  .side-foot{display:none}
+}
 </style>
 </head>
 <body>
-<header>
-  <h1>Content Factory</h1>
-  <div class="sub" id="stamp">lädt …</div>
-</header>
-<nav id="nav"></nav>
+<aside>
+  <div class="logo"><i id="logodot"></i> Content Factory</div>
+  <div class="brandsel">
+    <select id="brand"></select>
+    <div class="meta" id="brandmeta">–</div>
+  </div>
+  <nav class="menu" id="menu"></nav>
+  <div class="side-foot">
+    <div><span class="dot" id="healthdot" style="background:var(--ok)"></span><span id="healthtxt">–</span></div>
+    <div style="margin-top:8px">
+      <a href="https://github.com/ahmad-onenukta/wissen-islam-autopost/actions" target="_blank">Actions</a> ·
+      <a href="https://github.com/ahmad-onenukta/wissen-islam-autopost/edit/main/dashboard/commands.json" target="_blank">Befehle</a> ·
+      <a href="https://github.com/ahmad-onenukta/wissen-islam-autopost/blob/main/FACTORY.md" target="_blank">Doku</a>
+    </div>
+  </div>
+</aside>
+
 <main>
-  <section id="v-brands" class="on"><div class="grid" id="brands"></div><div id="health" class="grid" style="margin-top:12px"></div></section>
-  <section id="v-plan"><div id="plan"></div></section>
-  <section id="v-scripts"><div id="scripts"></div></section>
-  <section id="v-stats"><div id="stats"></div></section>
-  <section id="v-new"><div id="newbrand"></div></section>
+  <div class="head">
+    <div><h1 id="vtitle">Übersicht</h1><p id="vsub"></p></div>
+    <div class="stamp" id="stamp">lädt …</div>
+  </div>
+  <section id="v-overview" class="on"></section>
+  <section id="v-pipeline"></section>
+  <section id="v-approval"></section>
+  <section id="v-analytics"></section>
+  <section id="v-brands"></section>
 </main>
+
+<div class="scrim" id="scrim"></div>
+<div class="drawer" id="drawer"></div>
+
 <script>
 const REPO = "ahmad-onenukta/wissen-islam-autopost";
-const TABS = [["brands","Brands"],["plan","Plan & Queue"],["scripts","Scripts"],["stats","Wachstum"],["new","Neue Brand"]];
-const nav = document.getElementById("nav");
-TABS.forEach(([k,label],i)=>{
-  const b=document.createElement("button"); b.textContent=label; b.className=i?"":"on";
-  b.onclick=()=>{[...nav.children].forEach(c=>c.classList.remove("on")); b.classList.add("on");
-    document.querySelectorAll("section").forEach(s=>s.classList.remove("on"));
-    document.getElementById("v-"+k).classList.add("on"); location.hash=k;};
-  nav.appendChild(b);
-});
-const esc = s => String(s??"").replace(/[<>&]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;"}[c]));
-const dt = s => s ? new Date(s).toLocaleString("de-DE",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}) : "–";
+const GH = "https://github.com/" + REPO;
+const VIEWS = [
+  ["overview","Übersicht","Kennzahlen, Verlauf und die stärksten Reels"],
+  ["pipeline","Pipeline","Jedes Reel von der Idee bis live"],
+  ["approval","Freigabe","Fakten-Gate, Überfällige und Plattform-Fehler"],
+  ["analytics","Analytics","Reel für Reel, Hooks und Share-Quote"],
+  ["brands","Brands","Kanäle verwalten und neue Brand starten"],
+];
+let S = null, BRAND = null, VIEW = "overview";
+
+/* ---------- helpers ---------- */
+const E = s => String(s ?? "").replace(/[<>&"]/g, c => ({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[c]));
+const N = n => n == null ? "–" : new Intl.NumberFormat("de-DE").format(n);
+const DT = s => s ? new Date(s).toLocaleString("de-DE",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}) : "–";
+const D = s => s ? new Date(s).toLocaleDateString("de-DE",{day:"2-digit",month:"2-digit"}) : "–";
 const bust = () => "?t=" + Date.now();
-
-async function loadState(){
-  try{ const r = await fetch("dashboard/state.json"+bust()); if(r.ok) return await r.json(); }catch(e){}
-  // Fallback: Rohdaten
-  const q = await (await fetch("queue.json"+bust())).json();
-  const b = await (await fetch("brands/nurwissen/brand.json"+bust())).json();
-  return {generated_at:null, brands:[{slug:b.slug,name:b.name,niche:b.niche,accent:b.palette.accent,targets:b.targets,slot:b.schedule.slot_berlin,active:true,handle:b.handle,
-    ready:q.filter(x=>x.status==="ready").length, posted:q.filter(x=>x.status==="posted").length,
-    next:q.filter(x=>x.status==="ready").map(x=>x.publish_at).sort()[0]||null}],
-    queue:q.map(x=>({id:x.id,brand:x.brand||"nurwissen",status:x.status,publish_at:x.publish_at||x.posted_at,targets:x.targets||null,caption:(x.caption||"").slice(0,160),media_id:x.media_id||null,results:x.results||null})),
-    scripts_unqueued:[], posted_total:q.filter(x=>x.status==="posted").length, stats:{}};
-}
-
-function cmd(op, e, extra){
-  const o = Object.assign({op, brand:e.brand, id:e.id}, extra||{});
-  const txt = JSON.stringify([o], null, 2);
-  navigator.clipboard?.writeText(txt).then(
-    ()=>alertBox(`Befehl kopiert. Jetzt in dashboard/commands.json einfügen:`, txt),
-    ()=>alertBox("Befehl (manuell kopieren):", txt));
-}
-function alertBox(title, txt){
-  const d=document.createElement("div");
-  d.style.cssText="position:fixed;inset:auto 12px 12px 12px;background:#16161A;border:1px solid #26262C;border-radius:12px;padding:12px;z-index:9;max-width:640px;margin:auto";
-  d.innerHTML=`<div style="font-size:13px;margin-bottom:6px">${esc(title)}</div><pre>${esc(txt)}</pre>
-   <a href="https://github.com/${REPO}/edit/main/dashboard/commands.json" target="_blank">commands.json öffnen →</a>
-   <button class="act" style="float:right">schließen</button>`;
-  d.querySelector("button").onclick=()=>d.remove();
+const brandOf = () => S.brands.find(b => b.slug === BRAND) || S.brands[0] || {};
+const pipe = () => (S.pipeline || []).filter(p => p.brand === BRAND);
+const toast = (msg, extra) => {
+  document.querySelectorAll(".toast").forEach(t => t.remove());
+  const d = document.createElement("div"); d.className = "toast";
+  d.innerHTML = `${E(msg)}${extra ? `<pre style="margin:8px 0 0">${E(extra)}</pre>
+    <div class="row" style="margin-top:8px"><a class="btn s" href="${GH}/edit/main/dashboard/commands.json" target="_blank">commands.json öffnen</a>
+    <button class="btn s" onclick="this.closest('.toast').remove()">schließen</button></div>`
+    : `<button class="btn s" style="margin-left:10px" onclick="this.closest('.toast').remove()">ok</button>`}`;
   document.body.appendChild(d);
+  if (!extra) setTimeout(() => d.remove(), 3500);
+};
+function sendCmd(op, p, extra){
+  const o = Object.assign({ op, brand: p.brand, id: p.id }, extra || {});
+  const txt = JSON.stringify([o], null, 2);
+  const done = () => toast("Befehl kopiert – in dashboard/commands.json einfügen. Der Workflow »Dashboard« wendet ihn innerhalb von 30 Minuten an.", txt);
+  navigator.clipboard ? navigator.clipboard.writeText(txt).then(done, done) : done();
+}
+function spark(pts, color, h=40){
+  if (pts.length < 2) return "";
+  const mx = Math.max(...pts), mn = Math.min(...pts), sp = (mx - mn) || 1;
+  const d = pts.map((v,i)=>`${(i/(pts.length-1)*100).toFixed(2)},${(100-(v-mn)/sp*92-4).toFixed(2)}`);
+  return `<svg viewBox="0 0 100 100" preserveAspectRatio="none" style="height:${h}px">
+    <polygon points="0,100 ${d.join(" ")} 100,100" fill="${color}" opacity=".13"/>
+    <polyline points="${d.join(" ")}" fill="none" stroke="${color}" stroke-width="1.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>`;
+}
+function area(pts, labels, color){
+  if (pts.length < 2) return `<div class="empty">Noch keine Messpunkte.</div>`;
+  const mx = Math.max(...pts), mn = Math.min(...pts), sp = (mx - mn) || 1;
+  const d = pts.map((v,i)=>`${(i/(pts.length-1)*100).toFixed(2)},${(100-(v-mn)/sp*88-6).toFixed(2)}`);
+  const grid = [0,25,50,75,100].map(y=>`<line x1="0" x2="100" y1="${y}" y2="${y}" stroke="var(--line)" stroke-width=".4" vector-effect="non-scaling-stroke"/>`).join("");
+  return `<div style="position:relative">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="width:100%;height:190px;display:block">${grid}
+      <polygon points="0,100 ${d.join(" ")} 100,100" fill="${color}" opacity=".15"/>
+      <polyline points="${d.join(" ")}" fill="none" stroke="${color}" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>
+    <div class="row" style="justify-content:space-between;color:var(--dim);font-size:11px;margin-top:6px">
+      <span>${E(labels[0])}</span><span>${E(labels[labels.length-1])}</span></div>
+    <div style="position:absolute;top:0;right:0;color:var(--dim);font-size:11px">max ${N(mx)}</div></div>`;
 }
 
-function renderBrands(s){
-  document.getElementById("brands").innerHTML = s.brands.map(b=>`
-    <div class="card" style="border-left:3px solid ${esc(b.accent||"#E0312E")}">
-      <h3>${esc(b.name)} ${b.active?"":'<span class="pill paused">inaktiv</span>'}</h3>
-      <div class="muted">${esc(b.niche||"")}</div>
-      <div class="tgt" style="margin-top:6px">${(b.targets||[]).join(" · ")} · ${esc(b.slot||"")} Berlin</div>
-      <div class="kpi"><div>Vorlauf<b>${b.ready??0} Tage</b></div><div>Gepostet<b>${b.posted??0}</b></div><div>Nächster<b style="font-size:13px">${dt(b.next)}</b></div></div>
-      <div class="bar"><i style="width:${Math.min(100,(b.ready||0)/7*100)}%"></i></div>
-      <div class="muted">Ziel: 7 Tage Vorlauf</div>
-    </div>`).join("");
+/* ---------- views ---------- */
+function renderOverview(){
+  const b = brandOf(), p = pipe();
+  const h = S.stats.history || [];
+  const views = h.map(x=>x.views_total||0), fol = h.map(x=>x.followers||0);
+  const dFol = h.length>1 ? (fol[fol.length-1]-fol[Math.max(0,fol.length-13)]) : 0;
+  const dViews = h.length>1 ? (views[views.length-1]-views[Math.max(0,views.length-13)]) : 0;
+  const live = p.filter(x=>x.stage==="live"&&x.metrics).sort((a,c)=>c.metrics.views-a.metrics.views);
+  const nextUp = p.filter(x=>x.stage==="queued").sort((a,c)=>new Date(a.publish_at)-new Date(c.publish_at));
+  const runway = b.runway_days||0;
+  const kpi = (l,v,d,sv) => `<div class="kpi"><div class="l">${l}</div><div class="v">${v}</div><div class="d">${d}</div>${sv||""}</div>`;
+  document.getElementById("v-overview").innerHTML = `
+  <div class="kpis">
+    ${kpi("Follower", N(b.followers), `<b class="${dFol<0?"down":""}">${dFol>=0?"+":""}${N(dFol)}</b> / 24 h`, spark(fol.slice(-40),"var(--ok)"))}
+    ${kpi("Views gesamt", N(b.views_total), `<b>${dViews>=0?"+":""}${N(dViews)}</b> / 24 h`, spark(views.slice(-40),"var(--info)"))}
+    ${kpi("Ø Views / Reel", N(b.avg_views), `${live.length} Reels live`)}
+    ${kpi("Engagement", b.engagement_rate!=null?b.engagement_rate+" %":"–", "Interaktionen / Reach")}
+    ${kpi("Vorlauf", runway+" Tage", runway>=5?"komfortabel":runway>=3?"ok – Ziel 7":"knapp – produzieren",
+      `<div class="bar" style="margin:10px 0 0"><i style="width:${Math.min(100,runway/7*100)}%;background:${runway>=3?"var(--ok)":"var(--warn)"}"></i></div>`)}
+  </div>
 
-  const h=[];
-  const q=s.queue||[];
-  const stuck=q.filter(x=>x.status==="ready" && new Date(x.publish_at)<new Date()-3600e3);
-  const errs=q.filter(x=>x.results && Object.values(x.results).some(r=>r&&r.error));
-  const low=s.brands.filter(b=>(b.ready||0)<3);
-  if(stuck.length) h.push(`<div class="card warnbox"><h3>Überfällig</h3><div class="muted">${stuck.map(x=>x.brand+"/"+x.id).join(", ")} – Workflow „Reel posten" manuell starten.</div><a href="https://github.com/${REPO}/actions" target="_blank">Actions öffnen →</a></div>`);
-  if(low.length) h.push(`<div class="card warnbox"><h3>Vorlauf knapp</h3><div class="muted">${low.map(b=>b.name+" ("+b.ready+")").join(", ")} – Workflow „Reel produzieren" starten.</div><a href="https://github.com/${REPO}/actions" target="_blank">Actions öffnen →</a></div>`);
-  if(errs.length) h.push(`<div class="card warnbox"><h3>Plattform-Fehler</h3><pre>${esc(errs.map(x=>x.id+": "+JSON.stringify(x.results)).join("\n")).slice(0,900)}</pre></div>`);
-  if(!h.length) h.push(`<div class="card"><h3>Alles grün</h3><div class="muted">Keine überfälligen Posts, kein Plattform-Fehler.</div></div>`);
-  document.getElementById("health").innerHTML=h.join("");
+  <div class="cols2">
+    <div class="panel"><h2>Views gesamt</h2><div class="hint">Messpunkte alle 2 Stunden aus der Instagram-API</div>
+      <div class="body">${area(views.slice(-90), [D(h[Math.max(0,h.length-90)]?.at), D(h[h.length-1]?.at)], "var(--info)")}</div></div>
+    <div class="panel"><h2>Als Nächstes</h2><div class="hint">Automatisch um ${E(b.slot||"")} Berlin</div><div class="body">
+      ${nextUp.length ? nextUp.map(x=>`<div class="cardx ok" onclick="openCard('${x.brand}','${x.id}')">
+          <div class="id">${E(x.id)} · ${DT(x.publish_at)}</div>
+          <div class="t">${E(x.title || x.thema || "Reel")}</div>
+          <div class="m">${(x.targets||[]).map(t=>`<span class="pill">${E(t)}</span>`).join("")}</div></div>`).join("")
+        : `<div class="empty">Keine Reels geplant – Workflow »Reel produzieren« starten.</div>`}
+    </div></div>
+  </div>
+
+  <div class="panel"><h2>Stärkste Reels</h2><div class="hint">Nach Views, inkl. Share- und Save-Quote</div><div class="body">
+    <table><thead><tr><th>Reel</th><th class="num">Views</th><th class="num">Reach</th><th class="num">Likes</th><th class="num">Shares</th><th class="num">Saves</th><th class="num">Shares/1k</th></tr></thead><tbody>
+    ${live.slice(0,8).map(x=>`<tr onclick="openCard('${x.brand}','${x.id}')" style="cursor:pointer">
+      <td><div class="ttl">${E((x.title||x.thema||"Reel").slice(0,52))}</div><div class="sub">${E(x.id)} · ${D(x.publish_at)}</div></td>
+      <td class="num">${N(x.metrics.views)}</td><td class="num">${N(x.metrics.reach)}</td><td class="num">${N(x.metrics.likes)}</td>
+      <td class="num">${N(x.metrics.shares)}</td><td class="num">${N(x.metrics.saved)}</td>
+      <td class="num">${x.metrics.views?(x.metrics.shares/x.metrics.views*1000).toFixed(1):"–"}</td></tr>`).join("") || `<tr><td colspan="7" class="empty">Noch keine Insights.</td></tr>`}
+    </tbody></table></div></div>`;
 }
 
-function renderPlan(s){
-  const rows = (s.queue||[]).slice().sort((a,b)=>new Date(b.publish_at||0)-new Date(a.publish_at||0)).map(e=>`
-    <tr>
-      <td><b>${esc(e.brand)}/${esc(e.id)}</b></td>
-      <td><span class="pill ${esc(e.status)}">${esc(e.status)}</span></td>
-      <td>${dt(e.publish_at)}</td>
-      <td class="tgt">${(e.targets||["instagram"]).join(" · ")}</td>
-      <td>${esc((e.caption||"").slice(0,90))}</td>
-      <td>${e.status==="ready"?`<button class="act" data-op="pause" data-i="${esc(e.id)}" data-b="${esc(e.brand)}">pause</button>
-        <button class="act" data-op="delete" data-i="${esc(e.id)}" data-b="${esc(e.brand)}">löschen</button>`:
-        e.status==="paused"?`<button class="act" data-op="resume" data-i="${esc(e.id)}" data-b="${esc(e.brand)}">weiter</button>`:
-        (e.media_id?`<a href="https://www.instagram.com/reel/" target="_blank">IG</a>`:"")}</td>
-    </tr>`).join("");
-  document.getElementById("plan").innerHTML = `<div class="card"><h3>Posting-Plan</h3>
-    <div class="muted">Befehle werden kopiert und in <code>dashboard/commands.json</code> eingefügt; der Workflow „Dashboard" wendet sie an (alle 30 Min).</div>
-    <table><tr><th>Reel</th><th>Status</th><th>Termin</th><th>Ziele</th><th>Caption</th><th></th></tr>${rows}</table></div>`;
-  document.querySelectorAll("#plan button.act").forEach(b=>b.onclick=()=>cmd(b.dataset.op,{brand:b.dataset.b,id:b.dataset.i}));
+const STAGES = [
+  ["script","Script","Fakten-Check offen","accc"],
+  ["checked","Geprüft","wartet auf Produktion","ok"],
+  ["queued","Geplant","gerendert, Termin steht","ok"],
+  ["paused","Pausiert","von dir angehalten","warnc"],
+  ["live","Live","veröffentlicht","livec"],
+];
+function renderPipeline(){
+  const p = pipe();
+  document.getElementById("v-pipeline").innerHTML = `
+    <div class="panel"><h2>Produktionskette</h2><div class="hint">Script → Fakten-Gate → Render (GitHub Actions) → Posting auf alle Ziele. Karte anklicken für Quellen und Aktionen.</div><div class="body">
+    <div class="board">${STAGES.map(([k,label,desc,cls])=>{
+      const items = p.filter(x=>x.stage===k).slice(0, k==="live"?12:40);
+      return `<div class="col"><h3>${E(label)}<span class="cnt">${p.filter(x=>x.stage===k).length}</span></h3><div class="desc">${E(desc)}</div>
+        ${items.map(x=>`<div class="cardx ${cls}" onclick="openCard('${x.brand}','${x.id}')">
+          <div class="id">${E(x.id)}${x.publish_at?" · "+D(x.publish_at):""}</div>
+          <div class="t">${E((x.title||x.thema||"Reel").slice(0,70))}</div>
+          <div class="m">
+            ${k==="live"&&x.metrics?`<span class="pill info">${N(x.metrics.views)} Views</span>`:""}
+            ${x.fact_check==="ok"?`<span class="pill ok">Fakten ok</span>`:x.fact_check==="–"?"":`<span class="pill bad">Fakten ${E(x.fact_check)}</span>`}
+            ${x.results&&Object.values(x.results).some(r=>r&&r.error)?`<span class="pill bad">Fehler</span>`:""}
+          </div></div>`).join("") || `<div class="empty">–</div>`}
+      </div>`}).join("")}</div></div></div>`;
 }
 
-function renderScripts(s){
-  const ids = s.scripts_unqueued||[];
-  document.getElementById("scripts").innerHTML = `<div class="card"><h3>Geprüfte Scripts ohne Reel (${ids.length})</h3>
-    <div class="muted">Werden von „Reel produzieren" automatisch abgearbeitet, Reihenfolge aus <code>scripts/ORDER.txt</code>.</div>
-    <p>${ids.map(i=>`<span class="pill" style="margin:3px 3px 0 0">${esc(i)}</span>`).join(" ")||"<span class='muted'>keine</span>"}</p>
-    <a href="https://github.com/${REPO}/tree/main/scripts" target="_blank">Scripts im Repo →</a></div>`;
+function renderApproval(){
+  const p = pipe(), now = Date.now();
+  const blocked = p.filter(x=>x.stage==="script");
+  const overdue = p.filter(x=>x.stage==="queued" && new Date(x.publish_at) < now - 3600e3);
+  const errs = p.filter(x=>x.results && Object.values(x.results).some(r=>r&&r.error));
+  const ready = p.filter(x=>x.stage==="checked");
+  const card = (x, note, cls) => `<div class="cardx ${cls}" onclick="openCard('${x.brand}','${x.id}')">
+    <div class="id">${E(x.id)}${x.publish_at?" · "+DT(x.publish_at):""}</div>
+    <div class="t">${E((x.title||x.thema||"Reel").slice(0,80))}</div>
+    <div class="m">${note}</div></div>`;
+  document.getElementById("v-approval").innerHTML = `
+  <div class="panel"><h2>Freigabe-Modell</h2><div class="hint">Voll-autonom: es gibt kein manuelles Video-OK. Einziges Gate ist der Fakten-Check — jede Behauptung mit Quelle, zweifach geprüft. Du greifst nur ein, wenn hier etwas steht.</div>
+    <div class="body"><div class="row">
+      <span class="pill ok">${ready.length} geprüft &amp; freigegeben</span>
+      <span class="pill ${blocked.length?"bad":""}">${blocked.length} am Fakten-Gate blockiert</span>
+      <span class="pill ${overdue.length?"warn":""}">${overdue.length} überfällig</span>
+      <span class="pill ${errs.length?"bad":""}">${errs.length} Plattform-Fehler</span>
+      <span class="pill">${N(S.engage?.new||0)} offene Kommentare</span>
+    </div></div></div>
+
+  <div class="cols2">
+    <div class="panel"><h2>Braucht dich</h2><div class="hint">Alles andere läuft ohne Rückfrage</div><div class="body">
+      ${blocked.map(x=>card(x,`<span class="pill bad">Quellen ${x.sources.verified}/${x.sources.total} geprüft</span>`,"accc")).join("")}
+      ${overdue.map(x=>card(x,`<span class="pill warn">Termin verstrichen – Workflow »Reel posten« starten</span>`,"warnc")).join("")}
+      ${errs.map(x=>card(x,`<span class="pill bad">${E(Object.entries(x.results).filter(([,r])=>r&&r.error).map(([k])=>k).join(", "))} fehlgeschlagen</span>`,"accc")).join("")}
+      ${(!blocked.length&&!overdue.length&&!errs.length)?`<div class="empty">Nichts offen. Die Fabrik läuft.</div>`:""}
+      <div class="row" style="margin-top:10px">
+        <a class="btn" href="${GH}/actions" target="_blank">Actions öffnen</a>
+        <a class="btn" href="${GH}/tree/main/scripts" target="_blank">Scripts im Repo</a>
+      </div>
+    </div></div>
+
+    <div class="panel"><h2>Freigegeben, wartet auf Render</h2><div class="hint">Reihenfolge aus scripts/ORDER.txt · täglich 05:00 Berlin</div><div class="body">
+      ${ready.slice(0,14).map(x=>card(x,`<span class="pill ok">${x.sources.verified}/${x.sources.total} Quellen</span><span class="pill">${E(x.voice||"")}</span>`,"ok")).join("") || `<div class="empty">Vorrat leer – Script-Nachschub nötig.</div>`}
+      ${ready.length>14?`<div class="empty">+ ${ready.length-14} weitere</div>`:""}
+    </div></div>
+  </div>`;
 }
 
-function renderStats(s){
-  const h=(s.stats&&s.stats.history)||[];
-  const last=h[h.length-1]||{};
-  const pts=h.slice(-60);
-  const max=Math.max(1,...pts.map(p=>p.views_total||0));
-  const path=pts.map((p,i)=>`${(i/Math.max(1,pts.length-1)*100).toFixed(2)},${(100-(p.views_total||0)/max*100).toFixed(2)}`).join(" ");
-  document.getElementById("stats").innerHTML=`<div class="card"><h3>Wachstum</h3>
-    <div class="kpi"><div>Follower<b>${last.followers??"–"}</b></div><div>Views gesamt<b>${last.views_total??"–"}</b></div><div>Reels gepostet<b>${s.posted_total??0}</b></div></div>
-    ${pts.length?`<svg viewBox="0 0 100 100" preserveAspectRatio="none" style="width:100%;height:140px;margin-top:12px"><polyline points="${path}" fill="none" stroke="#2F9E8F" stroke-width="1.2" vector-effect="non-scaling-stroke"/></svg>
-    <div class="muted">Views gesamt, letzte ${pts.length} Messpunkte (alle 2 h)</div>`:`<div class="muted">Noch keine Insights.</div>`}</div>`;
+function renderAnalytics(){
+  const p = pipe().filter(x=>x.stage==="live"&&x.metrics);
+  const hooks = p.slice().sort((a,b)=>(b.metrics.shares/(b.metrics.views||1))-(a.metrics.shares/(a.metrics.views||1)));
+  const sum = k => p.reduce((s,x)=>s+(x.metrics[k]||0),0);
+  document.getElementById("v-analytics").innerHTML = `
+  <div class="kpis">
+    <div class="kpi"><div class="l">Reels live</div><div class="v">${p.length}</div><div class="d">Ø ${N(Math.round(sum("views")/(p.length||1)))} Views</div></div>
+    <div class="kpi"><div class="l">Shares</div><div class="v">${N(sum("shares"))}</div><div class="d">stärkstes Reichweiten-Signal</div></div>
+    <div class="kpi"><div class="l">Saves</div><div class="v">${N(sum("saved"))}</div><div class="d">Wissenswert-Signal</div></div>
+    <div class="kpi"><div class="l">Kommentare</div><div class="v">${N(sum("comments"))}</div><div class="d">${N(S.engage?.new||0)} offen</div></div>
+  </div>
+  <div class="panel"><h2>Reel für Reel</h2><div class="hint">Klick öffnet Quellen, Ziele und Aktionen</div><div class="body">
+    <table><thead><tr><th>Reel</th><th>Gepostet</th><th class="num">Views</th><th class="num">Reach</th><th class="num">ER %</th><th class="num">Shares/1k</th><th class="num">Saves/1k</th><th>Links</th></tr></thead><tbody>
+    ${p.sort((a,b)=>new Date(b.publish_at)-new Date(a.publish_at)).map(x=>{
+      const m=x.metrics, er=m.reach?((m.likes+m.shares+m.saved+m.comments)/m.reach*100).toFixed(1):"–";
+      return `<tr><td onclick="openCard('${x.brand}','${x.id}')" style="cursor:pointer"><div class="ttl">${E((x.title||x.thema||"Reel").slice(0,56))}</div><div class="sub">${E(x.id)} · ${E(x.thema||"")}</div></td>
+      <td class="sub">${D(x.publish_at)}</td><td class="num">${N(m.views)}</td><td class="num">${N(m.reach)}</td><td class="num">${er}</td>
+      <td class="num">${m.views?(m.shares/m.views*1000).toFixed(1):"–"}</td><td class="num">${m.views?(m.saved/m.views*1000).toFixed(1):"–"}</td>
+      <td>${x.permalink?`<a class="btn s" href="${E(x.permalink)}" target="_blank">IG</a>`:"–"}</td></tr>`}).join("") || `<tr><td colspan="8" class="empty">Noch keine Insights.</td></tr>`}
+    </tbody></table></div></div>
+  <div class="panel"><h2>Hooks mit der besten Share-Quote</h2><div class="hint">Diese Muster wiederholen – Grundlage für neue Scripts</div><div class="body">
+    ${hooks.slice(0,5).map((x,i)=>`<div class="cardx livec" onclick="openCard('${x.brand}','${x.id}')">
+      <div class="id">#${i+1} · ${N(x.metrics.shares)} Shares bei ${N(x.metrics.views)} Views</div>
+      <div class="t">${E((x.hook||x.title||"").slice(0,150))}</div></div>`).join("") || `<div class="empty">–</div>`}
+  </div></div>`;
 }
 
-function renderNew(){
-  document.getElementById("newbrand").innerHTML=`<div class="card"><h3>Neue Brand starten</h3>
-    <div class="row"><div><label>Slug</label><input id="n-slug" placeholder="z.B. geldwissen"></div>
-      <div><label>Name</label><input id="n-name" placeholder="GeldWissen"></div></div>
-    <label>Nische</label><input id="n-niche" placeholder="Finanzwissen, Storytelling">
-    <div class="row"><div><label>Plattformen</label><input id="n-tgt" value="instagram,youtube,tiktok,facebook"></div>
-      <div><label>Postzeit (Berlin)</label><input id="n-slot" value="19:00"></div></div>
-    <label>Akzentfarbe</label><input id="n-acc" value="#E0312E">
-    <p><button class="act" id="n-go">Befehl erzeugen</button></p>
-    <pre id="n-out">node scripts/newbrand.mjs …</pre>
-    <div class="muted">Danach: Secrets aus <code>brands/&lt;slug&gt;/SETUP.md</code> im Repo setzen, 10–15 geprüfte Scripts ablegen – Produktion und Posting laufen automatisch.</div>
-    <a href="https://github.com/${REPO}/settings/secrets/actions" target="_blank">Secrets verwalten →</a></div>`;
-  document.getElementById("n-go").onclick=()=>{
-    const g=i=>document.getElementById(i).value.trim();
+function renderBrands(){
+  document.getElementById("v-brands").innerHTML = `
+  <div class="kpis">${S.brands.map(b=>`<div class="kpi" style="border-left:3px solid ${E(b.accent||"#E0312E")}">
+    <div class="l">${E(b.name)}</div><div class="v" style="font-size:20px">${b.runway_days} Tage Vorlauf</div>
+    <div class="d">${E(b.niche||"")}</div>
+    <div class="row" style="margin-top:8px">${(b.targets||[]).map(t=>`<span class="pill">${E(t)}</span>`).join("")}<span class="pill">${E(b.slot||"")}</span></div>
+  </div>`).join("")}</div>
+
+  <div class="cols2">
+    <div class="panel"><h2>Neue Brand starten</h2><div class="hint">Erzeugt brand.json + SETUP.md mit Secret-Checkliste. Renderer, Workflows und Dashboard greifen danach automatisch.</div><div class="body">
+      <div class="row" style="gap:12px">
+        <div style="flex:1 1 180px"><label>Slug</label><input id="n-slug" placeholder="geldwissen"></div>
+        <div style="flex:1 1 180px"><label>Name</label><input id="n-name" placeholder="GeldWissen"></div>
+      </div>
+      <label>Nische</label><input id="n-niche" placeholder="Finanzwissen, Storytelling, Zahlen-Hooks">
+      <div class="row" style="gap:12px">
+        <div style="flex:1 1 180px"><label>Plattformen</label><input id="n-tgt" value="instagram,youtube,tiktok,facebook"></div>
+        <div style="flex:1 1 120px"><label>Postzeit Berlin</label><input id="n-slot" value="19:00"></div>
+        <div style="flex:1 1 120px"><label>Akzentfarbe</label><input id="n-acc" value="#4C8DF6"></div>
+      </div>
+      <div class="row" style="margin-top:14px"><button class="btn p" id="n-go">Befehl erzeugen</button>
+        <a class="btn" href="${GH}/settings/secrets/actions" target="_blank">Secrets verwalten</a></div>
+      <pre id="n-out" style="margin-top:12px">node scripts/newbrand.mjs …</pre>
+    </div></div>
+
+    <div class="panel"><h2>Ablauf</h2><div class="body">
+      <table><tbody>
+        <tr><td class="ttl">1 · Brand anlegen</td><td class="sub">Befehl links, einmal im Repo ausführen</td></tr>
+        <tr><td class="ttl">2 · Secrets setzen</td><td class="sub">aus brands/&lt;slug&gt;/SETUP.md, z. B. IG_TOKEN_GELDWISSEN</td></tr>
+        <tr><td class="ttl">3 · Scripts liefern</td><td class="sub">10–15 geprüfte Scripts nach brands/&lt;slug&gt;/scripts/</td></tr>
+        <tr><td class="ttl">4 · fertig</td><td class="sub">produce.yml rendert, post-reel.yml postet, dieses Dashboard zeigt es</td></tr>
+      </tbody></table>
+    </div></div>
+  </div>`;
+  document.getElementById("n-go").onclick = () => {
+    const g = i => document.getElementById(i).value.trim();
     document.getElementById("n-out").textContent =
       `node scripts/newbrand.mjs ${g("n-slug")} "${g("n-name")}" "${g("n-niche")}" ${g("n-tgt")} ${g("n-slot")} "${g("n-acc")}"`;
   };
 }
 
-async function tick(){
-  try{
-    const s = await loadState();
-    document.getElementById("stamp").textContent =
-      `${s.brands.length} Brand(s) · ${(s.queue||[]).filter(x=>x.status==="ready").length} geplant · Stand ${dt(s.generated_at||new Date().toISOString())}`;
-    renderBrands(s); renderPlan(s); renderScripts(s); renderStats(s);
-  }catch(e){ document.getElementById("stamp").textContent = "Daten nicht lesbar: " + e.message; }
+/* ---------- drawer ---------- */
+window.openCard = (brand, id) => {
+  const x = (S.pipeline||[]).find(p=>p.brand===brand&&p.id===id); if(!x) return;
+  const st = STAGES.find(s=>s[0]===x.stage) || ["","–"];
+  const dr = document.getElementById("drawer");
+  dr.innerHTML = `<button class="btn s close" onclick="closeCard()">schließen</button>
+    <div class="pill ${x.stage==="live"?"info":x.stage==="paused"?"warn":x.fact_check==="ok"?"ok":"bad"}">${E(st[1])}</div>
+    <h3>${E(x.title || x.thema || "Reel " + x.id)}</h3>
+    <div class="sub">${E(x.brand)}/${E(x.id)} · ${E(x.thema||"")} · Stimme ${E(x.voice||"–")}</div>
+    ${x.hook?`<div class="src" style="margin-top:14px"><div class="c">${E(x.hook)}</div><div class="r">Hook</div></div>`:""}
+    <div class="kv">
+      <div>Termin</div><div>${DT(x.publish_at)}</div>
+      <div>Ziele</div><div>${(x.targets||[]).map(t=>`<span class="pill">${E(t)}</span>`).join(" ")}</div>
+      <div>Fakten-Check</div><div>${x.fact_check==="ok"?`<span class="pill ok">ok · ${x.sources.verified}/${x.sources.total} Quellen</span>`:`<span class="pill bad">${E(x.fact_check)} · ${x.sources.verified}/${x.sources.total}</span>`}</div>
+      ${x.metrics?`<div>Leistung</div><div>${N(x.metrics.views)} Views · ${N(x.metrics.reach)} Reach · ${N(x.metrics.likes)} Likes · ${N(x.metrics.shares)} Shares · ${N(x.metrics.saved)} Saves</div>`:""}
+      ${x.results?`<div>Plattformen</div><div><pre style="margin:0">${E(JSON.stringify(x.results,null,1))}</pre></div>`:""}
+      ${x.permalink?`<div>Link</div><div><a class="btn s" href="${E(x.permalink)}" target="_blank">auf Instagram öffnen</a></div>`:""}
+    </div>
+    ${x.source_list.length?`<h2 style="font-size:13px;margin:16px 0 8px;color:var(--mut);text-transform:uppercase;letter-spacing:.6px">Quellen</h2>
+      ${x.source_list.map(s=>`<div class="src"><div class="c">${s.verified?"✓":"○"} ${E(s.claim)}</div>
+        <div class="r">${E(s.ref)}${s.url?` · <a href="${E(s.url)}" target="_blank">Quelle</a>`:""}</div></div>`).join("")}`:""}
+    <h2 style="font-size:13px;margin:16px 0 8px;color:var(--mut);text-transform:uppercase;letter-spacing:.6px">Aktionen</h2>
+    <div class="row">
+      ${x.stage==="queued"?`<button class="btn" onclick="sendCmd('pause',{brand:'${x.brand}',id:'${x.id}'})">pausieren</button>
+        <button class="btn" onclick="moveCard('${x.brand}','${x.id}')">Termin ändern</button>
+        <button class="btn d" onclick="sendCmd('delete',{brand:'${x.brand}',id:'${x.id}'})">aus Plan nehmen</button>`:""}
+      ${x.stage==="paused"?`<button class="btn p" onclick="sendCmd('resume',{brand:'${x.brand}',id:'${x.id}'})">wieder einplanen</button>`:""}
+      ${x.stage==="queued"||x.stage==="paused"?`<button class="btn" onclick="retargetCard('${x.brand}','${x.id}')">Ziele ändern</button>`:""}
+      <a class="btn" href="${GH}/tree/main/scripts" target="_blank">Script im Repo</a>
+    </div>
+    <div class="empty" style="margin-top:14px">Aktionen landen als Befehl in dashboard/commands.json und werden vom Workflow »Dashboard« (alle 30 Min) angewendet.</div>`;
+  dr.classList.add("on"); document.getElementById("scrim").classList.add("on");
+};
+window.closeCard = () => { document.getElementById("drawer").classList.remove("on"); document.getElementById("scrim").classList.remove("on"); };
+document.getElementById("scrim").onclick = closeCard;
+window.sendCmd = sendCmd;
+window.moveCard = (brand,id) => {
+  const d = prompt("Neuer Termin (JJJJ-MM-TT, Postzeit bleibt):"); if(!d) return;
+  const b = brandOf(); const [h] = (b.slot||"19:00").split(":").map(Number);
+  const m = new Date(d+"T00:00:00Z").getUTCMonth();
+  const iso = `${d}T${String(h-((m>=3&&m<=9)?2:1)).padStart(2,"0")}:00:00Z`;
+  sendCmd("move",{brand,id},{publish_at:iso});
+};
+window.retargetCard = (brand,id) => {
+  const t = prompt("Ziele, mit Komma (instagram,youtube,tiktok,facebook):","instagram,youtube"); if(!t) return;
+  sendCmd("retarget",{brand,id},{targets:t.split(",").map(s=>s.trim()).filter(Boolean)});
+};
+
+/* ---------- shell ---------- */
+function renderMenu(){
+  const p = pipe();
+  const open = p.filter(x=>x.stage==="script").length
+    + p.filter(x=>x.stage==="queued" && new Date(x.publish_at) < Date.now()-3600e3).length
+    + p.filter(x=>x.results && Object.values(x.results).some(r=>r&&r.error)).length;
+  document.getElementById("menu").innerHTML = VIEWS.map(([k,label])=>{
+    const badge = k==="approval" && open ? `<span class="badge red">${open}</span>`
+      : k==="pipeline" ? `<span class="badge">${p.length}</span>` : "";
+    return `<button data-v="${k}" class="${k===VIEW?"on":""}">${E(label)}${badge}</button>`;
+  }).join("");
+  document.querySelectorAll("#menu button").forEach(b=>b.onclick=()=>go(b.dataset.v));
 }
-renderNew(); tick(); setInterval(tick, 60000);
-if(location.hash){ const i=TABS.findIndex(t=>"#"+t[0]===location.hash); if(i>=0) nav.children[i].click(); }
+function go(v){
+  VIEW = v; location.hash = v;
+  document.querySelectorAll("section").forEach(s=>s.classList.remove("on"));
+  document.getElementById("v-"+v).classList.add("on");
+  const meta = VIEWS.find(x=>x[0]===v);
+  document.getElementById("vtitle").textContent = meta[1];
+  document.getElementById("vsub").textContent = meta[2];
+  renderMenu();
+}
+function paint(){
+  const b = brandOf();
+  document.documentElement.style.setProperty("--acc", b.accent || "#E0312E");
+  document.getElementById("brandmeta").textContent =
+    `${(b.targets||[]).length} Plattformen · ${b.slot||""} Berlin · @${b.handle?.instagram||b.slug}`;
+  const p = pipe();
+  const bad = p.filter(x=>x.stage==="script").length + p.filter(x=>x.results&&Object.values(x.results).some(r=>r&&r.error)).length;
+  const late = p.filter(x=>x.stage==="queued" && new Date(x.publish_at) < Date.now()-3600e3).length;
+  const dot = document.getElementById("healthdot"), txt = document.getElementById("healthtxt");
+  if (bad||late){ dot.style.background="var(--warn)"; txt.textContent = `${bad+late} Punkt(e) offen`; }
+  else { dot.style.background="var(--ok)"; txt.textContent = "Fabrik läuft"; }
+  document.getElementById("stamp").innerHTML =
+    `${p.filter(x=>x.stage==="queued").length} geplant · ${p.filter(x=>x.stage==="checked").length} geprüft im Vorrat<br>Stand ${DT(S.generated_at)}`;
+  renderOverview(); renderPipeline(); renderApproval(); renderAnalytics(); renderBrands();
+  renderMenu();
+}
+async function load(){
+  const r = await fetch("dashboard/state.json"+bust());
+  if(!r.ok) throw new Error("state.json fehlt – Workflow »Dashboard« einmal starten");
+  S = await r.json();
+  const sel = document.getElementById("brand");
+  if (!BRAND) BRAND = (S.brands[0]||{}).slug;
+  sel.innerHTML = S.brands.map(b=>`<option value="${E(b.slug)}"${b.slug===BRAND?" selected":""}>${E(b.name)}${b.active?"":" (inaktiv)"}</option>`).join("");
+  sel.onchange = () => { BRAND = sel.value; paint(); };
+  paint();
+}
+(async function init(){
+  const h = location.hash.slice(1);
+  try { await load(); if (VIEWS.some(v=>v[0]===h)) go(h); else go("overview"); }
+  catch(e){ document.getElementById("stamp").textContent = e.message; document.getElementById("v-overview").innerHTML = `<div class="panel"><div class="body"><div class="empty">${E(e.message)}</div><a class="btn" href="${GH}/actions" target="_blank">Actions öffnen</a></div></div>`; }
+  setInterval(()=>load().catch(()=>{}), 60000);
+})();
 </script>
 </body>
 </html>
