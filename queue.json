@@ -74,10 +74,21 @@
     "id": "013",
     "file": "013.mp4",
     "publish_at": "2026-10-29T18:00:00Z",
-    "status": "ready",
+    "status": "posted",
     "caption": "Der Prophet (saw) hat Freundschaft in einem Bild erklärt: ein Moschusträger und ein Schmied am Blasebalg.\n\nBeim Moschusträger kann dreierlei passieren — er schenkt dir welchen, du kaufst welchen, oder du riechst einfach gut. Beim Schmied nur zweierlei: ein Funke verbrennt dir die Kleidung, oder du gehst stinkend nach Hause.\n\nDrei Wege nach oben. Keiner nach unten. (Bukhari 5534)\n\nUnd der Koran nennt Lästern beim Namen: „Möchte wohl einer von euch das Fleisch seines toten Bruders essen?\" (49:13)\n\nDas Bild ist 1.400 Jahre alt und sagt: Umgebung schlägt Vorsatz. Stimmt das?\n\nQuellen: Sahih al-Bukhari 5534 · alislam.org\n\n#islam #koran #hadith #wissen #muslim #deutsch #freunde #umfeld",
     "first_comment": "Drei Wege nach oben, keiner nach unten. Wer ist bei dir der Moschusträger? 👇",
-    "thumb_offset": 2600
+    "thumb_offset": 2600,
+    "results": {
+      "instagram": {
+        "media_id": "17872718889648381"
+      },
+      "youtube": {
+        "error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
+      }
+    },
+    "media_id": "17872718889648381",
+    "first_comment_id": "18219993115353050",
+    "posted_at": "2026-10-29T18:19:16.101Z"
   },
   {
     "id": "014",
