@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Factory</title>
+<style>
+:root{--bg:#0D0D0F;--card:#16161A;--line:#26262C;--fg:#F2F2F4;--mut:#8A8A90;--acc:#E0312E;--ok:#2F9E8F;--warn:#E0A32E}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
+header{padding:18px 16px 10px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+h1{margin:0;font-size:19px;letter-spacing:-.3px}
+.sub{color:var(--mut);font-size:12px;margin-top:3px}
+nav{display:flex;gap:6px;overflow:auto;padding:10px 16px;border-bottom:1px solid var(--line)}
+nav button{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:13px;white-space:nowrap}
+nav button.on{background:var(--fg);color:#000;border-color:var(--fg)}
+main{padding:16px;max-width:1100px;margin:0 auto}
+section{display:none}section.on{display:block}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.card h3{margin:0 0 2px;font-size:16px}
+.kpi{display:flex;gap:16px;margin-top:10px}
+.kpi div{font-size:12px;color:var(--mut)}
+.kpi b{display:block;font-size:20px;color:var(--fg)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+.pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;border:1px solid var(--line)}
+.ready{color:var(--ok);border-color:var(--ok)}.posted{color:var(--mut)}.paused{color:var(--warn);border-color:var(--warn)}
+.tgt{font-size:11px;color:var(--mut)}
+button.act{background:transparent;color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:4px 9px;font-size:12px;margin-right:4px;cursor:pointer}
+button.act:hover{border-color:var(--fg)}
+a{color:var(--fg)}
+pre{background:#0A0A0C;border:1px solid var(--line);border-radius:10px;padding:10px;overflow:auto;font-size:12px}
+.bar{height:6px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:8px}
+.bar i{display:block;height:100%;background:var(--ok)}
+.muted{color:var(--mut);font-size:12px}
+label{font-size:12px;color:var(--mut);display:block;margin:8px 0 3px}
+input,select{width:100%;background:#0A0A0C;color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px}
+.row{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.warnbox{border-color:var(--warn)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Content Factory</h1>
+  <div class="sub" id="stamp">lädt …</div>
+</header>
+<nav id="nav"></nav>
+<main>
+  <section id="v-brands" class="on"><div class="grid" id="brands"></div><div id="health" class="grid" style="margin-top:12px"></div></section>
+  <section id="v-plan"><div id="plan"></div></section>
+  <section id="v-scripts"><div id="scripts"></div></section>
+  <section id="v-stats"><div id="stats"></div></section>
+  <section id="v-new"><div id="newbrand"></div></section>
+</main>
+<script>
+const REPO = "ahmad-onenukta/wissen-islam-autopost";
+const TABS = [["brands","Brands"],["plan","Plan & Queue"],["scripts","Scripts"],["stats","Wachstum"],["new","Neue Brand"]];
+const nav = document.getElementById("nav");
+TABS.forEach(([k,label],i)=>{
+  const b=document.createElement("button"); b.textContent=label; b.className=i?"":"on";
+  b.onclick=()=>{[...nav.children].forEach(c=>c.classList.remove("on")); b.classList.add("on");
+    document.querySelectorAll("section").forEach(s=>s.classList.remove("on"));
+    document.getElementById("v-"+k).classList.add("on"); location.hash=k;};
+  nav.appendChild(b);
+});
+const esc = s => String(s??"").replace(/[<>&]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;"}[c]));
+const dt = s => s ? new Date(s).toLocaleString("de-DE",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}) : "–";
+const bust = () => "?t=" + Date.now();
+
+async function loadState(){
+  try{ const r = await fetch("dashboard/state.json"+bust()); if(r.ok) return await r.json(); }catch(e){}
+  // Fallback: Rohdaten
+  const q = await (await fetch("queue.json"+bust())).json();
+  const b = await (await fetch("brands/nurwissen/brand.json"+bust())).json();
+  return {generated_at:null, brands:[{slug:b.slug,name:b.name,niche:b.niche,accent:b.palette.accent,targets:b.targets,slot:b.schedule.slot_berlin,active:true,handle:b.handle,
+    ready:q.filter(x=>x.status==="ready").length, posted:q.filter(x=>x.status==="posted").length,
+    next:q.filter(x=>x.status==="ready").map(x=>x.publish_at).sort()[0]||null}],
+    queue:q.map(x=>({id:x.id,brand:x.brand||"nurwissen",status:x.status,publish_at:x.publish_at||x.posted_at,targets:x.targets||null,caption:(x.caption||"").slice(0,160),media_id:x.media_id||null,results:x.results||null})),
+    scripts_unqueued:[], posted_total:q.filter(x=>x.status==="posted").length, stats:{}};
+}
+
+function cmd(op, e, extra){
+  const o = Object.assign({op, brand:e.brand, id:e.id}, extra||{});
+  const txt = JSON.stringify([o], null, 2);
+  navigator.clipboard?.writeText(txt).then(
+    ()=>alertBox(`Befehl kopiert. Jetzt in dashboard/commands.json einfügen:`, txt),
+    ()=>alertBox("Befehl (manuell kopieren):", txt));
+}
+function alertBox(title, txt){
+  const d=document.createElement("div");
+  d.style.cssText="position:fixed;inset:auto 12px 12px 12px;background:#16161A;border:1px solid #26262C;border-radius:12px;padding:12px;z-index:9;max-width:640px;margin:auto";
+  d.innerHTML=`<div style="font-size:13px;margin-bottom:6px">${esc(title)}</div><pre>${esc(txt)}</pre>
+   <a href="https://github.com/${REPO}/edit/main/dashboard/commands.json" target="_blank">commands.json öffnen →</a>
+   <button class="act" style="float:right">schließen</button>`;
+  d.querySelector("button").onclick=()=>d.remove();
+  document.body.appendChild(d);
+}
+
+function renderBrands(s){
+  document.getElementById("brands").innerHTML = s.brands.map(b=>`
+    <div class="card" style="border-left:3px solid ${esc(b.accent||"#E0312E")}">
+      <h3>${esc(b.name)} ${b.active?"":'<span class="pill paused">inaktiv</span>'}</h3>
+      <div class="muted">${esc(b.niche||"")}</div>
+      <div class="tgt" style="margin-top:6px">${(b.targets||[]).join(" · ")} · ${esc(b.slot||"")} Berlin</div>
+      <div class="kpi"><div>Vorlauf<b>${b.ready??0} Tage</b></div><div>Gepostet<b>${b.posted??0}</b></div><div>Nächster<b style="font-size:13px">${dt(b.next)}</b></div></div>
+      <div class="bar"><i style="width:${Math.min(100,(b.ready||0)/7*100)}%"></i></div>
+      <div class="muted">Ziel: 7 Tage Vorlauf</div>
+    </div>`).join("");
+
+  const h=[];
+  const q=s.queue||[];
+  const stuck=q.filter(x=>x.status==="ready" && new Date(x.publish_at)<new Date()-3600e3);
+  const errs=q.filter(x=>x.results && Object.values(x.results).some(r=>r&&r.error));
+  const low=s.brands.filter(b=>(b.ready||0)<3);
+  if(stuck.length) h.push(`<div class="card warnbox"><h3>Überfällig</h3><div class="muted">${stuck.map(x=>x.brand+"/"+x.id).join(", ")} – Workflow „Reel posten" manuell starten.</div><a href="https://github.com/${REPO}/actions" target="_blank">Actions öffnen →</a></div>`);
+  if(low.length) h.push(`<div class="card warnbox"><h3>Vorlauf knapp</h3><div class="muted">${low.map(b=>b.name+" ("+b.ready+")").join(", ")} – Workflow „Reel produzieren" starten.</div><a href="https://github.com/${REPO}/actions" target="_blank">Actions öffnen →</a></div>`);
+  if(errs.length) h.push(`<div class="card warnbox"><h3>Plattform-Fehler</h3><pre>${esc(errs.map(x=>x.id+": "+JSON.stringify(x.results)).join("\n")).slice(0,900)}</pre></div>`);
+  if(!h.length) h.push(`<div class="card"><h3>Alles grün</h3><div class="muted">Keine überfälligen Posts, kein Plattform-Fehler.</div></div>`);
+  document.getElementById("health").innerHTML=h.join("");
+}
+
+function renderPlan(s){
+  const rows = (s.queue||[]).slice().sort((a,b)=>new Date(b.publish_at||0)-new Date(a.publish_at||0)).map(e=>`
+    <tr>
+      <td><b>${esc(e.brand)}/${esc(e.id)}</b></td>
+      <td><span class="pill ${esc(e.status)}">${esc(e.status)}</span></td>
+      <td>${dt(e.publish_at)}</td>
+      <td class="tgt">${(e.targets||["instagram"]).join(" · ")}</td>
+      <td>${esc((e.caption||"").slice(0,90))}</td>
+      <td>${e.status==="ready"?`<button class="act" data-op="pause" data-i="${esc(e.id)}" data-b="${esc(e.brand)}">pause</button>
+        <button class="act" data-op="delete" data-i="${esc(e.id)}" data-b="${esc(e.brand)}">löschen</button>`:
+        e.status==="paused"?`<button class="act" data-op="resume" data-i="${esc(e.id)}" data-b="${esc(e.brand)}">weiter</button>`:
+        (e.media_id?`<a href="https://www.instagram.com/reel/" target="_blank">IG</a>`:"")}</td>
+    </tr>`).join("");
+  document.getElementById("plan").innerHTML = `<div class="card"><h3>Posting-Plan</h3>
+    <div class="muted">Befehle werden kopiert und in <code>dashboard/commands.json</code> eingefügt; der Workflow „Dashboard" wendet sie an (alle 30 Min).</div>
+    <table><tr><th>Reel</th><th>Status</th><th>Termin</th><th>Ziele</th><th>Caption</th><th></th></tr>${rows}</table></div>`;
+  document.querySelectorAll("#plan button.act").forEach(b=>b.onclick=()=>cmd(b.dataset.op,{brand:b.dataset.b,id:b.dataset.i}));
+}
+
+function renderScripts(s){
+  const ids = s.scripts_unqueued||[];
+  document.getElementById("scripts").innerHTML = `<div class="card"><h3>Geprüfte Scripts ohne Reel (${ids.length})</h3>
+    <div class="muted">Werden von „Reel produzieren" automatisch abgearbeitet, Reihenfolge aus <code>scripts/ORDER.txt</code>.</div>
+    <p>${ids.map(i=>`<span class="pill" style="margin:3px 3px 0 0">${esc(i)}</span>`).join(" ")||"<span class='muted'>keine</span>"}</p>
+    <a href="https://github.com/${REPO}/tree/main/scripts" target="_blank">Scripts im Repo →</a></div>`;
+}
+
+function renderStats(s){
+  const h=(s.stats&&s.stats.history)||[];
+  const last=h[h.length-1]||{};
+  const pts=h.slice(-60);
+  const max=Math.max(1,...pts.map(p=>p.views_total||0));
+  const path=pts.map((p,i)=>`${(i/Math.max(1,pts.length-1)*100).toFixed(2)},${(100-(p.views_total||0)/max*100).toFixed(2)}`).join(" ");
+  document.getElementById("stats").innerHTML=`<div class="card"><h3>Wachstum</h3>
+    <div class="kpi"><div>Follower<b>${last.followers??"–"}</b></div><div>Views gesamt<b>${last.views_total??"–"}</b></div><div>Reels gepostet<b>${s.posted_total??0}</b></div></div>
+    ${pts.length?`<svg viewBox="0 0 100 100" preserveAspectRatio="none" style="width:100%;height:140px;margin-top:12px"><polyline points="${path}" fill="none" stroke="#2F9E8F" stroke-width="1.2" vector-effect="non-scaling-stroke"/></svg>
+    <div class="muted">Views gesamt, letzte ${pts.length} Messpunkte (alle 2 h)</div>`:`<div class="muted">Noch keine Insights.</div>`}</div>`;
+}
+
+function renderNew(){
+  document.getElementById("newbrand").innerHTML=`<div class="card"><h3>Neue Brand starten</h3>
+    <div class="row"><div><label>Slug</label><input id="n-slug" placeholder="z.B. geldwissen"></div>
+      <div><label>Name</label><input id="n-name" placeholder="GeldWissen"></div></div>
+    <label>Nische</label><input id="n-niche" placeholder="Finanzwissen, Storytelling">
+    <div class="row"><div><label>Plattformen</label><input id="n-tgt" value="instagram,youtube,tiktok,facebook"></div>
+      <div><label>Postzeit (Berlin)</label><input id="n-slot" value="19:00"></div></div>
+    <label>Akzentfarbe</label><input id="n-acc" value="#E0312E">
+    <p><button class="act" id="n-go">Befehl erzeugen</button></p>
+    <pre id="n-out">node scripts/newbrand.mjs …</pre>
+    <div class="muted">Danach: Secrets aus <code>brands/&lt;slug&gt;/SETUP.md</code> im Repo setzen, 10–15 geprüfte Scripts ablegen – Produktion und Posting laufen automatisch.</div>
+    <a href="https://github.com/${REPO}/settings/secrets/actions" target="_blank">Secrets verwalten →</a></div>`;
+  document.getElementById("n-go").onclick=()=>{
+    const g=i=>document.getElementById(i).value.trim();
+    document.getElementById("n-out").textContent =
+      `node scripts/newbrand.mjs ${g("n-slug")} "${g("n-name")}" "${g("n-niche")}" ${g("n-tgt")} ${g("n-slot")} "${g("n-acc")}"`;
+  };
+}
+
+async function tick(){
+  try{
+    const s = await loadState();
+    document.getElementById("stamp").textContent =
+      `${s.brands.length} Brand(s) · ${(s.queue||[]).filter(x=>x.status==="ready").length} geplant · Stand ${dt(s.generated_at||new Date().toISOString())}`;
+    renderBrands(s); renderPlan(s); renderScripts(s); renderStats(s);
+  }catch(e){ document.getElementById("stamp").textContent = "Daten nicht lesbar: " + e.message; }
+}
+renderNew(); tick(); setInterval(tick, 60000);
+if(location.hash){ const i=TABS.findIndex(t=>"#"+t[0]===location.hash); if(i>=0) nav.children[i].click(); }
+</script>
+</body>
+</html>
