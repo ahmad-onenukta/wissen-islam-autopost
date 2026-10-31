@@ -1,11 +1,11 @@
 // Story-Poster fuer NurWissen — laeuft 1 h nach dem Reel.
 //
-// Holt das zuletzt veroeffentlichte Reel ueber die API (media_url zeigt auf
-// Instagrams eigene CDN) und stellt dasselbe Video als Story ein. Dadurch muss
-// im Repo nichts liegen bleiben und post.mjs bleibt unveraendert.
+// Holt das zuletzt veroeffentlichte Reel ueber die API und stellt dasselbe Video
+// als Story ein. Quelle ist zuerst die eigene mp4 im Repo, dann Instagrams CDN.
 //
 // Grenzen: Stories sind auf 60 s begrenzt. Laengere Reels werden uebersprungen.
 import fs from "node:fs";
+import { reportError, clearError } from "../lib/report.mjs";
 
 const HOST  = process.env.IG_API_HOST || "graph.instagram.com";
 const VER   = process.env.IG_API_VERSION || "v23.0";
@@ -46,25 +46,51 @@ if (log.some(s => s.reel_id === reel.id)) {
   process.exit(0);
 }
 
-if (!reel.media_url) { console.log("Kein media_url – uebersprungen."); process.exit(0); }
-if (DRY) { console.log(`DRY RUN: wuerde Reel ${reel.id} (${ageH.toFixed(1)} h alt) als Story posten.`); process.exit(0); }
+// --- Video-Quellen: erst die eigene Repo-Datei, dann Instagrams CDN ----------
+// Die CDN-Adresse ist signiert und wird beim Container-Bau oft abgelehnt; die
+// raw.githubusercontent-Datei ist dieselbe mp4 und immer abrufbar.
+const REPO   = process.env.GITHUB_REPOSITORY || "ahmad-onenukta/wissen-islam-autopost";
+const BRANCH = process.env.GITHUB_REF_NAME || "main";
+const posted = fs.existsSync("posted.json") ? JSON.parse(fs.readFileSync("posted.json", "utf8")) : [];
+const lastPost = posted.filter(p => p.media_id === reel.id).pop() || posted[posted.length - 1] || null;
+const candidates = [];
+if (lastPost?.file) {
+  const u = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/videos/${encodeURIComponent(lastPost.file)}`;
+  try { if ((await fetch(u, { method: "HEAD" })).ok) candidates.push(u); } catch {}
+}
+if (reel.media_url) candidates.push(reel.media_url);
+if (!candidates.length) { console.log("Keine Video-Quelle – uebersprungen."); process.exit(0); }
+if (DRY) { console.log(`DRY RUN: wuerde Reel ${reel.id} (${ageH.toFixed(1)} h alt) als Story posten. Quelle: ${candidates[0]}`); process.exit(0); }
 
 // --- als Story veroeffentlichen ---------------------------------------------
-// video_url nimmt Instagrams eigene CDN-Adresse direkt an.
-const container = await api(`${USER}/media`, { media_type: "STORIES", video_url: reel.media_url }, "POST");
+try {
+  let container = null, lastErr = null;
+  for (const video_url of candidates) {
+    try {
+      console.log("Versuche Quelle:", video_url.slice(0, 90));
+      container = await api(`${USER}/media`, { media_type: "STORIES", video_url }, "POST");
+      break;
+    } catch (e) { lastErr = e; console.log("Quelle abgelehnt:", e.message.slice(0, 200)); }
+  }
+  if (!container) throw lastErr || new Error("Keine Quelle akzeptiert");
 
-let ok = false;
-for (let i = 0; i < 30; i++) {
-  const st = await api(container.id, { fields: "status_code" });
-  if (st.status_code === "FINISHED") { ok = true; break; }
-  if (st.status_code === "ERROR") throw new Error("Instagram meldet ERROR beim Verarbeiten");
-  await new Promise(r => setTimeout(r, 10000));
+  let ok = false;
+  for (let i = 0; i < 30; i++) {
+    const st = await api(container.id, { fields: "status_code" });
+    if (st.status_code === "FINISHED") { ok = true; break; }
+    if (st.status_code === "ERROR") throw new Error("Instagram meldet ERROR beim Verarbeiten");
+    await new Promise(r => setTimeout(r, 10000));
+  }
+  if (!ok) throw new Error("Container wurde nicht FINISHED (Timeout nach 5 Min)");
+
+  const published = await api(`${USER}/media_publish`, { creation_id: container.id }, "POST");
+  console.log(`Story veroeffentlicht: ${published.id} (aus Reel ${reel.id})`);
+
+  fs.mkdirSync("engage", { recursive: true });
+  log.push({ story_id: published.id, reel_id: reel.id, permalink: reel.permalink, at: new Date().toISOString() });
+  fs.writeFileSync("engage/stories.json", JSON.stringify(log.slice(-200), null, 2) + "\n");
+  clearError("story");
+} catch (e) {
+  reportError("story", e);
+  throw e;
 }
-if (!ok) throw new Error("Container wurde nicht FINISHED (Timeout nach 5 Min)");
-
-const published = await api(`${USER}/media_publish`, { creation_id: container.id }, "POST");
-console.log(`Story veroeffentlicht: ${published.id} (aus Reel ${reel.id})`);
-
-fs.mkdirSync("engage", { recursive: true });
-log.push({ story_id: published.id, reel_id: reel.id, permalink: reel.permalink, at: new Date().toISOString() });
-fs.writeFileSync("engage/stories.json", JSON.stringify(log.slice(-200), null, 2) + "\n");
