@@ -114,10 +114,21 @@
     "id": "015",
     "file": "015.mp4",
     "publish_at": "2026-10-31T18:00:00Z",
-    "status": "ready",
+    "status": "posted",
     "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die du zur Moschee mitnimmst. Zehn Leute — 50.000 €.\n\nVor Khaibar gibt der Prophet (saw) Ali (ra) die Fahne und sagt nicht „gewinn die Schlacht\", sondern: „Wenn Allah durch dich einen einzigen Menschen rechtleitet, ist das besser für dich als rote Kamele.\" (Bukhari 3701)\n\nRote Kamele waren damals das Teuerste überhaupt — der Maßstab für Reichtum.\n\nDer Unterschied zum Geld: Geld gibst du aus, dann ist es weg. Rechtleitung läuft weiter.\n\nEin Mensch ist mehr wert als das teuerste Gut der Zeit. Übertrieben?\n\nQuellen: Sahih al-Bukhari 3701 · alislam.org\n\n#islam #koran #hadith #wissen #muslim #deutsch #geld #dawah",
     "first_comment": "Rote Kamele waren der Ferrari der Zeit. Und ein Mensch wiegt mehr. Siehst du das auch so? 👇",
-    "thumb_offset": 2200
+    "thumb_offset": 2200,
+    "results": {
+      "instagram": {
+        "media_id": "18141020674616514"
+      },
+      "youtube": {
+        "error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
+      }
+    },
+    "media_id": "18141020674616514",
+    "first_comment_id": "18034046564884626",
+    "posted_at": "2026-10-31T18:01:33.984Z"
   },
   {
     "id": "007",
