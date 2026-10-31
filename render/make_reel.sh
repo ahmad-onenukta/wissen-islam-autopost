@@ -16,6 +16,16 @@ fail() {
   git commit -m "produce-fehler: $ID" >/dev/null 2>&1 || true
   git pull --rebase -q >/dev/null 2>&1 || true
   git push -q origin HEAD:main >/dev/null 2>&1 || true
+  # Zweiter Weg: ueber die Contents-API (funktioniert auch, wenn git push scheitert)
+  AUTH=$(git config --get http.https://github.com/.extraheader || true)
+  if [ -n "$AUTH" ] && [ -n "$GITHUB_REPOSITORY" ]; then
+    B64=$(base64 -w0 dashboard/produce-error.log)
+    SHA=$(curl -s -H "$AUTH" "https://api.github.com/repos/$GITHUB_REPOSITORY/contents/dashboard/produce-error.log?ref=main" \
+      | python3 -c "import json,sys; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || true)
+    python3 -c "import json,sys; d={'message':'produce-fehler: '+sys.argv[1],'content':sys.argv[2],'branch':'main'}; d.update({'sha':sys.argv[3]} if sys.argv[3] else {}); print(json.dumps(d))" "$ID" "$B64" "$SHA" > /tmp/err-body.json
+    curl -s -X PUT -H "$AUTH" -H "Accept: application/vnd.github+json" --data @/tmp/err-body.json \
+      "https://api.github.com/repos/$GITHUB_REPOSITORY/contents/dashboard/produce-error.log" >/dev/null || true
+  fi
   exit $code
 }
 trap fail ERR
