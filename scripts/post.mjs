@@ -120,6 +120,12 @@ const log = fs.existsSync("posted.json") ? JSON.parse(fs.readFileSync("posted.js
 log.push({ id: next.id, brand: brand.slug, file: next.file, media_id: next.media_id, posted_at: next.posted_at, results: next.results });
 fs.writeFileSync("posted.json", JSON.stringify(log, null, 2) + "\n");
 
-// Video erst loeschen, wenn alle Pull-from-URL-Ziele durch sind
-try { fs.unlinkSync(`videos/${next.file}`); console.log(`videos/${next.file} geloescht.`); } catch {}
+// Video bleibt liegen, solange die Story es noch zieht. Aufgeraeumt wird alles,
+// was weder zu den zwei juengsten Posts noch zu einem offenen Queue-Eintrag gehoert.
+try {
+  const keep = new Set([...log.slice(-2).map(e => e.file), ...queue.filter(q => q.status !== "posted").map(q => q.file)].filter(Boolean));
+  for (const f of fs.readdirSync("videos").filter(f => f.endsWith(".mp4"))) {
+    if (!keep.has(f)) { fs.unlinkSync(`videos/${f}`); console.log(`videos/${f} aufgeraeumt.`); }
+  }
+} catch (e) { console.log("Aufraeumen uebersprungen:", e.message); }
 console.log("Fertig:", JSON.stringify(next.results));
