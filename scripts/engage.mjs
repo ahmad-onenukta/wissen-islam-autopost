@@ -127,3 +127,8 @@ write("engage/inbox.json", inbox.filter(i => i.status !== "done").slice(-300));
 write("engage/outbox.json", outbox.filter(o => o.status === "pending" || (o.sent_at && o.sent_at > new Date(Date.now() - 7 * 864e5).toISOString())));
 write("engage/stats.json", stats);
 console.log("Follower:", stats.account?.followers_count, "| Reels:", stats.reels?.length);
+
+// ---------- Dashboard-State mitschreiben -------------------------------------
+// engage.yml committet den Ordner engage/ alle 2 h -> engage/dashboard.json ist die
+// autonome Datenquelle des Dashboards (kein eigener dashboard.yml-Workflow noetig).
+try { await import("./dashboard.mjs"); } catch (e) { console.log("Dashboard-State-Fehler:", e.message); }

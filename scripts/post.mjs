@@ -11,6 +11,9 @@ const VER    = process.env.IG_API_VERSION || "v23.0";
 const HOST   = process.env.IG_API_HOST || "graph.instagram.com";
 const sleep  = ms => new Promise(r => setTimeout(r, ms));
 
+// --- 0. Dashboard-Befehle anwenden (pause/move/retarget/delete) -------------
+try { const m = await import("./apply_commands.mjs"); } catch (e) { console.log("Befehle-Fehler:", e.message); }
+
 // --- 1. naechstes faelliges Reel -------------------------------------------
 const queue = JSON.parse(fs.readFileSync("queue.json", "utf8"));
 const now = new Date();

@@ -8,10 +8,12 @@ import { DEFAULT_BRAND } from "../lib/brand.mjs";
 
 const P = "dashboard/commands.json";
 const TTL_H = Number(process.env.CMD_TTL_H || 36);
-if (!fs.existsSync(P)) { console.log("Keine Befehle."); process.exit(0); }
+
+export function applyCommands() {
+if (!fs.existsSync(P)) { console.log("Keine Befehle."); return false; }
 let cmds = [];
-try { cmds = JSON.parse(fs.readFileSync(P, "utf8")); } catch { console.log("commands.json unlesbar."); process.exit(0); }
-if (!Array.isArray(cmds) || !cmds.length) { console.log("Keine Befehle."); process.exit(0); }
+try { cmds = JSON.parse(fs.readFileSync(P, "utf8")); } catch { console.log("commands.json unlesbar."); return false; }
+if (!Array.isArray(cmds) || !cmds.length) { console.log("Keine Befehle."); return false; }
 
 const fresh = c => !c.at || (Date.now() - new Date(c.at).getTime()) / 36e5 <= TTL_H;
 const queue = JSON.parse(fs.readFileSync("queue.json", "utf8"));
@@ -47,3 +49,8 @@ try {
   fs.writeFileSync("dashboard/commands-log.json", JSON.stringify(hist.slice(-200), null, 2) + "\n");
 } catch {}
 console.log(`Befehle: ${done.length} geprueft, Queue ${changed ? "geaendert" : "unveraendert"} ->`, JSON.stringify(done));
+return changed;
+}
+
+// Direktaufruf (node scripts/apply_commands.mjs) vs. Import aus post.mjs/produce
+applyCommands();
