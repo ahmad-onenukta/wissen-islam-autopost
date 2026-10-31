@@ -112,6 +112,12 @@ if (hrs(lastPost) !== null && hrs(lastPost) > 36)
   alerts.push({ level: "error", text: `Letzter Post vor ${hrs(lastPost)} h – Posting-Workflow pruefen.`, action: "actions" });
 if (hrs(engState.last_run) !== null && hrs(engState.last_run) > 12)
   alerts.push({ level: "warn", text: `Engagement-Lauf vor ${hrs(engState.last_run)} h – GitHub drosselt Cron.`, action: "actions" });
+for (const [f, label] of [["dashboard/produce-error.log", "Produktion"], ["dashboard/story-error.log", "Story"]]) {
+  if (!fs.existsSync(f)) continue;
+  const txt = fs.readFileSync(f, "utf8");
+  const line = (txt.split("\n").find(l => /error|Error|FEHLT|not found|failed/i.test(l)) || txt.split("\n")[0] || "").slice(0, 220);
+  alerts.push({ level: "error", text: `${label} abgebrochen: ${line}`, action: "actions" });
+}
 const errCards = pipeline.filter(x => x.results && Object.values(x.results).some(r => r && r.error));
 for (const x of errCards)
   alerts.push({ level: "error", brand: x.brand, text: `Reel ${x.id}: Posting-Fehler auf ${Object.entries(x.results).filter(([, r]) => r && r.error).map(([k]) => k).join(", ")}.`, action: "actions" });
