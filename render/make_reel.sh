@@ -15,7 +15,7 @@ fail() {
   git add -A dashboard/produce-error.log >/dev/null 2>&1 || true
   git commit -m "produce-fehler: $ID" >/dev/null 2>&1 || true
   git pull --rebase -q >/dev/null 2>&1 || true
-  git push -q >/dev/null 2>&1 || true
+  git push -q origin HEAD:main >/dev/null 2>&1 || true
   exit $code
 }
 trap fail ERR
