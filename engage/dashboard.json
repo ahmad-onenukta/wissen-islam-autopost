@@ -1,0 +1,1621 @@
+{
+  "generated_at": "2026-10-31T18:35:26.406Z",
+  "brands": [
+    {
+      "slug": "nurwissen",
+      "name": "NurWissen",
+      "niche": "Islam-Wissen, Storytelling, Zahlen-Hooks",
+      "active": true,
+      "accent": "#E0312E",
+      "bg": "#0D0D0F",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "slot": "19:00",
+      "handle": {
+        "instagram": "nurwissen_official",
+        "tiktok": "",
+        "youtube": "",
+        "facebook": ""
+      },
+      "voice": "robert",
+      "followers": 668,
+      "counts": {
+        "script": 0,
+        "checked": 19,
+        "queued": 1,
+        "paused": 0,
+        "live": 11
+      },
+      "runway_days": 1,
+      "next": "2026-11-01T18:00:00Z",
+      "views_total": 159654,
+      "avg_views": 14514,
+      "engagement_rate": 10.2
+    }
+  ],
+  "pipeline": [
+    {
+      "brand": "nurwissen",
+      "id": "020",
+      "title": "Der einzige Krieg, den Allah selbst erklärt",
+      "thema": "Geld",
+      "hook": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankündigt, sondern Krieg. Und sie steht heute in fast jedem Vertrag.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "„Allah lässt den Zins schwinden und die Mildtätigkeit wachsen“",
+          "ref": "Koran 2:277, alislam.org (Hafs 2:276)",
+          "url": "https://www.alislam.org/quran/2:277",
+          "verified": true
+        },
+        {
+          "claim": "„So erwartet Krieg von Allah und Seinem Gesandten … und wenn ihr umkehrt, steht euch euer Kapital zu“",
+          "ref": "Koran 2:280, alislam.org (Hafs 2:279)",
+          "url": "https://www.alislam.org/quran/2:280",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 0
+    },
+    {
+      "brand": "nurwissen",
+      "id": "021",
+      "title": "Warum der Koran Alkohol in drei Schritten verbot",
+      "thema": "Haram / Halal",
+      "hook": "Alkohol wurde nicht an einem Tag verboten. Sondern in drei Schritten über Jahre. Und der Grund dahinter ändert, wie du über deine eigenen Gewohnheiten denkst.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 3,
+        "verified": 3
+      },
+      "source_list": [
+        {
+          "claim": "Koran 2:220 — Wein und Glücksspiel: Sünde und Nutzen, die Sünde ist größer",
+          "ref": "alislam.org (Hafs 2:219)",
+          "url": "https://www.alislam.org/quran/2:220",
+          "verified": true
+        },
+        {
+          "claim": "Koran 4:44 — nicht betrunken zum Gebet",
+          "ref": "alislam.org (Hafs 4:43)",
+          "url": "https://www.alislam.org/quran/4:44",
+          "verified": true
+        },
+        {
+          "claim": "Koran 5:91 — Wein, Glücksspiel, Götzensteine, Lospfeile: Greuel vom Werk Satans, meidet sie",
+          "ref": "alislam.org (Hafs 5:90)",
+          "url": "https://www.alislam.org/quran/5:91",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 1
+    },
+    {
+      "brand": "nurwissen",
+      "id": "022",
+      "title": "Drei Männer, ein Felsen, drei Taten",
+      "thema": "Sünden",
+      "hook": "Drei Männer sind in einer Höhle eingeschlossen. Ein Felsen versperrt den Ausgang. Jeder nennt eine Tat, von der niemand wusste — und der Fels bewegt sich.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "Drei Männer in einer Höhle, Felsen versperrt den Ausgang; jeder bittet mit einer Tat: (1) alte Eltern zuerst mit Milch versorgt, stand bis zum Morgen mit der Sc",
+          "ref": "Sahih al-Bukhari 2272, Buch 37 (Miete), Hadith 12",
+          "url": "https://sunnah.com/bukhari:2272",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 2
+    },
+    {
+      "brand": "nurwissen",
+      "id": "019",
+      "title": "Vor dir das Meer, hinter dir das Heer",
+      "thema": "Motivation",
+      "hook": "Vor ihm das Meer. Hinter ihm eine Armee. Und sein Volk sagt: Wir sind erledigt. Seine Antwort besteht aus vier Wörtern.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Am Meer sagt das Volk „Wir sind erledigt“, Musa antwortet: „Nein! Mit mir ist mein Herr; Er wird mich leiten“",
+          "ref": "Koran 26:63, alislam.org (Hafs 26:62)",
+          "url": "https://www.alislam.org/quran/26:63",
+          "verified": true
+        },
+        {
+          "claim": "„Die sich um Uns mühen — Wir werden sie auf Unsere Wege leiten“",
+          "ref": "Koran 29:70, alislam.org (Hafs 29:69)",
+          "url": "https://www.alislam.org/quran/29:70",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 3
+    },
+    {
+      "brand": "nurwissen",
+      "id": "018",
+      "title": "Der Mann, der nie fragte „warum ich?“",
+      "thema": "Geduld / Sabr",
+      "hook": "Er verliert sein Vermögen, seine Kinder und seine Gesundheit. Und in seinem ganzen Bittgebet kommt ein Wort nicht vor: warum.",
+      "voice": "sabrina",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Ayyub bittet: „Mich hat Not ergriffen, und Du bist der Barmherzigste der Barmherzigen“; Allah erhört ihn, nimmt die Not und gibt ihm seine Familie und mehr dazu",
+          "ref": "Koran 21:84–85, alislam.org (Hafs 21:83–84)",
+          "url": "https://www.alislam.org/quran/21:85",
+          "verified": true
+        },
+        {
+          "claim": "„Stampf mit deinem Fuß auf — hier ist kühles Wasser zum Waschen und zum Trinken“",
+          "ref": "Koran 38:43, alislam.org (Hafs 38:42)",
+          "url": "https://www.alislam.org/quran/38:43",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 4
+    },
+    {
+      "brand": "nurwissen",
+      "id": "035",
+      "title": "Das erste Wort war ein Befehl — und das zweite ein Werkzeug",
+      "thema": "Wissen",
+      "hook": "Die erste Offenbarung des Korans ist kein Glaubensbekenntnis. Es ist ein Befehl. Und drei Verse später steht, womit er umgesetzt werden soll.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Koran 96:2 — „Lies im Namen deines Herrn, der erschuf“ (erste Offenbarung)",
+          "ref": "alislam.org (Hafs 96:1)",
+          "url": "https://www.alislam.org/quran/96:2",
+          "verified": true
+        },
+        {
+          "claim": "Koran 96:5 — „Der lehrte durch die Feder“",
+          "ref": "alislam.org (Hafs 96:4)",
+          "url": "https://www.alislam.org/quran/96:5",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 5
+    },
+    {
+      "brand": "nurwissen",
+      "id": "017",
+      "title": "Das Fenster, das jede Nacht aufgeht",
+      "thema": "Gebete",
+      "hook": "Jede Nacht geht ein Fenster auf. Immer zur gleichen Zeit. Und fast alle schlafen dabei.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Allah steigt im letzten Drittel der Nacht herab und fragt: wer ruft Mich, wer bittet Mich, wer bittet um Vergebung",
+          "ref": "Sahih al-Bukhari 1145, Buch 19, Hadith 26",
+          "url": "https://sunnah.com/bukhari:1145",
+          "verified": true
+        },
+        {
+          "claim": "Koran 17:80 — Tahajjud als zusätzliches Nachtgebet, „ruhmvoller Rang“",
+          "ref": "alislam.org, Ahmadiyya-Zählung (Hafs 17:79)",
+          "url": "https://www.alislam.org/quran/17:80",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 6
+    },
+    {
+      "brand": "nurwissen",
+      "id": "027",
+      "title": "Sieben Plätze im Schatten — zwei kannst du heute belegen",
+      "thema": "Hilfsbereit",
+      "hook": "An einem Tag, an dem es keinen Schatten gibt, wird Allah sieben Arten von Menschen beschatten. Zwei von den sieben schaffst du vor dem Schlafengehen.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "Sieben, die Allah an einem Tag ohne Schatten beschatten wird: gerechter Herrscher; im Gottesdienst aufgewachsener junger Mensch; einer, dessen Herz an der Mosch",
+          "ref": "Sahih al-Bukhari 1423, Buch 24 (Zakat), Hadith 27 (Abu Huraira)",
+          "url": "https://sunnah.com/bukhari:1423",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 7
+    },
+    {
+      "brand": "nurwissen",
+      "id": "029",
+      "title": "Das erste Krankenhaus, in dem die Rechnung niemand bekam",
+      "thema": "Alte Historische Story",
+      "hook": "Die Idee, dass ein Krankenhaus dich behandelt, ohne vorher nach Geld zu fragen, ist nicht modern. Sie ist über tausend Jahre alt — und hat einen Namen.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "Rufaida al-Aslamiyya richtete zur Zeit des Propheten ﷺ bei der Grabenschlacht ein Zelt für Verwundete ein; erstes muslimisches Hospital: Leprosorium in Damaskus",
+          "ref": "AramcoWorld, „The Islamic Roots of the Modern Hospital“, 2017",
+          "url": "https://www.aramcoworld.com/articles/2017/the-islamic-roots-of-the-modern-hospital",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 8
+    },
+    {
+      "brand": "nurwissen",
+      "id": "030",
+      "title": "Mit 21 losgegangen — und drei Kontinente später zurück",
+      "thema": "Alte Historische Story",
+      "hook": "Ein 21-Jähriger geht 1325 allein aus Tanger los. Er will nach Mekka. Zurück ist er erst 24 Jahre später — nach drei Kontinenten.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "Ibn Battuta brach 1325 mit 21 Jahren allein aus Tanger auf; Rückkehr 1349; Berichte bis 1354; drei Kontinente bis China; Rihla über zwei Jahre dem Hofdichter Ib",
+          "ref": "AramcoWorld, „The Longest Hajj: The Journeys of Ibn Battuta“, 2000",
+          "url": "https://www.aramcoworld.com/en/articles/2000/the-longest-hajj-the-journeys-of-ibn-battuta-intro",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 9
+    },
+    {
+      "brand": "nurwissen",
+      "id": "016",
+      "title": "Die 40 Zentimeter, die alles entscheiden",
+      "thema": "Gebete",
+      "hook": "Es gibt eine Position, in der du Allah näher bist als in jeder anderen. Und die meisten rauschen in drei Sekunden durch.",
+      "voice": "sabrina",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "„Am nächsten ist der Diener seinem Herrn, wenn er sich niederwirft — so bittet viel“ (Abu Huraira)",
+          "ref": "Sahih Muslim 482, Buch 4 (Gebet)",
+          "url": "https://sunnah.com/muslim:482",
+          "verified": true
+        },
+        {
+          "claim": "Koran 2:187 — „Ich bin nahe, Ich antworte dem Gebet des Bittenden“",
+          "ref": "alislam.org, Ahmadiyya-Zählung (Hafs 2:186)",
+          "url": "https://www.alislam.org/quran/2:187",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 10
+    },
+    {
+      "brand": "nurwissen",
+      "id": "024",
+      "title": "Zwei Dinge, mit denen du dich ins Verderben reden kannst",
+      "thema": "Sünden",
+      "hook": "Der Prophet ﷺ hat eine Regel gegeben, die aus genau zwei Möglichkeiten besteht. Und die meisten brechen sie täglich.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "„Wer an Allah und den Jüngsten Tag glaubt, soll Gutes sagen oder schweigen“ — im selben Hadith: den Nachbarn nicht schädigen, den Gast ehren",
+          "ref": "Sahih al-Bukhari 6475, Buch 81 (ar-Riqaq), Hadith 64 (Abu Huraira)",
+          "url": "https://sunnah.com/bukhari:6475",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 11
+    },
+    {
+      "brand": "nurwissen",
+      "id": "026",
+      "title": "Dreimal die Mutter, einmal der Vater",
+      "thema": "Eltern dienen",
+      "hook": "Ein Mann fragt den Propheten ﷺ, wer sein Bestes am meisten verdient. Die Antwort ist viermal — und die Reihenfolge ist kein Zufall.",
+      "voice": "sabrina",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 3,
+        "verified": 3
+      },
+      "source_list": [
+        {
+          "claim": "Ein Mann fragt, wer das größte Recht auf gute Behandlung hat; der Prophet ﷺ sagt dreimal „deine Mutter“, dann „dein Vater“",
+          "ref": "Sahih al-Bukhari 5971, Buch 78 (al-Adab), Hadith 2 (Abu Huraira)",
+          "url": "https://sunnah.com/bukhari:5971",
+          "verified": true
+        },
+        {
+          "claim": "Koran 31:15 — „seine Mutter trug ihn unter Schwäche über Schwäche“",
+          "ref": "alislam.org (Hafs 31:14)",
+          "url": "https://www.alislam.org/quran/31:15",
+          "verified": true
+        },
+        {
+          "claim": "Koran 17:24 — kein Wort des Unmuts gegen die Eltern, direkt nach dem Gebot, keinem außer Ihm zu dienen",
+          "ref": "alislam.org (Hafs 17:23)",
+          "url": "https://www.alislam.org/quran/17:24",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 12
+    },
+    {
+      "brand": "nurwissen",
+      "id": "023",
+      "title": "Die Sadaqa, die nichts kostet",
+      "thema": "Alltags-Situation",
+      "hook": "Du kannst Sadaqa geben, ohne einen Cent zu haben. Der Prophet ﷺ hat eine Form genannt, die nichts kostet — und die wir ständig vergessen.",
+      "voice": "sabrina",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "„Dein Lächeln im Gesicht deines Bruders ist für dich eine Sadaqa“ — im gleichen Hadith: den Weg zeigen, Hindernis entfernen, dem Blinden helfen, Wasser in das G",
+          "ref": "Jami at-Tirmidhi 1956, Buch 27, Hadith 62 (Abu Dharr), Grad hasan (Darussalam)",
+          "url": "https://sunnah.com/tirmidhi:1956",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 13
+    },
+    {
+      "brand": "nurwissen",
+      "id": "034",
+      "title": "Du bist auf der Religion deines Freundes",
+      "thema": "Freunde",
+      "hook": "Der Prophet ﷺ hat einen Satz gesagt, der keine Empfehlung ist, sondern eine Feststellung. Und dann einen Auftrag daraus gemacht.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "„Der Mensch ist auf der Religion seines engen Freundes (khalil) — so soll jeder von euch schauen, wen er sich zum engen Freund nimmt“ (Abu Huraira)",
+          "ref": "Jami at-Tirmidhi 2378, Buch 36, Hadith 75, Grad hasan (Darussalam)",
+          "url": "https://sunnah.com/tirmidhi:2378",
+          "verified": true
+        },
+        {
+          "claim": "Gleichnis vom Moschusträger und dem Blasebalg: beim guten Gefährten drei mögliche Gewinne, beim schlechten keiner",
+          "ref": "Sahih al-Bukhari 5534, Buch 72, Hadith 59",
+          "url": "https://sunnah.com/bukhari:5534",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 14
+    },
+    {
+      "brand": "nurwissen",
+      "id": "033",
+      "title": "Der Satz, der dir gehört, bevor du ihn brauchst",
+      "thema": "Geduld / Sabr",
+      "hook": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. Aber der Koran gibt ihn für jede Art von Schlag — und er enthält zwei Aussagen, die alles verändern.",
+      "voice": "sabrina",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "Koran 2:157 — „Die, wenn ein Unglück (musiba) sie trifft, sagen: Wir gehören Allah, und zu Ihm werden wir zurückkehren“; der Vers davor (2:156) kündigt Prüfung ",
+          "ref": "alislam.org (Hafs 2:155–156)",
+          "url": "https://www.alislam.org/quran/2:157",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 15
+    },
+    {
+      "brand": "nurwissen",
+      "id": "031",
+      "title": "Warum dein Kopf nach zwei Stunden Scrollen leerer ist als vorher",
+      "thema": "Viral & Trending",
+      "hook": "Du legst das Handy weg und fühlst dich leerer als vorher. Der Koran beschreibt genau diesen Zustand — und nennt den Grund in einem Halbsatz.",
+      "voice": "sabrina",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Koran 59:20 — „Werdet nicht wie die, die Allah vergaßen, und die Er darum sich selbst vergessen ließ“",
+          "ref": "alislam.org (Hafs 59:19)",
+          "url": "https://www.alislam.org/quran/59:20",
+          "verified": true
+        },
+        {
+          "claim": "Koran 13:29 — „deren Herzen Ruhe finden im Gedenken Allahs; wahrlich, im Gedenken Allahs finden die Herzen Ruhe“",
+          "ref": "alislam.org (Hafs 13:28)",
+          "url": "https://www.alislam.org/quran/13:29",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 16
+    },
+    {
+      "brand": "nurwissen",
+      "id": "032",
+      "title": "Zwei Dinge, die du hast und nicht merkst",
+      "thema": "Viral & Trending",
+      "hook": "Der Prophet ﷺ hat zwei Geschenke genannt, bei denen die meisten Menschen betrogen werden. Nicht von anderen — von sich selbst.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "„Zwei Gnaden, in denen viele Menschen betrogen werden: die Gesundheit und die freie Zeit“ (Ibn Abbas)",
+          "ref": "Sahih al-Bukhari 6412, Buch 81 (ar-Riqaq), Hadith 1",
+          "url": "https://sunnah.com/bukhari:6412",
+          "verified": true
+        },
+        {
+          "claim": "Sure al-Asr: „Beim Zeitalter! Wahrlich, der Mensch ist im Verlust — außer denen, die glauben und gute Werke tun und einander zur Wahrheit und zur Geduld ermahne",
+          "ref": "Koran 103:2–4, alislam.org (Hafs 103:1–3)",
+          "url": "https://www.alislam.org/quran/103:1",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 17
+    },
+    {
+      "brand": "nurwissen",
+      "id": "025",
+      "title": "Der Test, den dein Nachbar entscheidet",
+      "thema": "Alltags-Situation",
+      "hook": "Der Prophet ﷺ hat dreimal geschworen. Und dann gesagt: Dieser Mensch hat keinen Glauben. Es ging nicht um Gebet, Fasten oder Spenden.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Dreifacher Schwur: „Er hat keinen Glauben“ — „Der, dessen Nachbar vor seinem Unheil nicht sicher ist“",
+          "ref": "Sahih al-Bukhari 6016, Buch 78 (al-Adab), Hadith 47",
+          "url": "https://sunnah.com/bukhari:6016",
+          "verified": true
+        },
+        {
+          "claim": "„Wer an Allah und den Jüngsten Tag glaubt, soll seinen Nachbarn nicht schädigen“",
+          "ref": "Sahih al-Bukhari 6475, Buch 81, Hadith 64",
+          "url": "https://sunnah.com/bukhari:6475",
+          "verified": true
+        }
+      ],
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 18
+    },
+    {
+      "brand": "nurwissen",
+      "id": "005",
+      "title": "",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "live",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-10-23T19:35:00.291Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": null,
+      "media_id": "18114527000174151",
+      "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
+      "metrics": {
+        "views": 140202,
+        "reach": 111504,
+        "likes": 6885,
+        "comments": 270,
+        "shares": 2869,
+        "saved": 1815
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "006",
+      "title": "",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "live",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-10-24T18:24:12.282Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": null,
+      "media_id": "18138963895624373",
+      "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
+      "metrics": {
+        "views": 7554,
+        "reach": 6475,
+        "likes": 303,
+        "comments": 3,
+        "shares": 44,
+        "saved": 88
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "007",
+      "title": "Das Wort „Blut\" steht genau zehnmal im Koran. Ich habe jede einzelne Stelle nachgeschlagen",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "queued",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-11-01T18:00:00Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "008",
+      "title": "",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "live",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-10-21T19:41:48.261Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": null,
+      "media_id": "18106676354203367",
+      "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
+      "metrics": {
+        "views": 400,
+        "reach": 324,
+        "likes": 10,
+        "comments": 2,
+        "shares": 0,
+        "saved": 2
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "009",
+      "title": "",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "live",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-10-20T19:40:15.230Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": null,
+      "media_id": "17984355417120782",
+      "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
+      "metrics": {
+        "views": 472,
+        "reach": 372,
+        "likes": 8,
+        "comments": 2,
+        "shares": 1,
+        "saved": 1
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "010",
+      "title": "",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "live",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-10-19T21:35:33.014Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": null,
+      "media_id": "17951034201271209",
+      "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
+      "metrics": {
+        "views": 290,
+        "reach": 213,
+        "likes": 5,
+        "comments": 2,
+        "shares": 2,
+        "saved": 3
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "011",
+      "title": "Der Mann, der 100 Menschen getötet hat",
+      "thema": "Sünden",
+      "hook": "Ein Mann hat 99 Menschen getötet. Dann fragt er einen Mönch: Gibt es für mich noch Vergebung? Der Mönch sagt nein. Also tötet er ihn auch.",
+      "voice": "robert",
+      "stage": "live",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Mann der Kinder Israels tötet 99 Menschen, dann den Mönch (100.); ein Gelehrter schickt ihn in ein Dorf; er stirbt unterwegs; Engel der Barmherzigkeit und der S",
+          "ref": "Sahih al-Bukhari 3470, Buch 60 (Propheten), Hadith 137",
+          "url": "https://sunnah.com/bukhari:3470",
+          "verified": true
+        },
+        {
+          "claim": "Koran 39:54 „Verzweifelt nicht an der Barmherzigkeit Allahs, Allah vergibt alle Sünden“",
+          "ref": "alislam.org, Sher Ali, Ahmadiyya-Zählung",
+          "url": "https://www.alislam.org/quran/39:54",
+          "verified": true
+        }
+      ],
+      "publish_at": "2026-10-27T18:00:00Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": "18145450528572276",
+      "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
+      "metrics": {
+        "views": 2910,
+        "reach": 2535,
+        "likes": 100,
+        "comments": 1,
+        "shares": 40,
+        "saved": 26
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "012",
+      "title": "Der Prophet (saw) hat einen Mann beschrieben, den er nie getroffen hat — mit Namen, Herkun",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "live",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-10-28T18:00:00Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": null,
+      "media_id": "18470014318187750",
+      "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
+      "metrics": {
+        "views": 4220,
+        "reach": 3566,
+        "likes": 251,
+        "comments": 2,
+        "shares": 59,
+        "saved": 61
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "013",
+      "title": "Der Prophet (saw) hat Freundschaft in einem Bild erklärt: ein Moschusträger und ein Schmie",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "live",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-10-29T18:00:00Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "17872718889648381"
+        },
+        "youtube": {
+          "error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
+        }
+      },
+      "media_id": "17872718889648381",
+      "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
+      "metrics": {
+        "views": 1905,
+        "reach": 1656,
+        "likes": 88,
+        "comments": 2,
+        "shares": 50,
+        "saved": 21
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "014",
+      "title": "Eine Frau, die ihren Körper verkaufte, wird vergeben — wegen eines Hundes.",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "live",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-10-30T18:00:00Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "18163773607435569"
+        },
+        "youtube": {
+          "error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
+        }
+      },
+      "media_id": "18163773607435569",
+      "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
+      "metrics": {
+        "views": 1275,
+        "reach": 1115,
+        "likes": 44,
+        "comments": 1,
+        "shares": 4,
+        "saved": 13
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "015",
+      "title": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die du zur Moschee mitnimmst. Zeh",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "live",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-10-31T18:00:00Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "18141020674616514"
+        },
+        "youtube": {
+          "error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
+        }
+      },
+      "media_id": "18141020674616514",
+      "permalink": "https://www.instagram.com/reel/DfKwN3NAffV/",
+      "metrics": {
+        "views": 74,
+        "reach": 2,
+        "likes": 0,
+        "comments": 1,
+        "shares": 0,
+        "saved": 1
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "028",
+      "title": "Du sagst jeden Tag seinen Namen und weißt es nicht.",
+      "thema": "",
+      "hook": "",
+      "voice": "",
+      "stage": "live",
+      "fact_check": "–",
+      "sources": {
+        "total": 0,
+        "verified": 0
+      },
+      "source_list": [],
+      "publish_at": "2026-10-25T18:00:00Z",
+      "targets": [
+        "instagram"
+      ],
+      "results": null,
+      "media_id": "17969911538964163",
+      "permalink": "https://www.instagram.com/reel/De7jLSNDEat/",
+      "metrics": {
+        "views": 352,
+        "reach": 285,
+        "likes": 10,
+        "comments": 3,
+        "shares": 0,
+        "saved": 1
+      },
+      "order_rank": 999
+    }
+  ],
+  "stats": {
+    "account": {
+      "username": "nurwissen_official",
+      "followers_count": 668,
+      "follows_count": 0,
+      "media_count": 12,
+      "id": "28768435396155579",
+      "at": "2026-10-31T18:35:19.456Z"
+    },
+    "history": [
+      {
+        "at": "2026-10-20T17:10:47.581Z",
+        "followers": 0,
+        "views_total": 2
+      },
+      {
+        "at": "2026-10-20T21:39:18.734Z",
+        "followers": 0,
+        "views_total": 8
+      },
+      {
+        "at": "2026-10-21T00:38:36.943Z",
+        "followers": 0,
+        "views_total": 9
+      },
+      {
+        "at": "2026-10-21T07:41:35.698Z",
+        "followers": 0,
+        "views_total": 9
+      },
+      {
+        "at": "2026-10-21T13:50:22.930Z",
+        "followers": 0,
+        "views_total": 9
+      },
+      {
+        "at": "2026-10-21T18:40:29.936Z",
+        "followers": 0,
+        "views_total": 9
+      },
+      {
+        "at": "2026-10-21T23:22:30.280Z",
+        "followers": 0,
+        "views_total": 21
+      },
+      {
+        "at": "2026-10-22T04:51:22.462Z",
+        "followers": 0,
+        "views_total": 27
+      },
+      {
+        "at": "2026-10-22T11:56:30.064Z",
+        "followers": 0,
+        "views_total": 38
+      },
+      {
+        "at": "2026-10-22T17:12:57.466Z",
+        "followers": 1,
+        "views_total": 83
+      },
+      {
+        "at": "2026-10-22T21:38:21.514Z",
+        "followers": 1,
+        "views_total": 95
+      },
+      {
+        "at": "2026-10-23T00:41:38.521Z",
+        "followers": 1,
+        "views_total": 95
+      },
+      {
+        "at": "2026-10-23T07:34:50.122Z",
+        "followers": 1,
+        "views_total": 99
+      },
+      {
+        "at": "2026-10-23T13:28:43.438Z",
+        "followers": 1,
+        "views_total": 101
+      },
+      {
+        "at": "2026-10-23T18:23:20.664Z",
+        "followers": 1,
+        "views_total": 102
+      },
+      {
+        "at": "2026-10-23T23:10:13.440Z",
+        "followers": 26,
+        "views_total": 6933
+      },
+      {
+        "at": "2026-10-24T04:39:58.543Z",
+        "followers": 93,
+        "views_total": 26291
+      },
+      {
+        "at": "2026-10-24T11:04:43.181Z",
+        "followers": 205,
+        "views_total": 62754
+      },
+      {
+        "at": "2026-10-24T15:58:50.927Z",
+        "followers": 237,
+        "views_total": 73143
+      },
+      {
+        "at": "2026-10-24T18:48:43.015Z",
+        "followers": 256,
+        "views_total": 75740
+      },
+      {
+        "at": "2026-10-24T22:30:05.250Z",
+        "followers": 310,
+        "views_total": 84215
+      },
+      {
+        "at": "2026-10-25T04:44:40.568Z",
+        "followers": 340,
+        "views_total": 89823
+      },
+      {
+        "at": "2026-10-25T11:34:10.011Z",
+        "followers": 388,
+        "views_total": 96052
+      },
+      {
+        "at": "2026-10-25T16:24:59.728Z",
+        "followers": 417,
+        "views_total": 99904
+      },
+      {
+        "at": "2026-10-25T20:53:12.886Z",
+        "followers": 446,
+        "views_total": 103584
+      },
+      {
+        "at": "2026-10-26T00:24:29.730Z",
+        "followers": 457,
+        "views_total": 106099
+      },
+      {
+        "at": "2026-10-26T07:50:03.998Z",
+        "followers": 468,
+        "views_total": 107873
+      },
+      {
+        "at": "2026-10-26T15:13:31.041Z",
+        "followers": 490,
+        "views_total": 117430
+      },
+      {
+        "at": "2026-10-26T21:01:51.622Z",
+        "followers": 518,
+        "views_total": 124188
+      },
+      {
+        "at": "2026-10-27T01:29:33.714Z",
+        "followers": 538,
+        "views_total": 128627
+      },
+      {
+        "at": "2026-10-27T07:54:42.427Z",
+        "followers": 544,
+        "views_total": 131446
+      },
+      {
+        "at": "2026-10-27T14:33:41.005Z",
+        "followers": 545,
+        "views_total": 134393
+      },
+      {
+        "at": "2026-10-27T20:43:48.562Z",
+        "followers": 561,
+        "views_total": 136602
+      },
+      {
+        "at": "2026-10-28T01:25:11.118Z",
+        "followers": 575,
+        "views_total": 139552
+      },
+      {
+        "at": "2026-10-28T08:36:33.230Z",
+        "followers": 582,
+        "views_total": 141135
+      },
+      {
+        "at": "2026-10-28T16:39:21.846Z",
+        "followers": 591,
+        "views_total": 143435
+      },
+      {
+        "at": "2026-10-28T22:37:44.940Z",
+        "followers": 609,
+        "views_total": 145638
+      },
+      {
+        "at": "2026-10-29T05:51:13.482Z",
+        "followers": 621,
+        "views_total": 147672
+      },
+      {
+        "at": "2026-10-29T13:05:38.498Z",
+        "followers": 629,
+        "views_total": 149229
+      },
+      {
+        "at": "2026-10-29T19:39:31.833Z",
+        "followers": 638,
+        "views_total": 151355
+      },
+      {
+        "at": "2026-10-29T23:57:38.095Z",
+        "followers": 652,
+        "views_total": 154174
+      },
+      {
+        "at": "2026-10-30T05:52:12.035Z",
+        "followers": 655,
+        "views_total": 154881
+      },
+      {
+        "at": "2026-10-30T12:59:09.362Z",
+        "followers": 657,
+        "views_total": 156042
+      },
+      {
+        "at": "2026-10-30T19:24:53.973Z",
+        "followers": 657,
+        "views_total": 156879
+      },
+      {
+        "at": "2026-10-30T23:49:33.285Z",
+        "followers": 663,
+        "views_total": 158153
+      },
+      {
+        "at": "2026-10-31T05:46:17.361Z",
+        "followers": 664,
+        "views_total": 158804
+      },
+      {
+        "at": "2026-10-31T12:35:49.552Z",
+        "followers": 666,
+        "views_total": 159288
+      },
+      {
+        "at": "2026-10-31T18:35:19.456Z",
+        "followers": 668,
+        "views_total": 159754
+      }
+    ],
+    "reels": [
+      {
+        "id": "18141020674616514",
+        "permalink": "https://www.instagram.com/reel/DfKwN3NAffV/",
+        "posted": "2026-10-31T18:02:27+0000",
+        "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die",
+        "views": 74,
+        "reach": 2,
+        "likes": 0,
+        "comments": 1,
+        "shares": 0,
+        "saved": 1,
+        "total_interactions": 2
+      },
+      {
+        "id": "18220536925356124",
+        "permalink": "https://www.instagram.com/reel/DfKwCPPlJZg/",
+        "posted": "2026-10-31T18:00:53+0000",
+        "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die",
+        "views": 100,
+        "reach": 1,
+        "likes": 1,
+        "comments": 1,
+        "shares": 0,
+        "saved": 1,
+        "total_interactions": 3
+      },
+      {
+        "id": "18163773607435569",
+        "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
+        "posted": "2026-10-30T18:00:53+0000",
+        "caption": "Eine Frau, die ihren Körper verkaufte, wird vergeben — wegen",
+        "views": 1275,
+        "reach": 1115,
+        "likes": 44,
+        "comments": 1,
+        "shares": 4,
+        "saved": 13,
+        "total_interactions": 62
+      },
+      {
+        "id": "17872718889648381",
+        "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
+        "posted": "2026-10-29T18:20:49+0000",
+        "caption": "Der Prophet (saw) hat Freundschaft in einem Bild erklärt: ei",
+        "views": 1905,
+        "reach": 1656,
+        "likes": 88,
+        "comments": 2,
+        "shares": 50,
+        "saved": 21,
+        "total_interactions": 169
+      },
+      {
+        "id": "18470014318187750",
+        "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
+        "posted": "2026-10-28T21:43:39+0000",
+        "caption": "Der Prophet (saw) hat einen Mann beschrieben, den er nie get",
+        "views": 4220,
+        "reach": 3566,
+        "likes": 251,
+        "comments": 2,
+        "shares": 59,
+        "saved": 61,
+        "total_interactions": 389
+      },
+      {
+        "id": "18145450528572276",
+        "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
+        "posted": "2026-10-27T21:17:23+0000",
+        "caption": "Ein Mann hat 99 Menschen getötet. Er fragt einen Mönch, ob e",
+        "views": 2910,
+        "reach": 2535,
+        "likes": 100,
+        "comments": 1,
+        "shares": 40,
+        "saved": 26,
+        "total_interactions": 176
+      },
+      {
+        "id": "17969911538964163",
+        "permalink": "https://www.instagram.com/reel/De7jLSNDEat/",
+        "posted": "2026-10-25T20:19:46+0000",
+        "caption": "Du sagst jeden Tag seinen Namen und weißt es nicht.\n\nAl-Chwa",
+        "views": 352,
+        "reach": 285,
+        "likes": 10,
+        "comments": 3,
+        "shares": 0,
+        "saved": 1,
+        "total_interactions": 14
+      },
+      {
+        "id": "18138963895624373",
+        "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
+        "posted": "2026-10-24T18:25:06+0000",
+        "caption": "Das Wort „Blut\" steht genau 10-mal im Koran. 4× als Speiseve",
+        "views": 7554,
+        "reach": 6475,
+        "likes": 303,
+        "comments": 3,
+        "shares": 44,
+        "saved": 88,
+        "total_interactions": 452
+      },
+      {
+        "id": "18114527000174151",
+        "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
+        "posted": "2026-10-23T19:35:52+0000",
+        "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Ni",
+        "views": 140202,
+        "reach": 111504,
+        "likes": 6885,
+        "comments": 270,
+        "shares": 2869,
+        "saved": 1815,
+        "total_interactions": 12236
+      },
+      {
+        "id": "18106676354203367",
+        "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
+        "posted": "2026-10-21T19:43:01+0000",
+        "caption": "Ein alter Mann hält ein Hemd. Es ist voller Blut. Und er wei",
+        "views": 400,
+        "reach": 324,
+        "likes": 10,
+        "comments": 2,
+        "shares": 0,
+        "saved": 2,
+        "total_interactions": 14
+      },
+      {
+        "id": "17984355417120782",
+        "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
+        "posted": "2026-10-20T19:41:49+0000",
+        "caption": "Kolumbus wollte nach Indien. Er landete in Amerika – und hat",
+        "views": 472,
+        "reach": 372,
+        "likes": 8,
+        "comments": 2,
+        "shares": 1,
+        "saved": 1,
+        "total_interactions": 12
+      },
+      {
+        "id": "17951034201271209",
+        "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
+        "posted": "2026-10-19T21:37:07+0000",
+        "caption": "Jedes Foto auf deinem Handy folgt einer Regel, die ein Mann ",
+        "views": 290,
+        "reach": 213,
+        "likes": 5,
+        "comments": 2,
+        "shares": 2,
+        "saved": 3,
+        "total_interactions": 14
+      }
+    ]
+  },
+  "engage": {
+    "new": 0,
+    "done": 0,
+    "skip": 0
+  },
+  "posted_total": 11,
+  "health": {
+    "min_runway": 3,
+    "last_post": "2026-10-31T18:01:33.984Z",
+    "last_post_hours": 1,
+    "last_engage": "2026-10-31T18:35:19.456Z",
+    "last_engage_hours": 0,
+    "scripts_total": 31,
+    "videos_ready": 1,
+    "alerts": [
+      {
+        "level": "error",
+        "brand": "nurwissen",
+        "text": "Vorrat nur 1 Tag(e) in der Queue (Soll 3). 19 gepruefte Scripts warten auf Produktion.",
+        "action": "produce"
+      },
+      {
+        "level": "error",
+        "action": "elevenlabs",
+        "text": "ElevenLabs-Guthaben aufgebraucht (65 Credits uebrig) – ohne Credits kein Voice-Over und damit kein neues Reel. Plan aufladen, danach laeuft die Produktion von selbst weiter."
+      },
+      {
+        "level": "error",
+        "brand": "nurwissen",
+        "text": "Reel 013: Posting-Fehler auf youtube.",
+        "action": "actions"
+      },
+      {
+        "level": "error",
+        "brand": "nurwissen",
+        "text": "Reel 014: Posting-Fehler auf youtube.",
+        "action": "actions"
+      },
+      {
+        "level": "error",
+        "brand": "nurwissen",
+        "text": "Reel 015: Posting-Fehler auf youtube.",
+        "action": "actions"
+      }
+    ],
+    "status": "error"
+  },
+  "jobs": [
+    {
+      "name": "Reel produzieren",
+      "file": "produce.yml",
+      "cron": "0 4 * * *",
+      "does": "Script -> Voice-Over -> Remotion -> Queue"
+    },
+    {
+      "name": "Reel posten",
+      "file": "post-reel.yml",
+      "cron": "0 11,14 * * * (wartet auf 18:00 UTC)",
+      "does": "Instagram + YouTube + TikTok + Facebook"
+    },
+    {
+      "name": "Story posten",
+      "file": "post-story.yml",
+      "cron": "taeglich 20:00 Berlin",
+      "does": "Story zum Reel"
+    },
+    {
+      "name": "Engagement",
+      "file": "engage.yml",
+      "cron": "17 */2 * * *",
+      "does": "Kommentare/DMs/Insights + Dashboard-State"
+    },
+    {
+      "name": "Token erneuern",
+      "file": "refresh-token.yml",
+      "cron": "1. + 15.",
+      "does": "IG-Token verlaengern (braucht GH_PAT)"
+    }
+  ]
+}
