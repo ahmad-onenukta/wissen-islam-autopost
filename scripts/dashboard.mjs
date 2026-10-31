@@ -91,6 +91,7 @@ const state = {
 };
 // ---------- Health / Alarme (Fabrik-Waechter) --------------------------------
 const engState = j("engage/state.json", {});
+const produceErr = fs.existsSync("dashboard/produce-error.log") ? fs.readFileSync("dashboard/produce-error.log", "utf8") : "";
 const MIN_RUNWAY = Number(process.env.MIN_RUNWAY || 3);
 const lastPost = posted.map(p => p.posted_at || p.at || null).filter(Boolean).sort().pop()
   || queue.filter(q => q.status === "posted").map(q => q.posted_at || q.publish_at).filter(Boolean).sort().pop() || null;
@@ -103,7 +104,7 @@ for (const b of state.brands) {
     alerts.push({ level: b.runway_days <= 1 ? "error" : "warn", brand: b.slug,
       text: `Vorrat nur ${b.runway_days} Tag(e) in der Queue (Soll ${MIN_RUNWAY}). ${checked} gepruefte Scripts warten auf Produktion.`,
       action: "produce" });
-  if (b.active && checked > 0 && b.runway_days < MIN_RUNWAY)
+  if (b.active && checked > 0 && b.runway_days < MIN_RUNWAY && !produceErr)
     alerts.push({ level: "error", brand: b.slug,
       text: "Produktion liefert nicht: gepruefte Scripts da, aber keine neuen Videos. Secret ELEVENLABS_API_KEY pruefen, dann Workflow »Reel produzieren« starten.",
       action: "secrets" });
@@ -115,6 +116,12 @@ if (hrs(engState.last_run) !== null && hrs(engState.last_run) > 12)
 for (const [f, label] of [["dashboard/produce-error.log", "Produktion"], ["dashboard/story-error.log", "Story"]]) {
   if (!fs.existsSync(f)) continue;
   const txt = fs.readFileSync(f, "utf8");
+  if (/quota_exceeded|credits remaining/i.test(txt)) {
+    const left = (txt.match(/You have (\d+) credits remaining/i) || [])[1];
+    alerts.push({ level: "error", action: "elevenlabs",
+      text: `ElevenLabs-Guthaben aufgebraucht${left ? ` (${left} Credits uebrig)` : ""} – ohne Credits kein Voice-Over und damit kein neues Reel. Plan aufladen, danach laeuft die Produktion von selbst weiter.` });
+    continue;
+  }
   const line = (txt.split("\n").find(l => /error|Error|FEHLT|not found|failed/i.test(l)) || txt.split("\n")[0] || "").slice(0, 220);
   alerts.push({ level: "error", text: `${label} abgebrochen: ${line}`, action: "actions" });
 }
