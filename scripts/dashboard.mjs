@@ -85,10 +85,59 @@ const state = {
     };
   }),
   pipeline: pipeline.sort((a, b) => (a.order_rank - b.order_rank) || a.id.localeCompare(b.id)),
-  stats: { account: stats.account || null, history: (stats.history || []).slice(-180), reels: stats.reels || [] },
+  stats: { account: stats.account || null, history: (stats.history || []).slice(-200), reels: stats.reels || [] },
   engage: ["new", "done", "skip"].reduce((o, s) => (o[s] = (Array.isArray(inbox) ? inbox : []).filter(x => x.status === s).length, o), {}),
   posted_total: posted.length,
 };
+// ---------- Health / Alarme (Fabrik-Waechter) --------------------------------
+const engState = j("engage/state.json", {});
+const MIN_RUNWAY = Number(process.env.MIN_RUNWAY || 3);
+const lastPost = posted.map(p => p.posted_at || p.at || null).filter(Boolean).sort().pop()
+  || queue.filter(q => q.status === "posted").map(q => q.posted_at || q.publish_at).filter(Boolean).sort().pop() || null;
+const hrs = t => t ? Math.round((Date.now() - new Date(t)) / 36e5) : null;
+const alerts = [];
+for (const b of state.brands) {
+  const p = pipeline.filter(x => x.brand === b.slug);
+  const checked = p.filter(x => x.stage === "checked").length;
+  if (b.active && b.runway_days < MIN_RUNWAY)
+    alerts.push({ level: b.runway_days <= 1 ? "error" : "warn", brand: b.slug,
+      text: `Vorrat nur ${b.runway_days} Tag(e) in der Queue (Soll ${MIN_RUNWAY}). ${checked} gepruefte Scripts warten auf Produktion.`,
+      action: "produce" });
+  if (b.active && checked > 0 && b.runway_days < MIN_RUNWAY)
+    alerts.push({ level: "error", brand: b.slug,
+      text: "Produktion liefert nicht: gepruefte Scripts da, aber keine neuen Videos. Secret ELEVENLABS_API_KEY pruefen, dann Workflow »Reel produzieren« starten.",
+      action: "secrets" });
+}
+if (hrs(lastPost) !== null && hrs(lastPost) > 36)
+  alerts.push({ level: "error", text: `Letzter Post vor ${hrs(lastPost)} h – Posting-Workflow pruefen.`, action: "actions" });
+if (hrs(engState.last_run) !== null && hrs(engState.last_run) > 12)
+  alerts.push({ level: "warn", text: `Engagement-Lauf vor ${hrs(engState.last_run)} h – GitHub drosselt Cron.`, action: "actions" });
+const errCards = pipeline.filter(x => x.results && Object.values(x.results).some(r => r && r.error));
+for (const x of errCards)
+  alerts.push({ level: "error", brand: x.brand, text: `Reel ${x.id}: Posting-Fehler auf ${Object.entries(x.results).filter(([, r]) => r && r.error).map(([k]) => k).join(", ")}.`, action: "actions" });
+
+state.health = {
+  min_runway: MIN_RUNWAY,
+  last_post: lastPost, last_post_hours: hrs(lastPost),
+  last_engage: engState.last_run || null, last_engage_hours: hrs(engState.last_run),
+  scripts_total: pipeline.length,
+  videos_ready: queue.filter(q => q.status === "ready").length,
+  alerts,
+  status: alerts.some(a => a.level === "error") ? "error" : alerts.length ? "warn" : "ok",
+};
+state.jobs = [
+  { name: "Reel produzieren", file: "produce.yml", cron: "0 4 * * *", does: "Script -> Voice-Over -> Remotion -> Queue" },
+  { name: "Reel posten", file: "post-reel.yml", cron: "0 11,14 * * * (wartet auf 18:00 UTC)", does: "Instagram + YouTube + TikTok + Facebook" },
+  { name: "Story posten", file: "post-story.yml", cron: "taeglich 20:00 Berlin", does: "Story zum Reel" },
+  { name: "Engagement", file: "engage.yml", cron: "17 */2 * * *", does: "Kommentare/DMs/Insights + Dashboard-State" },
+  { name: "Token erneuern", file: "refresh-token.yml", cron: "1. + 15.", does: "IG-Token verlaengern (braucht GH_PAT)" },
+];
+
+const out = JSON.stringify(state, null, 2) + "\n";
 fs.mkdirSync("dashboard", { recursive: true });
-fs.writeFileSync("dashboard/state.json", JSON.stringify(state, null, 2) + "\n");
-console.log(`state.json: ${state.brands.length} Brands, ${pipeline.length} Pipeline-Karten, ${state.stats.reels.length} Reels mit Insights`);
+fs.writeFileSync("dashboard/state.json", out);
+// zweite Kopie im engage/-Pfad: dieser Ordner wird vom Engagement-Workflow alle 2 h committet,
+// deshalb bleibt das Dashboard auch ohne eigenen dashboard.yml-Workflow aktuell.
+fs.mkdirSync("engage", { recursive: true });
+fs.writeFileSync("engage/dashboard.json", out);
+console.log(`state.json: ${state.brands.length} Brands, ${pipeline.length} Pipeline-Karten, ${state.stats.reels.length} Reels mit Insights, Status ${state.health.status} (${alerts.length} Alarm(e))`);
