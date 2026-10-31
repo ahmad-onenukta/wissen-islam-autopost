@@ -1,9 +1,24 @@
 #!/bin/bash
 # make_reel.sh <id> <script.json> <words.json> <vo.mp3> [cut_sec] [tempo]
 # Vollautomatischer Weg von VO+Timestamps zum fertigen IG-Video.
-set -e
+set -eo pipefail
 ID=$1; SCRIPT=$2; WORDS=$3; VOSRC=$4; CUT=${5:-0}; TEMPO=${6:-1.0}
 cd "$(dirname "$0")/.."
+mkdir -p build dashboard remotion/public/audio remotion/out
+LOG="build/$ID-render.log"
+exec > >(tee -a "$LOG") 2>&1
+fail() {
+  code=$?
+  { echo "== Render-Fehler Reel $ID (exit $code) $(date -u +%FT%TZ) =="; tail -150 "$LOG"; } > dashboard/produce-error.log
+  git config user.name  "reel-bot"  || true
+  git config user.email "reel-bot@users.noreply.github.com" || true
+  git add -A dashboard/produce-error.log >/dev/null 2>&1 || true
+  git commit -m "produce-fehler: $ID" >/dev/null 2>&1 || true
+  git pull --rebase -q >/dev/null 2>&1 || true
+  git push -q >/dev/null 2>&1 || true
+  exit $code
+}
+trap fail ERR
 if [ "$CUT" != "0" ] || [ "$TEMPO" != "1.0" ]; then
   ffmpeg -v error -y -ss "$CUT" -i "$VOSRC" -af "atempo=$TEMPO,afade=t=in:st=0:d=0.08" -c:a libmp3lame -q:a 2 "remotion/public/audio/$ID-vo.mp3"
   python3 - "$WORDS" "$CUT" "$TEMPO" "scripts/$ID-words.json" <<'PY'
@@ -27,7 +42,9 @@ f=f"remotion/public/{sys.argv[1]}-props.json"; d=json.load(open(f)); d['script']
 json.dump(d,open(f,'w'),ensure_ascii=False,indent=1)
 PY
 cd remotion
+npx remotion browser ensure >/dev/null 2>&1 || true
 npx remotion render Essay "out/$ID.mp4" --props="public/$ID-props.json" --codec=h264 --crf=22 --concurrency=2 --log=error
 ffmpeg -v error -y -i "out/$ID.mp4" -c:v libx264 -preset slow -crf 27 -maxrate 1400k -bufsize 2800k -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 128k "out/$ID-ig.mp4"
 ffmpeg -v error -y -i "out/$ID-ig.mp4" -vf "fps=1/5,scale=216:-1,tile=6x6" -frames:v 1 "out/$ID-strip.jpg"
 ls -la "out/$ID-ig.mp4"
+rm -f ../dashboard/produce-error.log

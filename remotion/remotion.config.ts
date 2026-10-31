@@ -6,10 +6,15 @@
  */
 
 import { Config } from "@remotion/cli/config";
+import fs from "node:fs";
 
 Config.setRspack(true);
 Config.setVideoImageFormat("jpeg");
 Config.setOverwriteOutput(true);
 Config.setDefaultPremountInSeconds(2);
-Config.setBrowserExecutable("/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell");
+// Lokal (Claude-Container) liegt ein Chromium bereit; auf GitHub-Runnern nicht –
+// dort laedt Remotion sich selbst eine Headless-Shell. Pfad nur setzen, wenn vorhanden.
+const BROWSER = process.env.REMOTION_BROWSER_EXECUTABLE
+  || "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell";
+if (fs.existsSync(BROWSER)) Config.setBrowserExecutable(BROWSER);
 Config.setChromiumDisableWebSecurity(true);
