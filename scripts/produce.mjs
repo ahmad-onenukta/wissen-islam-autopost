@@ -1,6 +1,7 @@
 // NurWissen Produktion — Schritt 1: Voice-Over + Wort-Timestamps per ElevenLabs-API
 // Aufruf: node scripts/produce.mjs <id>   (liest scripts/<id>.json, schreibt build/<id>-vo.mp3 + build/<id>-words.json)
 import fs from "node:fs";
+import { reportError, clearError } from "../lib/report.mjs";
 
 const id  = process.argv[2];
 const KEY = process.env.ELEVENLABS_API_KEY;
@@ -36,7 +37,12 @@ const tts = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?
     voice_settings: { stability: 0.45, similarity_boost: 0.8, style: 0.35, use_speaker_boost: true },
   }),
 });
-if (!tts.ok) { console.error("TTS-Fehler", tts.status, await tts.text()); process.exit(1); }
+if (!tts.ok) {
+  const body = await tts.text();
+  console.error("TTS-Fehler", tts.status, body);
+  reportError("produce", new Error(`ElevenLabs TTS ${tts.status} bei Reel ${id}: ${body.slice(0, 600)}`));
+  process.exit(1);
+}
 const mp3 = Buffer.from(await tts.arrayBuffer());
 fs.writeFileSync(`build/${id}-vo.mp3`, mp3);
 console.log(`VO: ${(mp3.length / 1048576).toFixed(2)} MB`);
@@ -48,8 +54,14 @@ form.append("model_id", "scribe_v1");
 form.append("language_code", "deu");
 form.append("timestamps_granularity", "word");
 const stt = await fetch("https://api.elevenlabs.io/v1/speech-to-text", { method: "POST", headers: { "xi-api-key": KEY }, body: form });
-if (!stt.ok) { console.error("STT-Fehler", stt.status, await stt.text()); process.exit(1); }
+if (!stt.ok) {
+  const body = await stt.text();
+  console.error("STT-Fehler", stt.status, body);
+  reportError("produce", new Error(`ElevenLabs STT ${stt.status} bei Reel ${id}: ${body.slice(0, 600)}`));
+  process.exit(1);
+}
 const words = await stt.json();
 fs.writeFileSync(`build/${id}-words.json`, JSON.stringify(words, null, 2));
 console.log(`Words: ${(words.words || []).filter(w => w.type === "word").length} | Dauer ~${(words.words?.at(-1)?.end ?? 0).toFixed(1)} s`);
 fs.writeFileSync(`build/${id}-script.json`, JSON.stringify(script, null, 2));
+clearError("produce");
