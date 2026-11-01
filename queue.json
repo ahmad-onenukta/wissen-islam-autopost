@@ -134,10 +134,21 @@
     "id": "007",
     "file": "007.mp4",
     "publish_at": "2026-11-01T18:00:00Z",
-    "status": "ready",
+    "status": "posted",
     "caption": "Das Wort „Blut\" steht genau zehnmal im Koran. Ich habe jede einzelne Stelle nachgeschlagen — und sie ergeben zusammen etwas anderes als eine Speiseregel.\n\nDreimal ist es eine Grenze beim Essen (2:174, 5:4, 16:116). Beim vierten Mal wird es präzise: „dam masfuh\" — vergossenes Blut, also nur das, was beim Schlachten austritt. Nicht das im Fleisch.\n\nDann kippt die Bedeutung. Die Engel vor der Erschaffung des Menschen: Blut steht fürs Leben. Der Bund mit den Kindern Israels: dein Blut wiegt wie jedes andere. Ägypten: Blut als Warnung an einen, der sich für Gott hält. Das Hemd Yusufs: Blut kann lügen.\n\nUnd am Ende 22:38 — „Nicht ihr Fleisch erreicht Allah und nicht ihr Blut, sondern eure Rechtschaffenheit erreicht Ihn.\"\n\nZehn Stellen, und die letzte hebt alle davor auf. Siehst du das auch so?\n\nQuellen: corpus.quran.com · api.quran.com (Uthmani) · alislam.org (Ahmadiyya-Zählung, mit Bismillah)\n\n#islam #koran #wissen #muslim #deutsch #tafsir #halal",
     "first_comment": "Zehn Stellen, und am Ende zählt keine davon — sondern Taqwa. Hättest du das erwartet? 👇",
     "thumb_offset": 2000,
-    "brand": "nurwissen"
+    "brand": "nurwissen",
+    "results": {
+      "instagram": {
+        "media_id": "18132511822772953"
+      },
+      "youtube": {
+        "error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
+      }
+    },
+    "media_id": "18132511822772953",
+    "first_comment_id": "18114663113149361",
+    "posted_at": "2026-11-01T18:00:00.984Z"
   }
 ]
