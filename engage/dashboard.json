@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T18:57:22.973Z",
+  "generated_at": "2026-11-01T23:38:05.828Z",
   "brands": [
     {
       "slug": "nurwissen",
@@ -20,7 +20,7 @@
         "facebook": ""
       },
       "voice": "robert",
-      "followers": 675,
+      "followers": 677,
       "counts": {
         "script": 0,
         "checked": 19,
@@ -30,9 +30,9 @@
       },
       "runway_days": 0,
       "next": null,
-      "views_total": 160771,
-      "avg_views": 14616,
-      "engagement_rate": 10.2
+      "views_total": 161502,
+      "avg_views": 14682,
+      "engagement_rate": 10.3
     }
   ],
   "pipeline": [
@@ -750,12 +750,12 @@
       "media_id": "18114527000174151",
       "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
       "metrics": {
-        "views": 141161,
-        "reach": 112116,
-        "likes": 6932,
+        "views": 141747,
+        "reach": 112493,
+        "likes": 6977,
         "comments": 271,
-        "shares": 2876,
-        "saved": 1831
+        "shares": 2891,
+        "saved": 1846
       },
       "order_rank": 999
     },
@@ -781,8 +781,8 @@
       "media_id": "18138963895624373",
       "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
       "metrics": {
-        "views": 7598,
-        "reach": 6512,
+        "views": 7618,
+        "reach": 6527,
         "likes": 306,
         "comments": 3,
         "shares": 45,
@@ -819,9 +819,9 @@
       "media_id": "18132511822772953",
       "permalink": "https://www.instagram.com/reel/DfNU1HOAUr_/",
       "metrics": {
-        "views": 27,
-        "reach": 19,
-        "likes": 0,
+        "views": 96,
+        "reach": 84,
+        "likes": 1,
         "comments": 1,
         "shares": 0,
         "saved": 0
@@ -881,7 +881,7 @@
       "media_id": "17984355417120782",
       "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
       "metrics": {
-        "views": 481,
+        "views": 482,
         "reach": 375,
         "likes": 9,
         "comments": 2,
@@ -957,7 +957,7 @@
       "media_id": "18145450528572276",
       "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
       "metrics": {
-        "views": 2932,
+        "views": 2940,
         "reach": 2570,
         "likes": 101,
         "comments": 1,
@@ -988,11 +988,11 @@
       "media_id": "18470014318187750",
       "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
       "metrics": {
-        "views": 4306,
-        "reach": 3666,
-        "likes": 257,
+        "views": 4345,
+        "reach": 3684,
+        "likes": 260,
         "comments": 2,
-        "shares": 60,
+        "shares": 61,
         "saved": 64
       },
       "order_rank": 999
@@ -1026,8 +1026,8 @@
       "media_id": "17872718889648381",
       "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
       "metrics": {
-        "views": 1915,
-        "reach": 1666,
+        "views": 1921,
+        "reach": 1670,
         "likes": 90,
         "comments": 2,
         "shares": 51,
@@ -1064,8 +1064,8 @@
       "media_id": "18163773607435569",
       "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
       "metrics": {
-        "views": 1288,
-        "reach": 1122,
+        "views": 1290,
+        "reach": 1124,
         "likes": 45,
         "comments": 1,
         "shares": 4,
@@ -1139,11 +1139,11 @@
   "stats": {
     "account": {
       "username": "nurwissen_official",
-      "followers_count": 675,
+      "followers_count": 677,
       "follows_count": 0,
       "media_count": 12,
       "id": "28768435396155579",
-      "at": "2026-11-01T18:57:15.337Z"
+      "at": "2026-11-01T23:37:59.798Z"
     },
     "history": [
       {
@@ -1405,6 +1405,11 @@
         "at": "2026-11-01T18:57:15.337Z",
         "followers": 675,
         "views_total": 162499
+      },
+      {
+        "at": "2026-11-01T23:37:59.798Z",
+        "followers": 677,
+        "views_total": 163236
       }
     ],
     "reels": [
@@ -1413,21 +1418,21 @@
         "permalink": "https://www.instagram.com/reel/DfNU1HOAUr_/",
         "posted": "2026-11-01T18:01:22+0000",
         "caption": "Das Wort „Blut\" steht genau zehnmal im Koran. Ich habe jede ",
-        "views": 27,
-        "reach": 19,
-        "likes": 0,
+        "views": 96,
+        "reach": 84,
+        "likes": 1,
         "comments": 1,
         "shares": 0,
         "saved": 0,
-        "total_interactions": 1
+        "total_interactions": 2
       },
       {
         "id": "18220536925356124",
         "permalink": "https://www.instagram.com/reel/DfKwCPPlJZg/",
         "posted": "2026-10-31T18:00:53+0000",
         "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die",
-        "views": 1728,
-        "reach": 1507,
+        "views": 1734,
+        "reach": 1512,
         "likes": 62,
         "comments": 1,
         "shares": 21,
@@ -1439,8 +1444,8 @@
         "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
         "posted": "2026-10-30T18:00:53+0000",
         "caption": "Eine Frau, die ihren Körper verkaufte, wird vergeben — wegen",
-        "views": 1288,
-        "reach": 1122,
+        "views": 1290,
+        "reach": 1124,
         "likes": 45,
         "comments": 1,
         "shares": 4,
@@ -1452,8 +1457,8 @@
         "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
         "posted": "2026-10-29T18:20:49+0000",
         "caption": "Der Prophet (saw) hat Freundschaft in einem Bild erklärt: ei",
-        "views": 1915,
-        "reach": 1666,
+        "views": 1921,
+        "reach": 1670,
         "likes": 90,
         "comments": 2,
         "shares": 51,
@@ -1465,20 +1470,20 @@
         "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
         "posted": "2026-10-28T21:43:39+0000",
         "caption": "Der Prophet (saw) hat einen Mann beschrieben, den er nie get",
-        "views": 4306,
-        "reach": 3666,
-        "likes": 257,
+        "views": 4345,
+        "reach": 3684,
+        "likes": 260,
         "comments": 2,
-        "shares": 60,
+        "shares": 61,
         "saved": 64,
-        "total_interactions": 399
+        "total_interactions": 403
       },
       {
         "id": "18145450528572276",
         "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
         "posted": "2026-10-27T21:17:23+0000",
         "caption": "Ein Mann hat 99 Menschen getötet. Er fragt einen Mönch, ob e",
-        "views": 2932,
+        "views": 2940,
         "reach": 2570,
         "likes": 101,
         "comments": 1,
@@ -1504,8 +1509,8 @@
         "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
         "posted": "2026-10-24T18:25:06+0000",
         "caption": "Das Wort „Blut\" steht genau 10-mal im Koran. 4× als Speiseve",
-        "views": 7598,
-        "reach": 6512,
+        "views": 7618,
+        "reach": 6527,
         "likes": 306,
         "comments": 3,
         "shares": 45,
@@ -1517,13 +1522,13 @@
         "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
         "posted": "2026-10-23T19:35:52+0000",
         "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Ni",
-        "views": 141161,
-        "reach": 112116,
-        "likes": 6932,
+        "views": 141747,
+        "reach": 112493,
+        "likes": 6977,
         "comments": 271,
-        "shares": 2876,
-        "saved": 1831,
-        "total_interactions": 12309
+        "shares": 2891,
+        "saved": 1846,
+        "total_interactions": 12389
       },
       {
         "id": "18106676354203367",
@@ -1543,7 +1548,7 @@
         "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
         "posted": "2026-10-20T19:41:49+0000",
         "caption": "Kolumbus wollte nach Indien. Er landete in Amerika – und hat",
-        "views": 481,
+        "views": 482,
         "reach": 375,
         "likes": 9,
         "comments": 2,
@@ -1575,8 +1580,8 @@
   "health": {
     "min_runway": 3,
     "last_post": "2026-11-01T18:00:00.984Z",
-    "last_post_hours": 1,
-    "last_engage": "2026-11-01T18:57:15.337Z",
+    "last_post_hours": 6,
+    "last_engage": "2026-11-01T23:37:59.798Z",
     "last_engage_hours": 0,
     "scripts_total": 31,
     "videos_ready": 0,
