@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T06:10:01.424Z",
+  "generated_at": "2026-11-01T13:28:18.792Z",
   "brands": [
     {
       "slug": "nurwissen",
@@ -20,7 +20,7 @@
         "facebook": ""
       },
       "voice": "robert",
-      "followers": 674,
+      "followers": 675,
       "counts": {
         "script": 0,
         "checked": 19,
@@ -30,8 +30,8 @@
       },
       "runway_days": 1,
       "next": "2026-11-01T18:00:00Z",
-      "views_total": 160607,
-      "avg_views": 14601,
+      "views_total": 160565,
+      "avg_views": 16057,
       "engagement_rate": 10.2
     }
   ],
@@ -750,12 +750,12 @@
       "media_id": "18114527000174151",
       "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
       "metrics": {
-        "views": 140698,
-        "reach": 111897,
-        "likes": 6906,
-        "comments": 270,
-        "shares": 2871,
-        "saved": 1824
+        "views": 141018,
+        "reach": 112059,
+        "likes": 6924,
+        "comments": 271,
+        "shares": 2873,
+        "saved": 1828
       },
       "order_rank": 999
     },
@@ -781,11 +781,11 @@
       "media_id": "18138963895624373",
       "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
       "metrics": {
-        "views": 7586,
-        "reach": 6502,
-        "likes": 305,
+        "views": 7596,
+        "reach": 6510,
+        "likes": 306,
         "comments": 3,
-        "shares": 44,
+        "shares": 45,
         "saved": 88
       },
       "order_rank": 999
@@ -836,8 +836,8 @@
       "media_id": "18106676354203367",
       "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
       "metrics": {
-        "views": 401,
-        "reach": 324,
+        "views": 406,
+        "reach": 326,
         "likes": 10,
         "comments": 2,
         "shares": 0,
@@ -867,12 +867,12 @@
       "media_id": "17984355417120782",
       "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
       "metrics": {
-        "views": 476,
-        "reach": 374,
-        "likes": 8,
+        "views": 481,
+        "reach": 375,
+        "likes": 9,
         "comments": 2,
         "shares": 1,
-        "saved": 2
+        "saved": 3
       },
       "order_rank": 999
     },
@@ -898,11 +898,11 @@
       "media_id": "17951034201271209",
       "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
       "metrics": {
-        "views": 292,
-        "reach": 215,
-        "likes": 5,
+        "views": 297,
+        "reach": 216,
+        "likes": 6,
         "comments": 2,
-        "shares": 2,
+        "shares": 3,
         "saved": 3
       },
       "order_rank": 999
@@ -943,8 +943,8 @@
       "media_id": "18145450528572276",
       "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
       "metrics": {
-        "views": 2921,
-        "reach": 2549,
+        "views": 2929,
+        "reach": 2566,
         "likes": 101,
         "comments": 1,
         "shares": 40,
@@ -974,12 +974,12 @@
       "media_id": "18470014318187750",
       "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
       "metrics": {
-        "views": 4250,
-        "reach": 3601,
-        "likes": 253,
+        "views": 4280,
+        "reach": 3636,
+        "likes": 256,
         "comments": 2,
         "shares": 59,
-        "saved": 62
+        "saved": 63
       },
       "order_rank": 999
     },
@@ -1012,11 +1012,11 @@
       "media_id": "17872718889648381",
       "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
       "metrics": {
-        "views": 1910,
-        "reach": 1663,
-        "likes": 89,
+        "views": 1912,
+        "reach": 1664,
+        "likes": 90,
         "comments": 2,
-        "shares": 50,
+        "shares": 51,
         "saved": 21
       },
       "order_rank": 999
@@ -1050,8 +1050,8 @@
       "media_id": "18163773607435569",
       "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
       "metrics": {
-        "views": 1281,
-        "reach": 1117,
+        "views": 1287,
+        "reach": 1121,
         "likes": 45,
         "comments": 1,
         "shares": 4,
@@ -1086,15 +1086,8 @@
         }
       },
       "media_id": "18141020674616514",
-      "permalink": "https://www.instagram.com/reel/DfKwN3NAffV/",
-      "metrics": {
-        "views": 438,
-        "reach": 396,
-        "likes": 5,
-        "comments": 1,
-        "shares": 3,
-        "saved": 3
-      },
+      "permalink": null,
+      "metrics": null,
       "order_rank": 999
     },
     {
@@ -1119,7 +1112,7 @@
       "media_id": "17969911538964163",
       "permalink": "https://www.instagram.com/reel/De7jLSNDEat/",
       "metrics": {
-        "views": 354,
+        "views": 359,
         "reach": 286,
         "likes": 11,
         "comments": 3,
@@ -1132,11 +1125,11 @@
   "stats": {
     "account": {
       "username": "nurwissen_official",
-      "followers_count": 674,
+      "followers_count": 675,
       "follows_count": 0,
-      "media_count": 12,
+      "media_count": 11,
       "id": "28768435396155579",
-      "at": "2026-11-01T06:09:55.439Z"
+      "at": "2026-11-01T13:28:11.092Z"
     },
     "history": [
       {
@@ -1388,42 +1381,34 @@
         "at": "2026-11-01T06:09:55.439Z",
         "followers": 674,
         "views_total": 161600
+      },
+      {
+        "at": "2026-11-01T13:28:11.092Z",
+        "followers": 675,
+        "views_total": 162084
       }
     ],
     "reels": [
-      {
-        "id": "18141020674616514",
-        "permalink": "https://www.instagram.com/reel/DfKwN3NAffV/",
-        "posted": "2026-10-31T18:02:27+0000",
-        "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die",
-        "views": 438,
-        "reach": 396,
-        "likes": 5,
-        "comments": 1,
-        "shares": 3,
-        "saved": 3,
-        "total_interactions": 12
-      },
       {
         "id": "18220536925356124",
         "permalink": "https://www.instagram.com/reel/DfKwCPPlJZg/",
         "posted": "2026-10-31T18:00:53+0000",
         "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die",
-        "views": 993,
-        "reach": 843,
-        "likes": 31,
+        "views": 1519,
+        "reach": 1288,
+        "likes": 57,
         "comments": 1,
-        "shares": 1,
+        "shares": 21,
         "saved": 9,
-        "total_interactions": 42
+        "total_interactions": 90
       },
       {
         "id": "18163773607435569",
         "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
         "posted": "2026-10-30T18:00:53+0000",
         "caption": "Eine Frau, die ihren Körper verkaufte, wird vergeben — wegen",
-        "views": 1281,
-        "reach": 1117,
+        "views": 1287,
+        "reach": 1121,
         "likes": 45,
         "comments": 1,
         "shares": 4,
@@ -1435,34 +1420,34 @@
         "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
         "posted": "2026-10-29T18:20:49+0000",
         "caption": "Der Prophet (saw) hat Freundschaft in einem Bild erklärt: ei",
-        "views": 1910,
-        "reach": 1663,
-        "likes": 89,
+        "views": 1912,
+        "reach": 1664,
+        "likes": 90,
         "comments": 2,
-        "shares": 50,
+        "shares": 51,
         "saved": 21,
-        "total_interactions": 170
+        "total_interactions": 172
       },
       {
         "id": "18470014318187750",
         "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
         "posted": "2026-10-28T21:43:39+0000",
         "caption": "Der Prophet (saw) hat einen Mann beschrieben, den er nie get",
-        "views": 4250,
-        "reach": 3601,
-        "likes": 253,
+        "views": 4280,
+        "reach": 3636,
+        "likes": 256,
         "comments": 2,
         "shares": 59,
-        "saved": 62,
-        "total_interactions": 392
+        "saved": 63,
+        "total_interactions": 396
       },
       {
         "id": "18145450528572276",
         "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
         "posted": "2026-10-27T21:17:23+0000",
         "caption": "Ein Mann hat 99 Menschen getötet. Er fragt einen Mönch, ob e",
-        "views": 2921,
-        "reach": 2549,
+        "views": 2929,
+        "reach": 2566,
         "likes": 101,
         "comments": 1,
         "shares": 40,
@@ -1474,7 +1459,7 @@
         "permalink": "https://www.instagram.com/reel/De7jLSNDEat/",
         "posted": "2026-10-25T20:19:46+0000",
         "caption": "Du sagst jeden Tag seinen Namen und weißt es nicht.\n\nAl-Chwa",
-        "views": 354,
+        "views": 359,
         "reach": 286,
         "likes": 11,
         "comments": 3,
@@ -1487,34 +1472,34 @@
         "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
         "posted": "2026-10-24T18:25:06+0000",
         "caption": "Das Wort „Blut\" steht genau 10-mal im Koran. 4× als Speiseve",
-        "views": 7586,
-        "reach": 6502,
-        "likes": 305,
+        "views": 7596,
+        "reach": 6510,
+        "likes": 306,
         "comments": 3,
-        "shares": 44,
+        "shares": 45,
         "saved": 88,
-        "total_interactions": 455
+        "total_interactions": 457
       },
       {
         "id": "18114527000174151",
         "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
         "posted": "2026-10-23T19:35:52+0000",
         "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Ni",
-        "views": 140698,
-        "reach": 111897,
-        "likes": 6906,
-        "comments": 270,
-        "shares": 2871,
-        "saved": 1824,
-        "total_interactions": 12268
+        "views": 141018,
+        "reach": 112059,
+        "likes": 6924,
+        "comments": 271,
+        "shares": 2873,
+        "saved": 1828,
+        "total_interactions": 12295
       },
       {
         "id": "18106676354203367",
         "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
         "posted": "2026-10-21T19:43:01+0000",
         "caption": "Ein alter Mann hält ein Hemd. Es ist voller Blut. Und er wei",
-        "views": 401,
-        "reach": 324,
+        "views": 406,
+        "reach": 326,
         "likes": 10,
         "comments": 2,
         "shares": 0,
@@ -1526,26 +1511,26 @@
         "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
         "posted": "2026-10-20T19:41:49+0000",
         "caption": "Kolumbus wollte nach Indien. Er landete in Amerika – und hat",
-        "views": 476,
-        "reach": 374,
-        "likes": 8,
+        "views": 481,
+        "reach": 375,
+        "likes": 9,
         "comments": 2,
         "shares": 1,
-        "saved": 2,
-        "total_interactions": 13
+        "saved": 3,
+        "total_interactions": 15
       },
       {
         "id": "17951034201271209",
         "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
         "posted": "2026-10-19T21:37:07+0000",
         "caption": "Jedes Foto auf deinem Handy folgt einer Regel, die ein Mann ",
-        "views": 292,
-        "reach": 215,
-        "likes": 5,
+        "views": 297,
+        "reach": 216,
+        "likes": 6,
         "comments": 2,
-        "shares": 2,
+        "shares": 3,
         "saved": 3,
-        "total_interactions": 14
+        "total_interactions": 16
       }
     ]
   },
@@ -1558,8 +1543,8 @@
   "health": {
     "min_runway": 3,
     "last_post": "2026-10-31T18:01:33.984Z",
-    "last_post_hours": 12,
-    "last_engage": "2026-11-01T06:09:55.439Z",
+    "last_post_hours": 19,
+    "last_engage": "2026-11-01T13:28:11.092Z",
     "last_engage_hours": 0,
     "scripts_total": 31,
     "videos_ready": 1,
