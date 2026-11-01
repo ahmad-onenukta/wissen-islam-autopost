@@ -1,10 +1,11 @@
 // Story-Poster fuer NurWissen — laeuft 1 h nach dem Reel.
 //
 // Holt das zuletzt veroeffentlichte Reel ueber die API und stellt dasselbe Video
-// als Story ein. Quelle ist zuerst die eigene mp4 im Repo, dann Instagrams CDN.
+// als Story ein. Quelle ist die eigene mp4 im Repo, auf 59 s geschnitten.
 //
-// Grenzen: Stories sind auf 60 s begrenzt. Laengere Reels werden uebersprungen.
+// Grenzen: Stories sind auf 60 s begrenzt - laengere Reels werden gekuerzt.
 import fs from "node:fs";
+import { execSync } from "node:child_process";
 import { reportError, clearError } from "../lib/report.mjs";
 
 const HOST  = process.env.IG_API_HOST || "graph.instagram.com";
@@ -46,17 +47,39 @@ if (log.some(s => s.reel_id === reel.id)) {
   process.exit(0);
 }
 
-// --- Video-Quellen: erst die eigene Repo-Datei, dann Instagrams CDN ----------
-// Die CDN-Adresse ist signiert und wird beim Container-Bau oft abgelehnt; die
-// raw.githubusercontent-Datei ist dieselbe mp4 und immer abrufbar.
+// --- Video-Quellen: eigene Repo-Datei (auf 59 s geschnitten), dann IG-CDN ----
 const REPO   = process.env.GITHUB_REPOSITORY || "ahmad-onenukta/wissen-islam-autopost";
 const BRANCH = process.env.GITHUB_REF_NAME || "main";
 const posted = fs.existsSync("posted.json") ? JSON.parse(fs.readFileSync("posted.json", "utf8")) : [];
 const lastPost = posted.filter(p => p.media_id === reel.id).pop() || posted[posted.length - 1] || null;
 const candidates = [];
 if (lastPost?.file) {
-  const u = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/videos/${encodeURIComponent(lastPost.file)}`;
-  try { if ((await fetch(u, { method: "HEAD" })).ok) candidates.push(u); } catch {}
+  const raw = f => `https://raw.githubusercontent.com/${REPO}/${BRANCH}/videos/${encodeURIComponent(f)}`;
+  const src = raw(lastPost.file);
+  // Stories sind auf 60 s begrenzt - laengere Reels vorher schneiden, sonst meldet Instagram ERROR.
+  const cut = lastPost.file.replace(/\.mp4$/i, "-story.mp4");
+  try {
+    if ((await fetch(raw(cut), { method: "HEAD" })).ok) candidates.push(raw(cut));
+    else if ((await fetch(src, { method: "HEAD" })).ok) {
+      const buf = Buffer.from(await (await fetch(src)).arrayBuffer());
+      fs.mkdirSync("videos", { recursive: true });
+      fs.writeFileSync(`videos/${lastPost.file}`, buf);
+      execSync(`ffmpeg -v error -y -i "videos/${lastPost.file}" -t 59 -c:v libx264 -preset veryfast -crf 26 -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 128k "videos/${cut}"`);
+      const sh = c => execSync(c, { stdio: "ignore" });
+      sh('git config user.name "reel-bot"');
+      sh('git config user.email "reel-bot@users.noreply.github.com"');
+      sh(`git add -f "videos/${cut}"`);
+      sh(`git commit -m "story-schnitt: ${cut}"`);
+      try { sh("git pull --rebase -q"); } catch {}
+      sh("git push -q origin HEAD:main");
+      for (let i = 0; i < 12; i++) {           // warten bis raw die Datei ausliefert
+        await new Promise(r => setTimeout(r, 10000));
+        if ((await fetch(raw(cut), { method: "HEAD" })).ok) break;
+      }
+      candidates.push(raw(cut));
+      console.log("Story-Schnitt erstellt:", cut);
+    }
+  } catch (e) { console.log("Story-Schnitt fehlgeschlagen:", e.message.slice(0, 200)); if (!candidates.length) candidates.push(src); }
 }
 if (reel.media_url) candidates.push(reel.media_url);
 if (!candidates.length) { console.log("Keine Video-Quelle – uebersprungen."); process.exit(0); }

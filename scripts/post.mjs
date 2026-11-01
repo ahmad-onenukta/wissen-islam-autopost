@@ -24,6 +24,16 @@ if (!next) {
 }
 const brand = loadBrand(next.brand || DEFAULT_BRAND);
 const targets = next.targets || brand.targets || ["instagram"];
+
+// --- 1b. Tageslimit: GitHub verschiebt beide Cron-Laeufe, sonst postet der zweite dasselbe Reel nochmal
+const perDay = Number(brand.schedule?.per_day || 1);
+const today = now.toISOString().slice(0, 10);
+const postedLog = fs.existsSync("posted.json") ? JSON.parse(fs.readFileSync("posted.json", "utf8")) : [];
+const todayCount = postedLog.filter(e => (e.brand || DEFAULT_BRAND) === brand.slug && (e.posted_at || "").slice(0, 10) === today).length;
+if (todayCount >= perDay) {
+  console.log(`Heute bereits ${todayCount} Post(s) fuer ${brand.slug} (Limit ${perDay}) - dieser Lauf macht nichts.`);
+  process.exit(0);
+}
 console.log(`Reel ${next.id} | Brand ${brand.slug} | Ziele: ${targets.join(", ")} | ${next.file}`);
 
 // --- 2. oeffentliche Video-URL ---------------------------------------------
@@ -116,7 +126,7 @@ if (!igOk && !Object.values(next.results).some(r => r && !r.error && !r.skipped)
 next.status = "posted";
 next.posted_at = now.toISOString();
 save();
-const log = fs.existsSync("posted.json") ? JSON.parse(fs.readFileSync("posted.json", "utf8")) : [];
+const log = postedLog;
 log.push({ id: next.id, brand: brand.slug, file: next.file, media_id: next.media_id, posted_at: next.posted_at, results: next.results });
 fs.writeFileSync("posted.json", JSON.stringify(log, null, 2) + "\n");
 
