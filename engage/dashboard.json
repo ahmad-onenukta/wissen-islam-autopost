@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T15:58:50.834Z",
+  "generated_at": "2026-11-02T23:33:39.473Z",
   "brands": [
     {
       "slug": "nurwissen",
@@ -20,7 +20,7 @@
         "facebook": ""
       },
       "voice": "robert",
-      "followers": 684,
+      "followers": 688,
       "counts": {
         "script": 0,
         "checked": 19,
@@ -30,8 +30,8 @@
       },
       "runway_days": 0,
       "next": null,
-      "views_total": 162216,
-      "avg_views": 14747,
+      "views_total": 162748,
+      "avg_views": 14795,
       "engagement_rate": 10.3
     }
   ],
@@ -750,12 +750,12 @@
       "media_id": "18114527000174151",
       "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
       "metrics": {
-        "views": 142317,
-        "reach": 112713,
-        "likes": 7025,
+        "views": 142757,
+        "reach": 113127,
+        "likes": 7045,
         "comments": 272,
-        "shares": 2904,
-        "saved": 1860
+        "shares": 2907,
+        "saved": 1864
       },
       "order_rank": 999
     },
@@ -781,9 +781,9 @@
       "media_id": "18138963895624373",
       "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
       "metrics": {
-        "views": 7639,
-        "reach": 6546,
-        "likes": 306,
+        "views": 7664,
+        "reach": 6564,
+        "likes": 307,
         "comments": 3,
         "shares": 45,
         "saved": 88
@@ -819,8 +819,8 @@
       "media_id": "18132511822772953",
       "permalink": "https://www.instagram.com/reel/DfNU1HOAUr_/",
       "metrics": {
-        "views": 146,
-        "reach": 133,
+        "views": 154,
+        "reach": 142,
         "likes": 2,
         "comments": 1,
         "shares": 0,
@@ -912,8 +912,8 @@
       "media_id": "17951034201271209",
       "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
       "metrics": {
-        "views": 299,
-        "reach": 218,
+        "views": 300,
+        "reach": 219,
         "likes": 6,
         "comments": 2,
         "shares": 3,
@@ -988,12 +988,12 @@
       "media_id": "18470014318187750",
       "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
       "metrics": {
-        "views": 4391,
-        "reach": 3726,
-        "likes": 263,
+        "views": 4446,
+        "reach": 3739,
+        "likes": 269,
         "comments": 2,
         "shares": 61,
-        "saved": 65
+        "saved": 66
       },
       "order_rank": 999
     },
@@ -1026,8 +1026,8 @@
       "media_id": "17872718889648381",
       "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
       "metrics": {
-        "views": 1926,
-        "reach": 1675,
+        "views": 1928,
+        "reach": 1676,
         "likes": 90,
         "comments": 2,
         "shares": 51,
@@ -1064,7 +1064,7 @@
       "media_id": "18163773607435569",
       "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
       "metrics": {
-        "views": 1294,
+        "views": 1295,
         "reach": 1129,
         "likes": 45,
         "comments": 1,
@@ -1139,11 +1139,11 @@
   "stats": {
     "account": {
       "username": "nurwissen_official",
-      "followers_count": 684,
+      "followers_count": 688,
       "follows_count": 0,
       "media_count": 12,
       "id": "28768435396155579",
-      "at": "2026-11-02T15:58:43.331Z"
+      "at": "2026-11-02T23:33:33.297Z"
     },
     "history": [
       {
@@ -1420,6 +1420,11 @@
         "at": "2026-11-02T15:58:43.331Z",
         "followers": 684,
         "views_total": 163956
+      },
+      {
+        "at": "2026-11-02T23:33:33.297Z",
+        "followers": 688,
+        "views_total": 164493
       }
     ],
     "reels": [
@@ -1428,8 +1433,8 @@
         "permalink": "https://www.instagram.com/reel/DfNU1HOAUr_/",
         "posted": "2026-11-01T18:01:22+0000",
         "caption": "Das Wort „Blut\" steht genau zehnmal im Koran. Ich habe jede ",
-        "views": 146,
-        "reach": 133,
+        "views": 154,
+        "reach": 142,
         "likes": 2,
         "comments": 1,
         "shares": 0,
@@ -1441,8 +1446,8 @@
         "permalink": "https://www.instagram.com/reel/DfKwCPPlJZg/",
         "posted": "2026-10-31T18:00:53+0000",
         "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die",
-        "views": 1740,
-        "reach": 1518,
+        "views": 1745,
+        "reach": 1526,
         "likes": 62,
         "comments": 1,
         "shares": 21,
@@ -1454,7 +1459,7 @@
         "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
         "posted": "2026-10-30T18:00:53+0000",
         "caption": "Eine Frau, die ihren Körper verkaufte, wird vergeben — wegen",
-        "views": 1294,
+        "views": 1295,
         "reach": 1129,
         "likes": 45,
         "comments": 1,
@@ -1467,8 +1472,8 @@
         "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
         "posted": "2026-10-29T18:20:49+0000",
         "caption": "Der Prophet (saw) hat Freundschaft in einem Bild erklärt: ei",
-        "views": 1926,
-        "reach": 1675,
+        "views": 1928,
+        "reach": 1676,
         "likes": 90,
         "comments": 2,
         "shares": 51,
@@ -1480,13 +1485,13 @@
         "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
         "posted": "2026-10-28T21:43:39+0000",
         "caption": "Der Prophet (saw) hat einen Mann beschrieben, den er nie get",
-        "views": 4391,
-        "reach": 3726,
-        "likes": 263,
+        "views": 4446,
+        "reach": 3739,
+        "likes": 269,
         "comments": 2,
         "shares": 61,
-        "saved": 65,
-        "total_interactions": 407
+        "saved": 66,
+        "total_interactions": 415
       },
       {
         "id": "18145450528572276",
@@ -1519,26 +1524,26 @@
         "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
         "posted": "2026-10-24T18:25:06+0000",
         "caption": "Das Wort „Blut\" steht genau 10-mal im Koran. 4× als Speiseve",
-        "views": 7639,
-        "reach": 6546,
-        "likes": 306,
+        "views": 7664,
+        "reach": 6564,
+        "likes": 307,
         "comments": 3,
         "shares": 45,
         "saved": 88,
-        "total_interactions": 457
+        "total_interactions": 458
       },
       {
         "id": "18114527000174151",
         "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
         "posted": "2026-10-23T19:35:52+0000",
         "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Ni",
-        "views": 142317,
-        "reach": 112713,
-        "likes": 7025,
+        "views": 142757,
+        "reach": 113127,
+        "likes": 7045,
         "comments": 272,
-        "shares": 2904,
-        "saved": 1860,
-        "total_interactions": 12466
+        "shares": 2907,
+        "saved": 1864,
+        "total_interactions": 12494
       },
       {
         "id": "18106676354203367",
@@ -1571,8 +1576,8 @@
         "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
         "posted": "2026-10-19T21:37:07+0000",
         "caption": "Jedes Foto auf deinem Handy folgt einer Regel, die ein Mann ",
-        "views": 299,
-        "reach": 218,
+        "views": 300,
+        "reach": 219,
         "likes": 6,
         "comments": 2,
         "shares": 3,
@@ -1590,8 +1595,8 @@
   "health": {
     "min_runway": 3,
     "last_post": "2026-11-01T18:00:00.984Z",
-    "last_post_hours": 22,
-    "last_engage": "2026-11-02T15:58:43.331Z",
+    "last_post_hours": 30,
+    "last_engage": "2026-11-02T23:33:33.297Z",
     "last_engage_hours": 0,
     "scripts_total": 31,
     "videos_ready": 0,
