@@ -156,10 +156,21 @@
     "brand": "nurwissen",
     "file": "020.mp4",
     "publish_at": "2026-11-04T15:00:00Z",
-    "status": "ready",
+    "status": "posted",
     "caption": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankündigt, sondern Krieg: „So erwartet Krieg von Allah und Seinem Gesandten.\" (2:280) Es geht um Riba — Zins.\n\nWarum so scharf? Zins ist Geld, das wächst, ohne dass jemand arbeitet. Kein Risiko, kein Produkt — und wenn der Schuldner ausfällt, trägt er den Verlust allein.\n\n„Allah lässt den Zins schwinden und die Mildtätigkeit wachsen.\" (2:277) Das Wachsende schrumpft, das Weggegebene wächst.\n\nUnd wenn du aufhörst: „Dann steht euch euer Kapital zu.\" Dein Geld bekommst du zurück — nur der Aufschlag fällt weg.\n\nEs ist die einzige Stelle im Koran, an der Allah Krieg ankündigt. Nicht bei Mord, nicht bei Diebstahl. Warum wohl?\n\nQuellen: alislam.org (Ahmadiyya-Zählung mit Bismillah; andere Zählung 2:276 und 2:279)\n\n#islam #koran #riba #zins #geld #halal #wissen #deutsch",
     "first_comment": "Krieg — nicht bei Mord, nicht bei Diebstahl, sondern bei Zinsen. Warum ausgerechnet da? 👇",
-    "thumb_offset": 1800
+    "thumb_offset": 1800,
+    "results": {
+      "instagram": {
+        "media_id": "18105767723288101"
+      },
+      "youtube": {
+        "error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
+      }
+    },
+    "media_id": "18105767723288101",
+    "first_comment_id": "18074452271597078",
+    "posted_at": "2026-11-04T15:17:11.451Z"
   },
   {
     "id": "021",
