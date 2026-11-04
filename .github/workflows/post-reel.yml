@@ -4,7 +4,8 @@ on:
   schedule:
     # GitHub verschiebt geplante Laeufe taeglich um 2-4,5 h. Deshalb starten wir
     # weit vor der Zielzeit und warten im Job bis exakt 18:00 UTC = 19:00 Berlin.
-    # Zwei Anlaeufe, damit ein stark verzoegerter erster Lauf aufgefangen wird.
+    # WICHTIG: Das Warten steht VOR dem Checkout, sonst arbeitet der Lauf mit
+    # einem Stand von vor mehreren Stunden und sieht neue Queue-Eintraege nicht.
     - cron: "0 11 * * *"
     - cron: "0 14 * * *"
   workflow_dispatch:
@@ -30,12 +31,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 420
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
       - name: Auf 19:00 Berlin warten
         if: github.event_name == 'schedule'
         run: |
@@ -53,6 +48,12 @@ jobs:
           else
             echo "Zielzeit bereits $(( -DIFF ))s vorbei - sofort posten"
           fi
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
       - name: Reel veroeffentlichen
         env:
