@@ -1,4 +1,4 @@
-== produce 2026-11-03T11:35:17.311Z ==
-Error: ElevenLabs TTS 401 bei Reel 020: {"detail":{"type":"invalid_request","code":"quota_exceeded","message":"This request exceeds your quota of 30046. You have 65 credits remaining, while 500 credits are required for this request.","status":"quota_exceeded","request_id":"1fb6551d98dc165d9adcac8cb5e4eec3"}}
+== produce 2026-11-04T11:49:41.403Z ==
+Error: ElevenLabs TTS 401 bei Reel 020: {"detail":{"type":"invalid_request","code":"quota_exceeded","message":"This request exceeds your quota of 30046. You have 65 credits remaining, while 500 credits are required for this request.","status":"quota_exceeded","request_id":"4d5079d0f961763154f28234cc4b2900"}}
     at file:///home/runner/work/wissen-islam-autopost/wissen-islam-autopost/scripts/produce.mjs:43:26
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
