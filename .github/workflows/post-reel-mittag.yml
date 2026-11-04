@@ -1,0 +1,76 @@
+name: Reel posten (Mittag)
+
+# Zweiter Slot des Tages. Ziel 11:00 UTC = 12:00 Berlin.
+# Der Abend-Slot liegt in post-reel.yml bei 18:00 UTC = 19:00 Berlin.
+# Eigene concurrency-Gruppe, weil der Abend-Job ab 11:00 UTC schlaeft und
+# diesen Lauf sonst blockieren wuerde. Die beiden posten nie gleichzeitig.
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Nur testen, nicht posten"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-reel-mittag
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 480
+    steps:
+      - name: Auf 12:00 Berlin warten
+        if: github.event_name == 'schedule'
+        run: |
+          TARGET=$(date -u -d "today 11:00" +%s)
+          NOW=$(date -u +%s)
+          DIFF=$(( TARGET - NOW ))
+          echo "Jetzt $(date -u +%H:%M) UTC, Ziel 11:00 UTC, Differenz ${DIFF}s"
+          if [ "$DIFF" -gt 25200 ]; then
+            echo "Mehr als 7 h zu frueh - dieser Lauf macht nichts."
+            exit 0
+          fi
+          if [ "$DIFF" -lt -10800 ]; then
+            echo "Mehr als 3 h zu spaet - Abend-Slot uebernimmt."
+            exit 0
+          fi
+          if [ "$DIFF" -gt 0 ]; then
+            echo "Warte ${DIFF}s bis 11:00 UTC"
+            sleep "$DIFF"
+          fi
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Reel veroeffentlichen
+        env:
+          IG_TOKEN:   ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          DRY_RUN:    ${{ inputs.dry_run }}
+          YT_CLIENT_ID:     ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: node scripts/post.mjs
+
+      - name: Queue zurueckschreiben
+        run: |
+          git pull --rebase -q || true
+          if [[ -n "$(git status --porcelain queue.json posted.json videos/)" ]]; then
+            git config user.name  "reel-bot"
+            git config user.email "reel-bot@users.noreply.github.com"
+            git add -A queue.json posted.json videos/
+            git commit -m "posted mittag: $(date -u +%Y-%m-%d)"
+            git push
+          fi
