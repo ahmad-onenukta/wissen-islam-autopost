@@ -412,8 +412,7 @@ async function sendCmd(op, p, extra){
   if (connected()) {
     try {
       await ghAppendCommand(cmd);
-      await ghDispatch("dashboard.yml").catch(()=>{});
-      toast(`»${op}« an ${p.brand}/${p.id} gesendet – wird in wenigen Minuten angewendet.`);
+      toast(`»${op}« an ${p.brand}/${p.id} gesendet – wird vor dem nächsten Posting angewendet.`);
       closeCard();
       return;
     } catch(e){ toast("Fehlgeschlagen: " + e.message); return; }
@@ -623,6 +622,11 @@ function renderApproval(){
       <span class="pill ${errs.length?"bad":""}">${errs.length} Plattform-Fehler</span>
       <span class="pill">${N(S.engage?.new||0)} offene Kommentare</span>
     </div></div></div>
+  ${(S.health?.alerts||[]).length?`<div class="panel"><h2>Alarme <span class="pill bad">${S.health.alerts.length}</span></h2>
+    <div class="hint">Direkt aus der Fabrik gemeldet</div><div class="body stagger">
+    ${S.health.alerts.map(a=>`<div class="cardx ${a.level==="error"?"accc":"warnc"}">
+      <div class="id">${E(a.brand||"")} · ${E(a.level||"")}</div><div class="t">${E(a.text||"")}</div></div>`).join("")}
+    </div></div>`:""}
   <div class="cols2">
     <div class="panel"><h2>Braucht dich</h2><div class="hint">Alles andere läuft ohne Rückfrage</div><div class="body stagger">
       ${blocked.map(x=>card(x,`<span class="pill bad">Quellen ${x.sources.verified}/${x.sources.total} geprüft</span>`,"accc")).join("")}
@@ -743,7 +747,7 @@ function renderBrands(){
       await ghPutFile(`brands/${slug}/brand.json`, JSON.stringify(brand,null,2)+"\n", `brand: ${slug} angelegt`);
       await ghPutFile(`brands/${slug}/SETUP.md`, setup, `brand: ${slug} Einrichtung`);
       await ghPutFile(`brands/${slug}/scripts/.gitkeep`, "", `brand: ${slug} Script-Ordner`);
-      await ghDispatch("dashboard.yml").catch(()=>{});
+      await ghDispatch("engage.yml").catch(()=>{});
       toast(`Brand ${brand.name} angelegt. Jetzt unter Einstellungen die Zugänge eintragen: ${secrets.length} Secrets.`);
       $("n-out").textContent = secrets.join("\n");
       setTimeout(()=>load(true), 4000);
@@ -814,12 +818,12 @@ function renderSettings(){
         <button class="btn p" onclick="runWf(this,'produce.yml','Produktion gestartet',{brand:'${b.slug}'})">Reels produzieren</button>
         <button class="btn" onclick="runWf(this,'post-reel.yml','Posting gestartet')">jetzt posten</button>
         <button class="btn" onclick="runWf(this,'engage.yml','Engagement gestartet')">Kommentare holen</button>
-        <button class="btn" onclick="runWf(this,'dashboard.yml','Dashboard wird aktualisiert')">Daten aktualisieren</button>
+        <button class="btn" onclick="runWf(this,'engage.yml','Daten werden geholt')">Daten aktualisieren</button>
       </div>
       <label style="margin-top:16px">Datenquelle</label>
       <input id="s-repo" value="${E(CFG.repo)}">
       <div class="row" style="margin-top:10px">
-        <span class="pill ${OFFLINE?"warn":"ok"}">${OFFLINE?"Offline – Demo-Daten":"live aus dashboard/state.json"}</span>
+        <span class="pill ${OFFLINE?"warn":"ok"}">${OFFLINE?"Offline – Demo-Daten":"live aus engage/dashboard.json"}</span>
         <span class="pill">Stand ${DT(S.generated_at)}</span>
         <button class="btn s" id="s-save">Repo speichern</button>
       </div>
@@ -827,10 +831,10 @@ function renderSettings(){
   </div>
 
   <div class="panel"><h2>Inbetriebnahme</h2><div class="hint">Einmalig, danach läuft alles ohne dich</div><div class="body"><div class="steps">
-    <div><div><b>Workflows aktivieren</b><span>pending-workflows/produce.yml und dashboard.yml nach .github/workflows/ kopieren</span></div></div>
-    <div><div><b>GitHub Pages einschalten</b><span>Settings → Pages → Branch main, Ordner /</span></div></div>
+    <div><div><b>GitHub Pages einschalten</b><span>Settings → Pages → Branch main, Ordner / – danach läuft dieses Dashboard unter der Pages-URL</span></div></div>
     <div><div><b>Token verbinden</b><span>oben – danach läuft alles über diese Oberfläche</span></div></div>
     <div><div><b>Kanal-Zugänge eintragen</b><span>je Plattform, dann »jetzt posten« mit einem Testlauf</span></div></div>
+    <div><div><b>Script-Nachschub</b><span>täglicher Claude-Task schreibt neue Scripts mit Fakten-Gate</span></div></div>
   </div></div></div>`;
 
   $("s-connect").onclick = async () => {
@@ -904,7 +908,7 @@ window.openCard = (brand, id) => {
       ${x.stage==="queued"||x.stage==="paused"?`<button class="btn" onclick="retargetCard('${x.brand}','${x.id}')">Ziele ändern</button>`:""}
       <a class="btn" href="${GH()}/tree/main/scripts" target="_blank">Script im Repo</a>
     </div>
-    <div class="empty" style="margin-top:14px">Aktionen landen als Befehl in dashboard/commands.json und werden vom Workflow »Dashboard« (alle 30 Min) angewendet.</div>`;
+    <div class="empty" style="margin-top:14px">Aktionen landen in dashboard/commands.json und werden vor dem nächsten Posting angewendet.</div>`;
   $("drawer").classList.add("on"); $("scrim").classList.add("on");
 };
 window.closeCard = () => { $("drawer").classList.remove("on"); $("scrim").classList.remove("on"); };
@@ -974,15 +978,26 @@ function paint(){
   renderOverview(); renderPipeline(); renderApproval(); renderAnalytics(); renderBrands(); renderSettings();
   renderMenu();
 }
-async function load(force){
-  try{
-    const r = await fetch("dashboard/state.json?t=" + Date.now(), { cache:"no-store" });
-    if(!r.ok) throw new Error("state.json " + r.status);
-    S = await r.json(); OFFLINE = false;
-  }catch(e){
-    if (S && !force) return;
-    S = demoState(); OFFLINE = true;
+const RAW = () => "https://raw.githubusercontent.com/" + CFG.repo + "/main/";
+async function fetchState(){
+  const paths = ["engage/dashboard.json", "dashboard/state.json"];
+  const urls = [...paths, ...paths.map(p => RAW() + p)];
+  let best = null;
+  for (const u of urls) {
+    try {
+      const r = await fetch(u + "?t=" + Date.now(), { cache:"no-store" });
+      if (!r.ok) continue;
+      const j = await r.json();
+      if (!j.brands) continue;
+      if (!best || new Date(j.generated_at||0) > new Date(best.generated_at||0)) best = j;
+    } catch {}
   }
+  return best;
+}
+async function load(force){
+  const fresh = await fetchState();
+  if (fresh) { S = fresh; OFFLINE = false; }
+  else { if (S && !force) return; S = demoState(); OFFLINE = true; }
   const sel = $("brand");
   if (!BRAND || !S.brands.some(b=>b.slug===BRAND)) BRAND = (S.brands[0]||{}).slug;
   sel.innerHTML = S.brands.map(b=>`<option value="${E(b.slug)}"${b.slug===BRAND?" selected":""}>${E(b.name)}${b.active?"":" (inaktiv)"}</option>`).join("");
