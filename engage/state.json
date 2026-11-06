@@ -1,4 +1,106 @@
 {
   "seen": [],
-  "last_run": "2026-11-06T06:51:13.870Z"
+  "last_run": "2026-11-06T15:57:03.960Z",
+  "comments_diag": {
+    "at": "2026-11-06T15:57:03.960Z",
+    "media_count": 13,
+    "reels": [
+      {
+        "id": "18144515317625218",
+        "comments_count": 1,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "18105767723288101",
+        "comments_count": 59,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "18220536925356124",
+        "comments_count": 1,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "18163773607435569",
+        "comments_count": 1,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "17872718889648381",
+        "comments_count": 2,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "18470014318187750",
+        "comments_count": 2,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "18145450528572276",
+        "comments_count": 1,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "17969911538964163",
+        "comments_count": 3,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "18138963895624373",
+        "comments_count": 3,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "18114527000174151",
+        "comments_count": 276,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "18106676354203367",
+        "comments_count": 2,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "17984355417120782",
+        "comments_count": 2,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      },
+      {
+        "id": "17951034201271209",
+        "comments_count": 2,
+        "fetched": 0,
+        "new": 0,
+        "error": null
+      }
+    ]
+  },
+  "dm_diag": {
+    "at": "2026-11-06T15:57:03.960Z",
+    "conversations": 0,
+    "error": null
+  }
 }
