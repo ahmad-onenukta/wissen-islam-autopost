@@ -1,152 +1,285 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Content Factory · Dashboard</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+/* ---------- Theme ---------- */
 :root{
-  --bg:#09090B; --panel:#121216; --panel2:#17171C; --line:#23232A; --line2:#2E2E36;
+  --bg:#09090B; --bg2:#0E0E12; --panel:#121216; --panel2:#17171C; --line:#23232A; --line2:#2E2E36;
   --fg:#F4F4F6; --mut:#8E8E98; --dim:#5F5F6B;
   --acc:#E0312E; --ok:#2FA37A; --warn:#E0A32E; --info:#4C8DF6;
-  --r:16px; --sh:0 1px 0 rgba(255,255,255,.03), 0 8px 24px rgba(0,0,0,.35);
+  --sh:0 1px 0 rgba(255,255,255,.03), 0 10px 30px rgba(0,0,0,.40);
+  --glass:rgba(255,255,255,.03);
+  --r:16px;
+}
+:root[data-theme="light"]{
+  --bg:#F7F7F9; --bg2:#FFFFFF; --panel:#FFFFFF; --panel2:#F3F3F6; --line:#E5E5EA; --line2:#D8D8E0;
+  --fg:#15151A; --mut:#62626E; --dim:#8C8C98;
+  --sh:0 1px 2px rgba(16,16,24,.05), 0 10px 28px rgba(16,16,24,.07);
+  --glass:rgba(0,0,0,.02);
 }
 *{box-sizing:border-box}
-html,body{margin:0;max-width:100%;overflow-x:hidden;background:var(--bg);color:var(--fg);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;-webkit-font-smoothing:antialiased}
-body{display:grid;grid-template-columns:232px 1fr;min-height:100vh}
+html,body{margin:0;max-width:100%;overflow-x:hidden;background:var(--bg);color:var(--fg);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;font-size:14px;
+  -webkit-font-smoothing:antialiased;transition:background .25s ease,color .25s ease}
+body{display:grid;grid-template-columns:238px 1fr;min-height:100vh}
 a{color:inherit}
+::selection{background:color-mix(in srgb,var(--acc) 30%,transparent)}
+/* ---------- Motion ---------- */
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+@keyframes shimmer{100%{background-position:200% 0}}
+@keyframes draw{from{stroke-dashoffset:var(--len)}to{stroke-dashoffset:0}}
+@keyframes rise{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.anim{animation:fade .34s cubic-bezier(.2,.7,.3,1) both}
+.stagger>*{animation:fade .34s cubic-bezier(.2,.7,.3,1) both}
+.stagger>*:nth-child(1){animation-delay:.02s}.stagger>*:nth-child(2){animation-delay:.06s}
+.stagger>*:nth-child(3){animation-delay:.1s}.stagger>*:nth-child(4){animation-delay:.14s}
+.stagger>*:nth-child(5){animation-delay:.18s}.stagger>*:nth-child(6){animation-delay:.22s}
+.stagger>*:nth-child(n+7){animation-delay:.26s}
+.skel{background:linear-gradient(90deg,var(--panel2) 25%,var(--line) 37%,var(--panel2) 63%);
+  background-size:200% 100%;animation:shimmer 1.3s linear infinite;border-radius:10px;height:14px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 /* ---------- Sidebar ---------- */
-aside{border-right:1px solid var(--line);padding:18px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:18px;background:var(--bg)}
+aside{border-right:1px solid var(--line);padding:18px 14px;position:sticky;top:0;height:100vh;
+  display:flex;flex-direction:column;gap:16px;background:var(--bg2)}
 .logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:-.4px;font-size:15px}
-.logo i{width:10px;height:10px;border-radius:3px;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 18%,transparent)}
-.brandsel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px}
-.brandsel select{width:100%;background:transparent;border:0;color:var(--fg);font:600 14px Inter;outline:none}
+.logo i{width:10px;height:10px;border-radius:3px;background:var(--acc);
+  box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 18%,transparent);animation:pulse 3.2s ease-in-out infinite}
+.brandsel{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:10px;box-shadow:var(--sh)}
+.brandsel select{width:100%;background:transparent;border:0;color:var(--fg);font:600 14px inherit;outline:none}
 .brandsel .meta{color:var(--mut);font-size:11px;margin-top:4px}
 .menu{display:flex;flex-direction:column;gap:2px}
-.menu button{display:flex;align-items:center;justify-content:space-between;gap:8px;background:transparent;border:0;color:var(--mut);
-  font:500 13.5px Inter;padding:9px 11px;border-radius:10px;cursor:pointer;text-align:left;width:100%}
-.menu button:hover{background:var(--panel);color:var(--fg)}
-.menu button.on{background:var(--panel2);color:var(--fg);box-shadow:inset 0 0 0 1px var(--line2)}
-.menu .badge{background:var(--line2);color:var(--fg);border-radius:999px;font-size:10.5px;padding:1px 7px;font-weight:600}
-.menu .badge.red{background:color-mix(in srgb,var(--acc) 25%,transparent);color:#FFB3B2}
-.side-foot{margin-top:auto;font-size:11px;color:var(--dim);line-height:1.6}
+.menu button{display:flex;align-items:center;justify-content:space-between;gap:8px;background:transparent;border:0;
+  color:var(--mut);font:500 13.5px inherit;padding:9px 11px;border-radius:11px;cursor:pointer;text-align:left;width:100%;
+  transition:background .16s,color .16s,transform .16s}
+.menu button:hover{background:var(--panel);color:var(--fg);transform:translateX(2px)}
+.menu button.on{background:var(--panel);color:var(--fg);box-shadow:inset 0 0 0 1px var(--line2)}
+.menu button.on::before{content:"";position:absolute;margin-left:-11px;width:3px;height:17px;border-radius:9px;background:var(--acc)}
+.badge{background:var(--line2);color:var(--fg);border-radius:999px;font-size:10.5px;padding:1px 7px;font-weight:600}
+.badge.red{background:color-mix(in srgb,var(--acc) 22%,transparent);color:var(--acc)}
+.side-foot{margin-top:auto;font-size:11px;color:var(--dim);line-height:1.7}
 .side-foot a{color:var(--mut);text-decoration:none;border-bottom:1px solid var(--line2)}
 .dot{display:inline-block;width:7px;height:7px;border-radius:99px;margin-right:6px;vertical-align:1px}
-/* ---------- Main ---------- */
-main{padding:22px 26px 60px;max-width:1500px}
+.themebtn{display:flex;align-items:center;justify-content:space-between;background:var(--panel);border:1px solid var(--line);
+  border-radius:11px;padding:8px 11px;cursor:pointer;color:var(--mut);font:550 12.5px inherit;transition:border-color .16s}
+.themebtn:hover{border-color:var(--line2);color:var(--fg)}
+.sw{width:34px;height:19px;border-radius:99px;background:var(--line2);position:relative;transition:background .2s}
+.sw i{position:absolute;top:2px;left:2px;width:15px;height:15px;border-radius:99px;background:var(--fg);transition:transform .22s cubic-bezier(.3,1.4,.4,1)}
+:root[data-theme="light"] .sw i{transform:translateX(15px)}
+/* ---------- Layout ---------- */
+main{padding:22px 26px 70px;max-width:1540px;min-width:0}
+section,.panel,.kpis,.cols2,.cols3,.board,.col{min-width:0}
 .head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap}
-h1{margin:0;font-size:23px;letter-spacing:-.6px;font-weight:700}
+h1{margin:0;font-size:24px;letter-spacing:-.7px;font-weight:700}
 .head p{margin:4px 0 0;color:var(--mut);font-size:12.5px}
-.stamp{color:var(--dim);font-size:11.5px;text-align:right}
-section{display:none}section.on{display:block}
-/* KPI */
-.kpis{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));margin-bottom:14px}
-.kpi{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--r);padding:14px 15px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.stamp{color:var(--dim);font-size:11.5px;text-align:right;line-height:1.6}
+section{display:none}section.on{display:block;animation:fade .3s cubic-bezier(.2,.7,.3,1) both}
+.demo{display:inline-flex;align-items:center;gap:6px;background:color-mix(in srgb,var(--warn) 14%,transparent);
+  color:var(--warn);border:1px solid color-mix(in srgb,var(--warn) 45%,transparent);border-radius:999px;
+  padding:3px 10px;font-size:11.5px;font-weight:600;margin-bottom:12px}
+/* ---------- KPI ---------- */
+.kpis{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(182px,1fr));margin-bottom:14px}
+.kpi{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--r);
+  padding:14px 15px;box-shadow:var(--sh);position:relative;overflow:hidden;transition:transform .18s,border-color .18s}
+.kpi:hover{transform:translateY(-2px);border-color:var(--line2)}
 .kpi .l{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.6px;font-weight:600}
-.kpi .v{font-size:27px;font-weight:700;letter-spacing:-.8px;margin-top:6px;line-height:1.1}
+.kpi .v{font-size:28px;font-weight:700;letter-spacing:-.9px;margin-top:6px;line-height:1.1;font-variant-numeric:tabular-nums}
 .kpi .d{font-size:11.5px;color:var(--dim);margin-top:3px}
-.kpi .d b{color:var(--ok);font-weight:600}
-.kpi .d b.down{color:var(--acc)}
-.kpi svg{position:absolute;right:0;bottom:0;width:62%;height:40px;opacity:.5}
-/* panels */
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);margin-bottom:14px}
-.panel>h2{margin:0;padding:14px 16px 0;font-size:14.5px;font-weight:650;letter-spacing:-.2px}
+.kpi .d b{color:var(--ok);font-weight:600}.kpi .d b.down{color:var(--acc)}
+.kpi>svg.sp{position:absolute;right:0;bottom:0;width:60%;height:40px;opacity:.55}
+.ring{display:flex;align-items:center;gap:12px;margin-top:8px}
+.ring svg{width:52px;height:52px;flex:none}
+.ring .rt{font-size:11.5px;color:var(--mut)}
+/* ---------- Panels ---------- */
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);margin-bottom:14px;
+  transition:border-color .18s}
+.panel:hover{border-color:var(--line2)}
+.panel>h2{margin:0;padding:14px 16px 0;font-size:14.5px;font-weight:650;letter-spacing:-.2px;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .panel>.hint{padding:3px 16px 0;color:var(--mut);font-size:12px}
 .panel>.body{padding:14px 16px 16px;overflow-x:auto}
 .cols2{display:grid;gap:14px;grid-template-columns:1.55fr 1fr}
-/* table */
-table{width:100%;min-width:520px;border-collapse:collapse;font-size:13px}
-th{text-align:left;color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;font-weight:650;padding:0 8px 8px;border-bottom:1px solid var(--line)}
+.cols3{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+/* ---------- Table ---------- */
+table{width:100%;min-width:480px;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;font-weight:650;
+  padding:0 8px 8px;border-bottom:1px solid var(--line)}
 td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
 tr:last-child td{border-bottom:0}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tbody tr{transition:background .14s}
 tbody tr:hover{background:var(--panel2)}
 .ttl{font-weight:550}
 .sub{color:var(--dim);font-size:11.5px}
-/* pipeline board */
+.mini{height:5px;border-radius:99px;background:var(--line);overflow:hidden;min-width:60px}
+.mini i{display:block;height:100%;background:var(--info);border-radius:99px;transition:width .7s cubic-bezier(.2,.7,.3,1)}
+/* ---------- Board ---------- */
 .board{display:grid;gap:12px;grid-template-columns:repeat(5,minmax(0,1fr))}
-.col{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px;min-height:160px;max-height:72vh;overflow:auto}
-.col h3{position:sticky;top:-12px;background:var(--panel);padding-top:2px;z-index:1}
-.col h3{margin:0 0 2px;font-size:12px;text-transform:uppercase;letter-spacing:.7px;color:var(--mut);display:flex;justify-content:space-between}
+.col{background:var(--panel2);border:1px solid var(--line);border-radius:var(--r);padding:12px;min-height:170px;
+  max-height:70vh;overflow:auto}
+.col h3{position:sticky;top:-12px;background:var(--panel2);padding:2px 0 6px;z-index:1;margin:0;
+  font-size:11.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--mut);display:flex;justify-content:space-between}
 .col .cnt{color:var(--fg);font-weight:700}
 .col .desc{color:var(--dim);font-size:11px;margin-bottom:10px}
-.cardx{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--line2);border-radius:12px;padding:10px 11px;margin-bottom:8px;cursor:pointer}
-.cardx:hover{border-color:var(--line2);transform:translateY(-1px);transition:.12s}
+.cardx{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--line2);border-radius:13px;
+  padding:10px 11px;margin-bottom:8px;cursor:pointer;transition:transform .16s,box-shadow .16s,border-color .16s;
+  animation:fade .3s cubic-bezier(.2,.7,.3,1) both}
+.cardx:hover{transform:translateY(-2px);box-shadow:var(--sh);border-color:var(--line2)}
 .cardx .id{font-size:10.5px;color:var(--dim);font-weight:600;letter-spacing:.4px}
-.cardx .t{font-size:12.5px;font-weight:550;margin-top:3px;line-height:1.35}
-.cardx .m{font-size:11px;color:var(--mut);margin-top:6px;display:flex;gap:9px;flex-wrap:wrap}
+.cardx .t{font-size:12.5px;font-weight:550;margin-top:3px;line-height:1.38}
+.cardx .m{font-size:11px;color:var(--mut);margin-top:7px;display:flex;gap:6px;flex-wrap:wrap}
 .cardx.ok{border-left-color:var(--ok)}
 .cardx.warnc{border-left-color:var(--warn)}
 .cardx.livec{border-left-color:var(--info)}
 .cardx.accc{border-left-color:var(--acc)}
-/* pills & chips */
-.pill{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line2);border-radius:999px;padding:2px 9px;font-size:11px;color:var(--mut);font-weight:550}
-.pill.ok{color:#8FE0C2;border-color:color-mix(in srgb,var(--ok) 55%,transparent);background:color-mix(in srgb,var(--ok) 12%,transparent)}
-.pill.warn{color:#F0D08A;border-color:color-mix(in srgb,var(--warn) 55%,transparent);background:color-mix(in srgb,var(--warn) 12%,transparent)}
-.pill.bad{color:#FFB3B2;border-color:color-mix(in srgb,var(--acc) 55%,transparent);background:color-mix(in srgb,var(--acc) 12%,transparent)}
-.pill.info{color:#B8D2FF;border-color:color-mix(in srgb,var(--info) 55%,transparent);background:color-mix(in srgb,var(--info) 12%,transparent)}
-/* buttons */
-.btn{background:var(--panel2);border:1px solid var(--line2);color:var(--fg);border-radius:10px;padding:7px 12px;font:550 12.5px Inter;cursor:pointer}
-.btn:hover{border-color:var(--mut)}
-.btn.p{background:var(--fg);color:#000;border-color:var(--fg)}
-.btn.d{color:#FFB3B2;border-color:color-mix(in srgb,var(--acc) 45%,transparent)}
-.btn.s{padding:4px 9px;font-size:11.5px;border-radius:8px}
+/* ---------- Pills & buttons ---------- */
+.pill{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line2);border-radius:999px;padding:2px 9px;
+  font-size:11px;color:var(--mut);font-weight:550;white-space:nowrap}
+.pill.ok{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 50%,transparent);background:color-mix(in srgb,var(--ok) 12%,transparent)}
+.pill.warn{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 50%,transparent);background:color-mix(in srgb,var(--warn) 12%,transparent)}
+.pill.bad{color:var(--acc);border-color:color-mix(in srgb,var(--acc) 50%,transparent);background:color-mix(in srgb,var(--acc) 12%,transparent)}
+.pill.info{color:var(--info);border-color:color-mix(in srgb,var(--info) 50%,transparent);background:color-mix(in srgb,var(--info) 12%,transparent)}
+.btn{background:var(--panel2);border:1px solid var(--line2);color:var(--fg);border-radius:11px;padding:8px 13px;
+  font:550 12.5px inherit;cursor:pointer;transition:transform .14s,border-color .14s,background .14s}
+.btn:hover{border-color:var(--mut);transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn.p{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn.a{background:var(--acc);color:#fff;border-color:var(--acc)}
+.btn.d{color:var(--acc);border-color:color-mix(in srgb,var(--acc) 45%,transparent)}
+.btn.s{padding:4px 9px;font-size:11.5px;border-radius:9px}
 .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-/* drawer */
-.scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);backdrop-filter:blur(2px);display:none;z-index:40}
-.scrim.on{display:block}
-.drawer{position:fixed;top:0;right:0;width:min(520px,100%);height:100%;background:var(--panel);border-left:1px solid var(--line2);
-  transform:translateX(100%);transition:transform .18s ease;z-index:41;overflow:auto;padding:20px 20px 60px}
+/* ---------- Drawer / toast ---------- */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.5);backdrop-filter:blur(3px);opacity:0;pointer-events:none;
+  transition:opacity .2s;z-index:40}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;width:min(530px,100%);height:100%;background:var(--panel);
+  border-left:1px solid var(--line2);transform:translateX(100%);transition:transform .26s cubic-bezier(.22,.8,.3,1);
+  z-index:41;overflow:auto;padding:20px 20px 60px;box-shadow:-20px 0 60px rgba(0,0,0,.28)}
 .drawer.on{transform:none}
-.drawer h3{margin:4px 0 2px;font-size:18px;letter-spacing:-.4px}
+.drawer h3{margin:8px 0 2px;font-size:19px;letter-spacing:-.5px}
 .drawer .close{position:absolute;top:14px;right:16px}
-.kv{display:grid;grid-template-columns:120px 1fr;gap:6px 10px;font-size:12.5px;margin:14px 0}
+.kv{display:grid;grid-template-columns:118px 1fr;gap:7px 10px;font-size:12.5px;margin:14px 0}
 .kv div:nth-child(odd){color:var(--mut)}
-.src{border:1px solid var(--line);border-radius:10px;padding:9px 10px;margin-bottom:7px;font-size:12px;background:var(--panel2)}
+.src{border:1px solid var(--line);border-radius:11px;padding:9px 10px;margin-bottom:7px;font-size:12px;background:var(--panel2)}
 .src .c{font-weight:500}
 .src .r{color:var(--mut);font-size:11.5px;margin-top:3px}
-/* forms */
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--panel);border:1px solid var(--line2);
+  border-radius:14px;padding:12px 15px;font-size:12.5px;z-index:50;box-shadow:var(--sh);max-width:min(640px,92vw);
+  animation:rise .24s cubic-bezier(.2,.8,.3,1) both}
+/* ---------- Forms ---------- */
 label{display:block;font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;font-weight:600;margin:12px 0 5px}
-input,select.f{width:100%;background:#0C0C0F;border:1px solid var(--line2);border-radius:10px;color:var(--fg);padding:9px 11px;font:400 13px Inter}
-pre{background:#0C0C0F;border:1px solid var(--line);border-radius:12px;padding:11px;font-size:11.5px;overflow:auto;color:#D8D8DE}
+input,select.f,textarea{width:100%;background:var(--bg2);border:1px solid var(--line2);border-radius:11px;color:var(--fg);
+  padding:9px 11px;font:400 13px inherit;transition:border-color .15s,box-shadow .15s}
+input:focus,select.f:focus,textarea:focus{outline:0;border-color:var(--acc);box-shadow:0 0 0 3px color-mix(in srgb,var(--acc) 16%,transparent)}
+pre{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:11px;font-size:11.5px;overflow:auto;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--panel2);border:1px solid var(--line);
+  border-radius:6px;padding:1px 5px;font-size:12px}
 .bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:9px}
-.bar i{display:block;height:100%;border-radius:99px}
+.bar i{display:block;height:100%;border-radius:99px;transition:width .8s cubic-bezier(.2,.7,.3,1)}
 .empty{color:var(--dim);font-size:12.5px;padding:10px 0}
-.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--panel2);border:1px solid var(--line2);
-  border-radius:12px;padding:11px 14px;font-size:12.5px;z-index:50;box-shadow:var(--sh);max-width:min(620px,92vw)}
+.chan{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid var(--line);
+  border-radius:13px;padding:12px 13px;margin-bottom:9px;background:var(--panel2);transition:border-color .16s}
+.chan:hover{border-color:var(--line2)}
+.chan .n{font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:8px}
+.chan .s{color:var(--dim);font-size:11.5px;margin-top:3px}
+.sec{display:flex;align-items:center;gap:8px;margin-top:7px;flex-wrap:wrap}
+.sec code{cursor:pointer}
+.steps{counter-reset:s}
+.steps>div{counter-increment:s;display:flex;gap:11px;padding:10px 0;border-bottom:1px solid var(--line)}
+.steps>div:last-child{border-bottom:0}
+.steps>div::before{content:counter(s);flex:none;width:23px;height:23px;border-radius:99px;background:var(--panel2);
+  border:1px solid var(--line2);display:grid;place-items:center;font-size:11.5px;font-weight:700;color:var(--mut)}
+.steps b{display:block;font-size:13px;font-weight:600}
+.steps span{color:var(--mut);font-size:12px}
 @media(max-width:1180px){.board{grid-template-columns:repeat(3,minmax(0,1fr))}.cols2{grid-template-columns:1fr}}
 @media(max-width:860px){
-  .kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-  .kpi .v{font-size:22px}
-  .head{gap:8px}
-  .stamp{text-align:left}
-  body{grid-template-columns:1fr}
-  aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);flex-direction:column}
-  .menu{flex-direction:row;overflow:auto}
-  .menu button{white-space:nowrap}
-  main{padding:16px 12px 50px}
-  .board{grid-template-columns:1fr}
+  body{grid-template-columns:1fr;padding-bottom:0}
+  aside{position:sticky;top:0;z-index:30;height:auto;border-right:0;border-bottom:1px solid var(--line);
+    display:grid;grid-template-columns:1fr auto;grid-template-areas:"logo theme" "brand brand" "menu menu";
+    gap:8px;padding:10px 12px 6px;background:color-mix(in srgb,var(--bg2) 88%,transparent);backdrop-filter:blur(14px)}
+  .logo{grid-area:logo;font-size:14px}
+  .themebtn{grid-area:theme;padding:5px 8px;border-radius:999px;gap:7px}
+  .themebtn span:first-child{display:none}
+  .brandsel{grid-area:brand;padding:8px 10px;border-radius:11px;box-shadow:none}
+  .brandsel select{font-size:14.5px}
+  .brandsel .meta{font-size:10.5px}
+  .menu{grid-area:menu;flex-direction:row;overflow-x:auto;gap:4px;padding-bottom:4px;scrollbar-width:none}
+  .menu::-webkit-scrollbar{display:none}
+  .menu button{white-space:nowrap;padding:7px 12px;border-radius:999px;font-size:13px;border:1px solid transparent}
+  .menu button.on{border-color:var(--line2)}
+  .menu button.on::before{display:none}
   .side-foot{display:none}
+
+  main{padding:14px 12px 44px}
+  .head{margin-bottom:12px;align-items:flex-start}
+  h1{font-size:21px}
+  .stamp{text-align:left;font-size:11px}
+  .demo{font-size:11px;padding:3px 9px;white-space:normal;line-height:1.4;display:flex}
+
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .kpi{padding:12px 12px 11px;border-radius:14px}
+  .kpi .v{font-size:21px;letter-spacing:-.6px}
+  .kpi .l{font-size:10px}
+  .kpi .d{font-size:10.5px}
+  .kpi>svg.sp{height:30px;opacity:.45}
+  .kpi:last-child:nth-child(odd){grid-column:1/-1}
+  .ring svg{width:44px;height:44px}
+
+  .panel>h2{font-size:14px;padding:13px 13px 0}
+  .panel>.hint{padding:3px 13px 0;font-size:11.5px}
+  .panel>.body{padding:12px 13px 14px}
+  .cols2,.cols3{gap:12px}
+
+  /* Tabellen werden zu Karten */
+  table{min-width:0}
+  thead{display:none}
+  tbody tr{display:block;padding:11px 0;border-bottom:1px solid var(--line)}
+  tbody tr:hover{background:transparent}
+  td{border:0;padding:0}
+  td:first-child{display:block;margin-bottom:6px}
+  td.num{display:inline-flex;align-items:baseline;gap:4px;margin:0 14px 0 0;text-align:left;
+    font-size:12.5px;color:var(--fg);font-weight:600}
+  td.num::before{content:attr(data-l);font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+  td.hide-sm{display:none}
+  .mini{display:none}
+
+  /* Pipeline gestapelt */
+  .board{grid-template-columns:1fr;gap:10px}
+  .col{max-height:none;padding:11px;border-radius:14px}
+  .col h3{position:static;font-size:11px}
+
+  /* Drawer als Bottom-Sheet */
+  .drawer{width:100%;height:92%;top:auto;bottom:0;border-left:0;border-top:1px solid var(--line2);
+    border-radius:20px 20px 0 0;transform:translateY(100%);padding:18px 16px 60px}
+  .drawer.on{transform:none}
+  .drawer::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);
+    width:38px;height:4px;border-radius:99px;background:var(--line2)}
+  .drawer h3{font-size:17px;margin-top:10px}
+  .kv{grid-template-columns:1fr;gap:2px}
+  .kv div:nth-child(odd){font-size:10.5px;text-transform:uppercase;letter-spacing:.5px;margin-top:8px}
+  .toast{left:12px;right:12px;bottom:12px;transform:none;max-width:none}
+  .chan{flex-direction:column;align-items:flex-start;gap:8px}
+  .chan .row{width:100%}
+  .btn{padding:9px 13px}
 }
 </style>
 </head>
 <body>
 <aside>
-  <div class="logo"><i id="logodot"></i> Content Factory</div>
+  <div class="logo"><i></i> Content Factory</div>
   <div class="brandsel">
     <select id="brand"></select>
     <div class="meta" id="brandmeta">–</div>
   </div>
   <nav class="menu" id="menu"></nav>
+  <div class="themebtn" id="themebtn"><span id="themelbl">Dunkel</span><span class="sw"><i></i></span></div>
   <div class="side-foot">
     <div><span class="dot" id="healthdot" style="background:var(--ok)"></span><span id="healthtxt">–</span></div>
-    <div style="margin-top:8px">
-      <a href="https://github.com/ahmad-onenukta/wissen-islam-autopost/actions" target="_blank">Actions</a> ·
-      <a href="https://github.com/ahmad-onenukta/wissen-islam-autopost/edit/main/dashboard/commands.json" target="_blank">Befehle</a> ·
-      <a href="https://github.com/ahmad-onenukta/wissen-islam-autopost/blob/main/FACTORY.md" target="_blank">Doku</a>
-    </div>
+    <div id="links" style="margin-top:8px"></div>
   </div>
 </aside>
 
@@ -155,115 +288,294 @@ pre{background:#0C0C0F;border:1px solid var(--line);border-radius:12px;padding:1
     <div><h1 id="vtitle">Übersicht</h1><p id="vsub"></p></div>
     <div class="stamp" id="stamp">lädt …</div>
   </div>
+  <div id="demobadge"></div>
   <section id="v-overview" class="on"></section>
   <section id="v-pipeline"></section>
   <section id="v-approval"></section>
   <section id="v-analytics"></section>
   <section id="v-brands"></section>
+  <section id="v-settings"></section>
 </main>
 
 <div class="scrim" id="scrim"></div>
 <div class="drawer" id="drawer"></div>
-
 <script>
-const REPO = "ahmad-onenukta/wissen-islam-autopost";
-const GH = "https://github.com/" + REPO;
+/* ============ Konfiguration ============ */
+const CFG = {
+  repo: localStorage.getItem("cf.repo") || "ahmad-onenukta/wissen-islam-autopost",
+};
+const GH = () => "https://github.com/" + CFG.repo;
 const VIEWS = [
   ["overview","Übersicht","Kennzahlen, Verlauf und die stärksten Reels"],
   ["pipeline","Pipeline","Jedes Reel von der Idee bis live"],
   ["approval","Freigabe","Fakten-Gate, Überfällige und Plattform-Fehler"],
   ["analytics","Analytics","Reel für Reel, Hooks und Share-Quote"],
   ["brands","Brands","Kanäle verwalten und neue Brand starten"],
+  ["settings","Einstellungen","APIs eintragen, Kanäle verbinden, Zeiten setzen"],
 ];
-let S = null, BRAND = null, VIEW = "overview";
+const CHANNELS = {
+  instagram: { name:"Instagram Reels", secrets:["IG_TOKEN","IG_USER_ID"],
+    help:"Meta-App mit „Instagram API mit Instagram-Login“, Berechtigungen instagram_business_basic + _content_publish. Long-Lived Token (60 Tage, Auto-Refresh über GH_PAT)." },
+  youtube: { name:"YouTube Shorts", secrets:["YT_CLIENT_ID","YT_CLIENT_SECRET","YT_REFRESH_TOKEN"],
+    help:"Google-Cloud-Projekt, YouTube Data API v3 aktivieren, OAuth-Client (Desktop), einmal Refresh-Token holen." },
+  tiktok: { name:"TikTok", secrets:["TIKTOK_CLIENT_KEY","TIKTOK_CLIENT_SECRET","TIKTOK_REFRESH_TOKEN"],
+    help:"TikTok-for-Developers-App mit Content Posting API. Ohne Audit landet das Video im Entwurfsordner; nach dem Audit TIKTOK_DIRECT=1 setzen." },
+  facebook: { name:"Facebook Reels", secrets:["FB_PAGE_ID","FB_PAGE_TOKEN"],
+    help:"Facebook-Seite mit dem Instagram-Konto verknüpfen, Page Access Token (nie ablaufend) erzeugen." },
+};
+const GLOBAL_SECRETS = [
+  ["ELEVENLABS_API_KEY","Voice-Over (Starter-Plan, ca. 1.400 Credits je Reel)"],
+  ["GH_PAT","Token-Auto-Refresh (fine-grained, nur dieses Repo, Secrets: Read & write)"],
+];
+let S = null, BRAND = null, VIEW = "overview", OFFLINE = false;
 
-/* ---------- helpers ---------- */
+/* ============ Helpers ============ */
+const $ = id => document.getElementById(id);
 const E = s => String(s ?? "").replace(/[<>&"]/g, c => ({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[c]));
 const N = n => n == null ? "–" : new Intl.NumberFormat("de-DE").format(n);
 const DT = s => s ? new Date(s).toLocaleString("de-DE",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}) : "–";
 const D = s => s ? new Date(s).toLocaleDateString("de-DE",{day:"2-digit",month:"2-digit"}) : "–";
-const bust = () => "?t=" + Date.now();
-const brandOf = () => S.brands.find(b => b.slug === BRAND) || S.brands[0] || {};
+const brandOf = () => (S.brands.find(b => b.slug === BRAND) || S.brands[0] || {});
 const pipe = () => (S.pipeline || []).filter(p => p.brand === BRAND);
-const toast = (msg, extra) => {
-  document.querySelectorAll(".toast").forEach(t => t.remove());
-  const d = document.createElement("div"); d.className = "toast";
-  d.innerHTML = `${E(msg)}${extra ? `<pre style="margin:8px 0 0">${E(extra)}</pre>
-    <div class="row" style="margin-top:8px"><a class="btn s" href="${GH}/edit/main/dashboard/commands.json" target="_blank">commands.json öffnen</a>
-    <button class="btn s" onclick="this.closest('.toast').remove()">schließen</button></div>`
-    : `<button class="btn s" style="margin-left:10px" onclick="this.closest('.toast').remove()">ok</button>`}`;
-  document.body.appendChild(d);
-  if (!extra) setTimeout(() => d.remove(), 3500);
-};
-function sendCmd(op, p, extra){
-  const o = Object.assign({ op, brand: p.brand, id: p.id }, extra || {});
-  const txt = JSON.stringify([o], null, 2);
-  const done = () => toast("Befehl kopiert – in dashboard/commands.json einfügen. Der Workflow »Dashboard« wendet ihn innerhalb von 30 Minuten an.", txt);
-  navigator.clipboard ? navigator.clipboard.writeText(txt).then(done, done) : done();
+const cssv = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+
+/* Zahlen hochzählen */
+function countUp(el, to, fmt = N, dec = 0){
+  const dur = 650, t0 = performance.now();
+  if (!Number.isFinite(to)) { el.textContent = fmt(to); return; }
+  const step = t => {
+    const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+    const val = to * e;
+    el.textContent = fmt(dec ? +val.toFixed(dec) : Math.round(val));
+    if (k < 1) requestAnimationFrame(step); else el.textContent = fmt(dec ? +to.toFixed(dec) : Math.round(to));
+  };
+  requestAnimationFrame(step);
 }
-function spark(pts, color, h=40){
+function animateNumbers(root){
+  root.querySelectorAll("[data-count]").forEach(el => {
+    const raw = Number(el.dataset.count), suf = el.dataset.suffix || "", dec = Number(el.dataset.dec || 0);
+    countUp(el, raw, v => (dec ? v.toLocaleString("de-DE",{minimumFractionDigits:dec,maximumFractionDigits:dec}) : N(v)) + suf, dec);
+  });
+}
+/* Sparkline + Flächendiagramm mit Zeichen-Animation */
+function spark(pts, color){
   if (pts.length < 2) return "";
   const mx = Math.max(...pts), mn = Math.min(...pts), sp = (mx - mn) || 1;
-  const d = pts.map((v,i)=>`${(i/(pts.length-1)*100).toFixed(2)},${(100-(v-mn)/sp*92-4).toFixed(2)}`);
-  return `<svg viewBox="0 0 100 100" preserveAspectRatio="none" style="height:${h}px">
-    <polygon points="0,100 ${d.join(" ")} 100,100" fill="${color}" opacity=".13"/>
-    <polyline points="${d.join(" ")}" fill="none" stroke="${color}" stroke-width="1.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>`;
+  const d = pts.map((v,i)=>`${(i/(pts.length-1)*100).toFixed(2)},${(100-(v-mn)/sp*90-5).toFixed(2)}`);
+  return `<svg class="sp" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon points="0,100 ${d.join(" ")} 100,100" fill="${color}" opacity=".14"/>
+    <polyline points="${d.join(" ")}" fill="none" stroke="${color}" stroke-width="1.7"
+      vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"
+      style="--len:400;stroke-dasharray:400;animation:draw 1.1s ease-out forwards"/></svg>`;
 }
 function area(pts, labels, color){
   if (pts.length < 2) return `<div class="empty">Noch keine Messpunkte.</div>`;
   const mx = Math.max(...pts), mn = Math.min(...pts), sp = (mx - mn) || 1;
-  const d = pts.map((v,i)=>`${(i/(pts.length-1)*100).toFixed(2)},${(100-(v-mn)/sp*88-6).toFixed(2)}`);
-  const grid = [0,25,50,75,100].map(y=>`<line x1="0" x2="100" y1="${y}" y2="${y}" stroke="var(--line)" stroke-width=".4" vector-effect="non-scaling-stroke"/>`).join("");
+  const d = pts.map((v,i)=>`${(i/(pts.length-1)*100).toFixed(2)},${(100-(v-mn)/sp*86-7).toFixed(2)}`);
+  const grid = [0,25,50,75,100].map(y=>`<line x1="0" x2="100" y1="${y}" y2="${y}" stroke="var(--line)" stroke-width=".5" vector-effect="non-scaling-stroke"/>`).join("");
   return `<div style="position:relative">
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="width:100%;height:190px;display:block">${grid}
-      <polygon points="0,100 ${d.join(" ")} 100,100" fill="${color}" opacity=".15"/>
-      <polyline points="${d.join(" ")}" fill="none" stroke="${color}" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="width:100%;height:196px;display:block">${grid}
+      <polygon points="0,100 ${d.join(" ")} 100,100" fill="${color}" opacity=".16"/>
+      <polyline points="${d.join(" ")}" fill="none" stroke="${color}" stroke-width="2.2" vector-effect="non-scaling-stroke"
+        stroke-linejoin="round" stroke-linecap="round" style="--len:600;stroke-dasharray:600;animation:draw 1.3s ease-out forwards"/></svg>
     <div class="row" style="justify-content:space-between;color:var(--dim);font-size:11px;margin-top:6px">
-      <span>${E(labels[0])}</span><span>${E(labels[labels.length-1])}</span></div>
+      <span>${E(labels[0])}</span><span>${E(labels[1])}</span></div>
     <div style="position:absolute;top:0;right:0;color:var(--dim);font-size:11px">max ${N(mx)}</div></div>`;
 }
+/* Fortschritts-Ring */
+function ring(pct, color, label, sub){
+  const r = 22, c = 2 * Math.PI * r, off = c * (1 - Math.min(1, pct));
+  return `<div class="ring"><svg viewBox="0 0 52 52">
+      <circle cx="26" cy="26" r="${r}" fill="none" stroke="var(--line)" stroke-width="5"/>
+      <circle cx="26" cy="26" r="${r}" fill="none" stroke="${color}" stroke-width="5" stroke-linecap="round"
+        transform="rotate(-90 26 26)" stroke-dasharray="${c.toFixed(1)}"
+        style="--len:${off.toFixed(1)};stroke-dashoffset:${off.toFixed(1)};animation:draw 1s ease-out forwards"/>
+    </svg><div><div style="font-weight:650;font-size:14px">${E(label)}</div><div class="rt">${E(sub)}</div></div></div>`;
+}
+function toast(msg, extra){
+  document.querySelectorAll(".toast").forEach(t => t.remove());
+  const d = document.createElement("div"); d.className = "toast";
+  d.innerHTML = `${E(msg)}${extra ? `<pre style="margin:9px 0 0">${E(extra)}</pre>
+    <div class="row" style="margin-top:9px"><a class="btn s" href="${GH()}/edit/main/dashboard/commands.json" target="_blank">commands.json öffnen</a>
+    <button class="btn s" onclick="this.closest('.toast').remove()">schließen</button></div>`
+    : `<button class="btn s" style="margin-left:10px" onclick="this.closest('.toast').remove()">ok</button>`}`;
+  document.body.appendChild(d);
+  if (!extra) setTimeout(() => d.remove(), 3200);
+}
+function copy(txt, note){
+  const done = () => toast(note || "Kopiert.");
+  if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done, done); else done();
+}
+window.copyTxt = (t) => copy(t, `»${t}« kopiert.`);
+async function sendCmd(op, p, extra){
+  const cmd = Object.assign({ op, brand: p.brand, id: p.id }, extra || {});
+  if (connected()) {
+    try {
+      await ghAppendCommand(cmd);
+      await ghDispatch("dashboard.yml").catch(()=>{});
+      toast(`»${op}« an ${p.brand}/${p.id} gesendet – wird in wenigen Minuten angewendet.`);
+      closeCard();
+      return;
+    } catch(e){ toast("Fehlgeschlagen: " + e.message); return; }
+  }
+  const txt = JSON.stringify([cmd], null, 2);
+  copy(txt);
+  toast("Nicht mit GitHub verbunden – Befehl kopiert. Unter Einstellungen verbinden, dann geht es per Klick.", txt);
+}
+window.sendCmd = sendCmd;
 
-/* ---------- views ---------- */
+/* ============ GitHub-API ============ */
+const TOKEN = () => localStorage.getItem("cf.token") || "";
+const connected = () => !!TOKEN();
+async function gh(path, opts = {}){
+  const r = await fetch("https://api.github.com" + path, {
+    ...opts,
+    headers: { Accept:"application/vnd.github+json", Authorization:"Bearer " + TOKEN(),
+      "X-GitHub-Api-Version":"2022-11-28", ...(opts.body?{ "Content-Type":"application/json" }:{}) , ...(opts.headers||{}) },
+  });
+  if (r.status === 204) return {};
+  const j = await r.json().catch(()=>({}));
+  if (!r.ok) throw new Error(j.message ? `${r.status}: ${j.message}` : "HTTP " + r.status);
+  return j;
+}
+const b64 = str => btoa(unescape(encodeURIComponent(str)));
+async function ghGetFile(path){
+  try { return await gh(`/repos/${CFG.repo}/contents/${path}`); } catch { return null; }
+}
+async function ghPutFile(path, content, message){
+  const cur = await ghGetFile(path);
+  return gh(`/repos/${CFG.repo}/contents/${path}`, { method:"PUT",
+    body: JSON.stringify({ message, content: b64(content), ...(cur?.sha?{ sha: cur.sha }:{}) }) });
+}
+async function ghDispatch(workflow, inputs){
+  return gh(`/repos/${CFG.repo}/actions/workflows/${workflow}/dispatches`, {
+    method:"POST", body: JSON.stringify({ ref:"main", inputs: inputs || {} }) });
+}
+async function loadSodium(){
+  if (window.sodium?.crypto_box_seal) return window.sodium;
+  const m = await import("https://cdn.jsdelivr.net/npm/libsodium-wrappers@0.7.15/+esm");
+  window.sodium = m.default || m;
+  await window.sodium.ready;
+  return window.sodium;
+}
+async function ghSetSecret(name, value){
+  let sodium;
+  try { sodium = await loadSodium(); }
+  catch { throw new Error("Verschlüsselung nicht ladbar – Secret bitte direkt in GitHub eintragen"); }
+  const key = await gh(`/repos/${CFG.repo}/actions/secrets/public-key`);
+  const enc = sodium.crypto_box_seal(sodium.from_string(value), sodium.from_base64(key.key, sodium.base64_variants.ORIGINAL));
+  await gh(`/repos/${CFG.repo}/actions/secrets/${name}`, { method:"PUT",
+    body: JSON.stringify({ encrypted_value: sodium.to_base64(enc, sodium.base64_variants.ORIGINAL), key_id: key.key_id }) });
+}
+async function ghListSecrets(){
+  try { const j = await gh(`/repos/${CFG.repo}/actions/secrets?per_page=100`); return new Set((j.secrets||[]).map(x=>x.name)); }
+  catch { return new Set(); }
+}
+async function ghAppendCommand(cmd){
+  const f = await ghGetFile("dashboard/commands.json");
+  let list = [];
+  try { list = JSON.parse(decodeURIComponent(escape(atob((f.content||"").replace(/\n/g,""))))); } catch {}
+  list.push(cmd);
+  await ghPutFile("dashboard/commands.json", JSON.stringify(list, null, 2) + "\n", "dashboard: Befehl " + cmd.op + " " + cmd.id);
+}
+const busy = (el, on, label) => { el.disabled = on; el.textContent = on ? "…" : label; };
+
+/* ============ Demo-Daten (Offline-Modus) ============ */
+function demoState(){
+  const now = Date.now(), H = [];
+  let f = 120, v = 2000;
+  for (let i = 40; i >= 0; i--) {
+    f += Math.round(10 + Math.random() * 18); v += Math.round(900 + Math.random() * 5200);
+    H.push({ at: new Date(now - i * 2 * 3600e3).toISOString(), followers: f, views_total: v });
+  }
+  const themen = ["Geduld","Wissen","Eltern","Freunde","Geld","Vergebung","Alltag","Zeit","Dankbarkeit","Nachbarn"];
+  const titel = ["Der Satz, der dir gehört, bevor du ihn brauchst","Das erste Wort war ein Befehl",
+    "Dreimal die Mutter, einmal der Vater","Zwei Dinge, die du hast und nicht merkst",
+    "Der einzige Krieg, den Allah selbst erklärt","Der Mann, der 100 Menschen getötet hat",
+    "Die 40 Zentimeter, die alles entscheiden","Sieben Plätze im Schatten","Das Fenster, das jede Nacht aufgeht",
+    "Mit 21 losgegangen — drei Kontinente später zurück"];
+  const P = [];
+  const mk = (i, stage, extra) => ({
+    brand:"demo", id:String(100+i), title:titel[i%titel.length], thema:themen[i%themen.length],
+    hook:"Nicht das, was du denkst. "+titel[i%titel.length]+".", voice:i%3?"robert":"sabrina", stage,
+    fact_check: stage==="script" ? "offen" : "ok",
+    sources:{ total:6, verified: stage==="script" ? 4 : 6 },
+    source_list:[{claim:"Beispiel-Beleg aus der Primärquelle",ref:"alislam.org",url:"",verified:stage!=="script"}],
+    targets:["instagram","youtube","tiktok"], results:null, media_id:null, permalink:null,
+    metrics:null, order_rank:i, ...extra });
+  for (let i = 0; i < 2; i++) P.push(mk(i,"script"));
+  for (let i = 2; i < 12; i++) P.push(mk(i,"checked"));
+  for (let i = 12; i < 17; i++) P.push(mk(i,"queued",{ publish_at:new Date(now + (i-11)*864e5).toISOString() }));
+  for (let i = 17; i < 25; i++) {
+    const views = Math.round(600 + Math.random() * 24000);
+    P.push(mk(i,"live",{ publish_at:new Date(now - (i-16)*864e5).toISOString(),
+      metrics:{ views, reach:Math.round(views*.82), likes:Math.round(views*.045),
+        comments:Math.round(views*.0012), shares:Math.round(views*.014), saved:Math.round(views*.011) }}));
+  }
+  const live = P.filter(x=>x.metrics);
+  const vt = live.reduce((s,x)=>s+x.metrics.views,0), rt = live.reduce((s,x)=>s+x.metrics.reach,0);
+  const it = live.reduce((s,x)=>s+x.metrics.likes+x.metrics.shares+x.metrics.saved+x.metrics.comments,0);
+  return { generated_at:new Date().toISOString(), demo:true,
+    brands:[{ slug:"demo", name:"Demo-Brand", niche:"Beispiel-Nische für die Vorschau", active:true,
+      accent:"#E0312E", targets:["instagram","youtube","tiktok"], slot:"19:00",
+      handle:{instagram:"demo_kanal"}, voice:"robert", followers:H[H.length-1].followers,
+      counts:{script:2,checked:10,queued:5,paused:0,live:8}, runway_days:5,
+      next:P.find(x=>x.stage==="queued").publish_at, views_total:vt,
+      avg_views:Math.round(vt/live.length), engagement_rate:+(it/rt*100).toFixed(1) }],
+    pipeline:P, stats:{ account:{username:"demo_kanal",followers_count:H[H.length-1].followers}, history:H, reels:[] },
+    engage:{ new:3, done:41, skip:2 }, posted_total:8 };
+}
+
+/* ============ Ansichten ============ */
 function renderOverview(){
-  const b = brandOf(), p = pipe();
-  const h = S.stats.history || [];
+  const b = brandOf(), p = pipe(), h = S.stats.history || [];
   const views = h.map(x=>x.views_total||0), fol = h.map(x=>x.followers||0);
-  const dFol = h.length>1 ? (fol[fol.length-1]-fol[Math.max(0,fol.length-13)]) : 0;
-  const dViews = h.length>1 ? (views[views.length-1]-views[Math.max(0,views.length-13)]) : 0;
+  const dFol = h.length>1 ? fol.at(-1)-fol[Math.max(0,fol.length-13)] : 0;
+  const dViews = h.length>1 ? views.at(-1)-views[Math.max(0,views.length-13)] : 0;
   const live = p.filter(x=>x.stage==="live"&&x.metrics).sort((a,c)=>c.metrics.views-a.metrics.views);
   const nextUp = p.filter(x=>x.stage==="queued").sort((a,c)=>new Date(a.publish_at)-new Date(c.publish_at));
   const runway = b.runway_days||0;
-  const kpi = (l,v,d,sv) => `<div class="kpi"><div class="l">${l}</div><div class="v">${v}</div><div class="d">${d}</div>${sv||""}</div>`;
-  document.getElementById("v-overview").innerHTML = `
-  <div class="kpis">
-    ${kpi("Follower", N(b.followers), `<b class="${dFol<0?"down":""}">${dFol>=0?"+":""}${N(dFol)}</b> / 24 h`, spark(fol.slice(-40),"var(--ok)"))}
-    ${kpi("Views gesamt", N(b.views_total), `<b>${dViews>=0?"+":""}${N(dViews)}</b> / 24 h`, spark(views.slice(-40),"var(--info)"))}
-    ${kpi("Ø Views / Reel", N(b.avg_views), `${live.length} Reels live`)}
-    ${kpi("Engagement", b.engagement_rate!=null?b.engagement_rate+" %":"–", "Interaktionen / Reach")}
-    ${kpi("Vorlauf", runway+" Tage", runway>=5?"komfortabel":runway>=3?"ok – Ziel 7":"knapp – produzieren",
-      `<div class="bar" style="margin:10px 0 0"><i style="width:${Math.min(100,runway/7*100)}%;background:${runway>=3?"var(--ok)":"var(--warn)"}"></i></div>`)}
+  const kpi = (l,val,d,extra,suffix) => `<div class="kpi"><div class="l">${l}</div>
+    <div class="v"><span data-count="${val}" ${suffix?`data-suffix="${suffix}"`:""}>0</span></div>
+    <div class="d">${d}</div>${extra||""}</div>`;
+  $("v-overview").innerHTML = `
+  <div class="kpis stagger">
+    ${kpi("Follower", b.followers??0, `<b class="${dFol<0?"down":""}">${dFol>=0?"+":""}${N(dFol)}</b> in 24 h`, spark(fol.slice(-40), cssv("--ok")))}
+    ${kpi("Views gesamt", b.views_total??0, `<b>${dViews>=0?"+":""}${N(dViews)}</b> in 24 h`, spark(views.slice(-40), cssv("--info")))}
+    ${kpi("Ø Views / Reel", b.avg_views??0, `${live.length} Reels live`)}
+    <div class="kpi"><div class="l">Engagement</div>
+      <div class="v"><span data-count="${b.engagement_rate??0}" data-dec="1" data-suffix=" %">0</span></div>
+      <div class="d">Interaktionen / Reach</div></div>
+    <div class="kpi"><div class="l">Vorlauf</div>
+      ${ring(runway/7, runway>=3?cssv("--ok"):cssv("--warn"), runway+" Tage", runway>=5?"komfortabel":runway>=3?"Ziel: 7 Tage":"knapp – produzieren")}
+    </div>
   </div>
 
   <div class="cols2">
-    <div class="panel"><h2>Views gesamt</h2><div class="hint">Messpunkte alle 2 Stunden aus der Instagram-API</div>
-      <div class="body">${area(views.slice(-90), [D(h[Math.max(0,h.length-90)]?.at), D(h[h.length-1]?.at)], "var(--info)")}</div></div>
-    <div class="panel"><h2>Als Nächstes</h2><div class="hint">Automatisch um ${E(b.slot||"")} Berlin</div><div class="body">
-      ${nextUp.length ? nextUp.map(x=>`<div class="cardx ok" onclick="openCard('${x.brand}','${x.id}')">
+    <div class="panel"><h2>Views gesamt <span class="pill info">${h.length} Messpunkte</span></h2>
+      <div class="hint">Alle 2 Stunden automatisch aus der Plattform-API</div>
+      <div class="body">${area(views.slice(-90), [D(h[Math.max(0,h.length-90)]?.at), D(h.at(-1)?.at)], cssv("--info"))}</div></div>
+    <div class="panel"><h2>Als Nächstes</h2><div class="hint">Automatisch um ${E(b.slot||"")} Berlin</div><div class="body stagger">
+      ${nextUp.slice(0,5).map(x=>`<div class="cardx ok" onclick="openCard('${x.brand}','${x.id}')">
           <div class="id">${E(x.id)} · ${DT(x.publish_at)}</div>
           <div class="t">${E(x.title || x.thema || "Reel")}</div>
           <div class="m">${(x.targets||[]).map(t=>`<span class="pill">${E(t)}</span>`).join("")}</div></div>`).join("")
-        : `<div class="empty">Keine Reels geplant – Workflow »Reel produzieren« starten.</div>`}
+        || `<div class="empty">Keine Reels geplant – Workflow »Reel produzieren« starten.</div>`}
     </div></div>
   </div>
 
-  <div class="panel"><h2>Stärkste Reels</h2><div class="hint">Nach Views, inkl. Share- und Save-Quote</div><div class="body">
-    <table><thead><tr><th>Reel</th><th class="num">Views</th><th class="num">Reach</th><th class="num">Likes</th><th class="num">Shares</th><th class="num">Saves</th><th class="num">Shares/1k</th></tr></thead><tbody>
+  <div class="panel"><h2>Stärkste Reels</h2><div class="hint">Nach Views, inklusive Share- und Save-Quote</div><div class="body">
+    <table><thead><tr><th>Reel</th><th style="width:120px">Anteil</th><th class="num">Views</th><th class="num">Reach</th>
+      <th class="num">Likes</th><th class="num">Shares</th><th class="num">Saves</th></tr></thead><tbody>
     ${live.slice(0,8).map(x=>`<tr onclick="openCard('${x.brand}','${x.id}')" style="cursor:pointer">
       <td><div class="ttl">${E((x.title||x.thema||"Reel").slice(0,52))}</div><div class="sub">${E(x.id)} · ${D(x.publish_at)}</div></td>
-      <td class="num">${N(x.metrics.views)}</td><td class="num">${N(x.metrics.reach)}</td><td class="num">${N(x.metrics.likes)}</td>
-      <td class="num">${N(x.metrics.shares)}</td><td class="num">${N(x.metrics.saved)}</td>
-      <td class="num">${x.metrics.views?(x.metrics.shares/x.metrics.views*1000).toFixed(1):"–"}</td></tr>`).join("") || `<tr><td colspan="7" class="empty">Noch keine Insights.</td></tr>`}
+      <td class="hide-sm"><div class="mini"><i style="width:${(x.metrics.views/(live[0].metrics.views||1)*100).toFixed(0)}%"></i></div></td>
+      <td class="num" data-l="Views">${N(x.metrics.views)}</td><td class="num hide-sm" data-l="Reach">${N(x.metrics.reach)}</td>
+      <td class="num hide-sm" data-l="Likes">${N(x.metrics.likes)}</td>
+      <td class="num" data-l="Shares">${N(x.metrics.shares)}</td><td class="num hide-sm" data-l="Saves">${N(x.metrics.saved)}</td></tr>`).join("")
+      || `<tr><td colspan="7" class="empty">Noch keine Insights.</td></tr>`}
     </tbody></table></div></div>`;
+  animateNumbers($("v-overview"));
 }
 
 const STAGES = [
@@ -275,12 +587,13 @@ const STAGES = [
 ];
 function renderPipeline(){
   const p = pipe();
-  document.getElementById("v-pipeline").innerHTML = `
-    <div class="panel"><h2>Produktionskette</h2><div class="hint">Script → Fakten-Gate → Render (GitHub Actions) → Posting auf alle Ziele. Karte anklicken für Quellen und Aktionen.</div><div class="body">
-    <div class="board">${STAGES.map(([k,label,desc,cls])=>{
-      const items = p.filter(x=>x.stage===k).slice(0, k==="live"?12:40);
-      return `<div class="col"><h3>${E(label)}<span class="cnt">${p.filter(x=>x.stage===k).length}</span></h3><div class="desc">${E(desc)}</div>
-        ${items.map(x=>`<div class="cardx ${cls}" onclick="openCard('${x.brand}','${x.id}')">
+  $("v-pipeline").innerHTML = `
+    <div class="panel"><h2>Produktionskette</h2>
+    <div class="hint">Script → Fakten-Gate → Render (GitHub Actions) → Posting auf alle Ziele. Karte anklicken für Quellen und Aktionen.</div>
+    <div class="body"><div class="board stagger">${STAGES.map(([k,label,desc,cls])=>{
+      const all = p.filter(x=>x.stage===k), items = all.slice(0, k==="live"?12:40);
+      return `<div class="col"><h3>${E(label)}<span class="cnt">${all.length}</span></h3><div class="desc">${E(desc)}</div>
+        ${items.map((x,i)=>`<div class="cardx ${cls}" style="animation-delay:${(i*.03).toFixed(2)}s" onclick="openCard('${x.brand}','${x.id}')">
           <div class="id">${E(x.id)}${x.publish_at?" · "+D(x.publish_at):""}</div>
           <div class="t">${E((x.title||x.thema||"Reel").slice(0,70))}</div>
           <div class="m">
@@ -299,111 +612,272 @@ function renderApproval(){
   const ready = p.filter(x=>x.stage==="checked");
   const card = (x, note, cls) => `<div class="cardx ${cls}" onclick="openCard('${x.brand}','${x.id}')">
     <div class="id">${E(x.id)}${x.publish_at?" · "+DT(x.publish_at):""}</div>
-    <div class="t">${E((x.title||x.thema||"Reel").slice(0,80))}</div>
-    <div class="m">${note}</div></div>`;
-  document.getElementById("v-approval").innerHTML = `
-  <div class="panel"><h2>Freigabe-Modell</h2><div class="hint">Voll-autonom: es gibt kein manuelles Video-OK. Einziges Gate ist der Fakten-Check — jede Behauptung mit Quelle, zweifach geprüft. Du greifst nur ein, wenn hier etwas steht.</div>
-    <div class="body"><div class="row">
+    <div class="t">${E((x.title||x.thema||"Reel").slice(0,80))}</div><div class="m">${note}</div></div>`;
+  $("v-approval").innerHTML = `
+  <div class="panel"><h2>Freigabe-Modell <span class="pill ok">voll-autonom</span></h2>
+    <div class="hint">Kein manuelles Video-OK. Einziges Tor ist der Fakten-Check: jede Behauptung mit Quelle, zweifach geprüft. Du greifst nur ein, wenn hier etwas steht.</div>
+    <div class="body"><div class="row stagger">
       <span class="pill ok">${ready.length} geprüft &amp; freigegeben</span>
-      <span class="pill ${blocked.length?"bad":""}">${blocked.length} am Fakten-Gate blockiert</span>
+      <span class="pill ${blocked.length?"bad":""}">${blocked.length} am Fakten-Gate</span>
       <span class="pill ${overdue.length?"warn":""}">${overdue.length} überfällig</span>
       <span class="pill ${errs.length?"bad":""}">${errs.length} Plattform-Fehler</span>
       <span class="pill">${N(S.engage?.new||0)} offene Kommentare</span>
     </div></div></div>
-
   <div class="cols2">
-    <div class="panel"><h2>Braucht dich</h2><div class="hint">Alles andere läuft ohne Rückfrage</div><div class="body">
+    <div class="panel"><h2>Braucht dich</h2><div class="hint">Alles andere läuft ohne Rückfrage</div><div class="body stagger">
       ${blocked.map(x=>card(x,`<span class="pill bad">Quellen ${x.sources.verified}/${x.sources.total} geprüft</span>`,"accc")).join("")}
       ${overdue.map(x=>card(x,`<span class="pill warn">Termin verstrichen – Workflow »Reel posten« starten</span>`,"warnc")).join("")}
       ${errs.map(x=>card(x,`<span class="pill bad">${E(Object.entries(x.results).filter(([,r])=>r&&r.error).map(([k])=>k).join(", "))} fehlgeschlagen</span>`,"accc")).join("")}
       ${(!blocked.length&&!overdue.length&&!errs.length)?`<div class="empty">Nichts offen. Die Fabrik läuft.</div>`:""}
       <div class="row" style="margin-top:10px">
-        <a class="btn" href="${GH}/actions" target="_blank">Actions öffnen</a>
-        <a class="btn" href="${GH}/tree/main/scripts" target="_blank">Scripts im Repo</a>
-      </div>
+        <a class="btn" href="${GH()}/actions" target="_blank">Actions öffnen</a>
+        <a class="btn" href="${GH()}/tree/main/scripts" target="_blank">Scripts im Repo</a></div>
     </div></div>
-
-    <div class="panel"><h2>Freigegeben, wartet auf Render</h2><div class="hint">Reihenfolge aus scripts/ORDER.txt · täglich 05:00 Berlin</div><div class="body">
-      ${ready.slice(0,14).map(x=>card(x,`<span class="pill ok">${x.sources.verified}/${x.sources.total} Quellen</span><span class="pill">${E(x.voice||"")}</span>`,"ok")).join("") || `<div class="empty">Vorrat leer – Script-Nachschub nötig.</div>`}
-      ${ready.length>14?`<div class="empty">+ ${ready.length-14} weitere</div>`:""}
+    <div class="panel"><h2>Freigegeben, wartet auf Render</h2><div class="hint">Reihenfolge aus ORDER.txt · täglich 05:00 Berlin</div><div class="body stagger">
+      ${ready.slice(0,12).map(x=>card(x,`<span class="pill ok">${x.sources.verified}/${x.sources.total} Quellen</span><span class="pill">${E(x.voice||"")}</span>`,"ok")).join("")
+        || `<div class="empty">Vorrat leer – Script-Nachschub nötig.</div>`}
+      ${ready.length>12?`<div class="empty">+ ${ready.length-12} weitere</div>`:""}
     </div></div>
   </div>`;
 }
 
 function renderAnalytics(){
   const p = pipe().filter(x=>x.stage==="live"&&x.metrics);
-  const hooks = p.slice().sort((a,b)=>(b.metrics.shares/(b.metrics.views||1))-(a.metrics.shares/(a.metrics.views||1)));
   const sum = k => p.reduce((s,x)=>s+(x.metrics[k]||0),0);
-  document.getElementById("v-analytics").innerHTML = `
-  <div class="kpis">
-    <div class="kpi"><div class="l">Reels live</div><div class="v">${p.length}</div><div class="d">Ø ${N(Math.round(sum("views")/(p.length||1)))} Views</div></div>
-    <div class="kpi"><div class="l">Shares</div><div class="v">${N(sum("shares"))}</div><div class="d">stärkstes Reichweiten-Signal</div></div>
-    <div class="kpi"><div class="l">Saves</div><div class="v">${N(sum("saved"))}</div><div class="d">Wissenswert-Signal</div></div>
-    <div class="kpi"><div class="l">Kommentare</div><div class="v">${N(sum("comments"))}</div><div class="d">${N(S.engage?.new||0)} offen</div></div>
+  const hooks = p.slice().sort((a,b)=>(b.metrics.shares/(b.metrics.views||1))-(a.metrics.shares/(a.metrics.views||1)));
+  $("v-analytics").innerHTML = `
+  <div class="kpis stagger">
+    <div class="kpi"><div class="l">Reels live</div><div class="v"><span data-count="${p.length}">0</span></div><div class="d">Ø ${N(Math.round(sum("views")/(p.length||1)))} Views</div></div>
+    <div class="kpi"><div class="l">Shares</div><div class="v"><span data-count="${sum("shares")}">0</span></div><div class="d">stärkstes Reichweiten-Signal</div></div>
+    <div class="kpi"><div class="l">Saves</div><div class="v"><span data-count="${sum("saved")}">0</span></div><div class="d">Wissenswert-Signal</div></div>
+    <div class="kpi"><div class="l">Kommentare</div><div class="v"><span data-count="${sum("comments")}">0</span></div><div class="d">${N(S.engage?.new||0)} offen</div></div>
   </div>
   <div class="panel"><h2>Reel für Reel</h2><div class="hint">Klick öffnet Quellen, Ziele und Aktionen</div><div class="body">
-    <table><thead><tr><th>Reel</th><th>Gepostet</th><th class="num">Views</th><th class="num">Reach</th><th class="num">ER %</th><th class="num">Shares/1k</th><th class="num">Saves/1k</th><th>Links</th></tr></thead><tbody>
+    <table><thead><tr><th>Reel</th><th>Gepostet</th><th class="num">Views</th><th class="num">Reach</th><th class="num">ER %</th>
+      <th class="num">Shares/1k</th><th class="num">Saves/1k</th><th>Link</th></tr></thead><tbody>
     ${p.sort((a,b)=>new Date(b.publish_at)-new Date(a.publish_at)).map(x=>{
       const m=x.metrics, er=m.reach?((m.likes+m.shares+m.saved+m.comments)/m.reach*100).toFixed(1):"–";
-      return `<tr><td onclick="openCard('${x.brand}','${x.id}')" style="cursor:pointer"><div class="ttl">${E((x.title||x.thema||"Reel").slice(0,56))}</div><div class="sub">${E(x.id)} · ${E(x.thema||"")}</div></td>
-      <td class="sub">${D(x.publish_at)}</td><td class="num">${N(m.views)}</td><td class="num">${N(m.reach)}</td><td class="num">${er}</td>
-      <td class="num">${m.views?(m.shares/m.views*1000).toFixed(1):"–"}</td><td class="num">${m.views?(m.saved/m.views*1000).toFixed(1):"–"}</td>
-      <td>${x.permalink?`<a class="btn s" href="${E(x.permalink)}" target="_blank">IG</a>`:"–"}</td></tr>`}).join("") || `<tr><td colspan="8" class="empty">Noch keine Insights.</td></tr>`}
+      return `<tr><td onclick="openCard('${x.brand}','${x.id}')" style="cursor:pointer">
+        <div class="ttl">${E((x.title||x.thema||"Reel").slice(0,56))}</div><div class="sub">${E(x.id)}${x.thema?" · "+E(x.thema):""}</div></td>
+      <td class="sub hide-sm">${D(x.publish_at)}</td><td class="num" data-l="Views">${N(m.views)}</td>
+      <td class="num hide-sm" data-l="Reach">${N(m.reach)}</td><td class="num" data-l="ER">${er} %</td>
+      <td class="num" data-l="Shares/1k">${m.views?(m.shares/m.views*1000).toFixed(1):"–"}</td>
+      <td class="num hide-sm" data-l="Saves/1k">${m.views?(m.saved/m.views*1000).toFixed(1):"–"}</td>
+      <td class="hide-sm">${x.permalink?`<a class="btn s" href="${E(x.permalink)}" target="_blank">öffnen</a>`:"–"}</td></tr>`}).join("")
+      || `<tr><td colspan="8" class="empty">Noch keine Insights.</td></tr>`}
     </tbody></table></div></div>
-  <div class="panel"><h2>Hooks mit der besten Share-Quote</h2><div class="hint">Diese Muster wiederholen – Grundlage für neue Scripts</div><div class="body">
-    ${hooks.slice(0,5).map((x,i)=>`<div class="cardx livec" onclick="openCard('${x.brand}','${x.id}')">
+  <div class="panel"><h2>Hooks mit der besten Share-Quote</h2><div class="hint">Diese Muster wiederholen – Grundlage für neue Scripts</div>
+    <div class="body stagger">${hooks.slice(0,5).map((x,i)=>`<div class="cardx livec" onclick="openCard('${x.brand}','${x.id}')">
       <div class="id">#${i+1} · ${N(x.metrics.shares)} Shares bei ${N(x.metrics.views)} Views</div>
-      <div class="t">${E((x.hook||x.title||"").slice(0,150))}</div></div>`).join("") || `<div class="empty">–</div>`}
-  </div></div>`;
+      <div class="t">${E((x.hook||x.title||"").slice(0,150))}</div></div>`).join("") || `<div class="empty">–</div>`}</div></div>`;
+  animateNumbers($("v-analytics"));
 }
 
 function renderBrands(){
-  document.getElementById("v-brands").innerHTML = `
-  <div class="kpis">${S.brands.map(b=>`<div class="kpi" style="border-left:3px solid ${E(b.accent||"#E0312E")}">
-    <div class="l">${E(b.name)}</div><div class="v" style="font-size:20px">${b.runway_days} Tage Vorlauf</div>
+  $("v-brands").innerHTML = `
+  <div class="kpis stagger">${S.brands.map(b=>`<div class="kpi" style="border-left:3px solid ${E(b.accent||"#E0312E")}">
+    <div class="l">${E(b.name)}</div><div class="v" style="font-size:21px">${b.runway_days} Tage</div>
     <div class="d">${E(b.niche||"")}</div>
-    <div class="row" style="margin-top:8px">${(b.targets||[]).map(t=>`<span class="pill">${E(t)}</span>`).join("")}<span class="pill">${E(b.slot||"")}</span></div>
-  </div>`).join("")}</div>
+    <div class="row" style="margin-top:9px">${(b.targets||[]).map(t=>`<span class="pill">${E(t)}</span>`).join("")}
+      <span class="pill">${E(b.slot||"")}</span></div></div>`).join("")}</div>
 
   <div class="cols2">
-    <div class="panel"><h2>Neue Brand starten</h2><div class="hint">Erzeugt brand.json + SETUP.md mit Secret-Checkliste. Renderer, Workflows und Dashboard greifen danach automatisch.</div><div class="body">
+    <div class="panel"><h2>Neue Brand starten ${connected()?`<span class="pill ok">direkt aus der Oberfläche</span>`:`<span class="pill warn">Verbindung fehlt</span>`}</h2>
+      <div class="hint">${connected()
+        ? "Legt brands/&lt;slug&gt;/brand.json + SETUP.md im Repo an. Danach nur noch die Zugänge unter Einstellungen eintragen."
+        : "Unter Einstellungen mit GitHub verbinden – dann wird die Brand hier mit einem Klick angelegt."}</div>
+      <div class="body">
       <div class="row" style="gap:12px">
-        <div style="flex:1 1 180px"><label>Slug</label><input id="n-slug" placeholder="geldwissen"></div>
-        <div style="flex:1 1 180px"><label>Name</label><input id="n-name" placeholder="GeldWissen"></div>
-      </div>
+        <div style="flex:1 1 170px"><label>Slug</label><input id="n-slug" placeholder="geldwissen"></div>
+        <div style="flex:1 1 170px"><label>Name</label><input id="n-name" placeholder="GeldWissen"></div></div>
       <label>Nische</label><input id="n-niche" placeholder="Finanzwissen, Storytelling, Zahlen-Hooks">
+      <label>Instagram-Handle</label><input id="n-handle" placeholder="geldwissen_official">
       <div class="row" style="gap:12px">
-        <div style="flex:1 1 180px"><label>Plattformen</label><input id="n-tgt" value="instagram,youtube,tiktok,facebook"></div>
-        <div style="flex:1 1 120px"><label>Postzeit Berlin</label><input id="n-slot" value="19:00"></div>
-        <div style="flex:1 1 120px"><label>Akzentfarbe</label><input id="n-acc" value="#4C8DF6"></div>
-      </div>
-      <div class="row" style="margin-top:14px"><button class="btn p" id="n-go">Befehl erzeugen</button>
-        <a class="btn" href="${GH}/settings/secrets/actions" target="_blank">Secrets verwalten</a></div>
-      <pre id="n-out" style="margin-top:12px">node scripts/newbrand.mjs …</pre>
-    </div></div>
+        <div style="flex:1 1 200px"><label>Plattformen</label><input id="n-tgt" value="instagram,youtube,tiktok,facebook"></div>
+        <div style="flex:1 1 110px"><label>Postzeit</label><input id="n-slot" value="19:00"></div>
+        <div style="flex:1 1 110px"><label>Akzentfarbe</label><input id="n-acc" value="#4C8DF6"></div></div>
+      <label>Stimme</label>
+      <select class="f" id="n-voice"><option value="robert">Robert – tief, ruhig</option><option value="sabrina">Sabrina – warm, erzählend</option></select>
+      <div class="row" style="margin-top:14px">
+        <button class="btn p" id="n-create">${connected()?"Brand anlegen":"Befehl erzeugen"}</button>
+        <button class="btn" id="n-copy">Befehl kopieren</button></div>
+      <pre id="n-out" style="margin-top:12px">node scripts/newbrand.mjs …</pre></div></div>
 
-    <div class="panel"><h2>Ablauf</h2><div class="body">
-      <table><tbody>
-        <tr><td class="ttl">1 · Brand anlegen</td><td class="sub">Befehl links, einmal im Repo ausführen</td></tr>
-        <tr><td class="ttl">2 · Secrets setzen</td><td class="sub">aus brands/&lt;slug&gt;/SETUP.md, z. B. IG_TOKEN_GELDWISSEN</td></tr>
-        <tr><td class="ttl">3 · Scripts liefern</td><td class="sub">10–15 geprüfte Scripts nach brands/&lt;slug&gt;/scripts/</td></tr>
-        <tr><td class="ttl">4 · fertig</td><td class="sub">produce.yml rendert, post-reel.yml postet, dieses Dashboard zeigt es</td></tr>
-      </tbody></table>
-    </div></div>
+    <div class="panel"><h2>Ablauf</h2><div class="body"><div class="steps">
+      <div><div><b>Brand anlegen</b><span>Formular links – schreibt die Konfiguration ins Repo</span></div></div>
+      <div><div><b>Konto verknüpfen</b><span>Einstellungen → Kanäle: Zugänge eintragen, verschlüsselt als Secret</span></div></div>
+      <div><div><b>Scripts liefern</b><span>10–15 geprüfte Scripts nach brands/&lt;slug&gt;/scripts/</span></div></div>
+      <div><div><b>starten</b><span>Einstellungen → »Reels produzieren«, danach läuft der Takt allein</span></div></div>
+    </div></div></div>
   </div>`;
-  document.getElementById("n-go").onclick = () => {
-    const g = i => document.getElementById(i).value.trim();
-    document.getElementById("n-out").textContent =
-      `node scripts/newbrand.mjs ${g("n-slug")} "${g("n-name")}" "${g("n-niche")}" ${g("n-tgt")} ${g("n-slot")} "${g("n-acc")}"`;
+
+  const g = i => $(i).value.trim();
+  const cmd = () => `node scripts/newbrand.mjs ${g("n-slug")} "${g("n-name")}" "${g("n-niche")}" ${g("n-tgt")} ${g("n-slot")} "${g("n-acc")}"`;
+  $("n-copy").onclick = () => { $("n-out").textContent = cmd(); copy(cmd(), "Befehl kopiert."); };
+  $("n-create").onclick = async () => {
+    const slug = g("n-slug").toLowerCase().replace(/[^a-z0-9-]/g,"");
+    if (!slug || !g("n-name")) return toast("Slug und Name ausfüllen.");
+    if (!connected()) { $("n-out").textContent = cmd(); return copy(cmd(), "Nicht verbunden – Befehl kopiert."); }
+    const btn = $("n-create"); busy(btn, true, "Brand anlegen");
+    const targets = g("n-tgt").split(",").map(x=>x.trim()).filter(Boolean);
+    const pre = slug.toUpperCase().replace(/[^A-Z0-9]/g,"_");
+    const brand = {
+      slug, name: g("n-name"), niche: g("n-niche"), language: "de",
+      handle: { instagram: g("n-handle"), tiktok:"", youtube:"", facebook:"" },
+      targets, schedule: { slot_berlin: g("n-slot") || "19:00", per_day: 1 },
+      renderer: { composition:"Essay", theme:"dark", captions:false },
+      palette: { bg:"#0D0D0F", fg:"#FFFFFF", accent: g("n-acc") || "#4C8DF6", muted:"#8A8A90" },
+      fonts: { latin:"Inter", arabic:"Amiri" },
+      voice: { default: $("n-voice").value, model:"eleven_v4",
+        ids:{ robert:"ML23UVoFL5mI6APbRAeR", sabrina:"cqPdIo76zSHFDcSZpFov" } },
+      caption: { core_hashtags: [], cta:"", sources_label:"Quellen:" },
+      fact_policy: { doctrine:"", primary_sources:[], quran_numbering:null, required:true, taboo:[] },
+      env_prefix: pre, active: true,
+    };
+    const req = { instagram:["IG_TOKEN","IG_USER_ID"], youtube:["YT_CLIENT_ID","YT_CLIENT_SECRET","YT_REFRESH_TOKEN"],
+      tiktok:["TIKTOK_CLIENT_KEY","TIKTOK_CLIENT_SECRET","TIKTOK_REFRESH_TOKEN"], facebook:["FB_PAGE_ID","FB_PAGE_TOKEN"] };
+    const secrets = targets.flatMap(t=>(req[t]||[]).map(x=>`${x}_${pre}`));
+    const setup = `# ${brand.name} — Einrichtung\n\nNische: ${brand.niche}\nPlattformen: ${targets.join(", ")}\nSlot: ${brand.schedule.slot_berlin} Berlin\n\n## Zugänge\n${secrets.map(x=>`- [ ] \`${x}\``).join("\n")}\n\nEintragen im Dashboard unter Einstellungen → Kanäle.\n`;
+    try {
+      if (await ghGetFile(`brands/${slug}/brand.json`)) throw new Error("Brand existiert bereits");
+      await ghPutFile(`brands/${slug}/brand.json`, JSON.stringify(brand,null,2)+"\n", `brand: ${slug} angelegt`);
+      await ghPutFile(`brands/${slug}/SETUP.md`, setup, `brand: ${slug} Einrichtung`);
+      await ghPutFile(`brands/${slug}/scripts/.gitkeep`, "", `brand: ${slug} Script-Ordner`);
+      await ghDispatch("dashboard.yml").catch(()=>{});
+      toast(`Brand ${brand.name} angelegt. Jetzt unter Einstellungen die Zugänge eintragen: ${secrets.length} Secrets.`);
+      $("n-out").textContent = secrets.join("\n");
+      setTimeout(()=>load(true), 4000);
+    } catch(e){ toast("Nicht angelegt: " + e.message); }
+    busy(btn, false, "Brand anlegen");
   };
 }
 
-/* ---------- drawer ---------- */
+/* ============ Einstellungen ============ */
+let SECRETS = new Set();
+async function refreshSecrets(){ SECRETS = connected() ? await ghListSecrets() : new Set(); }
+
+function renderSettings(){
+  const b = brandOf();
+  const pre = (b.slug||"").toUpperCase().replace(/[^A-Z0-9]/g,"_");
+  const active = new Set(b.targets||[]);
+  const has = n => SECRETS.has(n);
+  const field = (n) => `<div class="row" style="gap:6px;margin-top:6px;width:100%">
+      <input id="sec-${n}" type="password" placeholder="${has(n)?"gesetzt – neu eintragen zum Ersetzen":"Wert einfügen"}" style="flex:1 1 180px">
+      <button class="btn s" onclick="saveSecret('${n}')">${has(n)?"ersetzen":"speichern"}</button>
+      <span class="pill ${has(n)?"ok":""}">${has(n)?"gesetzt":"fehlt"}</span></div>`;
+  const chan = Object.entries(CHANNELS).map(([k,c])=>{
+    const names = c.secrets.map(x=>`${x}_${pre}`);
+    const ok = names.every(has);
+    return `<div class="chan"><div style="width:100%">
+      <div class="n">${E(c.name)}
+        ${ok?`<span class="pill ok">verbunden</span>`:active.has(k)?`<span class="pill warn">Zugang fehlt</span>`:`<span class="pill">nicht aktiv</span>`}</div>
+      <div class="s">${E(c.help)}</div>
+      ${connected() ? names.map(n=>`<div style="margin-top:8px"><div class="sub"><code>${n}</code></div>${field(n)}</div>`).join("")
+        : `<div class="sec">${names.map(n=>`<code onclick="copyTxt('${n}')">${n}</code>`).join("")}</div>`}
+      <div class="row" style="margin-top:9px">
+        <button class="btn s" onclick="toggleTarget('${k}')">${active.has(k)?"für diese Brand abschalten":"für diese Brand aktivieren"}</button>
+      </div>
+    </div></div>`;}).join("");
+
+  $("v-settings").innerHTML = `
+  <div class="panel"><h2>Verbindung zu GitHub ${connected()?`<span class="pill ok">verbunden</span>`:`<span class="pill warn">getrennt</span>`}</h2>
+    <div class="hint">Mit Token laufen Brand-Anlegen, Zugänge und Workflows direkt aus dieser Oberfläche. Der Token bleibt nur in diesem Browser.</div>
+    <div class="body">
+      <label>Fine-grained Personal Access Token</label>
+      <div class="row" style="gap:8px">
+        <input id="s-token" type="password" placeholder="${connected()?"gespeichert – neu eintragen zum Ersetzen":"github_pat_…"}" style="flex:1 1 260px">
+        <button class="btn p" id="s-connect">verbinden</button>
+        ${connected()?`<button class="btn d" id="s-logout">trennen</button>`:""}
+      </div>
+      <div class="sub" style="margin-top:8px">Rechte: dieses Repo · Contents <b>Read &amp; write</b> · Secrets <b>Read &amp; write</b> · Actions <b>Read &amp; write</b> · Workflows <b>Read &amp; write</b>.
+        <a href="https://github.com/settings/personal-access-tokens/new" target="_blank">Token erstellen</a></div>
+      <div id="s-who" class="row" style="margin-top:10px"></div>
+    </div></div>
+
+  <div class="panel"><h2>Kanäle verbinden</h2>
+    <div class="hint">${connected()?"Werte eintragen – sie werden im Browser verschlüsselt und als Repo-Secret gespeichert. Niemand sieht sie, auch dieses Dashboard nicht."
+      :"Ohne Verbindung nur Namen kopieren und in GitHub eintragen."}</div>
+    <div class="body stagger">${chan}
+      ${connected()?"":`<div class="row" style="margin-top:12px">
+        <a class="btn a" href="${GH()}/settings/secrets/actions/new" target="_blank">Secret anlegen</a></div>`}
+    </div></div>
+
+  <div class="cols2">
+    <div class="panel"><h2>Globale Schlüssel</h2><div class="hint">Gelten für die ganze Fabrik</div><div class="body">
+      ${GLOBAL_SECRETS.map(([n,d])=>`<div class="chan"><div style="width:100%">
+        <div class="n"><code onclick="copyTxt('${n}')">${n}</code> ${has(n)?`<span class="pill ok">gesetzt</span>`:`<span class="pill warn">fehlt</span>`}</div>
+        <div class="s">${E(d)}</div>${connected()?field(n):""}</div></div>`).join("")}
+    </div></div>
+
+    <div class="panel"><h2>Fabrik steuern</h2><div class="hint">Startet die Workflows sofort</div><div class="body">
+      <div class="row">
+        <button class="btn p" onclick="runWf(this,'produce.yml','Produktion gestartet',{brand:'${b.slug}'})">Reels produzieren</button>
+        <button class="btn" onclick="runWf(this,'post-reel.yml','Posting gestartet')">jetzt posten</button>
+        <button class="btn" onclick="runWf(this,'engage.yml','Engagement gestartet')">Kommentare holen</button>
+        <button class="btn" onclick="runWf(this,'dashboard.yml','Dashboard wird aktualisiert')">Daten aktualisieren</button>
+      </div>
+      <label style="margin-top:16px">Datenquelle</label>
+      <input id="s-repo" value="${E(CFG.repo)}">
+      <div class="row" style="margin-top:10px">
+        <span class="pill ${OFFLINE?"warn":"ok"}">${OFFLINE?"Offline – Demo-Daten":"live aus dashboard/state.json"}</span>
+        <span class="pill">Stand ${DT(S.generated_at)}</span>
+        <button class="btn s" id="s-save">Repo speichern</button>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="panel"><h2>Inbetriebnahme</h2><div class="hint">Einmalig, danach läuft alles ohne dich</div><div class="body"><div class="steps">
+    <div><div><b>Workflows aktivieren</b><span>pending-workflows/produce.yml und dashboard.yml nach .github/workflows/ kopieren</span></div></div>
+    <div><div><b>GitHub Pages einschalten</b><span>Settings → Pages → Branch main, Ordner /</span></div></div>
+    <div><div><b>Token verbinden</b><span>oben – danach läuft alles über diese Oberfläche</span></div></div>
+    <div><div><b>Kanal-Zugänge eintragen</b><span>je Plattform, dann »jetzt posten« mit einem Testlauf</span></div></div>
+  </div></div></div>`;
+
+  $("s-connect").onclick = async () => {
+    const t = $("s-token").value.trim(); if(!t) return toast("Token eintragen.");
+    localStorage.setItem("cf.token", t);
+    try {
+      const me = await gh("/user");
+      await refreshSecrets();
+      toast(`Verbunden als ${me.login}.`); renderSettings();
+    } catch(e){ localStorage.removeItem("cf.token"); toast("Token abgelehnt: " + e.message); }
+  };
+  if ($("s-logout")) $("s-logout").onclick = () => { localStorage.removeItem("cf.token"); SECRETS = new Set(); toast("Getrennt."); renderSettings(); };
+  $("s-save").onclick = () => { CFG.repo = $("s-repo").value.trim(); localStorage.setItem("cf.repo", CFG.repo); toast("Repo gespeichert."); load(true); };
+}
+window.saveSecret = async (name) => {
+  const el = $("sec-" + name), v = el.value.trim();
+  if (!v) return toast("Wert eintragen.");
+  try { await ghSetSecret(name, v); el.value = ""; SECRETS.add(name); toast(`${name} gespeichert.`); renderSettings(); }
+  catch(e){ toast("Fehlgeschlagen: " + e.message); }
+};
+window.runWf = async (btn, wf, note, inputs) => {
+  if (!connected()) return toast("Erst unter Einstellungen mit GitHub verbinden.");
+  const label = btn.textContent; busy(btn, true, label);
+  try { await ghDispatch(wf, inputs); toast(note + " – Fortschritt unter Actions."); }
+  catch(e){ toast("Workflow nicht gestartet: " + e.message + " (liegt die Datei in .github/workflows/?)"); }
+  busy(btn, false, label);
+};
+window.toggleTarget = async (k) => {
+  if (!connected()) return toast("Erst mit GitHub verbinden.");
+  const b = brandOf();
+  const t = new Set(b.targets||[]);
+  t.has(k) ? t.delete(k) : t.add(k);
+  try {
+    const f = await ghGetFile(`brands/${b.slug}/brand.json`);
+    const json = JSON.parse(decodeURIComponent(escape(atob((f.content||"").replace(/\n/g,"")))));
+    json.targets = [...t];
+    await ghPutFile(`brands/${b.slug}/brand.json`, JSON.stringify(json, null, 2) + "\n", `brand ${b.slug}: Ziele ${[...t].join(",")}`);
+    b.targets = [...t];
+    toast(`Ziele: ${[...t].join(", ") || "keine"}`); renderSettings();
+  } catch(e){ toast("Nicht gespeichert: " + e.message); }
+};
+
+/* ============ Drawer ============ */
 window.openCard = (brand, id) => {
   const x = (S.pipeline||[]).find(p=>p.brand===brand&&p.id===id); if(!x) return;
   const st = STAGES.find(s=>s[0]===x.stage) || ["","–"];
-  const dr = document.getElementById("drawer");
-  dr.innerHTML = `<button class="btn s close" onclick="closeCard()">schließen</button>
+  $("drawer").innerHTML = `<button class="btn s close" onclick="closeCard()">schließen</button>
     <div class="pill ${x.stage==="live"?"info":x.stage==="paused"?"warn":x.fact_check==="ok"?"ok":"bad"}">${E(st[1])}</div>
     <h3>${E(x.title || x.thema || "Reel " + x.id)}</h3>
     <div class="sub">${E(x.brand)}/${E(x.id)} · ${E(x.thema||"")} · Stimme ${E(x.voice||"–")}</div>
@@ -411,95 +885,123 @@ window.openCard = (brand, id) => {
     <div class="kv">
       <div>Termin</div><div>${DT(x.publish_at)}</div>
       <div>Ziele</div><div>${(x.targets||[]).map(t=>`<span class="pill">${E(t)}</span>`).join(" ")}</div>
-      <div>Fakten-Check</div><div>${x.fact_check==="ok"?`<span class="pill ok">ok · ${x.sources.verified}/${x.sources.total} Quellen</span>`:`<span class="pill bad">${E(x.fact_check)} · ${x.sources.verified}/${x.sources.total}</span>`}</div>
+      <div>Fakten-Check</div><div>${x.fact_check==="ok"
+        ?`<span class="pill ok">ok · ${x.sources.verified}/${x.sources.total} Quellen</span>`
+        :`<span class="pill bad">${E(x.fact_check)} · ${x.sources.verified}/${x.sources.total}</span>`}</div>
       ${x.metrics?`<div>Leistung</div><div>${N(x.metrics.views)} Views · ${N(x.metrics.reach)} Reach · ${N(x.metrics.likes)} Likes · ${N(x.metrics.shares)} Shares · ${N(x.metrics.saved)} Saves</div>`:""}
       ${x.results?`<div>Plattformen</div><div><pre style="margin:0">${E(JSON.stringify(x.results,null,1))}</pre></div>`:""}
-      ${x.permalink?`<div>Link</div><div><a class="btn s" href="${E(x.permalink)}" target="_blank">auf Instagram öffnen</a></div>`:""}
+      ${x.permalink?`<div>Link</div><div><a class="btn s" href="${E(x.permalink)}" target="_blank">öffnen</a></div>`:""}
     </div>
-    ${x.source_list.length?`<h2 style="font-size:13px;margin:16px 0 8px;color:var(--mut);text-transform:uppercase;letter-spacing:.6px">Quellen</h2>
-      ${x.source_list.map(s=>`<div class="src"><div class="c">${s.verified?"✓":"○"} ${E(s.claim)}</div>
-        <div class="r">${E(s.ref)}${s.url?` · <a href="${E(s.url)}" target="_blank">Quelle</a>`:""}</div></div>`).join("")}`:""}
-    <h2 style="font-size:13px;margin:16px 0 8px;color:var(--mut);text-transform:uppercase;letter-spacing:.6px">Aktionen</h2>
+    ${x.source_list.length?`<label>Quellen</label>${x.source_list.map(s=>`<div class="src">
+      <div class="c">${s.verified?"✓":"○"} ${E(s.claim)}</div>
+      <div class="r">${E(s.ref)}${s.url?` · <a href="${E(s.url)}" target="_blank">Quelle</a>`:""}</div></div>`).join("")}`:""}
+    <label>Aktionen</label>
     <div class="row">
       ${x.stage==="queued"?`<button class="btn" onclick="sendCmd('pause',{brand:'${x.brand}',id:'${x.id}'})">pausieren</button>
         <button class="btn" onclick="moveCard('${x.brand}','${x.id}')">Termin ändern</button>
         <button class="btn d" onclick="sendCmd('delete',{brand:'${x.brand}',id:'${x.id}'})">aus Plan nehmen</button>`:""}
       ${x.stage==="paused"?`<button class="btn p" onclick="sendCmd('resume',{brand:'${x.brand}',id:'${x.id}'})">wieder einplanen</button>`:""}
       ${x.stage==="queued"||x.stage==="paused"?`<button class="btn" onclick="retargetCard('${x.brand}','${x.id}')">Ziele ändern</button>`:""}
-      <a class="btn" href="${GH}/tree/main/scripts" target="_blank">Script im Repo</a>
+      <a class="btn" href="${GH()}/tree/main/scripts" target="_blank">Script im Repo</a>
     </div>
     <div class="empty" style="margin-top:14px">Aktionen landen als Befehl in dashboard/commands.json und werden vom Workflow »Dashboard« (alle 30 Min) angewendet.</div>`;
-  dr.classList.add("on"); document.getElementById("scrim").classList.add("on");
+  $("drawer").classList.add("on"); $("scrim").classList.add("on");
 };
-window.closeCard = () => { document.getElementById("drawer").classList.remove("on"); document.getElementById("scrim").classList.remove("on"); };
-document.getElementById("scrim").onclick = closeCard;
-window.sendCmd = sendCmd;
+window.closeCard = () => { $("drawer").classList.remove("on"); $("scrim").classList.remove("on"); };
 window.moveCard = (brand,id) => {
   const d = prompt("Neuer Termin (JJJJ-MM-TT, Postzeit bleibt):"); if(!d) return;
-  const b = brandOf(); const [h] = (b.slot||"19:00").split(":").map(Number);
+  const [h] = (brandOf().slot||"19:00").split(":").map(Number);
   const m = new Date(d+"T00:00:00Z").getUTCMonth();
-  const iso = `${d}T${String(h-((m>=3&&m<=9)?2:1)).padStart(2,"0")}:00:00Z`;
-  sendCmd("move",{brand,id},{publish_at:iso});
+  sendCmd("move",{brand,id},{publish_at:`${d}T${String(h-((m>=3&&m<=9)?2:1)).padStart(2,"0")}:00:00Z`});
 };
 window.retargetCard = (brand,id) => {
   const t = prompt("Ziele, mit Komma (instagram,youtube,tiktok,facebook):","instagram,youtube"); if(!t) return;
   sendCmd("retarget",{brand,id},{targets:t.split(",").map(s=>s.trim()).filter(Boolean)});
 };
 
-/* ---------- shell ---------- */
+/* ============ Shell ============ */
+function setTheme(t){
+  document.documentElement.dataset.theme = t;
+  localStorage.setItem("cf.theme", t);
+  $("themelbl").textContent = t === "light" ? "Hell" : "Dunkel";
+  if (S) paint();
+}
+$("themebtn").onclick = () => setTheme(document.documentElement.dataset.theme === "light" ? "dark" : "light");
+
 function renderMenu(){
   const p = pipe();
   const open = p.filter(x=>x.stage==="script").length
     + p.filter(x=>x.stage==="queued" && new Date(x.publish_at) < Date.now()-3600e3).length
     + p.filter(x=>x.results && Object.values(x.results).some(r=>r&&r.error)).length;
-  document.getElementById("menu").innerHTML = VIEWS.map(([k,label])=>{
+  $("menu").innerHTML = VIEWS.map(([k,label])=>{
     const badge = k==="approval" && open ? `<span class="badge red">${open}</span>`
       : k==="pipeline" ? `<span class="badge">${p.length}</span>` : "";
-    return `<button data-v="${k}" class="${k===VIEW?"on":""}">${E(label)}${badge}</button>`;
+    return `<button data-v="${k}" class="${k===VIEW?"on":""}" style="position:relative">${E(label)}${badge}</button>`;
   }).join("");
   document.querySelectorAll("#menu button").forEach(b=>b.onclick=()=>go(b.dataset.v));
 }
 function go(v){
   VIEW = v; location.hash = v;
   document.querySelectorAll("section").forEach(s=>s.classList.remove("on"));
-  document.getElementById("v-"+v).classList.add("on");
+  $("v-"+v).classList.add("on");
   const meta = VIEWS.find(x=>x[0]===v);
-  document.getElementById("vtitle").textContent = meta[1];
-  document.getElementById("vsub").textContent = meta[2];
+  $("vtitle").textContent = meta[1]; $("vsub").textContent = meta[2];
+  if (v==="overview") animateNumbers($("v-overview"));
+  if (v==="analytics") animateNumbers($("v-analytics"));
   renderMenu();
+}
+function skeleton(){
+  $("v-overview").innerHTML = `<div class="kpis">${Array.from({length:5},()=>
+    `<div class="kpi"><div class="skel" style="width:60%"></div><div class="skel" style="height:26px;margin-top:10px;width:75%"></div>
+     <div class="skel" style="margin-top:8px;width:45%;height:10px"></div></div>`).join("")}</div>
+    <div class="panel"><div class="body"><div class="skel" style="height:190px"></div></div></div>`;
 }
 function paint(){
   const b = brandOf();
   document.documentElement.style.setProperty("--acc", b.accent || "#E0312E");
-  document.getElementById("brandmeta").textContent =
-    `${(b.targets||[]).length} Plattformen · ${b.slot||""} Berlin · @${b.handle?.instagram||b.slug}`;
+  $("brandmeta").textContent = `${(b.targets||[]).length} Plattformen · ${b.slot||""} Berlin · @${b.handle?.instagram||b.slug}`;
+  $("links").innerHTML = `<a href="${GH()}/actions" target="_blank">Actions</a> ·
+    <a href="${GH()}/edit/main/dashboard/commands.json" target="_blank">Befehle</a> ·
+    <a href="${GH()}/blob/main/FACTORY.md" target="_blank">Doku</a>`;
   const p = pipe();
   const bad = p.filter(x=>x.stage==="script").length + p.filter(x=>x.results&&Object.values(x.results).some(r=>r&&r.error)).length;
   const late = p.filter(x=>x.stage==="queued" && new Date(x.publish_at) < Date.now()-3600e3).length;
-  const dot = document.getElementById("healthdot"), txt = document.getElementById("healthtxt");
-  if (bad||late){ dot.style.background="var(--warn)"; txt.textContent = `${bad+late} Punkt(e) offen`; }
-  else { dot.style.background="var(--ok)"; txt.textContent = "Fabrik läuft"; }
-  document.getElementById("stamp").innerHTML =
-    `${p.filter(x=>x.stage==="queued").length} geplant · ${p.filter(x=>x.stage==="checked").length} geprüft im Vorrat<br>Stand ${DT(S.generated_at)}`;
-  renderOverview(); renderPipeline(); renderApproval(); renderAnalytics(); renderBrands();
+  $("healthdot").style.background = (bad||late) ? "var(--warn)" : "var(--ok)";
+  $("healthtxt").textContent = (bad||late) ? `${bad+late} Punkt(e) offen` : "Fabrik läuft";
+  $("demobadge").innerHTML = OFFLINE
+    ? `<div class="demo">● Offline-Vorschau mit Demo-Daten – hochgeladen zeigt sie die echten Zahlen</div>` : "";
+  $("stamp").innerHTML = `${p.filter(x=>x.stage==="queued").length} geplant · ${p.filter(x=>x.stage==="checked").length} geprüft im Vorrat<br>Stand ${DT(S.generated_at)}`;
+  renderOverview(); renderPipeline(); renderApproval(); renderAnalytics(); renderBrands(); renderSettings();
   renderMenu();
 }
-async function load(){
-  const r = await fetch("dashboard/state.json"+bust());
-  if(!r.ok) throw new Error("state.json fehlt – Workflow »Dashboard« einmal starten");
-  S = await r.json();
-  const sel = document.getElementById("brand");
-  if (!BRAND) BRAND = (S.brands[0]||{}).slug;
+async function load(force){
+  try{
+    const r = await fetch("dashboard/state.json?t=" + Date.now(), { cache:"no-store" });
+    if(!r.ok) throw new Error("state.json " + r.status);
+    S = await r.json(); OFFLINE = false;
+  }catch(e){
+    if (S && !force) return;
+    S = demoState(); OFFLINE = true;
+  }
+  const sel = $("brand");
+  if (!BRAND || !S.brands.some(b=>b.slug===BRAND)) BRAND = (S.brands[0]||{}).slug;
   sel.innerHTML = S.brands.map(b=>`<option value="${E(b.slug)}"${b.slug===BRAND?" selected":""}>${E(b.name)}${b.active?"":" (inaktiv)"}</option>`).join("");
   sel.onchange = () => { BRAND = sel.value; paint(); };
   paint();
 }
 (async function init(){
+  setTheme(localStorage.getItem("cf.theme")
+    || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"));
+  skeleton();
+  await load();
+  refreshSecrets().then(()=>{ if (VIEW==="settings") renderSettings(); });
   const h = location.hash.slice(1);
-  try { await load(); if (VIEWS.some(v=>v[0]===h)) go(h); else go("overview"); }
-  catch(e){ document.getElementById("stamp").textContent = e.message; document.getElementById("v-overview").innerHTML = `<div class="panel"><div class="body"><div class="empty">${E(e.message)}</div><a class="btn" href="${GH}/actions" target="_blank">Actions öffnen</a></div></div>`; }
-  setInterval(()=>load().catch(()=>{}), 60000);
+  go(VIEWS.some(v=>v[0]===h) ? h : "overview");
+  setInterval(()=>load(), 60000);
+  addEventListener("hashchange", () => { const k = location.hash.slice(1); if (k!==VIEW && VIEWS.some(v=>v[0]===k)) go(k); });
+  addEventListener("keydown", e => { if (e.key === "Escape") closeCard(); });
 })();
+$("scrim").onclick = () => closeCard();
 </script>
 </body>
 </html>
