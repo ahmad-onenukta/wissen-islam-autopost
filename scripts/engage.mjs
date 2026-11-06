@@ -58,27 +58,43 @@ for (const o of outbox) {
 console.log(`Outbox: ${sent} gesendet`);
 
 // ---------- 1. INBOX: neue Kommentare ---------------------------------------
+// Diagnose (seit 06.11.): kein comments_count-Filter mehr, jede Reel-Abfrage einzeln
+// abgefangen, Ergebnis pro Reel im Log und in engage/state.json (comments_diag).
 const media = (await api(`${USER}/media`, {
   fields: "id,caption,timestamp,permalink,media_type,comments_count,like_count", limit: 25 })).data || [];
 
 let newComments = 0;
+const diag = { at: now, media_count: media.length, reels: [] };
 for (const m of media) {
-  if (!m.comments_count) continue;
-  let url = `${m.id}/comments`, params = { fields: "id,text,username,timestamp,replies{id,text,username,timestamp}", limit: 50 };
-  const comments = (await api(url, params)).data || [];
-  for (const c of comments) {
-    const all = [c, ...((c.replies && c.replies.data) || []).map(r => ({ ...r, parent_id: c.id }))];
-    for (const x of all) {
-      if (seen.has(x.id)) continue;
-      seen.add(x.id);
-      if ((x.username || "").toLowerCase() === OWN) continue;
-      inbox.push({ type: "comment", id: x.id, parent_id: x.parent_id || null, media_id: m.id,
-        permalink: m.permalink, username: x.username, text: x.text, timestamp: x.timestamp,
-        caption_start: (m.caption || "").slice(0, 80), status: "new" });
-      newComments++;
+  const d = { id: m.id, comments_count: m.comments_count ?? null, fetched: 0, new: 0, error: null };
+  try {
+    const params = { fields: "id,text,username,timestamp,replies{id,text,username,timestamp}", limit: 50 };
+    let r = await api(`${m.id}/comments`, params);
+    const comments = [...(r.data || [])];
+    let pages = 1;
+    while (r.paging && r.paging.next && pages < 6) {        // bis 300 Kommentare pro Reel
+      const rr = await fetch(r.paging.next); r = await rr.json().catch(() => ({}));
+      if (!rr.ok || r.error) { d.error = `paging: ${JSON.stringify(r.error || r)}`.slice(0, 300); break; }
+      comments.push(...(r.data || [])); pages++;
     }
-  }
+    d.fetched = comments.length;
+    for (const c of comments) {
+      const all = [c, ...((c.replies && c.replies.data) || []).map(x => ({ ...x, parent_id: c.id }))];
+      for (const x of all) {
+        if (seen.has(x.id)) continue;
+        seen.add(x.id);
+        if ((x.username || "").toLowerCase() === OWN) continue;
+        inbox.push({ type: "comment", id: x.id, parent_id: x.parent_id || null, media_id: m.id,
+          permalink: m.permalink, username: x.username, text: x.text, timestamp: x.timestamp,
+          caption_start: (m.caption || "").slice(0, 80), status: "new" });
+        newComments++; d.new++;
+      }
+    }
+  } catch (e) { d.error = e.message.slice(0, 300); }
+  diag.reels.push(d);
+  console.log(`Reel ${m.id}: comments_count=${d.comments_count} geholt=${d.fetched} neu=${d.new}${d.error ? " FEHLER=" + d.error : ""}`);
 }
+state.comments_diag = diag;
 
 // ---------- 1b. INBOX: neue DMs ---------------------------------------------
 let newDMs = 0;
@@ -97,7 +113,8 @@ try {
       newDMs++;
     }
   }
-} catch (e) { console.log("DM-Abfrage uebersprungen:", e.message); }
+  state.dm_diag = { at: now, conversations: convs.length, error: null };
+} catch (e) { console.log("DM-Abfrage uebersprungen:", e.message); state.dm_diag = { at: now, conversations: 0, error: e.message.slice(0, 300) }; }
 console.log(`Inbox: +${newComments} Kommentare, +${newDMs} DMs`);
 
 // ---------- 3. STATS ----------------------------------------------------------
