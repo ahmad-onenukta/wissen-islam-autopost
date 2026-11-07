@@ -129,10 +129,16 @@ if (hrs(lastPost) !== null && hrs(lastPost) > 36)
   alerts.push({ level: "error", text: `Letzter Post vor ${hrs(lastPost)} h – Posting-Workflow pruefen.`, action: "actions" });
 if (hrs(engState.last_run) !== null && hrs(engState.last_run) > 12)
   alerts.push({ level: "warn", text: `Engagement-Lauf vor ${hrs(engState.last_run)} h – GitHub drosselt Cron.`, action: "actions" });
+const MAX_ALTER_H = Number(process.env.ALERT_MAX_H || 48);
 for (const [f, label] of [["dashboard/produce-error.log", "Produktion"], ["dashboard/story-error.log", "Story"]]) {
   if (!fs.existsSync(f)) continue;
   const txt = fs.readFileSync(f, "utf8");
-  if (/quota_exceeded|credits remaining/i.test(txt)) {
+  // Guthaben-Fehler bleiben stehen, bis die Produktion wieder laeuft; alle anderen
+  // Logs nur melden, solange sie frisch sind - sonst stehen behobene Fehler ewig da.
+  const stamp = (txt.match(/\d{4}-\d{2}-\d{2}T[\d:.]+Z/) || [])[0];
+  const quota = /quota_exceeded|credits remaining/i.test(txt);
+  if (!quota && stamp && hrs(stamp) > MAX_ALTER_H) continue;
+  if (quota) {
     const left = (txt.match(/You have (\d+) credits remaining/i) || [])[1];
     alerts.push({ level: "error", action: "elevenlabs",
       text: `ElevenLabs-Guthaben aufgebraucht${left ? ` (${left} Credits uebrig)` : ""} – ohne Credits kein Voice-Over und damit kein neues Reel. Plan aufladen, danach laeuft die Produktion von selbst weiter.` });
@@ -141,7 +147,9 @@ for (const [f, label] of [["dashboard/produce-error.log", "Produktion"], ["dashb
   const line = (txt.split("\n").find(l => /error|Error|FEHLT|not found|failed/i.test(l)) || txt.split("\n")[0] || "").slice(0, 220);
   alerts.push({ level: "error", text: `${label} abgebrochen: ${line}`, action: "actions" });
 }
-const errCards = pipeline.filter(x => x.results && Object.values(x.results).some(r => r && r.error));
+// Posting-Fehler nur aus den letzten Tagen - sonst stehen behobene Fehler ewig im Dashboard.
+const errCards = pipeline.filter(x => x.results && Object.values(x.results).some(r => r && r.error)
+  && x.publish_at && hrs(x.publish_at) !== null && hrs(x.publish_at) <= MAX_ALTER_H * 2);
 for (const x of errCards)
   alerts.push({ level: "error", brand: x.brand, text: `Reel ${x.id}: Posting-Fehler auf ${Object.entries(x.results).filter(([, r]) => r && r.error).map(([k]) => k).join(", ")}.`, action: "actions" });
 
