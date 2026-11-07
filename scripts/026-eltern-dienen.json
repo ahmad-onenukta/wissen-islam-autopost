@@ -1,18 +1,24 @@
 {
  "id": "026",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
  "thema": "Eltern dienen",
  "title": "Dreimal die Mutter, einmal der Vater",
- "hook": "Ein Mann fragt den Propheten ﷺ, wer sein Bestes am meisten verdient. Die Antwort ist viermal — und die Reihenfolge ist kein Zufall.",
+ "hook": "Ein Mann fragt den Propheten (saw), wer sein Bestes am meisten verdient. Die Antwort ist viermal — und die Reihenfolge ist kein Zufall.",
  "appeal": "Ruf sie heute an und frag nicht „alles gut?“, sondern: Was kann ich für dich tun? Und dann tu es.",
  "blocks": [
   {
-   "top": "Ein Mann kommt zum Propheten ﷺ",
-   "big": "und stellt *eine* Frage.",
+   "top": "Dreimal fragte ein Mann, wer seine Güte",
+   "big": "am meisten *verdient*.",
    "visual": "none"
   },
   {
-   "top": "„Wer verdient es am meisten,",
-   "big": "dass ich ihn *gut* behandle?“",
+   "top": "Dreimal dieselbe Antwort:",
+   "big": "*deine Mutter*. Erst beim vierten Mal der Vater.",
    "visual": "ayah",
    "ar": "*مَنْ أَحَقُّ بِحُسْنِ صَحَابَتِى*",
    "de": "„Wer hat das größte Recht auf meine gute Behandlung?“",
@@ -156,9 +162,10 @@
    ]
   }
  ],
+ "vo_full": "Dreimal fragte ein Mann, wer seine Güte am meisten verdient. [pause] Dreimal dieselbe Antwort: deine Mutter. [pause] Erst beim vierten Mal der Vater. [pause] Die Antwort: „Deine Mutter.“ [pause] Er fragt: „Und dann?“ „Deine Mutter.“ [pause] „Und dann?“ „Deine Mutter.“ [pause] „Und dann?“ „Dann dein Vater.“ [pause] Dreimal die Mutter. Dann der Vater. [pause] Das ist keine Abwertung des Vaters. Es ist eine Gewichtung. [pause] Und der Koran sagt, warum. Er nennt genau drei Dinge, die sie allein getragen hat. [pause] „Seine Mutter trug ihn unter Schwäche über Schwäche.“ [pause] Tragen. Gebären. Stillen. Drei Lasten, die niemand teilen kann. [pause] Deshalb dreimal. Die Zahl ist eine Rechnung. [pause] Und dann wird es im Koran sehr konkret. Die Grenze ist nicht Anschreien. [pause] „Sag nicht einmal Uff zu ihnen.“ [pause] Das genervte Geräusch. Das ist die Linie. [pause] Und beachte, wo der Vers steht: direkt nach „Dient keinem außer Ihm“. [pause] Zwei Sätze. Ein Vers. Näher geht es nicht. [pause] Ruf sie heute an. Und frag nicht „alles gut?“ [pause] Frag: Was kann ich für dich tun? Und dann tu es.",
  "sources": [
   {
-   "claim": "Ein Mann fragt, wer das größte Recht auf gute Behandlung hat; der Prophet ﷺ sagt dreimal „deine Mutter“, dann „dein Vater“",
+   "claim": "Ein Mann fragt, wer das größte Recht auf gute Behandlung hat; der Prophet (saw) sagt dreimal „deine Mutter“, dann „dein Vater“",
    "ref": "Sahih al-Bukhari 5971, Buch 78 (al-Adab), Hadith 2 (Abu Huraira)",
    "url": "https://sunnah.com/bukhari:5971",
    "verified": true
@@ -176,21 +183,5 @@
    "verified": true
   }
  ],
- "caption": "Ein Mann fragt den Propheten ﷺ: Wer verdient es am meisten, dass ich ihn gut behandle?\n\n„Deine Mutter.“ — „Und dann?“ — „Deine Mutter.“ — „Und dann?“ — „Deine Mutter.“ — „Und dann?“ — „Dann dein Vater.“ (Bukhari 5971)\n\nDas ist keine Abwertung des Vaters, sondern eine Gewichtung. Der Koran sagt, warum: „Seine Mutter trug ihn unter Schwäche über Schwäche.“ (31:15) Tragen, gebären, stillen — drei Lasten, die niemand teilen kann.\n\nUnd die Grenze ist nicht Anschreien: „Sag nicht einmal ‚Uff‘ zu ihnen.“ (17:24) — im selben Vers wie „Dient keinem außer Ihm“.\n\nFrag heute nicht „alles gut?“, sondern: Was kann ich für dich tun?\n\nQuellen: Sahih al-Bukhari 5971 · alislam.org\n\n#islam #eltern #mutter #koran #hadith #wissen #muslim #deutsch",
- "handle": "@nurwissen_official",
- "theme": "dark",
- "captions": false,
- "variant": "A-essay-wordsync",
- "align": "left",
- "voice": "sabrina",
- "vo_full": "Ein Mann kommt zum Propheten sallallahu alaihi wa sallam und stellt eine Frage. [pause] „Wer verdient es am meisten, dass ich ihn gut behandle?“ [pause] Die Antwort: „Deine Mutter.“ [pause] Er fragt: „Und dann?“ „Deine Mutter.“ [pause] „Und dann?“ „Deine Mutter.“ [pause] „Und dann?“ „Dann dein Vater.“ [pause] Dreimal die Mutter. Dann der Vater. [pause] Das ist keine Abwertung des Vaters. Es ist eine Gewichtung. [pause] Und der Koran sagt, warum. Er nennt genau drei Dinge, die sie allein getragen hat. [pause] „Seine Mutter trug ihn unter Schwäche über Schwäche.“ [pause] Tragen. Gebären. Stillen. Drei Lasten, die niemand teilen kann. [pause] Deshalb dreimal. Die Zahl ist eine Rechnung. [pause] Und dann wird es im Koran sehr konkret. Die Grenze ist nicht Anschreien. [pause] „Sag nicht einmal Uff zu ihnen.“ [pause] Das genervte Geräusch. Das ist die Linie. [pause] Und beachte, wo der Vers steht: direkt nach „Dient keinem außer Ihm“. [pause] Zwei Sätze. Ein Vers. Näher geht es nicht. [pause] Ruf sie heute an. Und frag nicht „alles gut?“ [pause] Frag: Was kann ich für dich tun? Und dann tu es.",
- "palette": {
-  "bg": "#1C1410",
-  "ink": "#F3E9DC",
-  "dim": "#B8A68F",
-  "accent": "#D98C3F",
-  "card": "#2A1F18",
-  "line": "#4A3A2E",
-  "mute": "#8A7866"
- }
+ "caption": "Ein Mann fragt den Propheten (saw): Wer verdient es am meisten, dass ich ihn gut behandle?\n\n„Deine Mutter.“ — „Und dann?“ — „Deine Mutter.“ — „Und dann?“ — „Deine Mutter.“ — „Und dann?“ — „Dann dein Vater.“ (Bukhari 5971)\n\nDas ist keine Abwertung des Vaters, sondern eine Gewichtung. Der Koran sagt, warum: „Seine Mutter trug ihn unter Schwäche über Schwäche.“ (31:15) Tragen, gebären, stillen — drei Lasten, die niemand teilen kann.\n\nUnd die Grenze ist nicht Anschreien: „Sag nicht einmal ‚Uff‘ zu ihnen.“ (17:24) — im selben Vers wie „Dient keinem außer Ihm“.\n\nFrag heute nicht „alles gut?“, sondern: Was kann ich für dich tun?\n\nQuellen: Sahih al-Bukhari 5971 · alislam.org\n\n#islam #eltern #mutter #koran #hadith #wissen #muslim #deutsch"
 }

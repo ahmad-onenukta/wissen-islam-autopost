@@ -1,9 +1,15 @@
 {
  "id": "030",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
  "thema": "Alte Historische Story",
  "title": "Mit 21 losgegangen — und drei Kontinente später zurück",
  "hook": "Ein 21-Jähriger geht 1325 allein aus Tanger los. Er will nach Mekka. Zurück ist er erst 24 Jahre später — nach drei Kontinenten.",
- "appeal": "Deine erste Reise muss nicht nach China gehen. Sie muss nur anfangen, bevor du dich bereit fühlst.",
+ "appeal": "Dreizehnhundertfünfundzwanzig los mit einundzwanzig. Zurück erst dreizehnhundertneunundvierzig. Drei Kontinente, bis nach China. Die Qualifikation kam nach dem Aufbruch. Bei uns ist es meist umgekehrt.",
  "blocks": [
   {
    "top": "Ein *21-Jähriger* geht 1325 allein aus Tanger los.",
@@ -145,49 +151,32 @@
    "light": true
   },
   {
-   "top": "Deine erste Reise muss nicht nach China gehen.",
-   "big": "Sie muss nur *anfangen*.",
+   "top": "1325 los mit *21*. Zurück erst *1349*.",
+   "big": "Drei Kontinente, bis nach *China*.",
    "visual": "none"
   },
   {
-   "top": "",
-   "big": "Bevor du dich *bereit* fühlst.",
-   "visual": "none"
+   "top": "Die Qualifikation kam *nach* dem Aufbruch.",
+   "big": "Bei uns ist es meist *umgekehrt*.",
+   "visual": "question"
   },
   {
    "top": "",
    "big": "",
    "visual": "sources",
    "sources": [
-    "AramcoWorld: „The Longest Hajj — The Journeys of Ibn Battuta“ (2000)",
-    "Aufbruch 1325 aus Tanger mit 21 · Rückkehr 1349 · Berichte bis 1354",
-    "Rihla: diktiert über zwei Jahre an Ibn Dschuzayy"
+    "UC Berkeley ORIAS · H. A. R. Gibb, The Travels of Ibn Battuta (Rihla)"
    ]
   }
  ],
+ "vo_full": "Ein 21-Jähriger geht 1325 allein aus Tanger los. [pause] Sein Ziel ist nicht Abenteuer. Sein Ziel ist die Haddsch. [pause] Nach eigenem Bericht: Er brach allein auf, um die heiligen Städte zu besuchen. [pause] Zurück in Tanger ist er erst 1349. Rund 24 Jahre später. [pause] Dazwischen: drei Kontinente. [pause] Mekka. Medina. Kairo. Damaskus. Nordafrika. [pause] Der Indische Ozean. Und bis nach China. [pause] Insgesamt reichen seine Berichte von 1325 bis 1354. [pause] Und jetzt das Entscheidende. Er hat nichts selbst geschrieben. [pause] Zurück in Fes beauftragt der Sultan einen Hofdichter. [pause] Sein Name: Ibn Dschuzayy. [pause] Zwei Jahre lang diktiert Ibn Battuta. Der andere schreibt. [pause] Forscher gehen davon aus: Ibn Dschuzayy hat geführt, redigiert und ergänzt. [pause] Heißt: Ohne diesen zweiten Mann wäre alles weg. [pause] Eine Reise ohne Aufzeichnung endet mit dem Reisenden. [pause] Und noch etwas: Er ist nicht als Gelehrter losgezogen. [pause] Er wurde unterwegs Richter. Berater. Gesandter. [pause] Die Qualifikation kam nach dem Aufbruch. [pause] Wir warten meist umgekehrt. Erst fertig werden. Dann losgehen. [pause] Dreizehnhundertfünfundzwanzig los mit einundzwanzig. Zurück erst dreizehnhundertneunundvierzig. Drei Kontinente, bis nach China. [pause] Die Qualifikation kam nach dem Aufbruch. Bei uns ist es meist umgekehrt.",
  "sources": [
   {
-   "claim": "Ibn Battuta brach 1325 mit 21 Jahren allein aus Tanger auf; Rückkehr 1349; Berichte bis 1354; drei Kontinente bis China; Rihla über zwei Jahre dem Hofdichter Ibn Dschuzayy diktiert, der redigierte und ergänzte",
-   "ref": "AramcoWorld, „The Longest Hajj: The Journeys of Ibn Battuta“, 2000",
-   "url": "https://www.aramcoworld.com/en/articles/2000/the-longest-hajj-the-journeys-of-ibn-battuta-intro",
+   "claim": "Ibn Battuta verlässt Tanger 1325 im Alter von 21 Jahren, allein, mit dem Ziel der Haddsch",
+   "ref": "UC Berkeley ORIAS, nach H. A. R. Gibb (Übers.), The Travels of Ibn Battuta, S. 8",
+   "url": "https://orias.berkeley.edu/resources-teachers/travels-ibn-battuta/journey/across-north-africa-cairo-1325",
    "verified": true
   }
  ],
- "caption": "Ein 21-Jähriger geht 1325 allein aus Tanger los. Nicht für ein Abenteuer — für die Haddsch. Zurück ist er erst 1349, rund 24 Jahre später. Seine Berichte reichen bis 1354.\n\nDazwischen: drei Kontinente. Mekka, Medina, Kairo, Damaskus, der Indische Ozean — und bis nach China.\n\nUnd das Entscheidende: Er hat nichts selbst geschrieben. Zurück in Fes diktierte er zwei Jahre lang dem Hofdichter Ibn Dschuzayy, der die Rihla führte, redigierte und ergänzte. Ohne diesen zweiten Mann wäre alles weg — eine Reise ohne Aufzeichnung endet mit dem Reisenden.\n\nEr zog auch nicht als Gelehrter los. Richter, Berater, Gesandter wurde er unterwegs. Die Qualifikation kam nach dem Aufbruch.\n\nQuellen: AramcoWorld 2000\n\n#islam #geschichte #ibnbattuta #reisen #wissen #muslim #deutsch",
- "handle": "@nurwissen_official",
- "theme": "dark",
- "captions": false,
- "variant": "A-essay-wordsync",
- "align": "left",
- "voice": "robert",
- "vo_full": "Ein 21-Jähriger geht 1325 allein aus Tanger los. [pause] Sein Ziel ist nicht Abenteuer. Sein Ziel ist die Haddsch. [pause] Nach eigenem Bericht: Er brach allein auf, um die heiligen Städte zu besuchen. [pause] Zurück in Tanger ist er erst 1349. Rund 24 Jahre später. [pause] Dazwischen: drei Kontinente. [pause] Mekka. Medina. Kairo. Damaskus. Nordafrika. [pause] Der Indische Ozean. Und bis nach China. [pause] Insgesamt reichen seine Berichte von 1325 bis 1354. [pause] Und jetzt das Entscheidende. Er hat nichts selbst geschrieben. [pause] Zurück in Fes beauftragt der Sultan einen Hofdichter. [pause] Sein Name: Ibn Dschuzayy. [pause] Zwei Jahre lang diktiert Ibn Battuta. Der andere schreibt. [pause] Forscher gehen davon aus: Ibn Dschuzayy hat geführt, redigiert und ergänzt. [pause] Heißt: Ohne diesen zweiten Mann wäre alles weg. [pause] Eine Reise ohne Aufzeichnung endet mit dem Reisenden. [pause] Und noch etwas: Er ist nicht als Gelehrter losgezogen. [pause] Er wurde unterwegs Richter. Berater. Gesandter. [pause] Die Qualifikation kam nach dem Aufbruch. [pause] Wir warten meist umgekehrt. Erst fertig werden. Dann losgehen. [pause] Deine erste Reise muss nicht nach China gehen. Sie muss nur anfangen. [pause] Bevor du dich bereit fühlst.",
- "palette": {
-  "bg": "#1C1410",
-  "ink": "#F3E9DC",
-  "dim": "#B8A68F",
-  "accent": "#D98C3F",
-  "card": "#2A1F18",
-  "line": "#4A3A2E",
-  "mute": "#8A7866"
- }
+ "caption": "Ein 21-Jähriger geht 1325 allein aus Tanger los. Nicht für ein Abenteuer — für die Haddsch. Zurück ist er erst 1349, rund 24 Jahre später. Seine Berichte reichen bis 1354.\n\nDazwischen: drei Kontinente. Mekka, Medina, Kairo, Damaskus, der Indische Ozean — und bis nach China.\n\nUnd das Entscheidende: Er hat nichts selbst geschrieben. Zurück in Fes diktierte er zwei Jahre lang dem Hofdichter Ibn Dschuzayy, der die Rihla führte, redigierte und ergänzte. Ohne diesen zweiten Mann wäre alles weg — eine Reise ohne Aufzeichnung endet mit dem Reisenden.\n\nMit 21 los, zurück erst 24 Jahre später. Die Qualifikation kam nach dem Aufbruch — bei uns ist es meist umgekehrt.\n\nQuellen: AramcoWorld 2000\n\n#islam #geschichte #ibnbattuta #reisen #wissen #muslim #deutsch"
 }

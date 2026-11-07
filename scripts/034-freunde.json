@@ -1,18 +1,24 @@
 {
  "id": "034",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
  "thema": "Freunde",
  "title": "Du bist auf der Religion deines Freundes",
- "hook": "Der Prophet ﷺ hat einen Satz gesagt, der keine Empfehlung ist, sondern eine Feststellung. Und dann einen Auftrag daraus gemacht.",
+ "hook": "Der Prophet (saw) hat einen Satz gesagt, der keine Empfehlung ist, sondern eine Feststellung. Und dann einen Auftrag daraus gemacht.",
  "appeal": "Geh heute deine letzten fünf Chats durch und frag bei jedem: Zieht der mich nach oben oder nach unten? Dann handle danach.",
  "blocks": [
   {
-   "top": "Der Prophet ﷺ hat einen Satz gesagt,",
-   "big": "der keine *Empfehlung* ist.",
+   "top": "„Der Mensch ist auf der Religion",
+   "big": "seines engen *Freundes*.“",
    "visual": "none"
   },
   {
-   "top": "Sondern eine",
-   "big": "*Feststellung*.",
+   "top": "Das ist keine Empfehlung.",
+   "big": "Das ist eine *Diagnose*.",
    "visual": "none",
    "light": true
   },
@@ -151,6 +157,7 @@
    ]
   }
  ],
+ "vo_full": "Der Mensch ist auf der Religion seines engen Freundes. [pause] Das ist keine Empfehlung. Das ist eine Diagnose. [pause] „Der Mensch ist auf der Religion seines engen Freundes.“ [pause] Das Wort khalil heißt nicht „Bekannter“. [pause] Es heißt: der, dem du nichts verheimlichst. [pause] Und der Satz behauptet nicht, dass du werden könntest wie er. [pause] Er sagt: Du bist schon auf seiner Linie. [pause] Dann kommt der Auftrag: „So soll jeder schauen, wen er sich zum engen Freund nimmt.“ [pause] Nicht: Hab keine Freunde. Sondern: Schau hin. Bewusst. [pause] Und das ist der unbequeme Teil. Die meisten Freundschaften sind nicht gewählt. [pause] Sie sind passiert. Schule. Arbeit. Nachbarschaft. Gruppe. [pause] Niemand hat dich gefragt, ob diese fünf Leute dein Maßstab sein sollen. [pause] Und jetzt kombiniere das mit dem Bild vom Moschusträger. [pause] Beim Guten: drei Wege nach oben. [pause] Beim Schlechten: keiner. [pause] Zusammen ergibt das eine klare Regel. Du musst nicht predigen. [pause] Du musst nur entscheiden, wer nah genug ist, um zu färben. [pause] Niemand muss aus deinem Leben raus. Aber nicht jeder muss rein. [pause] Geh heute deine letzten fünf Chats durch. Und frag bei jedem: oben oder unten? [pause] Dann handle danach.",
  "sources": [
   {
    "claim": "„Der Mensch ist auf der Religion seines engen Freundes (khalil) — so soll jeder von euch schauen, wen er sich zum engen Freund nimmt“ (Abu Huraira)",
@@ -165,12 +172,5 @@
    "verified": true
   }
  ],
- "caption": "„Der Mensch ist auf der Religion seines engen Freundes — so soll jeder von euch schauen, wen er sich zum engen Freund nimmt.“ (Tirmidhi 2378, hasan)\n\nDas ist keine Empfehlung, sondern eine Feststellung. Der Satz behauptet nicht, du könntest wie er werden — er sagt, du bist schon auf seiner Linie.\n\nUnd khalil heißt nicht „Bekannter“, sondern: der, dem du nichts verheimlichst.\n\nDer unbequeme Teil: Die meisten Freundschaften sind nicht gewählt, sondern passiert. Schule, Arbeit, Gruppe. Niemand hat dich gefragt, ob diese fünf Leute dein Maßstab sein sollen.\n\nNiemand muss aus deinem Leben raus. Aber nicht jeder muss rein.\n\nQuellen: Jami at-Tirmidhi 2378 · Sahih al-Bukhari 5534\n\n#islam #freunde #hadith #umgang #wissen #muslim #deutsch",
- "handle": "@nurwissen_official",
- "theme": "dark",
- "captions": false,
- "variant": "A-essay-wordsync",
- "align": "left",
- "voice": "robert",
- "vo_full": "Der Prophet sallallahu alaihi wa sallam hat einen Satz gesagt, der keine Empfehlung ist. [pause] Sondern eine Feststellung. [pause] „Der Mensch ist auf der Religion seines engen Freundes.“ [pause] Das Wort khalil heißt nicht „Bekannter“. [pause] Es heißt: der, dem du nichts verheimlichst. [pause] Und der Satz behauptet nicht, dass du werden könntest wie er. [pause] Er sagt: Du bist schon auf seiner Linie. [pause] Dann kommt der Auftrag: „So soll jeder schauen, wen er sich zum engen Freund nimmt.“ [pause] Nicht: Hab keine Freunde. Sondern: Schau hin. Bewusst. [pause] Und das ist der unbequeme Teil. Die meisten Freundschaften sind nicht gewählt. [pause] Sie sind passiert. Schule. Arbeit. Nachbarschaft. Gruppe. [pause] Niemand hat dich gefragt, ob diese fünf Leute dein Maßstab sein sollen. [pause] Und jetzt kombiniere das mit dem Bild vom Moschusträger. [pause] Beim Guten: drei Wege nach oben. [pause] Beim Schlechten: keiner. [pause] Zusammen ergibt das eine klare Regel. Du musst nicht predigen. [pause] Du musst nur entscheiden, wer nah genug ist, um zu färben. [pause] Niemand muss aus deinem Leben raus. Aber nicht jeder muss rein. [pause] Geh heute deine letzten fünf Chats durch. Und frag bei jedem: oben oder unten? [pause] Dann handle danach."
+ "caption": "„Der Mensch ist auf der Religion seines engen Freundes — so soll jeder von euch schauen, wen er sich zum engen Freund nimmt.“ (Tirmidhi 2378, hasan)\n\nDas ist keine Empfehlung, sondern eine Feststellung. Der Satz behauptet nicht, du könntest wie er werden — er sagt, du bist schon auf seiner Linie.\n\nUnd khalil heißt nicht „Bekannter“, sondern: der, dem du nichts verheimlichst.\n\nDer unbequeme Teil: Die meisten Freundschaften sind nicht gewählt, sondern passiert. Schule, Arbeit, Gruppe. Niemand hat dich gefragt, ob diese fünf Leute dein Maßstab sein sollen.\n\nNiemand muss aus deinem Leben raus. Aber nicht jeder muss rein.\n\nQuellen: Jami at-Tirmidhi 2378 · Sahih al-Bukhari 5534\n\n#islam #freunde #hadith #umgang #wissen #muslim #deutsch"
 }

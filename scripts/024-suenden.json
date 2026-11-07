@@ -1,18 +1,24 @@
 {
  "id": "024",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
  "thema": "Sünden",
  "title": "Zwei Dinge, mit denen du dich ins Verderben reden kannst",
- "hook": "Der Prophet ﷺ hat eine Regel gegeben, die aus genau zwei Möglichkeiten besteht. Und die meisten brechen sie täglich.",
+ "hook": "Der Prophet (saw) hat gesagt: Die meisten Menschen landen wegen zwei Körperteilen in Schwierigkeiten. Und einer davon wiegt nur 60 Gramm.",
  "appeal": "Bevor du heute etwas über jemanden sagst: frag dich, ob es wahr, nötig und freundlich ist. Fehlt eins — schweig.",
  "blocks": [
   {
-   "top": "Der Prophet ﷺ hat eine Regel gegeben,",
-   "big": "die aus *zwei* Möglichkeiten besteht.",
+   "top": "Der Prophet (saw) hat dir für alles, was du sagst,",
+   "big": "genau *zwei* Möglichkeiten gelassen.",
    "visual": "none"
   },
   {
-   "top": "Nicht drei. Nicht fünf.",
-   "big": "*Zwei*.",
+   "top": "Gutes sagen.",
+   "big": "Oder *schweigen*.",
    "visual": "letters",
    "letters": {
     "word": "12"
@@ -137,6 +143,7 @@
    ]
   }
  ],
+ "vo_full": "Der Prophet, Friede sei mit ihm, hat dir für alles, was du sagst, genau zwei Möglichkeiten gelassen. [pause] Gutes sagen. Oder schweigen. [pause] „So soll er Gutes sagen — oder schweigen.“ [pause] Da ist keine dritte Option. Kein „nur mal so gesagt“. [pause] Kein „ich meine es ja nicht böse“. Kein „das wissen doch alle“. [pause] Entweder es ist gut — oder es bleibt drin. [pause] Und beachte den Anfang des Hadithes: „Wer an Allah und den Jüngsten Tag glaubt …“ [pause] Die Zunge wird hier an den Glauben gekoppelt. Nicht an gute Manieren. [pause] Im selben Hadith stehen noch zwei Sätze. Sie gehören zusammen. [pause] „… soll seinen Nachbarn nicht schädigen.“ [pause] „… soll seinen Gast ehren.“ [pause] Drei Prüfungen. Alle drei im Nahbereich. [pause] Nicht Spendensumme. Nicht Gebetszahl. Wie du redest, mit wem du wohnst, wen du reinlässt. [pause] Warum ist die Zunge zuerst dran? Weil sie das billigste Werkzeug ist. [pause] Sie kostet keine Kraft. Keine Vorbereitung. Keine Entscheidung. [pause] Deshalb wird am meisten damit zerstört. [pause] Ein Satz über einen Abwesenden läuft weiter, wenn du längst weg bist. [pause] Bevor du heute etwas über jemanden sagst: Ist es wahr? Ist es nötig? Ist es freundlich? [pause] Fehlt eins — schweig.",
  "sources": [
   {
    "claim": "„Wer an Allah und den Jüngsten Tag glaubt, soll Gutes sagen oder schweigen“ — im selben Hadith: den Nachbarn nicht schädigen, den Gast ehren",
@@ -145,12 +152,5 @@
    "verified": true
   }
  ],
- "caption": "Der Prophet ﷺ hat eine Regel gegeben, die aus genau zwei Möglichkeiten besteht:\n\n„Wer an Allah und den Jüngsten Tag glaubt, soll Gutes sagen — oder schweigen.“ (Bukhari 6475)\n\nEs gibt keine dritte Option. Kein „nur mal so gesagt“, kein „ich meine es nicht böse“.\n\nIm selben Hadith stehen zwei weitere Sätze: den Nachbarn nicht schädigen, den Gast ehren. Drei Prüfungen — alle im Nahbereich. Nicht Spendensumme, nicht Gebetszahl.\n\nWarum die Zunge zuerst? Weil sie das billigste Werkzeug ist. Keine Kraft, keine Vorbereitung — deshalb wird am meisten damit zerstört.\n\nWahr, nötig, freundlich. Fehlt eins — schweig.\n\nQuellen: Sahih al-Bukhari 6475\n\n#islam #hadith #zunge #gheebah #wissen #muslim #deutsch",
- "handle": "@nurwissen_official",
- "theme": "dark",
- "captions": false,
- "variant": "A-essay-wordsync",
- "align": "left",
- "voice": "robert",
- "vo_full": "Der Prophet sallallahu alaihi wa sallam hat eine Regel gegeben, die aus zwei Möglichkeiten besteht. [pause] Nicht drei. Nicht fünf. Zwei. [pause] „So soll er Gutes sagen — oder schweigen.“ [pause] Da ist keine dritte Option. Kein „nur mal so gesagt“. [pause] Kein „ich meine es ja nicht böse“. Kein „das wissen doch alle“. [pause] Entweder es ist gut — oder es bleibt drin. [pause] Und beachte den Anfang des Hadithes: „Wer an Allah und den Jüngsten Tag glaubt …“ [pause] Die Zunge wird hier an den Glauben gekoppelt. Nicht an gute Manieren. [pause] Im selben Hadith stehen noch zwei Sätze. Sie gehören zusammen. [pause] „… soll seinen Nachbarn nicht schädigen.“ [pause] „… soll seinen Gast ehren.“ [pause] Drei Prüfungen. Alle drei im Nahbereich. [pause] Nicht Spendensumme. Nicht Gebetszahl. Wie du redest, mit wem du wohnst, wen du reinlässt. [pause] Warum ist die Zunge zuerst dran? Weil sie das billigste Werkzeug ist. [pause] Sie kostet keine Kraft. Keine Vorbereitung. Keine Entscheidung. [pause] Deshalb wird am meisten damit zerstört. [pause] Ein Satz über einen Abwesenden läuft weiter, wenn du längst weg bist. [pause] Bevor du heute etwas über jemanden sagst: Ist es wahr? Ist es nötig? Ist es freundlich? [pause] Fehlt eins — schweig."
+ "caption": "Der Prophet (saw) hat eine Regel gegeben, die aus genau zwei Möglichkeiten besteht:\n\n„Wer an Allah und den Jüngsten Tag glaubt, soll Gutes sagen — oder schweigen.“ (Bukhari 6475)\n\nEs gibt keine dritte Option. Kein „nur mal so gesagt“, kein „ich meine es nicht böse“.\n\nIm selben Hadith stehen zwei weitere Sätze: den Nachbarn nicht schädigen, den Gast ehren. Drei Prüfungen — alle im Nahbereich. Nicht Spendensumme, nicht Gebetszahl.\n\nWarum die Zunge zuerst? Weil sie das billigste Werkzeug ist. Keine Kraft, keine Vorbereitung — deshalb wird am meisten damit zerstört.\n\nWahr, nötig, freundlich. Fehlt eins — schweig.\n\nQuellen: Sahih al-Bukhari 6475\n\n#islam #hadith #zunge #gheebah #wissen #muslim #deutsch"
 }
