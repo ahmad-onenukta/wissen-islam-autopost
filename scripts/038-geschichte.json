@@ -1,0 +1,155 @@
+{
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
+ "id": "038",
+ "thema": "Geschichte",
+ "title": "Der Kalif nannte einen ehemaligen Sklaven seinen Herrn",
+ "vo_full": "Umar ibn al-Chattab regiert ein Weltreich. [pause] Und über einen ehemaligen Sklaven sagt er: Das ist unser Herr. [pause] Wörtlich. Sayyiduna. [pause] Bukhari dreitausendsiebenhundertvierundfünfzig. [pause] Der Satz lautet: Abu Bakr ist unser Herr — und er hat unseren Herrn freigelassen. [pause] Gemeint ist Bilal ibn Rabah. [pause] Geboren in Mekka, Mutter aus Abessinien, Eigentum des Umayya ibn Chalaf. [pause] Als er Muslim wird, wird er gefoltert. In der Mittagshitze, ein Stein auf der Brust. [pause] Und er sagt ein Wort. Ahad. Einer. [pause] Nicht als Argument. Als Antwort auf alles. [pause] Abu Bakr kauft ihn frei. [pause] Und jetzt kommt die Stelle, an der die Geschichte kippt. [pause] Als das Gebet eine Stimme braucht, wird nicht der Angesehenste gewählt. [pause] Sondern der, den man kurz zuvor noch besitzen konnte. [pause] Bilal wird der erste Muezzin. [pause] Nach der Überlieferung der Sira steigt er beim Einzug in Mekka auf die Kaaba und ruft von dort. [pause] Genau dort, wo man ihn gefoltert hatte. [pause] Das ist der Grund, warum der Satz von Umar so schwer wiegt. [pause] Er ist nicht höflich gemeint. Er ist eine Rangordnung. [pause] Der Kalif stellt sich unter den ehemaligen Sklaven. [pause] Bukhari dreitausendsiebenhundertvierundfünfzig. Ein Herrscher nennt einen Freigelassenen seinen Herrn. [pause] Findest du etwas Vergleichbares in der Geschichte?",
+ "sources": [
+  {
+   "claim": "„Umar pflegte zu sagen: Abu Bakr ist unser Herr (sayyiduna), und er hat unseren Herrn freigelassen“ — gemeint ist Bilal",
+   "ref": "Sahih al-Bukhari 3754, Buch 62 (Vorzüge der Gefährten), Hadith 99 (Dschabir ibn Abdallah)",
+   "url": "https://sunnah.com/bukhari:3754",
+   "verified": true
+  },
+  {
+   "claim": "Bilal ruft beim Einzug in Mekka den Adhan von der Kaaba",
+   "ref": "Sira-Überlieferung (Ibn Ischaq/Ibn Hischam, at-Tabari) — nicht aus den Sahih-Sammlungen",
+   "url": "https://en.wikipedia.org/wiki/Bilal_ibn_Rabah",
+   "verified": false
+  }
+ ],
+ "caption": "Umar ibn al-Chattab regiert ein Weltreich — und über einen ehemaligen Sklaven sagt er wörtlich: „unser Herr.\"\n\n„Abu Bakr ist unser Herr, und er hat unseren Herrn freigelassen.\" (Bukhari 3754) Gemeint ist Bilal ibn Rabah.\n\nGeboren in Mekka, die Mutter aus Abessinien, Eigentum des Umayya ibn Chalaf. Als er Muslim wird, foltert man ihn in der Mittagshitze mit einem Stein auf der Brust. Er sagt ein einziges Wort: Ahad. Einer.\n\nAbu Bakr kauft ihn frei. Und als das Gebet eine Stimme braucht, wird nicht der Angesehenste gewählt, sondern der, den man kurz zuvor noch besitzen konnte. Bilal wird der erste Muezzin.\n\nNach der Sira-Überlieferung steigt er beim Einzug in Mekka auf die Kaaba und ruft von dort — genau dort, wo man ihn gefoltert hatte.\n\nEinordnung: Der Umar-Satz steht in Sahih al-Bukhari. Der Adhan von der Kaaba stammt aus der Sira (Ibn Ischaq, at-Tabari), nicht aus den Sahih-Sammlungen.\n\nEin Herrscher nennt einen Freigelassenen seinen Herrn. Kennst du etwas Vergleichbares?\n\n#islam #bilal #umar #geschichte #hadith #wissen #deutsch",
+ "blocks": [
+  {
+   "top": "Umar ibn al-Chattab",
+   "big": "regiert ein *Weltreich*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und über einen ehemaligen Sklaven sagt er:",
+   "big": "„Das ist *unser Herr*.\"",
+   "visual": "none"
+  },
+  {
+   "top": "Wörtlich.",
+   "big": "*Sayyiduna*.",
+   "visual": "none"
+  },
+  {
+   "top": "Bukhari",
+   "big": "*dreitausendsiebenhundertvierundfünfzig*.",
+   "visual": "stat",
+   "stat": {
+    "value": "3754",
+    "unit": "Bukhari",
+    "sub": "SAHIH"
+   }
+  },
+  {
+   "top": "Der Satz lautet:",
+   "big": "„Abu Bakr ist unser Herr — und er hat *unseren Herrn* freigelassen.\"",
+   "visual": "ayah"
+  },
+  {
+   "top": "Gemeint ist",
+   "big": "*Bilal ibn Rabah*.",
+   "visual": "none"
+  },
+  {
+   "top": "Geboren in Mekka, Mutter aus Abessinien,",
+   "big": "*Eigentum* des Umayya ibn Chalaf.",
+   "visual": "none"
+  },
+  {
+   "top": "Als er Muslim wird, wird er gefoltert.",
+   "big": "In der Mittagshitze, ein *Stein* auf der Brust.",
+   "visual": "none"
+  },
+  {
+   "top": "Und er sagt ein Wort.",
+   "big": "*Ahad*. Einer.",
+   "visual": "none"
+  },
+  {
+   "top": "Nicht als Argument.",
+   "big": "Als Antwort auf *alles*.",
+   "visual": "none"
+  },
+  {
+   "top": "Abu Bakr",
+   "big": "kauft ihn *frei*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und jetzt kommt die Stelle,",
+   "big": "an der die Geschichte *kippt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Als das Gebet eine Stimme braucht,",
+   "big": "wird *nicht* der Angesehenste gewählt.",
+   "visual": "compare"
+  },
+  {
+   "top": "Sondern der,",
+   "big": "den man kurz zuvor noch *besitzen* konnte.",
+   "visual": "none"
+  },
+  {
+   "top": "Bilal wird",
+   "big": "der *erste* Muezzin.",
+   "visual": "none"
+  },
+  {
+   "top": "Nach der Überlieferung der Sira steigt er beim Einzug in Mekka",
+   "big": "auf die *Kaaba* — und ruft von dort.",
+   "visual": "none"
+  },
+  {
+   "top": "Genau dort,",
+   "big": "wo man ihn *gefoltert* hatte.",
+   "visual": "none"
+  },
+  {
+   "top": "Das ist der Grund,",
+   "big": "warum der Satz von Umar so *schwer* wiegt.",
+   "visual": "none"
+  },
+  {
+   "top": "Er ist nicht höflich gemeint.",
+   "big": "Er ist eine *Rangordnung*.",
+   "visual": "none"
+  },
+  {
+   "top": "Der Kalif",
+   "big": "stellt sich *unter* den ehemaligen Sklaven.",
+   "visual": "slider"
+  },
+  {
+   "top": "Bukhari dreitausendsiebenhundertvierundfünfzig.",
+   "big": "Ein Herrscher nennt einen Freigelassenen seinen *Herrn*.",
+   "visual": "none"
+  },
+  {
+   "top": "Findest du etwas Vergleichbares",
+   "big": "in der *Geschichte*?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 3754, Buch 62, Hadith 99",
+    "Adhan von der Kaaba: Sira (Ibn Ischaq, at-Tabari) — kein Hadith"
+   ]
+  }
+ ],
+ "hook": "Umar ibn al-Chattab regiert ein Weltreich. Und über einen ehemaligen Sklaven sagt er: Das ist unser Herr.",
+ "appeal": "Findest du etwas Vergleichbares in der Geschichte?"
+}

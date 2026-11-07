@@ -1,0 +1,147 @@
+{
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
+ "id": "036",
+ "thema": "Geschichte",
+ "title": "Der Kalif, der nachts allein durch die Stadt ging",
+ "vo_full": "Der mächtigste Mann seiner Zeit regiert ein Reich von Ägypten bis Persien. [pause] Und nachts geht er allein durch die Gassen. Ohne Wachen. Ohne dass jemand weiß, wer er ist. [pause] Umar ibn al-Chattab. Zweiter Kalif. [pause] Warum tut einer das? [pause] Nicht aus Abenteuerlust. Er kontrolliert etwas. [pause] Nämlich, ob das, was in seinem Palast beschlossen wird, unten auch ankommt. [pause] Die Überlieferung erzählt eine Nacht am Stadtrand. [pause] Ein Feuer. Eine Frau rührt in einem Topf. Daneben weinen Kinder. [pause] Er fragt, warum sie weinen. Sie sagt: vor Hunger. [pause] Und im Topf? Steine. Wasser und Steine. [pause] Damit die Kinder glauben, es gebe gleich Essen — und darüber einschlafen. [pause] Dann sagt sie den Satz, der die Geschichte trägt. [pause] Sie weiß nicht, wer vor ihr steht. Und sie sagt: Allah möge zwischen uns und Umar richten. [pause] Er hört seinen eigenen Namen. Als Anklage. [pause] Und er widerspricht nicht. [pause] Er geht zurück ins Vorratshaus, lädt sich einen Sack Mehl auf den Rücken und trägt ihn selbst. [pause] Sein Begleiter will tragen. Er sagt nein. [pause] Trägst du am Tag des Gerichts auch meine Last? [pause] Das ist der Punkt. Nicht die Mildtätigkeit. [pause] Sondern dass Verantwortung nicht delegierbar ist. [pause] Überliefert bei at-Tabari und Ibn al-Dschauzi — Geschichtsschreibung, kein Hadith. [pause] Ein Herrscher, der nachts prüft, ob seine eigenen Gesetze funktionieren. Gibt es das heute?",
+ "sources": [
+  {
+   "claim": "Umars nächtliche Rundgänge und die Begegnung mit der Frau, die Steine kocht; Umar trägt das Mehl selbst",
+   "ref": "at-Tabari, Tarich ar-Rusul wa-l-Muluk; Ibn al-Dschauzi, Sirat Umar ibn al-Chattab — historische Überlieferung, nicht in den Sahih-Sammlungen",
+   "url": "https://en.wikipedia.org/wiki/Umar",
+   "verified": false
+  }
+ ],
+ "caption": "Der mächtigste Mann seiner Zeit regiert von Ägypten bis Persien — und geht nachts allein und unerkannt durch die Gassen.\n\nUmar ibn al-Chattab, zweiter Kalif. Nicht aus Abenteuerlust: Er prüft, ob das, was im Palast beschlossen wird, unten ankommt.\n\nEine Nacht am Stadtrand: ein Feuer, eine Frau rührt in einem Topf, Kinder weinen vor Hunger. Im Topf sind Steine und Wasser — damit die Kinder glauben, es gebe gleich Essen, und darüber einschlafen.\n\nDann sagt sie, ohne zu wissen, wer vor ihr steht: „Allah möge zwischen uns und Umar richten.\"\n\nEr hört seinen Namen als Anklage. Und widerspricht nicht. Er holt selbst einen Sack Mehl und trägt ihn auf dem eigenen Rücken. Sein Begleiter will helfen. Er sagt: Trägst du am Tag des Gerichts auch meine Last?\n\nEinordnung: Das ist Geschichtsschreibung (at-Tabari, Ibn al-Dschauzi), kein Hadith aus den Sahih-Sammlungen.\n\nEin Herrscher, der nachts prüft, ob seine eigenen Gesetze funktionieren. Gibt es das heute?\n\n#islam #umar #geschichte #kalif #wissen #deutsch #gerechtigkeit",
+ "blocks": [
+  {
+   "top": "Der mächtigste Mann seiner Zeit",
+   "big": "regiert ein Reich von *Ägypten bis Persien*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und nachts geht er allein durch die Gassen.",
+   "big": "Ohne Wachen. Ohne dass jemand weiß, *wer er ist*.",
+   "visual": "none"
+  },
+  {
+   "top": "Umar ibn al-Chattab.",
+   "big": "*Zweiter* Kalif.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "Warum tut einer *das*?",
+   "visual": "question"
+  },
+  {
+   "top": "Nicht aus Abenteuerlust.",
+   "big": "Er *kontrolliert* etwas.",
+   "visual": "none"
+  },
+  {
+   "top": "Nämlich, ob das, was in seinem Palast beschlossen wird,",
+   "big": "unten auch *ankommt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die Überlieferung erzählt",
+   "big": "eine *Nacht* am Stadtrand.",
+   "visual": "none"
+  },
+  {
+   "top": "Ein Feuer. Eine Frau rührt in einem Topf.",
+   "big": "Daneben *weinen* Kinder.",
+   "visual": "none"
+  },
+  {
+   "top": "Er fragt, warum sie weinen.",
+   "big": "Sie sagt: vor *Hunger*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und im Topf?",
+   "big": "*Steine*. Wasser und Steine.",
+   "visual": "none"
+  },
+  {
+   "top": "Damit die Kinder glauben, es gebe gleich Essen —",
+   "big": "und darüber *einschlafen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Dann sagt sie den Satz,",
+   "big": "der die Geschichte *trägt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Sie weiß nicht, wer vor ihr steht. Und sie sagt:",
+   "big": "„Allah möge zwischen uns und *Umar* richten.\"",
+   "visual": "ayah"
+  },
+  {
+   "top": "Er hört seinen eigenen Namen.",
+   "big": "Als *Anklage*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und er",
+   "big": "*widerspricht* nicht.",
+   "visual": "none"
+  },
+  {
+   "top": "Er geht zurück ins Vorratshaus, lädt sich einen Sack Mehl auf den Rücken",
+   "big": "und trägt ihn *selbst*.",
+   "visual": "none"
+  },
+  {
+   "top": "Sein Begleiter will tragen.",
+   "big": "Er sagt *nein*.",
+   "visual": "none"
+  },
+  {
+   "top": "„Trägst du am Tag des Gerichts",
+   "big": "auch *meine* Last?\"",
+   "visual": "ayah"
+  },
+  {
+   "top": "Das ist der Punkt.",
+   "big": "*Nicht* die Mildtätigkeit.",
+   "visual": "compare"
+  },
+  {
+   "top": "Sondern dass Verantwortung",
+   "big": "*nicht delegierbar* ist.",
+   "visual": "slider"
+  },
+  {
+   "top": "Überliefert bei at-Tabari und Ibn al-Dschauzi",
+   "big": "— Geschichtsschreibung, *kein Hadith*.",
+   "visual": "sources",
+   "sources": [
+    "Einordnung: Geschichtsschreibung"
+   ]
+  },
+  {
+   "top": "Ein Herrscher, der nachts prüft, ob seine eigenen Gesetze funktionieren.",
+   "big": "Gibt es das *heute*?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "at-Tabari, Tarich ar-Rusul wa-l-Muluk",
+    "Ibn al-Dschauzi, Sirat Umar ibn al-Chattab — kein Hadith"
+   ]
+  }
+ ],
+ "hook": "Der mächtigste Mann seiner Zeit regiert ein Reich von Ägypten bis Persien. Und nachts geht er allein durch die Gassen.",
+ "appeal": "Ein Herrscher, der nachts prüft, ob seine eigenen Gesetze funktionieren. Gibt es das heute?"
+}

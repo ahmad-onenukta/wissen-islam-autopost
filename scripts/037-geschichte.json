@@ -1,0 +1,161 @@
+{
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
+ "id": "037",
+ "thema": "Geschichte",
+ "title": "Das erste Kaffeehaus der Welt stand in Mekka",
+ "vo_full": "Das erste Kaffeehaus der Welt stand nicht in Wien. [pause] Es stand in Mekka. Um fünfzehnhundertzehn. [pause] Und das ist nicht die einzige Spur, die du jeden Tag benutzt, ohne es zu merken. [pause] Kaffee. Deutsch über das Italienische, davor Türkisch kahveh, davor Arabisch qahwa. [pause] Arabische Etymologen verbanden das Wort mit einem Begriff für Wein. [pause] Hundertsechzig Jahre nach Mekka hatte England dreitausend Kaffeehäuser. [pause] Zweitens: Zucker. [pause] Und hier muss man genau sein. Das Wort ist nicht arabisch von Herkunft. [pause] Es kommt aus dem Sanskrit. Scharkara. Das hieß ursprünglich Kies. Wegen der Körnung. [pause] Dann Persisch schakar. Dann Arabisch sukkar. [pause] Und über das Arabische ins mittelalterliche Latein, ins Althochdeutsche zucura, zu Zucker. [pause] Arabisch war also nicht die Quelle. Es war die Leitung. [pause] Drittens: Algebra. [pause] Aus al-dschabr. Der Titel eines Buches aus dem neunten Jahrhundert, Bagdad. [pause] Und al-dschabr hieß nicht Mathematik. [pause] Es hieß: Zusammenfügen zerbrochener Teile. [pause] Deshalb hieß im Spanischen ein algebrista lange Zeit der Knocheneinrenker. [pause] Derselbe Begriff. Einmal für Knochen, einmal für Gleichungen. [pause] Drei Wörter, drei Wege. Einer erfunden, einer weitergereicht, einer umgedeutet. [pause] Quelle ist das Online Etymology Dictionary, nachprüfbar in einer Minute. [pause] Das erste Kaffeehaus stand in Mekka, nicht in Wien. Wusstest du das?",
+ "sources": [
+  {
+   "claim": "Kaffee: engl. coffee < niederl. koffie < türk. kahveh < arab. qahwah; erstes Kaffeehaus in Mekka um 1510; 1675 über 3.000 Kaffeehäuser in England",
+   "ref": "Online Etymology Dictionary, Eintrag „coffee“",
+   "url": "https://www.etymonline.com/word/coffee",
+   "verified": true
+  },
+  {
+   "claim": "Zucker: Sanskrit scharkara (ursprünglich „Kies“) > pers. schakar > arab. sukkar > mittellat. succarum > ahd. zucura > Zucker",
+   "ref": "Online Etymology Dictionary, Eintrag „sugar“",
+   "url": "https://www.etymonline.com/search?q=sugar",
+   "verified": true
+  },
+  {
+   "claim": "Algebra: aus arab. al-dschabr „Zusammenfügen zerbrochener Teile“, Titel der Abhandlung al-Chwarizmis (9. Jh.); span. algebrista = Knocheneinrenker",
+   "ref": "Online Etymology Dictionary, Eintrag „algebra“",
+   "url": "https://www.etymonline.com/word/algebra",
+   "verified": true
+  }
+ ],
+ "caption": "Das erste Kaffeehaus der Welt stand nicht in Wien. Es stand um 1510 in Mekka.\n\nKaffee kommt über das Italienische und Türkische (kahveh) aus dem arabischen qahwa. 1675 hatte England bereits über 3.000 Kaffeehäuser.\n\nZucker — und hier muss man genau sein: Das Wort ist nicht arabischen Ursprungs. Es kommt aus dem Sanskrit (scharkara, ursprünglich „Kies\", wegen der Körnung), über das Persische ins Arabische (sukkar), von dort ins Latein und über das Althochdeutsche zu „Zucker\". Arabisch war nicht die Quelle, sondern die Leitung.\n\nAlgebra aus al-dschabr — dem Titel einer Abhandlung aus dem Bagdad des 9. Jahrhunderts. Das Wort hieß nicht Mathematik, sondern „Zusammenfügen zerbrochener Teile\". Deshalb war ein algebrista im Spanischen lange der Knocheneinrenker.\n\nDrei Wörter, drei Wege: eines erfunden, eines weitergereicht, eines umgedeutet.\n\nQuelle: Online Etymology Dictionary\n\n#islam #geschichte #sprache #etymologie #kaffee #wissen #deutsch",
+ "blocks": [
+  {
+   "top": "Das erste Kaffeehaus der Welt",
+   "big": "stand *nicht* in Wien.",
+   "visual": "none"
+  },
+  {
+   "top": "Es stand in Mekka.",
+   "big": "Um *fünfzehnhundertzehn*.",
+   "visual": "stat",
+   "stat": {
+    "value": "1510",
+    "unit": "Mekka",
+    "sub": "ERSTES KAFFEEHAUS"
+   }
+  },
+  {
+   "top": "Und das ist nicht die einzige Spur,",
+   "big": "die du *jeden Tag* benutzt, ohne es zu merken.",
+   "visual": "none"
+  },
+  {
+   "top": "Kaffee. Deutsch über das Italienische,",
+   "big": "davor türkisch *kahveh*, davor arabisch *qahwa*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Arabische Etymologen verbanden das Wort",
+   "big": "mit einem Begriff für *Wein*.",
+   "visual": "none"
+  },
+  {
+   "top": "Hundertsechzig Jahre nach Mekka",
+   "big": "hatte England *dreitausend* Kaffeehäuser.",
+   "visual": "stat",
+   "stat": {
+    "value": "3.000",
+    "unit": "England",
+    "sub": "UM 1670"
+   }
+  },
+  {
+   "top": "Zweitens:",
+   "big": "*Zucker*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und hier muss man genau sein.",
+   "big": "Das Wort ist *nicht* arabisch von Herkunft.",
+   "visual": "none"
+  },
+  {
+   "top": "Es kommt aus dem Sanskrit. Scharkara.",
+   "big": "Das hieß ursprünglich *Kies*. Wegen der Körnung.",
+   "visual": "none"
+  },
+  {
+   "top": "Dann persisch schakar.",
+   "big": "Dann arabisch *sukkar*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und über das Arabische ins mittelalterliche Latein,",
+   "big": "ins althochdeutsche zucura, zu *Zucker*.",
+   "visual": "slider"
+  },
+  {
+   "top": "Arabisch war also nicht die Quelle.",
+   "big": "Es war die *Leitung*.",
+   "visual": "none"
+  },
+  {
+   "top": "Drittens:",
+   "big": "*Algebra*.",
+   "visual": "none"
+  },
+  {
+   "top": "Aus al-dschabr. Der Titel eines Buches",
+   "big": "aus dem *neunten* Jahrhundert, Bagdad.",
+   "visual": "none"
+  },
+  {
+   "top": "Und al-dschabr",
+   "big": "hieß *nicht* Mathematik.",
+   "visual": "none"
+  },
+  {
+   "top": "Es hieß:",
+   "big": "*Zusammenfügen* zerbrochener Teile.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Deshalb hieß im Spanischen ein algebrista",
+   "big": "lange Zeit der *Knocheneinrenker*.",
+   "visual": "none"
+  },
+  {
+   "top": "Derselbe Begriff.",
+   "big": "Einmal für Knochen, einmal für *Gleichungen*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Drei Wörter, drei Wege.",
+   "big": "Einer erfunden, einer weitergereicht, einer *umgedeutet*.",
+   "visual": "none"
+  },
+  {
+   "top": "Quelle ist das Online Etymology Dictionary,",
+   "big": "nachprüfbar in einer *Minute*.",
+   "visual": "none"
+  },
+  {
+   "top": "Das erste Kaffeehaus stand in Mekka, nicht in Wien.",
+   "big": "*Wusstest* du das?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Online Etymology Dictionary: coffee, sugar, algebra",
+    "Zucker: Herkunft Sanskrit, nicht Arabisch — Arabisch als Zwischenstufe"
+   ]
+  }
+ ],
+ "hook": "Das erste Kaffeehaus der Welt stand nicht in Wien. Es stand in Mekka. Um 1510.",
+ "appeal": "Das erste Kaffeehaus stand in Mekka, nicht in Wien. Wusstest du das?"
+}
