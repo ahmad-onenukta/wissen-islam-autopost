@@ -35,6 +35,30 @@ fail() {
   exit $code
 }
 trap fail ERR
+
+# ffmpeg ist auf ubuntu-latest nicht mehr vorinstalliert. Ohne ffmpeg bricht erst
+# das Zusammenfuegen der Render-Bloecke ab (exit 127) - deshalb hier vorab pruefen.
+if ! command -v ffmpeg >/dev/null 2>&1; then
+  echo "--- ffmpeg fehlt, wird bereitgestellt ($(date -u +%T)) ---"
+  if command -v apt-get >/dev/null 2>&1; then
+    sudo apt-get update -qq >/dev/null 2>&1 || true
+    sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
+  fi
+  if ! command -v ffmpeg >/dev/null 2>&1; then
+    echo "--- apt ohne Erfolg, lade statischen Build ---"
+    mkdir -p "$ROOT/bin"
+    curl -sL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz -o /tmp/ff.tar.xz || true
+    tar -xJf /tmp/ff.tar.xz -C /tmp 2>/dev/null || true
+    cp /tmp/ffmpeg-*-static/ffmpeg /tmp/ffmpeg-*-static/ffprobe "$ROOT/bin/" 2>/dev/null || true
+    export PATH="$ROOT/bin:$PATH"
+  fi
+  if ! command -v ffmpeg >/dev/null 2>&1; then
+    melde 127 "ffmpeg fehlt und liess sich nicht nachinstallieren"
+    exit 127
+  fi
+  ffmpeg -version | head -1
+fi
+
 if [ "$CUT" != "0" ] || [ "$TEMPO" != "1.0" ]; then
   ffmpeg -v error -y -ss "$CUT" -i "$VOSRC" -af "atempo=$TEMPO,afade=t=in:st=0:d=0.08" -c:a libmp3lame -q:a 2 "remotion/public/audio/$ID-vo.mp3"
   python3 - "$WORDS" "$CUT" "$TEMPO" "scripts/$ID-words.json" <<'PY'
