@@ -76,7 +76,7 @@ jobs:
         if: steps.check.outputs.skip == 'false'
         with:
           python-version: "3.12"
-      - name: Python-Abhaengigkeiten (ffmpeg ist auf ubuntu-latest vorinstalliert)
+      - name: Python-Abhaengigkeiten
         if: steps.check.outputs.skip == 'false'
         run: |
           pip install -q numpy scipy
@@ -128,12 +128,17 @@ jobs:
           id="${{ steps.pick.outputs.id }}"
           mp4=$(ls remotion/out/$id*-ig.mp4 | head -1)
           node scripts/enqueue.mjs "$id" "$mp4"
-          git pull --rebase -q || true
           git config user.name  "reel-bot"
           git config user.email "reel-bot@users.noreply.github.com"
           git add -A videos/ queue.json
           git commit -m "produced: Reel $id"
-          git push
+          # Erst committen, DANN rebasen. Andersherum bricht der Rebase an den
+          # frisch geschriebenen Dateien ab ("cannot pull with rebase: You have
+          # unstaged changes") und das fertige Reel landet nie in der Queue.
+          for i in 1 2 3; do
+            git pull --rebase -q && git push && break
+            echo "Push-Versuch $i fehlgeschlagen, neuer Anlauf."; sleep 5
+          done
 
       - name: Artefakte (Debug)
         if: always() && steps.check.outputs.skip == 'false'
