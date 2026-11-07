@@ -1,4 +1,5 @@
-// Aggregiert den Fabrik-Zustand in dashboard/state.json (Datenquelle des Dashboards, same-origin via GitHub Pages)
+// Aggregiert den Fabrik-Zustand in dashboard/state.json und engage/dashboard.json
+// (Datenquellen des privaten Dashboards).
 import fs from "node:fs";
 import { listBrands, DEFAULT_BRAND } from "../lib/brand.mjs";
 
@@ -13,6 +14,10 @@ const scriptDirs = slug => [`brands/${slug}/scripts`, ...(slug === DEFAULT_BRAND
 const orderOf = slug => scriptDirs(slug).flatMap(d => fs.existsSync(`${d}/ORDER.txt`)
   ? (fs.readFileSync(`${d}/ORDER.txt`, "utf8").match(/^\d{3}/gm) || []) : []);
 
+const produced = j("dashboard/produced.json", {});   // { "<brand>/<id>": { vo_at } } - Stufe "Voice erstellt"
+const archivListe = j("engage/archive.json", {});     // { "<brand>/<id>": { at, grund } } - aussortierte Scripts
+const videoFiles = fs.existsSync("videos") ? new Set(fs.readdirSync("videos")) : new Set();
+const REPO_RAW = `https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY || "ahmad-onenukta/wissen-islam-autopost"}/main/`;
 const reelById = new Map((stats.reels || []).map(r => [r.id, r]));
 const qOf = (slug, id) => queue.find(x => x.id === id && (x.brand || DEFAULT_BRAND) === slug);
 
@@ -29,15 +34,26 @@ for (const b of brands) {
       const verified = src.filter(x => x.verified).length;
       const ok = src.length > 0 && verified === src.length;
       const q = qOf(b.slug, id);
+      const key = `${b.slug}/${id}`;
+      const archiviert = s.archived === true || s.status === "rejected" || !!archivListe[key];
+      // Stufen: script -> checked -> voice -> video -> queued -> live (plus paused, archive)
       const stage = q ? (q.status === "posted" ? "live" : q.status === "paused" ? "paused" : "queued")
-                      : (ok ? "checked" : "script");
+        : archiviert ? "archive"
+        : videoFiles.has(`${id}.mp4`) ? "video"
+        : produced[key]?.vo_at ? "voice"
+        : ok ? "checked" : "script";
       const m = q?.media_id ? reelById.get(q.media_id) : null;
       pipeline.push({
         brand: b.slug, id, title: s.title || "", thema: s.thema || "", hook: (s.hook || "").slice(0, 180),
         voice: s.voice || b.voice?.default || "", stage,
         fact_check: ok ? "ok" : (src.length ? "offen" : "fehlt"),
         sources: { total: src.length, verified },
-        source_list: src.slice(0, 12).map(x => ({ claim: (x.claim || "").slice(0, 160), ref: (x.ref || "").slice(0, 120), url: x.url || "", verified: !!x.verified })),
+        source_list: src.map(x => ({ claim: (x.claim || "").slice(0, 400), ref: (x.ref || "").slice(0, 200), url: x.url || "", verified: !!x.verified })),
+        file: `${d}/${f}`, script_url: REPO_RAW + `${d}/${f}`,
+        vo_at: produced[key]?.vo_at || null,
+        archived: archiviert,
+        blocks: Array.isArray(s.blocks) ? s.blocks.length : 0,
+        dauer: s.duration || null,
         publish_at: q?.publish_at || q?.posted_at || null,
         targets: q?.targets || b.targets || ["instagram"],
         results: q?.results || null,
@@ -77,7 +93,7 @@ const state = {
       accent: b.palette?.accent, bg: b.palette?.bg, targets: b.targets, slot: b.schedule?.slot_berlin,
       handle: b.handle, voice: b.voice?.default,
       followers: b.slug === DEFAULT_BRAND ? (stats.account?.followers_count ?? null) : null,
-      counts: ["script", "checked", "queued", "paused", "live"].reduce((o, s) => (o[s] = p.filter(x => x.stage === s).length, o), {}),
+      counts: ["script", "checked", "voice", "video", "queued", "paused", "live", "archive"].reduce((o, s) => (o[s] = p.filter(x => x.stage === s).length, o), {}),
       runway_days: p.filter(x => x.stage === "queued").length,
       next: p.filter(x => x.stage === "queued").map(x => x.publish_at).sort()[0] || null,
       views_total: views, avg_views: live.length ? Math.round(views / live.length) : 0,
@@ -129,6 +145,29 @@ const errCards = pipeline.filter(x => x.results && Object.values(x.results).some
 for (const x of errCards)
   alerts.push({ level: "error", brand: x.brand, text: `Reel ${x.id}: Posting-Fehler auf ${Object.entries(x.results).filter(([, r]) => r && r.error).map(([k]) => k).join(", ")}.`, action: "actions" });
 
+// ---------- Kanal-Uebersicht: wird ueberall gepostet? ------------------------
+const PLATTFORMEN = [["instagram", "Instagram Reels"], ["youtube", "YouTube Shorts"], ["tiktok", "TikTok"], ["facebook", "Facebook Reels"]];
+state.channels = PLATTFORMEN.map(([p, label]) => {
+  const eintraege = posted.filter(e => e.results && e.results[p]);
+  const gut = eintraege.filter(e => !e.results[p].error && !e.results[p].skipped);
+  const schlecht = eintraege.filter(e => e.results[p].error);
+  const letzteOk = gut.map(e => e.posted_at).filter(Boolean).sort().pop() || null;
+  const letzterFehler = schlecht.length ? schlecht[schlecht.length - 1] : null;
+  const geplant = brands.some(b => (b.targets || []).includes(p));
+  const handle = brands.map(b => b.handle?.[p]).find(Boolean) || null;
+  const status = !geplant ? "nicht verbunden"
+    : letzterFehler && (!letzteOk || (letzterFehler.posted_at || "") > letzteOk) ? "Fehler"
+    : letzteOk ? "laeuft" : "wartet";
+  return { platform: p, label, handle, geplant, status, posts: gut.length, fehler: schlecht.length,
+    last_ok: letzteOk, last_error: letzterFehler ? String(Object.values(letzterFehler.results[p])[0]).slice(0, 200) : null };
+});
+for (const c of state.channels) {
+  if (c.status === "Fehler")
+    alerts.push({ level: "error", action: "actions", text: `${c.label}: letzter Versuch fehlgeschlagen - ${c.last_error || "siehe Actions"}` });
+  if (c.geplant && c.status === "wartet")
+    alerts.push({ level: "warn", action: "actions", text: `${c.label} ist als Ziel eingetragen, hat aber noch nie erfolgreich gepostet.` });
+}
+
 state.health = {
   min_runway: MIN_RUNWAY,
   last_post: lastPost, last_post_hours: hrs(lastPost),
@@ -140,9 +179,10 @@ state.health = {
 };
 state.jobs = [
   { name: "Reel produzieren", file: "produce.yml", cron: "0 4 * * *", does: "Script -> Voice-Over -> Remotion -> Queue" },
-  { name: "Reel posten", file: "post-reel.yml", cron: "0 11,14 * * * (wartet auf 18:00 UTC)", does: "Instagram + YouTube + TikTok + Facebook" },
-  { name: "Story posten", file: "post-story.yml", cron: "taeglich 20:00 Berlin", does: "Story zum Reel" },
-  { name: "Engagement", file: "engage.yml", cron: "17 */2 * * *", does: "Kommentare/DMs/Insights + Dashboard-State" },
+  { name: "Reel posten (abends)", file: "post-reel.yml", cron: "wartet auf 18:00 UTC = 19:00 Berlin", does: "Instagram + YouTube + TikTok + Facebook" },
+  { name: "Reel posten (mittags)", file: "post-reel-mittag.yml", cron: "mittags", does: "zweites Reel des Tages" },
+  { name: "Story posten", file: "post-story.yml", cron: "taeglich 20:00 Berlin", does: "Story aus dem Reel, auf 59 s geschnitten" },
+  { name: "Engagement", file: "engage.yml", cron: "17 */2 * * *", does: "Kommentare/DMs/Insights + Dashboard-State + Archiv-Befehle" },
   { name: "Token erneuern", file: "refresh-token.yml", cron: "1. + 15.", does: "IG-Token verlaengern (braucht GH_PAT)" },
 ];
 

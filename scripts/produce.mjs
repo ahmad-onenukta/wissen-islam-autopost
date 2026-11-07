@@ -1,7 +1,7 @@
 // NurWissen Produktion — Schritt 1: Voice-Over + Wort-Timestamps per ElevenLabs-API
 // Aufruf: node scripts/produce.mjs <id>   (liest scripts/<id>.json, schreibt build/<id>-vo.mp3 + build/<id>-words.json)
 import fs from "node:fs";
-import { reportError, clearError } from "../lib/report.mjs";
+import { reportError, clearError, markProduced } from "../lib/report.mjs";
 
 const id  = process.argv[2];
 const KEY = process.env.ELEVENLABS_API_KEY;
@@ -46,6 +46,7 @@ if (!tts.ok) {
 const mp3 = Buffer.from(await tts.arrayBuffer());
 fs.writeFileSync(`build/${id}-vo.mp3`, mp3);
 console.log(`VO: ${(mp3.length / 1048576).toFixed(2)} MB`);
+markProduced(process.env.BRAND || "nurwissen", id, "vo_at");
 
 // --- STT fuer Wort-Timestamps (gleiches Format wie Connector-Transkription) ------
 const form = new FormData();
