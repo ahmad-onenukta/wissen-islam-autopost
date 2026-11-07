@@ -1,7 +1,7 @@
 // NurWissen Produktion — Schritt 1: Voice-Over + Wort-Timestamps per ElevenLabs-API
 // Aufruf: node scripts/produce.mjs <id>   (liest scripts/<id>.json, schreibt build/<id>-vo.mp3 + build/<id>-words.json)
 import fs from "node:fs";
-import { reportError, clearError, markProduced } from "../lib/report.mjs";
+import { reportError, clearError, markProduced, pushFiles } from "../lib/report.mjs";
 
 const id  = process.argv[2];
 const KEY = process.env.ELEVENLABS_API_KEY;
@@ -26,6 +26,19 @@ const text = (script.vo_full || script.blocks.map(b => `${b.top || ""} ${b.big |
   .replace(/\s+/g, " ").trim();
 
 fs.mkdirSync("build", { recursive: true });
+
+// --- Cache: ein einmal erzeugtes Voice-Over wird im Repo gesichert. Jeder weitere
+// Anlauf (z. B. nach einem Render-Fehler) nimmt es von dort und kostet 0 Credits.
+const CACHE_MP3 = `audio/${id}-vo.mp3`;
+const CACHE_WORDS = `audio/${id}-words.json`;
+if (fs.existsSync(CACHE_MP3) && fs.existsSync(CACHE_WORDS)) {
+  fs.copyFileSync(CACHE_MP3, `build/${id}-vo.mp3`);
+  fs.copyFileSync(CACHE_WORDS, `build/${id}-words.json`);
+  fs.writeFileSync(`build/${id}-script.json`, JSON.stringify(script, null, 2));
+  console.log(`Voice-Over aus dem Repo-Cache (${CACHE_MP3}) - keine ElevenLabs-Credits verbraucht.`);
+  clearError("produce");
+  process.exit(0);
+}
 
 // --- TTS ---------------------------------------------------------------------
 console.log(`TTS ${id}: voice=${script.voice} model=${MODEL} chars=${text.length}`);
@@ -65,4 +78,13 @@ const words = await stt.json();
 fs.writeFileSync(`build/${id}-words.json`, JSON.stringify(words, null, 2));
 console.log(`Words: ${(words.words || []).filter(w => w.type === "word").length} | Dauer ~${(words.words?.at(-1)?.end ?? 0).toFixed(1)} s`);
 fs.writeFileSync(`build/${id}-script.json`, JSON.stringify(script, null, 2));
+
+// Voice-Over + Timestamps sichern, damit ein Wiederholungslauf nichts mehr kostet
+try {
+  fs.mkdirSync("audio", { recursive: true });
+  fs.copyFileSync(`build/${id}-vo.mp3`, CACHE_MP3);
+  fs.copyFileSync(`build/${id}-words.json`, CACHE_WORDS);
+  pushFiles([CACHE_MP3, CACHE_WORDS], `voice: ${id} gesichert (spart Credits bei Wiederholungen)`);
+} catch (e) { console.log("Voice-Cache nicht gesichert:", e.message); }
+
 clearError("produce");
