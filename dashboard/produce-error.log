@@ -1,4 +1,30 @@
-== produce 2026-11-04T11:49:41.403Z ==
-Error: ElevenLabs TTS 401 bei Reel 020: {"detail":{"type":"invalid_request","code":"quota_exceeded","message":"This request exceeds your quota of 30046. You have 65 credits remaining, while 500 credits are required for this request.","status":"quota_exceeded","request_id":"4d5079d0f961763154f28234cc4b2900"}}
-    at file:///home/runner/work/wissen-islam-autopost/wissen-islam-autopost/scripts/produce.mjs:43:26
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+== Render-Fehler Reel 029 (exit 127) 2026-11-07T20:57:30Z ==
+Schritt: Trap
+blocks=25 words=249 tokens=251 mismatched=11 duration=123.76s
+50 123.76
+--- Browser bereitstellen ---
+[90mDownloading Chrome Headless Shell https://www.remotion.dev/chrome-headless-shell[39m
+Downloading from: https://remotion.media/chromium-headless-shell-linux-x64-157.0.8080.0.zip?clear
+Getting Headless Shell - 9.5 Mb/98.9 Mb
+Getting Headless Shell - 19.1 Mb/98.9 Mb
+Getting Headless Shell - 28.6 Mb/98.9 Mb
+Getting Headless Shell - 38.2 Mb/98.9 Mb
+Getting Headless Shell - 47.7 Mb/98.9 Mb
+Getting Headless Shell - 57.3 Mb/98.9 Mb
+Getting Headless Shell - 66.8 Mb/98.9 Mb
+Getting Headless Shell - 76.4 Mb/98.9 Mb
+Getting Headless Shell - 85.9 Mb/98.9 Mb
+Getting Headless Shell - 95.5 Mb/98.9 Mb
+Got Headless Shell
+Has browser at /home/runner/work/wissen-islam-autopost/wissen-islam-autopost/remotion/node_modules/.remotion/chrome-headless-shell/linux64/chrome-headless-shell-linux64/chrome-headless-shell
+--- Speicher ---
+               total        used        free      shared  buff/cache   available
+Mem:           15983        1321       12321          50        2726       14661
+--- Render: 3713 Frames in Bloecken von 900 (20:51:49) ---
+--- Block 1: Frames 0-899 (20:51:49) ---
+--- Block 2: Frames 900-1799 (20:53:12) ---
+--- Block 3: Frames 1800-2699 (20:54:34) ---
+--- Block 4: Frames 2700-3599 (20:55:56) ---
+--- Block 5: Frames 3600-3712 (20:57:17) ---
+--- Bloecke zusammenfuegen (20:57:30) ---
+render/make_reel.sh: line 87: ffmpeg: command not found
