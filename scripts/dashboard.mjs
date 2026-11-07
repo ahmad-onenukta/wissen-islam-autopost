@@ -176,6 +176,18 @@ for (const c of state.channels) {
     alerts.push({ level: "warn", action: "actions", text: `${c.label} ist als Ziel eingetragen, hat aber noch nie erfolgreich gepostet.` });
 }
 
+// ---------- ElevenLabs-Guthaben (von produce.mjs geschrieben) ----------------
+const credits = j("dashboard/credits.json", null);
+state.credits = credits;
+if (credits && credits.rest != null) {
+  if (credits.rest < 2500)
+    alerts.push({ level: "error", action: "elevenlabs",
+      text: `ElevenLabs: nur noch ${credits.rest} Credits - das reicht fuer kein weiteres Reel. Produktion stoppt von selbst, bevor Credits verpuffen.` });
+  else if (credits.rest < 10000)
+    alerts.push({ level: "warn", action: "elevenlabs",
+      text: `ElevenLabs: ${credits.rest} Credits uebrig, reicht fuer etwa ${credits.reicht_fuer} Reels.` });
+}
+
 state.health = {
   min_runway: MIN_RUNWAY,
   last_post: lastPost, last_post_hours: hrs(lastPost),
