@@ -4,11 +4,13 @@
 set -eo pipefail
 ID=$1; SCRIPT=$2; WORDS=$3; VOSRC=$4; CUT=${5:-0}; TEMPO=${6:-1.0}
 cd "$(dirname "$0")/.."
+ROOT=$(pwd)
 mkdir -p build dashboard remotion/public/audio remotion/out
 LOG="build/$ID-render.log"
 exec > >(tee -a "$LOG") 2>&1
 melde() {
   code=${1:-$?}
+  cd "$ROOT" || true          # der Fehler kann im Unterordner remotion/ auftreten
   { echo "== Render-Fehler Reel $ID (exit $code) $(date -u +%FT%TZ) =="; echo "Schritt: ${2:-unbekannt}"; tail -150 "$LOG"; } > dashboard/produce-error.log
   AUTH=$(git config --get http.https://github.com/.extraheader || true)
   if [ -n "$AUTH" ] && [ -n "$GITHUB_REPOSITORY" ]; then
@@ -75,16 +77,17 @@ while [ "$start" -lt "$TOTAL" ]; do
   echo "--- Block $i: Frames $start-$end ($(date -u +%T)) ---"
   if ! npx remotion render Essay "out/$ID-p$i.mp4" --props="public/$ID-props.json" \
        --codec=h264 --crf=22 --concurrency=1 --frames=$start-$end --log=error; then
-    cd ..; melde 1 "Render Block $i (Frames $start-$end)"; exit 1
+    melde 1 "Render Block $i (Frames $start-$end)"; exit 1
   fi
   echo "file '$ID-p$i.mp4'" >> out/$ID-concat.txt
   (cd .. && node --input-type=module -e "const m=await import('./lib/report.mjs'); m.markProduced(process.env.BRAND||'nurwissen','$ID','block_$i');" >/dev/null 2>&1) || true
   start=$((end+1))
 done
-echo "--- Bloecke zusammenfuegen ---"
+echo "--- Bloecke zusammenfuegen ($(date -u +%T)) ---"
 ffmpeg -v error -y -f concat -safe 0 -i "out/$ID-concat.txt" -c copy "out/$ID.mp4"
 rm -f out/$ID-p*.mp4 out/$ID-concat.txt
-ffmpeg -v error -y -i "out/$ID.mp4" -c:v libx264 -preset slow -crf 27 -maxrate 1400k -bufsize 2800k -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 128k "out/$ID-ig.mp4"
+echo "--- Transcode ($(date -u +%T)) ---"
+ffmpeg -v error -y -i "out/$ID.mp4" -c:v libx264 -preset veryfast -crf 26 -maxrate 1400k -bufsize 2800k -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 128k "out/$ID-ig.mp4"
 ffmpeg -v error -y -i "out/$ID-ig.mp4" -vf "fps=1/5,scale=216:-1,tile=6x6" -frames:v 1 "out/$ID-strip.jpg"
 ls -la "out/$ID-ig.mp4"
-rm -f ../dashboard/produce-error.log
+rm -f "$ROOT/dashboard/produce-error.log"
