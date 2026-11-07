@@ -132,13 +132,21 @@ jobs:
           git config user.email "reel-bot@users.noreply.github.com"
           git add -A videos/ queue.json
           git commit -m "produced: Reel $id"
-          # Erst committen, DANN rebasen. Andersherum bricht der Rebase an den
-          # frisch geschriebenen Dateien ab ("cannot pull with rebase: You have
-          # unstaged changes") und das fertige Reel landet nie in der Queue.
+          # Erst committen, DANN rebasen - und mit --autostash. Der Render legt
+          # weitere Dateien an (build/, scripts/<id>-words.json, Props), die nicht
+          # mitcommittet werden. Ohne --autostash bricht der Rebase daran ab
+          # ("cannot pull with rebase: You have unstaged changes") und das fertige
+          # Reel landet nie in der Queue.
           for i in 1 2 3; do
-            git pull --rebase -q && git push && break
+            git pull --rebase --autostash -q && git push && break
             echo "Push-Versuch $i fehlgeschlagen, neuer Anlauf."; sleep 5
           done
+          # Nicht still durchwinken: ohne Push ist das Reel nicht eingeplant.
+          if [ -n "$(git log origin/main..HEAD --oneline)" ]; then
+            echo "::error::Reel $id wurde gerendert, aber nicht in die Queue gepusht."
+            exit 1
+          fi
+          echo "Reel $id ist in der Queue."
 
       - name: Artefakte (Debug)
         if: always() && steps.check.outputs.skip == 'false'
