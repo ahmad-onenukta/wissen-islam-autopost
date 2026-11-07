@@ -14,19 +14,41 @@ if (queue.some(q => q.id === id && (q.brand || DEFAULT_BRAND) === brand.slug)) {
   console.log(`Reel ${id} (${brand.slug}) ist schon in der Queue.`); process.exit(0);
 }
 
-// Slot aus brand.schedule.slot_berlin, in UTC umgerechnet (Sommer-/Winterzeit)
-const [h] = (brand.schedule?.slot_berlin || "19:00").split(":").map(Number);
-const utcHour = d => { const m = d.getUTCMonth(); return h - ((m >= 3 && m <= 9) ? 2 : 1); };
+// Slots aus brand.schedule: slots_berlin (Liste) hat Vorrang, sonst slot_berlin.
+// Wichtig: pro Tag kann es mehrere Slots geben (per_day), deshalb wird der belegte
+// Platz am genauen Zeitpunkt gemerkt und nicht am Datum - sonst bleibt es bei 1/Tag.
+const sched = brand.schedule || {};
+let slots = sched.slots_berlin;
+if (!Array.isArray(slots) || !slots.length) {
+  slots = [sched.slot_berlin || "19:00"];
+  const perDay = Number(sched.per_day || 1);
+  if (perDay > 1 && slots.length === 1) {
+    // Kein zweiter Slot konfiguriert: Mittagsslot 7 h vor dem Abendslot ergaenzen
+    const [eh, em = "00"] = slots[0].split(":");
+    slots = [`${String(Math.max(0, Number(eh) - 7)).padStart(2, "0")}:${em}`, slots[0]];
+  }
+}
+slots = [...new Set(slots)].sort();
+
+const offset = d => { const m = d.getUTCMonth(); return (m >= 3 && m <= 9) ? 2 : 1; };  // Sommer-/Winterzeit
 const taken = new Set(queue
   .filter(q => q.status === "ready" && (q.brand || DEFAULT_BRAND) === brand.slug)
-  .map(q => q.publish_at.slice(0, 10)));
+  .map(q => q.publish_at));
+
+const now = new Date();
 let day = new Date(); day.setUTCHours(0, 0, 0, 0);
 let next = null;
 for (let i = 0; i < 90 && !next; i++) {
-  const slot = new Date(day); slot.setUTCHours(utcHour(slot), 0, 0, 0);
-  if (!taken.has(slot.toISOString().slice(0, 10)) && slot > new Date()) next = slot;
+  for (const s of slots) {
+    const [sh, sm = "0"] = s.split(":").map(Number);
+    const slot = new Date(day);
+    slot.setUTCHours(sh - offset(slot), sm || 0, 0, 0);
+    const iso = slot.toISOString();
+    if (slot > now && !taken.has(iso)) { next = slot; break; }
+  }
   day.setUTCDate(day.getUTCDate() + 1);
 }
+if (!next) { console.error("Kein freier Slot in den naechsten 90 Tagen."); process.exit(1); }
 
 const file = `${brand.slug}-${id}-${(script.thema || script.title || "reel").toLowerCase()
   .replace(/[^a-z0-9]+/g, "-").slice(0, 40)}.mp4`;
