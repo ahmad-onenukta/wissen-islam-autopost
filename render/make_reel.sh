@@ -7,16 +7,9 @@ cd "$(dirname "$0")/.."
 mkdir -p build dashboard remotion/public/audio remotion/out
 LOG="build/$ID-render.log"
 exec > >(tee -a "$LOG") 2>&1
-fail() {
-  code=$?
-  { echo "== Render-Fehler Reel $ID (exit $code) $(date -u +%FT%TZ) =="; tail -150 "$LOG"; } > dashboard/produce-error.log
-  git config user.name  "reel-bot"  || true
-  git config user.email "reel-bot@users.noreply.github.com" || true
-  git add -A dashboard/produce-error.log >/dev/null 2>&1 || true
-  git commit -m "produce-fehler: $ID" >/dev/null 2>&1 || true
-  git pull --rebase -q >/dev/null 2>&1 || true
-  git push -q origin HEAD:main >/dev/null 2>&1 || true
-  # Zweiter Weg: ueber die Contents-API (funktioniert auch, wenn git push scheitert)
+melde() {
+  code=${1:-$?}
+  { echo "== Render-Fehler Reel $ID (exit $code) $(date -u +%FT%TZ) =="; echo "Schritt: ${2:-unbekannt}"; tail -150 "$LOG"; } > dashboard/produce-error.log
   AUTH=$(git config --get http.https://github.com/.extraheader || true)
   if [ -n "$AUTH" ] && [ -n "$GITHUB_REPOSITORY" ]; then
     B64=$(base64 -w0 dashboard/produce-error.log)
@@ -25,7 +18,18 @@ fail() {
     python3 -c "import json,sys; d={'message':'produce-fehler: '+sys.argv[1],'content':sys.argv[2],'branch':'main'}; d.update({'sha':sys.argv[3]} if sys.argv[3] else {}); print(json.dumps(d))" "$ID" "$B64" "$SHA" > /tmp/err-body.json
     curl -s -X PUT -H "$AUTH" -H "Accept: application/vnd.github+json" --data @/tmp/err-body.json \
       "https://api.github.com/repos/$GITHUB_REPOSITORY/contents/dashboard/produce-error.log" >/dev/null || true
+    echo "Fehler nach dashboard/produce-error.log geschrieben."
   fi
+}
+fail() {
+  code=$?
+  melde "$code" "Trap"
+  git config user.name  "reel-bot"  || true
+  git config user.email "reel-bot@users.noreply.github.com" || true
+  git add -A dashboard/produce-error.log >/dev/null 2>&1 || true
+  git commit -m "produce-fehler: $ID" >/dev/null 2>&1 || true
+  git pull --rebase -q >/dev/null 2>&1 || true
+  git push -q origin HEAD:main >/dev/null 2>&1 || true
   exit $code
 }
 trap fail ERR
@@ -52,8 +56,13 @@ f=f"remotion/public/{sys.argv[1]}-props.json"; d=json.load(open(f)); d['script']
 json.dump(d,open(f,'w'),ensure_ascii=False,indent=1)
 PY
 cd remotion
-npx remotion browser ensure >/dev/null 2>&1 || true
-npx remotion render Essay "out/$ID.mp4" --props="public/$ID-props.json" --codec=h264 --crf=22 --concurrency=2 --log=error
+echo "--- Browser bereitstellen ---"
+npx remotion browser ensure || echo "WARNUNG: browser ensure fehlgeschlagen, Remotion laedt beim Render selbst"
+echo "--- freier Speicher ---"; free -m | head -2 || true
+echo "--- Render startet $(date -u +%T) ---"
+if ! npx remotion render Essay "out/$ID.mp4" --props="public/$ID-props.json" --codec=h264 --crf=22 --concurrency=1 --log=verbose; then
+  cd ..; melde 1 "remotion render"; exit 1
+fi
 ffmpeg -v error -y -i "out/$ID.mp4" -c:v libx264 -preset slow -crf 27 -maxrate 1400k -bufsize 2800k -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 128k "out/$ID-ig.mp4"
 ffmpeg -v error -y -i "out/$ID-ig.mp4" -vf "fps=1/5,scale=216:-1,tile=6x6" -frames:v 1 "out/$ID-strip.jpg"
 ls -la "out/$ID-ig.mp4"
