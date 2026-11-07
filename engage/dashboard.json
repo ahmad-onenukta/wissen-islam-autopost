@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T08:49:29.302Z",
+  "generated_at": "2026-11-07T16:28:45.546Z",
   "brands": [
     {
       "slug": "nurwissen",
@@ -20,140 +20,33 @@
         "facebook": ""
       },
       "voice": "robert",
-      "followers": 1050,
+      "followers": 1054,
       "counts": {
         "script": 0,
         "checked": 16,
+        "voice": 0,
+        "video": 0,
         "queued": 0,
         "paused": 0,
-        "live": 15
+        "live": 15,
+        "archive": 0
       },
       "runway_days": 0,
       "next": null,
-      "views_total": 291049,
-      "avg_views": 22388,
+      "views_total": 292849,
+      "avg_views": 22527,
       "engagement_rate": 10.2
     }
   ],
   "pipeline": [
     {
       "brand": "nurwissen",
-      "id": "020",
-      "title": "Der einzige Krieg, den Allah selbst erklärt",
-      "thema": "Geld",
-      "hook": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankündigt, sondern Krieg. Und sie steht heute in fast jedem Vertrag.",
+      "id": "029",
+      "title": "Das erste Krankenhaus, in dem die Rechnung niemand bekam",
+      "thema": "Alte Historische Story",
+      "hook": "Die Idee, dass ein Krankenhaus dich behandelt, ohne vorher nach Geld zu fragen, ist nicht modern. Sie ist über tausend Jahre alt — und hat einen Namen.",
       "voice": "robert",
-      "stage": "live",
-      "fact_check": "ok",
-      "sources": {
-        "total": 2,
-        "verified": 2
-      },
-      "source_list": [
-        {
-          "claim": "„Allah lässt den Zins schwinden und die Mildtätigkeit wachsen“",
-          "ref": "Koran 2:277, alislam.org (Hafs 2:276)",
-          "url": "https://www.alislam.org/quran/2:277",
-          "verified": true
-        },
-        {
-          "claim": "„So erwartet Krieg von Allah und Seinem Gesandten … und wenn ihr umkehrt, steht euch euer Kapital zu“",
-          "ref": "Koran 2:280, alislam.org (Hafs 2:279)",
-          "url": "https://www.alislam.org/quran/2:280",
-          "verified": true
-        }
-      ],
-      "publish_at": "2026-11-04T15:00:00Z",
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": {
-        "instagram": {
-          "media_id": "18105767723288101"
-        },
-        "youtube": {
-          "error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
-        }
-      },
-      "media_id": "18105767723288101",
-      "permalink": "https://www.instagram.com/reel/DfUwlStkR_L/",
-      "metrics": {
-        "views": 121332,
-        "reach": 99401,
-        "likes": 5223,
-        "comments": 63,
-        "shares": 3039,
-        "saved": 1707
-      },
-      "order_rank": 0
-    },
-    {
-      "brand": "nurwissen",
-      "id": "021",
-      "title": "Warum der Koran Alkohol in drei Schritten verbot",
-      "thema": "Haram / Halal",
-      "hook": "Alkohol wurde nicht an einem Tag verboten. Sondern in drei Schritten über Jahre. Und der Grund dahinter ändert, wie du über deine eigenen Gewohnheiten denkst.",
-      "voice": "robert",
-      "stage": "live",
-      "fact_check": "ok",
-      "sources": {
-        "total": 3,
-        "verified": 3
-      },
-      "source_list": [
-        {
-          "claim": "Koran 2:220 — Wein und Glücksspiel: Sünde und Nutzen, die Sünde ist größer",
-          "ref": "alislam.org (Hafs 2:219)",
-          "url": "https://www.alislam.org/quran/2:220",
-          "verified": true
-        },
-        {
-          "claim": "Koran 4:44 — nicht betrunken zum Gebet",
-          "ref": "alislam.org (Hafs 4:43)",
-          "url": "https://www.alislam.org/quran/4:44",
-          "verified": true
-        },
-        {
-          "claim": "Koran 5:91 — Wein, Glücksspiel, Götzensteine, Lospfeile: Greuel vom Werk Satans, meidet sie",
-          "ref": "alislam.org (Hafs 5:90)",
-          "url": "https://www.alislam.org/quran/5:91",
-          "verified": true
-        }
-      ],
-      "publish_at": "2026-11-05T18:00:00Z",
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": {
-        "instagram": {
-          "media_id": "18144515317625218"
-        },
-        "youtube": {
-          "video_id": "YRh3GIhw-4k"
-        }
-      },
-      "media_id": "18144515317625218",
-      "permalink": "https://www.instagram.com/reel/DfXrlQPFcE-/",
-      "metrics": {
-        "views": 517,
-        "reach": 415,
-        "likes": 12,
-        "comments": 1,
-        "shares": 4,
-        "saved": 10
-      },
-      "order_rank": 1
-    },
-    {
-      "brand": "nurwissen",
-      "id": "022",
-      "title": "Drei Männer, ein Felsen, drei Taten",
-      "thema": "Sünden",
-      "hook": "Drei Männer sind in einer Höhle eingeschlossen. Ein Felsen versperrt den Ausgang. Jeder nennt eine Tat, von der niemand wusste — und der Fels bewegt sich.",
-      "voice": "robert",
-      "stage": "live",
+      "stage": "checked",
       "fact_check": "ok",
       "sources": {
         "total": 1,
@@ -161,64 +54,56 @@
       },
       "source_list": [
         {
-          "claim": "Drei Männer in einer Höhle, Felsen versperrt den Ausgang; jeder bittet mit einer Tat: (1) alte Eltern zuerst mit Milch versorgt, stand bis zum Morgen mit der Sc",
-          "ref": "Sahih al-Bukhari 2272, Buch 37 (Miete), Hadith 12",
-          "url": "https://sunnah.com/bukhari:2272",
+          "claim": "Rufaida al-Aslamiyya richtete zur Zeit des Propheten ﷺ bei der Grabenschlacht ein Zelt für Verwundete ein; erstes muslimisches Hospital: Leprosorium in Damaskus im frühen 8. Jh.; erstes dokumentiertes allgemeines Krankenhaus 805 in Bagdad; Behandlung kostenfrei, Kairoer Urkunde 1284; Córdoba 10. Jh.: Frauenabteilung; Lizenzprüfung mit Abhandlung und Befragung; Bagdad Ende 9. Jh. unter al-Mu'tadid,",
+          "ref": "AramcoWorld, „The Islamic Roots of the Modern Hospital“, 2017",
+          "url": "https://www.aramcoworld.com/articles/2017/the-islamic-roots-of-the-modern-hospital",
           "verified": true
         }
       ],
-      "publish_at": "2026-11-06T18:00:00Z",
+      "file": "scripts/029-alte-historische-story.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/029-alte-historische-story.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 25,
+      "dauer": null,
+      "publish_at": null,
       "targets": [
         "instagram",
         "youtube"
       ],
-      "results": {
-        "instagram": {
-          "media_id": "17929483620429531"
-        },
-        "youtube": {
-          "video_id": "uETHTQ7VJA4"
-        }
-      },
-      "media_id": "17929483620429531",
-      "permalink": "https://www.instagram.com/reel/DfaM2aVkulK/",
-      "metrics": {
-        "views": 199,
-        "reach": 152,
-        "likes": 4,
-        "comments": 1,
-        "shares": 1,
-        "saved": 0
-      },
-      "order_rank": 2
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 0
     },
     {
       "brand": "nurwissen",
-      "id": "019",
-      "title": "Vor dir das Meer, hinter dir das Heer",
-      "thema": "Motivation",
-      "hook": "Vor ihm das Meer. Hinter ihm eine Armee. Und sein Volk sagt: Wir sind erledigt. Seine Antwort besteht aus vier Wörtern.",
+      "id": "030",
+      "title": "Mit 21 losgegangen — und drei Kontinente später zurück",
+      "thema": "Alte Historische Story",
+      "hook": "Ein 21-Jähriger geht 1325 allein aus Tanger los. Er will nach Mekka. Zurück ist er erst 24 Jahre später — nach drei Kontinenten.",
       "voice": "robert",
       "stage": "checked",
       "fact_check": "ok",
       "sources": {
-        "total": 2,
-        "verified": 2
+        "total": 1,
+        "verified": 1
       },
       "source_list": [
         {
-          "claim": "Am Meer sagt das Volk „Wir sind erledigt“, Musa antwortet: „Nein! Mit mir ist mein Herr; Er wird mich leiten“",
-          "ref": "Koran 26:63, alislam.org (Hafs 26:62)",
-          "url": "https://www.alislam.org/quran/26:63",
-          "verified": true
-        },
-        {
-          "claim": "„Die sich um Uns mühen — Wir werden sie auf Unsere Wege leiten“",
-          "ref": "Koran 29:70, alislam.org (Hafs 29:69)",
-          "url": "https://www.alislam.org/quran/29:70",
+          "claim": "Ibn Battuta brach 1325 mit 21 Jahren allein aus Tanger auf; Rückkehr 1349; Berichte bis 1354; drei Kontinente bis China; Rihla über zwei Jahre dem Hofdichter Ibn Dschuzayy diktiert, der redigierte und ergänzte",
+          "ref": "AramcoWorld, „The Longest Hajj: The Journeys of Ibn Battuta“, 2000",
+          "url": "https://www.aramcoworld.com/en/articles/2000/the-longest-hajj-the-journeys-of-ibn-battuta-intro",
           "verified": true
         }
       ],
+      "file": "scripts/030-alte-historische-story.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/030-alte-historische-story.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 22,
+      "dauer": null,
       "publish_at": null,
       "targets": [
         "instagram",
@@ -228,45 +113,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 3
-    },
-    {
-      "brand": "nurwissen",
-      "id": "018",
-      "title": "Der Mann, der nie fragte „warum ich?“",
-      "thema": "Geduld / Sabr",
-      "hook": "Er verliert sein Vermögen, seine Kinder und seine Gesundheit. Und in seinem ganzen Bittgebet kommt ein Wort nicht vor: warum.",
-      "voice": "sabrina",
-      "stage": "checked",
-      "fact_check": "ok",
-      "sources": {
-        "total": 2,
-        "verified": 2
-      },
-      "source_list": [
-        {
-          "claim": "Ayyub bittet: „Mich hat Not ergriffen, und Du bist der Barmherzigste der Barmherzigen“; Allah erhört ihn, nimmt die Not und gibt ihm seine Familie und mehr dazu",
-          "ref": "Koran 21:84–85, alislam.org (Hafs 21:83–84)",
-          "url": "https://www.alislam.org/quran/21:85",
-          "verified": true
-        },
-        {
-          "claim": "„Stampf mit deinem Fuß auf — hier ist kühles Wasser zum Waschen und zum Trinken“",
-          "ref": "Koran 38:43, alislam.org (Hafs 38:42)",
-          "url": "https://www.alislam.org/quran/38:43",
-          "verified": true
-        }
-      ],
-      "publish_at": null,
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
-      "order_rank": 4
+      "order_rank": 1
     },
     {
       "brand": "nurwissen",
@@ -295,6 +142,12 @@
           "verified": true
         }
       ],
+      "file": "scripts/035-wissen.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/035-wissen.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 21,
+      "dauer": null,
       "publish_at": null,
       "targets": [
         "instagram",
@@ -304,14 +157,58 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 5
+      "order_rank": 2
     },
     {
       "brand": "nurwissen",
-      "id": "017",
-      "title": "Das Fenster, das jede Nacht aufgeht",
-      "thema": "Gebete",
-      "hook": "Jede Nacht geht ein Fenster auf. Immer zur gleichen Zeit. Und fast alle schlafen dabei.",
+      "id": "031",
+      "title": "Warum dein Kopf nach zwei Stunden Scrollen leerer ist als vorher",
+      "thema": "Viral & Trending",
+      "hook": "Du legst das Handy weg und fühlst dich leerer als vorher. Der Koran beschreibt genau diesen Zustand — und nennt den Grund in einem Halbsatz.",
+      "voice": "sabrina",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Koran 59:20 — „Werdet nicht wie die, die Allah vergaßen, und die Er darum sich selbst vergessen ließ“",
+          "ref": "alislam.org (Hafs 59:19)",
+          "url": "https://www.alislam.org/quran/59:20",
+          "verified": true
+        },
+        {
+          "claim": "Koran 13:29 — „deren Herzen Ruhe finden im Gedenken Allahs; wahrlich, im Gedenken Allahs finden die Herzen Ruhe“",
+          "ref": "alislam.org (Hafs 13:28)",
+          "url": "https://www.alislam.org/quran/13:29",
+          "verified": true
+        }
+      ],
+      "file": "scripts/031-viral-trending.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/031-viral-trending.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 21,
+      "dauer": null,
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 3
+    },
+    {
+      "brand": "nurwissen",
+      "id": "032",
+      "title": "Zwei Dinge, die du hast und nicht merkst",
+      "thema": "Viral & Trending",
+      "hook": "Der Prophet ﷺ hat zwei Geschenke genannt, bei denen die meisten Menschen betrogen werden. Nicht von anderen — von sich selbst.",
       "voice": "robert",
       "stage": "checked",
       "fact_check": "ok",
@@ -321,18 +218,24 @@
       },
       "source_list": [
         {
-          "claim": "Allah steigt im letzten Drittel der Nacht herab und fragt: wer ruft Mich, wer bittet Mich, wer bittet um Vergebung",
-          "ref": "Sahih al-Bukhari 1145, Buch 19, Hadith 26",
-          "url": "https://sunnah.com/bukhari:1145",
+          "claim": "„Zwei Gnaden, in denen viele Menschen betrogen werden: die Gesundheit und die freie Zeit“ (Ibn Abbas)",
+          "ref": "Sahih al-Bukhari 6412, Buch 81 (ar-Riqaq), Hadith 1",
+          "url": "https://sunnah.com/bukhari:6412",
           "verified": true
         },
         {
-          "claim": "Koran 17:80 — Tahajjud als zusätzliches Nachtgebet, „ruhmvoller Rang“",
-          "ref": "alislam.org, Ahmadiyya-Zählung (Hafs 17:79)",
-          "url": "https://www.alislam.org/quran/17:80",
+          "claim": "Sure al-Asr: „Beim Zeitalter! Wahrlich, der Mensch ist im Verlust — außer denen, die glauben und gute Werke tun und einander zur Wahrheit und zur Geduld ermahnen.“",
+          "ref": "Koran 103:2–4, alislam.org (Hafs 103:1–3)",
+          "url": "https://www.alislam.org/quran/103:1",
           "verified": true
         }
       ],
+      "file": "scripts/032-viral-trending.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/032-viral-trending.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 21,
+      "dauer": null,
       "publish_at": null,
       "targets": [
         "instagram",
@@ -342,103 +245,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 6
-    },
-    {
-      "brand": "nurwissen",
-      "id": "027",
-      "title": "Sieben Plätze im Schatten — zwei kannst du heute belegen",
-      "thema": "Hilfsbereit",
-      "hook": "An einem Tag, an dem es keinen Schatten gibt, wird Allah sieben Arten von Menschen beschatten. Zwei von den sieben schaffst du vor dem Schlafengehen.",
-      "voice": "robert",
-      "stage": "checked",
-      "fact_check": "ok",
-      "sources": {
-        "total": 1,
-        "verified": 1
-      },
-      "source_list": [
-        {
-          "claim": "Sieben, die Allah an einem Tag ohne Schatten beschatten wird: gerechter Herrscher; im Gottesdienst aufgewachsener junger Mensch; einer, dessen Herz an der Mosch",
-          "ref": "Sahih al-Bukhari 1423, Buch 24 (Zakat), Hadith 27 (Abu Huraira)",
-          "url": "https://sunnah.com/bukhari:1423",
-          "verified": true
-        }
-      ],
-      "publish_at": null,
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
-      "order_rank": 7
-    },
-    {
-      "brand": "nurwissen",
-      "id": "029",
-      "title": "Das erste Krankenhaus, in dem die Rechnung niemand bekam",
-      "thema": "Alte Historische Story",
-      "hook": "Die Idee, dass ein Krankenhaus dich behandelt, ohne vorher nach Geld zu fragen, ist nicht modern. Sie ist über tausend Jahre alt — und hat einen Namen.",
-      "voice": "robert",
-      "stage": "checked",
-      "fact_check": "ok",
-      "sources": {
-        "total": 1,
-        "verified": 1
-      },
-      "source_list": [
-        {
-          "claim": "Rufaida al-Aslamiyya richtete zur Zeit des Propheten ﷺ bei der Grabenschlacht ein Zelt für Verwundete ein; erstes muslimisches Hospital: Leprosorium in Damaskus",
-          "ref": "AramcoWorld, „The Islamic Roots of the Modern Hospital“, 2017",
-          "url": "https://www.aramcoworld.com/articles/2017/the-islamic-roots-of-the-modern-hospital",
-          "verified": true
-        }
-      ],
-      "publish_at": null,
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
-      "order_rank": 8
-    },
-    {
-      "brand": "nurwissen",
-      "id": "030",
-      "title": "Mit 21 losgegangen — und drei Kontinente später zurück",
-      "thema": "Alte Historische Story",
-      "hook": "Ein 21-Jähriger geht 1325 allein aus Tanger los. Er will nach Mekka. Zurück ist er erst 24 Jahre später — nach drei Kontinenten.",
-      "voice": "robert",
-      "stage": "checked",
-      "fact_check": "ok",
-      "sources": {
-        "total": 1,
-        "verified": 1
-      },
-      "source_list": [
-        {
-          "claim": "Ibn Battuta brach 1325 mit 21 Jahren allein aus Tanger auf; Rückkehr 1349; Berichte bis 1354; drei Kontinente bis China; Rihla über zwei Jahre dem Hofdichter Ib",
-          "ref": "AramcoWorld, „The Longest Hajj: The Journeys of Ibn Battuta“, 2000",
-          "url": "https://www.aramcoworld.com/en/articles/2000/the-longest-hajj-the-journeys-of-ibn-battuta-intro",
-          "verified": true
-        }
-      ],
-      "publish_at": null,
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
-      "order_rank": 9
+      "order_rank": 4
     },
     {
       "brand": "nurwissen",
@@ -467,6 +274,12 @@
           "verified": true
         }
       ],
+      "file": "scripts/016-gebete.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/016-gebete.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 21,
+      "dauer": null,
       "publish_at": null,
       "targets": [
         "instagram",
@@ -476,14 +289,58 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 10
+      "order_rank": 5
     },
     {
       "brand": "nurwissen",
-      "id": "024",
-      "title": "Zwei Dinge, mit denen du dich ins Verderben reden kannst",
-      "thema": "Sünden",
-      "hook": "Der Prophet ﷺ hat eine Regel gegeben, die aus genau zwei Möglichkeiten besteht. Und die meisten brechen sie täglich.",
+      "id": "019",
+      "title": "Vor dir das Meer, hinter dir das Heer",
+      "thema": "Motivation",
+      "hook": "Vor ihm das Meer. Hinter ihm eine Armee. Und sein Volk sagt: Wir sind erledigt. Seine Antwort besteht aus vier Wörtern.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Am Meer sagt das Volk „Wir sind erledigt“, Musa antwortet: „Nein! Mit mir ist mein Herr; Er wird mich leiten“",
+          "ref": "Koran 26:63, alislam.org (Hafs 26:62)",
+          "url": "https://www.alislam.org/quran/26:63",
+          "verified": true
+        },
+        {
+          "claim": "„Die sich um Uns mühen — Wir werden sie auf Unsere Wege leiten“",
+          "ref": "Koran 29:70, alislam.org (Hafs 29:69)",
+          "url": "https://www.alislam.org/quran/29:70",
+          "verified": true
+        }
+      ],
+      "file": "scripts/019-motivation.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/019-motivation.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 22,
+      "dauer": null,
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 6
+    },
+    {
+      "brand": "nurwissen",
+      "id": "027",
+      "title": "Sieben Plätze im Schatten — zwei kannst du heute belegen",
+      "thema": "Hilfsbereit",
+      "hook": "An einem Tag, an dem es keinen Schatten gibt, wird Allah sieben Arten von Menschen beschatten. Zwei von den sieben schaffst du vor dem Schlafengehen.",
       "voice": "robert",
       "stage": "checked",
       "fact_check": "ok",
@@ -493,12 +350,18 @@
       },
       "source_list": [
         {
-          "claim": "„Wer an Allah und den Jüngsten Tag glaubt, soll Gutes sagen oder schweigen“ — im selben Hadith: den Nachbarn nicht schädigen, den Gast ehren",
-          "ref": "Sahih al-Bukhari 6475, Buch 81 (ar-Riqaq), Hadith 64 (Abu Huraira)",
-          "url": "https://sunnah.com/bukhari:6475",
+          "claim": "Sieben, die Allah an einem Tag ohne Schatten beschatten wird: gerechter Herrscher; im Gottesdienst aufgewachsener junger Mensch; einer, dessen Herz an der Moschee hängt; zwei, die sich um Allahs willen lieben; einer, der eine Einladung zur Sünde abweist; einer, der so heimlich spendet, dass die linke Hand nicht weiß, was die rechte gibt; einer, der Allahs allein gedenkt und weint",
+          "ref": "Sahih al-Bukhari 1423, Buch 24 (Zakat), Hadith 27 (Abu Huraira)",
+          "url": "https://sunnah.com/bukhari:1423",
           "verified": true
         }
       ],
+      "file": "scripts/027-hilfsbereit.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/027-hilfsbereit.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 21,
+      "dauer": null,
       "publish_at": null,
       "targets": [
         "instagram",
@@ -508,7 +371,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 11
+      "order_rank": 7
     },
     {
       "brand": "nurwissen",
@@ -543,6 +406,12 @@
           "verified": true
         }
       ],
+      "file": "scripts/026-eltern-dienen.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/026-eltern-dienen.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 20,
+      "dauer": null,
       "publish_at": null,
       "targets": [
         "instagram",
@@ -552,7 +421,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 12
+      "order_rank": 8
     },
     {
       "brand": "nurwissen",
@@ -569,12 +438,18 @@
       },
       "source_list": [
         {
-          "claim": "„Dein Lächeln im Gesicht deines Bruders ist für dich eine Sadaqa“ — im gleichen Hadith: den Weg zeigen, Hindernis entfernen, dem Blinden helfen, Wasser in das G",
+          "claim": "„Dein Lächeln im Gesicht deines Bruders ist für dich eine Sadaqa“ — im gleichen Hadith: den Weg zeigen, Hindernis entfernen, dem Blinden helfen, Wasser in das Gefäß des Bruders gießen",
           "ref": "Jami at-Tirmidhi 1956, Buch 27, Hadith 62 (Abu Dharr), Grad hasan (Darussalam)",
           "url": "https://sunnah.com/tirmidhi:1956",
           "verified": true
         }
       ],
+      "file": "scripts/023-alltags-situation.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/023-alltags-situation.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 21,
+      "dauer": null,
       "publish_at": null,
       "targets": [
         "instagram",
@@ -584,7 +459,89 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 13
+      "order_rank": 9
+    },
+    {
+      "brand": "nurwissen",
+      "id": "018",
+      "title": "Der Mann, der nie fragte „warum ich?“",
+      "thema": "Geduld / Sabr",
+      "hook": "Er verliert sein Vermögen, seine Kinder und seine Gesundheit. Und in seinem ganzen Bittgebet kommt ein Wort nicht vor: warum.",
+      "voice": "sabrina",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Ayyub bittet: „Mich hat Not ergriffen, und Du bist der Barmherzigste der Barmherzigen“; Allah erhört ihn, nimmt die Not und gibt ihm seine Familie und mehr dazu",
+          "ref": "Koran 21:84–85, alislam.org (Hafs 21:83–84)",
+          "url": "https://www.alislam.org/quran/21:85",
+          "verified": true
+        },
+        {
+          "claim": "„Stampf mit deinem Fuß auf — hier ist kühles Wasser zum Waschen und zum Trinken“",
+          "ref": "Koran 38:43, alislam.org (Hafs 38:42)",
+          "url": "https://www.alislam.org/quran/38:43",
+          "verified": true
+        }
+      ],
+      "file": "scripts/018-geduld-sabr.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/018-geduld-sabr.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 22,
+      "dauer": null,
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 10
+    },
+    {
+      "brand": "nurwissen",
+      "id": "033",
+      "title": "Der Satz, der dir gehört, bevor du ihn brauchst",
+      "thema": "Geduld / Sabr",
+      "hook": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. Aber der Koran gibt ihn für jede Art von Schlag — und er enthält zwei Aussagen, die alles verändern.",
+      "voice": "sabrina",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "Koran 2:157 — „Die, wenn ein Unglück (musiba) sie trifft, sagen: Wir gehören Allah, und zu Ihm werden wir zurückkehren“; der Vers davor (2:156) kündigt Prüfung durch Furcht, Hunger und Verlust an und verheißt den Standhaften frohe Botschaft",
+          "ref": "alislam.org (Hafs 2:155–156)",
+          "url": "https://www.alislam.org/quran/2:157",
+          "verified": true
+        }
+      ],
+      "file": "scripts/033-geduld-sabr.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/033-geduld-sabr.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 22,
+      "dauer": null,
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 11
     },
     {
       "brand": "nurwissen",
@@ -613,6 +570,94 @@
           "verified": true
         }
       ],
+      "file": "scripts/034-freunde.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/034-freunde.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 21,
+      "dauer": null,
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 12
+    },
+    {
+      "brand": "nurwissen",
+      "id": "017",
+      "title": "Das Fenster, das jede Nacht aufgeht",
+      "thema": "Gebete",
+      "hook": "Jede Nacht geht ein Fenster auf. Immer zur gleichen Zeit. Und fast alle schlafen dabei.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "Allah steigt im letzten Drittel der Nacht herab und fragt: wer ruft Mich, wer bittet Mich, wer bittet um Vergebung",
+          "ref": "Sahih al-Bukhari 1145, Buch 19, Hadith 26",
+          "url": "https://sunnah.com/bukhari:1145",
+          "verified": true
+        },
+        {
+          "claim": "Koran 17:80 — Tahajjud als zusätzliches Nachtgebet, „ruhmvoller Rang“",
+          "ref": "alislam.org, Ahmadiyya-Zählung (Hafs 17:79)",
+          "url": "https://www.alislam.org/quran/17:80",
+          "verified": true
+        }
+      ],
+      "file": "scripts/017-gebete.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/017-gebete.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 20,
+      "dauer": null,
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 13
+    },
+    {
+      "brand": "nurwissen",
+      "id": "024",
+      "title": "Zwei Dinge, mit denen du dich ins Verderben reden kannst",
+      "thema": "Sünden",
+      "hook": "Der Prophet ﷺ hat eine Regel gegeben, die aus genau zwei Möglichkeiten besteht. Und die meisten brechen sie täglich.",
+      "voice": "robert",
+      "stage": "checked",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "„Wer an Allah und den Jüngsten Tag glaubt, soll Gutes sagen oder schweigen“ — im selben Hadith: den Nachbarn nicht schädigen, den Gast ehren",
+          "ref": "Sahih al-Bukhari 6475, Buch 81 (ar-Riqaq), Hadith 64 (Abu Huraira)",
+          "url": "https://sunnah.com/bukhari:6475",
+          "verified": true
+        }
+      ],
+      "file": "scripts/024-suenden.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/024-suenden.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 20,
+      "dauer": null,
       "publish_at": null,
       "targets": [
         "instagram",
@@ -623,114 +668,6 @@
       "permalink": null,
       "metrics": null,
       "order_rank": 14
-    },
-    {
-      "brand": "nurwissen",
-      "id": "033",
-      "title": "Der Satz, der dir gehört, bevor du ihn brauchst",
-      "thema": "Geduld / Sabr",
-      "hook": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. Aber der Koran gibt ihn für jede Art von Schlag — und er enthält zwei Aussagen, die alles verändern.",
-      "voice": "sabrina",
-      "stage": "checked",
-      "fact_check": "ok",
-      "sources": {
-        "total": 1,
-        "verified": 1
-      },
-      "source_list": [
-        {
-          "claim": "Koran 2:157 — „Die, wenn ein Unglück (musiba) sie trifft, sagen: Wir gehören Allah, und zu Ihm werden wir zurückkehren“; der Vers davor (2:156) kündigt Prüfung ",
-          "ref": "alislam.org (Hafs 2:155–156)",
-          "url": "https://www.alislam.org/quran/2:157",
-          "verified": true
-        }
-      ],
-      "publish_at": null,
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
-      "order_rank": 15
-    },
-    {
-      "brand": "nurwissen",
-      "id": "031",
-      "title": "Warum dein Kopf nach zwei Stunden Scrollen leerer ist als vorher",
-      "thema": "Viral & Trending",
-      "hook": "Du legst das Handy weg und fühlst dich leerer als vorher. Der Koran beschreibt genau diesen Zustand — und nennt den Grund in einem Halbsatz.",
-      "voice": "sabrina",
-      "stage": "checked",
-      "fact_check": "ok",
-      "sources": {
-        "total": 2,
-        "verified": 2
-      },
-      "source_list": [
-        {
-          "claim": "Koran 59:20 — „Werdet nicht wie die, die Allah vergaßen, und die Er darum sich selbst vergessen ließ“",
-          "ref": "alislam.org (Hafs 59:19)",
-          "url": "https://www.alislam.org/quran/59:20",
-          "verified": true
-        },
-        {
-          "claim": "Koran 13:29 — „deren Herzen Ruhe finden im Gedenken Allahs; wahrlich, im Gedenken Allahs finden die Herzen Ruhe“",
-          "ref": "alislam.org (Hafs 13:28)",
-          "url": "https://www.alislam.org/quran/13:29",
-          "verified": true
-        }
-      ],
-      "publish_at": null,
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
-      "order_rank": 16
-    },
-    {
-      "brand": "nurwissen",
-      "id": "032",
-      "title": "Zwei Dinge, die du hast und nicht merkst",
-      "thema": "Viral & Trending",
-      "hook": "Der Prophet ﷺ hat zwei Geschenke genannt, bei denen die meisten Menschen betrogen werden. Nicht von anderen — von sich selbst.",
-      "voice": "robert",
-      "stage": "checked",
-      "fact_check": "ok",
-      "sources": {
-        "total": 2,
-        "verified": 2
-      },
-      "source_list": [
-        {
-          "claim": "„Zwei Gnaden, in denen viele Menschen betrogen werden: die Gesundheit und die freie Zeit“ (Ibn Abbas)",
-          "ref": "Sahih al-Bukhari 6412, Buch 81 (ar-Riqaq), Hadith 1",
-          "url": "https://sunnah.com/bukhari:6412",
-          "verified": true
-        },
-        {
-          "claim": "Sure al-Asr: „Beim Zeitalter! Wahrlich, der Mensch ist im Verlust — außer denen, die glauben und gute Werke tun und einander zur Wahrheit und zur Geduld ermahne",
-          "ref": "Koran 103:2–4, alislam.org (Hafs 103:1–3)",
-          "url": "https://www.alislam.org/quran/103:1",
-          "verified": true
-        }
-      ],
-      "publish_at": null,
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
-      "order_rank": 17
     },
     {
       "brand": "nurwissen",
@@ -759,6 +696,12 @@
           "verified": true
         }
       ],
+      "file": "scripts/025-alltags-situation.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/025-alltags-situation.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 19,
+      "dauer": null,
       "publish_at": null,
       "targets": [
         "instagram",
@@ -768,7 +711,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 18
+      "order_rank": 15
     },
     {
       "brand": "nurwissen",
@@ -792,12 +735,12 @@
       "media_id": "18114527000174151",
       "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
       "metrics": {
-        "views": 147282,
-        "reach": 117115,
-        "likes": 7296,
-        "comments": 276,
-        "shares": 3001,
-        "saved": 1933
+        "views": 147419,
+        "reach": 117204,
+        "likes": 7304,
+        "comments": 275,
+        "shares": 3003,
+        "saved": 1935
       },
       "order_rank": 999
     },
@@ -823,11 +766,11 @@
       "media_id": "18138963895624373",
       "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
       "metrics": {
-        "views": 8114,
-        "reach": 6933,
-        "likes": 314,
+        "views": 8132,
+        "reach": 6947,
+        "likes": 315,
         "comments": 3,
-        "shares": 47,
+        "shares": 49,
         "saved": 90
       },
       "order_rank": 999
@@ -885,8 +828,8 @@
       "media_id": "18106676354203367",
       "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
       "metrics": {
-        "views": 470,
-        "reach": 381,
+        "views": 472,
+        "reach": 383,
         "likes": 11,
         "comments": 2,
         "shares": 0,
@@ -916,7 +859,7 @@
       "media_id": "17984355417120782",
       "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
       "metrics": {
-        "views": 555,
+        "views": 556,
         "reach": 434,
         "likes": 12,
         "comments": 2,
@@ -947,8 +890,8 @@
       "media_id": "17951034201271209",
       "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
       "metrics": {
-        "views": 360,
-        "reach": 265,
+        "views": 361,
+        "reach": 267,
         "likes": 8,
         "comments": 2,
         "shares": 3,
@@ -971,7 +914,7 @@
       },
       "source_list": [
         {
-          "claim": "Mann der Kinder Israels tötet 99 Menschen, dann den Mönch (100.); ein Gelehrter schickt ihn in ein Dorf; er stirbt unterwegs; Engel der Barmherzigkeit und der S",
+          "claim": "Mann der Kinder Israels tötet 99 Menschen, dann den Mönch (100.); ein Gelehrter schickt ihn in ein Dorf; er stirbt unterwegs; Engel der Barmherzigkeit und der Strafe streiten; Gott lässt die Dörfer rücken; er liegt eine Handbreit näher und wird vergeben",
           "ref": "Sahih al-Bukhari 3470, Buch 60 (Propheten), Hadith 137",
           "url": "https://sunnah.com/bukhari:3470",
           "verified": true
@@ -983,6 +926,12 @@
           "verified": true
         }
       ],
+      "file": "scripts/011-suenden.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/011-suenden.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 24,
+      "dauer": null,
       "publish_at": "2026-10-27T18:00:00Z",
       "targets": [
         "instagram",
@@ -992,8 +941,8 @@
       "media_id": "18145450528572276",
       "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
       "metrics": {
-        "views": 3143,
-        "reach": 2734,
+        "views": 3147,
+        "reach": 2738,
         "likes": 110,
         "comments": 1,
         "shares": 49,
@@ -1023,11 +972,11 @@
       "media_id": "18470014318187750",
       "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
       "metrics": {
-        "views": 4970,
-        "reach": 4180,
-        "likes": 293,
+        "views": 4988,
+        "reach": 4196,
+        "likes": 294,
         "comments": 2,
-        "shares": 70,
+        "shares": 71,
         "saved": 74
       },
       "order_rank": 999
@@ -1061,8 +1010,8 @@
       "media_id": "17872718889648381",
       "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
       "metrics": {
-        "views": 2117,
-        "reach": 1825,
+        "views": 2123,
+        "reach": 1835,
         "likes": 96,
         "comments": 2,
         "shares": 53,
@@ -1099,8 +1048,8 @@
       "media_id": "18163773607435569",
       "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
       "metrics": {
-        "views": 1515,
-        "reach": 1266,
+        "views": 1520,
+        "reach": 1275,
         "likes": 51,
         "comments": 1,
         "shares": 6,
@@ -1141,6 +1090,180 @@
     },
     {
       "brand": "nurwissen",
+      "id": "020",
+      "title": "Der einzige Krieg, den Allah selbst erklärt",
+      "thema": "Geld",
+      "hook": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankündigt, sondern Krieg. Und sie steht heute in fast jedem Vertrag.",
+      "voice": "robert",
+      "stage": "live",
+      "fact_check": "ok",
+      "sources": {
+        "total": 2,
+        "verified": 2
+      },
+      "source_list": [
+        {
+          "claim": "„Allah lässt den Zins schwinden und die Mildtätigkeit wachsen“",
+          "ref": "Koran 2:277, alislam.org (Hafs 2:276)",
+          "url": "https://www.alislam.org/quran/2:277",
+          "verified": true
+        },
+        {
+          "claim": "„So erwartet Krieg von Allah und Seinem Gesandten … und wenn ihr umkehrt, steht euch euer Kapital zu“",
+          "ref": "Koran 2:280, alislam.org (Hafs 2:279)",
+          "url": "https://www.alislam.org/quran/2:280",
+          "verified": true
+        }
+      ],
+      "file": "scripts/020-geld.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/020-geld.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 21,
+      "dauer": null,
+      "publish_at": "2026-11-04T15:00:00Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "18105767723288101"
+        },
+        "youtube": {
+          "error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
+        }
+      },
+      "media_id": "18105767723288101",
+      "permalink": "https://www.instagram.com/reel/DfUwlStkR_L/",
+      "metrics": {
+        "views": 122907,
+        "reach": 100516,
+        "likes": 5301,
+        "comments": 63,
+        "shares": 3099,
+        "saved": 1726
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "021",
+      "title": "Warum der Koran Alkohol in drei Schritten verbot",
+      "thema": "Haram / Halal",
+      "hook": "Alkohol wurde nicht an einem Tag verboten. Sondern in drei Schritten über Jahre. Und der Grund dahinter ändert, wie du über deine eigenen Gewohnheiten denkst.",
+      "voice": "robert",
+      "stage": "live",
+      "fact_check": "ok",
+      "sources": {
+        "total": 3,
+        "verified": 3
+      },
+      "source_list": [
+        {
+          "claim": "Koran 2:220 — Wein und Glücksspiel: Sünde und Nutzen, die Sünde ist größer",
+          "ref": "alislam.org (Hafs 2:219)",
+          "url": "https://www.alislam.org/quran/2:220",
+          "verified": true
+        },
+        {
+          "claim": "Koran 4:44 — nicht betrunken zum Gebet",
+          "ref": "alislam.org (Hafs 4:43)",
+          "url": "https://www.alislam.org/quran/4:44",
+          "verified": true
+        },
+        {
+          "claim": "Koran 5:91 — Wein, Glücksspiel, Götzensteine, Lospfeile: Greuel vom Werk Satans, meidet sie",
+          "ref": "alislam.org (Hafs 5:90)",
+          "url": "https://www.alislam.org/quran/5:91",
+          "verified": true
+        }
+      ],
+      "file": "scripts/021-haram-halal.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/021-haram-halal.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 21,
+      "dauer": null,
+      "publish_at": "2026-11-05T18:00:00Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "18144515317625218"
+        },
+        "youtube": {
+          "video_id": "YRh3GIhw-4k"
+        }
+      },
+      "media_id": "18144515317625218",
+      "permalink": "https://www.instagram.com/reel/DfXrlQPFcE-/",
+      "metrics": {
+        "views": 531,
+        "reach": 424,
+        "likes": 12,
+        "comments": 1,
+        "shares": 4,
+        "saved": 11
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "022",
+      "title": "Drei Männer, ein Felsen, drei Taten",
+      "thema": "Sünden",
+      "hook": "Drei Männer sind in einer Höhle eingeschlossen. Ein Felsen versperrt den Ausgang. Jeder nennt eine Tat, von der niemand wusste — und der Fels bewegt sich.",
+      "voice": "robert",
+      "stage": "live",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "Drei Männer in einer Höhle, Felsen versperrt den Ausgang; jeder bittet mit einer Tat: (1) alte Eltern zuerst mit Milch versorgt, stand bis zum Morgen mit der Schale, (2) verzichtete auf die Cousine trotz Zusage und ließ ihr das Gold, (3) investierte den nicht abgeholten Lohn eines Arbeiters und gab ihm alles zurück — der Fels öffnet sich",
+          "ref": "Sahih al-Bukhari 2272, Buch 37 (Miete), Hadith 12",
+          "url": "https://sunnah.com/bukhari:2272",
+          "verified": true
+        }
+      ],
+      "file": "scripts/022-suenden.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/022-suenden.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 24,
+      "dauer": null,
+      "publish_at": "2026-11-06T18:00:00Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "17929483620429531"
+        },
+        "youtube": {
+          "video_id": "uETHTQ7VJA4"
+        }
+      },
+      "media_id": "17929483620429531",
+      "permalink": "https://www.instagram.com/reel/DfaM2aVkulK/",
+      "metrics": {
+        "views": 216,
+        "reach": 162,
+        "likes": 4,
+        "comments": 1,
+        "shares": 1,
+        "saved": 0
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
       "id": "028",
       "title": "Du sagst jeden Tag seinen Namen und weißt es nicht.",
       "thema": "",
@@ -1161,8 +1284,8 @@
       "media_id": "17969911538964163",
       "permalink": "https://www.instagram.com/reel/De7jLSNDEat/",
       "metrics": {
-        "views": 475,
-        "reach": 360,
+        "views": 477,
+        "reach": 362,
         "likes": 12,
         "comments": 3,
         "shares": 0,
@@ -1174,11 +1297,11 @@
   "stats": {
     "account": {
       "username": "nurwissen_official",
-      "followers_count": 1050,
+      "followers_count": 1054,
       "follows_count": 0,
       "media_count": 14,
       "id": "28768435396155579",
-      "at": "2026-11-07T08:49:21.942Z"
+      "at": "2026-11-07T16:28:34.419Z"
     },
     "history": [
       {
@@ -1535,6 +1658,11 @@
         "at": "2026-11-07T08:49:21.942Z",
         "followers": 1050,
         "views_total": 293029
+      },
+      {
+        "at": "2026-11-07T16:28:34.419Z",
+        "followers": 1054,
+        "views_total": 294837
       }
     ],
     "reels": [
@@ -1543,8 +1671,8 @@
         "permalink": "https://www.instagram.com/reel/DfaM2aVkulK/",
         "posted": "2026-11-06T18:01:09+0000",
         "caption": "Drei Männer sind in einer Höhle eingeschlossen. Ein Felsen v",
-        "views": 199,
-        "reach": 152,
+        "views": 216,
+        "reach": 162,
         "likes": 4,
         "comments": 1,
         "shares": 1,
@@ -1556,34 +1684,34 @@
         "permalink": "https://www.instagram.com/reel/DfXrlQPFcE-/",
         "posted": "2026-11-05T18:32:02+0000",
         "caption": "Alkohol wurde nicht an einem Tag verboten, sondern in drei S",
-        "views": 517,
-        "reach": 415,
+        "views": 531,
+        "reach": 424,
         "likes": 12,
         "comments": 1,
         "shares": 4,
-        "saved": 10,
-        "total_interactions": 28
+        "saved": 11,
+        "total_interactions": 29
       },
       {
         "id": "18105767723288101",
         "permalink": "https://www.instagram.com/reel/DfUwlStkR_L/",
         "posted": "2026-11-04T15:18:05+0000",
         "caption": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankü",
-        "views": 121332,
-        "reach": 99401,
-        "likes": 5223,
+        "views": 122907,
+        "reach": 100516,
+        "likes": 5301,
         "comments": 63,
-        "shares": 3039,
-        "saved": 1707,
-        "total_interactions": 10353
+        "shares": 3099,
+        "saved": 1726,
+        "total_interactions": 10516
       },
       {
         "id": "18220536925356124",
         "permalink": "https://www.instagram.com/reel/DfKwCPPlJZg/",
         "posted": "2026-10-31T18:00:53+0000",
         "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die",
-        "views": 1980,
-        "reach": 1711,
+        "views": 1988,
+        "reach": 1716,
         "likes": 67,
         "comments": 1,
         "shares": 22,
@@ -1595,8 +1723,8 @@
         "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
         "posted": "2026-10-30T18:00:53+0000",
         "caption": "Eine Frau, die ihren Körper verkaufte, wird vergeben — wegen",
-        "views": 1515,
-        "reach": 1266,
+        "views": 1520,
+        "reach": 1275,
         "likes": 51,
         "comments": 1,
         "shares": 6,
@@ -1608,8 +1736,8 @@
         "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
         "posted": "2026-10-29T18:20:49+0000",
         "caption": "Der Prophet (saw) hat Freundschaft in einem Bild erklärt: ei",
-        "views": 2117,
-        "reach": 1825,
+        "views": 2123,
+        "reach": 1835,
         "likes": 96,
         "comments": 2,
         "shares": 53,
@@ -1621,21 +1749,21 @@
         "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
         "posted": "2026-10-28T21:43:39+0000",
         "caption": "Der Prophet (saw) hat einen Mann beschrieben, den er nie get",
-        "views": 4970,
-        "reach": 4180,
-        "likes": 293,
+        "views": 4988,
+        "reach": 4196,
+        "likes": 294,
         "comments": 2,
-        "shares": 70,
+        "shares": 71,
         "saved": 74,
-        "total_interactions": 457
+        "total_interactions": 459
       },
       {
         "id": "18145450528572276",
         "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
         "posted": "2026-10-27T21:17:23+0000",
         "caption": "Ein Mann hat 99 Menschen getötet. Er fragt einen Mönch, ob e",
-        "views": 3143,
-        "reach": 2734,
+        "views": 3147,
+        "reach": 2738,
         "likes": 110,
         "comments": 1,
         "shares": 49,
@@ -1647,8 +1775,8 @@
         "permalink": "https://www.instagram.com/reel/De7jLSNDEat/",
         "posted": "2026-10-25T20:19:46+0000",
         "caption": "Du sagst jeden Tag seinen Namen und weißt es nicht.\n\nAl-Chwa",
-        "views": 475,
-        "reach": 360,
+        "views": 477,
+        "reach": 362,
         "likes": 12,
         "comments": 3,
         "shares": 0,
@@ -1660,34 +1788,34 @@
         "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
         "posted": "2026-10-24T18:25:06+0000",
         "caption": "Das Wort „Blut\" steht genau 10-mal im Koran. 4× als Speiseve",
-        "views": 8114,
-        "reach": 6933,
-        "likes": 314,
+        "views": 8132,
+        "reach": 6947,
+        "likes": 315,
         "comments": 3,
-        "shares": 47,
+        "shares": 49,
         "saved": 90,
-        "total_interactions": 469
+        "total_interactions": 472
       },
       {
         "id": "18114527000174151",
         "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
         "posted": "2026-10-23T19:35:52+0000",
         "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Ni",
-        "views": 147282,
-        "reach": 117115,
-        "likes": 7296,
-        "comments": 276,
-        "shares": 3001,
-        "saved": 1933,
-        "total_interactions": 12929
+        "views": 147419,
+        "reach": 117204,
+        "likes": 7304,
+        "comments": 275,
+        "shares": 3003,
+        "saved": 1935,
+        "total_interactions": 12942
       },
       {
         "id": "18106676354203367",
         "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
         "posted": "2026-10-21T19:43:01+0000",
         "caption": "Ein alter Mann hält ein Hemd. Es ist voller Blut. Und er wei",
-        "views": 470,
-        "reach": 381,
+        "views": 472,
+        "reach": 383,
         "likes": 11,
         "comments": 2,
         "shares": 0,
@@ -1699,7 +1827,7 @@
         "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
         "posted": "2026-10-20T19:41:49+0000",
         "caption": "Kolumbus wollte nach Indien. Er landete in Amerika – und hat",
-        "views": 555,
+        "views": 556,
         "reach": 434,
         "likes": 12,
         "comments": 2,
@@ -1712,8 +1840,8 @@
         "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
         "posted": "2026-10-19T21:37:07+0000",
         "caption": "Jedes Foto auf deinem Handy folgt einer Regel, die ein Mann ",
-        "views": 360,
-        "reach": 265,
+        "views": 361,
+        "reach": 267,
         "likes": 8,
         "comments": 2,
         "shares": 3,
@@ -1728,11 +1856,57 @@
     "skip": 0
   },
   "posted_total": 15,
+  "channels": [
+    {
+      "platform": "instagram",
+      "label": "Instagram Reels",
+      "handle": "nurwissen_official",
+      "geplant": true,
+      "status": "laeuft",
+      "posts": 7,
+      "fehler": 0,
+      "last_ok": "2026-11-06T18:00:06.322Z",
+      "last_error": null
+    },
+    {
+      "platform": "youtube",
+      "label": "YouTube Shorts",
+      "handle": null,
+      "geplant": true,
+      "status": "laeuft",
+      "posts": 2,
+      "fehler": 5,
+      "last_ok": "2026-11-06T18:00:06.322Z",
+      "last_error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
+    },
+    {
+      "platform": "tiktok",
+      "label": "TikTok",
+      "handle": null,
+      "geplant": false,
+      "status": "nicht verbunden",
+      "posts": 0,
+      "fehler": 0,
+      "last_ok": null,
+      "last_error": null
+    },
+    {
+      "platform": "facebook",
+      "label": "Facebook Reels",
+      "handle": null,
+      "geplant": false,
+      "status": "nicht verbunden",
+      "posts": 0,
+      "fehler": 0,
+      "last_ok": null,
+      "last_error": null
+    }
+  ],
   "health": {
     "min_runway": 3,
     "last_post": "2026-11-06T18:00:06.322Z",
-    "last_post_hours": 15,
-    "last_engage": "2026-11-07T08:49:21.942Z",
+    "last_post_hours": 22,
+    "last_engage": "2026-11-07T16:28:34.419Z",
     "last_engage_hours": 0,
     "scripts_total": 31,
     "videos_ready": 0,
@@ -1750,37 +1924,8 @@
       },
       {
         "level": "error",
-        "text": "Story abgebrochen: Error: Instagram meldet ERROR beim Verarbeiten",
-        "action": "actions"
-      },
-      {
-        "level": "error",
         "brand": "nurwissen",
         "text": "Reel 020: Posting-Fehler auf youtube.",
-        "action": "actions"
-      },
-      {
-        "level": "error",
-        "brand": "nurwissen",
-        "text": "Reel 007: Posting-Fehler auf youtube.",
-        "action": "actions"
-      },
-      {
-        "level": "error",
-        "brand": "nurwissen",
-        "text": "Reel 013: Posting-Fehler auf youtube.",
-        "action": "actions"
-      },
-      {
-        "level": "error",
-        "brand": "nurwissen",
-        "text": "Reel 014: Posting-Fehler auf youtube.",
-        "action": "actions"
-      },
-      {
-        "level": "error",
-        "brand": "nurwissen",
-        "text": "Reel 015: Posting-Fehler auf youtube.",
         "action": "actions"
       }
     ],
@@ -1794,22 +1939,28 @@
       "does": "Script -> Voice-Over -> Remotion -> Queue"
     },
     {
-      "name": "Reel posten",
+      "name": "Reel posten (abends)",
       "file": "post-reel.yml",
-      "cron": "0 11,14 * * * (wartet auf 18:00 UTC)",
+      "cron": "wartet auf 18:00 UTC = 19:00 Berlin",
       "does": "Instagram + YouTube + TikTok + Facebook"
+    },
+    {
+      "name": "Reel posten (mittags)",
+      "file": "post-reel-mittag.yml",
+      "cron": "mittags",
+      "does": "zweites Reel des Tages"
     },
     {
       "name": "Story posten",
       "file": "post-story.yml",
       "cron": "taeglich 20:00 Berlin",
-      "does": "Story zum Reel"
+      "does": "Story aus dem Reel, auf 59 s geschnitten"
     },
     {
       "name": "Engagement",
       "file": "engage.yml",
       "cron": "17 */2 * * *",
-      "does": "Kommentare/DMs/Insights + Dashboard-State"
+      "does": "Kommentare/DMs/Insights + Dashboard-State + Archiv-Befehle"
     },
     {
       "name": "Token erneuern",
