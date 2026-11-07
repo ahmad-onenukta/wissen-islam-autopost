@@ -31,7 +31,9 @@ fs.mkdirSync("build", { recursive: true });
 // Anlauf (z. B. nach einem Render-Fehler) nimmt es von dort und kostet 0 Credits.
 const CACHE_MP3 = `audio/${id}-vo.mp3`;
 const CACHE_WORDS = `audio/${id}-words.json`;
-if (fs.existsSync(CACHE_MP3) && fs.existsSync(CACHE_WORDS)) {
+const haveCachedMp3 = fs.existsSync(CACHE_MP3);
+
+if (haveCachedMp3 && fs.existsSync(CACHE_WORDS)) {
   fs.copyFileSync(CACHE_MP3, `build/${id}-vo.mp3`);
   fs.copyFileSync(CACHE_WORDS, `build/${id}-words.json`);
   fs.writeFileSync(`build/${id}-script.json`, JSON.stringify(script, null, 2));
@@ -40,49 +42,59 @@ if (fs.existsSync(CACHE_MP3) && fs.existsSync(CACHE_WORDS)) {
   process.exit(0);
 }
 
-// --- Guthaben pruefen: nie blind generieren, und den Stand ins Dashboard schreiben
-let rest = null;
-try {
-  const sub = await fetch("https://api.elevenlabs.io/v1/user/subscription", { headers: { "xi-api-key": KEY } });
-  if (sub.ok) {
-    const d = await sub.json();
-    rest = (d.character_limit ?? 0) - (d.character_count ?? 0);
-    const info = { at: new Date().toISOString(), rest, limit: d.character_limit ?? null,
-      tier: d.tier || null, reicht_fuer: Math.floor(rest / 2000), erneuert_am: d.next_character_count_reset_unix
-        ? new Date(d.next_character_count_reset_unix * 1000).toISOString() : null };
-    fs.mkdirSync("dashboard", { recursive: true });
-    fs.writeFileSync("dashboard/credits.json", JSON.stringify(info, null, 2) + "\n");
-    pushFiles(["dashboard/credits.json"], `credits: ${rest} uebrig`);
-    console.log(`ElevenLabs-Guthaben: ${rest} Credits (reicht fuer ~${info.reicht_fuer} Reels)`);
+let mp3;
+
+if (haveCachedMp3) {
+  // Stimme liegt schon im Repo, nur die Wort-Timestamps fehlen: TTS wird uebersprungen,
+  // es kostet allein die Transkription (~38 % der TTS-Credits). Die Stimme bleibt identisch.
+  mp3 = fs.readFileSync(CACHE_MP3);
+  console.log(`Voice-Over aus dem Repo-Cache (${CACHE_MP3}) - nur Wort-Timestamps werden nachgeholt, kein TTS.`);
+} else {
+  // --- Guthaben pruefen: nie blind generieren, und den Stand ins Dashboard schreiben
+  let rest = null;
+  try {
+    const sub = await fetch("https://api.elevenlabs.io/v1/user/subscription", { headers: { "xi-api-key": KEY } });
+    if (sub.ok) {
+      const d = await sub.json();
+      rest = (d.character_limit ?? 0) - (d.character_count ?? 0);
+      const info = { at: new Date().toISOString(), rest, limit: d.character_limit ?? null,
+        tier: d.tier || null, reicht_fuer: Math.floor(rest / 2000), erneuert_am: d.next_character_count_reset_unix
+          ? new Date(d.next_character_count_reset_unix * 1000).toISOString() : null };
+      fs.mkdirSync("dashboard", { recursive: true });
+      fs.writeFileSync("dashboard/credits.json", JSON.stringify(info, null, 2) + "\n");
+      pushFiles(["dashboard/credits.json"], `credits: ${rest} uebrig`);
+      console.log(`ElevenLabs-Guthaben: ${rest} Credits (reicht fuer ~${info.reicht_fuer} Reels)`);
+    }
+  } catch (e) { console.log("Guthaben-Abfrage uebersprungen:", e.message); }
+
+  const MIN_CREDITS = Number(process.env.ELEVEN_MIN_CREDITS || 2500);
+  if (rest !== null && rest < Math.max(MIN_CREDITS, text.length + 500)) {
+    reportError("produce", new Error(`ElevenLabs-Guthaben zu niedrig: ${rest} Credits uebrig, ${text.length} Zeichen noetig. Produktion gestoppt, bevor Credits verbraucht werden.`));
+    process.exit(1);
   }
-} catch (e) { console.log("Guthaben-Abfrage uebersprungen:", e.message); }
 
-const MIN_CREDITS = Number(process.env.ELEVEN_MIN_CREDITS || 2500);
-if (rest !== null && rest < Math.max(MIN_CREDITS, text.length + 500)) {
-  reportError("produce", new Error(`ElevenLabs-Guthaben zu niedrig: ${rest} Credits uebrig, ${text.length} Zeichen noetig. Produktion gestoppt, bevor Credits verbraucht werden.`));
-  process.exit(1);
+  // --- TTS -------------------------------------------------------------------
+  console.log(`TTS ${id}: voice=${script.voice} model=${MODEL} chars=${text.length}`);
+  const tts = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`, {
+    method: "POST",
+    headers: { "xi-api-key": KEY, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      text, model_id: MODEL, language_code: "de",
+      voice_settings: { stability: 0.45, similarity_boost: 0.8, style: 0.35, use_speaker_boost: true },
+    }),
+  });
+  if (!tts.ok) {
+    const body = await tts.text();
+    console.error("TTS-Fehler", tts.status, body);
+    reportError("produce", new Error(`ElevenLabs TTS ${tts.status} bei Reel ${id}: ${body.slice(0, 600)}`));
+    process.exit(1);
+  }
+  mp3 = Buffer.from(await tts.arrayBuffer());
+  console.log(`VO: ${(mp3.length / 1048576).toFixed(2)} MB`);
+  markProduced(process.env.BRAND || "nurwissen", id, "vo_at");
 }
 
-// --- TTS ---------------------------------------------------------------------
-console.log(`TTS ${id}: voice=${script.voice} model=${MODEL} chars=${text.length}`);
-const tts = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`, {
-  method: "POST",
-  headers: { "xi-api-key": KEY, "Content-Type": "application/json" },
-  body: JSON.stringify({
-    text, model_id: MODEL, language_code: "de",
-    voice_settings: { stability: 0.45, similarity_boost: 0.8, style: 0.35, use_speaker_boost: true },
-  }),
-});
-if (!tts.ok) {
-  const body = await tts.text();
-  console.error("TTS-Fehler", tts.status, body);
-  reportError("produce", new Error(`ElevenLabs TTS ${tts.status} bei Reel ${id}: ${body.slice(0, 600)}`));
-  process.exit(1);
-}
-const mp3 = Buffer.from(await tts.arrayBuffer());
 fs.writeFileSync(`build/${id}-vo.mp3`, mp3);
-console.log(`VO: ${(mp3.length / 1048576).toFixed(2)} MB`);
-markProduced(process.env.BRAND || "nurwissen", id, "vo_at");
 
 // --- STT fuer Wort-Timestamps (gleiches Format wie Connector-Transkription) ------
 const form = new FormData();
