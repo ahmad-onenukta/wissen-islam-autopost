@@ -2,6 +2,7 @@
 // 1. holt neue Kommentare + DMs  -> engage/inbox.json   (Claude liest, schreibt Antworten)
 // 2. sendet Antworten aus         engage/outbox.json    (Claude schreibt, Action postet)
 // 3. zieht Insights               -> engage/stats.json   (KPI-Report)
+// 4. wendet Archiv-Befehle an und baut den Dashboard-State
 import fs from "node:fs";
 
 const HOST  = process.env.IG_API_HOST || "graph.instagram.com";
@@ -58,43 +59,27 @@ for (const o of outbox) {
 console.log(`Outbox: ${sent} gesendet`);
 
 // ---------- 1. INBOX: neue Kommentare ---------------------------------------
-// Diagnose (seit 06.11.): kein comments_count-Filter mehr, jede Reel-Abfrage einzeln
-// abgefangen, Ergebnis pro Reel im Log und in engage/state.json (comments_diag).
 const media = (await api(`${USER}/media`, {
   fields: "id,caption,timestamp,permalink,media_type,comments_count,like_count", limit: 25 })).data || [];
 
 let newComments = 0;
-const diag = { at: now, media_count: media.length, reels: [] };
 for (const m of media) {
-  const d = { id: m.id, comments_count: m.comments_count ?? null, fetched: 0, new: 0, error: null };
-  try {
-    const params = { fields: "id,text,username,timestamp,replies{id,text,username,timestamp}", limit: 50 };
-    let r = await api(`${m.id}/comments`, params);
-    const comments = [...(r.data || [])];
-    let pages = 1;
-    while (r.paging && r.paging.next && pages < 6) {        // bis 300 Kommentare pro Reel
-      const rr = await fetch(r.paging.next); r = await rr.json().catch(() => ({}));
-      if (!rr.ok || r.error) { d.error = `paging: ${JSON.stringify(r.error || r)}`.slice(0, 300); break; }
-      comments.push(...(r.data || [])); pages++;
+  if (!m.comments_count) continue;
+  let url = `${m.id}/comments`, params = { fields: "id,text,username,timestamp,replies{id,text,username,timestamp}", limit: 50 };
+  const comments = (await api(url, params)).data || [];
+  for (const c of comments) {
+    const all = [c, ...((c.replies && c.replies.data) || []).map(r => ({ ...r, parent_id: c.id }))];
+    for (const x of all) {
+      if (seen.has(x.id)) continue;
+      seen.add(x.id);
+      if ((x.username || "").toLowerCase() === OWN) continue;
+      inbox.push({ type: "comment", id: x.id, parent_id: x.parent_id || null, media_id: m.id,
+        permalink: m.permalink, username: x.username, text: x.text, timestamp: x.timestamp,
+        caption_start: (m.caption || "").slice(0, 80), status: "new" });
+      newComments++;
     }
-    d.fetched = comments.length;
-    for (const c of comments) {
-      const all = [c, ...((c.replies && c.replies.data) || []).map(x => ({ ...x, parent_id: c.id }))];
-      for (const x of all) {
-        if (seen.has(x.id)) continue;
-        seen.add(x.id);
-        if ((x.username || "").toLowerCase() === OWN) continue;
-        inbox.push({ type: "comment", id: x.id, parent_id: x.parent_id || null, media_id: m.id,
-          permalink: m.permalink, username: x.username, text: x.text, timestamp: x.timestamp,
-          caption_start: (m.caption || "").slice(0, 80), status: "new" });
-        newComments++; d.new++;
-      }
-    }
-  } catch (e) { d.error = e.message.slice(0, 300); }
-  diag.reels.push(d);
-  console.log(`Reel ${m.id}: comments_count=${d.comments_count} geholt=${d.fetched} neu=${d.new}${d.error ? " FEHLER=" + d.error : ""}`);
+  }
 }
-state.comments_diag = diag;
 
 // ---------- 1b. INBOX: neue DMs ---------------------------------------------
 let newDMs = 0;
@@ -113,8 +98,7 @@ try {
       newDMs++;
     }
   }
-  state.dm_diag = { at: now, conversations: convs.length, error: null };
-} catch (e) { console.log("DM-Abfrage uebersprungen:", e.message); state.dm_diag = { at: now, conversations: 0, error: e.message.slice(0, 300) }; }
+} catch (e) { console.log("DM-Abfrage uebersprungen:", e.message); }
 console.log(`Inbox: +${newComments} Kommentare, +${newDMs} DMs`);
 
 // ---------- 3. STATS ----------------------------------------------------------
@@ -144,6 +128,24 @@ write("engage/inbox.json", inbox.filter(i => i.status !== "done").slice(-300));
 write("engage/outbox.json", outbox.filter(o => o.status === "pending" || (o.sent_at && o.sent_at > new Date(Date.now() - 7 * 864e5).toISOString())));
 write("engage/stats.json", stats);
 console.log("Follower:", stats.account?.followers_count, "| Reels:", stats.reels?.length);
+
+// ---------- Archiv-Befehle anwenden ------------------------------------------
+// "archive"/"unarchive" aus dem Dashboard. Die Liste liegt in engage/, weil dieser
+// Ordner vom Engagement-Workflow committet wird.
+try {
+  const cmds = read("dashboard/commands.json", []);
+  if (Array.isArray(cmds) && cmds.length) {
+    const archiv = read("engage/archive.json", {});
+    let geaendert = false;
+    for (const c of cmds) {
+      if (c.op !== "archive" && c.op !== "unarchive") continue;
+      const key = `${c.brand || "nurwissen"}/${c.id}`;
+      if (c.op === "archive" && !archiv[key]) { archiv[key] = { at: c.at || now, grund: (c.grund || "").slice(0, 200) }; geaendert = true; }
+      if (c.op === "unarchive" && archiv[key]) { delete archiv[key]; geaendert = true; }
+    }
+    if (geaendert) { write("engage/archive.json", archiv); console.log("Archiv aktualisiert:", Object.keys(archiv).length, "Scripts"); }
+  }
+} catch (e) { console.log("Archiv-Befehle uebersprungen:", e.message); }
 
 // ---------- Dashboard-State mitschreiben -------------------------------------
 // engage.yml committet den Ordner engage/ alle 2 h -> engage/dashboard.json ist die
