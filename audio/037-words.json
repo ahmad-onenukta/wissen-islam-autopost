@@ -1,0 +1,2662 @@
+{
+  "language_code": "deu",
+  "language_probability": 1,
+  "text": "Das erste Kaffeehaus der Welt stand nicht in Wien. Es stand in Mekka um 1510. Und das ist nicht die einzige Spur, die du jeden Tag benutzt, ohne es zu merken. Kaffee. Deutsch über das Italienische, davor Türkisch, kahve, davor Arabisch, qahwa. Arabische Etymologen verbanden das Wort mit einem Begriff für Wein. Hundertsechzig Jahre nach Mekka hatte England dreitausend Kaffeehäuser. Zweitens: Zucker. Und hier muss man genau sein. Das Wort ist nicht Arabisch von Herkunft. Es kommt aus dem Sanskrit, śarkara. Das hieß ursprünglich Kies wegen der Körnung. Dann Persisch, šakar, dann Arabisch, sukkar und über das Arabische ins mittelalterliche Latein, ins Althochdeutsche zu cura, zu Zucker. Arabisch war also nicht die Quelle, es war die Leitung. Drittens: Algebra. Aus al-jabr, der Titel eines Buches aus dem neunten Jahrhundert, Bagdad. Und al-jabr hieß nicht Mathematik. Es hieß zusammenfügen zerbrochener Teile. Deshalb hieß im Spanischen ein algebrista lange Zeit der Knocheneinrenker. Derselbe Begriff einmal für Knochen, einmal für Gleichungen. Drei Wörter, drei Wege, einer erfunden, einer weitergereicht, einer umgedeutet. Quelle ist das Online Etymology Dictionary, nachprüfbar in einer Minute. Das erste Kaffeehaus stand in Mekka, nicht in Wien. Wusstest du das?",
+  "words": [
+    {
+      "text": "Das",
+      "start": 0.1,
+      "end": 0.24,
+      "type": "word",
+      "logprob": -0.000036477376852417365
+    },
+    {
+      "text": " ",
+      "start": 0.24,
+      "end": 0.38,
+      "type": "spacing",
+      "logprob": -0.00010680581908673048
+    },
+    {
+      "text": "erste",
+      "start": 0.38,
+      "end": 0.64,
+      "type": "word",
+      "logprob": -0.00010680581908673048
+    },
+    {
+      "text": " ",
+      "start": 0.64,
+      "end": 0.74,
+      "type": "spacing",
+      "logprob": -0.017538459971547127
+    },
+    {
+      "text": "Kaffeehaus",
+      "start": 0.74,
+      "end": 1.3,
+      "type": "word",
+      "logprob": -0.010547489300370217
+    },
+    {
+      "text": " ",
+      "start": 1.3,
+      "end": 1.34,
+      "type": "spacing",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": "der",
+      "start": 1.34,
+      "end": 1.48,
+      "type": "word",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": " ",
+      "start": 1.48,
+      "end": 1.52,
+      "type": "spacing",
+      "logprob": -0.00005936446541454643
+    },
+    {
+      "text": "Welt",
+      "start": 1.52,
+      "end": 1.84,
+      "type": "word",
+      "logprob": -0.00005936446541454643
+    },
+    {
+      "text": " ",
+      "start": 1.84,
+      "end": 2.1,
+      "type": "spacing",
+      "logprob": -0.00003611976353568025
+    },
+    {
+      "text": "stand",
+      "start": 2.1,
+      "end": 2.38,
+      "type": "word",
+      "logprob": -0.00003611976353568025
+    },
+    {
+      "text": " ",
+      "start": 2.38,
+      "end": 2.44,
+      "type": "spacing",
+      "logprob": -0.000002861018856492592
+    },
+    {
+      "text": "nicht",
+      "start": 2.44,
+      "end": 2.66,
+      "type": "word",
+      "logprob": -0.000002861018856492592
+    },
+    {
+      "text": " ",
+      "start": 2.66,
+      "end": 2.7,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": "in",
+      "start": 2.7,
+      "end": 2.84,
+      "type": "word",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": " ",
+      "start": 2.84,
+      "end": 2.88,
+      "type": "spacing",
+      "logprob": -0.000007748573807475623
+    },
+    {
+      "text": "Wien.",
+      "start": 2.88,
+      "end": 3.16,
+      "type": "word",
+      "logprob": -0.000007319423184526386
+    },
+    {
+      "text": " ",
+      "start": 3.16,
+      "end": 3.16,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": "Es",
+      "start": 4.059,
+      "end": 4.18,
+      "type": "word",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": " ",
+      "start": 4.18,
+      "end": 4.24,
+      "type": "spacing",
+      "logprob": -0.000005722029527532868
+    },
+    {
+      "text": "stand",
+      "start": 4.24,
+      "end": 4.52,
+      "type": "word",
+      "logprob": -0.000005722029527532868
+    },
+    {
+      "text": " ",
+      "start": 4.52,
+      "end": 4.56,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "in",
+      "start": 4.56,
+      "end": 4.7,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 4.7,
+      "end": 4.74,
+      "type": "spacing",
+      "logprob": -0.007731040008366108
+    },
+    {
+      "text": "Mekka",
+      "start": 4.74,
+      "end": 5.08,
+      "type": "word",
+      "logprob": -0.0046404836655710826
+    },
+    {
+      "text": " ",
+      "start": 5.08,
+      "end": 5.08,
+      "type": "spacing",
+      "logprob": -0.00037079135654494166
+    },
+    {
+      "text": "um",
+      "start": 5.64,
+      "end": 5.88,
+      "type": "word",
+      "logprob": -0.00037079135654494166
+    },
+    {
+      "text": " ",
+      "start": 5.88,
+      "end": 5.92,
+      "type": "spacing",
+      "logprob": -0.00418679416179657
+    },
+    {
+      "text": "1510.",
+      "start": 5.92,
+      "end": 7.1,
+      "type": "word",
+      "logprob": -0.0000065802815285564975
+    },
+    {
+      "text": " ",
+      "start": 7.1,
+      "end": 7.1,
+      "type": "spacing",
+      "logprob": -0.0000423184028477408
+    },
+    {
+      "text": "Und",
+      "start": 7.84,
+      "end": 7.92,
+      "type": "word",
+      "logprob": -0.0000423184028477408
+    },
+    {
+      "text": " ",
+      "start": 7.92,
+      "end": 7.94,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "das",
+      "start": 7.94,
+      "end": 8.08,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 8.08,
+      "end": 8.14,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "ist",
+      "start": 8.14,
+      "end": 8.26,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 8.26,
+      "end": 8.3,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": "nicht",
+      "start": 8.3,
+      "end": 8.42,
+      "type": "word",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": " ",
+      "start": 8.42,
+      "end": 8.46,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "die",
+      "start": 8.46,
+      "end": 8.58,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 8.58,
+      "end": 8.64,
+      "type": "spacing",
+      "logprob": -0.00000965590606938349
+    },
+    {
+      "text": "einzige",
+      "start": 8.64,
+      "end": 9.02,
+      "type": "word",
+      "logprob": -0.00000965590606938349
+    },
+    {
+      "text": " ",
+      "start": 9.02,
+      "end": 9.08,
+      "type": "spacing",
+      "logprob": -0.0000036954811548639555
+    },
+    {
+      "text": "Spur,",
+      "start": 9.08,
+      "end": 9.42,
+      "type": "word",
+      "logprob": -0.000004363049629318993
+    },
+    {
+      "text": " ",
+      "start": 9.42,
+      "end": 9.5,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "die",
+      "start": 9.5,
+      "end": 9.6,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 9.6,
+      "end": 9.62,
+      "type": "spacing",
+      "logprob": -0.000014305012882687151
+    },
+    {
+      "text": "du",
+      "start": 9.62,
+      "end": 9.76,
+      "type": "word",
+      "logprob": -0.000014305012882687151
+    },
+    {
+      "text": " ",
+      "start": 9.76,
+      "end": 9.84,
+      "type": "spacing",
+      "logprob": -0.000006318072337307967
+    },
+    {
+      "text": "jeden",
+      "start": 9.84,
+      "end": 10.12,
+      "type": "word",
+      "logprob": -0.000006318072337307967
+    },
+    {
+      "text": " ",
+      "start": 10.12,
+      "end": 10.16,
+      "type": "spacing",
+      "logprob": -0.000006556489552167477
+    },
+    {
+      "text": "Tag",
+      "start": 10.16,
+      "end": 10.38,
+      "type": "word",
+      "logprob": -0.000006556489552167477
+    },
+    {
+      "text": " ",
+      "start": 10.38,
+      "end": 10.4,
+      "type": "spacing",
+      "logprob": -0.000097508447652217
+    },
+    {
+      "text": "benutzt,",
+      "start": 10.4,
+      "end": 10.88,
+      "type": "word",
+      "logprob": -0.0000857967279443983
+    },
+    {
+      "text": " ",
+      "start": 10.88,
+      "end": 11.14,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "ohne",
+      "start": 11.14,
+      "end": 11.34,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 11.34,
+      "end": 11.38,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "es",
+      "start": 11.38,
+      "end": 11.52,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 11.52,
+      "end": 11.56,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "zu",
+      "start": 11.56,
+      "end": 11.66,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 11.66,
+      "end": 11.7,
+      "type": "spacing",
+      "logprob": -0.00004362964682513848
+    },
+    {
+      "text": "merken.",
+      "start": 11.7,
+      "end": 12.1,
+      "type": "word",
+      "logprob": -0.00003978100591796517
+    },
+    {
+      "text": " ",
+      "start": 12.1,
+      "end": 12.1,
+      "type": "spacing",
+      "logprob": -0.0005191409145481884
+    },
+    {
+      "text": "Kaffee.",
+      "start": 12.7,
+      "end": 13.1,
+      "type": "word",
+      "logprob": -0.07549931692691254
+    },
+    {
+      "text": " ",
+      "start": 13.1,
+      "end": 13.64,
+      "type": "spacing",
+      "logprob": -0.00020644917094614357
+    },
+    {
+      "text": "Deutsch",
+      "start": 13.64,
+      "end": 14,
+      "type": "word",
+      "logprob": -0.00020644917094614357
+    },
+    {
+      "text": " ",
+      "start": 14,
+      "end": 14.02,
+      "type": "spacing",
+      "logprob": -0.000004768360213347478
+    },
+    {
+      "text": "über",
+      "start": 14.02,
+      "end": 14.18,
+      "type": "word",
+      "logprob": -0.000004768360213347478
+    },
+    {
+      "text": " ",
+      "start": 14.18,
+      "end": 14.22,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "das",
+      "start": 14.22,
+      "end": 14.34,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 14.34,
+      "end": 14.38,
+      "type": "spacing",
+      "logprob": -0.03818164020776749
+    },
+    {
+      "text": "Italienische,",
+      "start": 14.38,
+      "end": 15.1,
+      "type": "word",
+      "logprob": -0.06923354760923618
+    },
+    {
+      "text": " ",
+      "start": 15.1,
+      "end": 15.52,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-7
+    },
+    {
+      "text": "davor",
+      "start": 15.52,
+      "end": 15.94,
+      "type": "word",
+      "logprob": -0.000007104843052729848
+    },
+    {
+      "text": " ",
+      "start": 15.94,
+      "end": 16.1,
+      "type": "spacing",
+      "logprob": -0.22585783898830414
+    },
+    {
+      "text": "Türkisch,",
+      "start": 16.1,
+      "end": 16.56,
+      "type": "word",
+      "logprob": -0.12661704077375666
+    },
+    {
+      "text": " ",
+      "start": 16.56,
+      "end": 16.82,
+      "type": "spacing",
+      "logprob": -0.3566617965698242
+    },
+    {
+      "text": "kahve,",
+      "start": 16.82,
+      "end": 17.22,
+      "type": "word",
+      "logprob": -0.1800731955330169
+    },
+    {
+      "text": " ",
+      "start": 17.22,
+      "end": 17.7,
+      "type": "spacing",
+      "logprob": -0.0000023841830625315197
+    },
+    {
+      "text": "davor",
+      "start": 17.7,
+      "end": 18.06,
+      "type": "word",
+      "logprob": -0.0000053405607104650695
+    },
+    {
+      "text": " ",
+      "start": 18.06,
+      "end": 18.22,
+      "type": "spacing",
+      "logprob": -0.006347258575260639
+    },
+    {
+      "text": "Arabisch,",
+      "start": 18.22,
+      "end": 18.74,
+      "type": "word",
+      "logprob": -0.0028612630872481126
+    },
+    {
+      "text": " ",
+      "start": 18.74,
+      "end": 19.04,
+      "type": "spacing",
+      "logprob": -0.048272501677274704
+    },
+    {
+      "text": "qahwa.",
+      "start": 19.04,
+      "end": 19.46,
+      "type": "word",
+      "logprob": -0.06676616705950285
+    },
+    {
+      "text": " ",
+      "start": 19.46,
+      "end": 20.08,
+      "type": "spacing",
+      "logprob": -0.0009129646932706237
+    },
+    {
+      "text": "Arabische",
+      "start": 20.08,
+      "end": 20.6,
+      "type": "word",
+      "logprob": -0.0004058283132771913
+    },
+    {
+      "text": " ",
+      "start": 20.6,
+      "end": 20.64,
+      "type": "spacing",
+      "logprob": -0.000288087350782007
+    },
+    {
+      "text": "Etymologen",
+      "start": 20.64,
+      "end": 21.3,
+      "type": "word",
+      "logprob": -0.0002743494680544245
+    },
+    {
+      "text": " ",
+      "start": 21.3,
+      "end": 21.42,
+      "type": "spacing",
+      "logprob": -0.0010609956225380301
+    },
+    {
+      "text": "verbanden",
+      "start": 21.42,
+      "end": 21.86,
+      "type": "word",
+      "logprob": -0.0008252982903766477
+    },
+    {
+      "text": " ",
+      "start": 21.86,
+      "end": 21.9,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": "das",
+      "start": 21.92,
+      "end": 22.1,
+      "type": "word",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": " ",
+      "start": 22.1,
+      "end": 22.14,
+      "type": "spacing",
+      "logprob": -0.000004291525328881107
+    },
+    {
+      "text": "Wort",
+      "start": 22.14,
+      "end": 22.4,
+      "type": "word",
+      "logprob": -0.000004291525328881107
+    },
+    {
+      "text": " ",
+      "start": 22.4,
+      "end": 22.48,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "mit",
+      "start": 22.48,
+      "end": 22.62,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 22.62,
+      "end": 22.64,
+      "type": "spacing",
+      "logprob": -0.0000029802276912960224
+    },
+    {
+      "text": "einem",
+      "start": 22.64,
+      "end": 22.84,
+      "type": "word",
+      "logprob": -0.0000029802276912960224
+    },
+    {
+      "text": " ",
+      "start": 22.84,
+      "end": 22.86,
+      "type": "spacing",
+      "logprob": -0.00002884823152271565
+    },
+    {
+      "text": "Begriff",
+      "start": 22.86,
+      "end": 23.34,
+      "type": "word",
+      "logprob": -0.00002884823152271565
+    },
+    {
+      "text": " ",
+      "start": 23.34,
+      "end": 23.4,
+      "type": "spacing",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": "für",
+      "start": 23.4,
+      "end": 23.58,
+      "type": "word",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": " ",
+      "start": 23.58,
+      "end": 23.62,
+      "type": "spacing",
+      "logprob": -0.00004970903682988137
+    },
+    {
+      "text": "Wein.",
+      "start": 23.62,
+      "end": 23.96,
+      "type": "word",
+      "logprob": -0.000039838755026266884
+    },
+    {
+      "text": " ",
+      "start": 23.96,
+      "end": 23.96,
+      "type": "spacing",
+      "logprob": -0.05831575021147728
+    },
+    {
+      "text": "Hundertsechzig",
+      "start": 24.64,
+      "end": 25.34,
+      "type": "word",
+      "logprob": -0.018238221823204576
+    },
+    {
+      "text": " ",
+      "start": 25.34,
+      "end": 25.38,
+      "type": "spacing",
+      "logprob": -0.00000822540732769994
+    },
+    {
+      "text": "Jahre",
+      "start": 25.38,
+      "end": 25.7,
+      "type": "word",
+      "logprob": -0.00000822540732769994
+    },
+    {
+      "text": " ",
+      "start": 25.7,
+      "end": 25.78,
+      "type": "spacing",
+      "logprob": -0.000002145764938177308
+    },
+    {
+      "text": "nach",
+      "start": 25.78,
+      "end": 26.04,
+      "type": "word",
+      "logprob": -0.000002145764938177308
+    },
+    {
+      "text": " ",
+      "start": 26.04,
+      "end": 26.08,
+      "type": "spacing",
+      "logprob": -0.0001212284987559542
+    },
+    {
+      "text": "Mekka",
+      "start": 26.08,
+      "end": 26.42,
+      "type": "word",
+      "logprob": -0.00007316625246858166
+    },
+    {
+      "text": " ",
+      "start": 26.42,
+      "end": 26.6,
+      "type": "spacing",
+      "logprob": -0.000013232143828645349
+    },
+    {
+      "text": "hatte",
+      "start": 26.6,
+      "end": 26.78,
+      "type": "word",
+      "logprob": -0.000013232143828645349
+    },
+    {
+      "text": " ",
+      "start": 26.78,
+      "end": 26.88,
+      "type": "spacing",
+      "logprob": -0.000028132995794294402
+    },
+    {
+      "text": "England",
+      "start": 26.88,
+      "end": 27.24,
+      "type": "word",
+      "logprob": -0.000028132995794294402
+    },
+    {
+      "text": " ",
+      "start": 27.24,
+      "end": 27.4,
+      "type": "spacing",
+      "logprob": -0.0006380429258570075
+    },
+    {
+      "text": "dreitausend",
+      "start": 27.4,
+      "end": 28.14,
+      "type": "word",
+      "logprob": -0.00020432145600001274
+    },
+    {
+      "text": " ",
+      "start": 28.14,
+      "end": 28.18,
+      "type": "spacing",
+      "logprob": -0.03399300575256348
+    },
+    {
+      "text": "Kaffeehäuser.",
+      "start": 28.18,
+      "end": 28.86,
+      "type": "word",
+      "logprob": -0.015695342606140736
+    },
+    {
+      "text": " ",
+      "start": 28.86,
+      "end": 29.58,
+      "type": "spacing",
+      "logprob": -0.00020489977032411844
+    },
+    {
+      "text": "Zweitens:",
+      "start": 29.58,
+      "end": 30.16,
+      "type": "word",
+      "logprob": -0.001097103740903549
+    },
+    {
+      "text": " ",
+      "start": 30.16,
+      "end": 30.68,
+      "type": "spacing",
+      "logprob": -0.000006437280717364047
+    },
+    {
+      "text": "Zucker.",
+      "start": 30.68,
+      "end": 31.02,
+      "type": "word",
+      "logprob": -0.0000055857887641000815
+    },
+    {
+      "text": " ",
+      "start": 31.02,
+      "end": 31.66,
+      "type": "spacing",
+      "logprob": -0.000022053474822314456
+    },
+    {
+      "text": "Und",
+      "start": 31.66,
+      "end": 31.78,
+      "type": "word",
+      "logprob": -0.000022053474822314456
+    },
+    {
+      "text": " ",
+      "start": 31.78,
+      "end": 31.84,
+      "type": "spacing",
+      "logprob": -0.0000023841830625315197
+    },
+    {
+      "text": "hier",
+      "start": 31.84,
+      "end": 32.06,
+      "type": "word",
+      "logprob": -0.0000023841830625315197
+    },
+    {
+      "text": " ",
+      "start": 32.06,
+      "end": 32.1,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-7
+    },
+    {
+      "text": "muss",
+      "start": 32.1,
+      "end": 32.259,
+      "type": "word",
+      "logprob": -9.536738616588991e-7
+    },
+    {
+      "text": " ",
+      "start": 32.259,
+      "end": 32.299,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "man",
+      "start": 32.299,
+      "end": 32.439,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 32.439,
+      "end": 32.46,
+      "type": "spacing",
+      "logprob": -0.0000015497195136049413
+    },
+    {
+      "text": "genau",
+      "start": 32.46,
+      "end": 32.8,
+      "type": "word",
+      "logprob": -0.0000015497195136049413
+    },
+    {
+      "text": " ",
+      "start": 32.8,
+      "end": 32.88,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "sein.",
+      "start": 32.88,
+      "end": 33.16,
+      "type": "word",
+      "logprob": -4.768371013597061e-8
+    },
+    {
+      "text": " ",
+      "start": 33.16,
+      "end": 33.58,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": "Das",
+      "start": 33.58,
+      "end": 33.72,
+      "type": "word",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": " ",
+      "start": 33.72,
+      "end": 33.76,
+      "type": "spacing",
+      "logprob": -0.0002650863316375762
+    },
+    {
+      "text": "Wort",
+      "start": 33.76,
+      "end": 33.96,
+      "type": "word",
+      "logprob": -0.0002650863316375762
+    },
+    {
+      "text": " ",
+      "start": 33.96,
+      "end": 34.02,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "ist",
+      "start": 34.02,
+      "end": 34.2,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 34.2,
+      "end": 34.28,
+      "type": "spacing",
+      "logprob": -0.0000020265558760002023
+    },
+    {
+      "text": "nicht",
+      "start": 34.28,
+      "end": 34.54,
+      "type": "word",
+      "logprob": -0.0000020265558760002023
+    },
+    {
+      "text": " ",
+      "start": 34.54,
+      "end": 34.6,
+      "type": "spacing",
+      "logprob": -0.5235461592674255
+    },
+    {
+      "text": "Arabisch",
+      "start": 34.62,
+      "end": 35.08,
+      "type": "word",
+      "logprob": -0.2617731988429881
+    },
+    {
+      "text": " ",
+      "start": 35.08,
+      "end": 35.12,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-7
+    },
+    {
+      "text": "von",
+      "start": 35.12,
+      "end": 35.24,
+      "type": "word",
+      "logprob": -7.152555099310121e-7
+    },
+    {
+      "text": " ",
+      "start": 35.24,
+      "end": 35.28,
+      "type": "spacing",
+      "logprob": -0.0000014305104514278355
+    },
+    {
+      "text": "Herkunft.",
+      "start": 35.28,
+      "end": 35.8,
+      "type": "word",
+      "logprob": -0.00012234834913253204
+    },
+    {
+      "text": " ",
+      "start": 35.8,
+      "end": 36.3,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": "Es",
+      "start": 36.3,
+      "end": 36.42,
+      "type": "word",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": " ",
+      "start": 36.42,
+      "end": 36.46,
+      "type": "spacing",
+      "logprob": -0.00013219437096267939
+    },
+    {
+      "text": "kommt",
+      "start": 36.46,
+      "end": 36.68,
+      "type": "word",
+      "logprob": -0.00013219437096267939
+    },
+    {
+      "text": " ",
+      "start": 36.68,
+      "end": 36.72,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "aus",
+      "start": 36.72,
+      "end": 36.82,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 36.82,
+      "end": 36.86,
+      "type": "spacing",
+      "logprob": -0.000002145764938177308
+    },
+    {
+      "text": "dem",
+      "start": 36.86,
+      "end": 36.98,
+      "type": "word",
+      "logprob": -0.000002145764938177308
+    },
+    {
+      "text": " ",
+      "start": 36.98,
+      "end": 37.04,
+      "type": "spacing",
+      "logprob": -0.0012384133879095316
+    },
+    {
+      "text": "Sanskrit,",
+      "start": 37.04,
+      "end": 37.58,
+      "type": "word",
+      "logprob": -0.024665067800217204
+    },
+    {
+      "text": " ",
+      "start": 37.58,
+      "end": 38.1,
+      "type": "spacing",
+      "logprob": -0.3822878301143646
+    },
+    {
+      "text": "śarkara.",
+      "start": 38.1,
+      "end": 38.74,
+      "type": "word",
+      "logprob": -0.28273829723582367
+    },
+    {
+      "text": " ",
+      "start": 38.74,
+      "end": 39.22,
+      "type": "spacing",
+      "logprob": -0.0000023841830625315197
+    },
+    {
+      "text": "Das",
+      "start": 39.22,
+      "end": 39.36,
+      "type": "word",
+      "logprob": -0.0000023841830625315197
+    },
+    {
+      "text": " ",
+      "start": 39.36,
+      "end": 39.4,
+      "type": "spacing",
+      "logprob": -0.000028132995794294402
+    },
+    {
+      "text": "hieß",
+      "start": 39.4,
+      "end": 39.62,
+      "type": "word",
+      "logprob": -0.00000944723313978102
+    },
+    {
+      "text": " ",
+      "start": 39.62,
+      "end": 39.68,
+      "type": "spacing",
+      "logprob": -0.00003194758028257638
+    },
+    {
+      "text": "ursprünglich",
+      "start": 39.68,
+      "end": 40.28,
+      "type": "word",
+      "logprob": -0.00003194758028257638
+    },
+    {
+      "text": " ",
+      "start": 40.28,
+      "end": 40.5,
+      "type": "spacing",
+      "logprob": -0.02606319636106491
+    },
+    {
+      "text": "Kies",
+      "start": 40.5,
+      "end": 40.9,
+      "type": "word",
+      "logprob": -0.02606319636106491
+    },
+    {
+      "text": " ",
+      "start": 40.9,
+      "end": 41.36,
+      "type": "spacing",
+      "logprob": -0.055150385946035385
+    },
+    {
+      "text": "wegen",
+      "start": 41.36,
+      "end": 41.54,
+      "type": "word",
+      "logprob": -0.055150385946035385
+    },
+    {
+      "text": " ",
+      "start": 41.54,
+      "end": 41.58,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "der",
+      "start": 41.58,
+      "end": 41.7,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 41.7,
+      "end": 41.72,
+      "type": "spacing",
+      "logprob": -0.00421172333881259
+    },
+    {
+      "text": "Körnung.",
+      "start": 41.72,
+      "end": 42.16,
+      "type": "word",
+      "logprob": -0.0019051024573855102
+    },
+    {
+      "text": " ",
+      "start": 42.16,
+      "end": 42.66,
+      "type": "spacing",
+      "logprob": -0.0000033378546504536644
+    },
+    {
+      "text": "Dann",
+      "start": 42.66,
+      "end": 42.86,
+      "type": "word",
+      "logprob": -0.0000033378546504536644
+    },
+    {
+      "text": " ",
+      "start": 42.86,
+      "end": 43.02,
+      "type": "spacing",
+      "logprob": -0.11521637439727783
+    },
+    {
+      "text": "Persisch,",
+      "start": 43.02,
+      "end": 43.5,
+      "type": "word",
+      "logprob": -0.06623037158351508
+    },
+    {
+      "text": " ",
+      "start": 43.5,
+      "end": 43.78,
+      "type": "spacing",
+      "logprob": -0.7110901474952698
+    },
+    {
+      "text": "šakar,",
+      "start": 43.78,
+      "end": 44.3,
+      "type": "word",
+      "logprob": -0.11942569810560144
+    },
+    {
+      "text": " ",
+      "start": 44.3,
+      "end": 44.74,
+      "type": "spacing",
+      "logprob": -0.000011801649634435307
+    },
+    {
+      "text": "dann",
+      "start": 44.74,
+      "end": 44.94,
+      "type": "word",
+      "logprob": -0.000011801649634435307
+    },
+    {
+      "text": " ",
+      "start": 44.94,
+      "end": 45.08,
+      "type": "spacing",
+      "logprob": -0.0012844892917200923
+    },
+    {
+      "text": "Arabisch,",
+      "start": 45.08,
+      "end": 45.6,
+      "type": "word",
+      "logprob": -0.0006964869094190362
+    },
+    {
+      "text": " ",
+      "start": 45.6,
+      "end": 45.9,
+      "type": "spacing",
+      "logprob": -0.014133594930171967
+    },
+    {
+      "text": "sukkar",
+      "start": 45.9,
+      "end": 46.38,
+      "type": "word",
+      "logprob": -0.007112392941053258
+    },
+    {
+      "text": " ",
+      "start": 46.38,
+      "end": 46.78,
+      "type": "spacing",
+      "logprob": -0.010089822113513947
+    },
+    {
+      "text": "und",
+      "start": 46.78,
+      "end": 46.92,
+      "type": "word",
+      "logprob": -0.010089822113513947
+    },
+    {
+      "text": " ",
+      "start": 46.92,
+      "end": 46.96,
+      "type": "spacing",
+      "logprob": -0.000004291525328881107
+    },
+    {
+      "text": "über",
+      "start": 46.96,
+      "end": 47.12,
+      "type": "word",
+      "logprob": -0.000004291525328881107
+    },
+    {
+      "text": " ",
+      "start": 47.12,
+      "end": 47.16,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-7
+    },
+    {
+      "text": "das",
+      "start": 47.16,
+      "end": 47.34,
+      "type": "word",
+      "logprob": -8.344646857949556e-7
+    },
+    {
+      "text": " ",
+      "start": 47.34,
+      "end": 47.4,
+      "type": "spacing",
+      "logprob": -0.0017243054462596774
+    },
+    {
+      "text": "Arabische",
+      "start": 47.4,
+      "end": 48,
+      "type": "word",
+      "logprob": -0.0007664904308657899
+    },
+    {
+      "text": " ",
+      "start": 48,
+      "end": 48.12,
+      "type": "spacing",
+      "logprob": -0.000002145764938177308
+    },
+    {
+      "text": "ins",
+      "start": 48.12,
+      "end": 48.36,
+      "type": "word",
+      "logprob": -0.000002145764938177308
+    },
+    {
+      "text": " ",
+      "start": 48.36,
+      "end": 48.42,
+      "type": "spacing",
+      "logprob": -0.000256982195423916
+    },
+    {
+      "text": "mittelalterliche",
+      "start": 48.42,
+      "end": 49.14,
+      "type": "word",
+      "logprob": -0.0001019562120667672
+    },
+    {
+      "text": " ",
+      "start": 49.14,
+      "end": 49.18,
+      "type": "spacing",
+      "logprob": -0.00035148640745319426
+    },
+    {
+      "text": "Latein,",
+      "start": 49.18,
+      "end": 49.72,
+      "type": "word",
+      "logprob": -0.0002017349295004221
+    },
+    {
+      "text": " ",
+      "start": 49.72,
+      "end": 50.08,
+      "type": "spacing",
+      "logprob": -0.0000020265558760002023
+    },
+    {
+      "text": "ins",
+      "start": 50.08,
+      "end": 50.34,
+      "type": "word",
+      "logprob": -0.0000020265558760002023
+    },
+    {
+      "text": " ",
+      "start": 50.34,
+      "end": 50.42,
+      "type": "spacing",
+      "logprob": -0.012123586609959602
+    },
+    {
+      "text": "Althochdeutsche",
+      "start": 50.42,
+      "end": 51.2,
+      "type": "word",
+      "logprob": -0.0017993319390219161
+    },
+    {
+      "text": " ",
+      "start": 51.2,
+      "end": 51.58,
+      "type": "spacing",
+      "logprob": -0.6980199813842773
+    },
+    {
+      "text": "zu",
+      "start": 51.58,
+      "end": 51.66,
+      "type": "word",
+      "logprob": -0.6980199813842773
+    },
+    {
+      "text": " ",
+      "start": 51.66,
+      "end": 51.78,
+      "type": "spacing",
+      "logprob": -0.16078871488571167
+    },
+    {
+      "text": "cura,",
+      "start": 51.78,
+      "end": 52.16,
+      "type": "word",
+      "logprob": -0.12869023398379795
+    },
+    {
+      "text": " ",
+      "start": 52.16,
+      "end": 52.64,
+      "type": "spacing",
+      "logprob": -0.002873223042115569
+    },
+    {
+      "text": "zu",
+      "start": 52.64,
+      "end": 52.78,
+      "type": "word",
+      "logprob": -0.002873223042115569
+    },
+    {
+      "text": " ",
+      "start": 52.78,
+      "end": 53.06,
+      "type": "spacing",
+      "logprob": -0.00008940297266235575
+    },
+    {
+      "text": "Zucker.",
+      "start": 53.06,
+      "end": 53.38,
+      "type": "word",
+      "logprob": -0.00007671626889305116
+    },
+    {
+      "text": " ",
+      "start": 53.38,
+      "end": 53.92,
+      "type": "spacing",
+      "logprob": -0.00016437610611319542
+    },
+    {
+      "text": "Arabisch",
+      "start": 53.92,
+      "end": 54.52,
+      "type": "word",
+      "logprob": -0.00008338014458786347
+    },
+    {
+      "text": " ",
+      "start": 54.52,
+      "end": 54.56,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "war",
+      "start": 54.56,
+      "end": 54.68,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 54.68,
+      "end": 54.74,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": "also",
+      "start": 54.74,
+      "end": 54.94,
+      "type": "word",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": " ",
+      "start": 54.94,
+      "end": 55,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": "nicht",
+      "start": 55,
+      "end": 55.16,
+      "type": "word",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": " ",
+      "start": 55.16,
+      "end": 55.2,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "die",
+      "start": 55.2,
+      "end": 55.3,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 55.3,
+      "end": 55.36,
+      "type": "spacing",
+      "logprob": -0.00013696208770852536
+    },
+    {
+      "text": "Quelle,",
+      "start": 55.36,
+      "end": 55.7,
+      "type": "word",
+      "logprob": -0.0003320498633131917
+    },
+    {
+      "text": " ",
+      "start": 55.7,
+      "end": 56.16,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "es",
+      "start": 56.16,
+      "end": 56.3,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 56.3,
+      "end": 56.32,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "war",
+      "start": 56.32,
+      "end": 56.46,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 56.46,
+      "end": 56.48,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "die",
+      "start": 56.48,
+      "end": 56.6,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 56.6,
+      "end": 56.64,
+      "type": "spacing",
+      "logprob": -0.00003111314072157256
+    },
+    {
+      "text": "Leitung.",
+      "start": 56.64,
+      "end": 57.1,
+      "type": "word",
+      "logprob": -0.000027238899291681662
+    },
+    {
+      "text": " ",
+      "start": 57.1,
+      "end": 57.8,
+      "type": "spacing",
+      "logprob": -0.000527123745996505
+    },
+    {
+      "text": "Drittens:",
+      "start": 57.8,
+      "end": 58.32,
+      "type": "word",
+      "logprob": -0.0002938664248783122
+    },
+    {
+      "text": " ",
+      "start": 58.32,
+      "end": 58.78,
+      "type": "spacing",
+      "logprob": -0.0006450717919506133
+    },
+    {
+      "text": "Algebra.",
+      "start": 58.78,
+      "end": 59.32,
+      "type": "word",
+      "logprob": -0.0028377922644722275
+    },
+    {
+      "text": " ",
+      "start": 59.32,
+      "end": 59.96,
+      "type": "spacing",
+      "logprob": -0.00004005352093372494
+    },
+    {
+      "text": "Aus",
+      "start": 59.96,
+      "end": 60.18,
+      "type": "word",
+      "logprob": -0.00004005352093372494
+    },
+    {
+      "text": " ",
+      "start": 60.18,
+      "end": 60.4,
+      "type": "spacing",
+      "logprob": -0.00017414960893802345
+    },
+    {
+      "text": "al-jabr,",
+      "start": 60.4,
+      "end": 60.98,
+      "type": "word",
+      "logprob": -0.002262353524656646
+    },
+    {
+      "text": " ",
+      "start": 60.98,
+      "end": 61.46,
+      "type": "spacing",
+      "logprob": -0.000001311301275563892
+    },
+    {
+      "text": "der",
+      "start": 61.46,
+      "end": 61.58,
+      "type": "word",
+      "logprob": -0.000001311301275563892
+    },
+    {
+      "text": " ",
+      "start": 61.58,
+      "end": 61.62,
+      "type": "spacing",
+      "logprob": -0.000037431014789035544
+    },
+    {
+      "text": "Titel",
+      "start": 61.62,
+      "end": 61.86,
+      "type": "word",
+      "logprob": -0.000037431014789035544
+    },
+    {
+      "text": " ",
+      "start": 61.86,
+      "end": 61.92,
+      "type": "spacing",
+      "logprob": -0.00005781483559985645
+    },
+    {
+      "text": "eines",
+      "start": 61.92,
+      "end": 62.2,
+      "type": "word",
+      "logprob": -0.00005781483559985645
+    },
+    {
+      "text": " ",
+      "start": 62.2,
+      "end": 62.24,
+      "type": "spacing",
+      "logprob": -0.0013790155062451959
+    },
+    {
+      "text": "Buches",
+      "start": 62.24,
+      "end": 62.66,
+      "type": "word",
+      "logprob": -0.0004636454665766602
+    },
+    {
+      "text": " ",
+      "start": 62.66,
+      "end": 62.7,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-7
+    },
+    {
+      "text": "aus",
+      "start": 62.7,
+      "end": 62.8,
+      "type": "word",
+      "logprob": -8.344646857949556e-7
+    },
+    {
+      "text": " ",
+      "start": 62.8,
+      "end": 62.84,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": "dem",
+      "start": 62.84,
+      "end": 62.98,
+      "type": "word",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": " ",
+      "start": 62.98,
+      "end": 63.02,
+      "type": "spacing",
+      "logprob": -0.0008860476082190871
+    },
+    {
+      "text": "neunten",
+      "start": 63.02,
+      "end": 63.32,
+      "type": "word",
+      "logprob": -0.0007587749195019049
+    },
+    {
+      "text": " ",
+      "start": 63.32,
+      "end": 63.36,
+      "type": "spacing",
+      "logprob": -0.0007602662080898881
+    },
+    {
+      "text": "Jahrhundert,",
+      "start": 63.36,
+      "end": 63.9,
+      "type": "word",
+      "logprob": -0.001613704477980112
+    },
+    {
+      "text": " ",
+      "start": 63.9,
+      "end": 64.28,
+      "type": "spacing",
+      "logprob": -0.0024129818193614483
+    },
+    {
+      "text": "Bagdad.",
+      "start": 64.28,
+      "end": 64.72,
+      "type": "word",
+      "logprob": -0.0011110012100873843
+    },
+    {
+      "text": " ",
+      "start": 64.72,
+      "end": 65.22,
+      "type": "spacing",
+      "logprob": -0.000025510462364763953
+    },
+    {
+      "text": "Und",
+      "start": 65.22,
+      "end": 65.44,
+      "type": "word",
+      "logprob": -0.000025510462364763953
+    },
+    {
+      "text": " ",
+      "start": 65.44,
+      "end": 65.64,
+      "type": "spacing",
+      "logprob": -0.000805053801741451
+    },
+    {
+      "text": "al-jabr",
+      "start": 65.64,
+      "end": 66.18,
+      "type": "word",
+      "logprob": -0.00029875681635920567
+    },
+    {
+      "text": " ",
+      "start": 66.18,
+      "end": 66.4,
+      "type": "spacing",
+      "logprob": -0.000002622600959512056
+    },
+    {
+      "text": "hieß",
+      "start": 66.4,
+      "end": 66.64,
+      "type": "word",
+      "logprob": -0.0000033378544799234078
+    },
+    {
+      "text": " ",
+      "start": 66.64,
+      "end": 66.7,
+      "type": "spacing",
+      "logprob": -0.000005006777428206988
+    },
+    {
+      "text": "nicht",
+      "start": 66.7,
+      "end": 66.92,
+      "type": "word",
+      "logprob": -0.000005006777428206988
+    },
+    {
+      "text": " ",
+      "start": 66.92,
+      "end": 66.96,
+      "type": "spacing",
+      "logprob": -0.0003177614707965404
+    },
+    {
+      "text": "Mathematik.",
+      "start": 66.96,
+      "end": 67.6,
+      "type": "word",
+      "logprob": -0.0002908247408248082
+    },
+    {
+      "text": " ",
+      "start": 67.6,
+      "end": 68.04,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": "Es",
+      "start": 68.04,
+      "end": 68.16,
+      "type": "word",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": " ",
+      "start": 68.16,
+      "end": 68.2,
+      "type": "spacing",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": "hieß",
+      "start": 68.2,
+      "end": 68.48,
+      "type": "word",
+      "logprob": -0.0000015497194567615225
+    },
+    {
+      "text": " ",
+      "start": 68.48,
+      "end": 68.82,
+      "type": "spacing",
+      "logprob": -0.47747015953063965
+    },
+    {
+      "text": "zusammenfügen",
+      "start": 68.82,
+      "end": 69.7,
+      "type": "word",
+      "logprob": -0.2938608817275963
+    },
+    {
+      "text": " ",
+      "start": 69.7,
+      "end": 69.76,
+      "type": "spacing",
+      "logprob": -0.000023841574147809297
+    },
+    {
+      "text": "zerbrochener",
+      "start": 69.76,
+      "end": 70.4,
+      "type": "word",
+      "logprob": -0.0016342303782342544
+    },
+    {
+      "text": " ",
+      "start": 70.4,
+      "end": 70.46,
+      "type": "spacing",
+      "logprob": -0.000010251946150674485
+    },
+    {
+      "text": "Teile.",
+      "start": 70.46,
+      "end": 70.84,
+      "type": "word",
+      "logprob": -0.000008543288458895404
+    },
+    {
+      "text": " ",
+      "start": 70.84,
+      "end": 71.36,
+      "type": "spacing",
+      "logprob": -0.000018954096958623268
+    },
+    {
+      "text": "Deshalb",
+      "start": 71.36,
+      "end": 71.76,
+      "type": "word",
+      "logprob": -0.000018954096958623268
+    },
+    {
+      "text": " ",
+      "start": 71.76,
+      "end": 71.78,
+      "type": "spacing",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": "hieß",
+      "start": 71.78,
+      "end": 71.96,
+      "type": "word",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": " ",
+      "start": 71.96,
+      "end": 72,
+      "type": "spacing",
+      "logprob": -0.0000014305104514278355
+    },
+    {
+      "text": "im",
+      "start": 72,
+      "end": 72.1,
+      "type": "word",
+      "logprob": -0.0000014305104514278355
+    },
+    {
+      "text": " ",
+      "start": 72.1,
+      "end": 72.14,
+      "type": "spacing",
+      "logprob": -0.003102016169577837
+    },
+    {
+      "text": "Spanischen",
+      "start": 72.14,
+      "end": 72.74,
+      "type": "word",
+      "logprob": -0.001243953584889823
+    },
+    {
+      "text": " ",
+      "start": 72.74,
+      "end": 72.94,
+      "type": "spacing",
+      "logprob": -0.000024437606043647975
+    },
+    {
+      "text": "ein",
+      "start": 72.94,
+      "end": 73.24,
+      "type": "word",
+      "logprob": -0.000024437606043647975
+    },
+    {
+      "text": " ",
+      "start": 73.24,
+      "end": 73.32,
+      "type": "spacing",
+      "logprob": -0.5753529071807861
+    },
+    {
+      "text": "algebrista",
+      "start": 73.32,
+      "end": 74.06,
+      "type": "word",
+      "logprob": -0.1157283809618093
+    },
+    {
+      "text": " ",
+      "start": 74.06,
+      "end": 74.44,
+      "type": "spacing",
+      "logprob": -0.00015209948469419032
+    },
+    {
+      "text": "lange",
+      "start": 74.44,
+      "end": 74.66,
+      "type": "word",
+      "logprob": -0.00015209948469419032
+    },
+    {
+      "text": " ",
+      "start": 74.66,
+      "end": 74.74,
+      "type": "spacing",
+      "logprob": -0.000010371154530730564
+    },
+    {
+      "text": "Zeit",
+      "start": 74.74,
+      "end": 75.02,
+      "type": "word",
+      "logprob": -0.000010371154530730564
+    },
+    {
+      "text": " ",
+      "start": 75.02,
+      "end": 75.26,
+      "type": "spacing",
+      "logprob": -0.0000014305104514278355
+    },
+    {
+      "text": "der",
+      "start": 75.26,
+      "end": 75.42,
+      "type": "word",
+      "logprob": -0.0000014305104514278355
+    },
+    {
+      "text": " ",
+      "start": 75.42,
+      "end": 75.48,
+      "type": "spacing",
+      "logprob": -0.0007446615491062403
+    },
+    {
+      "text": "Knocheneinrenker.",
+      "start": 75.48,
+      "end": 76.54,
+      "type": "word",
+      "logprob": -0.06071539501316264
+    },
+    {
+      "text": " ",
+      "start": 76.54,
+      "end": 77.02,
+      "type": "spacing",
+      "logprob": -0.0005351065192371607
+    },
+    {
+      "text": "Derselbe",
+      "start": 77.02,
+      "end": 77.42,
+      "type": "word",
+      "logprob": -0.00027923563357035164
+    },
+    {
+      "text": " ",
+      "start": 77.42,
+      "end": 77.5,
+      "type": "spacing",
+      "logprob": -0.000009417489309271332
+    },
+    {
+      "text": "Begriff",
+      "start": 77.5,
+      "end": 77.92,
+      "type": "word",
+      "logprob": -0.000009417489309271332
+    },
+    {
+      "text": " ",
+      "start": 77.92,
+      "end": 78.32,
+      "type": "spacing",
+      "logprob": -0.5334872007369995
+    },
+    {
+      "text": "einmal",
+      "start": 78.32,
+      "end": 78.66,
+      "type": "word",
+      "logprob": -0.5334872007369995
+    },
+    {
+      "text": " ",
+      "start": 78.66,
+      "end": 78.7,
+      "type": "spacing",
+      "logprob": -0.00001168244216387393
+    },
+    {
+      "text": "für",
+      "start": 78.7,
+      "end": 78.82,
+      "type": "word",
+      "logprob": -0.00001168244216387393
+    },
+    {
+      "text": " ",
+      "start": 78.82,
+      "end": 78.86,
+      "type": "spacing",
+      "logprob": -0.000005483612312673358
+    },
+    {
+      "text": "Knochen,",
+      "start": 78.86,
+      "end": 79.24,
+      "type": "word",
+      "logprob": -0.00001607817965521008
+    },
+    {
+      "text": " ",
+      "start": 79.24,
+      "end": 79.58,
+      "type": "spacing",
+      "logprob": -0.0000034570634852570947
+    },
+    {
+      "text": "einmal",
+      "start": 79.6,
+      "end": 79.92,
+      "type": "word",
+      "logprob": -0.0000034570634852570947
+    },
+    {
+      "text": " ",
+      "start": 79.92,
+      "end": 80,
+      "type": "spacing",
+      "logprob": -0.000004768360213347478
+    },
+    {
+      "text": "für",
+      "start": 80,
+      "end": 80.12,
+      "type": "word",
+      "logprob": -0.000004768360213347478
+    },
+    {
+      "text": " ",
+      "start": 80.12,
+      "end": 80.16,
+      "type": "spacing",
+      "logprob": -0.0000029802276912960224
+    },
+    {
+      "text": "Gleichungen.",
+      "start": 80.16,
+      "end": 80.68,
+      "type": "word",
+      "logprob": -0.0000025232598659385985
+    },
+    {
+      "text": " ",
+      "start": 80.68,
+      "end": 81.2,
+      "type": "spacing",
+      "logprob": -0.00001811964830267243
+    },
+    {
+      "text": "Drei",
+      "start": 81.2,
+      "end": 81.42,
+      "type": "word",
+      "logprob": -0.00001811964830267243
+    },
+    {
+      "text": " ",
+      "start": 81.42,
+      "end": 81.48,
+      "type": "spacing",
+      "logprob": -0.000004410734163684538
+    },
+    {
+      "text": "Wörter,",
+      "start": 81.48,
+      "end": 81.88,
+      "type": "word",
+      "logprob": -0.000004070137265443918
+    },
+    {
+      "text": " ",
+      "start": 81.88,
+      "end": 82.2,
+      "type": "spacing",
+      "logprob": -0.000004768360213347478
+    },
+    {
+      "text": "drei",
+      "start": 82.2,
+      "end": 82.44,
+      "type": "word",
+      "logprob": -0.000004768360213347478
+    },
+    {
+      "text": " ",
+      "start": 82.44,
+      "end": 82.54,
+      "type": "spacing",
+      "logprob": -0.00009154854342341423
+    },
+    {
+      "text": "Wege,",
+      "start": 82.54,
+      "end": 82.86,
+      "type": "word",
+      "logprob": -0.0010489908047020436
+    },
+    {
+      "text": " ",
+      "start": 82.86,
+      "end": 83.38,
+      "type": "spacing",
+      "logprob": -0.000029801878554280847
+    },
+    {
+      "text": "einer",
+      "start": 83.38,
+      "end": 83.62,
+      "type": "word",
+      "logprob": -0.000029801878554280847
+    },
+    {
+      "text": " ",
+      "start": 83.62,
+      "end": 83.66,
+      "type": "spacing",
+      "logprob": -0.00027247529942542315
+    },
+    {
+      "text": "erfunden,",
+      "start": 83.66,
+      "end": 84.18,
+      "type": "word",
+      "logprob": -0.0000912886913005827
+    },
+    {
+      "text": " ",
+      "start": 84.18,
+      "end": 84.54,
+      "type": "spacing",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": "einer",
+      "start": 84.54,
+      "end": 84.84,
+      "type": "word",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": " ",
+      "start": 84.84,
+      "end": 84.88,
+      "type": "spacing",
+      "logprob": -0.000060794889577664435
+    },
+    {
+      "text": "weitergereicht,",
+      "start": 84.88,
+      "end": 85.62,
+      "type": "word",
+      "logprob": -0.00006542749373039669
+    },
+    {
+      "text": " ",
+      "start": 85.62,
+      "end": 86.02,
+      "type": "spacing",
+      "logprob": -0.0000027418097943154862
+    },
+    {
+      "text": "einer",
+      "start": 86.02,
+      "end": 86.3,
+      "type": "word",
+      "logprob": -0.0000027418097943154862
+    },
+    {
+      "text": " ",
+      "start": 86.3,
+      "end": 86.48,
+      "type": "spacing",
+      "logprob": -0.000003576272320060525
+    },
+    {
+      "text": "umgedeutet.",
+      "start": 86.48,
+      "end": 87.16,
+      "type": "word",
+      "logprob": -0.00013058947677729355
+    },
+    {
+      "text": " ",
+      "start": 87.16,
+      "end": 87.66,
+      "type": "spacing",
+      "logprob": -0.00006508615479106084
+    },
+    {
+      "text": "Quelle",
+      "start": 87.66,
+      "end": 88.08,
+      "type": "word",
+      "logprob": -0.00006508615479106084
+    },
+    {
+      "text": " ",
+      "start": 88.08,
+      "end": 88.12,
+      "type": "spacing",
+      "logprob": -0.0008095800876617432
+    },
+    {
+      "text": "ist",
+      "start": 88.12,
+      "end": 88.22,
+      "type": "word",
+      "logprob": -0.0008095800876617432
+    },
+    {
+      "text": " ",
+      "start": 88.22,
+      "end": 88.28,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-7
+    },
+    {
+      "text": "das",
+      "start": 88.28,
+      "end": 88.54,
+      "type": "word",
+      "logprob": -9.536738616588991e-7
+    },
+    {
+      "text": " ",
+      "start": 88.54,
+      "end": 88.58,
+      "type": "spacing",
+      "logprob": -0.00010299152199877426
+    },
+    {
+      "text": "Online",
+      "start": 88.58,
+      "end": 88.94,
+      "type": "word",
+      "logprob": -0.00010299152199877426
+    },
+    {
+      "text": " ",
+      "start": 88.94,
+      "end": 89.04,
+      "type": "spacing",
+      "logprob": -0.00031931069679558277
+    },
+    {
+      "text": "Etymology",
+      "start": 89.04,
+      "end": 89.62,
+      "type": "word",
+      "logprob": -0.08812848256073064
+    },
+    {
+      "text": " ",
+      "start": 89.62,
+      "end": 89.7,
+      "type": "spacing",
+      "logprob": -0.000717025191988796
+    },
+    {
+      "text": "Dictionary,",
+      "start": 89.7,
+      "end": 90.3,
+      "type": "word",
+      "logprob": -0.004561225068755448
+    },
+    {
+      "text": " ",
+      "start": 90.3,
+      "end": 90.7,
+      "type": "spacing",
+      "logprob": -0.000017046782886609435
+    },
+    {
+      "text": "nachprüfbar",
+      "start": 90.7,
+      "end": 91.42,
+      "type": "word",
+      "logprob": -0.0002489441070255535
+    },
+    {
+      "text": " ",
+      "start": 91.42,
+      "end": 91.62,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": "in",
+      "start": 91.62,
+      "end": 91.8,
+      "type": "word",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": " ",
+      "start": 91.8,
+      "end": 91.88,
+      "type": "spacing",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": "einer",
+      "start": 91.88,
+      "end": 92.08,
+      "type": "word",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": " ",
+      "start": 92.08,
+      "end": 92.12,
+      "type": "spacing",
+      "logprob": -0.000040411134250462055
+    },
+    {
+      "text": "Minute.",
+      "start": 92.12,
+      "end": 92.54,
+      "type": "word",
+      "logprob": -0.00003465514496931681
+    },
+    {
+      "text": " ",
+      "start": 92.54,
+      "end": 93.12,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-7
+    },
+    {
+      "text": "Das",
+      "start": 93.12,
+      "end": 93.32,
+      "type": "word",
+      "logprob": -7.152555099310121e-7
+    },
+    {
+      "text": " ",
+      "start": 93.32,
+      "end": 93.36,
+      "type": "spacing",
+      "logprob": -0.000011324817933200393
+    },
+    {
+      "text": "erste",
+      "start": 93.36,
+      "end": 93.66,
+      "type": "word",
+      "logprob": -0.000011324817933200393
+    },
+    {
+      "text": " ",
+      "start": 93.66,
+      "end": 93.7,
+      "type": "spacing",
+      "logprob": -0.0008432884933426976
+    },
+    {
+      "text": "Kaffeehaus",
+      "start": 93.7,
+      "end": 94.24,
+      "type": "word",
+      "logprob": -0.000511742784146918
+    },
+    {
+      "text": " ",
+      "start": 94.24,
+      "end": 94.28,
+      "type": "spacing",
+      "logprob": -0.000005245195097813848
+    },
+    {
+      "text": "stand",
+      "start": 94.28,
+      "end": 94.54,
+      "type": "word",
+      "logprob": -0.000005245195097813848
+    },
+    {
+      "text": " ",
+      "start": 94.54,
+      "end": 94.58,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "in",
+      "start": 94.58,
+      "end": 94.7,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 94.7,
+      "end": 94.74,
+      "type": "spacing",
+      "logprob": -0.00027104519540444016
+    },
+    {
+      "text": "Mekka,",
+      "start": 94.74,
+      "end": 95.06,
+      "type": "word",
+      "logprob": -0.00013699284333294295
+    },
+    {
+      "text": " ",
+      "start": 95.06,
+      "end": 95.46,
+      "type": "spacing",
+      "logprob": -0.03376644477248192
+    },
+    {
+      "text": "nicht",
+      "start": 95.46,
+      "end": 95.66,
+      "type": "word",
+      "logprob": -0.03376644477248192
+    },
+    {
+      "text": " ",
+      "start": 95.66,
+      "end": 95.7,
+      "type": "spacing",
+      "logprob": -0.0005532164941541851
+    },
+    {
+      "text": "in",
+      "start": 95.7,
+      "end": 95.8,
+      "type": "word",
+      "logprob": -0.0005532164941541851
+    },
+    {
+      "text": " ",
+      "start": 95.8,
+      "end": 95.84,
+      "type": "spacing",
+      "logprob": -0.0001445904199499637
+    },
+    {
+      "text": "Wien.",
+      "start": 95.84,
+      "end": 96.12,
+      "type": "word",
+      "logprob": -0.00011567233595997096
+    },
+    {
+      "text": " ",
+      "start": 96.12,
+      "end": 96.6,
+      "type": "spacing",
+      "logprob": -0.0001551984460093081
+    },
+    {
+      "text": "Wusstest",
+      "start": 96.6,
+      "end": 96.94,
+      "type": "word",
+      "logprob": -0.00010866470256321037
+    },
+    {
+      "text": " ",
+      "start": 96.94,
+      "end": 96.98,
+      "type": "spacing",
+      "logprob": -0.000007986990567587782
+    },
+    {
+      "text": "du",
+      "start": 96.98,
+      "end": 97.06,
+      "type": "word",
+      "logprob": -0.000007986990567587782
+    },
+    {
+      "text": " ",
+      "start": 97.06,
+      "end": 97.1,
+      "type": "spacing",
+      "logprob": -0.0000011920922133867862
+    },
+    {
+      "text": "das?",
+      "start": 97.1,
+      "end": 97.32,
+      "type": "word",
+      "logprob": -0.00004586172821063883
+    }
+  ],
+  "transcription_id": "UiohosIJS5C16JGRpCPB",
+  "audio_duration_secs": 97.52
+}
