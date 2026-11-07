@@ -40,6 +40,29 @@ if (fs.existsSync(CACHE_MP3) && fs.existsSync(CACHE_WORDS)) {
   process.exit(0);
 }
 
+// --- Guthaben pruefen: nie blind generieren, und den Stand ins Dashboard schreiben
+let rest = null;
+try {
+  const sub = await fetch("https://api.elevenlabs.io/v1/user/subscription", { headers: { "xi-api-key": KEY } });
+  if (sub.ok) {
+    const d = await sub.json();
+    rest = (d.character_limit ?? 0) - (d.character_count ?? 0);
+    const info = { at: new Date().toISOString(), rest, limit: d.character_limit ?? null,
+      tier: d.tier || null, reicht_fuer: Math.floor(rest / 2000), erneuert_am: d.next_character_count_reset_unix
+        ? new Date(d.next_character_count_reset_unix * 1000).toISOString() : null };
+    fs.mkdirSync("dashboard", { recursive: true });
+    fs.writeFileSync("dashboard/credits.json", JSON.stringify(info, null, 2) + "\n");
+    pushFiles(["dashboard/credits.json"], `credits: ${rest} uebrig`);
+    console.log(`ElevenLabs-Guthaben: ${rest} Credits (reicht fuer ~${info.reicht_fuer} Reels)`);
+  }
+} catch (e) { console.log("Guthaben-Abfrage uebersprungen:", e.message); }
+
+const MIN_CREDITS = Number(process.env.ELEVEN_MIN_CREDITS || 2500);
+if (rest !== null && rest < Math.max(MIN_CREDITS, text.length + 500)) {
+  reportError("produce", new Error(`ElevenLabs-Guthaben zu niedrig: ${rest} Credits uebrig, ${text.length} Zeichen noetig. Produktion gestoppt, bevor Credits verbraucht werden.`));
+  process.exit(1);
+}
+
 // --- TTS ---------------------------------------------------------------------
 console.log(`TTS ${id}: voice=${script.voice} model=${MODEL} chars=${text.length}`);
 const tts = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`, {
