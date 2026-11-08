@@ -1,0 +1,2452 @@
+{
+  "language_code": "deu",
+  "language_probability": 1,
+  "text": "Du kannst Sadaqah geben, ohne einen Cent zu haben. Der Prophet, sallallahu alaihi wasallam, hat eine Form genannt, die nichts kostet. Dein Lächeln im Gesicht deines Bruders ist für dich eine Sadaqah. Überleg mal, was das bedeutet. Sadaqah ist sonst ein Vermögensbegriff. Geld, Essen, Kleidung. Etwas, das weniger wird, wenn du es gibst. Und hier etwas, das sich vermehrt, wenn du es gibst. Der Hadith hört da nicht auf. Im gleichen Atemzug kommen mehr davon. Jemandem den Weg zeigen, einen Stein vom Weg nehmen, einem Blinden helfen, Wasser in das Gefäß deines Bruders gießen. Fällt dir etwas auf? Keine einzige Tat davon braucht Geld. Alle brauchen etwas anderes: Aufmerksamkeit. Du musst den Stein sehen. Du musst merken, dass jemand sucht. Und genau das ist das Problem mit einem Blick, der im Handy liegt. Man gibt nichts Falsches, man sieht nur nichts. Allah sagt über solche Taten: \"Was ihr Gutes tut, Allah weiß es.\" Niemand führt Buch über ein Lächeln. Einer schon. Lächle heute drei Menschen an, die nicht damit rechnen. Kassierer, Nachbar, Kollege. Das war's.",
+  "words": [
+    {
+      "text": "Du",
+      "start": 0.1,
+      "end": 0.18,
+      "type": "word",
+      "logprob": -0.00005781483559985645
+    },
+    {
+      "text": " ",
+      "start": 0.18,
+      "end": 0.22,
+      "type": "spacing",
+      "logprob": -0.000030874729418428615
+    },
+    {
+      "text": "kannst",
+      "start": 0.22,
+      "end": 0.54,
+      "type": "word",
+      "logprob": -0.000030874729418428615
+    },
+    {
+      "text": " ",
+      "start": 0.54,
+      "end": 0.56,
+      "type": "spacing",
+      "logprob": -0.019456958398222923
+    },
+    {
+      "text": "Sadaqah",
+      "start": 0.56,
+      "end": 1.08,
+      "type": "word",
+      "logprob": -0.08670286065483067
+    },
+    {
+      "text": " ",
+      "start": 1.08,
+      "end": 1.12,
+      "type": "spacing",
+      "logprob": -0.00010048838157672435
+    },
+    {
+      "text": "geben,",
+      "start": 1.12,
+      "end": 1.42,
+      "type": "word",
+      "logprob": -0.00009482641326030716
+    },
+    {
+      "text": " ",
+      "start": 1.42,
+      "end": 1.74,
+      "type": "spacing",
+      "logprob": -0.000002145764938177308
+    },
+    {
+      "text": "ohne",
+      "start": 1.74,
+      "end": 1.96,
+      "type": "word",
+      "logprob": -0.000002145764938177308
+    },
+    {
+      "text": " ",
+      "start": 1.96,
+      "end": 2.18,
+      "type": "spacing",
+      "logprob": -0.000007510157047363464
+    },
+    {
+      "text": "einen",
+      "start": 2.18,
+      "end": 2.5,
+      "type": "word",
+      "logprob": -0.000007510157047363464
+    },
+    {
+      "text": " ",
+      "start": 2.5,
+      "end": 2.56,
+      "type": "spacing",
+      "logprob": -0.00002169585604860913
+    },
+    {
+      "text": "Cent",
+      "start": 2.56,
+      "end": 2.82,
+      "type": "word",
+      "logprob": -0.00002169585604860913
+    },
+    {
+      "text": " ",
+      "start": 2.82,
+      "end": 2.86,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": "zu",
+      "start": 2.86,
+      "end": 2.98,
+      "type": "word",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": " ",
+      "start": 2.98,
+      "end": 3.02,
+      "type": "spacing",
+      "logprob": -0.00003766942609217949
+    },
+    {
+      "text": "haben.",
+      "start": 3.02,
+      "end": 3.36,
+      "type": "word",
+      "logprob": -0.000031669343191727726
+    },
+    {
+      "text": " ",
+      "start": 3.36,
+      "end": 3.36,
+      "type": "spacing",
+      "logprob": -0.0000107287787614041
+    },
+    {
+      "text": "Der",
+      "start": 4.42,
+      "end": 4.52,
+      "type": "word",
+      "logprob": -0.0000107287787614041
+    },
+    {
+      "text": " ",
+      "start": 4.52,
+      "end": 4.54,
+      "type": "spacing",
+      "logprob": -0.000028132995794294402
+    },
+    {
+      "text": "Prophet,",
+      "start": 4.54,
+      "end": 5.04,
+      "type": "word",
+      "logprob": -0.01030829607270789
+    },
+    {
+      "text": " ",
+      "start": 5.04,
+      "end": 5.36,
+      "type": "spacing",
+      "logprob": -0.15096452832221985
+    },
+    {
+      "text": "sallallahu",
+      "start": 5.36,
+      "end": 5.88,
+      "type": "word",
+      "logprob": -0.13118960690808307
+    },
+    {
+      "text": " ",
+      "start": 5.88,
+      "end": 5.94,
+      "type": "spacing",
+      "logprob": -0.00034505134681239724
+    },
+    {
+      "text": "alaihi",
+      "start": 5.94,
+      "end": 6.22,
+      "type": "word",
+      "logprob": -0.10503493747910397
+    },
+    {
+      "text": " ",
+      "start": 6.22,
+      "end": 6.26,
+      "type": "spacing",
+      "logprob": -0.3156461715698242
+    },
+    {
+      "text": "wasallam,",
+      "start": 6.26,
+      "end": 6.74,
+      "type": "word",
+      "logprob": -0.11065019725240038
+    },
+    {
+      "text": " ",
+      "start": 6.74,
+      "end": 7.12,
+      "type": "spacing",
+      "logprob": -0.0000036954811548639555
+    },
+    {
+      "text": "hat",
+      "start": 7.12,
+      "end": 7.24,
+      "type": "word",
+      "logprob": -0.0000036954811548639555
+    },
+    {
+      "text": " ",
+      "start": 7.24,
+      "end": 7.28,
+      "type": "spacing",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": "eine",
+      "start": 7.28,
+      "end": 7.5,
+      "type": "word",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": " ",
+      "start": 7.5,
+      "end": 7.54,
+      "type": "spacing",
+      "logprob": -0.00000250339189733495
+    },
+    {
+      "text": "Form",
+      "start": 7.54,
+      "end": 7.76,
+      "type": "word",
+      "logprob": -0.00000250339189733495
+    },
+    {
+      "text": " ",
+      "start": 7.76,
+      "end": 7.84,
+      "type": "spacing",
+      "logprob": -0.000003814689989667386
+    },
+    {
+      "text": "genannt,",
+      "start": 7.84,
+      "end": 8.2,
+      "type": "word",
+      "logprob": -0.0000033676560597939442
+    },
+    {
+      "text": " ",
+      "start": 8.2,
+      "end": 8.38,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "die",
+      "start": 8.38,
+      "end": 8.54,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 8.54,
+      "end": 8.6,
+      "type": "spacing",
+      "logprob": -0.000009536697689327411
+    },
+    {
+      "text": "nichts",
+      "start": 8.6,
+      "end": 8.94,
+      "type": "word",
+      "logprob": -0.000009536697689327411
+    },
+    {
+      "text": " ",
+      "start": 8.94,
+      "end": 8.98,
+      "type": "spacing",
+      "logprob": -0.00012158608296886086
+    },
+    {
+      "text": "kostet.",
+      "start": 8.98,
+      "end": 9.44,
+      "type": "word",
+      "logprob": -0.00010578338463216954
+    },
+    {
+      "text": " ",
+      "start": 9.44,
+      "end": 9.44,
+      "type": "spacing",
+      "logprob": -0.008733292110264301
+    },
+    {
+      "text": "Dein",
+      "start": 10.18,
+      "end": 10.38,
+      "type": "word",
+      "logprob": -0.008733292110264301
+    },
+    {
+      "text": " ",
+      "start": 10.38,
+      "end": 10.44,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": "Lächeln",
+      "start": 10.44,
+      "end": 10.84,
+      "type": "word",
+      "logprob": -0.0000059093461572956585
+    },
+    {
+      "text": " ",
+      "start": 10.84,
+      "end": 10.9,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": "im",
+      "start": 10.9,
+      "end": 11,
+      "type": "word",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": " ",
+      "start": 11,
+      "end": 11.04,
+      "type": "spacing",
+      "logprob": -0.00018630675913300365
+    },
+    {
+      "text": "Gesicht",
+      "start": 11.04,
+      "end": 11.34,
+      "type": "word",
+      "logprob": -0.00018630675913300365
+    },
+    {
+      "text": " ",
+      "start": 11.34,
+      "end": 11.38,
+      "type": "spacing",
+      "logprob": -0.00005769562994828448
+    },
+    {
+      "text": "deines",
+      "start": 11.38,
+      "end": 11.68,
+      "type": "word",
+      "logprob": -0.00002066238660821303
+    },
+    {
+      "text": " ",
+      "start": 11.68,
+      "end": 11.72,
+      "type": "spacing",
+      "logprob": -0.00016032364510465413
+    },
+    {
+      "text": "Bruders",
+      "start": 11.72,
+      "end": 12.18,
+      "type": "word",
+      "logprob": -0.000776526439169954
+    },
+    {
+      "text": " ",
+      "start": 12.18,
+      "end": 12.42,
+      "type": "spacing",
+      "logprob": -0.000004887569048150908
+    },
+    {
+      "text": "ist",
+      "start": 12.42,
+      "end": 12.58,
+      "type": "word",
+      "logprob": -0.000004887569048150908
+    },
+    {
+      "text": " ",
+      "start": 12.58,
+      "end": 12.62,
+      "type": "spacing",
+      "logprob": -0.0000023841830625315197
+    },
+    {
+      "text": "für",
+      "start": 12.62,
+      "end": 12.76,
+      "type": "word",
+      "logprob": -0.0000023841830625315197
+    },
+    {
+      "text": " ",
+      "start": 12.76,
+      "end": 12.8,
+      "type": "spacing",
+      "logprob": -0.000025987286790041253
+    },
+    {
+      "text": "dich",
+      "start": 12.8,
+      "end": 13.12,
+      "type": "word",
+      "logprob": -0.000025987286790041253
+    },
+    {
+      "text": " ",
+      "start": 13.12,
+      "end": 13.18,
+      "type": "spacing",
+      "logprob": -0.00002396077979938127
+    },
+    {
+      "text": "eine",
+      "start": 13.18,
+      "end": 13.42,
+      "type": "word",
+      "logprob": -0.00002396077979938127
+    },
+    {
+      "text": " ",
+      "start": 13.42,
+      "end": 13.46,
+      "type": "spacing",
+      "logprob": -0.0018496087286621332
+    },
+    {
+      "text": "Sadaqah.",
+      "start": 13.46,
+      "end": 13.94,
+      "type": "word",
+      "logprob": -0.0013691601904497475
+    },
+    {
+      "text": " ",
+      "start": 13.94,
+      "end": 13.94,
+      "type": "spacing",
+      "logprob": -0.00008511180931236595
+    },
+    {
+      "text": "Überleg",
+      "start": 14.66,
+      "end": 15.06,
+      "type": "word",
+      "logprob": -0.001976250729057938
+    },
+    {
+      "text": " ",
+      "start": 15.06,
+      "end": 15.1,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-7
+    },
+    {
+      "text": "mal,",
+      "start": 15.1,
+      "end": 15.24,
+      "type": "word",
+      "logprob": -0.000003188835052014838
+    },
+    {
+      "text": " ",
+      "start": 15.24,
+      "end": 15.32,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "was",
+      "start": 15.32,
+      "end": 15.46,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 15.46,
+      "end": 15.5,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": "das",
+      "start": 15.5,
+      "end": 15.66,
+      "type": "word",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": " ",
+      "start": 15.66,
+      "end": 15.68,
+      "type": "spacing",
+      "logprob": -0.000007986990567587782
+    },
+    {
+      "text": "bedeutet.",
+      "start": 15.68,
+      "end": 16.239,
+      "type": "word",
+      "logprob": -0.000007179020005625918
+    },
+    {
+      "text": " ",
+      "start": 16.239,
+      "end": 16.86,
+      "type": "spacing",
+      "logprob": -0.0001805857609724626
+    },
+    {
+      "text": "Sadaqah",
+      "start": 16.86,
+      "end": 17.38,
+      "type": "word",
+      "logprob": -0.00026032703252505077
+    },
+    {
+      "text": " ",
+      "start": 17.38,
+      "end": 17.44,
+      "type": "spacing",
+      "logprob": -0.0000046491513785440475
+    },
+    {
+      "text": "ist",
+      "start": 17.44,
+      "end": 17.6,
+      "type": "word",
+      "logprob": -0.0000046491513785440475
+    },
+    {
+      "text": " ",
+      "start": 17.6,
+      "end": 17.66,
+      "type": "spacing",
+      "logprob": -0.000003933898824470816
+    },
+    {
+      "text": "sonst",
+      "start": 17.66,
+      "end": 18.04,
+      "type": "word",
+      "logprob": -0.000003933898824470816
+    },
+    {
+      "text": " ",
+      "start": 18.04,
+      "end": 18.08,
+      "type": "spacing",
+      "logprob": -0.0000011920922133867862
+    },
+    {
+      "text": "ein",
+      "start": 18.08,
+      "end": 18.2,
+      "type": "word",
+      "logprob": -0.0000011920922133867862
+    },
+    {
+      "text": " ",
+      "start": 18.2,
+      "end": 18.24,
+      "type": "spacing",
+      "logprob": -0.000860201776959002
+    },
+    {
+      "text": "Vermögensbegriff.",
+      "start": 18.24,
+      "end": 19.18,
+      "type": "word",
+      "logprob": -0.00033920688217810546
+    },
+    {
+      "text": " ",
+      "start": 19.18,
+      "end": 19.18,
+      "type": "spacing",
+      "logprob": -0.0000017881377516459906
+    },
+    {
+      "text": "Geld,",
+      "start": 19.86,
+      "end": 20.22,
+      "type": "word",
+      "logprob": -0.0000017404541040377807
+    },
+    {
+      "text": " ",
+      "start": 20.22,
+      "end": 20.64,
+      "type": "spacing",
+      "logprob": -0.0002057340752799064
+    },
+    {
+      "text": "Essen,",
+      "start": 20.64,
+      "end": 21,
+      "type": "word",
+      "logprob": -0.00017249807478947332
+    },
+    {
+      "text": " ",
+      "start": 21,
+      "end": 21.28,
+      "type": "spacing",
+      "logprob": -0.00016735584358684719
+    },
+    {
+      "text": "Kleidung.",
+      "start": 21.28,
+      "end": 21.78,
+      "type": "word",
+      "logprob": -0.0033616095477195054
+    },
+    {
+      "text": " ",
+      "start": 21.78,
+      "end": 22.26,
+      "type": "spacing",
+      "logprob": -0.0000033378546504536644
+    },
+    {
+      "text": "Etwas,",
+      "start": 22.26,
+      "end": 22.58,
+      "type": "word",
+      "logprob": -0.000002861018515432079
+    },
+    {
+      "text": " ",
+      "start": 22.58,
+      "end": 22.68,
+      "type": "spacing",
+      "logprob": -0.00001585470999998506
+    },
+    {
+      "text": "das",
+      "start": 22.68,
+      "end": 22.86,
+      "type": "word",
+      "logprob": -0.00001585470999998506
+    },
+    {
+      "text": " ",
+      "start": 22.86,
+      "end": 23,
+      "type": "spacing",
+      "logprob": -0.000006437280717364047
+    },
+    {
+      "text": "weniger",
+      "start": 23,
+      "end": 23.46,
+      "type": "word",
+      "logprob": -0.000006437280717364047
+    },
+    {
+      "text": " ",
+      "start": 23.46,
+      "end": 23.48,
+      "type": "spacing",
+      "logprob": -0.0000016689286894688848
+    },
+    {
+      "text": "wird,",
+      "start": 23.48,
+      "end": 23.74,
+      "type": "word",
+      "logprob": -0.0000023603402041771915
+    },
+    {
+      "text": " ",
+      "start": 23.74,
+      "end": 23.96,
+      "type": "spacing",
+      "logprob": -0.00004660974445869215
+    },
+    {
+      "text": "wenn",
+      "start": 23.96,
+      "end": 24.08,
+      "type": "word",
+      "logprob": -0.00004660974445869215
+    },
+    {
+      "text": " ",
+      "start": 24.08,
+      "end": 24.1,
+      "type": "spacing",
+      "logprob": -0.000018000440832111053
+    },
+    {
+      "text": "du",
+      "start": 24.1,
+      "end": 24.18,
+      "type": "word",
+      "logprob": -0.000018000440832111053
+    },
+    {
+      "text": " ",
+      "start": 24.18,
+      "end": 24.22,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "es",
+      "start": 24.22,
+      "end": 24.36,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 24.36,
+      "end": 24.4,
+      "type": "spacing",
+      "logprob": -0.0001752223033690825
+    },
+    {
+      "text": "gibst.",
+      "start": 24.4,
+      "end": 24.78,
+      "type": "word",
+      "logprob": -0.00008802838366743042
+    },
+    {
+      "text": " ",
+      "start": 24.78,
+      "end": 25.38,
+      "type": "spacing",
+      "logprob": -0.000004768360213347478
+    },
+    {
+      "text": "Und",
+      "start": 25.38,
+      "end": 25.5,
+      "type": "word",
+      "logprob": -0.000004768360213347478
+    },
+    {
+      "text": " ",
+      "start": 25.5,
+      "end": 25.52,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": "hier",
+      "start": 25.54,
+      "end": 25.74,
+      "type": "word",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": " ",
+      "start": 25.74,
+      "end": 26.4,
+      "type": "spacing",
+      "logprob": -0.6336853504180908
+    },
+    {
+      "text": "etwas,",
+      "start": 26.4,
+      "end": 26.8,
+      "type": "word",
+      "logprob": -0.5280785956298738
+    },
+    {
+      "text": " ",
+      "start": 26.8,
+      "end": 26.92,
+      "type": "spacing",
+      "logprob": -0.0003570872650016099
+    },
+    {
+      "text": "das",
+      "start": 26.92,
+      "end": 27.06,
+      "type": "word",
+      "logprob": -0.0003570872650016099
+    },
+    {
+      "text": " ",
+      "start": 27.06,
+      "end": 27.08,
+      "type": "spacing",
+      "logprob": -0.0000036954811548639555
+    },
+    {
+      "text": "sich",
+      "start": 27.08,
+      "end": 27.26,
+      "type": "word",
+      "logprob": -0.0000036954811548639555
+    },
+    {
+      "text": " ",
+      "start": 27.26,
+      "end": 27.3,
+      "type": "spacing",
+      "logprob": -0.0006032554083503783
+    },
+    {
+      "text": "vermehrt,",
+      "start": 27.3,
+      "end": 27.86,
+      "type": "word",
+      "logprob": -0.0002719944136262913
+    },
+    {
+      "text": " ",
+      "start": 27.86,
+      "end": 28.1,
+      "type": "spacing",
+      "logprob": -0.000005364403477869928
+    },
+    {
+      "text": "wenn",
+      "start": 28.1,
+      "end": 28.22,
+      "type": "word",
+      "logprob": -0.000005364403477869928
+    },
+    {
+      "text": " ",
+      "start": 28.22,
+      "end": 28.26,
+      "type": "spacing",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": "du",
+      "start": 28.26,
+      "end": 28.34,
+      "type": "word",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": " ",
+      "start": 28.34,
+      "end": 28.38,
+      "type": "spacing",
+      "logprob": -0.0000014305104514278355
+    },
+    {
+      "text": "es",
+      "start": 28.38,
+      "end": 28.52,
+      "type": "word",
+      "logprob": -0.0000014305104514278355
+    },
+    {
+      "text": " ",
+      "start": 28.52,
+      "end": 28.56,
+      "type": "spacing",
+      "logprob": -0.00006103329360485077
+    },
+    {
+      "text": "gibst.",
+      "start": 28.56,
+      "end": 28.92,
+      "type": "word",
+      "logprob": -0.000031569661075536715
+    },
+    {
+      "text": " ",
+      "start": 28.92,
+      "end": 28.92,
+      "type": "spacing",
+      "logprob": -0.000008821448318485636
+    },
+    {
+      "text": "Der",
+      "start": 29.52,
+      "end": 29.62,
+      "type": "word",
+      "logprob": -0.000008821448318485636
+    },
+    {
+      "text": " ",
+      "start": 29.62,
+      "end": 29.66,
+      "type": "spacing",
+      "logprob": -0.0007983834366314113
+    },
+    {
+      "text": "Hadith",
+      "start": 29.66,
+      "end": 30.02,
+      "type": "word",
+      "logprob": -0.00041659597081888933
+    },
+    {
+      "text": " ",
+      "start": 30.02,
+      "end": 30.06,
+      "type": "spacing",
+      "logprob": -0.00046302087139338255
+    },
+    {
+      "text": "hört",
+      "start": 30.06,
+      "end": 30.22,
+      "type": "word",
+      "logprob": -0.00046302087139338255
+    },
+    {
+      "text": " ",
+      "start": 30.22,
+      "end": 30.24,
+      "type": "spacing",
+      "logprob": -0.000051377883210079744
+    },
+    {
+      "text": "da",
+      "start": 30.24,
+      "end": 30.34,
+      "type": "word",
+      "logprob": -0.000051377883210079744
+    },
+    {
+      "text": " ",
+      "start": 30.34,
+      "end": 30.38,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": "nicht",
+      "start": 30.38,
+      "end": 30.56,
+      "type": "word",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": " ",
+      "start": 30.56,
+      "end": 30.68,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "auf.",
+      "start": 30.68,
+      "end": 30.94,
+      "type": "word",
+      "logprob": -0.000004202093800032003
+    },
+    {
+      "text": " ",
+      "start": 30.94,
+      "end": 31.36,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-7
+    },
+    {
+      "text": "Im",
+      "start": 31.36,
+      "end": 31.48,
+      "type": "word",
+      "logprob": -8.344646857949556e-7
+    },
+    {
+      "text": " ",
+      "start": 31.48,
+      "end": 31.5,
+      "type": "spacing",
+      "logprob": -0.00032109825406223536
+    },
+    {
+      "text": "gleichen",
+      "start": 31.5,
+      "end": 31.9,
+      "type": "word",
+      "logprob": -0.00032109825406223536
+    },
+    {
+      "text": " ",
+      "start": 31.9,
+      "end": 31.96,
+      "type": "spacing",
+      "logprob": -0.0005653690313920379
+    },
+    {
+      "text": "Atemzug",
+      "start": 31.96,
+      "end": 32.5,
+      "type": "word",
+      "logprob": -0.00032924982666112816
+    },
+    {
+      "text": " ",
+      "start": 32.5,
+      "end": 32.659,
+      "type": "spacing",
+      "logprob": -0.000016689160474925302
+    },
+    {
+      "text": "kommen",
+      "start": 32.659,
+      "end": 32.92,
+      "type": "word",
+      "logprob": -0.000016689160474925302
+    },
+    {
+      "text": " ",
+      "start": 32.92,
+      "end": 32.98,
+      "type": "spacing",
+      "logprob": -0.000013589766240329482
+    },
+    {
+      "text": "mehr",
+      "start": 32.98,
+      "end": 33.12,
+      "type": "word",
+      "logprob": -0.000013589766240329482
+    },
+    {
+      "text": " ",
+      "start": 33.12,
+      "end": 33.16,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": "davon.",
+      "start": 33.16,
+      "end": 33.58,
+      "type": "word",
+      "logprob": -0.00013443395917533962
+    },
+    {
+      "text": " ",
+      "start": 33.58,
+      "end": 34.18,
+      "type": "spacing",
+      "logprob": -0.00008809178689261898
+    },
+    {
+      "text": "Jemandem",
+      "start": 34.18,
+      "end": 34.66,
+      "type": "word",
+      "logprob": -0.00004196042118387311
+    },
+    {
+      "text": " ",
+      "start": 34.66,
+      "end": 34.74,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": "den",
+      "start": 34.74,
+      "end": 34.9,
+      "type": "word",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": " ",
+      "start": 34.9,
+      "end": 34.96,
+      "type": "spacing",
+      "logprob": -0.000007986990567587782
+    },
+    {
+      "text": "Weg",
+      "start": 34.96,
+      "end": 35.16,
+      "type": "word",
+      "logprob": -0.000007986990567587782
+    },
+    {
+      "text": " ",
+      "start": 35.16,
+      "end": 35.28,
+      "type": "spacing",
+      "logprob": -0.00004339123915997334
+    },
+    {
+      "text": "zeigen,",
+      "start": 35.28,
+      "end": 35.64,
+      "type": "word",
+      "logprob": -0.0001521321152852449
+    },
+    {
+      "text": " ",
+      "start": 35.64,
+      "end": 36.26,
+      "type": "spacing",
+      "logprob": -0.000011086402082582936
+    },
+    {
+      "text": "einen",
+      "start": 36.26,
+      "end": 36.52,
+      "type": "word",
+      "logprob": -0.000011086402082582936
+    },
+    {
+      "text": " ",
+      "start": 36.52,
+      "end": 36.58,
+      "type": "spacing",
+      "logprob": -0.0000213382354559144
+    },
+    {
+      "text": "Stein",
+      "start": 36.58,
+      "end": 36.9,
+      "type": "word",
+      "logprob": -0.0000213382354559144
+    },
+    {
+      "text": " ",
+      "start": 36.9,
+      "end": 37,
+      "type": "spacing",
+      "logprob": -0.000016093124941107817
+    },
+    {
+      "text": "vom",
+      "start": 37,
+      "end": 37.16,
+      "type": "word",
+      "logprob": -0.000016093124941107817
+    },
+    {
+      "text": " ",
+      "start": 37.16,
+      "end": 37.2,
+      "type": "spacing",
+      "logprob": -0.00004172238186583854
+    },
+    {
+      "text": "Weg",
+      "start": 37.2,
+      "end": 37.4,
+      "type": "word",
+      "logprob": -0.00004172238186583854
+    },
+    {
+      "text": " ",
+      "start": 37.4,
+      "end": 37.46,
+      "type": "spacing",
+      "logprob": -0.00023707917716819793
+    },
+    {
+      "text": "nehmen,",
+      "start": 37.46,
+      "end": 37.74,
+      "type": "word",
+      "logprob": -0.00022124424659913139
+    },
+    {
+      "text": " ",
+      "start": 37.74,
+      "end": 38.3,
+      "type": "spacing",
+      "logprob": -0.000019311717551317997
+    },
+    {
+      "text": "einem",
+      "start": 38.3,
+      "end": 38.56,
+      "type": "word",
+      "logprob": -0.000019311717551317997
+    },
+    {
+      "text": " ",
+      "start": 38.56,
+      "end": 38.58,
+      "type": "spacing",
+      "logprob": -0.00014482879487331957
+    },
+    {
+      "text": "Blinden",
+      "start": 38.58,
+      "end": 39,
+      "type": "word",
+      "logprob": -0.00007262883601859877
+    },
+    {
+      "text": " ",
+      "start": 39,
+      "end": 39.06,
+      "type": "spacing",
+      "logprob": -0.00002074220174108632
+    },
+    {
+      "text": "helfen,",
+      "start": 39.06,
+      "end": 39.42,
+      "type": "word",
+      "logprob": -0.00005523989654778104
+    },
+    {
+      "text": " ",
+      "start": 39.42,
+      "end": 40.02,
+      "type": "spacing",
+      "logprob": -0.00003218599158572033
+    },
+    {
+      "text": "Wasser",
+      "start": 40.02,
+      "end": 40.4,
+      "type": "word",
+      "logprob": -0.00003218599158572033
+    },
+    {
+      "text": " ",
+      "start": 40.4,
+      "end": 40.42,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": "in",
+      "start": 40.42,
+      "end": 40.5,
+      "type": "word",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": " ",
+      "start": 40.5,
+      "end": 40.54,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-7
+    },
+    {
+      "text": "das",
+      "start": 40.54,
+      "end": 40.7,
+      "type": "word",
+      "logprob": -7.152555099310121e-7
+    },
+    {
+      "text": " ",
+      "start": 40.7,
+      "end": 40.72,
+      "type": "spacing",
+      "logprob": -0.0000027418097943154862
+    },
+    {
+      "text": "Gefäß",
+      "start": 40.72,
+      "end": 41.18,
+      "type": "word",
+      "logprob": -0.000006651844751104364
+    },
+    {
+      "text": " ",
+      "start": 41.18,
+      "end": 41.22,
+      "type": "spacing",
+      "logprob": -0.00008320462075062096
+    },
+    {
+      "text": "deines",
+      "start": 41.22,
+      "end": 41.52,
+      "type": "word",
+      "logprob": -0.000028132237768356088
+    },
+    {
+      "text": " ",
+      "start": 41.52,
+      "end": 41.56,
+      "type": "spacing",
+      "logprob": -0.0000371926071238704
+    },
+    {
+      "text": "Bruders",
+      "start": 41.56,
+      "end": 41.96,
+      "type": "word",
+      "logprob": -0.0004576916461311547
+    },
+    {
+      "text": " ",
+      "start": 41.96,
+      "end": 41.98,
+      "type": "spacing",
+      "logprob": -0.000011801649634435307
+    },
+    {
+      "text": "gießen.",
+      "start": 41.98,
+      "end": 42.36,
+      "type": "word",
+      "logprob": -0.000036460158164735344
+    },
+    {
+      "text": " ",
+      "start": 42.36,
+      "end": 42.96,
+      "type": "spacing",
+      "logprob": -0.0000014305104514278355
+    },
+    {
+      "text": "Fällt",
+      "start": 42.96,
+      "end": 43.12,
+      "type": "word",
+      "logprob": -0.00004596579799454048
+    },
+    {
+      "text": " ",
+      "start": 43.12,
+      "end": 43.16,
+      "type": "spacing",
+      "logprob": -0.000007748573807475623
+    },
+    {
+      "text": "dir",
+      "start": 43.16,
+      "end": 43.24,
+      "type": "word",
+      "logprob": -0.000007748573807475623
+    },
+    {
+      "text": " ",
+      "start": 43.24,
+      "end": 43.26,
+      "type": "spacing",
+      "logprob": -0.0000011920922133867862
+    },
+    {
+      "text": "etwas",
+      "start": 43.26,
+      "end": 43.54,
+      "type": "word",
+      "logprob": -0.0000011920922133867862
+    },
+    {
+      "text": " ",
+      "start": 43.54,
+      "end": 43.64,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": "auf?",
+      "start": 43.64,
+      "end": 43.86,
+      "type": "word",
+      "logprob": -0.0000019371458677142073
+    },
+    {
+      "text": " ",
+      "start": 43.86,
+      "end": 44.42,
+      "type": "spacing",
+      "logprob": -0.000004887569048150908
+    },
+    {
+      "text": "Keine",
+      "start": 44.42,
+      "end": 44.72,
+      "type": "word",
+      "logprob": -0.000004887569048150908
+    },
+    {
+      "text": " ",
+      "start": 44.72,
+      "end": 44.9,
+      "type": "spacing",
+      "logprob": -0.00001811964830267243
+    },
+    {
+      "text": "einzige",
+      "start": 44.9,
+      "end": 45.36,
+      "type": "word",
+      "logprob": -0.00001811964830267243
+    },
+    {
+      "text": " ",
+      "start": 45.36,
+      "end": 45.4,
+      "type": "spacing",
+      "logprob": -0.00008987976616481319
+    },
+    {
+      "text": "Tat",
+      "start": 45.42,
+      "end": 45.62,
+      "type": "word",
+      "logprob": -0.00008987976616481319
+    },
+    {
+      "text": " ",
+      "start": 45.62,
+      "end": 45.66,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": "davon",
+      "start": 45.66,
+      "end": 46.16,
+      "type": "word",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": " ",
+      "start": 46.16,
+      "end": 46.18,
+      "type": "spacing",
+      "logprob": -0.00009703165414975956
+    },
+    {
+      "text": "braucht",
+      "start": 46.18,
+      "end": 46.5,
+      "type": "word",
+      "logprob": -0.00009703165414975956
+    },
+    {
+      "text": " ",
+      "start": 46.5,
+      "end": 46.54,
+      "type": "spacing",
+      "logprob": -0.000001311301275563892
+    },
+    {
+      "text": "Geld.",
+      "start": 46.54,
+      "end": 46.86,
+      "type": "word",
+      "logprob": -0.0000012159339576101046
+    },
+    {
+      "text": " ",
+      "start": 46.86,
+      "end": 47.4,
+      "type": "spacing",
+      "logprob": -0.000005483612312673358
+    },
+    {
+      "text": "Alle",
+      "start": 47.4,
+      "end": 47.68,
+      "type": "word",
+      "logprob": -0.000005483612312673358
+    },
+    {
+      "text": " ",
+      "start": 47.68,
+      "end": 47.7,
+      "type": "spacing",
+      "logprob": -0.000006437280717364047
+    },
+    {
+      "text": "brauchen",
+      "start": 47.7,
+      "end": 48.06,
+      "type": "word",
+      "logprob": -0.000006437280717364047
+    },
+    {
+      "text": " ",
+      "start": 48.06,
+      "end": 48.1,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": "etwas",
+      "start": 48.1,
+      "end": 48.4,
+      "type": "word",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": " ",
+      "start": 48.4,
+      "end": 48.46,
+      "type": "spacing",
+      "logprob": -0.00003135155202471651
+    },
+    {
+      "text": "anderes:",
+      "start": 48.46,
+      "end": 48.94,
+      "type": "word",
+      "logprob": -0.0012472606390474539
+    },
+    {
+      "text": " ",
+      "start": 48.94,
+      "end": 49.5,
+      "type": "spacing",
+      "logprob": -0.000005722029527532868
+    },
+    {
+      "text": "Aufmerksamkeit.",
+      "start": 49.5,
+      "end": 50.46,
+      "type": "word",
+      "logprob": -0.000005451822804995269
+    },
+    {
+      "text": " ",
+      "start": 50.46,
+      "end": 50.98,
+      "type": "spacing",
+      "logprob": -0.000002622600959512056
+    },
+    {
+      "text": "Du",
+      "start": 50.98,
+      "end": 51.04,
+      "type": "word",
+      "logprob": -0.000002622600959512056
+    },
+    {
+      "text": " ",
+      "start": 51.04,
+      "end": 51.14,
+      "type": "spacing",
+      "logprob": -0.0000393382906622719
+    },
+    {
+      "text": "musst",
+      "start": 51.14,
+      "end": 51.34,
+      "type": "word",
+      "logprob": -0.0000393382906622719
+    },
+    {
+      "text": " ",
+      "start": 51.34,
+      "end": 51.38,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "den",
+      "start": 51.38,
+      "end": 51.56,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 51.56,
+      "end": 51.62,
+      "type": "spacing",
+      "logprob": -0.00002455681169521995
+    },
+    {
+      "text": "Stein",
+      "start": 51.62,
+      "end": 51.96,
+      "type": "word",
+      "logprob": -0.00002455681169521995
+    },
+    {
+      "text": " ",
+      "start": 51.96,
+      "end": 52.1,
+      "type": "spacing",
+      "logprob": -0.000008940656698541716
+    },
+    {
+      "text": "sehen.",
+      "start": 52.1,
+      "end": 52.46,
+      "type": "word",
+      "logprob": -0.000007530020089537477
+    },
+    {
+      "text": " ",
+      "start": 52.46,
+      "end": 52.9,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": "Du",
+      "start": 52.9,
+      "end": 52.94,
+      "type": "word",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": " ",
+      "start": 52.94,
+      "end": 53,
+      "type": "spacing",
+      "logprob": -0.000004529942543740617
+    },
+    {
+      "text": "musst",
+      "start": 53,
+      "end": 53.24,
+      "type": "word",
+      "logprob": -0.000004529942543740617
+    },
+    {
+      "text": " ",
+      "start": 53.24,
+      "end": 53.3,
+      "type": "spacing",
+      "logprob": -0.000051020273531321436
+    },
+    {
+      "text": "merken,",
+      "start": 53.3,
+      "end": 53.72,
+      "type": "word",
+      "logprob": -0.00004398711127708209
+    },
+    {
+      "text": " ",
+      "start": 53.72,
+      "end": 53.82,
+      "type": "spacing",
+      "logprob": -0.00000250339189733495
+    },
+    {
+      "text": "dass",
+      "start": 53.82,
+      "end": 53.98,
+      "type": "word",
+      "logprob": -0.00000250339189733495
+    },
+    {
+      "text": " ",
+      "start": 53.98,
+      "end": 54.02,
+      "type": "spacing",
+      "logprob": -0.000007271740287251305
+    },
+    {
+      "text": "jemand",
+      "start": 54.02,
+      "end": 54.32,
+      "type": "word",
+      "logprob": -0.000007271740287251305
+    },
+    {
+      "text": " ",
+      "start": 54.32,
+      "end": 54.38,
+      "type": "spacing",
+      "logprob": -0.000017762025890988298
+    },
+    {
+      "text": "sucht.",
+      "start": 54.38,
+      "end": 54.78,
+      "type": "word",
+      "logprob": -0.000016311665755589882
+    },
+    {
+      "text": " ",
+      "start": 54.78,
+      "end": 55.28,
+      "type": "spacing",
+      "logprob": -0.00001156323378381785
+    },
+    {
+      "text": "Und",
+      "start": 55.28,
+      "end": 55.4,
+      "type": "word",
+      "logprob": -0.00001156323378381785
+    },
+    {
+      "text": " ",
+      "start": 55.4,
+      "end": 55.42,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-7
+    },
+    {
+      "text": "genau",
+      "start": 55.42,
+      "end": 55.86,
+      "type": "word",
+      "logprob": -7.152555099310121e-7
+    },
+    {
+      "text": " ",
+      "start": 55.86,
+      "end": 55.9,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": "das",
+      "start": 55.9,
+      "end": 56.22,
+      "type": "word",
+      "logprob": -3.576278118089249e-7
+    },
+    {
+      "text": " ",
+      "start": 56.22,
+      "end": 56.26,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-7
+    },
+    {
+      "text": "ist",
+      "start": 56.26,
+      "end": 56.36,
+      "type": "word",
+      "logprob": -8.344646857949556e-7
+    },
+    {
+      "text": " ",
+      "start": 56.36,
+      "end": 56.4,
+      "type": "spacing",
+      "logprob": -0.000002622600959512056
+    },
+    {
+      "text": "das",
+      "start": 56.4,
+      "end": 56.58,
+      "type": "word",
+      "logprob": -0.000002622600959512056
+    },
+    {
+      "text": " ",
+      "start": 56.58,
+      "end": 56.6,
+      "type": "spacing",
+      "logprob": -0.0000015497195136049413
+    },
+    {
+      "text": "Problem",
+      "start": 56.6,
+      "end": 57.08,
+      "type": "word",
+      "logprob": -0.0000015497195136049413
+    },
+    {
+      "text": " ",
+      "start": 57.08,
+      "end": 57.12,
+      "type": "spacing",
+      "logprob": -0.000005364403477869928
+    },
+    {
+      "text": "mit",
+      "start": 57.12,
+      "end": 57.24,
+      "type": "word",
+      "logprob": -0.000005364403477869928
+    },
+    {
+      "text": " ",
+      "start": 57.24,
+      "end": 57.28,
+      "type": "spacing",
+      "logprob": -0.0000066756979322235566
+    },
+    {
+      "text": "einem",
+      "start": 57.28,
+      "end": 57.52,
+      "type": "word",
+      "logprob": -0.0000066756979322235566
+    },
+    {
+      "text": " ",
+      "start": 57.52,
+      "end": 57.54,
+      "type": "spacing",
+      "logprob": -0.0000058412379075889476
+    },
+    {
+      "text": "Blick,",
+      "start": 57.54,
+      "end": 57.78,
+      "type": "word",
+      "logprob": -0.000006159127224236727
+    },
+    {
+      "text": " ",
+      "start": 57.78,
+      "end": 57.96,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": "der",
+      "start": 57.96,
+      "end": 58.06,
+      "type": "word",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": " ",
+      "start": 58.06,
+      "end": 58.1,
+      "type": "spacing",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": "im",
+      "start": 58.1,
+      "end": 58.2,
+      "type": "word",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": " ",
+      "start": 58.2,
+      "end": 58.24,
+      "type": "spacing",
+      "logprob": -0.00008511180931236595
+    },
+    {
+      "text": "Handy",
+      "start": 58.24,
+      "end": 58.52,
+      "type": "word",
+      "logprob": -0.00008511180931236595
+    },
+    {
+      "text": " ",
+      "start": 58.52,
+      "end": 58.6,
+      "type": "spacing",
+      "logprob": -0.000021934269170742482
+    },
+    {
+      "text": "liegt.",
+      "start": 58.6,
+      "end": 58.9,
+      "type": "word",
+      "logprob": -0.00001937130590097998
+    },
+    {
+      "text": " ",
+      "start": 58.9,
+      "end": 59.38,
+      "type": "spacing",
+      "logprob": -0.0000011920922133867862
+    },
+    {
+      "text": "Man",
+      "start": 59.38,
+      "end": 59.58,
+      "type": "word",
+      "logprob": -0.0000011920922133867862
+    },
+    {
+      "text": " ",
+      "start": 59.58,
+      "end": 59.62,
+      "type": "spacing",
+      "logprob": -0.000019788545614574105
+    },
+    {
+      "text": "gibt",
+      "start": 59.62,
+      "end": 59.86,
+      "type": "word",
+      "logprob": -0.000019788545614574105
+    },
+    {
+      "text": " ",
+      "start": 59.86,
+      "end": 59.9,
+      "type": "spacing",
+      "logprob": -0.0000017881377516459906
+    },
+    {
+      "text": "nichts",
+      "start": 59.9,
+      "end": 60.16,
+      "type": "word",
+      "logprob": -0.0000017881377516459906
+    },
+    {
+      "text": " ",
+      "start": 60.16,
+      "end": 60.2,
+      "type": "spacing",
+      "logprob": -0.000809699238743633
+    },
+    {
+      "text": "Falsches,",
+      "start": 60.2,
+      "end": 60.68,
+      "type": "word",
+      "logprob": -0.00011689389793900773
+    },
+    {
+      "text": " ",
+      "start": 60.68,
+      "end": 61.08,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": "man",
+      "start": 61.08,
+      "end": 61.24,
+      "type": "word",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": " ",
+      "start": 61.24,
+      "end": 61.3,
+      "type": "spacing",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": "sieht",
+      "start": 61.3,
+      "end": 61.52,
+      "type": "word",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": " ",
+      "start": 61.52,
+      "end": 61.56,
+      "type": "spacing",
+      "logprob": -0.0000020265558760002023
+    },
+    {
+      "text": "nur",
+      "start": 61.56,
+      "end": 61.68,
+      "type": "word",
+      "logprob": -0.0000020265558760002023
+    },
+    {
+      "text": " ",
+      "start": 61.68,
+      "end": 61.74,
+      "type": "spacing",
+      "logprob": -0.000013828182090946939
+    },
+    {
+      "text": "nichts.",
+      "start": 61.74,
+      "end": 62.1,
+      "type": "word",
+      "logprob": -0.000019686266179113382
+    },
+    {
+      "text": " ",
+      "start": 62.1,
+      "end": 62.64,
+      "type": "spacing",
+      "logprob": -0.00008880697714630514
+    },
+    {
+      "text": "Allah",
+      "start": 62.64,
+      "end": 62.98,
+      "type": "word",
+      "logprob": -0.00008880697714630514
+    },
+    {
+      "text": " ",
+      "start": 62.98,
+      "end": 63.06,
+      "type": "spacing",
+      "logprob": -0.00010299152199877426
+    },
+    {
+      "text": "sagt",
+      "start": 63.06,
+      "end": 63.28,
+      "type": "word",
+      "logprob": -0.00010299152199877426
+    },
+    {
+      "text": " ",
+      "start": 63.28,
+      "end": 63.3,
+      "type": "spacing",
+      "logprob": -0.000003576272320060525
+    },
+    {
+      "text": "über",
+      "start": 63.3,
+      "end": 63.46,
+      "type": "word",
+      "logprob": -0.000003576272320060525
+    },
+    {
+      "text": " ",
+      "start": 63.46,
+      "end": 63.52,
+      "type": "spacing",
+      "logprob": -0.00002884823152271565
+    },
+    {
+      "text": "solche",
+      "start": 63.52,
+      "end": 63.82,
+      "type": "word",
+      "logprob": -0.00002884823152271565
+    },
+    {
+      "text": " ",
+      "start": 63.82,
+      "end": 63.86,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-7
+    },
+    {
+      "text": "Taten:",
+      "start": 63.86,
+      "end": 64.239,
+      "type": "word",
+      "logprob": -0.00003854339833727257
+    },
+    {
+      "text": " ",
+      "start": 64.239,
+      "end": 64.819,
+      "type": "spacing",
+      "logprob": -0.002831975230947137
+    },
+    {
+      "text": "\"Was",
+      "start": 64.819,
+      "end": 65.099,
+      "type": "word",
+      "logprob": -0.000735888263079687
+    },
+    {
+      "text": " ",
+      "start": 65.099,
+      "end": 65.14,
+      "type": "spacing",
+      "logprob": -0.0004924515378661454
+    },
+    {
+      "text": "ihr",
+      "start": 65.14,
+      "end": 65.239,
+      "type": "word",
+      "logprob": -0.0004924515378661454
+    },
+    {
+      "text": " ",
+      "start": 65.239,
+      "end": 65.319,
+      "type": "spacing",
+      "logprob": -0.0000040531076592742465
+    },
+    {
+      "text": "Gutes",
+      "start": 65.319,
+      "end": 65.66,
+      "type": "word",
+      "logprob": -0.0000073909473940148015
+    },
+    {
+      "text": " ",
+      "start": 65.66,
+      "end": 65.74,
+      "type": "spacing",
+      "logprob": -0.00004911301948595792
+    },
+    {
+      "text": "tut,",
+      "start": 65.74,
+      "end": 66.02,
+      "type": "word",
+      "logprob": -0.00003969577119278256
+    },
+    {
+      "text": " ",
+      "start": 66.02,
+      "end": 66.56,
+      "type": "spacing",
+      "logprob": -0.00003528532761265524
+    },
+    {
+      "text": "Allah",
+      "start": 66.56,
+      "end": 66.96,
+      "type": "word",
+      "logprob": -0.00003528532761265524
+    },
+    {
+      "text": " ",
+      "start": 66.96,
+      "end": 67.08,
+      "type": "spacing",
+      "logprob": -0.000009417489309271332
+    },
+    {
+      "text": "weiß",
+      "start": 67.08,
+      "end": 67.34,
+      "type": "word",
+      "logprob": -0.000009417489309271332
+    },
+    {
+      "text": " ",
+      "start": 67.34,
+      "end": 67.4,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "es.\"",
+      "start": 67.4,
+      "end": 67.62,
+      "type": "word",
+      "logprob": -0.02437411434948089
+    },
+    {
+      "text": " ",
+      "start": 67.62,
+      "end": 68.18,
+      "type": "spacing",
+      "logprob": -0.000046967357775429264
+    },
+    {
+      "text": "Niemand",
+      "start": 68.18,
+      "end": 68.6,
+      "type": "word",
+      "logprob": -0.00002688957984986473
+    },
+    {
+      "text": " ",
+      "start": 68.6,
+      "end": 68.66,
+      "type": "spacing",
+      "logprob": -0.00006353653589030728
+    },
+    {
+      "text": "führt",
+      "start": 68.66,
+      "end": 68.86,
+      "type": "word",
+      "logprob": -0.00006353653589030728
+    },
+    {
+      "text": " ",
+      "start": 68.86,
+      "end": 69,
+      "type": "spacing",
+      "logprob": -0.0003313469351269305
+    },
+    {
+      "text": "Buch",
+      "start": 69,
+      "end": 69.32,
+      "type": "word",
+      "logprob": -0.0003313469351269305
+    },
+    {
+      "text": " ",
+      "start": 69.32,
+      "end": 69.36,
+      "type": "spacing",
+      "logprob": -0.00000250339189733495
+    },
+    {
+      "text": "über",
+      "start": 69.36,
+      "end": 69.52,
+      "type": "word",
+      "logprob": -0.00000250339189733495
+    },
+    {
+      "text": " ",
+      "start": 69.52,
+      "end": 69.54,
+      "type": "spacing",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": "ein",
+      "start": 69.54,
+      "end": 69.68,
+      "type": "word",
+      "logprob": -0.0000019073468138230965
+    },
+    {
+      "text": " ",
+      "start": 69.68,
+      "end": 69.74,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-7
+    },
+    {
+      "text": "Lächeln.",
+      "start": 69.74,
+      "end": 70.14,
+      "type": "word",
+      "logprob": -0.000010504964066626599
+    },
+    {
+      "text": " ",
+      "start": 70.14,
+      "end": 70.76,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": "Einer",
+      "start": 70.76,
+      "end": 71.02,
+      "type": "word",
+      "logprob": -0.000010538032069007385
+    },
+    {
+      "text": " ",
+      "start": 71.02,
+      "end": 71.12,
+      "type": "spacing",
+      "logprob": -0.000003576272320060525
+    },
+    {
+      "text": "schon.",
+      "start": 71.12,
+      "end": 71.46,
+      "type": "word",
+      "logprob": -0.000008026677126811895
+    },
+    {
+      "text": " ",
+      "start": 71.46,
+      "end": 72,
+      "type": "spacing",
+      "logprob": -0.054950010031461716
+    },
+    {
+      "text": "Lächle",
+      "start": 72,
+      "end": 72.3,
+      "type": "word",
+      "logprob": -0.01011350108683473
+    },
+    {
+      "text": " ",
+      "start": 72.3,
+      "end": 72.36,
+      "type": "spacing",
+      "logprob": -0.000003576272320060525
+    },
+    {
+      "text": "heute",
+      "start": 72.36,
+      "end": 72.62,
+      "type": "word",
+      "logprob": -0.000003576272320060525
+    },
+    {
+      "text": " ",
+      "start": 72.62,
+      "end": 72.74,
+      "type": "spacing",
+      "logprob": -0.000008583032467868179
+    },
+    {
+      "text": "drei",
+      "start": 72.74,
+      "end": 72.98,
+      "type": "word",
+      "logprob": -0.000008583032467868179
+    },
+    {
+      "text": " ",
+      "start": 72.98,
+      "end": 73.06,
+      "type": "spacing",
+      "logprob": -0.0000046491513785440475
+    },
+    {
+      "text": "Menschen",
+      "start": 73.06,
+      "end": 73.44,
+      "type": "word",
+      "logprob": -0.0000046491513785440475
+    },
+    {
+      "text": " ",
+      "start": 73.44,
+      "end": 73.5,
+      "type": "spacing",
+      "logprob": -0.0000029802276912960224
+    },
+    {
+      "text": "an,",
+      "start": 73.5,
+      "end": 73.78,
+      "type": "word",
+      "logprob": -0.0000020265548883457996
+    },
+    {
+      "text": " ",
+      "start": 73.78,
+      "end": 73.82,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": "die",
+      "start": 73.82,
+      "end": 73.96,
+      "type": "word",
+      "logprob": -2.3841855067985307e-7
+    },
+    {
+      "text": " ",
+      "start": 73.96,
+      "end": 74.02,
+      "type": "spacing",
+      "logprob": -0.000003933898824470816
+    },
+    {
+      "text": "nicht",
+      "start": 74.02,
+      "end": 74.22,
+      "type": "word",
+      "logprob": -0.000003933898824470816
+    },
+    {
+      "text": " ",
+      "start": 74.22,
+      "end": 74.24,
+      "type": "spacing",
+      "logprob": -0.0000046491513785440475
+    },
+    {
+      "text": "damit",
+      "start": 74.24,
+      "end": 74.5,
+      "type": "word",
+      "logprob": -0.0000046491513785440475
+    },
+    {
+      "text": " ",
+      "start": 74.5,
+      "end": 74.54,
+      "type": "spacing",
+      "logprob": -0.00026246439665555954
+    },
+    {
+      "text": "rechnen.",
+      "start": 74.54,
+      "end": 74.98,
+      "type": "word",
+      "logprob": -0.00023049080931514254
+    },
+    {
+      "text": " ",
+      "start": 74.98,
+      "end": 75.5,
+      "type": "spacing",
+      "logprob": -0.00005721882189391181
+    },
+    {
+      "text": "Kassierer,",
+      "start": 75.5,
+      "end": 76.02,
+      "type": "word",
+      "logprob": -0.0001001388765757838
+    },
+    {
+      "text": " ",
+      "start": 76.02,
+      "end": 76.5,
+      "type": "spacing",
+      "logprob": -0.000002264974000354414
+    },
+    {
+      "text": "Nachbar,",
+      "start": 76.5,
+      "end": 76.9,
+      "type": "word",
+      "logprob": -0.000009685669169812172
+    },
+    {
+      "text": " ",
+      "start": 76.9,
+      "end": 77.2,
+      "type": "spacing",
+      "logprob": -0.000030874729418428615
+    },
+    {
+      "text": "Kollege.",
+      "start": 77.2,
+      "end": 77.68,
+      "type": "word",
+      "logprob": -0.000013351259156024753
+    },
+    {
+      "text": " ",
+      "start": 77.68,
+      "end": 78.26,
+      "type": "spacing",
+      "logprob": -0.000003933898824470816
+    },
+    {
+      "text": "Das",
+      "start": 78.26,
+      "end": 78.44,
+      "type": "word",
+      "logprob": -0.000003933898824470816
+    },
+    {
+      "text": " ",
+      "start": 78.44,
+      "end": 78.48,
+      "type": "spacing",
+      "logprob": -0.00020394629973452538
+    },
+    {
+      "text": "war's.",
+      "start": 78.48,
+      "end": 78.8,
+      "type": "word",
+      "logprob": -0.000379156675383759
+    }
+  ],
+  "transcription_id": "BCAAIhZDkLHHgbYTRGPL",
+  "audio_duration_secs": 79.04
+}
