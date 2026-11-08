@@ -18,8 +18,13 @@ on:
 permissions:
   contents: write
 
+# Pro Reel eine eigene Gruppe. Mit einer gemeinsamen Gruppe kann immer nur EIN
+# Lauf warten - jeder neue verdraengt den vorherigen, und ein Stapel von 14
+# angestossenen Reels endet als 1 Lauf plus 13 abgebrochene. Laeufe ohne ID
+# (Zeitplan, Push) teilen sich weiter eine Gruppe, damit sie nicht dasselbe
+# Script doppelt produzieren.
 concurrency:
-  group: produce
+  group: produce-${{ inputs.id || 'auto' }}
   cancel-in-progress: false
 
 jobs:
@@ -132,16 +137,14 @@ jobs:
           git config user.email "reel-bot@users.noreply.github.com"
           git add -A videos/ queue.json
           git commit -m "produced: Reel $id"
-          # Erst committen, DANN rebasen - und mit --autostash. Der Render legt
-          # weitere Dateien an (build/, scripts/<id>-words.json, Props), die nicht
-          # mitcommittet werden. Ohne --autostash bricht der Rebase daran ab
-          # ("cannot pull with rebase: You have unstaged changes") und das fertige
-          # Reel landet nie in der Queue.
-          for i in 1 2 3; do
+          # Erst committen, DANN rebasen - und mit --autostash. Andersherum
+          # bricht der Rebase an den uebrigen Render-Dateien ab und das fertige
+          # Reel landet nie in der Queue. Mehrere Laeufe koennen parallel pushen,
+          # deshalb grosszuegige Wiederholungen mit wachsender Pause.
+          for i in 1 2 3 4 5 6; do
             git pull --rebase --autostash -q && git push && break
-            echo "Push-Versuch $i fehlgeschlagen, neuer Anlauf."; sleep 5
+            echo "Push-Versuch $i fehlgeschlagen, neuer Anlauf."; sleep $(( i * 10 ))
           done
-          # Nicht still durchwinken: ohne Push ist das Reel nicht eingeplant.
           if [ -n "$(git log origin/main..HEAD --oneline)" ]; then
             echo "::error::Reel $id wurde gerendert, aber nicht in die Queue gepusht."
             exit 1
