@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "op": "delete",
+    "brand": "nurwissen",
+    "id": "038",
+    "at": "2026-11-08T11:20:00.000Z",
+    "grund": "bereits veroeffentlicht (IG 18114760382136876, YT pUailSUKP6A) - Queue-Rueckschreibung in Lauf #7 fehlgeschlagen"
+  }
+]
