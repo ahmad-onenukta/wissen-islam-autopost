@@ -168,5 +168,20 @@
         "video_id": "pUailSUKP6A"
       }
     }
+  },
+  {
+    "id": "037",
+    "brand": "nurwissen",
+    "file": "nurwissen-037-geschichte.mp4",
+    "media_id": "18110634437611357",
+    "posted_at": "2026-11-08T18:00:05.748Z",
+    "results": {
+      "instagram": {
+        "media_id": "18110634437611357"
+      },
+      "youtube": {
+        "video_id": "hLxPtUh3hDY"
+      }
+    }
   }
 ]
