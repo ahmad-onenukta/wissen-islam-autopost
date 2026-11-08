@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T16:28:45.546Z",
+  "generated_at": "2026-11-08T01:27:39.509Z",
   "brands": [
     {
       "slug": "nurwissen",
@@ -15,58 +15,64 @@
       "slot": "19:00",
       "handle": {
         "instagram": "nurwissen_official",
-        "tiktok": "",
-        "youtube": "",
+        "tiktok": "nurwissen_officia",
+        "youtube": "NurWissen",
         "facebook": ""
       },
       "voice": "robert",
-      "followers": 1054,
+      "followers": 1069,
       "counts": {
-        "script": 0,
-        "checked": 16,
-        "voice": 0,
+        "script": 1,
+        "checked": 14,
+        "voice": 1,
         "video": 0,
-        "queued": 0,
+        "queued": 3,
         "paused": 0,
         "live": 15,
         "archive": 0
       },
-      "runway_days": 0,
-      "next": null,
-      "views_total": 292849,
-      "avg_views": 22527,
+      "runway_days": 3,
+      "next": "2026-11-08T11:00:00.000Z",
+      "views_total": 296443,
+      "avg_views": 22803,
       "engagement_rate": 10.2
     }
   ],
   "pipeline": [
     {
       "brand": "nurwissen",
-      "id": "029",
-      "title": "Das erste Krankenhaus, in dem die Rechnung niemand bekam",
-      "thema": "Alte Historische Story",
-      "hook": "Die Idee, dass ein Krankenhaus dich behandelt, ohne vorher nach Geld zu fragen, ist nicht modern. Sie ist über tausend Jahre alt — und hat einen Namen.",
+      "id": "038",
+      "title": "Der Kalif nannte einen ehemaligen Sklaven seinen Herrn",
+      "thema": "Geschichte",
+      "hook": "Umar ibn al-Chattab regiert ein Weltreich. Und über einen ehemaligen Sklaven sagt er: Das ist unser Herr.",
       "voice": "robert",
-      "stage": "checked",
-      "fact_check": "ok",
+      "stage": "queued",
+      "fact_check": "offen",
       "sources": {
-        "total": 1,
+        "total": 2,
         "verified": 1
       },
       "source_list": [
         {
-          "claim": "Rufaida al-Aslamiyya richtete zur Zeit des Propheten ﷺ bei der Grabenschlacht ein Zelt für Verwundete ein; erstes muslimisches Hospital: Leprosorium in Damaskus im frühen 8. Jh.; erstes dokumentiertes allgemeines Krankenhaus 805 in Bagdad; Behandlung kostenfrei, Kairoer Urkunde 1284; Córdoba 10. Jh.: Frauenabteilung; Lizenzprüfung mit Abhandlung und Befragung; Bagdad Ende 9. Jh. unter al-Mu'tadid,",
-          "ref": "AramcoWorld, „The Islamic Roots of the Modern Hospital“, 2017",
-          "url": "https://www.aramcoworld.com/articles/2017/the-islamic-roots-of-the-modern-hospital",
+          "claim": "„Umar pflegte zu sagen: Abu Bakr ist unser Herr (sayyiduna), und er hat unseren Herrn freigelassen“ — gemeint ist Bilal",
+          "ref": "Sahih al-Bukhari 3754, Buch 62 (Vorzüge der Gefährten), Hadith 99 (Dschabir ibn Abdallah)",
+          "url": "https://sunnah.com/bukhari:3754",
           "verified": true
+        },
+        {
+          "claim": "Bilal ruft beim Einzug in Mekka den Adhan von der Kaaba",
+          "ref": "Sira-Überlieferung (Ibn Ischaq/Ibn Hischam, at-Tabari) — nicht aus den Sahih-Sammlungen",
+          "url": "https://en.wikipedia.org/wiki/Bilal_ibn_Rabah",
+          "verified": false
         }
       ],
-      "file": "scripts/029-alte-historische-story.json",
-      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/029-alte-historische-story.json",
+      "file": "scripts/038-geschichte.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/038-geschichte.json",
       "vo_at": null,
       "archived": false,
-      "blocks": 25,
+      "blocks": 23,
       "dauer": null,
-      "publish_at": null,
+      "publish_at": "2026-11-08T11:00:00.000Z",
       "targets": [
         "instagram",
         "youtube"
@@ -79,12 +85,62 @@
     },
     {
       "brand": "nurwissen",
+      "id": "037",
+      "title": "Das erste Kaffeehaus der Welt stand in Mekka",
+      "thema": "Geschichte",
+      "hook": "Das erste Kaffeehaus der Welt stand nicht in Wien. Es stand in Mekka. Um 1510.",
+      "voice": "robert",
+      "stage": "queued",
+      "fact_check": "ok",
+      "sources": {
+        "total": 3,
+        "verified": 3
+      },
+      "source_list": [
+        {
+          "claim": "Kaffee: engl. coffee < niederl. koffie < türk. kahveh < arab. qahwah; erstes Kaffeehaus in Mekka um 1510; 1675 über 3.000 Kaffeehäuser in England",
+          "ref": "Online Etymology Dictionary, Eintrag „coffee“",
+          "url": "https://www.etymonline.com/word/coffee",
+          "verified": true
+        },
+        {
+          "claim": "Zucker: Sanskrit scharkara (ursprünglich „Kies“) > pers. schakar > arab. sukkar > mittellat. succarum > ahd. zucura > Zucker",
+          "ref": "Online Etymology Dictionary, Eintrag „sugar“",
+          "url": "https://www.etymonline.com/search?q=sugar",
+          "verified": true
+        },
+        {
+          "claim": "Algebra: aus arab. al-dschabr „Zusammenfügen zerbrochener Teile“, Titel der Abhandlung al-Chwarizmis (9. Jh.); span. algebrista = Knocheneinrenker",
+          "ref": "Online Etymology Dictionary, Eintrag „algebra“",
+          "url": "https://www.etymonline.com/word/algebra",
+          "verified": true
+        }
+      ],
+      "file": "scripts/037-geschichte.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/037-geschichte.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 22,
+      "dauer": null,
+      "publish_at": "2026-11-08T18:00:00.000Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 1
+    },
+    {
+      "brand": "nurwissen",
       "id": "030",
       "title": "Mit 21 losgegangen — und drei Kontinente später zurück",
       "thema": "Alte Historische Story",
       "hook": "Ein 21-Jähriger geht 1325 allein aus Tanger los. Er will nach Mekka. Zurück ist er erst 24 Jahre später — nach drei Kontinenten.",
       "voice": "robert",
-      "stage": "checked",
+      "stage": "queued",
       "fact_check": "ok",
       "sources": {
         "total": 1,
@@ -92,9 +148,9 @@
       },
       "source_list": [
         {
-          "claim": "Ibn Battuta brach 1325 mit 21 Jahren allein aus Tanger auf; Rückkehr 1349; Berichte bis 1354; drei Kontinente bis China; Rihla über zwei Jahre dem Hofdichter Ibn Dschuzayy diktiert, der redigierte und ergänzte",
-          "ref": "AramcoWorld, „The Longest Hajj: The Journeys of Ibn Battuta“, 2000",
-          "url": "https://www.aramcoworld.com/en/articles/2000/the-longest-hajj-the-journeys-of-ibn-battuta-intro",
+          "claim": "Ibn Battuta verlässt Tanger 1325 im Alter von 21 Jahren, allein, mit dem Ziel der Haddsch",
+          "ref": "UC Berkeley ORIAS, nach H. A. R. Gibb (Übers.), The Travels of Ibn Battuta, S. 8",
+          "url": "https://orias.berkeley.edu/resources-teachers/travels-ibn-battuta/journey/across-north-africa-cairo-1325",
           "verified": true
         }
       ],
@@ -103,6 +159,44 @@
       "vo_at": null,
       "archived": false,
       "blocks": 22,
+      "dauer": null,
+      "publish_at": "2026-11-09T11:00:00.000Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 2
+    },
+    {
+      "brand": "nurwissen",
+      "id": "036",
+      "title": "Der Kalif, der nachts allein durch die Stadt ging",
+      "thema": "Geschichte",
+      "hook": "Der mächtigste Mann seiner Zeit regiert ein Reich von Ägypten bis Persien. Und nachts geht er allein durch die Gassen.",
+      "voice": "robert",
+      "stage": "script",
+      "fact_check": "offen",
+      "sources": {
+        "total": 1,
+        "verified": 0
+      },
+      "source_list": [
+        {
+          "claim": "Umars nächtliche Rundgänge und die Begegnung mit der Frau, die Steine kocht; Umar trägt das Mehl selbst",
+          "ref": "at-Tabari, Tarich ar-Rusul wa-l-Muluk; Ibn al-Dschauzi, Sirat Umar ibn al-Chattab — historische Überlieferung, nicht in den Sahih-Sammlungen",
+          "url": "https://en.wikipedia.org/wiki/Umar",
+          "verified": false
+        }
+      ],
+      "file": "scripts/036-geschichte.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/036-geschichte.json",
+      "vo_at": null,
+      "archived": false,
+      "blocks": 23,
       "dauer": null,
       "publish_at": null,
       "targets": [
@@ -113,7 +207,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 1
+      "order_rank": 3
     },
     {
       "brand": "nurwissen",
@@ -130,14 +224,14 @@
       },
       "source_list": [
         {
-          "claim": "Koran 96:2 — „Lies im Namen deines Herrn, der erschuf“ (erste Offenbarung)",
-          "ref": "alislam.org (Hafs 96:1)",
+          "claim": "Koran 96:2 — „Lies im Namen deines Herrn, der erschuf“ (erste Offenbarung). Hinweis: Maulawi Sher Ali übersetzt اقرأ mit „Convey thou“; die Urdu-Übersetzung von Mirza Tahir Ahmad mit „lies“.",
+          "ref": "alislam.org, Übers. Mirza Tahir Ahmad (Urdu: پڑھ = lies); Ahmadiyya-Zählung 96:2 (Hafs 96:1)",
           "url": "https://www.alislam.org/quran/96:2",
           "verified": true
         },
         {
           "claim": "Koran 96:5 — „Der lehrte durch die Feder“",
-          "ref": "alislam.org (Hafs 96:4)",
+          "ref": "alislam.org, Übers. Mirza Tahir Ahmad; Ahmadiyya-Zählung 96:5 (Hafs 96:4)",
           "url": "https://www.alislam.org/quran/96:5",
           "verified": true
         }
@@ -157,7 +251,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 2
+      "order_rank": 4
     },
     {
       "brand": "nurwissen",
@@ -201,7 +295,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 3
+      "order_rank": 5
     },
     {
       "brand": "nurwissen",
@@ -245,7 +339,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 4
+      "order_rank": 6
     },
     {
       "brand": "nurwissen",
@@ -253,7 +347,7 @@
       "title": "Die 40 Zentimeter, die alles entscheiden",
       "thema": "Gebete",
       "hook": "Es gibt eine Position, in der du Allah näher bist als in jeder anderen. Und die meisten rauschen in drei Sekunden durch.",
-      "voice": "sabrina",
+      "voice": "robert",
       "stage": "checked",
       "fact_check": "ok",
       "sources": {
@@ -289,7 +383,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 5
+      "order_rank": 7
     },
     {
       "brand": "nurwissen",
@@ -333,7 +427,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 6
+      "order_rank": 8
     },
     {
       "brand": "nurwissen",
@@ -371,15 +465,15 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 7
+      "order_rank": 9
     },
     {
       "brand": "nurwissen",
       "id": "026",
       "title": "Dreimal die Mutter, einmal der Vater",
       "thema": "Eltern dienen",
-      "hook": "Ein Mann fragt den Propheten ﷺ, wer sein Bestes am meisten verdient. Die Antwort ist viermal — und die Reihenfolge ist kein Zufall.",
-      "voice": "sabrina",
+      "hook": "Ein Mann fragt den Propheten (saw), wer sein Bestes am meisten verdient. Die Antwort ist viermal — und die Reihenfolge ist kein Zufall.",
+      "voice": "robert",
       "stage": "checked",
       "fact_check": "ok",
       "sources": {
@@ -388,7 +482,7 @@
       },
       "source_list": [
         {
-          "claim": "Ein Mann fragt, wer das größte Recht auf gute Behandlung hat; der Prophet ﷺ sagt dreimal „deine Mutter“, dann „dein Vater“",
+          "claim": "Ein Mann fragt, wer das größte Recht auf gute Behandlung hat; der Prophet (saw) sagt dreimal „deine Mutter“, dann „dein Vater“",
           "ref": "Sahih al-Bukhari 5971, Buch 78 (al-Adab), Hadith 2 (Abu Huraira)",
           "url": "https://sunnah.com/bukhari:5971",
           "verified": true
@@ -421,7 +515,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 8
+      "order_rank": 10
     },
     {
       "brand": "nurwissen",
@@ -459,7 +553,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 9
+      "order_rank": 11
     },
     {
       "brand": "nurwissen",
@@ -503,7 +597,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 10
+      "order_rank": 12
     },
     {
       "brand": "nurwissen",
@@ -541,14 +635,14 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 11
+      "order_rank": 13
     },
     {
       "brand": "nurwissen",
       "id": "034",
       "title": "Du bist auf der Religion deines Freundes",
       "thema": "Freunde",
-      "hook": "Der Prophet ﷺ hat einen Satz gesagt, der keine Empfehlung ist, sondern eine Feststellung. Und dann einen Auftrag daraus gemacht.",
+      "hook": "Der Prophet (saw) hat einen Satz gesagt, der keine Empfehlung ist, sondern eine Feststellung. Und dann einen Auftrag daraus gemacht.",
       "voice": "robert",
       "stage": "checked",
       "fact_check": "ok",
@@ -585,7 +679,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 12
+      "order_rank": 14
     },
     {
       "brand": "nurwissen",
@@ -629,14 +723,14 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 13
+      "order_rank": 15
     },
     {
       "brand": "nurwissen",
       "id": "024",
       "title": "Zwei Dinge, mit denen du dich ins Verderben reden kannst",
       "thema": "Sünden",
-      "hook": "Der Prophet ﷺ hat eine Regel gegeben, die aus genau zwei Möglichkeiten besteht. Und die meisten brechen sie täglich.",
+      "hook": "Der Prophet (saw) hat gesagt: Die meisten Menschen landen wegen zwei Körperteilen in Schwierigkeiten. Und einer davon wiegt nur 60 Gramm.",
       "voice": "robert",
       "stage": "checked",
       "fact_check": "ok",
@@ -667,7 +761,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 14
+      "order_rank": 16
     },
     {
       "brand": "nurwissen",
@@ -711,7 +805,7 @@
       "media_id": null,
       "permalink": null,
       "metrics": null,
-      "order_rank": 15
+      "order_rank": 17
     },
     {
       "brand": "nurwissen",
@@ -735,12 +829,12 @@
       "media_id": "18114527000174151",
       "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
       "metrics": {
-        "views": 147419,
-        "reach": 117204,
-        "likes": 7304,
+        "views": 147681,
+        "reach": 117506,
+        "likes": 7319,
         "comments": 275,
-        "shares": 3003,
-        "saved": 1935
+        "shares": 3005,
+        "saved": 1940
       },
       "order_rank": 999
     },
@@ -766,12 +860,12 @@
       "media_id": "18138963895624373",
       "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
       "metrics": {
-        "views": 8132,
-        "reach": 6947,
-        "likes": 315,
+        "views": 8168,
+        "reach": 6978,
+        "likes": 316,
         "comments": 3,
-        "shares": 49,
-        "saved": 90
+        "shares": 50,
+        "saved": 91
       },
       "order_rank": 999
     },
@@ -828,9 +922,9 @@
       "media_id": "18106676354203367",
       "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
       "metrics": {
-        "views": 472,
-        "reach": 383,
-        "likes": 11,
+        "views": 478,
+        "reach": 387,
+        "likes": 13,
         "comments": 2,
         "shares": 0,
         "saved": 2
@@ -859,9 +953,9 @@
       "media_id": "17984355417120782",
       "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
       "metrics": {
-        "views": 556,
-        "reach": 434,
-        "likes": 12,
+        "views": 561,
+        "reach": 439,
+        "likes": 13,
         "comments": 2,
         "shares": 1,
         "saved": 3
@@ -890,8 +984,8 @@
       "media_id": "17951034201271209",
       "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
       "metrics": {
-        "views": 361,
-        "reach": 267,
+        "views": 364,
+        "reach": 270,
         "likes": 8,
         "comments": 2,
         "shares": 3,
@@ -941,12 +1035,12 @@
       "media_id": "18145450528572276",
       "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
       "metrics": {
-        "views": 3147,
-        "reach": 2738,
-        "likes": 110,
+        "views": 3162,
+        "reach": 2749,
+        "likes": 111,
         "comments": 1,
-        "shares": 49,
-        "saved": 28
+        "shares": 50,
+        "saved": 29
       },
       "order_rank": 999
     },
@@ -972,12 +1066,12 @@
       "media_id": "18470014318187750",
       "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
       "metrics": {
-        "views": 4988,
-        "reach": 4196,
-        "likes": 294,
+        "views": 5036,
+        "reach": 4235,
+        "likes": 299,
         "comments": 2,
-        "shares": 71,
-        "saved": 74
+        "shares": 72,
+        "saved": 75
       },
       "order_rank": 999
     },
@@ -1010,9 +1104,9 @@
       "media_id": "17872718889648381",
       "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
       "metrics": {
-        "views": 2123,
-        "reach": 1835,
-        "likes": 96,
+        "views": 2134,
+        "reach": 1847,
+        "likes": 98,
         "comments": 2,
         "shares": 53,
         "saved": 23
@@ -1048,11 +1142,11 @@
       "media_id": "18163773607435569",
       "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
       "metrics": {
-        "views": 1520,
-        "reach": 1275,
-        "likes": 51,
+        "views": 1533,
+        "reach": 1290,
+        "likes": 52,
         "comments": 1,
-        "shares": 6,
+        "shares": 7,
         "saved": 16
       },
       "order_rank": 999
@@ -1137,12 +1231,12 @@
       "media_id": "18105767723288101",
       "permalink": "https://www.instagram.com/reel/DfUwlStkR_L/",
       "metrics": {
-        "views": 122907,
-        "reach": 100516,
-        "likes": 5301,
-        "comments": 63,
-        "shares": 3099,
-        "saved": 1726
+        "views": 126053,
+        "reach": 102645,
+        "likes": 5439,
+        "comments": 64,
+        "shares": 3152,
+        "saved": 1778
       },
       "order_rank": 999
     },
@@ -1201,12 +1295,12 @@
       "media_id": "18144515317625218",
       "permalink": "https://www.instagram.com/reel/DfXrlQPFcE-/",
       "metrics": {
-        "views": 531,
-        "reach": 424,
-        "likes": 12,
+        "views": 555,
+        "reach": 441,
+        "likes": 13,
         "comments": 1,
-        "shares": 4,
-        "saved": 11
+        "shares": 6,
+        "saved": 12
       },
       "order_rank": 999
     },
@@ -1253,11 +1347,11 @@
       "media_id": "17929483620429531",
       "permalink": "https://www.instagram.com/reel/DfaM2aVkulK/",
       "metrics": {
-        "views": 216,
-        "reach": 162,
-        "likes": 4,
+        "views": 229,
+        "reach": 172,
+        "likes": 5,
         "comments": 1,
-        "shares": 1,
+        "shares": 2,
         "saved": 0
       },
       "order_rank": 999
@@ -1284,24 +1378,62 @@
       "media_id": "17969911538964163",
       "permalink": "https://www.instagram.com/reel/De7jLSNDEat/",
       "metrics": {
-        "views": 477,
-        "reach": 362,
-        "likes": 12,
+        "views": 489,
+        "reach": 368,
+        "likes": 13,
         "comments": 3,
         "shares": 0,
         "saved": 3
       },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "029",
+      "title": "Das erste Krankenhaus, in dem die Rechnung niemand bekam",
+      "thema": "Alte Historische Story",
+      "hook": "Die Idee, dass ein Krankenhaus dich behandelt, ohne vorher nach Geld zu fragen, ist nicht modern. Sie ist über tausend Jahre alt — und hat einen Namen.",
+      "voice": "robert",
+      "stage": "voice",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "Rufaida al-Aslamiyya richtete zur Zeit des Propheten ﷺ bei der Grabenschlacht ein Zelt für Verwundete ein; erstes muslimisches Hospital: Leprosorium in Damaskus im frühen 8. Jh.; erstes dokumentiertes allgemeines Krankenhaus 805 in Bagdad; Behandlung kostenfrei, Kairoer Urkunde 1284; Córdoba 10. Jh.: Frauenabteilung; Lizenzprüfung mit Abhandlung und Befragung; Bagdad Ende 9. Jh. unter al-Mu'tadid,",
+          "ref": "AramcoWorld, „The Islamic Roots of the Modern Hospital“, 2017",
+          "url": "https://www.aramcoworld.com/articles/2017/the-islamic-roots-of-the-modern-hospital",
+          "verified": true
+        }
+      ],
+      "file": "scripts/029-alte-historische-story.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/029-alte-historische-story.json",
+      "vo_at": "2026-11-07T21:01:26.444Z",
+      "archived": false,
+      "blocks": 25,
+      "dauer": null,
+      "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
       "order_rank": 999
     }
   ],
   "stats": {
     "account": {
       "username": "nurwissen_official",
-      "followers_count": 1054,
+      "followers_count": 1069,
       "follows_count": 0,
       "media_count": 14,
       "id": "28768435396155579",
-      "at": "2026-11-07T16:28:34.419Z"
+      "at": "2026-11-08T01:27:32.781Z"
     },
     "history": [
       {
@@ -1663,6 +1795,11 @@
         "at": "2026-11-07T16:28:34.419Z",
         "followers": 1054,
         "views_total": 294837
+      },
+      {
+        "at": "2026-11-08T01:27:32.781Z",
+        "followers": 1069,
+        "views_total": 298440
       }
     ],
     "reels": [
@@ -1671,177 +1808,177 @@
         "permalink": "https://www.instagram.com/reel/DfaM2aVkulK/",
         "posted": "2026-11-06T18:01:09+0000",
         "caption": "Drei Männer sind in einer Höhle eingeschlossen. Ein Felsen v",
-        "views": 216,
-        "reach": 162,
-        "likes": 4,
+        "views": 229,
+        "reach": 172,
+        "likes": 5,
         "comments": 1,
-        "shares": 1,
+        "shares": 2,
         "saved": 0,
-        "total_interactions": 6
+        "total_interactions": 8
       },
       {
         "id": "18144515317625218",
         "permalink": "https://www.instagram.com/reel/DfXrlQPFcE-/",
         "posted": "2026-11-05T18:32:02+0000",
         "caption": "Alkohol wurde nicht an einem Tag verboten, sondern in drei S",
-        "views": 531,
-        "reach": 424,
-        "likes": 12,
+        "views": 555,
+        "reach": 441,
+        "likes": 13,
         "comments": 1,
-        "shares": 4,
-        "saved": 11,
-        "total_interactions": 29
+        "shares": 6,
+        "saved": 12,
+        "total_interactions": 34
       },
       {
         "id": "18105767723288101",
         "permalink": "https://www.instagram.com/reel/DfUwlStkR_L/",
         "posted": "2026-11-04T15:18:05+0000",
         "caption": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankü",
-        "views": 122907,
-        "reach": 100516,
-        "likes": 5301,
-        "comments": 63,
-        "shares": 3099,
-        "saved": 1726,
-        "total_interactions": 10516
+        "views": 126053,
+        "reach": 102645,
+        "likes": 5439,
+        "comments": 64,
+        "shares": 3152,
+        "saved": 1778,
+        "total_interactions": 10764
       },
       {
         "id": "18220536925356124",
         "permalink": "https://www.instagram.com/reel/DfKwCPPlJZg/",
         "posted": "2026-10-31T18:00:53+0000",
         "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die",
-        "views": 1988,
-        "reach": 1716,
-        "likes": 67,
+        "views": 1997,
+        "reach": 1732,
+        "likes": 68,
         "comments": 1,
-        "shares": 22,
+        "shares": 23,
         "saved": 12,
-        "total_interactions": 105
+        "total_interactions": 107
       },
       {
         "id": "18163773607435569",
         "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
         "posted": "2026-10-30T18:00:53+0000",
         "caption": "Eine Frau, die ihren Körper verkaufte, wird vergeben — wegen",
-        "views": 1520,
-        "reach": 1275,
-        "likes": 51,
+        "views": 1533,
+        "reach": 1290,
+        "likes": 52,
         "comments": 1,
-        "shares": 6,
+        "shares": 7,
         "saved": 16,
-        "total_interactions": 74
+        "total_interactions": 76
       },
       {
         "id": "17872718889648381",
         "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
         "posted": "2026-10-29T18:20:49+0000",
         "caption": "Der Prophet (saw) hat Freundschaft in einem Bild erklärt: ei",
-        "views": 2123,
-        "reach": 1835,
-        "likes": 96,
+        "views": 2134,
+        "reach": 1847,
+        "likes": 98,
         "comments": 2,
         "shares": 53,
         "saved": 23,
-        "total_interactions": 184
+        "total_interactions": 186
       },
       {
         "id": "18470014318187750",
         "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
         "posted": "2026-10-28T21:43:39+0000",
         "caption": "Der Prophet (saw) hat einen Mann beschrieben, den er nie get",
-        "views": 4988,
-        "reach": 4196,
-        "likes": 294,
+        "views": 5036,
+        "reach": 4235,
+        "likes": 299,
         "comments": 2,
-        "shares": 71,
-        "saved": 74,
-        "total_interactions": 459
+        "shares": 72,
+        "saved": 75,
+        "total_interactions": 466
       },
       {
         "id": "18145450528572276",
         "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
         "posted": "2026-10-27T21:17:23+0000",
         "caption": "Ein Mann hat 99 Menschen getötet. Er fragt einen Mönch, ob e",
-        "views": 3147,
-        "reach": 2738,
-        "likes": 110,
+        "views": 3162,
+        "reach": 2749,
+        "likes": 111,
         "comments": 1,
-        "shares": 49,
-        "saved": 28,
-        "total_interactions": 198
+        "shares": 50,
+        "saved": 29,
+        "total_interactions": 201
       },
       {
         "id": "17969911538964163",
         "permalink": "https://www.instagram.com/reel/De7jLSNDEat/",
         "posted": "2026-10-25T20:19:46+0000",
         "caption": "Du sagst jeden Tag seinen Namen und weißt es nicht.\n\nAl-Chwa",
-        "views": 477,
-        "reach": 362,
-        "likes": 12,
+        "views": 489,
+        "reach": 368,
+        "likes": 13,
         "comments": 3,
         "shares": 0,
         "saved": 3,
-        "total_interactions": 18
+        "total_interactions": 19
       },
       {
         "id": "18138963895624373",
         "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
         "posted": "2026-10-24T18:25:06+0000",
         "caption": "Das Wort „Blut\" steht genau 10-mal im Koran. 4× als Speiseve",
-        "views": 8132,
-        "reach": 6947,
-        "likes": 315,
+        "views": 8168,
+        "reach": 6978,
+        "likes": 316,
         "comments": 3,
-        "shares": 49,
-        "saved": 90,
-        "total_interactions": 472
+        "shares": 50,
+        "saved": 91,
+        "total_interactions": 475
       },
       {
         "id": "18114527000174151",
         "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
         "posted": "2026-10-23T19:35:52+0000",
         "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Ni",
-        "views": 147419,
-        "reach": 117204,
-        "likes": 7304,
+        "views": 147681,
+        "reach": 117506,
+        "likes": 7319,
         "comments": 275,
-        "shares": 3003,
-        "saved": 1935,
-        "total_interactions": 12942
+        "shares": 3005,
+        "saved": 1940,
+        "total_interactions": 12966
       },
       {
         "id": "18106676354203367",
         "permalink": "https://www.instagram.com/reel/DexLwI2DATy/",
         "posted": "2026-10-21T19:43:01+0000",
         "caption": "Ein alter Mann hält ein Hemd. Es ist voller Blut. Und er wei",
-        "views": 472,
-        "reach": 383,
-        "likes": 11,
+        "views": 478,
+        "reach": 387,
+        "likes": 13,
         "comments": 2,
         "shares": 0,
         "saved": 2,
-        "total_interactions": 15
+        "total_interactions": 17
       },
       {
         "id": "17984355417120782",
         "permalink": "https://www.instagram.com/reel/DeumxMtgnCv/",
         "posted": "2026-10-20T19:41:49+0000",
         "caption": "Kolumbus wollte nach Indien. Er landete in Amerika – und hat",
-        "views": 556,
-        "reach": 434,
-        "likes": 12,
+        "views": 561,
+        "reach": 439,
+        "likes": 13,
         "comments": 2,
         "shares": 1,
         "saved": 3,
-        "total_interactions": 18
+        "total_interactions": 19
       },
       {
         "id": "17951034201271209",
         "permalink": "https://www.instagram.com/reel/DesPOO3garx/",
         "posted": "2026-10-19T21:37:07+0000",
         "caption": "Jedes Foto auf deinem Handy folgt einer Regel, die ein Mann ",
-        "views": 361,
-        "reach": 267,
+        "views": 364,
+        "reach": 270,
         "likes": 8,
         "comments": 2,
         "shares": 3,
@@ -1871,7 +2008,7 @@
     {
       "platform": "youtube",
       "label": "YouTube Shorts",
-      "handle": null,
+      "handle": "NurWissen",
       "geplant": true,
       "status": "laeuft",
       "posts": 2,
@@ -1882,7 +2019,7 @@
     {
       "platform": "tiktok",
       "label": "TikTok",
-      "handle": null,
+      "handle": "nurwissen_officia",
       "geplant": false,
       "status": "nicht verbunden",
       "posts": 0,
@@ -1902,25 +2039,20 @@
       "last_error": null
     }
   ],
+  "credits": null,
   "health": {
     "min_runway": 3,
     "last_post": "2026-11-06T18:00:06.322Z",
-    "last_post_hours": 22,
-    "last_engage": "2026-11-07T16:28:34.419Z",
+    "last_post_hours": 31,
+    "last_engage": "2026-11-08T01:27:32.781Z",
     "last_engage_hours": 0,
-    "scripts_total": 31,
-    "videos_ready": 0,
+    "scripts_total": 34,
+    "videos_ready": 3,
     "alerts": [
       {
         "level": "error",
-        "brand": "nurwissen",
-        "text": "Vorrat nur 0 Tag(e) in der Queue (Soll 3). 16 gepruefte Scripts warten auf Produktion.",
-        "action": "produce"
-      },
-      {
-        "level": "error",
-        "action": "elevenlabs",
-        "text": "ElevenLabs-Guthaben aufgebraucht (65 Credits uebrig) – ohne Credits kein Voice-Over und damit kein neues Reel. Plan aufladen, danach laeuft die Produktion von selbst weiter."
+        "text": "Produktion abgebrochen: render/make_reel.sh: line 87: ffmpeg: command not found",
+        "action": "actions"
       },
       {
         "level": "error",
