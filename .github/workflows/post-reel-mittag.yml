@@ -66,11 +66,23 @@ jobs:
 
       - name: Queue zurueckschreiben
         run: |
-          git pull --rebase -q || true
+          git config user.name  "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          # Erst committen, DANN rebasen - und mit --autostash. Andersherum
+          # bricht der Rebase an den frisch geschriebenen Dateien ab und der
+          # Push wird verworfen: das Reel ist dann veroeffentlicht, steht in
+          # der Queue aber weiter auf "ready" und wird spaeter nochmal gepostet.
           if [[ -n "$(git status --porcelain queue.json posted.json videos/)" ]]; then
-            git config user.name  "reel-bot"
-            git config user.email "reel-bot@users.noreply.github.com"
             git add -A queue.json posted.json videos/
             git commit -m "posted mittag: $(date -u +%Y-%m-%d)"
-            git push
+          fi
+          for i in 1 2 3; do
+            git pull --rebase --autostash -q && git push && break
+            echo "Push-Versuch $i fehlgeschlagen, neuer Anlauf."; sleep 5
+          done
+          # Niemals still durchwinken: eine nicht zurueckgeschriebene Queue
+          # bedeutet Doppel-Post-Gefahr beim naechsten Lauf.
+          if [ -n "$(git log origin/main..HEAD --oneline)" ]; then
+            echo "::error::Reel ist veroeffentlicht, aber die Queue konnte nicht zurueckgeschrieben werden - Gefahr eines Doppel-Posts."
+            exit 1
           fi
