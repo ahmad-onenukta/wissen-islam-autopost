@@ -248,14 +248,26 @@
     "brand": "nurwissen",
     "file": "nurwissen-030-alte-historische-story.mp4",
     "publish_at": "2026-11-09T11:00:00.000Z",
-    "status": "ready",
+    "status": "posted",
     "targets": [
       "instagram",
       "youtube"
     ],
     "caption": "Ein 21-Jähriger geht 1325 allein aus Tanger los. Nicht für ein Abenteuer — für die Haddsch. Zurück ist er erst 1349, rund 24 Jahre später. Seine Berichte reichen bis 1354.\n\nDazwischen: drei Kontinente. Mekka, Medina, Kairo, Damaskus, der Indische Ozean — und bis nach China.\n\nUnd das Entscheidende: Er hat nichts selbst geschrieben. Zurück in Fes diktierte er zwei Jahre lang dem Hofdichter Ibn Dschuzayy, der die Rihla führte, redigierte und ergänzte. Ohne diesen zweiten Mann wäre alles weg — eine Reise ohne Aufzeichnung endet mit dem Reisenden.\n\nMit 21 los, zurück erst 24 Jahre später. Die Qualifikation kam nach dem Aufbruch — bei uns ist es meist umgekehrt.\n\nQuellen: AramcoWorld 2000\n\n#islam #geschichte #ibnbattuta #reisen #wissen #muslim #deutsch",
     "first_comment": "Was hat dich daran am meisten überrascht? Schreib es in die Kommentare 👇",
-    "thumb_offset": 3000
+    "thumb_offset": 3000,
+    "results": {
+      "instagram": {
+        "media_id": "18132782611824456"
+      },
+      "youtube": {
+        "video_id": "KCZYlf-yf-U"
+      }
+    },
+    "media_id": "18132782611824456",
+    "first_comment_id": "18038267258896577",
+    "youtube_id": "KCZYlf-yf-U",
+    "posted_at": "2026-11-09T12:37:40.580Z"
   },
   {
     "id": "036",
