@@ -274,14 +274,26 @@
     "brand": "nurwissen",
     "file": "nurwissen-036-geschichte.mp4",
     "publish_at": "2026-11-09T18:00:00.000Z",
-    "status": "ready",
+    "status": "posted",
     "targets": [
       "instagram",
       "youtube"
     ],
     "caption": "Der mächtigste Mann seiner Zeit regiert von Ägypten bis Persien — und geht nachts allein und unerkannt durch die Gassen.\n\nUmar ibn al-Chattab, zweiter Kalif. Nicht aus Abenteuerlust: Er prüft, ob das, was im Palast beschlossen wird, unten ankommt.\n\nEine Nacht am Stadtrand: ein Feuer, eine Frau rührt in einem Topf, Kinder weinen vor Hunger. Im Topf sind Steine und Wasser — damit die Kinder glauben, es gebe gleich Essen, und darüber einschlafen.\n\nDann sagt sie, ohne zu wissen, wer vor ihr steht: „Allah möge zwischen uns und Umar richten.\"\n\nEr hört seinen Namen als Anklage. Und widerspricht nicht. Er holt selbst einen Sack Mehl und trägt ihn auf dem eigenen Rücken. Sein Begleiter will helfen. Er sagt: Trägst du am Tag des Gerichts auch meine Last?\n\nEinordnung: Das ist Geschichtsschreibung (at-Tabari, Ibn al-Dschauzi), kein Hadith aus den Sahih-Sammlungen.\n\nEin Herrscher, der nachts prüft, ob seine eigenen Gesetze funktionieren. Gibt es das heute?\n\n#islam #umar #geschichte #kalif #wissen #deutsch #gerechtigkeit",
     "first_comment": "Was hat dich daran am meisten überrascht? Schreib es in die Kommentare 👇",
-    "thumb_offset": 3000
+    "thumb_offset": 3000,
+    "results": {
+      "instagram": {
+        "media_id": "18059690651566770"
+      },
+      "youtube": {
+        "video_id": "kNj1P-s39Ho"
+      }
+    },
+    "media_id": "18059690651566770",
+    "first_comment_id": "18144989479610139",
+    "youtube_id": "kNj1P-s39Ho",
+    "posted_at": "2026-11-09T21:16:56.726Z"
   },
   {
     "id": "035",

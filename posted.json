@@ -198,5 +198,20 @@
         "video_id": "KCZYlf-yf-U"
       }
     }
+  },
+  {
+    "id": "036",
+    "brand": "nurwissen",
+    "file": "nurwissen-036-geschichte.mp4",
+    "media_id": "18059690651566770",
+    "posted_at": "2026-11-09T21:16:56.726Z",
+    "results": {
+      "instagram": {
+        "media_id": "18059690651566770"
+      },
+      "youtube": {
+        "video_id": "kNj1P-s39Ho"
+      }
+    }
   }
 ]
