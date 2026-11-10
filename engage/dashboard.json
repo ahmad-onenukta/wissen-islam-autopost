@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T20:46:03.065Z",
+  "generated_at": "2026-11-10T04:08:32.848Z",
   "brands": [
     {
       "slug": "nurwissen",
@@ -20,22 +20,22 @@
         "facebook": ""
       },
       "voice": "robert",
-      "followers": 1092,
+      "followers": 1097,
       "counts": {
         "script": 1,
         "checked": 12,
         "voice": 1,
         "video": 0,
-        "queued": 3,
+        "queued": 2,
         "paused": 0,
-        "live": 17,
+        "live": 18,
         "archive": 0
       },
-      "runway_days": 3,
-      "next": "2026-11-09T18:00:00.000Z",
-      "views_total": 303434,
-      "avg_views": 20229,
-      "engagement_rate": 10.2
+      "runway_days": 2,
+      "next": "2026-11-10T11:00:00.000Z",
+      "views_total": 305116,
+      "avg_views": 19070,
+      "engagement_rate": 10.3
     }
   ],
   "pipeline": [
@@ -138,8 +138,8 @@
       "media_id": "18110634437611357",
       "permalink": "https://www.instagram.com/reel/DffWedJHGpc/",
       "metrics": {
-        "views": 211,
-        "reach": 162,
+        "views": 217,
+        "reach": 166,
         "likes": 4,
         "comments": 1,
         "shares": 0,
@@ -190,8 +190,8 @@
       "media_id": "18132782611824456",
       "permalink": "https://www.instagram.com/reel/DfhWVuxk3KM/",
       "metrics": {
-        "views": 289,
-        "reach": 244,
+        "views": 308,
+        "reach": 264,
         "likes": 4,
         "comments": 1,
         "shares": 0,
@@ -206,7 +206,7 @@
       "thema": "Geschichte",
       "hook": "Der mächtigste Mann seiner Zeit regiert ein Reich von Ägypten bis Persien. Und nachts geht er allein durch die Gassen.",
       "voice": "robert",
-      "stage": "queued",
+      "stage": "live",
       "fact_check": "offen",
       "sources": {
         "total": 1,
@@ -231,10 +231,24 @@
         "instagram",
         "youtube"
       ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
+      "results": {
+        "instagram": {
+          "media_id": "18059690651566770"
+        },
+        "youtube": {
+          "video_id": "kNj1P-s39Ho"
+        }
+      },
+      "media_id": "18059690651566770",
+      "permalink": "https://www.instagram.com/reel/DfiRukGgDae/",
+      "metrics": {
+        "views": 194,
+        "reach": 161,
+        "likes": 6,
+        "comments": 1,
+        "shares": 0,
+        "saved": 0
+      },
       "order_rank": 3
     },
     {
@@ -857,12 +871,12 @@
       "media_id": "18114527000174151",
       "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
       "metrics": {
-        "views": 148041,
-        "reach": 117586,
-        "likes": 7330,
+        "views": 148119,
+        "reach": 117655,
+        "likes": 7332,
         "comments": 275,
-        "shares": 3008,
-        "saved": 1947
+        "shares": 3010,
+        "saved": 1949
       },
       "order_rank": 999
     },
@@ -888,8 +902,8 @@
       "media_id": "18138963895624373",
       "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
       "metrics": {
-        "views": 8208,
-        "reach": 7017,
+        "views": 8211,
+        "reach": 7020,
         "likes": 317,
         "comments": 3,
         "shares": 50,
@@ -1063,8 +1077,8 @@
       "media_id": "18145450528572276",
       "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
       "metrics": {
-        "views": 3183,
-        "reach": 2768,
+        "views": 3189,
+        "reach": 2772,
         "likes": 112,
         "comments": 1,
         "shares": 50,
@@ -1094,9 +1108,9 @@
       "media_id": "18470014318187750",
       "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
       "metrics": {
-        "views": 5083,
+        "views": 5090,
         "reach": 4283,
-        "likes": 300,
+        "likes": 301,
         "comments": 2,
         "shares": 72,
         "saved": 76
@@ -1132,8 +1146,8 @@
       "media_id": "17872718889648381",
       "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
       "metrics": {
-        "views": 2147,
-        "reach": 1855,
+        "views": 2150,
+        "reach": 1857,
         "likes": 98,
         "comments": 2,
         "shares": 53,
@@ -1170,7 +1184,7 @@
       "media_id": "18163773607435569",
       "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
       "metrics": {
-        "views": 1543,
+        "views": 1545,
         "reach": 1301,
         "likes": 55,
         "comments": 1,
@@ -1259,12 +1273,12 @@
       "media_id": "18105767723288101",
       "permalink": "https://www.instagram.com/reel/DfUwlStkR_L/",
       "metrics": {
-        "views": 131983,
-        "reach": 106978,
-        "likes": 5720,
-        "comments": 67,
-        "shares": 3349,
-        "saved": 1844
+        "views": 133338,
+        "reach": 107616,
+        "likes": 5783,
+        "comments": 68,
+        "shares": 3385,
+        "saved": 1869
       },
       "order_rank": 999
     },
@@ -1323,8 +1337,8 @@
       "media_id": "18144515317625218",
       "permalink": "https://www.instagram.com/reel/DfXrlQPFcE-/",
       "metrics": {
-        "views": 578,
-        "reach": 457,
+        "views": 584,
+        "reach": 460,
         "likes": 14,
         "comments": 1,
         "shares": 6,
@@ -1375,8 +1389,8 @@
       "media_id": "17929483620429531",
       "permalink": "https://www.instagram.com/reel/DfaM2aVkulK/",
       "metrics": {
-        "views": 254,
-        "reach": 192,
+        "views": 257,
+        "reach": 195,
         "likes": 6,
         "comments": 1,
         "shares": 2,
@@ -1457,11 +1471,11 @@
   "stats": {
     "account": {
       "username": "nurwissen_official",
-      "followers_count": 1092,
+      "followers_count": 1097,
       "follows_count": 0,
-      "media_count": 17,
+      "media_count": 18,
       "id": "28768435396155579",
-      "at": "2026-11-09T20:45:52.295Z"
+      "at": "2026-11-10T04:08:23.298Z"
     },
     "history": [
       {
@@ -1858,16 +1872,34 @@
         "at": "2026-11-09T20:45:52.295Z",
         "followers": 1092,
         "views_total": 306224
+      },
+      {
+        "at": "2026-11-10T04:08:23.298Z",
+        "followers": 1097,
+        "views_total": 307914
       }
     ],
     "reels": [
+      {
+        "id": "18059690651566770",
+        "permalink": "https://www.instagram.com/reel/DfiRukGgDae/",
+        "posted": "2026-11-09T21:17:49+0000",
+        "caption": "Der mächtigste Mann seiner Zeit regiert von Ägypten bis Pers",
+        "views": 194,
+        "reach": 161,
+        "likes": 6,
+        "comments": 1,
+        "shares": 0,
+        "saved": 0,
+        "total_interactions": 7
+      },
       {
         "id": "18132782611824456",
         "permalink": "https://www.instagram.com/reel/DfhWVuxk3KM/",
         "posted": "2026-11-09T12:38:53+0000",
         "caption": "Ein 21-Jähriger geht 1325 allein aus Tanger los. Nicht für e",
-        "views": 289,
-        "reach": 244,
+        "views": 308,
+        "reach": 264,
         "likes": 4,
         "comments": 1,
         "shares": 0,
@@ -1879,8 +1911,8 @@
         "permalink": "https://www.instagram.com/reel/DffWedJHGpc/",
         "posted": "2026-11-08T18:01:50+0000",
         "caption": "Das erste Kaffeehaus der Welt stand nicht in Wien. Es stand ",
-        "views": 211,
-        "reach": 162,
+        "views": 217,
+        "reach": 166,
         "likes": 4,
         "comments": 1,
         "shares": 0,
@@ -1892,8 +1924,8 @@
         "permalink": "https://www.instagram.com/reel/DfenGEDDARY/",
         "posted": "2026-11-08T11:07:34+0000",
         "caption": "Umar ibn al-Chattab regiert ein Weltreich — und über einen e",
-        "views": 774,
-        "reach": 665,
+        "views": 780,
+        "reach": 671,
         "likes": 23,
         "comments": 1,
         "shares": 1,
@@ -1905,8 +1937,8 @@
         "permalink": "https://www.instagram.com/reel/DfaM2aVkulK/",
         "posted": "2026-11-06T18:01:09+0000",
         "caption": "Drei Männer sind in einer Höhle eingeschlossen. Ein Felsen v",
-        "views": 254,
-        "reach": 192,
+        "views": 257,
+        "reach": 195,
         "likes": 6,
         "comments": 1,
         "shares": 2,
@@ -1918,8 +1950,8 @@
         "permalink": "https://www.instagram.com/reel/DfXrlQPFcE-/",
         "posted": "2026-11-05T18:32:02+0000",
         "caption": "Alkohol wurde nicht an einem Tag verboten, sondern in drei S",
-        "views": 578,
-        "reach": 457,
+        "views": 584,
+        "reach": 460,
         "likes": 14,
         "comments": 1,
         "shares": 6,
@@ -1931,21 +1963,21 @@
         "permalink": "https://www.instagram.com/reel/DfUwlStkR_L/",
         "posted": "2026-11-04T15:18:05+0000",
         "caption": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankü",
-        "views": 131983,
-        "reach": 106978,
-        "likes": 5720,
-        "comments": 67,
-        "shares": 3349,
-        "saved": 1844,
-        "total_interactions": 11333
+        "views": 133338,
+        "reach": 107616,
+        "likes": 5783,
+        "comments": 68,
+        "shares": 3385,
+        "saved": 1869,
+        "total_interactions": 11462
       },
       {
         "id": "18220536925356124",
         "permalink": "https://www.instagram.com/reel/DfKwCPPlJZg/",
         "posted": "2026-10-31T18:00:53+0000",
         "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die",
-        "views": 2016,
-        "reach": 1749,
+        "views": 2018,
+        "reach": 1753,
         "likes": 69,
         "comments": 1,
         "shares": 23,
@@ -1957,7 +1989,7 @@
         "permalink": "https://www.instagram.com/reel/DfILPeZDvxk/",
         "posted": "2026-10-30T18:00:53+0000",
         "caption": "Eine Frau, die ihren Körper verkaufte, wird vergeben — wegen",
-        "views": 1543,
+        "views": 1545,
         "reach": 1301,
         "likes": 55,
         "comments": 1,
@@ -1970,8 +2002,8 @@
         "permalink": "https://www.instagram.com/reel/DfFouvToYB3/",
         "posted": "2026-10-29T18:20:49+0000",
         "caption": "Der Prophet (saw) hat Freundschaft in einem Bild erklärt: ei",
-        "views": 2147,
-        "reach": 1855,
+        "views": 2150,
+        "reach": 1857,
         "likes": 98,
         "comments": 2,
         "shares": 53,
@@ -1983,21 +2015,21 @@
         "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
         "posted": "2026-10-28T21:43:39+0000",
         "caption": "Der Prophet (saw) hat einen Mann beschrieben, den er nie get",
-        "views": 5083,
+        "views": 5090,
         "reach": 4283,
-        "likes": 300,
+        "likes": 301,
         "comments": 2,
         "shares": 72,
         "saved": 76,
-        "total_interactions": 468
+        "total_interactions": 469
       },
       {
         "id": "18145450528572276",
         "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
         "posted": "2026-10-27T21:17:23+0000",
         "caption": "Ein Mann hat 99 Menschen getötet. Er fragt einen Mönch, ob e",
-        "views": 3183,
-        "reach": 2768,
+        "views": 3189,
+        "reach": 2772,
         "likes": 112,
         "comments": 1,
         "shares": 50,
@@ -2022,8 +2054,8 @@
         "permalink": "https://www.instagram.com/reel/De4xPiEE9sd/",
         "posted": "2026-10-24T18:25:06+0000",
         "caption": "Das Wort „Blut\" steht genau 10-mal im Koran. 4× als Speiseve",
-        "views": 8208,
-        "reach": 7017,
+        "views": 8211,
+        "reach": 7020,
         "likes": 317,
         "comments": 3,
         "shares": 50,
@@ -2035,13 +2067,13 @@
         "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
         "posted": "2026-10-23T19:35:52+0000",
         "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Ni",
-        "views": 148041,
-        "reach": 117586,
-        "likes": 7330,
+        "views": 148119,
+        "reach": 117655,
+        "likes": 7332,
         "comments": 275,
-        "shares": 3008,
-        "saved": 1947,
-        "total_interactions": 12987
+        "shares": 3010,
+        "saved": 1949,
+        "total_interactions": 12993
       },
       {
         "id": "18106676354203367",
@@ -2089,7 +2121,7 @@
     "done": 0,
     "skip": 0
   },
-  "posted_total": 18,
+  "posted_total": 19,
   "channels": [
     {
       "platform": "instagram",
@@ -2097,9 +2129,9 @@
       "handle": "nurwissen_official",
       "geplant": true,
       "status": "laeuft",
-      "posts": 10,
+      "posts": 11,
       "fehler": 0,
-      "last_ok": "2026-11-09T12:37:40.580Z",
+      "last_ok": "2026-11-09T21:16:56.726Z",
       "last_error": null
     },
     {
@@ -2108,9 +2140,9 @@
       "handle": "NurWissen",
       "geplant": true,
       "status": "laeuft",
-      "posts": 5,
+      "posts": 6,
       "fehler": 5,
-      "last_ok": "2026-11-09T12:37:40.580Z",
+      "last_ok": "2026-11-09T21:16:56.726Z",
       "last_error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
     },
     {
@@ -2139,20 +2171,21 @@
   "credits": null,
   "health": {
     "min_runway": 3,
-    "last_post": "2026-11-09T12:37:40.580Z",
-    "last_post_hours": 8,
-    "last_engage": "2026-11-09T20:45:52.295Z",
+    "last_post": "2026-11-09T21:16:56.726Z",
+    "last_post_hours": 7,
+    "last_engage": "2026-11-10T04:08:23.298Z",
     "last_engage_hours": 0,
     "scripts_total": 34,
-    "videos_ready": 3,
+    "videos_ready": 2,
     "alerts": [
       {
-        "level": "error",
-        "text": "Produktion abgebrochen: render/make_reel.sh: line 87: ffmpeg: command not found",
-        "action": "actions"
+        "level": "warn",
+        "brand": "nurwissen",
+        "text": "Vorrat nur 2 Tag(e) in der Queue (Soll 3). 12 gepruefte Scripts warten auf Produktion.",
+        "action": "produce"
       }
     ],
-    "status": "error"
+    "status": "warn"
   },
   "jobs": [
     {
