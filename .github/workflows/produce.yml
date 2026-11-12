@@ -2,12 +2,15 @@ name: Reel produzieren
 
 on:
   schedule:
-    - cron: "0 4 * * *"      # taeglich 05:00 Berlin: naechstes Script produzieren, wenn Queue < 3
+    - cron: "0 4 * * *"      # taeglich 05:00 Berlin: nachlegen, wenn die Queue duenn wird
   workflow_dispatch:
     inputs:
       id:
-        description: "Script-ID (z. B. 011) – leer = naechstes aus ORDER.txt"
+        description: "Script-ID (z. B. 011) – leer = naechste offene aus ORDER.txt"
         required: false
+      count:
+        description: "Wie viele Reels dieser Lauf produziert (nacheinander)"
+        default: "1"
       tempo:
         description: "atempo (1.0 = Original)"
         default: "1.0"
@@ -18,95 +21,41 @@ on:
 permissions:
   contents: write
 
-# Pro Reel eine eigene Gruppe. Mit einer gemeinsamen Gruppe kann immer nur EIN
-# Lauf warten - jeder neue verdraengt den vorherigen, und ein Stapel von 14
-# angestossenen Reels endet als 1 Lauf plus 13 abgebrochene. Laeufe ohne ID
-# (Zeitplan, Push) teilen sich weiter eine Gruppe, damit sie nicht dasselbe
-# Script doppelt produzieren.
+# EIN Lauf produziert mehrere Reels nacheinander. Parallele Laeufe schreiben sonst
+# alle in dieselbe queue.json: jeder "git pull --rebase" zieht die Commits der
+# anderen herein, und die meisten verlieren das Rennen beim Push. Das Reel ist dann
+# gerendert, steht aber nirgends. Deshalb: ein Schreiber, serielle Produktion.
 concurrency:
-  group: produce-${{ inputs.id || 'auto' }}
+  group: produce
   cancel-in-progress: false
 
 jobs:
   produce:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
-      - name: Script-ID bestimmen
-        id: pick
-        run: |
-          id="${{ inputs.id }}"
-          f=""
-          if [[ -z "$id" && "${{ github.event_name }}" == "push" ]]; then
-            f=$(git diff --name-only HEAD~1 HEAD -- 'scripts/[0-9][0-9][0-9]*.json' | head -1)
-            [[ -n "$f" ]] && id=$(basename "$f" .json | cut -d- -f1)
-          fi
-          if [[ -z "$id" ]]; then
-            ready=$(node -e "console.log(require('./queue.json').filter(q=>q.status==='ready'&&new Date(q.publish_at)>new Date()).length)")
-            echo "Queue ready: $ready"
-            if [[ "${{ github.event_name }}" == "schedule" && "$ready" -ge 3 ]]; then
-              echo "Queue voll genug – nichts zu tun."; echo "id=" >> $GITHUB_OUTPUT; exit 0
-            fi
-            # Reihenfolge: scripts/ORDER.txt (eine ID pro Zeile), sonst aufsteigend
-            cands=$( [[ -f scripts/ORDER.txt ]] && grep -oE '^[0-9]{3}' scripts/ORDER.txt || true )
-            cands="$cands $(ls scripts/[0-9][0-9][0-9]*.json 2>/dev/null | xargs -n1 basename | cut -d- -f1 | sed 's/\.json$//' | sort -u)"
-            for i in $cands; do
-              ls scripts/$i*.json >/dev/null 2>&1 || continue
-              grep -q "\"id\": \"$i\"" queue.json posted.json 2>/dev/null && continue
-              id="$i"; break
-            done
-          fi
-          [[ -z "$id" ]] && echo "Kein offenes Script."
-          echo "id=$id" >> $GITHUB_OUTPUT
-
-      - name: Schon produziert?
-        id: check
-        run: |
-          id="${{ steps.pick.outputs.id }}"
-          if [[ -z "$id" ]] || grep -q "\"id\": \"$id\"" queue.json posted.json 2>/dev/null; then
-            echo "skip=true" >> $GITHUB_OUTPUT; echo "Reel $id existiert bereits oder keine ID."
-          else
-            echo "skip=false" >> $GITHUB_OUTPUT; echo "Produziere Reel $id"
-          fi
-
       - uses: actions/setup-node@v4
-        if: steps.check.outputs.skip == 'false'
         with:
           node-version: "20"
       - uses: actions/setup-python@v5
-        if: steps.check.outputs.skip == 'false'
         with:
           python-version: "3.12"
-      - name: Python-Abhaengigkeiten
-        if: steps.check.outputs.skip == 'false'
+
+      - name: Abhaengigkeiten
         run: |
           pip install -q numpy scipy
           mkdir -p build remotion/public/audio remotion/out render
           ffmpeg -version | head -1
 
-      - name: Voice-Over + Wort-Timestamps (ElevenLabs)
-        if: steps.check.outputs.skip == 'false'
-        env:
-          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-          ELEVEN_MODEL: ${{ vars.ELEVEN_MODEL || 'eleven_v4' }}
-          ELEVEN_VOICE: ${{ vars.ELEVEN_VOICE || 'ML23UVoFL5mI6APbRAeR' }}
-        run: |
-          if [[ -z "$ELEVENLABS_API_KEY" ]]; then
-            echo "::error::Secret ELEVENLABS_API_KEY fehlt – ohne Voice-Over kein Reel."; exit 1
-          fi
-          node scripts/produce.mjs "${{ steps.pick.outputs.id }}"
-
       - name: Remotion-Abhaengigkeiten
-        if: steps.check.outputs.skip == 'false'
         working-directory: remotion
         run: npm install --no-audit --no-fund
 
       - name: Schriften bereitstellen
-        if: steps.check.outputs.skip == 'false'
         working-directory: remotion
         run: |
           mkdir -p public/fonts
@@ -116,47 +65,88 @@ jobs:
           for w in 400 700; do
             cp "node_modules/@fontsource/amiri/files/amiri-arabic-$w-normal.woff2" public/fonts/
           done
-          ls -la public/fonts/
 
-      - name: Render (align -> events -> bed -> remotion -> transcode)
-        if: steps.check.outputs.skip == 'false'
+      - name: Reels produzieren
         env:
-          REEL_ID: ${{ steps.pick.outputs.id }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVEN_MODEL: ${{ vars.ELEVEN_MODEL || 'eleven_v4' }}
+          ELEVEN_VOICE: ${{ vars.ELEVEN_VOICE || 'ML23UVoFL5mI6APbRAeR' }}
+          VORGABE_ID: ${{ inputs.id }}
+          ANZAHL: ${{ inputs.count || '1' }}
+          TEMPO: ${{ inputs.tempo || '1.0' }}
+          EVENT: ${{ github.event_name }}
         run: |
-          id="$REEL_ID"
-          bash render/make_reel.sh "$id" "build/$id-script.json" "build/$id-words.json" "build/$id-vo.mp3" 0 "${{ inputs.tempo || '1.0' }}"
-          ls -la remotion/out/
-
-      - name: In Queue einreihen
-        if: steps.check.outputs.skip == 'false'
-        run: |
-          id="${{ steps.pick.outputs.id }}"
-          mp4=$(ls remotion/out/$id*-ig.mp4 | head -1)
-          node scripts/enqueue.mjs "$id" "$mp4"
+          if [[ -z "$ELEVENLABS_API_KEY" ]]; then
+            echo "::error::Secret ELEVENLABS_API_KEY fehlt."; exit 1
+          fi
           git config user.name  "reel-bot"
           git config user.email "reel-bot@users.noreply.github.com"
-          git add -A videos/ queue.json
-          git commit -m "produced: Reel $id"
-          # Erst committen, DANN rebasen - und mit --autostash. Andersherum
-          # bricht der Rebase an den uebrigen Render-Dateien ab und das fertige
-          # Reel landet nie in der Queue. Mehrere Laeufe koennen parallel pushen,
-          # deshalb grosszuegige Wiederholungen mit wachsender Pause.
-          for i in 1 2 3 4 5 6; do
-            git pull --rebase --autostash -q && git push && break
-            echo "Push-Versuch $i fehlgeschlagen, neuer Anlauf."; sleep $(( i * 10 ))
-          done
-          if [ -n "$(git log origin/main..HEAD --oneline)" ]; then
-            echo "::error::Reel $id wurde gerendert, aber nicht in die Queue gepusht."
-            exit 1
+          N="$ANZAHL"; [[ "$N" =~ ^[0-9]+$ ]] || N=1
+          # Beim Zeitplan nur nachlegen, bis wieder vier Reels in der Zukunft liegen.
+          if [[ "$EVENT" == "schedule" ]]; then
+            offen=$(node -e "console.log(require('./queue.json').filter(q=>q.status==='ready'&&new Date(q.publish_at)>new Date()).length)")
+            echo "Queue: $offen offen"
+            N=$(( 4 - offen )); [ "$N" -lt 1 ] && { echo "Queue reicht."; exit 0; }
           fi
-          echo "Reel $id ist in der Queue."
+          # Push eines Reels, mit Wiederholungen. Innerhalb EINES Laufs gibt es
+          # keine Konkurrenz, die Wiederholungen fangen nur fremde Commits ab.
+          sichern() {
+            git add -A videos/ queue.json
+            git commit -m "produced: Reel $1" || return 0
+            for t in 1 2 3 4 5; do
+              git pull --rebase --autostash -q && git push && return 0
+              echo "Push-Versuch $t fehlgeschlagen."; sleep $(( t * 10 ))
+            done
+            echo "::error::Reel $1 gerendert, aber nicht gepusht."; return 1
+          }
+          gebaut=0; fehler=0
+          for n in $(seq 1 "$N"); do
+            id=""
+            if [ "$n" = "1" ] && [ -n "$VORGABE_ID" ]; then
+              id="$VORGABE_ID"
+            elif [ "$n" = "1" ] && [ "$EVENT" = "push" ]; then
+              f=$(git diff --name-only HEAD~1 HEAD -- 'scripts/[0-9][0-9][0-9]*.json' | head -1)
+              [ -n "$f" ] && id=$(basename "$f" .json | cut -d- -f1)
+            fi
+            if [ -z "$id" ]; then
+              cands=$( [ -f scripts/ORDER.txt ] && grep -oE '^[0-9]{3}' scripts/ORDER.txt || true )
+              cands="$cands $(ls scripts/[0-9][0-9][0-9]*.json 2>/dev/null | xargs -n1 basename | cut -d- -f1 | sed 's/\.json$//' | sort -u)"
+              for i in $cands; do
+                ls scripts/$i*.json >/dev/null 2>&1 || continue
+                grep -q "\"id\": \"$i\"" queue.json posted.json 2>/dev/null && continue
+                id="$i"; break
+              done
+            fi
+            if [ -z "$id" ]; then echo "Keine offenen Scripte mehr."; break; fi
+            if grep -q "\"id\": \"$id\"" queue.json posted.json 2>/dev/null; then
+              echo "Reel $id existiert bereits - uebersprungen."; continue
+            fi
+            echo "::group::Reel $id ($n von $N)"
+            if ! node scripts/produce.mjs "$id"; then
+              echo "::error::Voice-Over fuer $id fehlgeschlagen."; fehler=$((fehler+1)); echo "::endgroup::"; continue
+            fi
+            if ! bash render/make_reel.sh "$id" "build/$id-script.json" "build/$id-words.json" "build/$id-vo.mp3" 0 "$TEMPO"; then
+              echo "::error::Render fuer $id fehlgeschlagen."; fehler=$((fehler+1)); echo "::endgroup::"; continue
+            fi
+            mp4=$(ls remotion/out/$id*-ig.mp4 2>/dev/null | head -1)
+            if [ -z "$mp4" ]; then
+              echo "::error::Kein Video fuer $id gefunden."; fehler=$((fehler+1)); echo "::endgroup::"; continue
+            fi
+            node scripts/enqueue.mjs "$id" "$mp4"
+            if sichern "$id"; then gebaut=$((gebaut+1)); echo "Reel $id ist in der Queue."
+            else fehler=$((fehler+1)); fi
+            echo "::endgroup::"
+          done
+          echo "Fertig: $gebaut produziert, $fehler fehlgeschlagen."
+          [ "$gebaut" -eq 0 ] && [ "$fehler" -gt 0 ] && exit 1
+          exit 0
 
       - name: Artefakte (Debug)
-        if: always() && steps.check.outputs.skip == 'false'
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: reel-${{ steps.pick.outputs.id }}
+          name: produce-${{ github.run_id }}
           path: |
             build/
-            remotion/out/
+            dashboard/produce-error.log
           retention-days: 5
