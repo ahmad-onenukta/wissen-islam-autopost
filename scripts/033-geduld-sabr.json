@@ -1,5 +1,11 @@
 {
  "id": "033",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
  "thema": "Geduld / Sabr",
  "title": "Der Satz, der dir gehört, bevor du ihn brauchst",
  "hook": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. Aber der Koran gibt ihn für jede Art von Schlag — und er enthält zwei Aussagen, die alles verändern.",
@@ -148,10 +154,11 @@
    "big": "",
    "visual": "sources",
    "sources": [
-    "Koran 2:156–157 (alislam.org, Ahmadiyya-Zählung)"
+    "Koran 2:156–157 (sonst 2:155–156) · alislam.org"
    ]
   }
  ],
+ "vo_full": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. [pause] Aber der Koran gibt ihn für jede Art von Schlag. [pause] Der Vers beginnt mit einer Bedingung: „Die, wenn ein Unglück sie trifft …“ [pause] Nicht: wenn ein Todesfall. Musiba. Jeder Schlag. [pause] Kündigung. Diagnose. Prüfung durchgefallen. Vertrauen gebrochen. [pause] „Wir gehören Allah, und zu Ihm kehren wir zurück.“ [pause] Der Satz enthält zwei Aussagen. Beide sind Antworten. [pause] Erste: Wir gehören Allah. [pause] Das ist die Antwort auf: Warum ist es mir weggenommen worden? [pause] Weil es nie dir gehörte. Nicht die Gesundheit. Nicht die Zeit. Nicht die Menschen. [pause] Es war geliehen. Und der Verleiher hat es zurückgeholt. [pause] Zweite: Zu Ihm kehren wir zurück. [pause] Das ist die Antwort auf: Und jetzt? [pause] Die Rechnung ist nicht geschlossen. Sie wird dort geschlossen. [pause] Deshalb ist der Satz keine Resignation. [pause] Er sagt nicht: Es ist egal. Er sagt: Es ist noch nicht fertig. [pause] Und der Vers davor sagt, dass das kein Zufall ist. [pause] Allah kündigt die Prüfung an: Hunger, Verlust, Angst — und „verkünde den Standhaften frohe Botschaft“. [pause] Die frohe Botschaft kommt vor der Prüfung im Text. [pause] Lern den Satz heute. Nicht wenn du ihn brauchst. [pause] Dann ist kein Kopf dafür da.",
  "sources": [
   {
    "claim": "Koran 2:157 — „Die, wenn ein Unglück (musiba) sie trifft, sagen: Wir gehören Allah, und zu Ihm werden wir zurückkehren“; der Vers davor (2:156) kündigt Prüfung durch Furcht, Hunger und Verlust an und verheißt den Standhaften frohe Botschaft",
@@ -160,21 +167,6 @@
    "verified": true
   }
  ],
- "caption": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. Aber der Koran gibt ihn für jede Art von Schlag — das Wort ist musiba: Kündigung, Diagnose, gebrochenes Vertrauen.\n\n„Die, wenn ein Unglück sie trifft, sagen: Wir gehören Allah, und zu Ihm werden wir zurückkehren.“ (2:157)\n\nDer Satz enthält zwei Antworten. „Wir gehören Allah“ antwortet auf: warum wurde es mir weggenommen? Weil es nie dir gehörte — es war geliehen. „Zu Ihm kehren wir zurück“ antwortet auf: und jetzt? Die Rechnung wird dort geschlossen.\n\nDeshalb ist der Satz keine Resignation. Er sagt nicht „es ist egal“, sondern „es ist noch nicht fertig“.\n\nLern ihn heute. Nicht wenn du ihn brauchst.\n\nQuellen: alislam.org\n\n#islam #sabr #koran #geduld #trauer #wissen #muslim #deutsch",
- "handle": "@nurwissen_official",
- "theme": "dark",
- "captions": false,
- "variant": "A-essay-wordsync",
- "align": "left",
- "voice": "sabrina",
- "vo_full": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. [pause] Aber der Koran gibt ihn für jede Art von Schlag. [pause] Der Vers beginnt mit einer Bedingung: „Die, wenn ein Unglück sie trifft …“ [pause] Nicht: wenn ein Todesfall. Musiba. Jeder Schlag. [pause] Kündigung. Diagnose. Prüfung durchgefallen. Vertrauen gebrochen. [pause] „Wir gehören Allah, und zu Ihm kehren wir zurück.“ [pause] Der Satz enthält zwei Aussagen. Beide sind Antworten. [pause] Erste: Wir gehören Allah. [pause] Das ist die Antwort auf: Warum ist es mir weggenommen worden? [pause] Weil es nie dir gehörte. Nicht die Gesundheit. Nicht die Zeit. Nicht die Menschen. [pause] Es war geliehen. Und der Verleiher hat es zurückgeholt. [pause] Zweite: Zu Ihm kehren wir zurück. [pause] Das ist die Antwort auf: Und jetzt? [pause] Die Rechnung ist nicht geschlossen. Sie wird dort geschlossen. [pause] Deshalb ist der Satz keine Resignation. [pause] Er sagt nicht: Es ist egal. Er sagt: Es ist noch nicht fertig. [pause] Und der Vers davor sagt, dass das kein Zufall ist. [pause] Allah kündigt die Prüfung an: Hunger, Verlust, Angst — und „verkünde den Standhaften frohe Botschaft“. [pause] Die frohe Botschaft kommt vor der Prüfung im Text. [pause] Lern den Satz heute. Nicht wenn du ihn brauchst. [pause] Dann ist kein Kopf dafür da.",
- "palette": {
-  "bg": "#1C1410",
-  "ink": "#F3E9DC",
-  "dim": "#B8A68F",
-  "accent": "#D98C3F",
-  "card": "#2A1F18",
-  "line": "#4A3A2E",
-  "mute": "#8A7866"
- }
+ "caption": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. Aber der Koran gibt ihn für jede Art von Schlag — das Wort ist musiba: Kündigung, Diagnose, gebrochenes Vertrauen.\n\n„Die, wenn ein Unglück sie trifft, sagen: Wir gehören Allah, und zu Ihm werden wir zurückkehren.“ (2:157)\n\nDer Satz enthält zwei Antworten. „Wir gehören Allah“ antwortet auf: warum wurde es mir weggenommen? Weil es nie dir gehörte — es war geliehen. „Zu Ihm kehren wir zurück“ antwortet auf: und jetzt? Die Rechnung wird dort geschlossen.\n\nDeshalb ist der Satz keine Resignation. Er sagt nicht „es ist egal“, sondern „es ist noch nicht fertig“.\n\nLern ihn heute. Nicht wenn du ihn brauchst.\n\nQuellen: alislam.org\n\nManche sagen den Satz automatisch, ohne nachzudenken. Macht ihn das wertlos?\n\n#islam #sabr #koran #geduld #trauer #wissen #muslim #deutsch",
+ "first_comment": "Manche sagen den Satz automatisch, ohne nachzudenken. Macht ihn das wertlos? 👇"
 }

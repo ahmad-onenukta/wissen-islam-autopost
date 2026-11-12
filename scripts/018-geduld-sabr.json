@@ -1,9 +1,15 @@
 {
  "id": "018",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
  "thema": "Geduld / Sabr",
  "title": "Der Mann, der nie fragte „warum ich?“",
  "hook": "Er verliert sein Vermögen, seine Kinder und seine Gesundheit. Und in seinem ganzen Bittgebet kommt ein Wort nicht vor: warum.",
- "appeal": "Nimm dein Bittgebet heute und streich das Wort „warum“. Was übrig bleibt, ist Sabr.",
+ "appeal": "Koran einundzwanzig vierundachtzig. Er fragt nicht warum. Er sagt nur, was ist. Das ist der Unterschied zwischen Klage und Sabr. Merkst du ihn bei dir selbst?",
  "blocks": [
   {
    "top": "Er verliert sein Vermögen.",
@@ -125,31 +131,31 @@
    "visual": "none"
   },
   {
-   "top": "Nimm dein Bittgebet heute",
-   "big": "und streich das Wort *warum*.",
-   "visual": "none",
-   "light": true
+   "top": "Koran 21:84. Er fragt nicht *warum*.",
+   "big": "Er sagt nur, was *ist*.",
+   "visual": "none"
   },
   {
-   "top": "Was übrig bleibt,",
-   "big": "ist *Sabr*.",
-   "visual": "none"
+   "top": "Das ist der Unterschied zwischen Klage und Sabr.",
+   "big": "Merkst du ihn bei dir *selbst*?",
+   "visual": "question"
   },
   {
    "top": "",
    "big": "",
    "visual": "sources",
    "sources": [
-    "Koran 21:84–85 · 38:42–45 (alislam.org, Ahmadiyya-Zählung)",
+    "Koran 21:84–85 · 38:42–45 (sonst 21:83–84 · 38:41–44) · alislam.org",
     "Hiob im Koran: Ayyub (ع)"
    ]
   }
  ],
+ "vo_full": "Er verliert sein Vermögen. Dann seine Kinder. [pause] Dann seine Gesundheit. [pause] Und in seinem ganzen Bittgebet kommt ein Wort nicht vor. [pause] Warum. [pause] Sein Name: Ayyub. Im Deutschen: Hiob. [pause] Der Koran erzählt seine Krankheit ohne ein einziges Detail. [pause] Keine Diagnose. Keine Dauer. Nur: Not. [pause] Warum so knapp? Weil es nicht um die Krankheit geht. [pause] Es geht um vier Worte, die er sagt. [pause] Nicht: nimm es weg. Nicht: ich habe es nicht verdient. [pause] Sondern: „Mich hat Not ergriffen — und Du bist der Barmherzigste der Barmherzigen.“ [pause] Das ist alles. Er beschreibt seine Lage. Und dann Ihn. [pause] Keine Forderung. Kein Vorwurf. Keine Verhandlung. [pause] Und die Antwort Allahs: „Da erhörten Wir ihn und nahmen seine Not von ihm.“ [pause] Nicht nur zurück. „Und noch mehr dazu.“ [pause] Und die Heilung selbst? Ein Satz: „Stampf mit deinem Fuß auf.“ [pause] Eine Quelle. Unter seinem eigenen Fuß. [pause] Jahrelang hat sie dort gelegen. Er musste nur aufstehen und auftreten. [pause] Sabr ist nicht Zähne zusammenbeißen. Sabr ist: weiter reden, ohne zu fordern. [pause] Koran einundzwanzig vierundachtzig. Er fragt nicht warum. Er sagt nur, was ist. [pause] Das ist der Unterschied zwischen Klage und Sabr. Merkst du ihn bei dir selbst?",
  "sources": [
   {
    "claim": "Ayyub bittet: „Mich hat Not ergriffen, und Du bist der Barmherzigste der Barmherzigen“; Allah erhört ihn, nimmt die Not und gibt ihm seine Familie und mehr dazu",
    "ref": "Koran 21:84–85, alislam.org (Hafs 21:83–84)",
-   "url": "https://www.alislam.org/quran/21:85",
+   "url": "https://www.alislam.org/quran/21:84",
    "verified": true
   },
   {
@@ -159,12 +165,6 @@
    "verified": true
   }
  ],
- "caption": "Er verliert sein Vermögen, seine Kinder, seine Gesundheit. Und in seinem ganzen Bittgebet fehlt ein Wort: warum.\n\nAyyub (ع) sagt nur zwei Dinge: „Mich hat Not ergriffen“ — und „Du bist der Barmherzigste der Barmherzigen.“ (21:84) Seine Lage, und dann Sein Wesen. Keine Forderung, kein Vorwurf.\n\nDie Antwort: „Da erhörten Wir ihn … und gaben ihm seine Familie und noch mehr dazu.“ (21:85)\n\nUnd die Heilung? „Stampf mit deinem Fuß auf.“ (38:43) Die Quelle lag die ganze Zeit unter seinem Fuß — er musste nur aufstehen.\n\nSabr ist nicht Zähne zusammenbeißen. Sabr ist weiter reden, ohne zu fordern.\n\nQuellen: alislam.org\n\n#islam #sabr #geduld #koran #ayyub #wissen #muslim #deutsch",
- "handle": "@nurwissen_official",
- "theme": "dark",
- "captions": false,
- "variant": "A-essay-wordsync",
- "align": "left",
- "voice": "sabrina",
- "vo_full": "Er verliert sein Vermögen. Dann seine Kinder. [pause] Dann seine Gesundheit. [pause] Und in seinem ganzen Bittgebet kommt ein Wort nicht vor. [pause] Warum. [pause] Sein Name: Ayyub. Im Deutschen: Hiob. [pause] Der Koran erzählt seine Krankheit ohne ein einziges Detail. [pause] Keine Diagnose. Keine Dauer. Nur: Not. [pause] Warum so knapp? Weil es nicht um die Krankheit geht. [pause] Es geht um vier Worte, die er sagt. [pause] Nicht: nimm es weg. Nicht: ich habe es nicht verdient. [pause] Sondern: „Mich hat Not ergriffen — und Du bist der Barmherzigste der Barmherzigen.“ [pause] Das ist alles. Er beschreibt seine Lage. Und dann Ihn. [pause] Keine Forderung. Kein Vorwurf. Keine Verhandlung. [pause] Und die Antwort Allahs: „Da erhörten Wir ihn und nahmen seine Not von ihm.“ [pause] Nicht nur zurück. „Und noch mehr dazu.“ [pause] Und die Heilung selbst? Ein Satz: „Stampf mit deinem Fuß auf.“ [pause] Eine Quelle. Unter seinem eigenen Fuß. [pause] Jahrelang hat sie dort gelegen. Er musste nur aufstehen und auftreten. [pause] Sabr ist nicht Zähne zusammenbeißen. Sabr ist: weiter reden, ohne zu fordern. [pause] Nimm dein Bittgebet heute und streich das Wort warum. [pause] Was übrig bleibt, ist Sabr."
+ "caption": "Er verliert sein Vermögen, seine Kinder, seine Gesundheit. Und in seinem ganzen Bittgebet fehlt ein Wort: warum.\n\nAyyub (ع) sagt nur zwei Dinge: „Mich hat Not ergriffen“ — und „Du bist der Barmherzigste der Barmherzigen.“ (21:84) Seine Lage, und dann Sein Wesen. Keine Forderung, kein Vorwurf.\n\nDie Antwort: „Da erhörten Wir ihn … und gaben ihm seine Familie und noch mehr dazu.“ (21:85)\n\nUnd die Heilung? „Stampf mit deinem Fuß auf.“ (38:43) Die Quelle lag die ganze Zeit unter seinem Fuß — er musste nur aufstehen.\n\nEr fragt nicht warum. Er sagt nur, was ist. Das ist der Unterschied zwischen Klage und Sabr — merkst du ihn bei dir selbst?\n\nQuellen: alislam.org\n\nGeduld oder Resignation: Wo verläuft bei dir die Grenze?\n\n#islam #sabr #geduld #koran #ayyub #wissen #muslim #deutsch",
+ "first_comment": "Geduld oder Resignation: Wo verläuft bei dir die Grenze? 👇"
 }

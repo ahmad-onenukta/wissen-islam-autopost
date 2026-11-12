@@ -1,9 +1,15 @@
 {
  "id": "027",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
  "thema": "Hilfsbereit",
  "title": "Sieben Plätze im Schatten — zwei kannst du heute belegen",
  "hook": "An einem Tag, an dem es keinen Schatten gibt, wird Allah sieben Arten von Menschen beschatten. Zwei von den sieben schaffst du vor dem Schlafengehen.",
- "appeal": "Gib heute etwas, von dem niemand erfährt. Keine Story, kein Screenshot. Nur du und Er.",
+ "appeal": "Bukhari vierzehndreiundzwanzig. Sieben Menschen — und keiner ist für seine Taten bekannt. Wer es zeigt, hat seinen Lohn schon bekommen. Zu streng gedacht?",
  "blocks": [
   {
    "top": "An einem Tag, an dem es *keinen* Schatten gibt,",
@@ -14,7 +20,7 @@
    }
   },
   {
-   "top": "Der Prophet ﷺ hat sie *aufgezählt*.",
+   "top": "Der Prophet (saw) hat sie *aufgezählt*.",
    "big": "Und zwei davon schaffst du vor dem Schlafengehen.",
    "visual": "none",
    "light": true
@@ -140,14 +146,14 @@
    "light": true
   },
   {
-   "top": "Gib heute etwas,",
-   "big": "von dem *niemand* erfährt.",
+   "top": "Bukhari 1423. Sieben Menschen —",
+   "big": "und *keiner* ist für seine Taten bekannt.",
    "visual": "none"
   },
   {
-   "top": "",
-   "big": "Nur du und *Er*.",
-   "visual": "none"
+   "top": "Wer es zeigt, hat seinen Lohn schon *bekommen*.",
+   "big": "Zu streng gedacht?",
+   "visual": "question"
   },
   {
    "top": "",
@@ -159,6 +165,7 @@
    ]
   }
  ],
+ "vo_full": "An einem Tag, an dem es keinen Schatten gibt, wird Allah sieben Arten von Menschen beschatten. [pause] Der Prophet (saw) hat sie aufgezählt. Und zwei davon schaffst du vor dem Schlafengehen. [pause] Eins: Ein gerechter Herrscher. [pause] Zwei: Ein junger Mensch, der im Gottesdienst aufwächst. [pause] Drei: Einer, dessen Herz an der Moschee hängt. [pause] Vier: Zwei, die sich nur um Allahs willen lieben — im Treffen und im Trennen. [pause] Fünf: Einer, der eine Einladung zur Sünde abweist — „ich fürchte Allah“. [pause] Sechs: Einer, der so heimlich spendet, dass seine linke Hand nicht weiß, was die rechte gibt. [pause] Sieben: Einer, der Allahs allein gedenkt — und seine Augen werden feucht. [pause] Und jetzt zähl nach, wie viele davon öffentlich sind. [pause] Der gerechte Herrscher — ja. Der Rest? [pause] Heimlich spenden. Allein weinen. Still nein sagen. [pause] Sechs von sieben Plätzen sind unsichtbar. [pause] Das ist kein Zufall. Es ist das Muster. [pause] Was niemand sieht, kann niemand bestätigen. Also tust du es nur für Ihn. [pause] Nummer sechs ist der Test unserer Zeit. Spenden ohne Beleg. [pause] Ohne Story. Ohne Screenshot. Ohne das Gefühl, dass es zählt, weil es jemand weiß. [pause] Und Nummer vier ist der zweite: ein Freund, den du nicht wegen Nutzen hast. [pause] Bukhari vierzehndreiundzwanzig. Sieben Menschen — und keiner ist für seine Taten bekannt. [pause] Wer es zeigt, hat seinen Lohn schon bekommen. Zu streng gedacht?",
  "sources": [
   {
    "claim": "Sieben, die Allah an einem Tag ohne Schatten beschatten wird: gerechter Herrscher; im Gottesdienst aufgewachsener junger Mensch; einer, dessen Herz an der Moschee hängt; zwei, die sich um Allahs willen lieben; einer, der eine Einladung zur Sünde abweist; einer, der so heimlich spendet, dass die linke Hand nicht weiß, was die rechte gibt; einer, der Allahs allein gedenkt und weint",
@@ -167,12 +174,6 @@
    "verified": true
   }
  ],
- "caption": "An einem Tag ohne Schatten wird Allah sieben Arten von Menschen beschatten (Bukhari 1423):\n\n1. ein gerechter Herrscher\n2. ein junger Mensch, der im Gottesdienst aufwächst\n3. einer, dessen Herz an der Moschee hängt\n4. zwei, die sich nur um Allahs willen lieben\n5. einer, der eine Einladung zur Sünde abweist\n6. einer, der so heimlich spendet, dass die linke Hand nicht weiß, was die rechte gibt\n7. einer, der Allahs allein gedenkt — und weint\n\nZähl nach, wie viele davon öffentlich sind. Einer. Sechs von sieben Plätzen sind unsichtbar — und genau deshalb tust du sie nur für Ihn.\n\nGib heute etwas, von dem niemand erfährt.\n\nQuellen: Sahih al-Bukhari 1423\n\n#islam #sadaqa #hadith #ikhlas #wissen #muslim #deutsch",
- "handle": "@nurwissen_official",
- "theme": "dark",
- "captions": false,
- "variant": "A-essay-wordsync",
- "align": "left",
- "voice": "robert",
- "vo_full": "An einem Tag, an dem es keinen Schatten gibt, wird Allah sieben Arten von Menschen beschatten. [pause] Der Prophet sallallahu alaihi wa sallam hat sie aufgezählt. Und zwei davon schaffst du vor dem Schlafengehen. [pause] Eins: Ein gerechter Herrscher. [pause] Zwei: Ein junger Mensch, der im Gottesdienst aufwächst. [pause] Drei: Einer, dessen Herz an der Moschee hängt. [pause] Vier: Zwei, die sich nur um Allahs willen lieben — im Treffen und im Trennen. [pause] Fünf: Einer, der eine Einladung zur Sünde abweist — „ich fürchte Allah“. [pause] Sechs: Einer, der so heimlich spendet, dass seine linke Hand nicht weiß, was die rechte gibt. [pause] Sieben: Einer, der Allahs allein gedenkt — und seine Augen werden feucht. [pause] Und jetzt zähl nach, wie viele davon öffentlich sind. [pause] Der gerechte Herrscher — ja. Der Rest? [pause] Heimlich spenden. Allein weinen. Still nein sagen. [pause] Sechs von sieben Plätzen sind unsichtbar. [pause] Das ist kein Zufall. Es ist das Muster. [pause] Was niemand sieht, kann niemand bestätigen. Also tust du es nur für Ihn. [pause] Nummer sechs ist der Test unserer Zeit. Spenden ohne Beleg. [pause] Ohne Story. Ohne Screenshot. Ohne das Gefühl, dass es zählt, weil es jemand weiß. [pause] Und Nummer vier ist der zweite: ein Freund, den du nicht wegen Nutzen hast. [pause] Gib heute etwas, von dem niemand erfährt. [pause] Nur du und Er."
+ "caption": "An einem Tag ohne Schatten wird Allah sieben Arten von Menschen beschatten (Bukhari 1423):\n\n1. ein gerechter Herrscher\n2. ein junger Mensch, der im Gottesdienst aufwächst\n3. einer, dessen Herz an der Moschee hängt\n4. zwei, die sich nur um Allahs willen lieben\n5. einer, der eine Einladung zur Sünde abweist\n6. einer, der so heimlich spendet, dass die linke Hand nicht weiß, was die rechte gibt\n7. einer, der Allahs allein gedenkt — und weint\n\nZähl nach, wie viele davon öffentlich sind. Einer. Sechs von sieben Plätzen sind unsichtbar — und genau deshalb tust du sie nur für Ihn.\n\nSieben Menschen, und keiner ist für seine Taten bekannt. Wer es zeigt, hat seinen Lohn schon bekommen. Zu streng gedacht?\n\nQuellen: Sahih al-Bukhari 1423\n\nSieben Menschen im Schatten — keiner davon wegen Wissen oder Gebetsmenge. Überrascht dich das?\n\n#islam #sadaqa #hadith #ikhlas #wissen #muslim #deutsch",
+ "first_comment": "Sieben Menschen im Schatten — keiner davon wegen Wissen oder Gebetsmenge. Überrascht dich das? 👇"
 }

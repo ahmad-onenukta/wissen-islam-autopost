@@ -1,9 +1,15 @@
 {
  "id": "017",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
  "thema": "Gebete",
  "title": "Das Fenster, das jede Nacht aufgeht",
  "hook": "Jede Nacht geht ein Fenster auf. Immer zur gleichen Zeit. Und fast alle schlafen dabei.",
- "appeal": "Stell den Wecker einmal 20 Minuten vor dem Fadschr. Einmal. Dann weißt du, warum man davon nicht mehr weg will.",
+ "appeal": "Bukhari elfhundertfünfundvierzig. Das letzte Drittel der Nacht — bei uns zwischen drei und fünf Uhr. Genau dann schlafen die meisten am tiefsten. Zufall — oder der Punkt?",
  "blocks": [
   {
    "top": "Jede Nacht geht ein *Fenster* auf.",
@@ -17,7 +23,7 @@
    "light": true
   },
   {
-   "top": "Der Prophet ﷺ hat beschrieben, was im",
+   "top": "Der Prophet (saw) hat beschrieben, was im",
    "big": "letzten *Drittel* der Nacht passiert.",
    "visual": "slider",
    "slider": {
@@ -130,19 +136,14 @@
    }
   },
   {
-   "top": "Stell den Wecker einmal",
-   "big": "*20 Minuten* vor dem Fadschr.",
-   "visual": "stat",
-   "stat": {
-    "value": "20",
-    "unit": "Min.",
-    "sub": "VOR FADSCHR"
-   }
+   "top": "Bukhari 1145. Das letzte Drittel der Nacht —",
+   "big": "bei uns zwischen *3 und 5 Uhr*.",
+   "visual": "none"
   },
   {
-   "top": "Einmal.",
-   "big": "Dann weißt du, warum man davon nicht mehr weg *will*.",
-   "visual": "none"
+   "top": "Genau dann schlafen die meisten am tiefsten.",
+   "big": "Zufall — oder *der Punkt*?",
+   "visual": "question"
   },
   {
    "top": "",
@@ -150,10 +151,11 @@
    "visual": "sources",
    "sources": [
     "Sahih al-Bukhari 1145 (Buch 19, Hadith 26)",
-    "Koran 17:80 (alislam.org, Ahmadiyya-Zählung)"
+    "Koran 17:80 (sonst 17:79) · alislam.org"
    ]
   }
  ],
+ "vo_full": "Jede Nacht geht ein Fenster auf. Immer zur gleichen Zeit. [pause] Und fast alle schlafen dabei. [pause] Der Prophet (saw) hat beschrieben, was im letzten Drittel der Nacht passiert. [pause] Da fragt Allah: Wer ruft Mich — damit Ich ihm antworte? [pause] Drei Fragen. Jede Nacht. Jede. [pause] Eins: Wer ruft Mich, dass Ich antworte? [pause] Zwei: Wer bittet Mich, dass Ich gebe? [pause] Drei: Wer bittet um Vergebung, dass Ich vergebe? [pause] Beachte: Die Antwort ist in der Frage schon enthalten. [pause] Er fragt nicht, ob jemand es verdient. Er fragt nur, ob jemand da ist. [pause] Und im Koran steht der Auftrag dazu: „Und wache einen Teil der Nacht im Gebet.“ [pause] Das Wort dafür: Tahajjud. Von der Wurzel für „den Schlaf abstreifen“. [pause] Nicht wach bleiben. Aufstehen. Nach dem Schlaf. [pause] Und das ist der Punkt. Dieses Gebet kostet dich etwas. [pause] Niemand sieht es. Es gibt keine Gemeinde, kein Lob, kein Foto. [pause] Nur du. Und der, der gefragt hat. [pause] Du brauchst keine acht Rakat. Zwei reichen. Plus die drei Fragen, auf die du antwortest. [pause] Bukhari elfhundertfünfundvierzig. Das letzte Drittel der Nacht — bei uns zwischen drei und fünf Uhr. [pause] Genau dann schlafen die meisten am tiefsten. Zufall — oder der Punkt?",
  "sources": [
   {
    "claim": "Allah steigt im letzten Drittel der Nacht herab und fragt: wer ruft Mich, wer bittet Mich, wer bittet um Vergebung",
@@ -163,26 +165,11 @@
   },
   {
    "claim": "Koran 17:80 — Tahajjud als zusätzliches Nachtgebet, „ruhmvoller Rang“",
-   "ref": "alislam.org, Ahmadiyya-Zählung (Hafs 17:79)",
+   "ref": "alislam.org (Vers 17:80; andere Zählung 17:79)",
    "url": "https://www.alislam.org/quran/17:80",
    "verified": true
   }
  ],
- "caption": "Jede Nacht geht ein Fenster auf — immer zur gleichen Zeit. Und fast alle schlafen dabei.\n\nIm letzten Drittel der Nacht stellt Allah drei Fragen: Wer ruft Mich, dass Ich antworte? Wer bittet Mich, dass Ich gebe? Wer bittet um Vergebung, dass Ich vergebe? (Bukhari 1145)\n\nDie Antwort steckt in der Frage. Er fragt nicht, ob jemand es verdient — nur, ob jemand da ist.\n\n„Und wache einen Teil der Nacht im Gebet.“ (17:80) Tahajjud heißt: den Schlaf abstreifen. Aufstehen. Nach dem Schlaf.\n\nZwei Rakat reichen. Stell den Wecker einmal 20 Minuten vor dem Fadschr.\n\nQuellen: Sahih al-Bukhari 1145 · alislam.org\n\n#islam #tahajjud #gebet #nacht #koran #wissen #muslim #deutsch",
- "handle": "@nurwissen_official",
- "theme": "dark",
- "captions": false,
- "variant": "A-essay-wordsync",
- "align": "left",
- "voice": "robert",
- "vo_full": "Jede Nacht geht ein Fenster auf. Immer zur gleichen Zeit. [pause] Und fast alle schlafen dabei. [pause] Der Prophet sallallahu alaihi wa sallam hat beschrieben, was im letzten Drittel der Nacht passiert. [pause] Da fragt Allah: Wer ruft Mich — damit Ich ihm antworte? [pause] Drei Fragen. Jede Nacht. Jede. [pause] Eins: Wer ruft Mich, dass Ich antworte? [pause] Zwei: Wer bittet Mich, dass Ich gebe? [pause] Drei: Wer bittet um Vergebung, dass Ich vergebe? [pause] Beachte: Die Antwort ist in der Frage schon enthalten. [pause] Er fragt nicht, ob jemand es verdient. Er fragt nur, ob jemand da ist. [pause] Und im Koran steht der Auftrag dazu: „Und wache einen Teil der Nacht im Gebet.“ [pause] Das Wort dafür: Tahajjud. Von der Wurzel für „den Schlaf abstreifen“. [pause] Nicht wach bleiben. Aufstehen. Nach dem Schlaf. [pause] Und das ist der Punkt. Dieses Gebet kostet dich etwas. [pause] Niemand sieht es. Es gibt keine Gemeinde, kein Lob, kein Foto. [pause] Nur du. Und der, der gefragt hat. [pause] Du brauchst keine acht Rakat. Zwei reichen. Plus die drei Fragen, auf die du antwortest. [pause] Stell den Wecker einmal 20 Minuten vor dem Fadschr. [pause] Einmal. Dann weißt du, warum man davon nicht mehr weg will.",
- "palette": {
-  "bg": "#1C1410",
-  "ink": "#F3E9DC",
-  "dim": "#B8A68F",
-  "accent": "#D98C3F",
-  "card": "#2A1F18",
-  "line": "#4A3A2E",
-  "mute": "#8A7866"
- }
+ "caption": "Jede Nacht geht ein Fenster auf — immer zur gleichen Zeit. Und fast alle schlafen dabei.\n\nIm letzten Drittel der Nacht stellt Allah drei Fragen: Wer ruft Mich, dass Ich antworte? Wer bittet Mich, dass Ich gebe? Wer bittet um Vergebung, dass Ich vergebe? (Bukhari 1145)\n\nDie Antwort steckt in der Frage. Er fragt nicht, ob jemand es verdient — nur, ob jemand da ist.\n\n„Und wache einen Teil der Nacht im Gebet.“ (17:80) Tahajjud heißt: den Schlaf abstreifen. Aufstehen. Nach dem Schlaf.\n\nDas letzte Drittel der Nacht liegt bei uns zwischen 3 und 5 Uhr — genau dann schlafen die meisten am tiefsten. Zufall oder der Punkt?\n\nQuellen: Sahih al-Bukhari 1145 · alislam.org\n\nDas letzte Drittel der Nacht heißt für die meisten 3 oder 4 Uhr. Ist das heute noch realistisch — oder reden wir es uns schön?\n\n#islam #tahajjud #gebet #nacht #koran #wissen #muslim #deutsch",
+ "first_comment": "Das letzte Drittel der Nacht heißt für die meisten 3 oder 4 Uhr. Ist das heute noch realistisch — oder reden wir es uns schön? 👇"
 }

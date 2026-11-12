@@ -1,8 +1,14 @@
 {
  "id": "023",
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "voice": "robert",
+ "align": "left",
  "thema": "Alltags-Situation",
  "title": "Die Sadaqa, die nichts kostet",
- "hook": "Du kannst Sadaqa geben, ohne einen Cent zu haben. Der Prophet ﷺ hat eine Form genannt, die nichts kostet — und die wir ständig vergessen.",
+ "hook": "Du kannst Sadaqa geben, ohne einen Cent zu haben. Der Prophet (saw) hat eine Form genannt, die nichts kostet — und die wir ständig vergessen.",
  "appeal": "Lächle heute drei Menschen an, die nicht damit rechnen. Kassierer, Nachbar, Kollege. Das war's.",
  "blocks": [
   {
@@ -11,7 +17,7 @@
    "visual": "none"
   },
   {
-   "top": "Der Prophet ﷺ hat eine Form genannt,",
+   "top": "Der Prophet (saw) hat eine Form genannt,",
    "big": "die *nichts* kostet.",
    "visual": "none",
    "light": true
@@ -149,6 +155,7 @@
    ]
   }
  ],
+ "vo_full": "Du kannst Sadaqa geben, ohne einen Cent zu haben. [pause] Der Prophet (saw) hat eine Form genannt, die nichts kostet. [pause] „Dein Lächeln im Gesicht deines Bruders ist für dich eine Sadaqa.“ [pause] Überleg mal, was das bedeutet. Sadaqa ist sonst ein Vermögensbegriff. [pause] Geld, Essen, Kleidung. Etwas, das weniger wird, wenn du es gibst. [pause] Und hier: etwas, das sich vermehrt, wenn du es gibst. [pause] Der Hadith hört da nicht auf. Im gleichen Atemzug kommen mehr davon. [pause] Jemandem den Weg zeigen. [pause] Einen Stein vom Weg nehmen. [pause] Einem Blinden helfen. [pause] Wasser in das Gefäß deines Bruders gießen. [pause] Fällt dir etwas auf? Keine einzige Tat davon braucht Geld. [pause] Alle brauchen etwas anderes: Aufmerksamkeit. [pause] Du musst den Stein sehen. Du musst merken, dass jemand sucht. [pause] Und genau das ist das Problem mit einem Blick, der im Handy liegt. [pause] Man gibt nichts Falsches. Man sieht nur nichts. [pause] Allah sagt über solche Taten: „Was ihr Gutes tut — Allah weiß es.“ [pause] Niemand führt Buch über ein Lächeln. Einer schon. [pause] Lächle heute drei Menschen an, die nicht damit rechnen. [pause] Kassierer. Nachbar. Kollege. Das war's.",
  "sources": [
   {
    "claim": "„Dein Lächeln im Gesicht deines Bruders ist für dich eine Sadaqa“ — im gleichen Hadith: den Weg zeigen, Hindernis entfernen, dem Blinden helfen, Wasser in das Gefäß des Bruders gießen",
@@ -157,21 +164,6 @@
    "verified": true
   }
  ],
- "caption": "Du kannst Sadaqa geben, ohne einen Cent zu haben.\n\n„Dein Lächeln im Gesicht deines Bruders ist für dich eine Sadaqa.“ (Tirmidhi 1956, hasan)\n\nSadaqa ist sonst ein Vermögensbegriff — etwas, das weniger wird, wenn du es gibst. Hier: etwas, das sich vermehrt.\n\nUnd im gleichen Hadith: jemandem den Weg zeigen, einen Stein vom Weg nehmen, einem Blinden helfen, Wasser in das Gefäß deines Bruders gießen.\n\nKeine dieser Taten braucht Geld. Alle brauchen Aufmerksamkeit — du musst den Stein erst sehen.\n\nLächle heute drei Menschen an, die nicht damit rechnen.\n\nQuellen: Jami at-Tirmidhi 1956\n\n#islam #sadaqa #hadith #alltag #wissen #muslim #deutsch",
- "handle": "@nurwissen_official",
- "theme": "dark",
- "captions": false,
- "variant": "A-essay-wordsync",
- "align": "left",
- "voice": "sabrina",
- "vo_full": "Du kannst Sadaqa geben, ohne einen Cent zu haben. [pause] Der Prophet sallallahu alaihi wa sallam hat eine Form genannt, die nichts kostet. [pause] „Dein Lächeln im Gesicht deines Bruders ist für dich eine Sadaqa.“ [pause] Überleg mal, was das bedeutet. Sadaqa ist sonst ein Vermögensbegriff. [pause] Geld, Essen, Kleidung. Etwas, das weniger wird, wenn du es gibst. [pause] Und hier: etwas, das sich vermehrt, wenn du es gibst. [pause] Der Hadith hört da nicht auf. Im gleichen Atemzug kommen mehr davon. [pause] Jemandem den Weg zeigen. [pause] Einen Stein vom Weg nehmen. [pause] Einem Blinden helfen. [pause] Wasser in das Gefäß deines Bruders gießen. [pause] Fällt dir etwas auf? Keine einzige Tat davon braucht Geld. [pause] Alle brauchen etwas anderes: Aufmerksamkeit. [pause] Du musst den Stein sehen. Du musst merken, dass jemand sucht. [pause] Und genau das ist das Problem mit einem Blick, der im Handy liegt. [pause] Man gibt nichts Falsches. Man sieht nur nichts. [pause] Allah sagt über solche Taten: „Was ihr Gutes tut — Allah weiß es.“ [pause] Niemand führt Buch über ein Lächeln. Einer schon. [pause] Lächle heute drei Menschen an, die nicht damit rechnen. [pause] Kassierer. Nachbar. Kollege. Das war's.",
- "palette": {
-  "bg": "#1C1410",
-  "ink": "#F3E9DC",
-  "dim": "#B8A68F",
-  "accent": "#D98C3F",
-  "card": "#2A1F18",
-  "line": "#4A3A2E",
-  "mute": "#8A7866"
- }
+ "caption": "Du kannst Sadaqa geben, ohne einen Cent zu haben.\n\n„Dein Lächeln im Gesicht deines Bruders ist für dich eine Sadaqa.“ (Tirmidhi 1956, hasan)\n\nSadaqa ist sonst ein Vermögensbegriff — etwas, das weniger wird, wenn du es gibst. Hier: etwas, das sich vermehrt.\n\nUnd im gleichen Hadith: jemandem den Weg zeigen, einen Stein vom Weg nehmen, einem Blinden helfen, Wasser in das Gefäß deines Bruders gießen.\n\nKeine dieser Taten braucht Geld. Alle brauchen Aufmerksamkeit — du musst den Stein erst sehen.\n\nLächle heute drei Menschen an, die nicht damit rechnen.\n\nQuellen: Jami at-Tirmidhi 1956\n\nEin Lächeln als Sadaqa — ernst gemeint oder machen wir es uns damit zu leicht?\n\n#islam #sadaqa #hadith #alltag #wissen #muslim #deutsch",
+ "first_comment": "Ein Lächeln als Sadaqa — ernst gemeint oder machen wir es uns damit zu leicht? 👇"
 }
