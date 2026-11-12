@@ -1,0 +1,162 @@
+{
+ "id": "040",
+ "thema": "Koran",
+ "title": "Die Sonne in der schlammigen Quelle — der meistzitierte Vorwurf",
+ "hook": "Im Koran steht, die Sonne geht in einer schlammigen Quelle unter. Das ist der meistzitierte Satz gegen den Koran.",
+ "appeal": "Muss ein Text beschreiben, was wirklich passiert? Oder darf er beschreiben, was der Mensch wahrnimmt?",
+ "vo_full": "Im Koran steht, die Sonne geht in einer schlammigen Quelle unter. [pause] Sure achtzehn, Vers siebenundachtzig. [pause] Das ist der meistzitierte Satz gegen den Koran. [pause] Und die Antwort darauf steht in einem einzigen Wort. [pause] Wadschadaha. [pause] Er fand sie. [pause] Das Subjekt dieses Satzes ist nicht die Sonne. [pause] Es ist Dhul-Qarnain. [pause] Der Vers beschreibt, was ein Mensch an einem Ort sieht. Nicht, wohin die Sonne geht. [pause] Und das ist keine moderne Ausrede. [pause] Dschalalain, eine der bekanntesten klassischen Auslegungen, schreibt: beschrieben, wie es das Auge sieht. [pause] Ibn Kathir wird noch deutlicher. [pause] Die Sonne schien ins Meer zu sinken, schreibt er. Das kann jeder an der Küste sehen. [pause] Und er lehnt ausdrücklich ab, dass Dhul-Qarnain den Ort am Himmel erreicht hätte, an dem die Sonne untergeht. [pause] Beide Texte sind Jahrhunderte alt. [pause] Noch etwas. Schon die frühen Ausleger waren sich beim Wort selbst nicht einig. [pause] Die einen lasen schlammige Quelle. Die anderen heiße Quelle. [pause] Der Streit ist also alt und innerhalb der Tradition geführt worden. [pause] Trotzdem bleibt eine Frage offen. [pause] Wenn ein Text erzählt, was ein Mensch sieht: Muss er dann beschreiben, was wirklich passiert? Oder darf er beschreiben, was der Mensch wahrnimmt?",
+ "sources": [
+  {
+   "claim": "Koran 18:87 — Dhul-Qarnain erreicht den Ort des Sonnenuntergangs und findet sie in einer trüben Quelle untergehen",
+   "ref": "alislam.org (Vers 18:87; andere Zählung 18:86)",
+   "url": "https://www.alislam.org/quran/18:87",
+   "verified": true
+  },
+  {
+   "claim": "Das Verb wadschada heißt „er fand/nahm wahr\"; Subjekt ist Dhul-Qarnain, nicht die Sonne",
+   "ref": "Quranic Arabic Corpus, Wort-für-Wort zu 18:86 (Hafs-Zählung)",
+   "url": "https://corpus.quran.com/wordbyword.jsp?chapter=18&verse=86",
+   "verified": true
+  },
+  {
+   "claim": "Tafsir al-Dschalalain: beschrieben, wie es das Auge sieht. Ibn Kathir: die Sonne schien ins Meer zu sinken, was jeder an der Küste sieht; er lehnt ab, dass Dhul-Qarnain den Ort am Himmel erreichte",
+   "ref": "Klassische Tafsir-Sammlung zu 18:86",
+   "url": "https://quranx.com/tafsirs/18.86",
+   "verified": true
+  },
+  {
+   "claim": "Frühe Ausleger differierten zwischen „schlammige Quelle\" und „heiße Quelle\"",
+   "ref": "Tafsir Ibn Abbas und Ibn Kathir zu dieser Stelle",
+   "url": "https://quranx.com/tafsirs/18.86",
+   "verified": true
+  }
+ ],
+ "caption": "„Die Sonne geht in einer schlammigen Quelle unter.\" (18:87, andere Zählung 18:86) Das ist der meistzitierte Satz gegen den Koran.\n\nDie Antwort steht in einem einzigen Wort: wadschadaha — er fand sie. Das Subjekt des Satzes ist nicht die Sonne, sondern Dhul-Qarnain. Der Vers beschreibt, was ein Mensch an einem Ort sieht, nicht, wohin die Sonne geht.\n\nUnd das ist keine moderne Ausrede. Tafsir al-Dschalalain schreibt: beschrieben, wie es das Auge sieht. Ibn Kathir wird deutlicher — die Sonne schien ins Meer zu sinken, was jeder an der Küste sehen kann — und lehnt ausdrücklich ab, dass Dhul-Qarnain den Ort am Himmel erreicht hätte. Beide Texte sind Jahrhunderte alt.\n\nSchon die frühen Ausleger waren sich beim Wort selbst nicht einig: die einen lasen schlammige Quelle, die anderen heiße Quelle. Der Streit ist alt und wurde innerhalb der Tradition geführt.\n\nMuss ein Text beschreiben, was wirklich passiert? Oder darf er beschreiben, was der Mensch wahrnimmt?\n\nQuellen: alislam.org · Quranic Arabic Corpus · Tafsir al-Dschalalain · Ibn Kathir\n\n#islam #koran #tafsir #dhulqarnain #wissen #kritik #deutsch",
+ "first_comment": "Muss ein Text beschreiben, was wirklich passiert — oder darf er beschreiben, was der Mensch wahrnimmt? 👇",
+ "thumb_offset": 2000,
+ "blocks": [
+  {
+   "top": "Im Koran steht, die Sonne geht",
+   "big": "in einer *schlammigen Quelle* unter.",
+   "visual": "none"
+  },
+  {
+   "top": "Sure achtzehn,",
+   "big": "Vers *siebenundachtzig*.",
+   "visual": "stat",
+   "stat": {
+    "value": "18:87",
+    "unit": "al-Kahf",
+    "sub": "SONST 18:86"
+   }
+  },
+  {
+   "top": "Das ist der",
+   "big": "*meistzitierte* Satz gegen den Koran.",
+   "visual": "none"
+  },
+  {
+   "top": "Und die Antwort darauf",
+   "big": "steht in einem einzigen *Wort*.",
+   "visual": "none"
+  },
+  {
+   "top": "",
+   "big": "*Wadschadaha*.",
+   "visual": "letters",
+   "letters": {
+    "word": "WAJADA"
+   }
+  },
+  {
+   "top": "Er",
+   "big": "*fand* sie.",
+   "visual": "none"
+  },
+  {
+   "top": "Das Subjekt dieses Satzes",
+   "big": "ist *nicht* die Sonne.",
+   "visual": "none"
+  },
+  {
+   "top": "Es ist",
+   "big": "*Dhul-Qarnain*.",
+   "visual": "none"
+  },
+  {
+   "top": "Der Vers beschreibt, was ein Mensch an einem Ort *sieht*.",
+   "big": "Nicht, wohin die Sonne *geht*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Und das ist",
+   "big": "keine moderne *Ausrede*.",
+   "visual": "none"
+  },
+  {
+   "top": "Dschalalain, eine der bekanntesten klassischen Auslegungen, schreibt:",
+   "big": "beschrieben, wie es das *Auge* sieht.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Ibn Kathir",
+   "big": "wird noch *deutlicher*.",
+   "visual": "none"
+  },
+  {
+   "top": "„Die Sonne schien ins Meer zu sinken\", schreibt er.",
+   "big": "Das kann jeder an der *Küste* sehen.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Und er lehnt ausdrücklich ab, dass Dhul-Qarnain den Ort am Himmel erreicht hätte,",
+   "big": "an dem die Sonne *untergeht*.",
+   "visual": "none"
+  },
+  {
+   "top": "Beide Texte sind",
+   "big": "*Jahrhunderte* alt.",
+   "visual": "none"
+  },
+  {
+   "top": "Noch etwas. Schon die frühen Ausleger",
+   "big": "waren sich beim Wort selbst *nicht einig*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die einen lasen schlammige Quelle.",
+   "big": "Die anderen *heiße* Quelle.",
+   "visual": "compare"
+  },
+  {
+   "top": "Der Streit ist also alt",
+   "big": "und *innerhalb* der Tradition geführt worden.",
+   "visual": "none"
+  },
+  {
+   "top": "Trotzdem bleibt",
+   "big": "eine Frage *offen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Wenn ein Text erzählt, was ein Mensch sieht: Muss er beschreiben, was wirklich passiert?",
+   "big": "Oder darf er beschreiben, was der Mensch *wahrnimmt*?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 18:87 (sonst 18:86) · alislam.org",
+    "Tafsir al-Dschalalain · Ibn Kathir zu dieser Stelle"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}

@@ -1,0 +1,163 @@
+{
+ "id": "039",
+ "thema": "Geld",
+ "title": "Hauskauf auf Kredit — der Vers, der Krieg androht",
+ "hook": "Du willst ein Haus kaufen. In Deutschland führt praktisch jeder Weg über einen Kredit mit Zinsen. Und für genau diesen Vertrag steht im Koran ein Satz, der sonst nirgends steht.",
+ "appeal": "Hast du vor dem Kreditvertrag überhaupt nach einer Alternative gesucht? Oder war die Bank einfach der kürzeste Weg?",
+ "vo_full": "Du willst ein Haus kaufen. [pause] In Deutschland führt praktisch jeder Weg über einen Kredit mit Zinsen. [pause] Und für genau diesen Vertrag steht im Koran ein Satz, der sonst nirgends steht. [pause] Sure zwei, Vers zweihundertachtzig: Wenn ihr es nicht tut, dann erwartet Krieg von Allah und Seinem Gesandten. [pause] Krieg. Nicht Strafe. Nicht Tadel. [pause] Es ist die einzige Stelle im Koran, an der dieses Wort für eine Geldfrage fällt. [pause] Jetzt kommt das Problem, das niemand gern ausspricht. [pause] Miete baut kein Eigentum auf. Und islamkonforme Finanzierung gibt es in Deutschland kaum. [pause] Neunzehnhundertneunundneunzig hat der Europäische Rat für Fatwa und Forschung in Dublin genau darüber entschieden. [pause] Das Ergebnis war eine enge Erlaubnis. Für die erste selbstgenutzte Wohnung. Nicht für Kapitalanlage. [pause] Begründet mit Not. Also damit, dass es keine echte Alternative gibt. [pause] Und sofort kam Widerspruch. [pause] Scheich Salah as-Sawi schrieb ein ganzes Buch dagegen. [pause] Sein Vorwurf: Hier werden zwei verschiedene Argumente vermischt und beide weiter gedehnt, als die klassischen Gelehrten es gemeint haben. [pause] Beide Seiten lesen denselben Vers. [pause] Die eine Seite sagt: Ein Verbot, das Krieg androht, kennt keine Ausnahme. [pause] Die andere sagt: Not war im Recht schon immer ein eigener Maßstab. [pause] Und hier wird es unangenehm konkret. [pause] Denn die Erlaubnis hing an einer Bedingung. Dass es keine Alternative gibt. [pause] Wer heute eine hat und sie nicht nutzt, für den trägt die Begründung nicht mehr. [pause] Hast du vor dem Kreditvertrag überhaupt nach einer Alternative gesucht? Oder war die Bank einfach der kürzeste Weg?",
+ "sources": [
+  {
+   "claim": "Koran 2:280 — „dann erwartet Krieg von Allah und Seinem Gesandten\"; bei Reue bleibt das Kapital",
+   "ref": "alislam.org (Vers 2:280; andere Zählung 2:279)",
+   "url": "https://www.alislam.org/quran/2:280",
+   "verified": true
+  },
+  {
+   "claim": "Europäischer Rat für Fatwa und Forschung, Dublin 1999: enge Erlaubnis für die erste selbstgenutzte Wohnung, begründet mit Not; Bedingung war das Fehlen einer Alternative",
+   "ref": "Darstellung der Entscheidung und ihrer Bedingungen",
+   "url": "https://www.halalworthy.com/the-dar-al-harb-argument-for-a-conventional-mortgage-honestly-examined/",
+   "verified": true
+  },
+  {
+   "claim": "Gegenposition: Salah as-Sawi, Schrift gegen die Erlaubnis zinsbasierter Hypotheken im Westen",
+   "ref": "A Polite Reconsideration of the Fatwa Permitting Interest Based Mortgages for Buying Homes in the West",
+   "url": "https://www.halalworthy.com/the-dar-al-harb-argument-for-a-conventional-mortgage-honestly-examined/",
+   "verified": true
+  }
+ ],
+ "caption": "Du willst ein Haus kaufen. In Deutschland führt praktisch jeder Weg über einen Kredit mit Zinsen — und für genau diesen Vertrag steht im Koran ein Satz, der sonst nirgends steht.\n\n„Wenn ihr es nicht tut, dann erwartet Krieg von Allah und Seinem Gesandten.\" (2:280, andere Zählung 2:279)\n\nKrieg. Nicht Strafe, nicht Tadel. Es ist die einzige Stelle im Koran, an der dieses Wort für eine Geldfrage fällt.\n\nUnd jetzt das Problem, das selten offen ausgesprochen wird: Miete baut kein Eigentum auf, und islamkonforme Finanzierung gibt es in Deutschland kaum.\n\n1999 entschied der Europäische Rat für Fatwa und Forschung in Dublin genau darüber — und erlaubte eng: nur für die erste selbstgenutzte Wohnung, nicht für Kapitalanlage, begründet mit Not. Dagegen schrieb Scheich Salah as-Sawi ein ganzes Buch: Hier würden zwei Argumente vermischt und beide weiter gedehnt, als die klassischen Gelehrten es gemeint haben.\n\nEntscheidend ist die Bedingung: Die Erlaubnis galt, weil es keine Alternative gab. Wer heute eine hat und sie nicht nutzt, für den trägt die Begründung nicht mehr.\n\nDieses Reel ist keine Fatwa, sondern eine Darstellung des Streits.\n\nHast du vor dem Kreditvertrag überhaupt nach einer Alternative gesucht? Oder war die Bank einfach der kürzeste Weg?\n\n#islam #zins #riba #hauskauf #hypothek #geld #finanzen #deutsch",
+ "first_comment": "Hast du vor dem Kreditvertrag nach einer Alternative gesucht — oder war die Bank einfach der kürzeste Weg? 👇",
+ "thumb_offset": 2000,
+ "blocks": [
+  {
+   "top": "Du willst",
+   "big": "ein *Haus* kaufen.",
+   "visual": "none"
+  },
+  {
+   "top": "In Deutschland führt praktisch jeder Weg",
+   "big": "über einen Kredit mit *Zinsen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und für genau diesen Vertrag steht im Koran",
+   "big": "ein Satz, der sonst *nirgends* steht.",
+   "visual": "none"
+  },
+  {
+   "top": "Sure zwei, Vers zweihundertachtzig:",
+   "big": "„Wenn ihr es nicht tut, dann erwartet *Krieg* von Allah und Seinem Gesandten.\"",
+   "visual": "ayah"
+  },
+  {
+   "top": "Krieg.",
+   "big": "Nicht Strafe. Nicht *Tadel*.",
+   "visual": "none"
+  },
+  {
+   "top": "Es ist die einzige Stelle im Koran,",
+   "big": "an der dieses Wort für eine *Geldfrage* fällt.",
+   "visual": "stat",
+   "stat": {
+    "value": "1",
+    "unit": "Stelle",
+    "sub": "IM KORAN"
+   }
+  },
+  {
+   "top": "Jetzt kommt das Problem,",
+   "big": "das niemand gern *ausspricht*.",
+   "visual": "none"
+  },
+  {
+   "top": "Miete baut kein Eigentum auf.",
+   "big": "Und islamkonforme Finanzierung gibt es in Deutschland *kaum*.",
+   "visual": "none"
+  },
+  {
+   "top": "Neunzehnhundertneunundneunzig hat der Europäische Rat für Fatwa und Forschung",
+   "big": "in *Dublin* genau darüber entschieden.",
+   "visual": "stat",
+   "stat": {
+    "value": "1999",
+    "unit": "Dublin",
+    "sub": "ECFR"
+   }
+  },
+  {
+   "top": "Das Ergebnis war eine enge Erlaubnis.",
+   "big": "Für die *erste* selbstgenutzte Wohnung. Nicht für Kapitalanlage.",
+   "visual": "compare"
+  },
+  {
+   "top": "Begründet mit Not.",
+   "big": "Also damit, dass es keine echte *Alternative* gibt.",
+   "visual": "none"
+  },
+  {
+   "top": "Und sofort kam",
+   "big": "*Widerspruch*.",
+   "visual": "none"
+  },
+  {
+   "top": "Scheich Salah as-Sawi",
+   "big": "schrieb ein ganzes *Buch* dagegen.",
+   "visual": "none"
+  },
+  {
+   "top": "Sein Vorwurf: Hier werden zwei verschiedene Argumente vermischt",
+   "big": "und beide weiter *gedehnt*, als die klassischen Gelehrten es gemeint haben.",
+   "visual": "none"
+  },
+  {
+   "top": "Beide Seiten lesen",
+   "big": "denselben *Vers*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die eine Seite sagt:",
+   "big": "Ein Verbot, das Krieg androht, kennt keine *Ausnahme*.",
+   "visual": "slider"
+  },
+  {
+   "top": "Die andere sagt:",
+   "big": "Not war im Recht schon immer ein eigener *Maßstab*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und hier wird es",
+   "big": "unangenehm *konkret*.",
+   "visual": "none"
+  },
+  {
+   "top": "Denn die Erlaubnis hing an einer Bedingung.",
+   "big": "Dass es keine *Alternative* gibt.",
+   "visual": "none"
+  },
+  {
+   "top": "Wer heute eine hat und sie nicht nutzt,",
+   "big": "für den trägt die Begründung *nicht* mehr.",
+   "visual": "none"
+  },
+  {
+   "top": "Hast du vor dem Kreditvertrag überhaupt nach einer Alternative gesucht?",
+   "big": "Oder war die Bank einfach der *kürzeste* Weg?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 2:280 (sonst 2:279) · alislam.org",
+    "ECFR-Entscheidung Dublin 1999; Gegenschrift von Salah as-Sawi"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}

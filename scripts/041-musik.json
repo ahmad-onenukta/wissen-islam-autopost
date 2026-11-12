@@ -1,0 +1,166 @@
+{
+ "id": "041",
+ "thema": "Streitfrage",
+ "title": "Musik — beide Seiten zitieren denselben Hadith",
+ "hook": "Ob Musik erlaubt ist, entscheidet sich an einem einzigen Hadith. Und beide Seiten zitieren denselben.",
+ "appeal": "Was wiegt schwerer: ein Hadith in Bukhari, oder eine Kette, die an einer Stelle offen ist?",
+ "vo_full": "Ob Musik erlaubt ist, entscheidet sich an einem einzigen Hadith. [pause] Und beide Seiten zitieren denselben. [pause] Bukhari fünftausendfünfhundertneunzig. [pause] Darin heißt es, es werde Menschen geben, die Unzucht, Seide, Wein und Musikinstrumente für erlaubt erklären. [pause] Das klingt eindeutig. [pause] Jetzt kommt die Stelle, an der sich die Gelehrten trennen. [pause] Bukhari schreibt diesen Hadith nicht so auf wie alle anderen. [pause] Normalerweise steht dort haddathana. Uns wurde berichtet. [pause] Hier steht nur: wa qala Hischam ibn Ammar. Und Hischam sagte. [pause] Ein Wort Unterschied. [pause] Aber dieses Wort bedeutet, dass die Kette an einer Stelle nicht geschlossen ist. [pause] Der Fachbegriff dafür ist muallaq. Aufgehängt. [pause] Ibn Hazm zog daraus einen Schluss. [pause] In seinem Werk al-Muhalla schreibt er, zu diesem Thema sei überhaupt nichts Authentisches überliefert. [pause] Ibn Hadschar widersprach. [pause] Sein Argument: Auch wenn Bukhari es nicht selbst gehört hat, andere haben es von Hischam gehört. Die Kette ist geschlossen. [pause] Und jetzt das Detail, das fast nie erwähnt wird. [pause] Dieser Hadith steht nicht in einem Kapitel über Musik. [pause] Er steht im Buch der Getränke. Im Kapitel über den, der Alkohol unter anderem Namen erlaubt. [pause] Beide Seiten haben richtig gelesen. Sie bewerten dieselbe Lücke unterschiedlich. [pause] Was wiegt für dich schwerer? Ein Hadith in Bukhari, oder eine Kette, die an einer Stelle offen ist?",
+ "sources": [
+  {
+   "claim": "Sahih al-Bukhari 5590: Ankündigung, dass Menschen Unzucht, Seide, Wein und Musikinstrumente für erlaubt erklären werden; steht in Buch 74 (Getränke), Kapitel über den, der Alkohol unter anderem Namen erlaubt",
+   "ref": "Sahih al-Bukhari 5590, Buch 74, Hadith 16",
+   "url": "https://sunnah.com/bukhari:5590",
+   "verified": true
+  },
+  {
+   "claim": "Bukhari überliefert ihn mit „wa qala Hischam ibn Ammar\" statt „haddathana\" — die Form eines muallaq (aufgehängten) Berichts",
+   "ref": "Darstellung der muallaq-Form dieses Hadith",
+   "url": "https://basira.academy/2020/06/03/why-did-imam-bukhari-leave-the-hadith-of-instruments-hanging/",
+   "verified": true
+  },
+  {
+   "claim": "Ibn Hazm hielt die Kette für unterbrochen und schrieb in al-Muhalla, zu diesem Thema sei nichts Authentisches überliefert; Ibn Hadschar hielt den Einwand für schwach, da andere den Bericht von Hischam hörten",
+   "ref": "Ibn Hazm, al-Muhalla · Ibn Hadschar, Fath al-Bari",
+   "url": "https://basira.academy/2020/06/03/why-did-imam-bukhari-leave-the-hadith-of-instruments-hanging/",
+   "verified": true
+  }
+ ],
+ "caption": "Ob Musik erlaubt ist, entscheidet sich an einem einzigen Hadith — und beide Seiten zitieren denselben.\n\nBukhari 5590: Es werde Menschen geben, die Unzucht, Seide, Wein und Musikinstrumente für erlaubt erklären. Das klingt eindeutig.\n\nHier trennen sich die Gelehrten: Bukhari schreibt diesen Hadith nicht wie alle anderen auf. Normalerweise steht dort „haddathana\" — uns wurde berichtet. Hier steht nur „wa qala Hischam ibn Ammar\" — und Hischam sagte. Ein Wort Unterschied, aber es bedeutet, dass die Kette an einer Stelle nicht geschlossen ist. Der Fachbegriff: muallaq, aufgehängt.\n\nIbn Hazm zog daraus den Schluss und schrieb in al-Muhalla, zu diesem Thema sei nichts Authentisches überliefert. Ibn Hadschar widersprach: Auch wenn Bukhari es nicht selbst gehört habe, andere hätten es von Hischam gehört — die Kette sei geschlossen.\n\nUnd das Detail, das fast nie erwähnt wird: Dieser Hadith steht nicht in einem Kapitel über Musik. Er steht im Buch der Getränke, im Kapitel über den, der Alkohol unter anderem Namen erlaubt.\n\nBeide Seiten haben richtig gelesen. Sie bewerten dieselbe Lücke unterschiedlich. Dieses Reel urteilt nicht, es zeigt den Streit.\n\nWas wiegt für dich schwerer: ein Hadith in Bukhari, oder eine Kette, die an einer Stelle offen ist?\n\n#islam #musik #hadith #bukhari #fiqh #wissen #deutsch",
+ "first_comment": "Was wiegt für dich schwerer: ein Hadith in Bukhari, oder eine Kette, die an einer Stelle offen ist? 👇",
+ "thumb_offset": 2000,
+ "blocks": [
+  {
+   "top": "Ob Musik erlaubt ist, entscheidet sich",
+   "big": "an einem einzigen *Hadith*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und beide Seiten",
+   "big": "zitieren *denselben*.",
+   "visual": "none"
+  },
+  {
+   "top": "Bukhari",
+   "big": "*fünftausendfünfhundertneunzig*.",
+   "visual": "stat",
+   "stat": {
+    "value": "5590",
+    "unit": "Bukhari",
+    "sub": "BUCH 74"
+   }
+  },
+  {
+   "top": "Darin heißt es, es werde Menschen geben, die Unzucht, Seide, Wein",
+   "big": "und *Musikinstrumente* für erlaubt erklären.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Das klingt",
+   "big": "*eindeutig*.",
+   "visual": "none"
+  },
+  {
+   "top": "Jetzt kommt die Stelle,",
+   "big": "an der sich die Gelehrten *trennen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Bukhari schreibt diesen Hadith",
+   "big": "*nicht* so auf wie alle anderen.",
+   "visual": "none"
+  },
+  {
+   "top": "Normalerweise steht dort haddathana.",
+   "big": "„Uns wurde *berichtet*.\"",
+   "visual": "compare"
+  },
+  {
+   "top": "Hier steht nur: wa qala Hischam ibn Ammar.",
+   "big": "„Und Hischam *sagte*.\"",
+   "visual": "none"
+  },
+  {
+   "top": "Ein Wort",
+   "big": "*Unterschied*.",
+   "visual": "none"
+  },
+  {
+   "top": "Aber dieses Wort bedeutet, dass die Kette",
+   "big": "an einer Stelle *nicht geschlossen* ist.",
+   "visual": "none"
+  },
+  {
+   "top": "Der Fachbegriff dafür ist muallaq.",
+   "big": "*Aufgehängt*.",
+   "visual": "letters",
+   "letters": {
+    "word": "MUALLAQ"
+   }
+  },
+  {
+   "top": "Ibn Hazm",
+   "big": "zog daraus einen *Schluss*.",
+   "visual": "none"
+  },
+  {
+   "top": "In seinem Werk al-Muhalla schreibt er, zu diesem Thema sei",
+   "big": "überhaupt *nichts* Authentisches überliefert.",
+   "visual": "slider"
+  },
+  {
+   "top": "Ibn Hadschar",
+   "big": "*widersprach*.",
+   "visual": "none"
+  },
+  {
+   "top": "Sein Argument: Auch wenn Bukhari es nicht selbst gehört hat, andere haben es von Hischam gehört.",
+   "big": "Die Kette ist *geschlossen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und jetzt das Detail,",
+   "big": "das fast nie *erwähnt* wird.",
+   "visual": "none"
+  },
+  {
+   "top": "Dieser Hadith steht",
+   "big": "*nicht* in einem Kapitel über Musik.",
+   "visual": "none"
+  },
+  {
+   "top": "Er steht im Buch der Getränke.",
+   "big": "Im Kapitel über den, der *Alkohol* unter anderem Namen erlaubt.",
+   "visual": "stat",
+   "stat": {
+    "value": "74",
+    "unit": "Buch",
+    "sub": "GETRÄNKE"
+   }
+  },
+  {
+   "top": "Beide Seiten haben richtig gelesen.",
+   "big": "Sie bewerten dieselbe *Lücke* unterschiedlich.",
+   "visual": "compare"
+  },
+  {
+   "top": "Was wiegt für dich schwerer? Ein Hadith in Bukhari,",
+   "big": "oder eine Kette, die an einer Stelle *offen* ist?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 5590, Buch 74 (Getränke)",
+    "Ibn Hazm, al-Muhalla · Ibn Hadschar, Fath al-Bari"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}
