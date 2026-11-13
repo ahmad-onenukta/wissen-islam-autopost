@@ -288,5 +288,20 @@
         "video_id": "BbpSD3I4UxM"
       }
     }
+  },
+  {
+    "id": "039",
+    "brand": "nurwissen",
+    "file": "nurwissen-039-geld.mp4",
+    "media_id": "18141452479629059",
+    "posted_at": "2026-11-13T18:22:14.564Z",
+    "results": {
+      "instagram": {
+        "media_id": "18141452479629059"
+      },
+      "youtube": {
+        "video_id": "JiOESt2vG6o"
+      }
+    }
   }
 ]
