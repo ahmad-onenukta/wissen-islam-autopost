@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T18:21:19.259Z",
+  "generated_at": "2026-11-13T01:06:36.597Z",
   "brands": [
     {
       "slug": "nurwissen",
@@ -26,15 +26,15 @@
         "checked": 0,
         "voice": 0,
         "video": 0,
-        "queued": 15,
+        "queued": 13,
         "paused": 0,
-        "live": 21,
+        "live": 22,
         "archive": 0
       },
-      "runway_days": 15,
-      "next": "2026-11-12T18:00:00.000Z",
-      "views_total": 320889,
-      "avg_views": 16889,
+      "runway_days": 13,
+      "next": "2026-11-13T11:00:00.000Z",
+      "views_total": 322209,
+      "avg_views": 16110,
       "engagement_rate": 10.2
     }
   ],
@@ -139,7 +139,7 @@
       "permalink": "https://www.instagram.com/reel/DffWedJHGpc/",
       "metrics": {
         "views": 243,
-        "reach": 184,
+        "reach": 185,
         "likes": 4,
         "comments": 1,
         "shares": 0,
@@ -190,8 +190,8 @@
       "media_id": "18132782611824456",
       "permalink": "https://www.instagram.com/reel/DfhWVuxk3KM/",
       "metrics": {
-        "views": 343,
-        "reach": 291,
+        "views": 344,
+        "reach": 292,
         "likes": 4,
         "comments": 1,
         "shares": 0,
@@ -242,7 +242,7 @@
       "media_id": "18059690651566770",
       "permalink": "https://www.instagram.com/reel/DfiRukGgDae/",
       "metrics": {
-        "views": 364,
+        "views": 365,
         "reach": 291,
         "likes": 8,
         "comments": 1,
@@ -300,8 +300,8 @@
       "media_id": "17898181155571059",
       "permalink": "https://www.instagram.com/reel/Dfj4xmRCXXL/",
       "metrics": {
-        "views": 2174,
-        "reach": 1794,
+        "views": 2181,
+        "reach": 1801,
         "likes": 104,
         "comments": 1,
         "shares": 21,
@@ -358,12 +358,12 @@
       "media_id": "18121156661293338",
       "permalink": "https://www.instagram.com/reel/DfmZqPhjTM5/",
       "metrics": {
-        "views": 1988,
-        "reach": 1707,
+        "views": 2001,
+        "reach": 1718,
         "likes": 76,
         "comments": 1,
         "shares": 23,
-        "saved": 29
+        "saved": 30
       },
       "order_rank": 5
     },
@@ -374,7 +374,7 @@
       "thema": "Viral & Trending",
       "hook": "Der Prophet ﷺ hat zwei Geschenke genannt, bei denen die meisten Menschen betrogen werden. Nicht von anderen — von sich selbst.",
       "voice": "robert",
-      "stage": "queued",
+      "stage": "live",
       "fact_check": "ok",
       "sources": {
         "total": 2,
@@ -405,10 +405,24 @@
         "instagram",
         "youtube"
       ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
+      "results": {
+        "instagram": {
+          "media_id": "18291512128295247"
+        },
+        "youtube": {
+          "video_id": "JApJ9kCsdKo"
+        }
+      },
+      "media_id": "18291512128295247",
+      "permalink": "https://www.instagram.com/reel/DfpuTeLDX1P/",
+      "metrics": {
+        "views": 242,
+        "reach": 194,
+        "likes": 9,
+        "comments": 1,
+        "shares": 5,
+        "saved": 1
+      },
       "order_rank": 6
     },
     {
@@ -882,12 +896,12 @@
       "media_id": "18290727187291171",
       "permalink": "https://www.instagram.com/reel/DfkjM84COpz/",
       "metrics": {
-        "views": 3462,
-        "reach": 2921,
-        "likes": 161,
+        "views": 3585,
+        "reach": 3006,
+        "likes": 167,
         "comments": 2,
         "shares": 31,
-        "saved": 44
+        "saved": 45
       },
       "order_rank": 17
     },
@@ -913,12 +927,12 @@
       "media_id": "18114527000174151",
       "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
       "metrics": {
-        "views": 148463,
+        "views": 148505,
         "reach": 117798,
-        "likes": 7344,
+        "likes": 7347,
         "comments": 275,
         "shares": 3012,
-        "saved": 1953
+        "saved": 1955
       },
       "order_rank": 999
     },
@@ -1119,8 +1133,8 @@
       "media_id": "18145450528572276",
       "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
       "metrics": {
-        "views": 3205,
-        "reach": 2780,
+        "views": 3207,
+        "reach": 2784,
         "likes": 112,
         "comments": 1,
         "shares": 50,
@@ -1150,7 +1164,7 @@
       "media_id": "18470014318187750",
       "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
       "metrics": {
-        "views": 5148,
+        "views": 5149,
         "reach": 4332,
         "likes": 305,
         "comments": 2,
@@ -1315,12 +1329,12 @@
       "media_id": "18105767723288101",
       "permalink": "https://www.instagram.com/reel/DfUwlStkR_L/",
       "metrics": {
-        "views": 140733,
-        "reach": 114137,
-        "likes": 6097,
+        "views": 141616,
+        "reach": 114572,
+        "likes": 6138,
         "comments": 71,
-        "shares": 3556,
-        "saved": 1972
+        "shares": 3574,
+        "saved": 1981
       },
       "order_rank": 999
     },
@@ -1431,8 +1445,8 @@
       "media_id": "17929483620429531",
       "permalink": "https://www.instagram.com/reel/DfaM2aVkulK/",
       "metrics": {
-        "views": 266,
-        "reach": 203,
+        "views": 271,
+        "reach": 204,
         "likes": 6,
         "comments": 1,
         "shares": 2,
@@ -1469,31 +1483,6 @@
         "shares": 0,
         "saved": 3
       },
-      "order_rank": 999
-    },
-    {
-      "brand": "nurwissen",
-      "id": "029",
-      "title": "Die Idee, dass ein Krankenhaus dich behandelt, ohne vorher nach Geld zu fragen, ist über t",
-      "thema": "",
-      "hook": "",
-      "voice": "",
-      "stage": "queued",
-      "fact_check": "–",
-      "sources": {
-        "total": 0,
-        "verified": 0
-      },
-      "source_list": [],
-      "publish_at": "2026-11-19T11:00:00.000Z",
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
       "order_rank": 999
     },
     {
@@ -1658,9 +1647,9 @@
       "username": "nurwissen_official",
       "followers_count": 1140,
       "follows_count": 0,
-      "media_count": 21,
+      "media_count": 22,
       "id": "28768435396155579",
-      "at": "2026-11-12T18:21:10.238Z"
+      "at": "2026-11-13T01:06:21.520Z"
     },
     "history": [
       {
@@ -2102,42 +2091,60 @@
         "at": "2026-11-12T18:21:10.238Z",
         "followers": 1140,
         "views_total": 323705
+      },
+      {
+        "at": "2026-11-13T01:06:21.520Z",
+        "followers": 1140,
+        "views_total": 325027
       }
     ],
     "reels": [
+      {
+        "id": "18291512128295247",
+        "permalink": "https://www.instagram.com/reel/DfpuTeLDX1P/",
+        "posted": "2026-11-12T18:42:24+0000",
+        "caption": "„Zwei Gnaden, in denen viele Menschen betrogen werden: die G",
+        "views": 242,
+        "reach": 194,
+        "likes": 9,
+        "comments": 1,
+        "shares": 5,
+        "saved": 1,
+        "total_interactions": 16
+      },
       {
         "id": "18121156661293338",
         "permalink": "https://www.instagram.com/reel/DfmZqPhjTM5/",
         "posted": "2026-11-11T11:44:07+0000",
         "caption": "Du legst das Handy weg und fühlst dich leerer als vorher. Ni",
-        "views": 1988,
-        "reach": 1707,
+        "views": 2001,
+        "reach": 1718,
         "likes": 76,
         "comments": 1,
         "shares": 23,
-        "saved": 29,
-        "total_interactions": 133
+        "saved": 30,
+        "total_interactions": 134
       },
       {
         "id": "18290727187291171",
         "permalink": "https://www.instagram.com/reel/DfkjM84COpz/",
         "posted": "2026-11-10T18:29:00+0000",
         "caption": "Der Prophet ﷺ hat dreimal bei Allah geschworen und dann gesa",
-        "views": 3462,
-        "reach": 2921,
-        "likes": 161,
+        "views": 3585,
+        "reach": 3006,
+        "likes": 167,
         "comments": 2,
         "shares": 31,
-        "saved": 44,
-        "total_interactions": 250
+        "saved": 45,
+        "total_interactions": 257
       },
       {
         "id": "17898181155571059",
         "permalink": "https://www.instagram.com/reel/Dfj4xmRCXXL/",
         "posted": "2026-11-10T12:18:17+0000",
         "caption": "Die erste Offenbarung des Korans ist kein Glaubensbekenntnis",
-        "views": 2174,
-        "reach": 1794,
+        "views": 2181,
+        "reach": 1801,
         "likes": 104,
         "comments": 1,
         "shares": 21,
@@ -2149,7 +2156,7 @@
         "permalink": "https://www.instagram.com/reel/DfiRukGgDae/",
         "posted": "2026-11-09T21:17:49+0000",
         "caption": "Der mächtigste Mann seiner Zeit regiert von Ägypten bis Pers",
-        "views": 364,
+        "views": 365,
         "reach": 291,
         "likes": 8,
         "comments": 1,
@@ -2162,8 +2169,8 @@
         "permalink": "https://www.instagram.com/reel/DfhWVuxk3KM/",
         "posted": "2026-11-09T12:38:53+0000",
         "caption": "Ein 21-Jähriger geht 1325 allein aus Tanger los. Nicht für e",
-        "views": 343,
-        "reach": 291,
+        "views": 344,
+        "reach": 292,
         "likes": 4,
         "comments": 1,
         "shares": 0,
@@ -2176,7 +2183,7 @@
         "posted": "2026-11-08T18:01:50+0000",
         "caption": "Das erste Kaffeehaus der Welt stand nicht in Wien. Es stand ",
         "views": 243,
-        "reach": 184,
+        "reach": 185,
         "likes": 4,
         "comments": 1,
         "shares": 0,
@@ -2188,8 +2195,8 @@
         "permalink": "https://www.instagram.com/reel/DfenGEDDARY/",
         "posted": "2026-11-08T11:07:34+0000",
         "caption": "Umar ibn al-Chattab regiert ein Weltreich — und über einen e",
-        "views": 788,
-        "reach": 676,
+        "views": 789,
+        "reach": 678,
         "likes": 23,
         "comments": 1,
         "shares": 1,
@@ -2201,8 +2208,8 @@
         "permalink": "https://www.instagram.com/reel/DfaM2aVkulK/",
         "posted": "2026-11-06T18:01:09+0000",
         "caption": "Drei Männer sind in einer Höhle eingeschlossen. Ein Felsen v",
-        "views": 266,
-        "reach": 203,
+        "views": 271,
+        "reach": 204,
         "likes": 6,
         "comments": 1,
         "shares": 2,
@@ -2227,20 +2234,20 @@
         "permalink": "https://www.instagram.com/reel/DfUwlStkR_L/",
         "posted": "2026-11-04T15:18:05+0000",
         "caption": "Im Koran gibt es eine Sünde, bei der Allah nicht Strafe ankü",
-        "views": 140733,
-        "reach": 114137,
-        "likes": 6097,
+        "views": 141616,
+        "reach": 114572,
+        "likes": 6138,
         "comments": 71,
-        "shares": 3556,
-        "saved": 1972,
-        "total_interactions": 12070
+        "shares": 3574,
+        "saved": 1981,
+        "total_interactions": 12141
       },
       {
         "id": "18220536925356124",
         "permalink": "https://www.instagram.com/reel/DfKwCPPlJZg/",
         "posted": "2026-10-31T18:00:53+0000",
         "caption": "Stell dir vor, jemand zahlt dir 5.000 € für jede Person, die",
-        "views": 2028,
+        "views": 2029,
         "reach": 1768,
         "likes": 69,
         "comments": 1,
@@ -2279,7 +2286,7 @@
         "permalink": "https://www.instagram.com/reel/DfDbJLADoQO/",
         "posted": "2026-10-28T21:43:39+0000",
         "caption": "Der Prophet (saw) hat einen Mann beschrieben, den er nie get",
-        "views": 5148,
+        "views": 5149,
         "reach": 4332,
         "likes": 305,
         "comments": 2,
@@ -2292,8 +2299,8 @@
         "permalink": "https://www.instagram.com/reel/DfAzWiTjt18/",
         "posted": "2026-10-27T21:17:23+0000",
         "caption": "Ein Mann hat 99 Menschen getötet. Er fragt einen Mönch, ob e",
-        "views": 3205,
-        "reach": 2780,
+        "views": 3207,
+        "reach": 2784,
         "likes": 112,
         "comments": 1,
         "shares": 50,
@@ -2331,13 +2338,13 @@
         "permalink": "https://www.instagram.com/reel/De2UjOhCihg/",
         "posted": "2026-10-23T19:35:52+0000",
         "caption": "Das älteste Koran-Fragment der Welt liegt nicht in Mekka. Ni",
-        "views": 148463,
+        "views": 148505,
         "reach": 117798,
-        "likes": 7344,
+        "likes": 7347,
         "comments": 275,
         "shares": 3012,
-        "saved": 1953,
-        "total_interactions": 13011
+        "saved": 1955,
+        "total_interactions": 13016
       },
       {
         "id": "18106676354203367",
@@ -2385,7 +2392,7 @@
     "done": 0,
     "skip": 0
   },
-  "posted_total": 22,
+  "posted_total": 23,
   "channels": [
     {
       "platform": "instagram",
@@ -2393,9 +2400,9 @@
       "handle": "nurwissen_official",
       "geplant": true,
       "status": "laeuft",
-      "posts": 14,
+      "posts": 15,
       "fehler": 0,
-      "last_ok": "2026-11-11T11:43:12.922Z",
+      "last_ok": "2026-11-12T18:41:19.148Z",
       "last_error": null
     },
     {
@@ -2404,9 +2411,9 @@
       "handle": "NurWissen",
       "geplant": true,
       "status": "laeuft",
-      "posts": 9,
+      "posts": 10,
       "fehler": 5,
-      "last_ok": "2026-11-11T11:43:12.922Z",
+      "last_ok": "2026-11-12T18:41:19.148Z",
       "last_error": "YouTube-Token: {\"error\":\"invalid_grant\",\"error_description\":\"Token has been expired or revoked.\"}"
     },
     {
@@ -2442,12 +2449,12 @@
   },
   "health": {
     "min_runway": 3,
-    "last_post": "2026-11-11T11:43:12.922Z",
-    "last_post_hours": 31,
-    "last_engage": "2026-11-12T18:21:10.238Z",
+    "last_post": "2026-11-12T18:41:19.148Z",
+    "last_post_hours": 6,
+    "last_engage": "2026-11-13T01:06:21.520Z",
     "last_engage_hours": 0,
-    "scripts_total": 37,
-    "videos_ready": 15,
+    "scripts_total": 36,
+    "videos_ready": 13,
     "alerts": [],
     "status": "ok"
   },
