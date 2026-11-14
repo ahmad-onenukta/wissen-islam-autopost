@@ -2,7 +2,7 @@ name: Engagement (Kommentare, DMs, Stats)
 
 on:
   schedule:
-    - cron: "17 */2 * * *"     # alle 2 h
+    - cron: "7,37 * * * *"      # halbstuendlich: Kommentare sollen schnell beantwortet werden
   workflow_dispatch:
 
 permissions:
@@ -20,19 +20,39 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+
       - name: Inbox/Outbox/Stats
         env:
           IG_TOKEN:    ${{ secrets.IG_TOKEN }}
           IG_USER_ID:  ${{ secrets.IG_USER_ID }}
           IG_USERNAME: nurwissen_official
         run: node scripts/engage.mjs
+
+      # Harmlose Kommentare (Emojis, kurzes Lob, Dank) werden sofort beantwortet.
+      # Jede Frage und jeder inhaltliche Kommentar bleibt in engage/inbox.json
+      # liegen und wird einem Menschen vorgelegt.
+      - name: Kommentar-Triage
+        env:
+          IG_TOKEN:    ${{ secrets.IG_TOKEN }}
+          IG_USER_ID:  ${{ secrets.IG_USER_ID }}
+        run: node scripts/triage.mjs
+
       - name: Zurueckschreiben
         run: |
-          git pull --rebase -q || true
+          git config user.name  "reel-bot"
+          git config user.email "reel-bot@users.noreply.github.com"
+          # Erst committen, DANN rebasen - und mit --autostash. Andersherum
+          # bricht der Rebase an den frisch geschriebenen Dateien ab und die
+          # eingesammelten Kommentare gehen verloren.
           if [[ -n "$(git status --porcelain engage/)" ]]; then
-            git config user.name  "reel-bot"
-            git config user.email "reel-bot@users.noreply.github.com"
             git add -A engage/
             git commit -m "engage: $(date -u +%Y-%m-%dT%H:%M)"
-            git push
+          fi
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash -q && git push && break
+            echo "Push-Versuch $i fehlgeschlagen."; sleep $(( i * 10 ))
+          done
+          if [ -n "$(git log origin/main..HEAD --oneline)" ]; then
+            echo "::error::Kommentare eingesammelt, aber nicht gespeichert."
+            exit 1
           fi
