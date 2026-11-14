@@ -13,8 +13,8 @@ const OWN   = (process.env.IG_USERNAME || "nurwissen_official").toLowerCase();
 if (!TOKEN) { console.error("FEHLT: IG_TOKEN"); process.exit(1); }
 
 // Kommentare aelter als das werden nur als gesehen markiert, nicht mehr vorgelegt.
-// Ohne diese Grenze liefe beim ersten Lauf nach dem Fix der gesamte Altbestand
-// (mehrere hundert Kommentare) auf einmal in die Inbox.
+// Ohne diese Grenze liefe beim ersten Lauf der gesamte Altbestand (mehrere
+// hundert Kommentare) auf einmal in die Inbox.
 const MAX_TAGE = Number(process.env.ENGAGE_MAX_TAGE || 7);
 // So viele Beitraege werden je Lauf nach neuen Kommentaren durchsucht.
 const MEDIEN_PRO_LAUF = Number(process.env.ENGAGE_MEDIEN || 12);
@@ -70,28 +70,20 @@ console.log(`Outbox: ${sent} gesendet`);
 const media = (await api(`${USER}/media`, {
   fields: "id,caption,timestamp,permalink,media_type,comments_count,like_count", limit: 25 })).data || [];
 
-// Frueher stand hier "if (!m.comments_count) continue". Der Medien-Endpunkt
-// liefert comments_count nicht zuverlaessig, also wurde JEDER Beitrag
-// uebersprungen und nie ein Kommentar eingesammelt. Jetzt wird direkt gefragt.
-let newComments = 0, zuAlt = 0, diagRest = 2;
+let newComments = 0, zuAlt = 0;
+let zaehlerSumme = 0, gelieferteSumme = 0;   // zum Erkennen fehlender Berechtigung
 for (const m of media.slice(0, MEDIEN_PRO_LAUF)) {
+  zaehlerSumme += m.comments_count || 0;
+  if (!m.comments_count) continue;            // nichts zu holen, API-Aufruf gespart
   let comments = [];
   try {
     comments = (await api(`${m.id}/comments`, {
       fields: "id,text,username,timestamp,replies{id,text,username,timestamp}", limit: 50 })).data || [];
   } catch (e) {
-    console.log(`DIAG Kommentare zu ${m.id} FEHLER:`, String(e.message).slice(0, 300));
+    console.log(`Kommentare zu ${m.id} uebersprungen:`, String(e.message).slice(0, 180));
     continue;
   }
-  console.log(`DIAG ${m.id} comments_count=${m.comments_count} geliefert=${comments.length}`);
-  if (comments.length === 0 && diagRest-- > 0) {
-    for (const variante of [{}, { fields: "id,text,username,timestamp" }, { fields: "id,text,timestamp" }]) {
-      try {
-        const r = await api(`${m.id}/comments`, variante);
-        console.log("  DIAG variante", JSON.stringify(variante), "->", JSON.stringify(r).slice(0, 400));
-      } catch (e) { console.log("  DIAG variante", JSON.stringify(variante), "FEHLER", String(e.message).slice(0, 300)); }
-    }
-  }
+  gelieferteSumme += comments.length;
   for (const c of comments) {
     const all = [c, ...((c.replies && c.replies.data) || []).map(r => ({ ...r, parent_id: c.id }))];
     for (const x of all) {
@@ -106,6 +98,15 @@ for (const m of media.slice(0, MEDIEN_PRO_LAUF)) {
       newComments++;
     }
   }
+}
+
+// Die API liefert bei fehlender Kommentar-Berechtigung ein leeres data-Array
+// statt einer Fehlermeldung. Ohne diesen Hinweis sieht der Lauf dann aus, als
+// gaebe es einfach keine Kommentare.
+if (zaehlerSumme > 0 && gelieferteSumme === 0) {
+  console.log(`::warning::${zaehlerSumme} Kommentare laut Zaehler, aber keiner abrufbar.`
+    + " Dem Token fehlt sehr wahrscheinlich instagram_business_manage_comments."
+    + " Berechtigung in der Meta-App ergaenzen und IG_TOKEN neu erzeugen.");
 }
 
 // ---------- 1b. INBOX: neue DMs ---------------------------------------------
@@ -127,7 +128,9 @@ try {
     }
   }
 } catch (e) { console.log("DM-Abfrage uebersprungen:", e.message); }
-console.log(`Inbox: +${newComments} Kommentare, +${newDMs} DMs` + (zuAlt ? ` (${zuAlt} aelter als ${MAX_TAGE} Tage, nur vermerkt)` : ""));
+console.log(`Inbox: +${newComments} Kommentare, +${newDMs} DMs`
+  + ` (Zaehler ${zaehlerSumme}, abrufbar ${gelieferteSumme}`
+  + (zuAlt ? `, ${zuAlt} aelter als ${MAX_TAGE} Tage` : "") + ")");
 
 // ---------- 3. STATS ----------------------------------------------------------
 const stats = read("engage/stats.json", { history: [] });
