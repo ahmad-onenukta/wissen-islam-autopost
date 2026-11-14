@@ -456,14 +456,26 @@
     "brand": "nurwissen",
     "file": "nurwissen-040-koran.mp4",
     "publish_at": "2026-11-14T11:00:00.000Z",
-    "status": "ready",
+    "status": "posted",
     "targets": [
       "instagram",
       "youtube"
     ],
     "caption": "„Die Sonne geht in einer schlammigen Quelle unter.\" (18:87, andere Zählung 18:86) Das ist der meistzitierte Satz gegen den Koran.\n\nDie Antwort steht in einem einzigen Wort: wadschadaha — er fand sie. Das Subjekt des Satzes ist nicht die Sonne, sondern Dhul-Qarnain. Der Vers beschreibt, was ein Mensch an einem Ort sieht, nicht, wohin die Sonne geht.\n\nUnd das ist keine moderne Ausrede. Tafsir al-Dschalalain schreibt: beschrieben, wie es das Auge sieht. Ibn Kathir wird deutlicher — die Sonne schien ins Meer zu sinken, was jeder an der Küste sehen kann — und lehnt ausdrücklich ab, dass Dhul-Qarnain den Ort am Himmel erreicht hätte. Beide Texte sind Jahrhunderte alt.\n\nSchon die frühen Ausleger waren sich beim Wort selbst nicht einig: die einen lasen schlammige Quelle, die anderen heiße Quelle. Der Streit ist alt und wurde innerhalb der Tradition geführt.\n\nMuss ein Text beschreiben, was wirklich passiert? Oder darf er beschreiben, was der Mensch wahrnimmt?\n\nQuellen: alislam.org · Quranic Arabic Corpus · Tafsir al-Dschalalain · Ibn Kathir\n\n#islam #koran #tafsir #dhulqarnain #wissen #kritik #deutsch",
     "first_comment": "Muss ein Text beschreiben, was wirklich passiert — oder darf er beschreiben, was der Mensch wahrnimmt? 👇",
-    "thumb_offset": 2000
+    "thumb_offset": 2000,
+    "results": {
+      "instagram": {
+        "media_id": "18116442044136802"
+      },
+      "youtube": {
+        "video_id": "h0mBwaUFOP4"
+      }
+    },
+    "media_id": "18116442044136802",
+    "first_comment_id": "18150412444602309",
+    "youtube_id": "h0mBwaUFOP4",
+    "posted_at": "2026-11-14T11:15:16.800Z"
   },
   {
     "id": "019",
