@@ -11,6 +11,8 @@ const HOST  = process.env.IG_API_HOST || "graph.instagram.com";
 const VER   = process.env.IG_API_VERSION || "v23.0";
 const TOKEN = process.env.IG_TOKEN;
 const TROCKEN = process.env.TRIAGE_DRY === "1";
+// Deckel, damit unter einem Beitrag nie ein Schwall gleichartiger Antworten steht.
+const MAX_AUTO = Number(process.env.TRIAGE_MAX || 8);
 if (!TOKEN && !TROCKEN) { console.error("FEHLT: IG_TOKEN"); process.exit(1); }
 
 const read  = (f, d) => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : d;
@@ -66,11 +68,12 @@ const antworten = async (commentId, text) => {
 };
 
 // --- Lauf --------------------------------------------------------------------
-let auto = 0, vorlage = 0, fehler = 0;
+let auto = 0, vorlage = 0, fehler = 0, vertagt = 0;
 for (const e of inbox) {
   if (e.status !== "new") continue;
   if (e.type !== "comment") { e.status = "review"; vorlage++; continue; }
   if (!harmlos(e.text)) { e.status = "review"; vorlage++; continue; }
+  if (auto >= MAX_AUTO) { vertagt++; continue; }   // bleibt "new", kommt im naechsten Lauf dran
   const text = wahl(e.id);
   try {
     const id = await antworten(e.id, text);
@@ -90,7 +93,8 @@ write("engage/outbox.json", outbox);
 write("engage/triage-log.json", log.slice(-500));
 
 const offen = inbox.filter(i => i.status === "review");
-console.log(`Triage: ${auto} automatisch beantwortet, ${vorlage} zur Freigabe, ${fehler} Fehler.`);
+console.log(`Triage: ${auto} automatisch beantwortet, ${vorlage} zur Freigabe, ${fehler} Fehler`
+  + (vertagt ? `, ${vertagt} auf den naechsten Lauf vertagt (Deckel ${MAX_AUTO})` : "") + ".");
 if (offen.length) {
   console.log(`\n=== ${offen.length} Kommentare warten auf eine Antwort ===`);
   for (const o of offen.slice(-20)) {
