@@ -12,6 +12,13 @@ const TOKEN = process.env.IG_TOKEN;
 const OWN   = (process.env.IG_USERNAME || "nurwissen_official").toLowerCase();
 if (!TOKEN) { console.error("FEHLT: IG_TOKEN"); process.exit(1); }
 
+// Kommentare aelter als das werden nur als gesehen markiert, nicht mehr vorgelegt.
+// Ohne diese Grenze liefe beim ersten Lauf nach dem Fix der gesamte Altbestand
+// (mehrere hundert Kommentare) auf einmal in die Inbox.
+const MAX_TAGE = Number(process.env.ENGAGE_MAX_TAGE || 7);
+// So viele Beitraege werden je Lauf nach neuen Kommentaren durchsucht.
+const MEDIEN_PRO_LAUF = Number(process.env.ENGAGE_MEDIEN || 12);
+
 const api = async (path, params = {}, method = "GET", json = null) => {
   const url = new URL(`https://${HOST}/${VER}/${path}`);
   if (method === "GET") {
@@ -37,6 +44,7 @@ const inbox  = read("engage/inbox.json",  []);
 const outbox = read("engage/outbox.json", []);
 const seen   = new Set(state.seen);
 const now    = new Date().toISOString();
+const grenze = new Date(Date.now() - MAX_TAGE * 864e5);
 
 // ---------- 2. OUTBOX senden (zuerst, damit Antworten raus sind) -----------
 let sent = 0;
@@ -62,17 +70,27 @@ console.log(`Outbox: ${sent} gesendet`);
 const media = (await api(`${USER}/media`, {
   fields: "id,caption,timestamp,permalink,media_type,comments_count,like_count", limit: 25 })).data || [];
 
-let newComments = 0;
-for (const m of media) {
-  if (!m.comments_count) continue;
-  let url = `${m.id}/comments`, params = { fields: "id,text,username,timestamp,replies{id,text,username,timestamp}", limit: 50 };
-  const comments = (await api(url, params)).data || [];
+// Frueher stand hier "if (!m.comments_count) continue". Der Medien-Endpunkt
+// liefert comments_count nicht zuverlaessig, also wurde JEDER Beitrag
+// uebersprungen und nie ein Kommentar eingesammelt. Jetzt wird direkt gefragt.
+let newComments = 0, zuAlt = 0;
+for (const m of media.slice(0, MEDIEN_PRO_LAUF)) {
+  let comments = [];
+  try {
+    comments = (await api(`${m.id}/comments`, {
+      fields: "id,text,username,timestamp,replies{id,text,username,timestamp}", limit: 50 })).data || [];
+  } catch (e) {
+    console.log(`Kommentare zu ${m.id} uebersprungen:`, e.message.slice(0, 140));
+    continue;
+  }
   for (const c of comments) {
     const all = [c, ...((c.replies && c.replies.data) || []).map(r => ({ ...r, parent_id: c.id }))];
     for (const x of all) {
       if (seen.has(x.id)) continue;
       seen.add(x.id);
       if ((x.username || "").toLowerCase() === OWN) continue;
+      // Altbestand nicht nachtraeglich aufrollen: nur als gesehen vermerken.
+      if (x.timestamp && new Date(x.timestamp) < grenze) { zuAlt++; continue; }
       inbox.push({ type: "comment", id: x.id, parent_id: x.parent_id || null, media_id: m.id,
         permalink: m.permalink, username: x.username, text: x.text, timestamp: x.timestamp,
         caption_start: (m.caption || "").slice(0, 80), status: "new" });
@@ -93,13 +111,14 @@ try {
       const from = msg.from || {};
       if ((from.username || "").toLowerCase() === OWN) continue;
       if (!msg.message) continue;
+      if (msg.created_time && new Date(msg.created_time) < grenze) { zuAlt++; continue; }
       inbox.push({ type: "dm", id: msg.id, conversation_id: cv.id, recipient_id: from.id,
         username: from.username, text: msg.message, timestamp: msg.created_time, status: "new" });
       newDMs++;
     }
   }
 } catch (e) { console.log("DM-Abfrage uebersprungen:", e.message); }
-console.log(`Inbox: +${newComments} Kommentare, +${newDMs} DMs`);
+console.log(`Inbox: +${newComments} Kommentare, +${newDMs} DMs` + (zuAlt ? ` (${zuAlt} aelter als ${MAX_TAGE} Tage, nur vermerkt)` : ""));
 
 // ---------- 3. STATS ----------------------------------------------------------
 const stats = read("engage/stats.json", { history: [] });
@@ -148,6 +167,6 @@ try {
 } catch (e) { console.log("Archiv-Befehle uebersprungen:", e.message); }
 
 // ---------- Dashboard-State mitschreiben -------------------------------------
-// engage.yml committet den Ordner engage/ alle 2 h -> engage/dashboard.json ist die
-// autonome Datenquelle des Dashboards (kein eigener dashboard.yml-Workflow noetig).
+// engage.yml committet den Ordner engage/ alle 30 min -> engage/dashboard.json ist
+// die autonome Datenquelle des Dashboards (kein eigener dashboard.yml-Workflow noetig).
 try { await import("./dashboard.mjs"); } catch (e) { console.log("Dashboard-State-Fehler:", e.message); }
