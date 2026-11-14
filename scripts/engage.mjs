@@ -73,15 +73,24 @@ const media = (await api(`${USER}/media`, {
 // Frueher stand hier "if (!m.comments_count) continue". Der Medien-Endpunkt
 // liefert comments_count nicht zuverlaessig, also wurde JEDER Beitrag
 // uebersprungen und nie ein Kommentar eingesammelt. Jetzt wird direkt gefragt.
-let newComments = 0, zuAlt = 0;
+let newComments = 0, zuAlt = 0, diagRest = 2;
 for (const m of media.slice(0, MEDIEN_PRO_LAUF)) {
   let comments = [];
   try {
     comments = (await api(`${m.id}/comments`, {
       fields: "id,text,username,timestamp,replies{id,text,username,timestamp}", limit: 50 })).data || [];
   } catch (e) {
-    console.log(`Kommentare zu ${m.id} uebersprungen:`, e.message.slice(0, 140));
+    console.log(`DIAG Kommentare zu ${m.id} FEHLER:`, String(e.message).slice(0, 300));
     continue;
+  }
+  console.log(`DIAG ${m.id} comments_count=${m.comments_count} geliefert=${comments.length}`);
+  if (comments.length === 0 && diagRest-- > 0) {
+    for (const variante of [{}, { fields: "id,text,username,timestamp" }, { fields: "id,text,timestamp" }]) {
+      try {
+        const r = await api(`${m.id}/comments`, variante);
+        console.log("  DIAG variante", JSON.stringify(variante), "->", JSON.stringify(r).slice(0, 400));
+      } catch (e) { console.log("  DIAG variante", JSON.stringify(variante), "FEHLER", String(e.message).slice(0, 300)); }
+    }
   }
   for (const c of comments) {
     const all = [c, ...((c.replies && c.replies.data) || []).map(r => ({ ...r, parent_id: c.id }))];
