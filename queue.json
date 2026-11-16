@@ -560,14 +560,26 @@
     "brand": "nurwissen",
     "file": "nurwissen-023-alltags-situation.mp4",
     "publish_at": "2026-11-16T11:00:00.000Z",
-    "status": "ready",
+    "status": "posted",
     "targets": [
       "instagram",
       "youtube"
     ],
     "caption": "Du kannst Sadaqa geben, ohne einen Cent zu haben.\n\n„Dein Lächeln im Gesicht deines Bruders ist für dich eine Sadaqa.“ (Tirmidhi 1956, hasan)\n\nSadaqa ist sonst ein Vermögensbegriff — etwas, das weniger wird, wenn du es gibst. Hier: etwas, das sich vermehrt.\n\nUnd im gleichen Hadith: jemandem den Weg zeigen, einen Stein vom Weg nehmen, einem Blinden helfen, Wasser in das Gefäß deines Bruders gießen.\n\nKeine dieser Taten braucht Geld. Alle brauchen Aufmerksamkeit — du musst den Stein erst sehen.\n\nLächle heute drei Menschen an, die nicht damit rechnen.\n\nQuellen: Jami at-Tirmidhi 1956\n\nEin Lächeln als Sadaqa — ernst gemeint oder machen wir es uns damit zu leicht?\n\n#islam #sadaqa #hadith #alltag #wissen #muslim #deutsch",
     "first_comment": "Ein Lächeln als Sadaqa — ernst gemeint oder machen wir es uns damit zu leicht? 👇",
-    "thumb_offset": 3000
+    "thumb_offset": 3000,
+    "results": {
+      "instagram": {
+        "media_id": "18005572367809798"
+      },
+      "youtube": {
+        "video_id": "YQ01F-xHM4Y"
+      }
+    },
+    "media_id": "18005572367809798",
+    "first_comment_id": "18104177783169942",
+    "youtube_id": "YQ01F-xHM4Y",
+    "posted_at": "2026-11-16T12:30:10.691Z"
   },
   {
     "id": "018",
