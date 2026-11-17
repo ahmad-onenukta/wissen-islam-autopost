@@ -408,5 +408,20 @@
         "video_id": "3-pgWkaNlOo"
       }
     }
+  },
+  {
+    "id": "034",
+    "brand": "nurwissen",
+    "file": "nurwissen-034-freunde.mp4",
+    "media_id": "17969988672230050",
+    "posted_at": "2026-11-17T19:36:44.623Z",
+    "results": {
+      "instagram": {
+        "media_id": "17969988672230050"
+      },
+      "youtube": {
+        "video_id": "CAX5TKWpvg0"
+      }
+    }
   }
 ]

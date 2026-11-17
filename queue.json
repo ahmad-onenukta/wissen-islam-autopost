@@ -638,14 +638,26 @@
     "brand": "nurwissen",
     "file": "nurwissen-034-freunde.mp4",
     "publish_at": "2026-11-17T18:00:00.000Z",
-    "status": "ready",
+    "status": "posted",
     "targets": [
       "instagram",
       "youtube"
     ],
     "caption": "„Der Mensch ist auf der Religion seines engen Freundes — so soll jeder von euch schauen, wen er sich zum engen Freund nimmt.“ (Tirmidhi 2378, hasan)\n\nDas ist keine Empfehlung, sondern eine Feststellung. Der Satz behauptet nicht, du könntest wie er werden — er sagt, du bist schon auf seiner Linie.\n\nUnd khalil heißt nicht „Bekannter“, sondern: der, dem du nichts verheimlichst.\n\nDer unbequeme Teil: Die meisten Freundschaften sind nicht gewählt, sondern passiert. Schule, Arbeit, Gruppe. Niemand hat dich gefragt, ob diese fünf Leute dein Maßstab sein sollen.\n\nNiemand muss aus deinem Leben raus. Aber nicht jeder muss rein.\n\nQuellen: Jami at-Tirmidhi 2378 · Sahih al-Bukhari 5534\n\nUmgebung schlägt Vorsatz — oder ist das nur eine Ausrede für schwachen Willen?\n\n#islam #freunde #hadith #umgang #wissen #muslim #deutsch",
     "first_comment": "Umgebung schlägt Vorsatz — oder ist das nur eine Ausrede für schwachen Willen? 👇",
-    "thumb_offset": 3000
+    "thumb_offset": 3000,
+    "results": {
+      "instagram": {
+        "media_id": "17969988672230050"
+      },
+      "youtube": {
+        "video_id": "CAX5TKWpvg0"
+      }
+    },
+    "media_id": "17969988672230050",
+    "first_comment_id": "18139909750659828",
+    "youtube_id": "CAX5TKWpvg0",
+    "posted_at": "2026-11-17T19:36:44.623Z"
   },
   {
     "id": "017",
