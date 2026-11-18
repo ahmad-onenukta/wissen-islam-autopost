@@ -690,14 +690,26 @@
     "brand": "nurwissen",
     "file": "nurwissen-024-s-nden.mp4",
     "publish_at": "2026-11-18T18:00:00.000Z",
-    "status": "ready",
+    "status": "posted",
     "targets": [
       "instagram",
       "youtube"
     ],
     "caption": "Der Prophet (saw) hat eine Regel gegeben, die aus genau zwei Möglichkeiten besteht:\n\n„Wer an Allah und den Jüngsten Tag glaubt, soll Gutes sagen — oder schweigen.“ (Bukhari 6475)\n\nEs gibt keine dritte Option. Kein „nur mal so gesagt“, kein „ich meine es nicht böse“.\n\nIm selben Hadith stehen zwei weitere Sätze: den Nachbarn nicht schädigen, den Gast ehren. Drei Prüfungen — alle im Nahbereich. Nicht Spendensumme, nicht Gebetszahl.\n\nWarum die Zunge zuerst? Weil sie das billigste Werkzeug ist. Keine Kraft, keine Vorbereitung — deshalb wird am meisten damit zerstört.\n\nWahr, nötig, freundlich. Fehlt eins — schweig.\n\nQuellen: Sahih al-Bukhari 6475\n\nWahr, nötig, freundlich. Wer die Regel wirklich anwendet, sagt fast nichts mehr. Zu streng?\n\n#islam #hadith #zunge #gheebah #wissen #muslim #deutsch",
     "first_comment": "Wahr, nötig, freundlich. Wer die Regel wirklich anwendet, sagt fast nichts mehr. Zu streng? 👇",
-    "thumb_offset": 3000
+    "thumb_offset": 3000,
+    "results": {
+      "instagram": {
+        "media_id": "18106103903528793"
+      },
+      "youtube": {
+        "video_id": "hr8Inc1eXVQ"
+      }
+    },
+    "media_id": "18106103903528793",
+    "first_comment_id": "18150127261601049",
+    "youtube_id": "hr8Inc1eXVQ",
+    "posted_at": "2026-11-18T19:14:16.347Z"
   },
   {
     "id": "041",
