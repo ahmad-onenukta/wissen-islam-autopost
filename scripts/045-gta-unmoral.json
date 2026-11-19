@@ -1,0 +1,118 @@
+{
+ "id": "045",
+ "thema": "Koran unter Beschuss",
+ "title": "24:19 — der Vers über Unmoral handelt von einem Gerücht",
+ "hook": "Dieser Vers wird gegen Serien, Spiele und Musik zitiert. Er handelt von etwas völlig anderem.",
+ "appeal": "Gilt der Vers nur für Verleumdung, oder für alles, was Unmoral normal macht?",
+ "caption": "Dieser Vers wird gegen Serien, Spiele und Musik zitiert: „Gewiss, diejenigen, die es lieben, dass sich die Unmoral unter den Gläubigen verbreitet — für sie gibt es schmerzhafte Strafe.\" (24:19, andere Zählung 24:20)\n\nLies die zehn Verse davor. 24:11 bis 24:20 handeln von einem einzigen Vorfall: einem Gerücht, das durch die Gemeinde ging.\n\nDer Koran geht es Schritt für Schritt durch. 24:12: Ihr hättet gut voneinander denken sollen. 24:13: Wo sind die vier Zeugen? 24:15: Ihr habt es von Zunge zu Zunge weitergegeben und für harmlos gehalten — bei Allah ist es schwer. 24:16: Ihr hättet sagen müssen, darüber reden wir nicht.\n\nDie Unmoral, die sich hier verbreitet, ist das Reden selbst. Fahischa meint in dieser Passage die Rede über andere, nicht einen Film.\n\nUnd damit kehrt sich der Vers um: Wer den Vers zitiert, um über andere zu urteilen, steht näher an dem, was der Vers beschreibt, als der, der spielt.\n\nDie Gegenposition ist aber nicht schwach: Der Vers sagt „die es lieben, dass sich Unmoral verbreitet\" — allgemein. Ein Anlass begrenzt nicht automatisch die Regel. Das ist eine klassische Unterscheidung: der Anlass der Offenbarung und die Reichweite des Wortlauts.\n\nBeide Lesarten sind sauber. Die eine bindet den Vers an seinen Anlass, die andere an seinen Wortlaut.\n\nGilt der Vers nur für Verleumdung — oder für alles, was Unmoral normal macht?\n\n#islam #gta6 #koran #tafsir #fahischa #kontext #wissen #deutsch",
+ "first_comment": "Gilt der Vers nur für Verleumdung — oder für alles, was Unmoral normal macht? 👇",
+ "thumb_offset": 2000,
+ "vo_full": "Dieser Vers wird gegen Serien, Spiele und Musik zitiert. Er handelt von etwas völlig anderem. [pause] Diejenigen, die es lieben, dass sich die Unmoral verbreitet, für sie gibt es schmerzhafte Strafe. [pause] Sure vierundzwanzig, Vers neunzehn. Jetzt lies die zehn Verse davor. [pause] Vers elf bis zwanzig handeln von einem einzigen Vorfall. Von einem Gerücht, das durch die Gemeinde ging. [pause] Und der Koran geht es Schritt für Schritt durch. Ihr hättet gut voneinander denken sollen. [pause] Wo sind die vier Zeugen? Ohne sie seid ihr die Lügner. [pause] Ihr habt es von Zunge zu Zunge weitergegeben und für harmlos gehalten. [pause] Bei Allah aber ist es schwer. Ihr hättet sagen müssen: darüber reden wir nicht. [pause] Die Unmoral, die sich hier verbreitet, ist das Reden selbst. [pause] Und damit kehrt sich der Vers um. Wer ihn zitiert, um über andere zu urteilen, [pause] steht näher an dem, was der Vers beschreibt, als der, der spielt. [pause] Die Gegenposition ist aber nicht schwach. Der Vers sagt allgemein: die es lieben. [pause] Ein Anlass begrenzt nicht automatisch die Regel. Anlass der Offenbarung, oder Reichweite des Wortlauts. [pause] Beide Lesarten sind sauber. Die eine bindet den Vers an den Anlass, die andere an den Wortlaut. [pause] Gilt der Vers nur für Verleumdung? Oder für alles, was Unmoral normal macht?",
+ "sources": [
+  {
+   "claim": "24:19 steht in der Passage 24:11–20, die einen einzigen Verleumdungsvorfall behandelt: gut voneinander denken (12), vier Zeugen (13), von Zunge zu Zunge weitergegeben und für geringfügig gehalten (15), man hätte schweigen müssen (16)",
+   "ref": "An-Nur 24:11–20",
+   "url": "https://quran.com/24/11-20",
+   "verified": true
+  }
+ ],
+ "blocks": [
+  {
+   "top": "Dieser Vers wird gegen Serien, Spiele und Musik zitiert.",
+   "big": "Er handelt von etwas völlig *anderem*.",
+   "visual": "none"
+  },
+  {
+   "top": "Diejenigen, die es lieben, dass sich die Unmoral verbreitet,",
+   "big": "für sie gibt es schmerzhafte *Strafe*.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Sure vierundzwanzig, Vers neunzehn.",
+   "big": "Jetzt lies die zehn Verse *davor*.",
+   "visual": "none"
+  },
+  {
+   "top": "Vers elf bis zwanzig handeln von einem einzigen Vorfall.",
+   "big": "Von einem *Gerücht*, das durch die Gemeinde ging.",
+   "visual": "none"
+  },
+  {
+   "top": "Und der Koran geht es Schritt für Schritt durch.",
+   "big": "Ihr hättet gut voneinander *denken* sollen.",
+   "visual": "none"
+  },
+  {
+   "top": "Wo sind die vier Zeugen?",
+   "big": "Ohne sie seid ihr die *Lügner*.",
+   "visual": "stat",
+   "stat": {
+    "value": "4",
+    "unit": "Zeugen",
+    "sub": "VERS 13"
+   }
+  },
+  {
+   "top": "Ihr habt es von Zunge zu Zunge weitergegeben",
+   "big": "und für *harmlos* gehalten.",
+   "visual": "none"
+  },
+  {
+   "top": "Bei Allah aber ist es schwer.",
+   "big": "Ihr hättet sagen müssen: darüber reden wir *nicht*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die Unmoral, die sich hier verbreitet,",
+   "big": "ist das *Reden* selbst.",
+   "visual": "letters",
+   "letters": {
+    "word": "FAHISCHA"
+   }
+  },
+  {
+   "top": "Und damit kehrt sich der Vers um.",
+   "big": "Wer ihn zitiert, um über andere zu *urteilen*,",
+   "visual": "none"
+  },
+  {
+   "top": "steht näher an dem, was der Vers beschreibt,",
+   "big": "als der, der *spielt*.",
+   "visual": "slider"
+  },
+  {
+   "top": "Die Gegenposition ist aber nicht schwach.",
+   "big": "Der Vers sagt allgemein: die es *lieben*.",
+   "visual": "none"
+  },
+  {
+   "top": "Ein Anlass begrenzt nicht automatisch die Regel.",
+   "big": "Anlass der Offenbarung, oder Reichweite des *Wortlauts*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Beide Lesarten sind sauber.",
+   "big": "Die eine bindet den Vers an den Anlass, die andere an den *Wortlaut*.",
+   "visual": "none"
+  },
+  {
+   "top": "Gilt der Vers nur für Verleumdung?",
+   "big": "Oder für alles, was Unmoral *normal* macht?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 24:11–20 (andere Zählung 24:12–21)"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}
