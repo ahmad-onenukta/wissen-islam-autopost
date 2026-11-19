@@ -1,0 +1,120 @@
+{
+ "id": "042",
+ "thema": "Streitfrage",
+ "title": "GTA VI: der stärkste Vorwurf steht beim falschen Vers",
+ "hook": "Der erste Vorwurf gegen GTA sechs ist der stärkste. Aber der Vers, mit dem er belegt wird, passt nicht.",
+ "appeal": "Würdest du die Szene überspringen? Oder ist ein Spiel mit Überspring-Taste schon die Antwort?",
+ "caption": "Der erste Vorwurf gegen GTA VI ist der stärkste — und er wird mit dem falschen Vers belegt.\n\nZitiert wird 22:30 (andere Zählung 22:31): „Wer die Unverletzlichkeiten Allahs hochachtet, so ist das besser für ihn bei seinem Herrn.\"\n\nLies, was davor steht. 22:27–29 sprechen von der Pilgerfahrt: vom Ruf zur Haddsch, vom Opfertier, vom Umkreisen des Hauses. Hurumat Allah meint dort die Riten. Der Vers steht am Ende dieser Passage als ihr Abschluss — nicht als Regel über Darstellungen in Medien.\n\nDer Vers, der den Vorwurf wirklich trifft, ist 4:140 (andere Zählung 4:141): „Wenn du hörst, dass Allahs Zeichen geleugnet oder verspottet werden, dann sitze nicht in dieser Gesellschaft.\"\n\nDas ist präzise. Spott ist der Grund aufzustehen.\n\nAber jetzt der Nachsatz, den fast niemand mitzitiert: „… es sei denn, sie wenden sich einem anderen Thema zu.\" Die Pflicht endet, wenn der Spott endet. Du verlässt die Szene — nicht für immer den Raum.\n\nUnd genau da teilt sich die Frage. Die eine Seite sagt: dann überspringe die Szene, der Vers ist erfüllt. Die andere sagt: ein Spiel, das du laufend zensieren musst, ist keins für dich.\n\nBeide lesen denselben Vers. Sie ziehen die Grenze an einer anderen Stelle. Dieses Reel urteilt nicht.\n\nWürdest du die Szene überspringen — oder ist eine Überspring-Taste schon die Antwort?\n\n#islam #gta6 #gta #koran #tafsir #fiqh #wissen #deutsch",
+ "first_comment": "Würdest du die Szene überspringen — oder ist eine Überspring-Taste schon die Antwort? 👇",
+ "thumb_offset": 2000,
+ "vo_full": "Der erste Vorwurf gegen GTA sechs ist der stärkste. [pause] Aber der Vers, mit dem er belegt wird, passt nicht. [pause] Zitiert wird Sure zweiundzwanzig, Vers dreißig. „Wer die Unverletzlichkeiten Allahs hochachtet.\" [pause] Lies, was davor steht. Vers siebenundzwanzig bis neunundzwanzig sprechen von der Pilgerfahrt. [pause] Vom Opfertier, vom Umkreisen des Hauses. Hurumat Allah meint dort die Riten. [pause] Der Vers verbietet keine Darstellung. Er steht am Ende einer Passage über die Haddsch. [pause] Und jetzt der Vers, der wirklich passt. Sure vier, Vers hundertvierzig. [pause] Wenn du hörst, dass über Allahs Zeichen gespottet wird, dann sitze nicht in dieser Gesellschaft. [pause] Das trifft den Vorwurf genau. Spott ist der Grund aufzustehen. [pause] Aber lies den Nachsatz. Es sei denn, sie wenden sich einem anderen Thema zu. [pause] Die Pflicht endet, wenn der Spott endet. Du verlässt die Szene, nicht für immer den Raum. [pause] Und genau hier teilt sich die Frage. Eine Szene kannst du überspringen. [pause] Die eine Seite sagt: dann überspringe sie. Die andere sagt: ein Spiel, das du laufend zensieren musst, ist keins für dich. [pause] Beide lesen denselben Vers. Sie ziehen die Grenze an einer anderen Stelle. [pause] Würdest du die Szene überspringen? Oder ist eine Überspring-Taste schon die Antwort?",
+ "sources": [
+  {
+   "claim": "22:30 steht am Ende der Haddsch-Passage 22:27–29 (Ruf zur Pilgerfahrt, Opfertier, Umkreisen des Hauses); hurumat Allah bezieht sich dort auf die Riten",
+   "ref": "Al-Haddsch 22:27–30",
+   "url": "https://quran.com/22/27-30",
+   "verified": true
+  },
+  {
+   "claim": "4:140 gebietet, nicht in einer Gesellschaft zu sitzen, in der Allahs Zeichen geleugnet oder verspottet werden — mit dem Nachsatz: es sei denn, sie wenden sich einem anderen Thema zu",
+   "ref": "An-Nisa 4:140",
+   "url": "https://quran.com/4/140",
+   "verified": true
+  }
+ ],
+ "blocks": [
+  {
+   "top": "Der erste Vorwurf gegen GTA sechs",
+   "big": "ist der *stärkste*.",
+   "visual": "none"
+  },
+  {
+   "top": "Aber der Vers, mit dem er belegt wird,",
+   "big": "passt *nicht*.",
+   "visual": "none"
+  },
+  {
+   "top": "Zitiert wird Sure zweiundzwanzig, Vers dreißig.",
+   "big": "„Wer die Unverletzlichkeiten Allahs *hochachtet*.\"",
+   "visual": "ayah"
+  },
+  {
+   "top": "Lies, was davor steht.",
+   "big": "Vers siebenundzwanzig bis neunundzwanzig sprechen von der *Pilgerfahrt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Vom Opfertier, vom Umkreisen des Hauses.",
+   "big": "Hurumat Allah meint dort die *Riten*.",
+   "visual": "letters",
+   "letters": {
+    "word": "HURUMAT"
+   }
+  },
+  {
+   "top": "Der Vers verbietet keine Darstellung.",
+   "big": "Er steht am Ende einer Passage über die *Haddsch*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und jetzt der Vers, der wirklich passt.",
+   "big": "Sure vier, Vers *hundertvierzig*.",
+   "visual": "none"
+  },
+  {
+   "top": "Wenn du hörst, dass über Allahs Zeichen gespottet wird,",
+   "big": "dann sitze *nicht* in dieser Gesellschaft.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Das trifft den Vorwurf genau.",
+   "big": "Spott ist der Grund *aufzustehen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Aber lies den Nachsatz.",
+   "big": "Es sei denn, sie wenden sich einem anderen *Thema* zu.",
+   "visual": "slider"
+  },
+  {
+   "top": "Die Pflicht endet, wenn der Spott endet.",
+   "big": "Du verlässt die *Szene*, nicht für immer den Raum.",
+   "visual": "none"
+  },
+  {
+   "top": "Und genau hier teilt sich die Frage.",
+   "big": "Eine Szene kannst du *überspringen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die eine Seite sagt: dann überspringe sie.",
+   "big": "Die andere sagt: ein Spiel, das du laufend zensieren musst, ist keins *für dich*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Beide lesen denselben Vers.",
+   "big": "Sie ziehen die Grenze an einer anderen *Stelle*.",
+   "visual": "none"
+  },
+  {
+   "top": "Würdest du die Szene überspringen?",
+   "big": "Oder ist eine Überspring-Taste schon die *Antwort*?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 22:27–30 (andere Zählung 22:28–31)",
+    "Koran 4:140 (andere Zählung 4:141)"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}
