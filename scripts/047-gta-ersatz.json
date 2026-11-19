@@ -1,0 +1,118 @@
+{
+ "id": "047",
+ "thema": "Streitfrage",
+ "title": "Der Ersatz-Hadith — und was er nicht verspricht",
+ "hook": "Du lässt nichts für Allah, außer dass Allah es dir mit etwas Besserem ersetzt. Der Satz steht öfter auf Bildern als in Büchern.",
+ "appeal": "Besser heißt nicht mehr. Hast du beim Aufhören mit einem Ersatz gerechnet — oder ihn erwartet?",
+ "caption": "„Du lässt nichts für Allah, außer dass Allah es dir mit etwas Besserem ersetzt.\" Der Satz steht unter fast jedem Aufruf, etwas aufzugeben.\n\nErst die Herkunft: Musnad Ahmad 23074. Die Kette wird von al-Arna'ut als sahih bewertet, al-Haythami sagt, die Überlieferer seien die der Sahih-Sammlungen. Der Gefährte, von dem er kommt, ist in dieser Fassung nicht namentlich genannt.\n\nAlso: stark überliefert, aber nicht aus Bukhari oder Muslim. Wer ihn zitiert, sollte das mitsagen.\n\nJetzt der Inhalt, und hier wird es präzise. Da steht „khairan minhu\" — etwas Besseres als es. Nicht mehr davon. Nicht schneller. Nicht sichtbar.\n\nDas ist der Unterschied, der in jeder Grafik verloren geht: Der Satz verspricht keinen Tausch, bei dem du am Ende reicher dastehst. Er verspricht, dass das Neue besser für dich ist — und wer das beurteilt, steht nicht in deinem Satz.\n\nDeshalb trägt er auch nicht als Verkaufsargument. „Lass es, du bekommst was Besseres\" macht aus Verzicht ein Geschäft. Im Hadith ist es keins: Du lässt etwas, weil du es für Ihn lässt. Der Ersatz ist die Folge, nicht der Grund.\n\nBesser heißt nicht mehr. Hast du beim Aufhören mit einem Ersatz gerechnet — oder ihn erwartet?\n\n#islam #gta6 #hadith #musnadahmad #verzicht #wissen #deutsch",
+ "first_comment": "Besser heißt nicht mehr. Hast du beim Aufhören mit einem Ersatz gerechnet — oder ihn erwartet? 👇",
+ "thumb_offset": 2000,
+ "vo_full": "Du lässt nichts für Allah, außer dass Allah es dir mit etwas Besserem ersetzt. [pause] Der Satz steht unter fast jedem Aufruf, etwas aufzugeben. [pause] Erst die Herkunft. Musnad Ahmad, dreiundzwanzigtausendvierundsiebzig. [pause] Die Kette wird von al-Arnaut als sahih bewertet. Die Überlieferer seien die der Sahih-Sammlungen. [pause] Aber der Gefährte, von dem er kommt, ist in dieser Fassung nicht namentlich genannt. [pause] Also stark überliefert, aber nicht aus Bukhari oder Muslim. Wer ihn zitiert, sollte das mitsagen. [pause] Jetzt der Inhalt. Und hier wird es präzise. [pause] Da steht khairan minhu. Etwas Besseres als es. [pause] Nicht mehr davon. Nicht schneller. Nicht sichtbar. [pause] Das ist der Unterschied, der in jeder Grafik verloren geht. Der Satz verspricht keinen Tausch. [pause] Er verspricht, dass das Neue besser für dich ist. Und wer das beurteilt, steht nicht in deinem Satz. [pause] Deshalb trägt er auch nicht als Verkaufsargument. Lass es, du bekommst was Besseres, macht aus Verzicht ein Geschäft. [pause] Im Hadith ist es keins. Du lässt etwas, weil du es für Ihn lässt. [pause] Der Ersatz ist die Folge, nicht der Grund. Besser heißt nicht mehr. [pause] Hast du beim Aufhören mit einem Ersatz gerechnet? Oder hast du ihn erwartet?",
+ "sources": [
+  {
+   "claim": "Musnad Ahmad 23074: „Du gibst nichts für Allah auf, außer dass Allah es dir mit etwas Besserem für dich ersetzt\"; Kette von al-Arna'ut als sahih bewertet, al-Haythami: Überlieferer der Sahih-Sammlungen; der Gefährte ist in dieser Fassung ungenannt",
+   "ref": "Musnad Ahmad 23074",
+   "url": "https://hadithunlocked.com/ahmad:23074",
+   "verified": true
+  }
+ ],
+ "blocks": [
+  {
+   "top": "Du lässt nichts für Allah,",
+   "big": "außer dass Allah es dir mit etwas Besserem *ersetzt*.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Der Satz steht unter fast jedem Aufruf,",
+   "big": "etwas *aufzugeben*.",
+   "visual": "none"
+  },
+  {
+   "top": "Erst die Herkunft.",
+   "big": "Musnad Ahmad, dreiundzwanzigtausendvierundsiebzig.",
+   "visual": "stat",
+   "stat": {
+    "value": "23074",
+    "unit": "Musnad Ahmad",
+    "sub": "KETTE SAHIH"
+   }
+  },
+  {
+   "top": "Die Kette wird von al-Arnaut als sahih bewertet.",
+   "big": "Die Überlieferer seien die der *Sahih-Sammlungen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Aber der Gefährte, von dem er kommt,",
+   "big": "ist in dieser Fassung nicht namentlich *genannt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Also stark überliefert, aber nicht aus Bukhari oder Muslim.",
+   "big": "Wer ihn zitiert, sollte das *mitsagen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Jetzt der Inhalt.",
+   "big": "Und hier wird es *präzise*.",
+   "visual": "none"
+  },
+  {
+   "top": "Da steht khairan minhu.",
+   "big": "Etwas Besseres *als es*.",
+   "visual": "letters",
+   "letters": {
+    "word": "KHAIRAN"
+   }
+  },
+  {
+   "top": "Nicht mehr davon. Nicht schneller.",
+   "big": "Nicht *sichtbar*.",
+   "visual": "none"
+  },
+  {
+   "top": "Das ist der Unterschied, der in jeder Grafik verloren geht.",
+   "big": "Der Satz verspricht keinen *Tausch*.",
+   "visual": "slider"
+  },
+  {
+   "top": "Er verspricht, dass das Neue besser für dich ist.",
+   "big": "Und wer das beurteilt, steht nicht in deinem *Satz*.",
+   "visual": "none"
+  },
+  {
+   "top": "Deshalb trägt er auch nicht als Verkaufsargument.",
+   "big": "Lass es, du bekommst was Besseres, macht aus Verzicht ein *Geschäft*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Im Hadith ist es keins.",
+   "big": "Du lässt etwas, weil du es für *Ihn* lässt.",
+   "visual": "none"
+  },
+  {
+   "top": "Der Ersatz ist die Folge, nicht der Grund.",
+   "big": "Besser heißt nicht *mehr*.",
+   "visual": "none"
+  },
+  {
+   "top": "Hast du beim Aufhören mit einem Ersatz gerechnet?",
+   "big": "Oder hast du ihn *erwartet*?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Musnad Ahmad 23074 (Kette von al-Arna'ut als sahih bewertet)"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}
