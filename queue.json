@@ -716,13 +716,25 @@
     "brand": "nurwissen",
     "file": "nurwissen-041-streitfrage.mp4",
     "publish_at": "2026-11-19T18:00:00.000Z",
-    "status": "ready",
+    "status": "posted",
     "targets": [
       "instagram",
       "youtube"
     ],
     "caption": "Ob Musik erlaubt ist, entscheidet sich an einem einzigen Hadith — und beide Seiten zitieren denselben.\n\nBukhari 5590: Es werde Menschen geben, die Unzucht, Seide, Wein und Musikinstrumente für erlaubt erklären. Das klingt eindeutig.\n\nHier trennen sich die Gelehrten: Bukhari schreibt diesen Hadith nicht wie alle anderen auf. Normalerweise steht dort „haddathana\" — uns wurde berichtet. Hier steht nur „wa qala Hischam ibn Ammar\" — und Hischam sagte. Ein Wort Unterschied, aber es bedeutet, dass die Kette an einer Stelle nicht geschlossen ist. Der Fachbegriff: muallaq, aufgehängt.\n\nIbn Hazm zog daraus den Schluss und schrieb in al-Muhalla, zu diesem Thema sei nichts Authentisches überliefert. Ibn Hadschar widersprach: Auch wenn Bukhari es nicht selbst gehört habe, andere hätten es von Hischam gehört — die Kette sei geschlossen.\n\nUnd das Detail, das fast nie erwähnt wird: Dieser Hadith steht nicht in einem Kapitel über Musik. Er steht im Buch der Getränke, im Kapitel über den, der Alkohol unter anderem Namen erlaubt.\n\nBeide Seiten haben richtig gelesen. Sie bewerten dieselbe Lücke unterschiedlich. Dieses Reel urteilt nicht, es zeigt den Streit.\n\nWas wiegt für dich schwerer: ein Hadith in Bukhari, oder eine Kette, die an einer Stelle offen ist?\n\n#islam #musik #hadith #bukhari #fiqh #wissen #deutsch",
     "first_comment": "Was wiegt für dich schwerer: ein Hadith in Bukhari, oder eine Kette, die an einer Stelle offen ist? 👇",
-    "thumb_offset": 2000
+    "thumb_offset": 2000,
+    "results": {
+      "instagram": {
+        "media_id": "17908314675355394"
+      },
+      "youtube": {
+        "video_id": "bcDSC0uNeP8"
+      }
+    },
+    "media_id": "17908314675355394",
+    "first_comment_id": "18118163240236427",
+    "youtube_id": "bcDSC0uNeP8",
+    "posted_at": "2026-11-19T19:20:55.054Z"
   }
 ]
