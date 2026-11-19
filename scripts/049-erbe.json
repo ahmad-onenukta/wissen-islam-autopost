@@ -1,0 +1,116 @@
+{
+ "id": "049",
+ "thema": "Geld & Alltag",
+ "serie": "Dein Geld — Teil 2",
+ "title": "Erbe: derselbe Vers sagt doppelt — und gleich",
+ "hook": "Es gibt eine Zahl, an der die meisten hängenbleiben. Der Sohn bekommt das Doppelte.",
+ "appeal": "Kannte dieser Vers für dich nur die eine Zahl? Oder auch das Sechstel?",
+ "caption": "DEIN GELD — TEIL 2 VON 8\n\nEs gibt eine Zahl, an der die meisten hängenbleiben: Der Sohn bekommt das Doppelte.\n\n„Dem Mann steht doppelt so viel zu wie der Frau.\" (4:11, andere Zählung 4:12) Der Satz steht da. Er wird hier nicht wegerklärt.\n\nAber lies denselben Vers weiter — er regelt noch einen anderen Fall. „Wenn der Verstorbene Kinder hinterlässt, bekommt jeder Elternteil ein Sechstel.\"\n\nJeder. Mutter und Vater. Derselbe Anteil. Im selben Vers, der „doppelt\" sagt, steht ein Fall mit gleichen Anteilen.\n\nDamit fällt die einfachste Erklärung weg: Das Verhältnis folgt nicht dem Geschlecht. Sonst müsste der Vater mehr bekommen als die Mutter — er bekommt es nicht.\n\nDie klassische Begründung lautet Unterhaltspflicht: Wer für andere zahlen muss, bekommt mehr. Bei den Eltern muss keiner für den anderen zahlen — also gleicher Anteil. Die Regel ist in sich stimmig.\n\nDie Gegenposition sagt: Das trägt heute nicht mehr. Wenn die Tochter die Eltern pflegt und der Sohn nicht, stimmt die Rechnung nicht. Die Erwiderung darauf: Dann ändert sich die Pflicht, nicht der Vers.\n\nBeide lesen denselben Vers. Sie streiten über seinen Grund.\n\nKannte dieser Vers für dich nur die eine Zahl? Oder auch das Sechstel?\n\n#islam #geld #erbe #erbrecht #koran #fiqh #wissen #deutsch",
+ "first_comment": "Kannte dieser Vers für dich nur die eine Zahl — oder auch das Sechstel? 👇",
+ "thumb_offset": 2000,
+ "vo_full": "Es gibt eine Zahl, an der die meisten hängenbleiben. Der Sohn bekommt das Doppelte. [pause] Sure vier, Vers elf. Dem Mann steht doppelt so viel zu wie der Frau. [pause] Der Satz steht da. Er wird hier nicht wegerklärt. [pause] Aber lies denselben Vers weiter. Denn er regelt noch einen anderen Fall. [pause] Wenn der Verstorbene Kinder hinterlässt, bekommt jeder Elternteil ein Sechstel. [pause] Jeder. Mutter und Vater. Derselbe Anteil. [pause] Im selben Vers, der doppelt sagt, steht ein Fall mit gleichen Anteilen. [pause] Damit fällt die einfachste Erklärung weg. Das Verhältnis folgt nicht dem Geschlecht. [pause] Sonst müsste der Vater mehr bekommen als die Mutter. Er bekommt es nicht. [pause] Die klassische Begründung lautet Unterhaltspflicht. Wer für andere zahlen muss, bekommt mehr. [pause] Bei den Eltern muss keiner für den anderen zahlen. Also gleicher Anteil. [pause] Die Gegenposition sagt: das trägt heute nicht mehr. Wenn die Tochter die Eltern pflegt, stimmt die Rechnung nicht. [pause] Und die Erwiderung darauf: dann ändert sich die Pflicht, nicht der Vers. [pause] Beide lesen denselben Vers. Sie streiten über seinen Grund. [pause] Kannte dieser Vers für dich nur die eine Zahl? Oder auch das Sechstel?",
+ "sources": [
+  {
+   "claim": "4:11 enthält beides: „dem Mann steht doppelt so viel zu wie der Frau\" und „jedem Elternteil ein Sechstel, wenn der Verstorbene Kinder hinterlässt\" — im zweiten Fall erhalten Mutter und Vater denselben Anteil",
+   "ref": "An-Nisa 4:11",
+   "url": "https://quran.com/4/11",
+   "verified": true
+  }
+ ],
+ "blocks": [
+  {
+   "top": "Es gibt eine Zahl, an der die meisten hängenbleiben.",
+   "big": "Der Sohn bekommt das *Doppelte*.",
+   "visual": "none"
+  },
+  {
+   "top": "Sure vier, Vers elf.",
+   "big": "Dem Mann steht doppelt so viel zu wie der *Frau*.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Der Satz steht da.",
+   "big": "Er wird hier nicht *wegerklärt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Aber lies denselben Vers weiter.",
+   "big": "Denn er regelt noch einen anderen *Fall*.",
+   "visual": "none"
+  },
+  {
+   "top": "Wenn der Verstorbene Kinder hinterlässt,",
+   "big": "bekommt jeder Elternteil ein *Sechstel*.",
+   "visual": "stat",
+   "stat": {
+    "value": "1/6",
+    "unit": "je Elternteil",
+    "sub": "VERS 4:11"
+   }
+  },
+  {
+   "top": "Jeder. Mutter und Vater.",
+   "big": "Derselbe *Anteil*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Im selben Vers, der doppelt sagt,",
+   "big": "steht ein Fall mit gleichen *Anteilen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Damit fällt die einfachste Erklärung weg.",
+   "big": "Das Verhältnis folgt nicht dem *Geschlecht*.",
+   "visual": "slider"
+  },
+  {
+   "top": "Sonst müsste der Vater mehr bekommen als die Mutter.",
+   "big": "Er bekommt es *nicht*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die klassische Begründung lautet Unterhaltspflicht.",
+   "big": "Wer für andere zahlen muss, bekommt *mehr*.",
+   "visual": "none"
+  },
+  {
+   "top": "Bei den Eltern muss keiner für den anderen zahlen.",
+   "big": "Also gleicher *Anteil*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die Gegenposition sagt: das trägt heute nicht mehr.",
+   "big": "Wenn die Tochter die Eltern pflegt, stimmt die Rechnung *nicht*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und die Erwiderung darauf:",
+   "big": "dann ändert sich die Pflicht, nicht der *Vers*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Beide lesen denselben Vers.",
+   "big": "Sie streiten über seinen *Grund*.",
+   "visual": "none"
+  },
+  {
+   "top": "Kannte dieser Vers für dich nur die eine Zahl?",
+   "big": "Oder auch das *Sechstel*?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 4:11 (andere Zählung 4:12)"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}
