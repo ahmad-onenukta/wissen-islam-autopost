@@ -1,0 +1,110 @@
+{
+ "id": "043",
+ "thema": "Streitfrage",
+ "title": "Glücksspiel: der Hadith bestraft schon das Angebot",
+ "hook": "Es gibt einen Hadith, der schon das Angebot zum Glücksspiel bestraft. Nicht das Spielen.",
+ "appeal": "Ist ein Casino ohne Einsatz ein Casino? Der fehlende Einsatz oder die Gewohnheit — was wiegt schwerer?",
+ "caption": "Es gibt einen Hadith, der nicht das Glücksspiel bestraft, sondern den Satz davor.\n\nBukhari 4860: „Wer zu seinem Gefährten sagt: ‚Komm, lass uns spielen' — der soll Almosen geben.\"\n\nNicht wer spielt. Wer es vorschlägt. Und beachte, womit der Satz zusammensteht: mit einem Schwur bei al-Lat und al-Uzza. Zwei Dinge, die der Zunge entgleiten — und beide kosten eine Sühne.\n\nDaraus folgt das Argument gegen das Spiel: Wenn schon das Wort zählt, dann zählt die Simulation.\n\nDie Gegenposition liest denselben Satz genauer. Er spricht von deinem Gefährten: zwei Menschen, ein Angebot, echtes Geld. Im Spiel fehlt der Zweite, und es wechselt kein Vermögen den Besitzer — der Chip ist eine Zahl in einer Datei.\n\nDagegen steht ein einfacher Einwand: Die Sühne gilt dem Wort, nicht dem Gewinn. Wenn der Gewinn nie der Punkt war, hilft es nicht, dass er fehlt.\n\nDie eigentliche Frage ist also nicht, ob Geld fließt. Sie ist, ob du etwas übst.\n\nDieses Reel urteilt nicht, es zeigt, wo die Grenze gezogen wird.\n\nWas wiegt für dich schwerer: der fehlende Einsatz, oder die Gewohnheit?\n\n#islam #gta6 #gta #gluecksspiel #maysir #hadith #bukhari #deutsch",
+ "first_comment": "Was wiegt für dich schwerer: der fehlende Einsatz, oder die Gewohnheit? 👇",
+ "thumb_offset": 2000,
+ "vo_full": "Es gibt einen Hadith, der nicht das Glücksspiel bestraft, sondern den Satz davor. [pause] Bukhari viertausendachthundertsechzig. Wer zu seinem Gefährten sagt: Komm, lass uns spielen. [pause] Der soll Almosen geben. Nicht wer spielt. Wer es vorschlägt. [pause] Und beachte, womit der Satz zusammensteht. Mit einem Schwur bei den Götzen. [pause] Zwei Dinge, die der Zunge entgleiten, und beide kosten eine Sühne. [pause] Daraus folgt das Argument gegen das Spiel. Wenn schon das Wort zählt, dann zählt die Simulation. [pause] Die Gegenposition liest denselben Satz genauer. Er spricht von deinem Gefährten. [pause] Zwei Menschen, ein Angebot, echtes Geld. Im Spiel fehlt der Zweite. [pause] Und es wechselt kein Vermögen den Besitzer. Der Chip ist eine Zahl. [pause] Dagegen steht ein einfacher Einwand. Die Sühne gilt dem Wort, nicht dem Gewinn. [pause] Wenn der Gewinn nie der Punkt war, hilft es nicht, dass er fehlt. [pause] Die eigentliche Frage ist also nicht, ob Geld fließt. Sie ist, ob du etwas übst. [pause] Die eine Seite sagt: ohne Einsatz ist es ein Bild. Die andere sagt: es ist eine Übung. [pause] Was wiegt für dich schwerer? Der fehlende Einsatz, oder die Gewohnheit?",
+ "sources": [
+  {
+   "claim": "Bukhari 4860: Wer bei al-Lat und al-Uzza schwört, soll das Glaubensbekenntnis sprechen; wer zu seinem Gefährten sagt „Komm, lass uns spielen\", soll Almosen geben",
+   "ref": "Sahih al-Bukhari 4860, Buch 65, Hadith 381",
+   "url": "https://sunnah.com/bukhari:4860",
+   "verified": true
+  }
+ ],
+ "blocks": [
+  {
+   "top": "Es gibt einen Hadith, der nicht das Glücksspiel bestraft,",
+   "big": "sondern den *Satz davor*.",
+   "visual": "none"
+  },
+  {
+   "top": "Bukhari viertausendachthundertsechzig.",
+   "big": "Wer zu seinem Gefährten sagt: Komm, lass uns *spielen*.",
+   "visual": "stat",
+   "stat": {
+    "value": "4860",
+    "unit": "Bukhari",
+    "sub": "BUCH 65"
+   }
+  },
+  {
+   "top": "Der soll Almosen geben.",
+   "big": "Nicht wer spielt. Wer es *vorschlägt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und beachte, womit der Satz zusammensteht.",
+   "big": "Mit einem Schwur bei den *Götzen*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Zwei Dinge, die der Zunge entgleiten,",
+   "big": "und beide kosten eine *Sühne*.",
+   "visual": "none"
+  },
+  {
+   "top": "Daraus folgt das Argument gegen das Spiel.",
+   "big": "Wenn schon das Wort zählt, dann zählt die *Simulation*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die Gegenposition liest denselben Satz genauer.",
+   "big": "Er spricht von deinem *Gefährten*.",
+   "visual": "none"
+  },
+  {
+   "top": "Zwei Menschen, ein Angebot, echtes Geld.",
+   "big": "Im Spiel fehlt der *Zweite*.",
+   "visual": "none"
+  },
+  {
+   "top": "Und es wechselt kein Vermögen den Besitzer.",
+   "big": "Der Chip ist eine *Zahl*.",
+   "visual": "none"
+  },
+  {
+   "top": "Dagegen steht ein einfacher Einwand.",
+   "big": "Die Sühne gilt dem Wort, nicht dem *Gewinn*.",
+   "visual": "slider"
+  },
+  {
+   "top": "Wenn der Gewinn nie der Punkt war,",
+   "big": "hilft es nicht, dass er *fehlt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die eigentliche Frage ist also nicht, ob Geld fließt.",
+   "big": "Sie ist, ob du etwas *übst*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die eine Seite sagt: ohne Einsatz ist es ein Bild.",
+   "big": "Die andere sagt: es ist eine *Übung*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Was wiegt für dich schwerer?",
+   "big": "Der fehlende Einsatz, oder die *Gewohnheit*?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih al-Bukhari 4860, Buch 65"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}
