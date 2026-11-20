@@ -483,5 +483,20 @@
         "video_id": "ObrNDIWD7n8"
       }
     }
+  },
+  {
+    "id": "047",
+    "brand": "nurwissen",
+    "file": "nurwissen-047-streitfrage.mp4",
+    "media_id": "18010194677828804",
+    "posted_at": "2026-11-20T18:57:16.803Z",
+    "results": {
+      "instagram": {
+        "media_id": "18010194677828804"
+      },
+      "youtube": {
+        "video_id": "scO9Fvfset0"
+      }
+    }
   }
 ]
