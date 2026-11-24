@@ -1,0 +1,93 @@
+{
+ "id": "051",
+ "thema": "Streitfrage",
+ "title": "Ein Gruß macht dich zum Schuldner",
+ "hook": "Jemand grüßt dich. Ab diesem Moment schuldest du etwas zurück.",
+ "appeal": "Wen hast du heute nicht zurückgegrüßt — und war das eine Entscheidung?",
+ "caption": "Jemand grüßt dich. Ab diesem Moment schuldest du etwas zurück.\n\n„Und wenn ihr mit einem Gruß begrüßt werdet, so grüßt mit einem besseren zurück — oder mit dem gleichen.\" (4:86, andere Zählung 4:87)\n\nAchte auf die zwei Möglichkeiten: besser, oder gleich. Eine dritte gibt es nicht. Weniger zurückgeben ist nicht vorgesehen — und Ignorieren steht da erst gar nicht. Der Vers kennt diese Option nicht.\n\nDas ist keine Höflichkeitsregel. Das ist ein Gebot mit Untergrenze.\n\nJetzt die Frage, über die gestritten wird. Der Vers sagt „Tahiyya\" — das heißt Gruß, allgemein. Die eine Seite liest darin den Salam: dann gilt der Vers unter Muslimen. Die andere liest jeden Gruß: dann gilt er auch für das Hallo im Treppenhaus, für den Kollegen, der dir morgens zunickt — und für die Nachricht, die seit zwei Tagen ungelesen bei dir liegt.\n\nBeide lesen dasselbe Wort. Sie ziehen die Grenze an einer anderen Stelle.\n\nWen hast du heute nicht zurückgegrüßt? Und war das eine Entscheidung?\n\n#islam #koran #adab #gruss #alltag #muslim #wissen #deutsch",
+ "first_comment": "Wen hast du heute nicht zurückgegrüßt — und war das eine Entscheidung? 👇",
+ "thumb_offset": 1500,
+ "vo_full": "Jemand grüßt dich. Ab diesem Moment schuldest du etwas zurück. [pause] Wenn ihr mit einem Gruß begrüßt werdet, so grüßt mit einem besseren zurück. Oder mit dem gleichen. [pause] Sure vier, Vers sechsundachtzig. Achte auf die zwei Möglichkeiten. [pause] Besser. Oder gleich. Eine dritte gibt es nicht. [pause] Weniger zurückgeben ist nicht vorgesehen. Und Ignorieren steht da erst gar nicht. [pause] Das ist keine Höflichkeitsregel. Das ist ein Gebot mit Untergrenze. [pause] Jetzt die Frage, über die gestritten wird. Der Vers sagt Tahiyya. Das heißt Gruß, allgemein. [pause] Die eine Seite liest darin den Salam. Dann gilt der Vers unter Muslimen. [pause] Die andere liest jeden Gruß. Dann gilt er auch für das Hallo im Treppenhaus. [pause] Und für die Nachricht, die seit zwei Tagen ungelesen bei dir liegt. [pause] Wen hast du heute nicht zurückgegrüßt? Und war das eine Entscheidung?",
+ "sources": [
+  {
+   "claim": "4:86 gebietet, einen Gruß mit einem besseren oder dem gleichen zu erwidern; das Wort ist tahiyya (Gruß allgemein), eine Option, weniger oder nichts zu erwidern, nennt der Vers nicht",
+   "ref": "An-Nisa 4:86",
+   "url": "https://quran.com/4/86",
+   "verified": true
+  }
+ ],
+ "blocks": [
+  {
+   "top": "Jemand grüßt dich.",
+   "big": "Ab diesem Moment schuldest du etwas *zurück*.",
+   "visual": "none"
+  },
+  {
+   "top": "Wenn ihr mit einem Gruß begrüßt werdet, so grüßt mit einem besseren zurück.",
+   "big": "Oder mit dem *gleichen*.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Sure vier, Vers sechsundachtzig.",
+   "big": "Achte auf die zwei *Möglichkeiten*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Besser. Oder gleich.",
+   "big": "Eine dritte gibt es *nicht*.",
+   "visual": "slider"
+  },
+  {
+   "top": "Weniger zurückgeben ist nicht vorgesehen.",
+   "big": "Und Ignorieren steht da erst gar *nicht*.",
+   "visual": "none"
+  },
+  {
+   "top": "Das ist keine Höflichkeitsregel.",
+   "big": "Das ist ein Gebot mit *Untergrenze*.",
+   "visual": "none"
+  },
+  {
+   "top": "Jetzt die Frage, über die gestritten wird.",
+   "big": "Der Vers sagt Tahiyya. Das heißt Gruß, *allgemein*.",
+   "visual": "letters",
+   "letters": {
+    "word": "TAHIYYA"
+   }
+  },
+  {
+   "top": "Die eine Seite liest darin den Salam.",
+   "big": "Dann gilt der Vers unter *Muslimen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die andere liest jeden Gruß.",
+   "big": "Dann gilt er auch für das Hallo im *Treppenhaus*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Und für die Nachricht,",
+   "big": "die seit zwei Tagen ungelesen bei dir *liegt*.",
+   "visual": "none"
+  },
+  {
+   "top": "Wen hast du heute nicht zurückgegrüßt?",
+   "big": "Und war das eine *Entscheidung*?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 4:86 (andere Zählung 4:87)"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}
