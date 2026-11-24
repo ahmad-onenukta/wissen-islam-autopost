@@ -1,0 +1,85 @@
+{
+ "id": "052",
+ "thema": "Koran unter Beschuss",
+ "title": "Der Schwertvers steht zwischen einer Ausnahme und einem Schutzbefehl",
+ "hook": "Dieser Vers steht auf Plakaten gegen den Islam. Und in den Schriften von Terroristen. Derselbe Vers.",
+ "appeal": "Wie oft hast du diesen Vers gehört — und wie oft den Vers danach?",
+ "caption": "Dieser Vers steht auf Plakaten gegen den Islam. Und in den Schriften von Terroristen. Derselbe Vers.\n\n„Tötet die Götzendiener, wo immer ihr sie findet.\" (9:5, andere Zählung 9:6)\n\nBeide Seiten zitieren ihn genau so. Und beide hören an derselben Stelle auf — denn der Vers ist da nicht zu Ende. Er endet mit: „Wenn sie aber umkehren, das Gebet verrichten und die Abgabe leisten, dann lasst sie frei.\"\n\nEin Satz weiter steht ein zweiter Befehl: „Und wenn einer der Götzendiener dich um Schutz bittet, dann gewähre ihm Schutz … und bring ihn dann an einen Ort, wo er sicher ist.\" (9:6)\n\nLies das nebeneinander. Töten — und einen Satz später Geleitschutz für den, der danach fragt.\n\nUnd davor, in 9:4, steht die Ausnahme: Wer seinen Vertrag gehalten und sich nicht gegen euch gestellt hat, mit dem gilt der Vertrag bis zu seinem Ende.\n\nDer Vers steht also zwischen einer Ausnahme und einem Schutzbefehl. Wer ihn allein zitiert, zitiert ein Fragment — egal zu welchem Zweck.\n\nDie eine Seite liest den Satz. Die andere liest die Seite. Dieses Reel urteilt nicht, aber es zeigt, wo das Zitat abgeschnitten wird.\n\nWie oft hast du diesen Vers schon gehört? Und wie oft den Vers danach?\n\n#islam #koran #tafsir #kontext #kritik #wissen #muslim #deutsch",
+ "first_comment": "Wie oft hast du diesen Vers gehört — und wie oft den Vers danach? 👇",
+ "thumb_offset": 1500,
+ "vo_full": "Dieser Vers steht auf Plakaten gegen den Islam. Und in den Schriften von Terroristen. Derselbe Vers. [pause] Tötet die Götzendiener, wo immer ihr sie findet. Sure neun, Vers fünf. [pause] Beide Seiten hören an derselben Stelle auf. Denn da ist der Vers nicht zu Ende. [pause] Wenn sie umkehren und beten, dann lasst sie frei. [pause] Und ein Satz weiter steht ein zweiter Befehl. [pause] Wenn einer von ihnen dich um Schutz bittet, dann gewähre ihn. Und bring ihn an einen Ort, wo er sicher ist. [pause] Lies das nebeneinander. Töten, und einen Satz später Geleitschutz. [pause] Und davor steht die Ausnahme. Wer seinen Vertrag gehalten hat, mit dem gilt er bis zum Ende. [pause] Die eine Seite liest den Satz. Die andere liest die Seite. [pause] Wie oft hast du diesen Vers schon gehört? Und wie oft den Vers danach?",
+ "sources": [
+  {
+   "claim": "9:5 beginnt mit dem Tötungsbefehl gegen die Götzendiener und endet mit „wenn sie umkehren, beten und die Abgabe leisten, dann lasst sie frei\"; 9:6 gebietet, einem, der um Schutz bittet, Schutz zu gewähren und ihn an einen sicheren Ort zu bringen; 9:4 nimmt die aus, die ihren Vertrag gehalten haben",
+   "ref": "At-Tauba 9:4–6",
+   "url": "https://quran.com/9/1-7",
+   "verified": true
+  }
+ ],
+ "blocks": [
+  {
+   "top": "Dieser Vers steht auf Plakaten gegen den Islam.",
+   "big": "Und in den Schriften von Terroristen. Derselbe *Vers*.",
+   "visual": "none"
+  },
+  {
+   "top": "Tötet die Götzendiener, wo immer ihr sie findet.",
+   "big": "Sure neun, Vers *fünf*.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Beide Seiten hören an derselben Stelle auf.",
+   "big": "Denn da ist der Vers nicht zu *Ende*.",
+   "visual": "none"
+  },
+  {
+   "top": "Wenn sie umkehren und beten,",
+   "big": "dann lasst sie *frei*.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Und ein Satz weiter",
+   "big": "steht ein zweiter *Befehl*.",
+   "visual": "none"
+  },
+  {
+   "top": "Wenn einer von ihnen dich um Schutz bittet, dann gewähre ihn.",
+   "big": "Und bring ihn an einen Ort, wo er *sicher* ist.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Lies das nebeneinander.",
+   "big": "Töten, und einen Satz später *Geleitschutz*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Und davor steht die Ausnahme.",
+   "big": "Wer seinen Vertrag gehalten hat, mit dem gilt er bis zum *Ende*.",
+   "visual": "slider"
+  },
+  {
+   "top": "Die eine Seite liest den Satz.",
+   "big": "Die andere liest die *Seite*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Wie oft hast du diesen Vers schon gehört?",
+   "big": "Und wie oft den Vers *danach*?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Koran 9:4–6 (andere Zählung 9:5–7)"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}
