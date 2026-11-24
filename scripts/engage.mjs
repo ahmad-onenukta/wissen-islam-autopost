@@ -143,6 +143,14 @@ try {
       const r = await api(`${m.id}/insights`, { metric: "views,reach,likes,comments,shares,saved,total_interactions" });
       for (const d of r.data || []) ins[d.name] = d.values?.[0]?.value ?? d.total_value?.value ?? null;
     } catch (e) { ins.error = e.message.slice(0, 120); }
+    // Haltezeit getrennt abfragen. Ohne sie ist jede Aussage ueber Hooks
+    // geraten: ein schwacher Hook und eine gedrosselte Reichweite sehen in
+    // den Views gleich aus, in der Haltezeit nicht. Eigener Aufruf, damit ein
+    // nicht unterstuetzter Metrikname die uebrigen Insights nicht mitreisst.
+    try {
+      const w = await api(`${m.id}/insights`, { metric: "ig_reels_avg_watch_time,ig_reels_video_view_total_time" });
+      for (const d of w.data || []) ins[d.name] = d.values?.[0]?.value ?? d.total_value?.value ?? null;
+    } catch (e) { ins.watch_error = String(e.message).slice(0, 140); }
     reels.push({ id: m.id, permalink: m.permalink, posted: m.timestamp, caption: (m.caption || "").slice(0, 60), ...ins });
   }
   stats.account = { ...acc, at: now };
