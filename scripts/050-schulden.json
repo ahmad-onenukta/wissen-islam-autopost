@@ -1,0 +1,95 @@
+{
+ "id": "050",
+ "thema": "Streitfrage",
+ "title": "Die eine Sünde, die selbst dem Märtyrer bleibt",
+ "hook": "Es gibt eine Sünde, die selbst der Märtyrer nicht loswird.",
+ "appeal": "Wem schuldest du noch etwas — und wie lange schon?",
+ "caption": "Es gibt eine Sünde, die selbst der Märtyrer nicht loswird.\n\n„Dem Märtyrer wird jede Sünde vergeben — außer der Schuld.\" (Sahih Muslim 1886a)\n\nLies das nochmal. Jede Sünde. Der höchste Rang, den es gibt, und eine Ausnahme bleibt stehen.\n\nWarum gerade Geld? Weil es nicht Allahs Anspruch ist, sondern der eines Menschen. Was zwischen dir und Allah steht, kann Er vergeben. Was du einem Menschen schuldest, kann nur dieser Mensch erlassen.\n\nDazu passt, wo der Satz steht: nicht in einem Kapitel über Sünde, sondern im Buch der Regierung — bei den Rechten, die Menschen gegeneinander haben.\n\nUnd hier teilt sich die Frage. Die eine Seite liest „Schuld\" wörtlich: offenes Geld, ein Kredit, eine Rechnung. Die andere liest sie weiter: jedes Recht eines Menschen, das du nicht erfüllt hast. Dann wären auch das geliehene Ladekabel und die nie zurückgezahlten zwanzig Euro gemeint.\n\nDieses Reel urteilt nicht. Aber die Ausnahme steht im Text, und sie ist die einzige.\n\nWem schuldest du noch etwas? Und wie lange schon?\n\n#islam #hadith #muslim #schulden #geld #rechte #wissen #deutsch",
+ "first_comment": "Wem schuldest du noch etwas — und wie lange schon? 👇",
+ "thumb_offset": 1500,
+ "vo_full": "Es gibt eine Sünde, die selbst der Märtyrer nicht loswird. [pause] Dem Märtyrer wird jede Sünde vergeben. Außer der Schuld. [pause] Lies das nochmal. Jede Sünde. [pause] Der höchste Rang, den es gibt, und eine Ausnahme bleibt stehen. [pause] Warum gerade Geld? Weil es nicht Allahs Anspruch ist, sondern der eines Menschen. [pause] Was zwischen dir und Allah steht, kann Er vergeben. Was du einem Menschen schuldest, kann nur dieser Mensch erlassen. [pause] Dazu passt, wo der Satz steht. Nicht bei den Sünden, sondern bei den Rechten der Menschen. [pause] Die eine Seite liest Schuld wörtlich. Offenes Geld, ein Kredit, eine Rechnung. [pause] Die andere liest sie weiter. Jedes Recht eines Menschen, das du nicht erfüllt hast. [pause] Dann wären auch das geliehene Ladekabel und die nie zurückgezahlten zwanzig Euro gemeint. [pause] Wem schuldest du noch etwas? Und wie lange schon?",
+ "sources": [
+  {
+   "claim": "Muslim 1886a: „Dem Märtyrer wird jede Sünde vergeben außer der Schuld\" — überliefert von Abdullah ibn Amr ibn al-As, im Buch der Regierung, Kapitel 32",
+   "ref": "Sahih Muslim 1886a",
+   "url": "https://hadithunlocked.com/muslim:1886a",
+   "verified": true
+  }
+ ],
+ "blocks": [
+  {
+   "top": "Es gibt eine Sünde,",
+   "big": "die selbst der Märtyrer nicht *loswird*.",
+   "visual": "none"
+  },
+  {
+   "top": "Dem Märtyrer wird jede Sünde vergeben.",
+   "big": "Außer der *Schuld*.",
+   "visual": "ayah"
+  },
+  {
+   "top": "Lies das nochmal.",
+   "big": "Jede *Sünde*.",
+   "visual": "none"
+  },
+  {
+   "top": "Der höchste Rang, den es gibt,",
+   "big": "und eine Ausnahme bleibt *stehen*.",
+   "visual": "slider"
+  },
+  {
+   "top": "Warum gerade Geld?",
+   "big": "Weil es nicht Allahs Anspruch ist, sondern der eines *Menschen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Was zwischen dir und Allah steht, kann Er vergeben.",
+   "big": "Was du einem Menschen schuldest, kann nur dieser Mensch *erlassen*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Dazu passt, wo der Satz steht.",
+   "big": "Nicht bei den Sünden, sondern bei den Rechten der *Menschen*.",
+   "visual": "stat",
+   "stat": {
+    "value": "1886",
+    "unit": "Muslim",
+    "sub": "BUCH DER REGIERUNG"
+   }
+  },
+  {
+   "top": "Die eine Seite liest Schuld wörtlich.",
+   "big": "Offenes Geld, ein Kredit, eine *Rechnung*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die andere liest sie weiter.",
+   "big": "Jedes Recht eines Menschen, das du nicht erfüllt *hast*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Dann wären auch das geliehene Ladekabel",
+   "big": "und die nie zurückgezahlten zwanzig Euro *gemeint*.",
+   "visual": "none"
+  },
+  {
+   "top": "Wem schuldest du noch etwas?",
+   "big": "Und wie lange *schon*?",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Sahih Muslim 1886a (Buch der Regierung, Kap. 32)"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}
