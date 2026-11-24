@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T18:46:05.884Z",
+  "generated_at": "2026-11-24T20:51:22.812Z",
   "brands": [
     {
       "slug": "nurwissen",
@@ -23,30 +23,30 @@
       "followers": 1369,
       "counts": {
         "script": 1,
-        "checked": 0,
+        "checked": 1,
         "voice": 0,
         "video": 0,
-        "queued": 0,
+        "queued": 1,
         "paused": 0,
         "live": 42,
         "archive": 0
       },
-      "runway_days": 0,
-      "next": null,
-      "views_total": 53961,
-      "avg_views": 2158,
+      "runway_days": 1,
+      "next": "2026-11-25T11:00:00.000Z",
+      "views_total": 53998,
+      "avg_views": 2160,
       "engagement_rate": 7.9
     }
   ],
   "pipeline": [
     {
       "brand": "nurwissen",
-      "id": "043",
-      "title": "Glücksspiel: der Hadith bestraft schon das Angebot",
+      "id": "050",
+      "title": "Die eine Sünde, die selbst dem Märtyrer bleibt",
       "thema": "Streitfrage",
-      "hook": "Es gibt einen Hadith, der schon das Angebot zum Glücksspiel bestraft. Nicht das Spielen.",
+      "hook": "Es gibt eine Sünde, die selbst der Märtyrer nicht loswird.",
       "voice": "robert",
-      "stage": "live",
+      "stage": "queued",
       "fact_check": "ok",
       "sources": {
         "total": 1,
@@ -54,103 +54,37 @@
       },
       "source_list": [
         {
-          "claim": "Bukhari 4860: Wer bei al-Lat und al-Uzza schwört, soll das Glaubensbekenntnis sprechen; wer zu seinem Gefährten sagt „Komm, lass uns spielen\", soll Almosen geben",
-          "ref": "Sahih al-Bukhari 4860, Buch 65, Hadith 381",
-          "url": "https://sunnah.com/bukhari:4860",
+          "claim": "Muslim 1886a: „Dem Märtyrer wird jede Sünde vergeben außer der Schuld\" — überliefert von Abdullah ibn Amr ibn al-As, im Buch der Regierung, Kapitel 32",
+          "ref": "Sahih Muslim 1886a",
+          "url": "https://hadithunlocked.com/muslim:1886a",
           "verified": true
         }
       ],
-      "file": "scripts/043-gta-gluecksspiel.json",
-      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/043-gta-gluecksspiel.json",
-      "vo_at": "2026-11-20T12:29:03.155Z",
+      "file": "scripts/050-schulden.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/050-schulden.json",
+      "vo_at": "2026-11-24T18:54:15.860Z",
       "archived": false,
-      "blocks": 15,
+      "blocks": 12,
       "dauer": null,
-      "publish_at": "2026-11-21T18:00:00.000Z",
+      "publish_at": "2026-11-25T11:00:00.000Z",
       "targets": [
         "instagram",
         "youtube"
       ],
-      "results": {
-        "instagram": {
-          "media_id": "18112279132908263"
-        },
-        "youtube": {
-          "video_id": "aOtg_LTixnk"
-        }
-      },
-      "media_id": "18112279132908263",
-      "permalink": "https://www.instagram.com/reel/DgA0v_WlS5N/",
-      "metrics": {
-        "views": 215,
-        "reach": 166,
-        "likes": 3,
-        "comments": 1,
-        "shares": 0,
-        "saved": 0
-      },
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
       "order_rank": 0
     },
     {
       "brand": "nurwissen",
-      "id": "045",
-      "title": "24:19 — der Vers über Unmoral handelt von einem Gerücht",
-      "thema": "Koran unter Beschuss",
-      "hook": "Dieser Vers wird gegen Serien, Spiele und Musik zitiert. Er handelt von etwas völlig anderem.",
-      "voice": "robert",
-      "stage": "live",
-      "fact_check": "ok",
-      "sources": {
-        "total": 1,
-        "verified": 1
-      },
-      "source_list": [
-        {
-          "claim": "24:19 steht in der Passage 24:11–20, die einen einzigen Verleumdungsvorfall behandelt: gut voneinander denken (12), vier Zeugen (13), von Zunge zu Zunge weitergegeben und für geringfügig gehalten (15), man hätte schweigen müssen (16)",
-          "ref": "An-Nur 24:11–20",
-          "url": "https://quran.com/24/11-20",
-          "verified": true
-        }
-      ],
-      "file": "scripts/045-gta-unmoral.json",
-      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/045-gta-unmoral.json",
-      "vo_at": "2026-11-20T12:33:39.681Z",
-      "archived": false,
-      "blocks": 16,
-      "dauer": null,
-      "publish_at": "2026-11-22T11:00:00.000Z",
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": {
-        "instagram": {
-          "media_id": "18211653349371162"
-        },
-        "youtube": {
-          "video_id": "A98tAgFL2E0"
-        }
-      },
-      "media_id": "18211653349371162",
-      "permalink": "https://www.instagram.com/reel/DgCysyPD92C/",
-      "metrics": {
-        "views": 227,
-        "reach": 170,
-        "likes": 0,
-        "comments": 1,
-        "shares": 0,
-        "saved": 1
-      },
-      "order_rank": 1
-    },
-    {
-      "brand": "nurwissen",
-      "id": "046",
-      "title": "63:9 verbietet das Spiel nicht — er gibt einen Maßstab",
+      "id": "051",
+      "title": "Ein Gruß macht dich zum Schuldner",
       "thema": "Streitfrage",
-      "hook": "Der letzte Vorwurf lautet Ablenkung. Und der Vers dazu nennt als Beispiel deine eigenen Kinder.",
+      "hook": "Jemand grüßt dich. Ab diesem Moment schuldest du etwas zurück.",
       "voice": "robert",
-      "stage": "live",
+      "stage": "checked",
       "fact_check": "ok",
       "sources": {
         "total": 1,
@@ -158,146 +92,28 @@
       },
       "source_list": [
         {
-          "claim": "63:9 warnt davor, Vermögen und Kinder vom Gedenken Allahs ablenken zu lassen; der Vers verurteilt Vermögen und Kinder nicht selbst, sondern ihre Vorrangstellung",
-          "ref": "Al-Munafiqun 63:9",
-          "url": "https://quran.com/63/9",
+          "claim": "4:86 gebietet, einen Gruß mit einem besseren oder dem gleichen zu erwidern; das Wort ist tahiyya (Gruß allgemein), eine Option, weniger oder nichts zu erwidern, nennt der Vers nicht",
+          "ref": "An-Nisa 4:86",
+          "url": "https://quran.com/4/86",
           "verified": true
         }
       ],
-      "file": "scripts/046-gta-ablenkung.json",
-      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/046-gta-ablenkung.json",
-      "vo_at": "2026-11-21T12:03:03.924Z",
+      "file": "scripts/051-gruss.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/051-gruss.json",
+      "vo_at": null,
       "archived": false,
-      "blocks": 15,
+      "blocks": 12,
       "dauer": null,
-      "publish_at": "2026-11-22T18:00:00.000Z",
+      "publish_at": null,
       "targets": [
         "instagram",
         "youtube"
       ],
-      "results": {
-        "instagram": {
-          "media_id": "18035413973681352"
-        },
-        "youtube": {
-          "video_id": "Iil4auG0yi4"
-        }
-      },
-      "media_id": "18035413973681352",
-      "permalink": "https://www.instagram.com/reel/DgDquEegsy5/",
-      "metrics": {
-        "views": 1121,
-        "reach": 987,
-        "likes": 38,
-        "comments": 1,
-        "shares": 2,
-        "saved": 17
-      },
-      "order_rank": 2
-    },
-    {
-      "brand": "nurwissen",
-      "id": "048",
-      "title": "Der Kriegsvers richtet sich an den, der Zinsen bekommt",
-      "thema": "Geld & Alltag",
-      "hook": "Du hast ein Sparbuch. Dann richtet sich dieser Vers an dich.",
-      "voice": "robert",
-      "stage": "live",
-      "fact_check": "ok",
-      "sources": {
-        "total": 1,
-        "verified": 1
-      },
-      "source_list": [
-        {
-          "claim": "2:278 fordert, aufzugeben, was von den Zinsen aussteht — angesprochen ist damit der Gläubiger; 2:279 kündigt Krieg an und sagt dem Umkehrenden das Kapital zu („neither inflicting nor suffering harm\")",
-          "ref": "Al-Baqara 2:278–280",
-          "url": "https://quran.com/2/278-280",
-          "verified": true
-        }
-      ],
-      "file": "scripts/048-sparbuch.json",
-      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/048-sparbuch.json",
-      "vo_at": "2026-11-19T23:55:31.889Z",
-      "archived": false,
-      "blocks": 16,
-      "dauer": null,
-      "publish_at": "2026-11-21T11:00:00.000Z",
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": {
-        "instagram": {
-          "media_id": "17986423538898704"
-        },
-        "youtube": {
-          "video_id": "t--X8WyN0aM"
-        }
-      },
-      "media_id": "17986423538898704",
-      "permalink": "https://www.instagram.com/reel/DgANO-IjrOD/",
-      "metrics": {
-        "views": 223,
-        "reach": 176,
-        "likes": 4,
-        "comments": 1,
-        "shares": 0,
-        "saved": 2
-      },
-      "order_rank": 3
-    },
-    {
-      "brand": "nurwissen",
-      "id": "049",
-      "title": "Erbe: derselbe Vers sagt doppelt — und gleich",
-      "thema": "Geld & Alltag",
-      "hook": "Es gibt eine Zahl, an der die meisten hängenbleiben. Der Sohn bekommt das Doppelte.",
-      "voice": "robert",
-      "stage": "live",
-      "fact_check": "ok",
-      "sources": {
-        "total": 1,
-        "verified": 1
-      },
-      "source_list": [
-        {
-          "claim": "4:11 enthält beides: „dem Mann steht doppelt so viel zu wie der Frau\" und „jedem Elternteil ein Sechstel, wenn der Verstorbene Kinder hinterlässt\" — im zweiten Fall erhalten Mutter und Vater denselben Anteil",
-          "ref": "An-Nisa 4:11",
-          "url": "https://quran.com/4/11",
-          "verified": true
-        }
-      ],
-      "file": "scripts/049-erbe.json",
-      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/049-erbe.json",
-      "vo_at": "2026-11-21T12:07:29.184Z",
-      "archived": false,
-      "blocks": 16,
-      "dauer": null,
-      "publish_at": "2026-11-23T11:00:00.000Z",
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": {
-        "instagram": {
-          "media_id": "18083275460377601"
-        },
-        "youtube": {
-          "video_id": "BRvqCx9cQ9g"
-        }
-      },
-      "media_id": "18083275460377601",
-      "permalink": "https://www.instagram.com/reel/DgFj7hgldDR/",
-      "metrics": {
-        "views": 205,
-        "reach": 159,
-        "likes": 0,
-        "comments": 1,
-        "shares": 0,
-        "saved": 2
-      },
-      "order_rank": 4
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 1
     },
     {
       "brand": "nurwissen",
@@ -660,9 +476,9 @@
       "media_id": "18120562949074138",
       "permalink": "https://www.instagram.com/reel/DfrkzXeJSK9/",
       "metrics": {
-        "views": 5538,
+        "views": 5543,
         "reach": 4408,
-        "likes": 331,
+        "likes": 332,
         "comments": 4,
         "shares": 107,
         "saved": 109
@@ -1039,7 +855,7 @@
       "media_id": "18005572367809798",
       "permalink": "https://www.instagram.com/reel/DfzXAjxFfT2/",
       "metrics": {
-        "views": 2324,
+        "views": 2325,
         "reach": 1985,
         "likes": 111,
         "comments": 1,
@@ -1091,8 +907,8 @@
       "media_id": "18106103903528793",
       "permalink": "https://www.instagram.com/reel/Df5O2AmDwdF/",
       "metrics": {
-        "views": 3602,
-        "reach": 3136,
+        "views": 3604,
+        "reach": 3140,
         "likes": 159,
         "comments": 2,
         "shares": 57,
@@ -1213,7 +1029,7 @@
       "media_id": "18048249335823792",
       "permalink": "https://www.instagram.com/reel/DfxYBX5pQlR/",
       "metrics": {
-        "views": 2234,
+        "views": 2236,
         "reach": 1977,
         "likes": 69,
         "comments": 1,
@@ -1502,8 +1318,8 @@
       "media_id": "18030154736696806",
       "permalink": "https://www.instagram.com/reel/Df1-RDGk9BN/",
       "metrics": {
-        "views": 3973,
-        "reach": 3264,
+        "views": 3979,
+        "reach": 3274,
         "likes": 181,
         "comments": 1,
         "shares": 71,
@@ -1835,12 +1651,12 @@
       "media_id": "18141452479629059",
       "permalink": "https://www.instagram.com/reel/DfsQ6hxmYvx/",
       "metrics": {
-        "views": 8767,
-        "reach": 6901,
+        "views": 8783,
+        "reach": 6910,
         "likes": 224,
-        "comments": 10,
+        "comments": 11,
         "shares": 136,
-        "saved": 122
+        "saved": 123
       },
       "order_rank": 999
     },
@@ -1969,8 +1785,8 @@
       "media_id": "17908314675355394",
       "permalink": "https://www.instagram.com/reel/Df70aU_jcVH/",
       "metrics": {
-        "views": 2347,
-        "reach": 1837,
+        "views": 2348,
+        "reach": 1840,
         "likes": 57,
         "comments": 1,
         "shares": 15,
@@ -2027,12 +1843,168 @@
       "media_id": "18140876185632624",
       "permalink": "https://www.instagram.com/reel/Df9qyn5jTrb/",
       "metrics": {
-        "views": 2499,
+        "views": 2500,
         "reach": 1995,
         "likes": 75,
         "comments": 4,
         "shares": 13,
         "saved": 31
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "043",
+      "title": "Glücksspiel: der Hadith bestraft schon das Angebot",
+      "thema": "Streitfrage",
+      "hook": "Es gibt einen Hadith, der schon das Angebot zum Glücksspiel bestraft. Nicht das Spielen.",
+      "voice": "robert",
+      "stage": "live",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "Bukhari 4860: Wer bei al-Lat und al-Uzza schwört, soll das Glaubensbekenntnis sprechen; wer zu seinem Gefährten sagt „Komm, lass uns spielen\", soll Almosen geben",
+          "ref": "Sahih al-Bukhari 4860, Buch 65, Hadith 381",
+          "url": "https://sunnah.com/bukhari:4860",
+          "verified": true
+        }
+      ],
+      "file": "scripts/043-gta-gluecksspiel.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/043-gta-gluecksspiel.json",
+      "vo_at": "2026-11-20T12:29:03.155Z",
+      "archived": false,
+      "blocks": 15,
+      "dauer": null,
+      "publish_at": "2026-11-21T18:00:00.000Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "18112279132908263"
+        },
+        "youtube": {
+          "video_id": "aOtg_LTixnk"
+        }
+      },
+      "media_id": "18112279132908263",
+      "permalink": "https://www.instagram.com/reel/DgA0v_WlS5N/",
+      "metrics": {
+        "views": 215,
+        "reach": 166,
+        "likes": 3,
+        "comments": 1,
+        "shares": 0,
+        "saved": 0
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "045",
+      "title": "24:19 — der Vers über Unmoral handelt von einem Gerücht",
+      "thema": "Koran unter Beschuss",
+      "hook": "Dieser Vers wird gegen Serien, Spiele und Musik zitiert. Er handelt von etwas völlig anderem.",
+      "voice": "robert",
+      "stage": "live",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "24:19 steht in der Passage 24:11–20, die einen einzigen Verleumdungsvorfall behandelt: gut voneinander denken (12), vier Zeugen (13), von Zunge zu Zunge weitergegeben und für geringfügig gehalten (15), man hätte schweigen müssen (16)",
+          "ref": "An-Nur 24:11–20",
+          "url": "https://quran.com/24/11-20",
+          "verified": true
+        }
+      ],
+      "file": "scripts/045-gta-unmoral.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/045-gta-unmoral.json",
+      "vo_at": "2026-11-20T12:33:39.681Z",
+      "archived": false,
+      "blocks": 16,
+      "dauer": null,
+      "publish_at": "2026-11-22T11:00:00.000Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "18211653349371162"
+        },
+        "youtube": {
+          "video_id": "A98tAgFL2E0"
+        }
+      },
+      "media_id": "18211653349371162",
+      "permalink": "https://www.instagram.com/reel/DgCysyPD92C/",
+      "metrics": {
+        "views": 227,
+        "reach": 170,
+        "likes": 0,
+        "comments": 1,
+        "shares": 0,
+        "saved": 1
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "046",
+      "title": "63:9 verbietet das Spiel nicht — er gibt einen Maßstab",
+      "thema": "Streitfrage",
+      "hook": "Der letzte Vorwurf lautet Ablenkung. Und der Vers dazu nennt als Beispiel deine eigenen Kinder.",
+      "voice": "robert",
+      "stage": "live",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "63:9 warnt davor, Vermögen und Kinder vom Gedenken Allahs ablenken zu lassen; der Vers verurteilt Vermögen und Kinder nicht selbst, sondern ihre Vorrangstellung",
+          "ref": "Al-Munafiqun 63:9",
+          "url": "https://quran.com/63/9",
+          "verified": true
+        }
+      ],
+      "file": "scripts/046-gta-ablenkung.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/046-gta-ablenkung.json",
+      "vo_at": "2026-11-21T12:03:03.924Z",
+      "archived": false,
+      "blocks": 15,
+      "dauer": null,
+      "publish_at": "2026-11-22T18:00:00.000Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "18035413973681352"
+        },
+        "youtube": {
+          "video_id": "Iil4auG0yi4"
+        }
+      },
+      "media_id": "18035413973681352",
+      "permalink": "https://www.instagram.com/reel/DgDquEegsy5/",
+      "metrics": {
+        "views": 1121,
+        "reach": 987,
+        "likes": 38,
+        "comments": 1,
+        "shares": 2,
+        "saved": 17
       },
       "order_rank": 999
     },
@@ -2087,6 +2059,110 @@
         "saved": 5
       },
       "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "048",
+      "title": "Der Kriegsvers richtet sich an den, der Zinsen bekommt",
+      "thema": "Geld & Alltag",
+      "hook": "Du hast ein Sparbuch. Dann richtet sich dieser Vers an dich.",
+      "voice": "robert",
+      "stage": "live",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "2:278 fordert, aufzugeben, was von den Zinsen aussteht — angesprochen ist damit der Gläubiger; 2:279 kündigt Krieg an und sagt dem Umkehrenden das Kapital zu („neither inflicting nor suffering harm\")",
+          "ref": "Al-Baqara 2:278–280",
+          "url": "https://quran.com/2/278-280",
+          "verified": true
+        }
+      ],
+      "file": "scripts/048-sparbuch.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/048-sparbuch.json",
+      "vo_at": "2026-11-19T23:55:31.889Z",
+      "archived": false,
+      "blocks": 16,
+      "dauer": null,
+      "publish_at": "2026-11-21T11:00:00.000Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "17986423538898704"
+        },
+        "youtube": {
+          "video_id": "t--X8WyN0aM"
+        }
+      },
+      "media_id": "17986423538898704",
+      "permalink": "https://www.instagram.com/reel/DgANO-IjrOD/",
+      "metrics": {
+        "views": 223,
+        "reach": 176,
+        "likes": 4,
+        "comments": 1,
+        "shares": 0,
+        "saved": 2
+      },
+      "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "049",
+      "title": "Erbe: derselbe Vers sagt doppelt — und gleich",
+      "thema": "Geld & Alltag",
+      "hook": "Es gibt eine Zahl, an der die meisten hängenbleiben. Der Sohn bekommt das Doppelte.",
+      "voice": "robert",
+      "stage": "live",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "4:11 enthält beides: „dem Mann steht doppelt so viel zu wie der Frau\" und „jedem Elternteil ein Sechstel, wenn der Verstorbene Kinder hinterlässt\" — im zweiten Fall erhalten Mutter und Vater denselben Anteil",
+          "ref": "An-Nisa 4:11",
+          "url": "https://quran.com/4/11",
+          "verified": true
+        }
+      ],
+      "file": "scripts/049-erbe.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/049-erbe.json",
+      "vo_at": "2026-11-21T12:07:29.184Z",
+      "archived": false,
+      "blocks": 16,
+      "dauer": null,
+      "publish_at": "2026-11-23T11:00:00.000Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": {
+        "instagram": {
+          "media_id": "18083275460377601"
+        },
+        "youtube": {
+          "video_id": "BRvqCx9cQ9g"
+        }
+      },
+      "media_id": "18083275460377601",
+      "permalink": "https://www.instagram.com/reel/DgFj7hgldDR/",
+      "metrics": {
+        "views": 208,
+        "reach": 162,
+        "likes": 0,
+        "comments": 1,
+        "shares": 0,
+        "saved": 2
+      },
+      "order_rank": 999
     }
   ],
   "stats": {
@@ -2096,7 +2172,7 @@
       "follows_count": 0,
       "media_count": 42,
       "id": "28768435396155579",
-      "at": "2026-11-24T18:45:48.410Z"
+      "at": "2026-11-24T20:51:05.388Z"
     },
     "history": [
       {
@@ -2748,6 +2824,11 @@
         "at": "2026-11-24T18:45:48.410Z",
         "followers": 1369,
         "views_total": 53961
+      },
+      {
+        "at": "2026-11-24T20:51:05.388Z",
+        "followers": 1369,
+        "views_total": 53998
       }
     ],
     "reels": [
@@ -2756,15 +2837,15 @@
         "permalink": "https://www.instagram.com/reel/DgFj7hgldDR/",
         "posted": "2026-11-23T14:10:17+0000",
         "caption": "DEIN GELD — TEIL 2 VON 8\n\nEs gibt eine Zahl, an der die meis",
-        "views": 205,
-        "reach": 159,
+        "views": 208,
+        "reach": 162,
         "likes": 0,
         "comments": 1,
         "shares": 0,
         "saved": 2,
         "total_interactions": 3,
-        "ig_reels_avg_watch_time": 7275,
-        "ig_reels_video_view_total_time": 1171407
+        "ig_reels_avg_watch_time": 7164,
+        "ig_reels_video_view_total_time": 1174975
       },
       {
         "id": "18035413973681352",
@@ -2846,45 +2927,45 @@
         "permalink": "https://www.instagram.com/reel/Df9qyn5jTrb/",
         "posted": "2026-11-20T12:36:09+0000",
         "caption": "Der erste Vorwurf gegen GTA VI ist der stärkste — und er wir",
-        "views": 2499,
+        "views": 2500,
         "reach": 1995,
         "likes": 75,
         "comments": 4,
         "shares": 13,
         "saved": 31,
         "total_interactions": 128,
-        "ig_reels_avg_watch_time": 22912,
-        "ig_reels_video_view_total_time": 46969745
+        "ig_reels_avg_watch_time": 22901,
+        "ig_reels_video_view_total_time": 46970019
       },
       {
         "id": "17908314675355394",
         "permalink": "https://www.instagram.com/reel/Df70aU_jcVH/",
         "posted": "2026-11-19T19:22:07+0000",
         "caption": "Ob Musik erlaubt ist, entscheidet sich an einem einzigen Had",
-        "views": 2347,
-        "reach": 1837,
+        "views": 2348,
+        "reach": 1840,
         "likes": 57,
         "comments": 1,
         "shares": 15,
         "saved": 40,
         "total_interactions": 113,
-        "ig_reels_avg_watch_time": 41559,
-        "ig_reels_video_view_total_time": 79460869
+        "ig_reels_avg_watch_time": 41538,
+        "ig_reels_video_view_total_time": 79462598
       },
       {
         "id": "18106103903528793",
         "permalink": "https://www.instagram.com/reel/Df5O2AmDwdF/",
         "posted": "2026-11-18T19:15:10+0000",
         "caption": "Der Prophet (saw) hat eine Regel gegeben, die aus genau zwei",
-        "views": 3602,
-        "reach": 3136,
+        "views": 3604,
+        "reach": 3140,
         "likes": 159,
         "comments": 2,
         "shares": 57,
         "saved": 46,
         "total_interactions": 275,
-        "ig_reels_avg_watch_time": 16170,
-        "ig_reels_video_view_total_time": 50582046
+        "ig_reels_avg_watch_time": 16161,
+        "ig_reels_video_view_total_time": 50585681
       },
       {
         "id": "18158649061503405",
@@ -2921,15 +3002,15 @@
         "permalink": "https://www.instagram.com/reel/Df1-RDGk9BN/",
         "posted": "2026-11-17T12:52:35+0000",
         "caption": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. A",
-        "views": 3973,
-        "reach": 3264,
+        "views": 3979,
+        "reach": 3274,
         "likes": 181,
         "comments": 1,
         "shares": 71,
         "saved": 53,
         "total_interactions": 319,
-        "ig_reels_avg_watch_time": 26258,
-        "ig_reels_video_view_total_time": 86339491
+        "ig_reels_avg_watch_time": 26321,
+        "ig_reels_video_view_total_time": 86703695
       },
       {
         "id": "18428033140152991",
@@ -2951,30 +3032,30 @@
         "permalink": "https://www.instagram.com/reel/DfzXAjxFfT2/",
         "posted": "2026-11-16T12:31:13+0000",
         "caption": "Du kannst Sadaqa geben, ohne einen Cent zu haben.\n\n„Dein Läc",
-        "views": 2324,
+        "views": 2325,
         "reach": 1985,
         "likes": 111,
         "comments": 1,
         "shares": 36,
         "saved": 32,
         "total_interactions": 189,
-        "ig_reels_avg_watch_time": 15408,
-        "ig_reels_video_view_total_time": 31216895
+        "ig_reels_avg_watch_time": 15401,
+        "ig_reels_video_view_total_time": 31218756
       },
       {
         "id": "18048249335823792",
         "permalink": "https://www.instagram.com/reel/DfxYBX5pQlR/",
         "posted": "2026-11-15T18:01:29+0000",
         "caption": "Ein Mann fragt den Propheten (saw): Wer verdient es am meist",
-        "views": 2234,
+        "views": 2236,
         "reach": 1977,
         "likes": 69,
         "comments": 1,
         "shares": 33,
         "saved": 17,
         "total_interactions": 123,
-        "ig_reels_avg_watch_time": 17309,
-        "ig_reels_video_view_total_time": 34186497
+        "ig_reels_avg_watch_time": 17304,
+        "ig_reels_video_view_total_time": 34193323
       },
       {
         "id": "17915237094482339",
@@ -3026,30 +3107,30 @@
         "permalink": "https://www.instagram.com/reel/DfsQ6hxmYvx/",
         "posted": "2026-11-13T18:23:47+0000",
         "caption": "Du willst ein Haus kaufen. In Deutschland führt praktisch je",
-        "views": 8767,
-        "reach": 6901,
+        "views": 8783,
+        "reach": 6910,
         "likes": 224,
-        "comments": 10,
+        "comments": 11,
         "shares": 136,
-        "saved": 122,
-        "total_interactions": 507,
-        "ig_reels_avg_watch_time": 33189,
-        "ig_reels_video_view_total_time": 235810478
+        "saved": 123,
+        "total_interactions": 509,
+        "ig_reels_avg_watch_time": 33211,
+        "ig_reels_video_view_total_time": 236565261
       },
       {
         "id": "18120562949074138",
         "permalink": "https://www.instagram.com/reel/DfrkzXeJSK9/",
         "posted": "2026-11-13T11:58:21+0000",
         "caption": "Es gibt eine Position, in der du Allah näher bist als in jed",
-        "views": 5538,
+        "views": 5543,
         "reach": 4408,
-        "likes": 331,
+        "likes": 332,
         "comments": 4,
         "shares": 107,
         "saved": 109,
-        "total_interactions": 568,
-        "ig_reels_avg_watch_time": 26105,
-        "ig_reels_video_view_total_time": 121076177
+        "total_interactions": 569,
+        "ig_reels_avg_watch_time": 26127,
+        "ig_reels_video_view_total_time": 121283726
       },
       {
         "id": "18291512128295247",
@@ -3181,26 +3262,26 @@
     }
   ],
   "credits": {
-    "at": "2026-11-21T12:07:08.844Z",
-    "rest": 60472,
+    "at": "2026-11-24T18:53:59.614Z",
+    "rest": 54875,
     "limit": 121065,
     "tier": "creator",
-    "reicht_fuer": 30,
+    "reicht_fuer": 27,
     "erneuert_am": "2026-12-04T14:09:11.000Z"
   },
   "health": {
     "min_runway": 3,
     "last_post": "2026-11-23T14:09:12.562Z",
-    "last_post_hours": 29,
-    "last_engage": "2026-11-24T18:45:48.410Z",
+    "last_post_hours": 31,
+    "last_engage": "2026-11-24T20:51:05.388Z",
     "last_engage_hours": 0,
-    "scripts_total": 43,
-    "videos_ready": 0,
+    "scripts_total": 45,
+    "videos_ready": 1,
     "alerts": [
       {
         "level": "error",
         "brand": "nurwissen",
-        "text": "Vorrat nur 0 Tag(e) in der Queue (Soll 3). 0 gepruefte Scripts warten auf Produktion.",
+        "text": "Vorrat nur 1 Tag(e) in der Queue (Soll 3). 1 gepruefte Scripts warten auf Produktion.",
         "action": "produce"
       }
     ],
