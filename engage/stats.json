@@ -644,15 +644,20 @@
       "at": "2026-11-24T10:23:03.410Z",
       "followers": 1370,
       "views_total": 53875
+    },
+    {
+      "at": "2026-11-24T18:45:48.410Z",
+      "followers": 1369,
+      "views_total": 53961
     }
   ],
   "account": {
     "username": "nurwissen_official",
-    "followers_count": 1370,
+    "followers_count": 1369,
     "follows_count": 0,
     "media_count": 42,
     "id": "28768435396155579",
-    "at": "2026-11-24T10:23:03.410Z"
+    "at": "2026-11-24T18:45:48.410Z"
   },
   "reels": [
     {
@@ -660,52 +665,60 @@
       "permalink": "https://www.instagram.com/reel/DgFj7hgldDR/",
       "posted": "2026-11-23T14:10:17+0000",
       "caption": "DEIN GELD — TEIL 2 VON 8\n\nEs gibt eine Zahl, an der die meis",
-      "views": 200,
-      "reach": 155,
+      "views": 205,
+      "reach": 159,
       "likes": 0,
       "comments": 1,
       "shares": 0,
       "saved": 2,
-      "total_interactions": 3
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 7275,
+      "ig_reels_video_view_total_time": 1171407
     },
     {
       "id": "18035413973681352",
       "permalink": "https://www.instagram.com/reel/DgDquEegsy5/",
       "posted": "2026-11-22T20:30:58+0000",
       "caption": "Der letzte Vorwurf lautet Ablenkung von den Pflichten. Beleg",
-      "views": 1119,
+      "views": 1121,
       "reach": 987,
       "likes": 38,
       "comments": 1,
       "shares": 2,
       "saved": 17,
-      "total_interactions": 60
+      "total_interactions": 60,
+      "ig_reels_avg_watch_time": 10477,
+      "ig_reels_video_view_total_time": 10456080
     },
     {
       "id": "18211653349371162",
       "permalink": "https://www.instagram.com/reel/DgCysyPD92C/",
       "posted": "2026-11-22T12:21:37+0000",
       "caption": "Dieser Vers wird gegen Serien, Spiele und Musik zitiert: „Ge",
-      "views": 225,
-      "reach": 167,
+      "views": 227,
+      "reach": 170,
       "likes": 0,
       "comments": 1,
       "shares": 0,
       "saved": 1,
-      "total_interactions": 2
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 11055,
+      "ig_reels_video_view_total_time": 1890516
     },
     {
       "id": "18112279132908263",
       "permalink": "https://www.instagram.com/reel/DgA0v_WlS5N/",
       "posted": "2026-11-21T18:01:04+0000",
       "caption": "Es gibt einen Hadith, der nicht das Glücksspiel bestraft, so",
-      "views": 214,
-      "reach": 165,
+      "views": 215,
+      "reach": 166,
       "likes": 3,
       "comments": 1,
       "shares": 0,
       "saved": 0,
-      "total_interactions": 4
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 8683,
+      "ig_reels_video_view_total_time": 1502271
     },
     {
       "id": "17986423538898704",
@@ -718,7 +731,9 @@
       "comments": 1,
       "shares": 0,
       "saved": 2,
-      "total_interactions": 7
+      "total_interactions": 7,
+      "ig_reels_avg_watch_time": 5061,
+      "ig_reels_video_view_total_time": 911118
     },
     {
       "id": "18010194677828804",
@@ -726,64 +741,74 @@
       "posted": "2026-11-20T18:58:10+0000",
       "caption": "„Du lässt nichts für Allah, außer dass Allah es dir mit etwa",
       "views": 720,
-      "reach": 617,
+      "reach": 619,
       "likes": 22,
       "comments": 1,
       "shares": 0,
       "saved": 5,
-      "total_interactions": 28
+      "total_interactions": 28,
+      "ig_reels_avg_watch_time": 16017,
+      "ig_reels_video_view_total_time": 9930741
     },
     {
       "id": "18140876185632624",
       "permalink": "https://www.instagram.com/reel/Df9qyn5jTrb/",
       "posted": "2026-11-20T12:36:09+0000",
       "caption": "Der erste Vorwurf gegen GTA VI ist der stärkste — und er wir",
-      "views": 2492,
+      "views": 2499,
       "reach": 1995,
       "likes": 75,
       "comments": 4,
       "shares": 13,
       "saved": 31,
-      "total_interactions": 128
+      "total_interactions": 128,
+      "ig_reels_avg_watch_time": 22912,
+      "ig_reels_video_view_total_time": 46969745
     },
     {
       "id": "17908314675355394",
       "permalink": "https://www.instagram.com/reel/Df70aU_jcVH/",
       "posted": "2026-11-19T19:22:07+0000",
       "caption": "Ob Musik erlaubt ist, entscheidet sich an einem einzigen Had",
-      "views": 2337,
-      "reach": 1828,
+      "views": 2347,
+      "reach": 1837,
       "likes": 57,
       "comments": 1,
       "shares": 15,
       "saved": 40,
-      "total_interactions": 113
+      "total_interactions": 113,
+      "ig_reels_avg_watch_time": 41559,
+      "ig_reels_video_view_total_time": 79460869
     },
     {
       "id": "18106103903528793",
       "permalink": "https://www.instagram.com/reel/Df5O2AmDwdF/",
       "posted": "2026-11-18T19:15:10+0000",
       "caption": "Der Prophet (saw) hat eine Regel gegeben, die aus genau zwei",
-      "views": 3592,
-      "reach": 3122,
+      "views": 3602,
+      "reach": 3136,
       "likes": 159,
       "comments": 2,
       "shares": 57,
       "saved": 46,
-      "total_interactions": 275
+      "total_interactions": 275,
+      "ig_reels_avg_watch_time": 16170,
+      "ig_reels_video_view_total_time": 50582046
     },
     {
       "id": "18158649061503405",
       "permalink": "https://www.instagram.com/reel/Df4iQhsiN9p/",
       "posted": "2026-11-18T12:45:33+0000",
       "caption": "Jede Nacht geht ein Fenster auf — immer zur gleichen Zeit. U",
-      "views": 2063,
-      "reach": 1670,
+      "views": 2065,
+      "reach": 1675,
       "likes": 96,
       "comments": 1,
       "shares": 45,
       "saved": 36,
-      "total_interactions": 186
+      "total_interactions": 186,
+      "ig_reels_avg_watch_time": 19803,
+      "ig_reels_video_view_total_time": 33922618
     },
     {
       "id": "17969988672230050",
@@ -796,20 +821,24 @@
       "comments": 1,
       "shares": 4,
       "saved": 0,
-      "total_interactions": 12
+      "total_interactions": 12,
+      "ig_reels_avg_watch_time": 10549,
+      "ig_reels_video_view_total_time": 2479137
     },
     {
       "id": "18030154736696806",
       "permalink": "https://www.instagram.com/reel/Df1-RDGk9BN/",
       "posted": "2026-11-17T12:52:35+0000",
       "caption": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. A",
-      "views": 3963,
-      "reach": 3259,
-      "likes": 180,
+      "views": 3973,
+      "reach": 3264,
+      "likes": 181,
       "comments": 1,
-      "shares": 69,
+      "shares": 71,
       "saved": 53,
-      "total_interactions": 316
+      "total_interactions": 319,
+      "ig_reels_avg_watch_time": 26258,
+      "ig_reels_video_view_total_time": 86339491
     },
     {
       "id": "18428033140152991",
@@ -822,7 +851,9 @@
       "comments": 1,
       "shares": 17,
       "saved": 28,
-      "total_interactions": 145
+      "total_interactions": 145,
+      "ig_reels_avg_watch_time": 25578,
+      "ig_reels_video_view_total_time": 51514678
     },
     {
       "id": "18005572367809798",
@@ -835,20 +866,24 @@
       "comments": 1,
       "shares": 36,
       "saved": 32,
-      "total_interactions": 189
+      "total_interactions": 189,
+      "ig_reels_avg_watch_time": 15408,
+      "ig_reels_video_view_total_time": 31216895
     },
     {
       "id": "18048249335823792",
       "permalink": "https://www.instagram.com/reel/DfxYBX5pQlR/",
       "posted": "2026-11-15T18:01:29+0000",
       "caption": "Ein Mann fragt den Propheten (saw): Wer verdient es am meist",
-      "views": 2233,
+      "views": 2234,
       "reach": 1977,
       "likes": 69,
       "comments": 1,
       "shares": 33,
       "saved": 17,
-      "total_interactions": 123
+      "total_interactions": 123,
+      "ig_reels_avg_watch_time": 17309,
+      "ig_reels_video_view_total_time": 34186497
     },
     {
       "id": "17915237094482339",
@@ -861,7 +896,9 @@
       "comments": 1,
       "shares": 9,
       "saved": 27,
-      "total_interactions": 111
+      "total_interactions": 111,
+      "ig_reels_avg_watch_time": 17920,
+      "ig_reels_video_view_total_time": 27848388
     },
     {
       "id": "18201330337387100",
@@ -874,59 +911,69 @@
       "comments": 3,
       "shares": 17,
       "saved": 13,
-      "total_interactions": 111
+      "total_interactions": 111,
+      "ig_reels_avg_watch_time": 15501,
+      "ig_reels_video_view_total_time": 25345355
     },
     {
       "id": "18116442044136802",
       "permalink": "https://www.instagram.com/reel/DfuE3z7k7NC/",
       "posted": "2026-11-14T11:16:21+0000",
       "caption": "„Die Sonne geht in einer schlammigen Quelle unter.\" (18:87, ",
-      "views": 2376,
+      "views": 2378,
       "reach": 2006,
       "likes": 83,
       "comments": 4,
       "shares": 8,
       "saved": 20,
-      "total_interactions": 117
+      "total_interactions": 117,
+      "ig_reels_avg_watch_time": 16824,
+      "ig_reels_video_view_total_time": 35315150
     },
     {
       "id": "18141452479629059",
       "permalink": "https://www.instagram.com/reel/DfsQ6hxmYvx/",
       "posted": "2026-11-13T18:23:47+0000",
       "caption": "Du willst ein Haus kaufen. In Deutschland führt praktisch je",
-      "views": 8749,
-      "reach": 6884,
+      "views": 8767,
+      "reach": 6901,
       "likes": 224,
       "comments": 10,
       "shares": 136,
       "saved": 122,
-      "total_interactions": 507
+      "total_interactions": 507,
+      "ig_reels_avg_watch_time": 33189,
+      "ig_reels_video_view_total_time": 235810478
     },
     {
       "id": "18120562949074138",
       "permalink": "https://www.instagram.com/reel/DfrkzXeJSK9/",
       "posted": "2026-11-13T11:58:21+0000",
       "caption": "Es gibt eine Position, in der du Allah näher bist als in jed",
-      "views": 5523,
-      "reach": 4391,
+      "views": 5538,
+      "reach": 4408,
       "likes": 331,
       "comments": 4,
       "shares": 107,
       "saved": 109,
-      "total_interactions": 568
+      "total_interactions": 568,
+      "ig_reels_avg_watch_time": 26105,
+      "ig_reels_video_view_total_time": 121076177
     },
     {
       "id": "18291512128295247",
       "permalink": "https://www.instagram.com/reel/DfpuTeLDX1P/",
       "posted": "2026-11-12T18:42:24+0000",
       "caption": "„Zwei Gnaden, in denen viele Menschen betrogen werden: die G",
-      "views": 338,
-      "reach": 262,
+      "views": 339,
+      "reach": 263,
       "likes": 13,
       "comments": 1,
       "shares": 7,
       "saved": 1,
-      "total_interactions": 22
+      "total_interactions": 22,
+      "ig_reels_avg_watch_time": 15222,
+      "ig_reels_video_view_total_time": 4125359
     },
     {
       "id": "18121156661293338",
@@ -939,7 +986,9 @@
       "comments": 1,
       "shares": 24,
       "saved": 31,
-      "total_interactions": 140
+      "total_interactions": 140,
+      "ig_reels_avg_watch_time": 13755,
+      "ig_reels_video_view_total_time": 25626762
     },
     {
       "id": "18290727187291171",
@@ -952,7 +1001,9 @@
       "comments": 2,
       "shares": 31,
       "saved": 50,
-      "total_interactions": 278
+      "total_interactions": 278,
+      "ig_reels_avg_watch_time": 26372,
+      "ig_reels_video_view_total_time": 89955273
     },
     {
       "id": "17898181155571059",
@@ -965,7 +1016,9 @@
       "comments": 1,
       "shares": 21,
       "saved": 31,
-      "total_interactions": 170
+      "total_interactions": 170,
+      "ig_reels_avg_watch_time": 18021,
+      "ig_reels_video_view_total_time": 34780848
     },
     {
       "id": "18059690651566770",
@@ -978,7 +1031,9 @@
       "comments": 1,
       "shares": 1,
       "saved": 1,
-      "total_interactions": 13
+      "total_interactions": 13,
+      "ig_reels_avg_watch_time": 17368,
+      "ig_reels_video_view_total_time": 6026717
     }
   ]
 }
