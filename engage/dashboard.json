@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T20:51:22.812Z",
+  "generated_at": "2026-11-25T04:07:01.445Z",
   "brands": [
     {
       "slug": "nurwissen",
@@ -20,63 +20,25 @@
         "facebook": ""
       },
       "voice": "robert",
-      "followers": 1369,
+      "followers": 1371,
       "counts": {
         "script": 1,
         "checked": 1,
         "voice": 0,
         "video": 0,
-        "queued": 1,
+        "queued": 2,
         "paused": 0,
         "live": 42,
         "archive": 0
       },
-      "runway_days": 1,
+      "runway_days": 2,
       "next": "2026-11-25T11:00:00.000Z",
-      "views_total": 53998,
-      "avg_views": 2160,
+      "views_total": 54074,
+      "avg_views": 2163,
       "engagement_rate": 7.9
     }
   ],
   "pipeline": [
-    {
-      "brand": "nurwissen",
-      "id": "050",
-      "title": "Die eine Sünde, die selbst dem Märtyrer bleibt",
-      "thema": "Streitfrage",
-      "hook": "Es gibt eine Sünde, die selbst der Märtyrer nicht loswird.",
-      "voice": "robert",
-      "stage": "queued",
-      "fact_check": "ok",
-      "sources": {
-        "total": 1,
-        "verified": 1
-      },
-      "source_list": [
-        {
-          "claim": "Muslim 1886a: „Dem Märtyrer wird jede Sünde vergeben außer der Schuld\" — überliefert von Abdullah ibn Amr ibn al-As, im Buch der Regierung, Kapitel 32",
-          "ref": "Sahih Muslim 1886a",
-          "url": "https://hadithunlocked.com/muslim:1886a",
-          "verified": true
-        }
-      ],
-      "file": "scripts/050-schulden.json",
-      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/050-schulden.json",
-      "vo_at": "2026-11-24T18:54:15.860Z",
-      "archived": false,
-      "blocks": 12,
-      "dauer": null,
-      "publish_at": "2026-11-25T11:00:00.000Z",
-      "targets": [
-        "instagram",
-        "youtube"
-      ],
-      "results": null,
-      "media_id": null,
-      "permalink": null,
-      "metrics": null,
-      "order_rank": 0
-    },
     {
       "brand": "nurwissen",
       "id": "051",
@@ -105,6 +67,44 @@
       "blocks": 12,
       "dauer": null,
       "publish_at": null,
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 0
+    },
+    {
+      "brand": "nurwissen",
+      "id": "052",
+      "title": "Der Schwertvers steht zwischen einer Ausnahme und einem Schutzbefehl",
+      "thema": "Koran unter Beschuss",
+      "hook": "Dieser Vers steht auf Plakaten gegen den Islam. Und in den Schriften von Terroristen. Derselbe Vers.",
+      "voice": "robert",
+      "stage": "queued",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "9:5 beginnt mit dem Tötungsbefehl gegen die Götzendiener und endet mit „wenn sie umkehren, beten und die Abgabe leisten, dann lasst sie frei\"; 9:6 gebietet, einem, der um Schutz bittet, Schutz zu gewähren und ihn an einen sicheren Ort zu bringen; 9:4 nimmt die aus, die ihren Vertrag gehalten haben",
+          "ref": "At-Tauba 9:4–6",
+          "url": "https://quran.com/9/1-7",
+          "verified": true
+        }
+      ],
+      "file": "scripts/052-schwertvers.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/052-schwertvers.json",
+      "vo_at": "2026-11-24T21:28:09.822Z",
+      "archived": false,
+      "blocks": 11,
+      "dauer": null,
+      "publish_at": "2026-11-25T18:00:00.000Z",
       "targets": [
         "instagram",
         "youtube"
@@ -476,8 +476,8 @@
       "media_id": "18120562949074138",
       "permalink": "https://www.instagram.com/reel/DfrkzXeJSK9/",
       "metrics": {
-        "views": 5543,
-        "reach": 4408,
+        "views": 5550,
+        "reach": 4425,
         "likes": 332,
         "comments": 4,
         "shares": 107,
@@ -592,8 +592,8 @@
       "media_id": "18428033140152991",
       "permalink": "https://www.instagram.com/reel/Df0P9tlAtyY/",
       "metrics": {
-        "views": 2355,
-        "reach": 1998,
+        "views": 2357,
+        "reach": 2001,
         "likes": 94,
         "comments": 1,
         "shares": 17,
@@ -907,7 +907,7 @@
       "media_id": "18106103903528793",
       "permalink": "https://www.instagram.com/reel/Df5O2AmDwdF/",
       "metrics": {
-        "views": 3604,
+        "views": 3607,
         "reach": 3140,
         "likes": 159,
         "comments": 2,
@@ -1318,7 +1318,7 @@
       "media_id": "18030154736696806",
       "permalink": "https://www.instagram.com/reel/Df1-RDGk9BN/",
       "metrics": {
-        "views": 3979,
+        "views": 3984,
         "reach": 3274,
         "likes": 181,
         "comments": 1,
@@ -1651,12 +1651,12 @@
       "media_id": "18141452479629059",
       "permalink": "https://www.instagram.com/reel/DfsQ6hxmYvx/",
       "metrics": {
-        "views": 8783,
-        "reach": 6910,
-        "likes": 224,
+        "views": 8824,
+        "reach": 6938,
+        "likes": 225,
         "comments": 11,
-        "shares": 136,
-        "saved": 123
+        "shares": 137,
+        "saved": 124
       },
       "order_rank": 999
     },
@@ -1785,8 +1785,8 @@
       "media_id": "17908314675355394",
       "permalink": "https://www.instagram.com/reel/Df70aU_jcVH/",
       "metrics": {
-        "views": 2348,
-        "reach": 1840,
+        "views": 2353,
+        "reach": 1845,
         "likes": 57,
         "comments": 1,
         "shares": 15,
@@ -1843,11 +1843,11 @@
       "media_id": "18140876185632624",
       "permalink": "https://www.instagram.com/reel/Df9qyn5jTrb/",
       "metrics": {
-        "views": 2500,
+        "views": 2511,
         "reach": 1995,
         "likes": 75,
         "comments": 4,
-        "shares": 13,
+        "shares": 14,
         "saved": 31
       },
       "order_rank": 999
@@ -1999,7 +1999,7 @@
       "media_id": "18035413973681352",
       "permalink": "https://www.instagram.com/reel/DgDquEegsy5/",
       "metrics": {
-        "views": 1121,
+        "views": 1122,
         "reach": 987,
         "likes": 38,
         "comments": 1,
@@ -2052,7 +2052,7 @@
       "permalink": "https://www.instagram.com/reel/Df-WfVPDzVJ/",
       "metrics": {
         "views": 720,
-        "reach": 619,
+        "reach": 620,
         "likes": 22,
         "comments": 1,
         "shares": 0,
@@ -2103,8 +2103,8 @@
       "media_id": "17986423538898704",
       "permalink": "https://www.instagram.com/reel/DgANO-IjrOD/",
       "metrics": {
-        "views": 223,
-        "reach": 176,
+        "views": 224,
+        "reach": 177,
         "likes": 4,
         "comments": 1,
         "shares": 0,
@@ -2163,16 +2163,54 @@
         "saved": 2
       },
       "order_rank": 999
+    },
+    {
+      "brand": "nurwissen",
+      "id": "050",
+      "title": "Die eine Sünde, die selbst dem Märtyrer bleibt",
+      "thema": "Streitfrage",
+      "hook": "Es gibt eine Sünde, die selbst der Märtyrer nicht loswird.",
+      "voice": "robert",
+      "stage": "queued",
+      "fact_check": "ok",
+      "sources": {
+        "total": 1,
+        "verified": 1
+      },
+      "source_list": [
+        {
+          "claim": "Muslim 1886a: „Dem Märtyrer wird jede Sünde vergeben außer der Schuld\" — überliefert von Abdullah ibn Amr ibn al-As, im Buch der Regierung, Kapitel 32",
+          "ref": "Sahih Muslim 1886a",
+          "url": "https://hadithunlocked.com/muslim:1886a",
+          "verified": true
+        }
+      ],
+      "file": "scripts/050-schulden.json",
+      "script_url": "https://raw.githubusercontent.com/ahmad-onenukta/wissen-islam-autopost/main/scripts/050-schulden.json",
+      "vo_at": "2026-11-24T18:54:15.860Z",
+      "archived": false,
+      "blocks": 12,
+      "dauer": null,
+      "publish_at": "2026-11-25T11:00:00.000Z",
+      "targets": [
+        "instagram",
+        "youtube"
+      ],
+      "results": null,
+      "media_id": null,
+      "permalink": null,
+      "metrics": null,
+      "order_rank": 999
     }
   ],
   "stats": {
     "account": {
       "username": "nurwissen_official",
-      "followers_count": 1369,
+      "followers_count": 1371,
       "follows_count": 0,
       "media_count": 42,
       "id": "28768435396155579",
-      "at": "2026-11-24T20:51:05.388Z"
+      "at": "2026-11-25T04:06:35.164Z"
     },
     "history": [
       {
@@ -2829,6 +2867,11 @@
         "at": "2026-11-24T20:51:05.388Z",
         "followers": 1369,
         "views_total": 53998
+      },
+      {
+        "at": "2026-11-25T04:06:35.164Z",
+        "followers": 1371,
+        "views_total": 54074
       }
     ],
     "reels": [
@@ -2852,15 +2895,15 @@
         "permalink": "https://www.instagram.com/reel/DgDquEegsy5/",
         "posted": "2026-11-22T20:30:58+0000",
         "caption": "Der letzte Vorwurf lautet Ablenkung von den Pflichten. Beleg",
-        "views": 1121,
+        "views": 1122,
         "reach": 987,
         "likes": 38,
         "comments": 1,
         "shares": 2,
         "saved": 17,
         "total_interactions": 60,
-        "ig_reels_avg_watch_time": 10477,
-        "ig_reels_video_view_total_time": 10456080
+        "ig_reels_avg_watch_time": 10468,
+        "ig_reels_video_view_total_time": 10458426
       },
       {
         "id": "18211653349371162",
@@ -2897,15 +2940,15 @@
         "permalink": "https://www.instagram.com/reel/DgANO-IjrOD/",
         "posted": "2026-11-21T12:15:56+0000",
         "caption": "DEIN GELD — TEIL 1 VON 8\n\nDu hast ein Sparbuch. Dann richtet",
-        "views": 223,
-        "reach": 176,
+        "views": 224,
+        "reach": 177,
         "likes": 4,
         "comments": 1,
         "shares": 0,
         "saved": 2,
         "total_interactions": 7,
-        "ig_reels_avg_watch_time": 5061,
-        "ig_reels_video_view_total_time": 911118
+        "ig_reels_avg_watch_time": 5037,
+        "ig_reels_video_view_total_time": 911848
       },
       {
         "id": "18010194677828804",
@@ -2913,7 +2956,7 @@
         "posted": "2026-11-20T18:58:10+0000",
         "caption": "„Du lässt nichts für Allah, außer dass Allah es dir mit etwa",
         "views": 720,
-        "reach": 619,
+        "reach": 620,
         "likes": 22,
         "comments": 1,
         "shares": 0,
@@ -2927,45 +2970,45 @@
         "permalink": "https://www.instagram.com/reel/Df9qyn5jTrb/",
         "posted": "2026-11-20T12:36:09+0000",
         "caption": "Der erste Vorwurf gegen GTA VI ist der stärkste — und er wir",
-        "views": 2500,
+        "views": 2511,
         "reach": 1995,
         "likes": 75,
         "comments": 4,
-        "shares": 13,
+        "shares": 14,
         "saved": 31,
-        "total_interactions": 128,
-        "ig_reels_avg_watch_time": 22901,
-        "ig_reels_video_view_total_time": 46970019
+        "total_interactions": 129,
+        "ig_reels_avg_watch_time": 22922,
+        "ig_reels_video_view_total_time": 47106401
       },
       {
         "id": "17908314675355394",
         "permalink": "https://www.instagram.com/reel/Df70aU_jcVH/",
         "posted": "2026-11-19T19:22:07+0000",
         "caption": "Ob Musik erlaubt ist, entscheidet sich an einem einzigen Had",
-        "views": 2348,
-        "reach": 1840,
+        "views": 2353,
+        "reach": 1845,
         "likes": 57,
         "comments": 1,
         "shares": 15,
         "saved": 40,
         "total_interactions": 113,
-        "ig_reels_avg_watch_time": 41538,
-        "ig_reels_video_view_total_time": 79462598
+        "ig_reels_avg_watch_time": 41505,
+        "ig_reels_video_view_total_time": 79565257
       },
       {
         "id": "18106103903528793",
         "permalink": "https://www.instagram.com/reel/Df5O2AmDwdF/",
         "posted": "2026-11-18T19:15:10+0000",
         "caption": "Der Prophet (saw) hat eine Regel gegeben, die aus genau zwei",
-        "views": 3604,
+        "views": 3607,
         "reach": 3140,
         "likes": 159,
         "comments": 2,
         "shares": 57,
         "saved": 46,
         "total_interactions": 275,
-        "ig_reels_avg_watch_time": 16161,
-        "ig_reels_video_view_total_time": 50585681
+        "ig_reels_avg_watch_time": 16181,
+        "ig_reels_video_view_total_time": 50697290
       },
       {
         "id": "18158649061503405",
@@ -3002,30 +3045,30 @@
         "permalink": "https://www.instagram.com/reel/Df1-RDGk9BN/",
         "posted": "2026-11-17T12:52:35+0000",
         "caption": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. A",
-        "views": 3979,
+        "views": 3984,
         "reach": 3274,
         "likes": 181,
         "comments": 1,
         "shares": 71,
         "saved": 53,
         "total_interactions": 319,
-        "ig_reels_avg_watch_time": 26321,
-        "ig_reels_video_view_total_time": 86703695
+        "ig_reels_avg_watch_time": 26356,
+        "ig_reels_video_view_total_time": 86922105
       },
       {
         "id": "18428033140152991",
         "permalink": "https://www.instagram.com/reel/Df0P9tlAtyY/",
         "posted": "2026-11-16T20:48:53+0000",
         "caption": "Er verliert sein Vermögen, seine Kinder, seine Gesundheit. U",
-        "views": 2355,
-        "reach": 1998,
+        "views": 2357,
+        "reach": 2001,
         "likes": 94,
         "comments": 1,
         "shares": 17,
         "saved": 28,
         "total_interactions": 145,
-        "ig_reels_avg_watch_time": 25578,
-        "ig_reels_video_view_total_time": 51514678
+        "ig_reels_avg_watch_time": 25566,
+        "ig_reels_video_view_total_time": 51516622
       },
       {
         "id": "18005572367809798",
@@ -3054,8 +3097,8 @@
         "shares": 33,
         "saved": 17,
         "total_interactions": 123,
-        "ig_reels_avg_watch_time": 17304,
-        "ig_reels_video_view_total_time": 34193323
+        "ig_reels_avg_watch_time": 17297,
+        "ig_reels_video_view_total_time": 34197204
       },
       {
         "id": "17915237094482339",
@@ -3107,30 +3150,30 @@
         "permalink": "https://www.instagram.com/reel/DfsQ6hxmYvx/",
         "posted": "2026-11-13T18:23:47+0000",
         "caption": "Du willst ein Haus kaufen. In Deutschland führt praktisch je",
-        "views": 8783,
-        "reach": 6910,
-        "likes": 224,
+        "views": 8824,
+        "reach": 6938,
+        "likes": 225,
         "comments": 11,
-        "shares": 136,
-        "saved": 123,
-        "total_interactions": 509,
-        "ig_reels_avg_watch_time": 33211,
-        "ig_reels_video_view_total_time": 236565261
+        "shares": 137,
+        "saved": 124,
+        "total_interactions": 512,
+        "ig_reels_avg_watch_time": 33230,
+        "ig_reels_video_view_total_time": 237899433
       },
       {
         "id": "18120562949074138",
         "permalink": "https://www.instagram.com/reel/DfrkzXeJSK9/",
         "posted": "2026-11-13T11:58:21+0000",
         "caption": "Es gibt eine Position, in der du Allah näher bist als in jed",
-        "views": 5543,
-        "reach": 4408,
+        "views": 5550,
+        "reach": 4425,
         "likes": 332,
         "comments": 4,
         "shares": 107,
         "saved": 109,
         "total_interactions": 569,
-        "ig_reels_avg_watch_time": 26127,
-        "ig_reels_video_view_total_time": 121283726
+        "ig_reels_avg_watch_time": 26142,
+        "ig_reels_video_view_total_time": 121537340
       },
       {
         "id": "18291512128295247",
@@ -3262,8 +3305,8 @@
     }
   ],
   "credits": {
-    "at": "2026-11-24T18:53:59.614Z",
-    "rest": 54875,
+    "at": "2026-11-24T21:27:55.716Z",
+    "rest": 54124,
     "limit": 121065,
     "tier": "creator",
     "reicht_fuer": 27,
@@ -3272,17 +3315,22 @@
   "health": {
     "min_runway": 3,
     "last_post": "2026-11-23T14:09:12.562Z",
-    "last_post_hours": 31,
-    "last_engage": "2026-11-24T20:51:05.388Z",
+    "last_post_hours": 38,
+    "last_engage": "2026-11-25T04:06:35.164Z",
     "last_engage_hours": 0,
-    "scripts_total": 45,
-    "videos_ready": 1,
+    "scripts_total": 46,
+    "videos_ready": 2,
     "alerts": [
       {
-        "level": "error",
+        "level": "warn",
         "brand": "nurwissen",
-        "text": "Vorrat nur 1 Tag(e) in der Queue (Soll 3). 1 gepruefte Scripts warten auf Produktion.",
+        "text": "Vorrat nur 2 Tag(e) in der Queue (Soll 3). 1 gepruefte Scripts warten auf Produktion.",
         "action": "produce"
+      },
+      {
+        "level": "error",
+        "text": "Letzter Post vor 38 h – Posting-Workflow pruefen.",
+        "action": "actions"
       }
     ],
     "status": "error"
