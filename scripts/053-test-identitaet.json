@@ -1,0 +1,91 @@
+{
+ "id": "053",
+ "thema": "Test",
+ "test": "T3-Identitaet",
+ "title": "Wofür dieser Kanal da ist — und wofür nicht",
+ "hook": "Dieser Kanal erklärt dir nicht, was du glauben sollst.",
+ "appeal": "Wenn du eine klare Ansage willst, gibt es bessere Kanäle.",
+ "caption": "Dieser Kanal erklärt dir nicht, was du glauben sollst. Er zeigt dir, wo die Gelehrten sich uneinig sind.\n\nUnd das sind sie oft. Musik, Hypothek, Händeschütteln, Glücksspiel — bei jedem dieser Themen gibt es zwei Seiten. Beide mit Belegen. Beide mit Namen.\n\nDie meisten Kanäle nennen dir eine davon und nennen sie die Wahrheit. Hier bekommst du beide, und die Entscheidung bleibt bei dir.\n\nDas ist unbequemer. Es dauert länger. Es gibt kein einfaches Ja oder Nein, und manchmal endet ein Reel mit einer offenen Frage statt mit einer Antwort.\n\nWenn du das willst, bist du hier richtig. Wenn du eine klare Ansage willst, gibt es bessere Kanäle — ehrlich gemeint, ohne Spitze.\n\nJeden Abend um sieben: ein Streit, zwei Seiten, geprüfte Quellen.\n\n#islam #koran #hadith #fiqh #wissen #muslim #deutsch",
+ "first_comment": "Was ist das Thema, bei dem du beide Seiten hören willst? 👇",
+ "thumb_offset": 1000,
+ "vo_full": "Dieser Kanal erklärt dir nicht, was du glauben sollst. [pause] Er zeigt dir, wo die Gelehrten sich uneinig sind. [pause] Und das sind sie ziemlich oft. [pause] Musik. Hypothek. Händeschütteln. Bei jedem Thema gibt es zwei Seiten. [pause] Beide mit Belegen. Beide mit Namen. [pause] Die meisten Kanäle nennen dir eine davon. Und nennen sie die Wahrheit. [pause] Hier bekommst du beide. Und die Entscheidung bleibt bei dir. [pause] Das ist unbequemer. Es dauert länger. Es gibt kein einfaches Ja oder Nein. [pause] Wenn du das willst, bist du hier richtig. [pause] Wenn du eine klare Ansage willst, gibt es bessere Kanäle. [pause] Jeden Abend um sieben. Ein Streit, zwei Seiten, geprüfte Quellen.",
+ "sources": [
+  {
+   "claim": "Dieses Reel enthaelt keine Aussage ueber Koran oder Hadith, die zu pruefen waere; es beschreibt die Arbeitsweise des Kanals",
+   "ref": "Kanalbeschreibung",
+   "url": "https://www.instagram.com/nurwissen_official/",
+   "verified": true
+  }
+ ],
+ "blocks": [
+  {
+   "top": "Dieser Kanal erklärt dir nicht,",
+   "big": "was du *glauben* sollst.",
+   "visual": "none"
+  },
+  {
+   "top": "Er zeigt dir,",
+   "big": "wo die Gelehrten sich *uneinig* sind.",
+   "visual": "none"
+  },
+  {
+   "top": "Und das sind sie",
+   "big": "ziemlich *oft*.",
+   "visual": "none"
+  },
+  {
+   "top": "Musik. Hypothek. Händeschütteln.",
+   "big": "Bei jedem Thema gibt es zwei *Seiten*.",
+   "visual": "compare"
+  },
+  {
+   "top": "Beide mit Belegen.",
+   "big": "Beide mit *Namen*.",
+   "visual": "none"
+  },
+  {
+   "top": "Die meisten Kanäle nennen dir eine davon.",
+   "big": "Und nennen sie die *Wahrheit*.",
+   "visual": "slider"
+  },
+  {
+   "top": "Hier bekommst du beide.",
+   "big": "Und die Entscheidung bleibt bei *dir*.",
+   "visual": "none"
+  },
+  {
+   "top": "Das ist unbequemer. Es dauert länger.",
+   "big": "Es gibt kein einfaches *Ja oder Nein*.",
+   "visual": "none"
+  },
+  {
+   "top": "Wenn du das willst,",
+   "big": "bist du hier *richtig*.",
+   "visual": "none"
+  },
+  {
+   "top": "Wenn du eine klare Ansage willst,",
+   "big": "gibt es bessere *Kanäle*.",
+   "visual": "none"
+  },
+  {
+   "top": "Jeden Abend um sieben.",
+   "big": "Ein Streit, zwei Seiten, geprüfte *Quellen*.",
+   "visual": "question"
+  },
+  {
+   "top": "",
+   "big": "",
+   "visual": "sources",
+   "sources": [
+    "Keine Sachbehauptung — dieses Reel beschreibt den Kanal"
+   ]
+  }
+ ],
+ "handle": "@nurwissen_official",
+ "theme": "dark",
+ "captions": false,
+ "variant": "A-essay-wordsync",
+ "align": "left",
+ "voice": "robert"
+}
