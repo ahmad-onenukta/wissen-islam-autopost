@@ -1,6 +1,6 @@
 // Multi-Brand / Multi-Platform Auto-Poster — Instagram, YouTube Shorts, TikTok, Facebook
 // Laeuft in GitHub Actions. Kein Metricool, kein Drittanbieter.
-// Queue-Eintrag: {id, brand, file, caption, publish_at, status, targets[], first_comment, thumb_offset}
+// Queue-Eintrag: {id, brand, file, caption, publish_at, status, targets[], first_comment, thumb_offset, trial}
 import fs from "node:fs";
 import { loadBrand, secret, DEFAULT_BRAND } from "../lib/brand.mjs";
 
@@ -72,11 +72,32 @@ if (targets.includes("instagram")) {
     console.log("Limit:", JSON.stringify(lim.data?.[0] ?? lim));
   } catch (e) { console.log("Limit-Abfrage uebersprungen:", e.message.slice(0, 120)); }
 
+  // Trial Reel: Instagram zeigt es ausschliesslich Nicht-Followern. Genau das
+  // Richtige, um einen neuen Look oder Hook zu testen, ohne den Feed der
+  // eigenen Follower mit Versuchen zu belegen.
+  //   graduation_strategy MANUAL         -> wir entscheiden in der App
+  //   graduation_strategy SS_PERFORMANCE -> Instagram gibt es bei guter
+  //                                         Leistung selbst an die Follower frei
   const p = { media_type: "REELS", video_url: videoUrl, caption: next.caption, share_to_feed: "true" };
+  const trial = next.trial === true ? "SS_PERFORMANCE" : (typeof next.trial === "string" ? next.trial : null);
+  if (trial) {
+    p.trial_params = JSON.stringify({ graduation_strategy: trial });
+    console.log(`Trial Reel (${trial}) — wird nur Nicht-Followern gezeigt.`);
+  }
   const thumb = Number.isFinite(+next.thumb_offset) ? String(+next.thumb_offset) : "3000";
   let container;
   try { container = await api(`${USER}/media`, { ...p, thumb_offset: thumb }, "POST"); }
-  catch (e) { console.log("thumb_offset abgelehnt:", e.message.slice(0, 120)); container = await api(`${USER}/media`, p, "POST"); }
+  catch (e) {
+    console.log("Container mit thumb_offset abgelehnt:", e.message.slice(0, 160));
+    // Ein als Trial geplantes Reel wird NICHT ersatzweise regulaer gepostet:
+    // es ginge an alle Follower, waere nicht zurueckzunehmen und der Test
+    // waere verdorben. Lieber heute nichts posten und es melden.
+    if (trial && /trial/i.test(e.message)) {
+      throw new Error("Trial Reel abgelehnt (" + String(e.message).slice(0, 200)
+        + "). Nicht regulaer gepostet - sonst saehe es jeder Follower.");
+    }
+    container = await api(`${USER}/media`, p, "POST");
+  }
   console.log("Container:", container.id);
 
   let status = "IN_PROGRESS";
@@ -89,8 +110,8 @@ if (targets.includes("instagram")) {
   if (status !== "FINISHED") throw new Error("Timeout beim Video-Upload");
 
   const published = await api(`${USER}/media_publish`, { creation_id: container.id }, "POST");
-  console.log("INSTAGRAM LIVE. Media-ID:", published.id);
-  next.media_id = published.id; next.results.instagram = { media_id: published.id }; igOk = true; save();
+  console.log("INSTAGRAM LIVE. Media-ID:", published.id, trial ? "(Trial Reel)" : "");
+  next.media_id = published.id; next.results.instagram = { media_id: published.id, trial: trial || false }; igOk = true; save();
 
   if (next.first_comment) {
     try {
@@ -127,7 +148,7 @@ next.status = "posted";
 next.posted_at = now.toISOString();
 save();
 const log = postedLog;
-log.push({ id: next.id, brand: brand.slug, file: next.file, media_id: next.media_id, posted_at: next.posted_at, results: next.results });
+log.push({ id: next.id, brand: brand.slug, file: next.file, media_id: next.media_id, posted_at: next.posted_at, trial: next.trial || false, results: next.results });
 fs.writeFileSync("posted.json", JSON.stringify(log, null, 2) + "\n");
 
 // Video bleibt liegen, solange die Story es noch zieht. Aufgeraeumt wird alles,
