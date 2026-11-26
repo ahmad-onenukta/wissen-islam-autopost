@@ -37,12 +37,15 @@ export type EssayScript = {
   duration: number; // seconds
 };
 
-export type EssayPalette = { bg: string; ink: string; dim: string; accent: string; card: string; line: string; mute: string };
+// sub ist die helle Zweitfarbe fuer die kleine obere Zeile. dim bleibt fuer
+// alles andere, damit sich an den uebrigen Bausteinen nichts aendert.
+export type EssayPalette = { bg: string; ink: string; dim: string;
+  sub?: string; accent: string; card: string; line: string; mute: string };
 
 export const ESSAY_PALETTE: EssayPalette = {
-  bg: "#0D0D0F", ink: "#F4F2EE", dim: "#A9A6A0", accent: "#E3302C", card: "#1A1A1E", line: "#3A3A40", mute: "#7A7872",
+  bg: "#0D0D0F", ink: "#F4F2EE", dim: "#A9A6A0", sub: "#DEDBD4", accent: "#E3302C", card: "#1A1A1E", line: "#3A3A40", mute: "#7A7872",
 };
 export const LIGHT_PALETTE: EssayPalette = {
-  bg: "#F1EFEA", ink: "#141416", dim: "#5E5C58", accent: "#E3302C", card: "#FFFFFF", line: "#D9D6CF", mute: "#8A8782",
+  bg: "#F1EFEA", ink: "#141416", dim: "#5E5C58", sub: "#2A2A2C", accent: "#E3302C", card: "#FFFFFF", line: "#D9D6CF", mute: "#8A8782",
 };
 export const FPS = 30;
