@@ -75,6 +75,20 @@ tail = 3.2 if blocks[-1]["_first"] is None else 1.6
 blocks[-1]["end"] = round(max(prev_end, blocks[-1]["start"]) + tail, 3)
 for b in blocks: b.pop("_first", None)
 
+# Sperre: eine Vers-Karte ohne arabischen Text geht nicht in Produktion.
+# Zwischen dem 19. und 26.11. sind so dreizehn Vers-Karten ohne Arabisch
+# gerendert worden, weil der Generator die Felder einfach nicht gesetzt hat
+# und nichts es gemerkt hat. Lieber ein harter Abbruch als still falsch.
+ohne_arabisch = [b for b in blocks if b.get("visual") == "ayah" and not (b.get("ar") or "").strip()]
+if ohne_arabisch:
+    zeilen = "\n".join(f"    - {(b.get('big') or b.get('top') or '')[:60]}" for b in ohne_arabisch)
+    raise SystemExit(
+        f"ABBRUCH: {len(ohne_arabisch)} Vers-Karte(n) ohne arabischen Text in {script['id']}.\n"
+        f"{zeilen}\n"
+        "  Jede ayah-Karte braucht ar (arabisch, Hervorhebung mit *Sternchen*),\n"
+        "  de (Uebersetzung) und ref (z. B. 'SURE 9 - VERS 5')."
+    )
+
 out = {"id": script["id"], "handle": script["handle"], "align": script.get("align", "left"), "palette": script.get("palette"), "blocks": blocks, "vo": vo_rel, "duration": blocks[-1]["end"]}
 if audio_rel: out["audio"] = audio_rel
 json.dump({"script": out}, open(out_path, "w"), ensure_ascii=False, indent=1)
