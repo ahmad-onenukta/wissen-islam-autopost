@@ -14,6 +14,12 @@
    "ref": "At-Tauba 9:4–6",
    "url": "https://quran.com/9/1-7",
    "verified": true
+  },
+  {
+   "claim": "Arabischer Verstext (Uthmani) zu 9:5 und 9:6",
+   "ref": "api.quran.com, text_uthmani",
+   "url": "https://api.quran.com/api/v4/quran/verses/uthmani?verse_key=9:5",
+   "verified": true
   }
  ],
  "blocks": [
@@ -25,7 +31,10 @@
   {
    "top": "Tötet die Götzendiener, wo immer ihr sie findet.",
    "big": "Sure neun, Vers *fünf*.",
-   "visual": "ayah"
+   "visual": "ayah",
+   "ar": "فَٱقْتُلُوا۟ ٱلْمُشْرِكِينَ حَيْثُ وَجَدتُّمُوهُمْ",
+   "de": "Tötet die Götzendiener, wo immer ihr sie findet.",
+   "ref": "SURE 9 · VERS 5"
   },
   {
    "top": "Beide Seiten hören an derselben Stelle auf.",
@@ -35,7 +44,10 @@
   {
    "top": "Wenn sie umkehren und beten,",
    "big": "dann lasst sie *frei*.",
-   "visual": "ayah"
+   "visual": "ayah",
+   "ar": "فَإِن تَابُوا۟ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَءَاتَوُا۟ ٱلزَّكَوٰةَ *فَخَلُّوا۟ سَبِيلَهُمْ*",
+   "de": "Wenn sie aber umkehren, das Gebet verrichten und die Abgabe leisten, dann lasst sie frei.",
+   "ref": "SURE 9 · VERS 5"
   },
   {
    "top": "Und ein Satz weiter",
@@ -45,7 +57,10 @@
   {
    "top": "Wenn einer von ihnen dich um Schutz bittet, dann gewähre ihn.",
    "big": "Und bring ihn an einen Ort, wo er *sicher* ist.",
-   "visual": "ayah"
+   "visual": "ayah",
+   "ar": "وَإِنْ أَحَدٌ مِّنَ ٱلْمُشْرِكِينَ ٱسْتَجَارَكَ فَأَجِرْهُ حَتَّىٰ يَسْمَعَ كَلَـٰمَ ٱللَّهِ *ثُمَّ أَبْلِغْهُ مَأْمَنَهُۥ*",
+   "de": "Und wenn einer der Götzendiener dich um Schutz bittet, dann gewähre ihm Schutz, bis er das Wort Allahs hört; und bring ihn dann an einen Ort, wo er sicher ist.",
+   "ref": "SURE 9 · VERS 6"
   },
   {
    "top": "Lies das nebeneinander.",
