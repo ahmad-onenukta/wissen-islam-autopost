@@ -5,6 +5,7 @@ import { FONT } from "../fonts";
 import { ESSAY_PALETTE, LIGHT_PALETTE, FPS, type Block, type EssayScript } from "./types";
 import { WordSync } from "./WordSync";
 import { VisualFor } from "./Visuals";
+import { Ambient } from "./Ambient";
 
 export const essayFrames = (s: EssayScript) => Math.round(s.duration * FPS);
 
@@ -76,6 +77,9 @@ export const Essay: React.FC<{ script: EssayScript }> = ({ script }) => {
     <AbsoluteFill style={{ background: p.bg }}>
       {/* soft top light like reference */}
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 90% 55% at 50% 0%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 60%)" }} />
+      {/* Bewegter Hintergrund: Licht, Punkte, Lichtstreifen, Linien. Liegt
+          unter allem anderen; ein Foto oder heller Beat deckt ihn ohnehin zu. */}
+      <Ambient p={p} />
       {bgRuns.map((r, i) => {
         if (!r.b.image && !r.b.light) return null;
         const from = Math.round(r.start * FPS), len = Math.max(2, Math.round((r.end - r.start) * FPS));
@@ -93,6 +97,10 @@ export const Essay: React.FC<{ script: EssayScript }> = ({ script }) => {
           </Sequence>
         );
       })}
+      {/* Weicher Schleier unter dem Text: der Hintergrund darf leben, die
+          Lesbarkeit darf nicht davon abhaengen, was gerade hinter dem Text
+          vorbeizieht. */}
+      <AbsoluteFill style={{ pointerEvents: "none", background: "radial-gradient(ellipse 78% 30% at 50% 52%, rgba(13,13,15,0.80) 0%, rgba(13,13,15,0.45) 55%, rgba(13,13,15,0) 100%)" }} />
       {script.blocks.map((b, i) => {
         const from = Math.round(b.start * FPS), len = Math.max(2, Math.round((b.end - b.start) * FPS));
         return (
