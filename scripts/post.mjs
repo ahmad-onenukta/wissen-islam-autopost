@@ -79,9 +79,11 @@ if (targets.includes("instagram")) {
   //   graduation_strategy SS_PERFORMANCE -> Instagram gibt es bei guter
   //                                         Leistung selbst an die Follower frei
   const p = { media_type: "REELS", video_url: videoUrl, caption: next.caption, share_to_feed: "true" };
-  // Kein trial im Queue-Eintrag -> Vorgabe der Brand. So laeuft die
-  // Testphase ohne Eingriff in queue.json und ist dort abschaltbar.
-  const trialRoh = next.trial ?? brand.trial ?? null;
+  // enqueue schreibt trial: false in jeden Eintrag, ohne dass jemand das so
+  // entschieden haette. Darum zaehlt false hier als "nicht gesetzt" und die
+  // Brand entscheidet: ein Schalter in brand.json statt 23 Queue-Eintraege.
+  const trialRoh = (next.trial === undefined || next.trial === null || next.trial === false)
+    ? (brand.trial ?? null) : next.trial;
   const trial = trialRoh === true ? "SS_PERFORMANCE" : (typeof trialRoh === "string" ? trialRoh : null);
   if (trial) {
     p.trial_params = JSON.stringify({ graduation_strategy: trial });
@@ -151,7 +153,7 @@ next.status = "posted";
 next.posted_at = now.toISOString();
 save();
 const log = postedLog;
-log.push({ id: next.id, brand: brand.slug, file: next.file, media_id: next.media_id, posted_at: next.posted_at, trial: next.trial || false, results: next.results });
+log.push({ id: next.id, brand: brand.slug, file: next.file, media_id: next.media_id, posted_at: next.posted_at, trial: next.results?.instagram?.trial || false, results: next.results });
 fs.writeFileSync("posted.json", JSON.stringify(log, null, 2) + "\n");
 
 // Video bleibt liegen, solange die Story es noch zieht. Aufgeraeumt wird alles,
