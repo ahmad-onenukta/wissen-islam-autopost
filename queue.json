@@ -1003,7 +1003,7 @@
     "brand": "nurwissen",
     "file": "nurwissen-053-test.mp4",
     "publish_at": "2026-11-27T18:00:00.000Z",
-    "status": "ready",
+    "status": "paused",
     "targets": [
       "instagram",
       "youtube"
