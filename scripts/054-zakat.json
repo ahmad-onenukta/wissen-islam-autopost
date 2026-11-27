@@ -2,21 +2,26 @@
   "id": "054",
   "thema": "Geld",
   "title": "Die Zakat trifft das Vermögen, nicht das Einkommen",
-  "hook": "Die Abgabe im Islam trifft nicht dein Einkommen. Sie trifft dein Vermögen.",
+  "hook": "Du sparst für etwas Großes. Einmal im Jahr gehört ein Teil davon nicht mehr dir.",
   "appeal": "Zwei Komma fünf Prozent vom Ersparten — wie viel wäre das bei dir?",
-  "caption": "Die Abgabe im Islam trifft nicht dein Einkommen. Sie trifft dein Vermögen.\n\nDie Zakat rechnet nicht auf das Einkommen, sondern auf das, was nach einem Jahr noch da ist: zwei Komma fünf Prozent vom Ersparten.\n\n„Und in deren Vermögen ist ein fester Anteil.\" (70:24, andere Zählung 70:25)\n\nFest heißt: kein Betrag nach Gefühl. Unter einer Grenze — dem Wert von etwa 85 Gramm Gold — zahlt man nichts. Schulden werden vorher abgezogen, gerechnet wird mit dem, was wirklich übrig ist.\n\nUnd der Koran sagt auch, wohin es geht: „Die Almosen sind für die Armen und die Bedürftigen …\" (9:60, andere Zählung 9:61) — acht Gruppen, jede einzelne benannt.\n\nDie Prozentzahl und die Grenze sind die in den Rechtsschulen verbreiteten Werte; die Berechnung unterscheidet sich im Detail je nach Schule und je nachdem, ob mit Gold oder Silber gerechnet wird.\n\nZwei Komma fünf Prozent vom Ersparten — wie viel wäre das bei dir?\n\nQuellen: Koran 70:24 (andere Zählung 70:25) · Koran 9:60 (andere Zählung 9:61)\n\n#islam #koran #muslim #wissen #deutsch",
+  "caption": "Du sparst für etwas Großes. Einmal im Jahr gehört ein Teil davon nicht mehr dir.\n\nDie Zakat rechnet nicht auf das Einkommen, sondern auf das, was nach einem Jahr noch da ist: zwei Komma fünf Prozent vom Ersparten.\n\n„Und in deren Vermögen ist ein fester Anteil.\" (70:24, andere Zählung 70:25)\n\nFest heißt: kein Betrag nach Gefühl. Unter einer Grenze — dem Wert von etwa 85 Gramm Gold — zahlt man nichts. Schulden werden vorher abgezogen, gerechnet wird mit dem, was wirklich übrig ist.\n\nUnd der Koran sagt auch, wohin es geht: „Die Almosen sind für die Armen und die Bedürftigen …\" (9:60, andere Zählung 9:61) — acht Gruppen, jede einzelne benannt.\n\nDie Prozentzahl und die Grenze sind die in den Rechtsschulen verbreiteten Werte; die Berechnung unterscheidet sich im Detail je nach Schule und je nachdem, ob mit Gold oder Silber gerechnet wird.\n\nZwei Komma fünf Prozent vom Ersparten — wie viel wäre das bei dir?\n\nQuellen: Koran 70:24 (andere Zählung 70:25) · Koran 9:60 (andere Zählung 9:61)\n\n#islam #koran #muslim #wissen #deutsch",
   "first_comment": "Gerechnet wird nach einem Mondjahr, nicht nach dem Kalenderjahr. Welche Zahl hättest du erwartet?",
   "thumb_offset": 2000,
-  "vo_full": "Die Abgabe im Islam trifft nicht dein Einkommen. Sie trifft dein Vermögen. [pause] Nicht, was im Monat reinkommt. Sondern, was am Ende des Jahres liegen bleibt. [pause] Und in deren Vermögen ist ein fester Anteil. Sure siebzig, Vers vierundzwanzig. [pause] Fester Anteil heißt: zwei Komma fünf Prozent. Einmal im Jahr, vom Ersparten. [pause] Darunter liegt eine Grenze: der Wert von etwa fünfundachtzig Gramm Gold. Wer weniger hat, zahlt nichts. [pause] Und Schulden werden vorher abgezogen. Gerechnet wird mit dem, was wirklich übrig ist. [pause] Die Almosen sind für die Armen und die Bedürftigen. Sure neun, Vers sechzig. [pause] Der Vers zählt acht Gruppen auf. Jede einzelne ist dort benannt. [pause] Zwei Komma fünf Prozent vom Ersparten. Wie viel wäre das bei dir?",
+  "vo_full": "Du sparst für etwas Großes. Einmal im Jahr gehört ein Teil davon nicht mehr dir. [pause] Denn die Abgabe im Islam trifft nicht dein Einkommen. Sie trifft dein Vermögen. [pause] Nicht, was im Monat reinkommt. Sondern, was am Ende des Jahres liegen bleibt. [pause] Und in deren Vermögen ist ein fester Anteil. Sure siebzig, Vers vierundzwanzig. [pause] Fester Anteil heißt: zwei Komma fünf Prozent. Einmal im Jahr, vom Ersparten. [pause] Darunter liegt eine Grenze: der Wert von etwa fünfundachtzig Gramm Gold. Wer weniger hat, zahlt nichts. [pause] Und Schulden werden vorher abgezogen. Gerechnet wird mit dem, was wirklich übrig ist. [pause] Die Almosen sind für die Armen und die Bedürftigen. Sure neun, Vers sechzig. [pause] Zwei Komma fünf Prozent vom Ersparten. Wie viel wäre das bei dir?",
   "sources": [
     "Koran 70:24 (andere Zählung 70:25)",
     "Koran 9:60 (andere Zählung 9:61)"
   ],
   "blocks": [
     {
-      "top": "Die Abgabe im Islam trifft nicht dein Einkommen.",
-      "big": "Sie trifft dein *Vermögen*.",
+      "top": "Du sparst für etwas Großes.",
+      "big": "Einmal im Jahr gehört ein Teil davon nicht mehr *dir*.",
       "visual": "none"
+    },
+    {
+      "top": "Denn die Abgabe im Islam trifft nicht dein Einkommen.",
+      "big": "Sie trifft dein *Vermögen*.",
+      "visual": "compare"
     },
     {
       "top": "Nicht, was im Monat reinkommt.",
@@ -53,11 +58,6 @@
       "ar": "إِنَّمَا ٱلصَّدَقَـٰتُ لِلْفُقَرَآءِ *وَٱلْمَسَـٰكِينِ*",
       "de": "Die Almosen sind für die Armen und die Bedürftigen.",
       "ref": "SURE 9 · VERS 60"
-    },
-    {
-      "top": "Der Vers zählt acht Gruppen auf.",
-      "big": "Jede einzelne ist dort *benannt*.",
-      "visual": "compare"
     },
     {
       "top": "Zwei Komma fünf Prozent vom Ersparten.",
