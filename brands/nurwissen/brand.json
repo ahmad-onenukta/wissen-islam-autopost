@@ -83,8 +83,39 @@
       45,
       60
     ],
-    "hook_regel": "Erster Satz nennt konkret die Sache, zu der der Zuschauer schon eine Meinung hat. Keine Meta-Ansage ueber das Reel selbst.",
-    "abbruch_schwelle_sekunden": 12
+    "hook_regel": "Erster Satz beschreibt die Lage des Zuschauers, nicht das Thema. Form: 'Du <konkrete Lage>.' + ein Satz, der daran etwas kippt. Keine Meta-Ansage ueber Kanal oder Reel, kein Zitat als Einstieg, keine Aussage ueber den Islam als ersten Satz.",
+    "abbruch_schwelle_sekunden": 12,
+    "hook_belege": {
+      "traegt": [
+        "Du willst ein Haus kaufen (8904 Views, 33,2 s)",
+        "Es gibt eine Position, in der du Allah naeher bist (5572, 26,1 s)",
+        "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt (4024, 26,2 s)"
+      ],
+      "traegt_nicht": [
+        "Zitat als erster Satz (343, 318, 245 Views)",
+        "Serien-Label im Hook: DEIN GELD - TEIL 1 VON 8 (236, 5,0 s)",
+        "Verteidigung/Vorwurf-Rahmen: Plakaten gegen den Islam (194, 7,0 s)"
+      ],
+      "stand": "27.11.2026, 25 veroeffentlichte Reels"
+    },
+    "verbotene_hook_formen": [
+      "Meta-Ansage ueber den Kanal",
+      "Serien- oder Teil-Nummer im ersten Satz",
+      "Zitat oder Vers als erster Satz",
+      "Apologetik-Rahmen (Vorwurf, Plakat, wird benutzt gegen)"
+    ],
+    "themen_ranking": {
+      "stark": [
+        "Geld und Alltag in Deutschland (Hauskauf, Sparen, Schulden, Erbe)",
+        "konkrete Praxis mit Belohnung (Sujud, Sadaqa ohne Geld, Nachtgebet)",
+        "Satz oder Handlung fuer eine bestimmte Lebenslage (Todesfall, Streit)"
+      ],
+      "schwach": [
+        "Apologetik und Widerlegung von Vorwuerfen",
+        "Mehrteiler, die sich als Mehrteiler ankuendigen",
+        "reine Vers-Erklaerung ohne Lage des Zuschauers"
+      ]
+    }
   },
   "env_prefix": "NURWISSEN",
   "active": true,
