@@ -151,14 +151,10 @@ try {
       const w = await api(`${m.id}/insights`, { metric: "ig_reels_avg_watch_time,ig_reels_video_view_total_time" });
       for (const d of w.data || []) ins[d.name] = d.values?.[0]?.value ?? d.total_value?.value ?? null;
     } catch (e) { ins.watch_error = String(e.message).slice(0, 140); }
-    // Follower je Reel. Ohne diese Zahl laesst sich kein Test auswerten, der
-    // auf Follower zielt: Views und Haltezeit sagen nichts darueber, ob jemand
-    // danach auf "Folgen" tippt. Wieder ein eigener Aufruf, damit ein nicht
-    // unterstuetzter Metrikname die uebrigen Insights nicht mitreisst.
-    try {
-      const f = await api(`${m.id}/insights`, { metric: "follows,profile_visits" });
-      for (const d of f.data || []) ins[d.name] = d.values?.[0]?.value ?? d.total_value?.value ?? null;
-    } catch (e) { ins.follow_error = String(e.message).slice(0, 140); }
+    // Follower je Reel liefert die API nicht: "follows" und "profile_visits"
+    // sind fuer Reels nicht unterstuetzt (geprueft 27.11., Fehler der Media
+    // Insights API). Ersatz ist der taegliche Follower-Zuwachs aus
+    // stats.history - tragfaehig, solange genau ein Reel pro Tag laeuft.
     reels.push({ id: m.id, permalink: m.permalink, posted: m.timestamp, caption: (m.caption || "").slice(0, 60), ...ins });
   }
   stats.account = { ...acc, at: now };
