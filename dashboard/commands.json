@@ -5,5 +5,20 @@
     "id": "029",
     "at": "2026-11-12T18:05:00.000Z",
     "grund": "vom Nutzer verworfen - darf nicht veroeffentlicht werden"
+  },
+  {
+    "op": "pause",
+    "brand": "nurwissen",
+    "id": "053",
+    "at": "2026-11-27T17:50:00.000Z",
+    "grund": "Meta-Hook ueber den Kanal - als Trial Reel an Nicht-Follower verschenkt. Bleibt liegen, kann spaeter regulaer laufen."
+  },
+  {
+    "op": "move",
+    "brand": "nurwissen",
+    "id": "054",
+    "at": "2026-11-27T17:50:00.000Z",
+    "publish_at": "2026-11-28T18:00:00.000Z",
+    "grund": "erstes echtes Trial Reel"
   }
 ]
