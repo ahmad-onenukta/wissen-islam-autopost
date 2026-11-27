@@ -79,7 +79,10 @@ if (targets.includes("instagram")) {
   //   graduation_strategy SS_PERFORMANCE -> Instagram gibt es bei guter
   //                                         Leistung selbst an die Follower frei
   const p = { media_type: "REELS", video_url: videoUrl, caption: next.caption, share_to_feed: "true" };
-  const trial = next.trial === true ? "SS_PERFORMANCE" : (typeof next.trial === "string" ? next.trial : null);
+  // Kein trial im Queue-Eintrag -> Vorgabe der Brand. So laeuft die
+  // Testphase ohne Eingriff in queue.json und ist dort abschaltbar.
+  const trialRoh = next.trial ?? brand.trial ?? null;
+  const trial = trialRoh === true ? "SS_PERFORMANCE" : (typeof trialRoh === "string" ? trialRoh : null);
   if (trial) {
     p.trial_params = JSON.stringify({ graduation_strategy: trial });
     console.log(`Trial Reel (${trial}) — wird nur Nicht-Followern gezeigt.`);
