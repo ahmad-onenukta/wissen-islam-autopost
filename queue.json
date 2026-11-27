@@ -976,14 +976,27 @@
     "brand": "nurwissen",
     "file": "nurwissen-051-streitfrage.mp4",
     "publish_at": "2026-11-26T18:00:00.000Z",
-    "status": "ready",
+    "status": "posted",
     "targets": [
       "instagram",
       "youtube"
     ],
     "caption": "Jemand grüßt dich. Ab diesem Moment schuldest du etwas zurück.\n\n„Und wenn ihr mit einem Gruß begrüßt werdet, so grüßt mit einem besseren zurück — oder mit dem gleichen.\" (4:86, andere Zählung 4:87)\n\nAchte auf die zwei Möglichkeiten: besser, oder gleich. Eine dritte gibt es nicht. Weniger zurückgeben ist nicht vorgesehen — und Ignorieren steht da erst gar nicht. Der Vers kennt diese Option nicht.\n\nDas ist keine Höflichkeitsregel. Das ist ein Gebot mit Untergrenze.\n\nJetzt die Frage, über die gestritten wird. Der Vers sagt „Tahiyya\" — das heißt Gruß, allgemein. Die eine Seite liest darin den Salam: dann gilt der Vers unter Muslimen. Die andere liest jeden Gruß: dann gilt er auch für das Hallo im Treppenhaus, für den Kollegen, der dir morgens zunickt — und für die Nachricht, die seit zwei Tagen ungelesen bei dir liegt.\n\nBeide lesen dasselbe Wort. Sie ziehen die Grenze an einer anderen Stelle.\n\nWen hast du heute nicht zurückgegrüßt? Und war das eine Entscheidung?\n\n#islam #koran #adab #gruss #alltag #muslim #wissen #deutsch",
     "first_comment": "Wen hast du heute nicht zurückgegrüßt — und war das eine Entscheidung? 👇",
-    "thumb_offset": 1500
+    "thumb_offset": 1500,
+    "results": {
+      "instagram": {
+        "media_id": "18117667283182445",
+        "trial": false
+      },
+      "youtube": {
+        "video_id": "RNIhMowhozc"
+      }
+    },
+    "media_id": "18117667283182445",
+    "first_comment_id": "18037339253912537",
+    "youtube_id": "RNIhMowhozc",
+    "posted_at": "2026-11-27T13:33:41.651Z"
   },
   {
     "id": "053",
