@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T18:53:42.621Z",
+  "generated_at": "2026-11-28T01:55:04.909Z",
   "brands": [
     {
       "slug": "nurwissen",
@@ -20,21 +20,21 @@
         "facebook": ""
       },
       "voice": "robert",
-      "followers": 1393,
+      "followers": 1396,
       "counts": {
         "script": 1,
         "checked": 0,
         "voice": 0,
         "video": 0,
-        "queued": 2,
-        "paused": 0,
+        "queued": 1,
+        "paused": 1,
         "live": 45,
         "archive": 0
       },
-      "runway_days": 2,
-      "next": "2026-11-27T18:00:00.000Z",
-      "views_total": 49829,
-      "avg_views": 1993,
+      "runway_days": 1,
+      "next": "2026-11-28T18:00:00.000Z",
+      "views_total": 50039,
+      "avg_views": 2002,
       "engagement_rate": 7.8
     }
   ],
@@ -83,12 +83,12 @@
       "media_id": "18117667283182445",
       "permalink": "https://www.instagram.com/reel/DgPzIR7hP3s/",
       "metrics": {
-        "views": 202,
-        "reach": 177,
-        "likes": 4,
+        "views": 335,
+        "reach": 296,
+        "likes": 8,
         "comments": 1,
-        "shares": 0,
-        "saved": 0
+        "shares": 1,
+        "saved": 2
       },
       "order_rank": 0
     },
@@ -141,8 +141,8 @@
       "media_id": "18115425956156516",
       "permalink": "https://www.instagram.com/reel/DgNOt0WJBBi/",
       "metrics": {
-        "views": 201,
-        "reach": 165,
+        "views": 206,
+        "reach": 168,
         "likes": 0,
         "comments": 1,
         "shares": 1,
@@ -511,7 +511,7 @@
       "media_id": "18120562949074138",
       "permalink": "https://www.instagram.com/reel/DfrkzXeJSK9/",
       "metrics": {
-        "views": 5578,
+        "views": 5580,
         "reach": 4443,
         "likes": 334,
         "comments": 4,
@@ -569,7 +569,7 @@
       "media_id": "18158649061503405",
       "permalink": "https://www.instagram.com/reel/Df4iQhsiN9p/",
       "metrics": {
-        "views": 2069,
+        "views": 2073,
         "reach": 1677,
         "likes": 96,
         "comments": 1,
@@ -685,8 +685,8 @@
       "media_id": "18201330337387100",
       "permalink": "https://www.instagram.com/reel/DfuzPLWGduA/",
       "metrics": {
-        "views": 1879,
-        "reach": 1637,
+        "views": 1880,
+        "reach": 1639,
         "likes": 75,
         "comments": 3,
         "shares": 17,
@@ -890,7 +890,7 @@
       "media_id": "18005572367809798",
       "permalink": "https://www.instagram.com/reel/DfzXAjxFfT2/",
       "metrics": {
-        "views": 2330,
+        "views": 2333,
         "reach": 1988,
         "likes": 111,
         "comments": 1,
@@ -942,7 +942,7 @@
       "media_id": "18106103903528793",
       "permalink": "https://www.instagram.com/reel/Df5O2AmDwdF/",
       "metrics": {
-        "views": 3627,
+        "views": 3630,
         "reach": 3145,
         "likes": 160,
         "comments": 2,
@@ -1057,8 +1057,8 @@
       "media_id": "18048249335823792",
       "permalink": "https://www.instagram.com/reel/DfxYBX5pQlR/",
       "metrics": {
-        "views": 2240,
-        "reach": 1982,
+        "views": 2242,
+        "reach": 1988,
         "likes": 69,
         "comments": 1,
         "shares": 33,
@@ -1109,7 +1109,7 @@
       "media_id": "17915237094482339",
       "permalink": "https://www.instagram.com/reel/DfwtYSYgbeY/",
       "metrics": {
-        "views": 1782,
+        "views": 1784,
         "reach": 1558,
         "likes": 69,
         "comments": 1,
@@ -1346,7 +1346,7 @@
       "media_id": "18030154736696806",
       "permalink": "https://www.instagram.com/reel/Df1-RDGk9BN/",
       "metrics": {
-        "views": 4029,
+        "views": 4033,
         "reach": 3299,
         "likes": 182,
         "comments": 1,
@@ -1404,8 +1404,8 @@
       "media_id": "17969988672230050",
       "permalink": "https://www.instagram.com/reel/Df2stM2F4jw/",
       "metrics": {
-        "views": 319,
-        "reach": 240,
+        "views": 321,
+        "reach": 241,
         "likes": 8,
         "comments": 1,
         "shares": 4,
@@ -1665,8 +1665,8 @@
       "media_id": "18141452479629059",
       "permalink": "https://www.instagram.com/reel/DfsQ6hxmYvx/",
       "metrics": {
-        "views": 8910,
-        "reach": 7017,
+        "views": 8920,
+        "reach": 7026,
         "likes": 228,
         "comments": 11,
         "shares": 137,
@@ -1735,7 +1735,7 @@
       "media_id": "18116442044136802",
       "permalink": "https://www.instagram.com/reel/DfuE3z7k7NC/",
       "metrics": {
-        "views": 2383,
+        "views": 2384,
         "reach": 2009,
         "likes": 84,
         "comments": 4,
@@ -1799,8 +1799,8 @@
       "media_id": "17908314675355394",
       "permalink": "https://www.instagram.com/reel/Df70aU_jcVH/",
       "metrics": {
-        "views": 2382,
-        "reach": 1862,
+        "views": 2387,
+        "reach": 1865,
         "likes": 58,
         "comments": 1,
         "shares": 15,
@@ -1857,8 +1857,8 @@
       "media_id": "18140876185632624",
       "permalink": "https://www.instagram.com/reel/Df9qyn5jTrb/",
       "metrics": {
-        "views": 2531,
-        "reach": 2006,
+        "views": 2533,
+        "reach": 2009,
         "likes": 75,
         "comments": 4,
         "shares": 14,
@@ -1909,8 +1909,8 @@
       "media_id": "18112279132908263",
       "permalink": "https://www.instagram.com/reel/DgA0v_WlS5N/",
       "metrics": {
-        "views": 226,
-        "reach": 176,
+        "views": 228,
+        "reach": 178,
         "likes": 4,
         "comments": 1,
         "shares": 0,
@@ -1961,8 +1961,8 @@
       "media_id": "18211653349371162",
       "permalink": "https://www.instagram.com/reel/DgCysyPD92C/",
       "metrics": {
-        "views": 247,
-        "reach": 185,
+        "views": 253,
+        "reach": 186,
         "likes": 1,
         "comments": 1,
         "shares": 0,
@@ -2013,8 +2013,8 @@
       "media_id": "18035413973681352",
       "permalink": "https://www.instagram.com/reel/DgDquEegsy5/",
       "metrics": {
-        "views": 1133,
-        "reach": 995,
+        "views": 1137,
+        "reach": 998,
         "likes": 38,
         "comments": 1,
         "shares": 2,
@@ -2065,8 +2065,8 @@
       "media_id": "18010194677828804",
       "permalink": "https://www.instagram.com/reel/Df-WfVPDzVJ/",
       "metrics": {
-        "views": 730,
-        "reach": 628,
+        "views": 733,
+        "reach": 630,
         "likes": 22,
         "comments": 1,
         "shares": 0,
@@ -2117,8 +2117,8 @@
       "media_id": "17986423538898704",
       "permalink": "https://www.instagram.com/reel/DgANO-IjrOD/",
       "metrics": {
-        "views": 237,
-        "reach": 188,
+        "views": 239,
+        "reach": 190,
         "likes": 5,
         "comments": 1,
         "shares": 0,
@@ -2169,8 +2169,8 @@
       "media_id": "18083275460377601",
       "permalink": "https://www.instagram.com/reel/DgFj7hgldDR/",
       "metrics": {
-        "views": 229,
-        "reach": 180,
+        "views": 234,
+        "reach": 184,
         "likes": 2,
         "comments": 1,
         "shares": 0,
@@ -2221,8 +2221,8 @@
       "media_id": "18009979823789606",
       "permalink": "https://www.instagram.com/reel/DgKsTyrsPjA/",
       "metrics": {
-        "views": 1695,
-        "reach": 1434,
+        "views": 1704,
+        "reach": 1436,
         "likes": 54,
         "comments": 1,
         "shares": 17,
@@ -2237,7 +2237,7 @@
       "thema": "Test",
       "hook": "Dieser Kanal erklärt dir nicht, was du glauben sollst.",
       "voice": "robert",
-      "stage": "queued",
+      "stage": "paused",
       "fact_check": "ok",
       "sources": {
         "total": 1,
@@ -2316,11 +2316,11 @@
   "stats": {
     "account": {
       "username": "nurwissen_official",
-      "followers_count": 1393,
+      "followers_count": 1396,
       "follows_count": 0,
       "media_count": 45,
       "id": "28768435396155579",
-      "at": "2026-11-27T18:53:30.342Z"
+      "at": "2026-11-28T01:54:50.628Z"
     },
     "history": [
       {
@@ -3017,6 +3017,11 @@
         "at": "2026-11-27T18:53:30.342Z",
         "followers": 1393,
         "views_total": 49829
+      },
+      {
+        "at": "2026-11-28T01:54:50.628Z",
+        "followers": 1396,
+        "views_total": 50039
       }
     ],
     "reels": [
@@ -3025,225 +3030,225 @@
         "permalink": "https://www.instagram.com/reel/DgPzIR7hP3s/",
         "posted": "2026-11-27T13:35:26+0000",
         "caption": "Jemand grüßt dich. Ab diesem Moment schuldest du etwas zurüc",
-        "views": 202,
-        "reach": 177,
-        "likes": 4,
+        "views": 335,
+        "reach": 296,
+        "likes": 8,
         "comments": 1,
-        "shares": 0,
-        "saved": 0,
-        "total_interactions": 5,
-        "ig_reels_avg_watch_time": 5904,
-        "ig_reels_video_view_total_time": 1062733
+        "shares": 1,
+        "saved": 2,
+        "total_interactions": 12,
+        "ig_reels_avg_watch_time": 7743,
+        "ig_reels_video_view_total_time": 2315432
       },
       {
         "id": "18115425956156516",
         "permalink": "https://www.instagram.com/reel/DgNOt0WJBBi/",
         "posted": "2026-11-26T13:38:51+0000",
         "caption": "Dieser Vers steht auf Plakaten gegen den Islam. Und in den S",
-        "views": 201,
-        "reach": 165,
+        "views": 206,
+        "reach": 168,
         "likes": 0,
         "comments": 1,
         "shares": 1,
         "saved": 1,
         "total_interactions": 3,
-        "ig_reels_avg_watch_time": 6813,
-        "ig_reels_video_view_total_time": 1144619
+        "ig_reels_avg_watch_time": 7356,
+        "ig_reels_video_view_total_time": 1257989
       },
       {
         "id": "18009979823789606",
         "permalink": "https://www.instagram.com/reel/DgKsTyrsPjA/",
         "posted": "2026-11-25T13:59:37+0000",
         "caption": "Es gibt eine Sünde, die selbst der Märtyrer nicht loswird.\n\n",
-        "views": 1695,
-        "reach": 1434,
+        "views": 1704,
+        "reach": 1436,
         "likes": 54,
         "comments": 1,
         "shares": 17,
         "saved": 25,
         "total_interactions": 103,
-        "ig_reels_avg_watch_time": 15344,
-        "ig_reels_video_view_total_time": 21988579
+        "ig_reels_avg_watch_time": 15330,
+        "ig_reels_video_view_total_time": 22045624
       },
       {
         "id": "18083275460377601",
         "permalink": "https://www.instagram.com/reel/DgFj7hgldDR/",
         "posted": "2026-11-23T14:10:17+0000",
         "caption": "DEIN GELD — TEIL 2 VON 8\n\nEs gibt eine Zahl, an der die meis",
-        "views": 229,
-        "reach": 180,
+        "views": 234,
+        "reach": 184,
         "likes": 2,
         "comments": 1,
         "shares": 0,
         "saved": 2,
         "total_interactions": 5,
-        "ig_reels_avg_watch_time": 7436,
-        "ig_reels_video_view_total_time": 1375831
+        "ig_reels_avg_watch_time": 7463,
+        "ig_reels_video_view_total_time": 1410509
       },
       {
         "id": "18035413973681352",
         "permalink": "https://www.instagram.com/reel/DgDquEegsy5/",
         "posted": "2026-11-22T20:30:58+0000",
         "caption": "Der letzte Vorwurf lautet Ablenkung von den Pflichten. Beleg",
-        "views": 1133,
-        "reach": 995,
+        "views": 1137,
+        "reach": 998,
         "likes": 38,
         "comments": 1,
         "shares": 2,
         "saved": 17,
         "total_interactions": 60,
-        "ig_reels_avg_watch_time": 10483,
-        "ig_reels_video_view_total_time": 10598624
+        "ig_reels_avg_watch_time": 10462,
+        "ig_reels_video_view_total_time": 10608992
       },
       {
         "id": "18211653349371162",
         "permalink": "https://www.instagram.com/reel/DgCysyPD92C/",
         "posted": "2026-11-22T12:21:37+0000",
         "caption": "Dieser Vers wird gegen Serien, Spiele und Musik zitiert: „Ge",
-        "views": 247,
-        "reach": 185,
+        "views": 253,
+        "reach": 186,
         "likes": 1,
         "comments": 1,
         "shares": 0,
         "saved": 1,
         "total_interactions": 3,
-        "ig_reels_avg_watch_time": 11298,
-        "ig_reels_video_view_total_time": 2101458
+        "ig_reels_avg_watch_time": 11256,
+        "ig_reels_video_view_total_time": 2116152
       },
       {
         "id": "18112279132908263",
         "permalink": "https://www.instagram.com/reel/DgA0v_WlS5N/",
         "posted": "2026-11-21T18:01:04+0000",
         "caption": "Es gibt einen Hadith, der nicht das Glücksspiel bestraft, so",
-        "views": 226,
-        "reach": 176,
+        "views": 228,
+        "reach": 178,
         "likes": 4,
         "comments": 1,
         "shares": 0,
         "saved": 0,
         "total_interactions": 5,
-        "ig_reels_avg_watch_time": 8558,
-        "ig_reels_video_view_total_time": 1574786
+        "ig_reels_avg_watch_time": 8676,
+        "ig_reels_video_view_total_time": 1613898
       },
       {
         "id": "17986423538898704",
         "permalink": "https://www.instagram.com/reel/DgANO-IjrOD/",
         "posted": "2026-11-21T12:15:56+0000",
         "caption": "DEIN GELD — TEIL 1 VON 8\n\nDu hast ein Sparbuch. Dann richtet",
-        "views": 237,
-        "reach": 188,
+        "views": 239,
+        "reach": 190,
         "likes": 5,
         "comments": 1,
         "shares": 0,
         "saved": 2,
         "total_interactions": 8,
-        "ig_reels_avg_watch_time": 4939,
-        "ig_reels_video_view_total_time": 953243
+        "ig_reels_avg_watch_time": 4944,
+        "ig_reels_video_view_total_time": 964122
       },
       {
         "id": "18010194677828804",
         "permalink": "https://www.instagram.com/reel/Df-WfVPDzVJ/",
         "posted": "2026-11-20T18:58:10+0000",
         "caption": "„Du lässt nichts für Allah, außer dass Allah es dir mit etwa",
-        "views": 730,
-        "reach": 628,
+        "views": 733,
+        "reach": 630,
         "likes": 22,
         "comments": 1,
         "shares": 0,
         "saved": 5,
         "total_interactions": 28,
-        "ig_reels_avg_watch_time": 15837,
-        "ig_reels_video_view_total_time": 9946138
+        "ig_reels_avg_watch_time": 15815,
+        "ig_reels_video_view_total_time": 9963791
       },
       {
         "id": "18140876185632624",
         "permalink": "https://www.instagram.com/reel/Df9qyn5jTrb/",
         "posted": "2026-11-20T12:36:09+0000",
         "caption": "Der erste Vorwurf gegen GTA VI ist der stärkste — und er wir",
-        "views": 2531,
-        "reach": 2006,
+        "views": 2533,
+        "reach": 2009,
         "likes": 75,
         "comments": 4,
         "shares": 14,
         "saved": 30,
         "total_interactions": 128,
-        "ig_reels_avg_watch_time": 22793,
-        "ig_reels_video_view_total_time": 47206334
+        "ig_reels_avg_watch_time": 22815,
+        "ig_reels_video_view_total_time": 47296084
       },
       {
         "id": "17908314675355394",
         "permalink": "https://www.instagram.com/reel/Df70aU_jcVH/",
         "posted": "2026-11-19T19:22:07+0000",
         "caption": "Ob Musik erlaubt ist, entscheidet sich an einem einzigen Had",
-        "views": 2382,
-        "reach": 1862,
+        "views": 2387,
+        "reach": 1865,
         "likes": 58,
         "comments": 1,
         "shares": 15,
         "saved": 42,
         "total_interactions": 116,
-        "ig_reels_avg_watch_time": 41304,
-        "ig_reels_video_view_total_time": 80214053
+        "ig_reels_avg_watch_time": 41225,
+        "ig_reels_video_view_total_time": 80225228
       },
       {
         "id": "18106103903528793",
         "permalink": "https://www.instagram.com/reel/Df5O2AmDwdF/",
         "posted": "2026-11-18T19:15:10+0000",
         "caption": "Der Prophet (saw) hat eine Regel gegeben, die aus genau zwei",
-        "views": 3627,
+        "views": 3630,
         "reach": 3145,
         "likes": 160,
         "comments": 2,
         "shares": 58,
         "saved": 46,
         "total_interactions": 277,
-        "ig_reels_avg_watch_time": 16232,
-        "ig_reels_video_view_total_time": 51100910
+        "ig_reels_avg_watch_time": 16218,
+        "ig_reels_video_view_total_time": 51103862
       },
       {
         "id": "18158649061503405",
         "permalink": "https://www.instagram.com/reel/Df4iQhsiN9p/",
         "posted": "2026-11-18T12:45:33+0000",
         "caption": "Jede Nacht geht ein Fenster auf — immer zur gleichen Zeit. U",
-        "views": 2069,
+        "views": 2073,
         "reach": 1677,
         "likes": 96,
         "comments": 1,
         "shares": 45,
         "saved": 36,
         "total_interactions": 186,
-        "ig_reels_avg_watch_time": 19770,
-        "ig_reels_video_view_total_time": 33926243
+        "ig_reels_avg_watch_time": 19764,
+        "ig_reels_video_view_total_time": 33936367
       },
       {
         "id": "17969988672230050",
         "permalink": "https://www.instagram.com/reel/Df2stM2F4jw/",
         "posted": "2026-11-17T19:38:30+0000",
         "caption": "„Der Mensch ist auf der Religion seines engen Freundes — so ",
-        "views": 319,
-        "reach": 240,
+        "views": 321,
+        "reach": 241,
         "likes": 8,
         "comments": 1,
         "shares": 4,
         "saved": 1,
         "total_interactions": 14,
-        "ig_reels_avg_watch_time": 10383,
-        "ig_reels_video_view_total_time": 2564706
+        "ig_reels_avg_watch_time": 10348,
+        "ig_reels_video_view_total_time": 2566446
       },
       {
         "id": "18030154736696806",
         "permalink": "https://www.instagram.com/reel/Df1-RDGk9BN/",
         "posted": "2026-11-17T12:52:35+0000",
         "caption": "Es gibt einen Satz, den Muslime sagen, wenn jemand stirbt. A",
-        "views": 4029,
+        "views": 4033,
         "reach": 3299,
         "likes": 182,
         "comments": 1,
         "shares": 72,
         "saved": 54,
         "total_interactions": 322,
-        "ig_reels_avg_watch_time": 26228,
-        "ig_reels_video_view_total_time": 87445914
+        "ig_reels_avg_watch_time": 26199,
+        "ig_reels_video_view_total_time": 87452380
       },
       {
         "id": "18428033140152991",
@@ -3265,105 +3270,105 @@
         "permalink": "https://www.instagram.com/reel/DfzXAjxFfT2/",
         "posted": "2026-11-16T12:31:13+0000",
         "caption": "Du kannst Sadaqa geben, ohne einen Cent zu haben.\n\n„Dein Läc",
-        "views": 2330,
+        "views": 2333,
         "reach": 1988,
         "likes": 111,
         "comments": 1,
         "shares": 36,
         "saved": 32,
         "total_interactions": 189,
-        "ig_reels_avg_watch_time": 15390,
-        "ig_reels_video_view_total_time": 31258382
+        "ig_reels_avg_watch_time": 15384,
+        "ig_reels_video_view_total_time": 31261790
       },
       {
         "id": "18048249335823792",
         "permalink": "https://www.instagram.com/reel/DfxYBX5pQlR/",
         "posted": "2026-11-15T18:01:29+0000",
         "caption": "Ein Mann fragt den Propheten (saw): Wer verdient es am meist",
-        "views": 2240,
-        "reach": 1982,
+        "views": 2242,
+        "reach": 1988,
         "likes": 69,
         "comments": 1,
         "shares": 33,
         "saved": 17,
         "total_interactions": 123,
-        "ig_reels_avg_watch_time": 17278,
-        "ig_reels_video_view_total_time": 34211560
+        "ig_reels_avg_watch_time": 17263,
+        "ig_reels_video_view_total_time": 34215508
       },
       {
         "id": "17915237094482339",
         "permalink": "https://www.instagram.com/reel/DfwtYSYgbeY/",
         "posted": "2026-11-15T11:49:09+0000",
         "caption": "An einem Tag ohne Schatten wird Allah sieben Arten von Mensc",
-        "views": 1782,
+        "views": 1784,
         "reach": 1558,
         "likes": 69,
         "comments": 1,
         "shares": 9,
         "saved": 27,
         "total_interactions": 111,
-        "ig_reels_avg_watch_time": 17908,
-        "ig_reels_video_view_total_time": 27865167
+        "ig_reels_avg_watch_time": 17897,
+        "ig_reels_video_view_total_time": 27866810
       },
       {
         "id": "18201330337387100",
         "permalink": "https://www.instagram.com/reel/DfuzPLWGduA/",
         "posted": "2026-11-14T18:01:30+0000",
         "caption": "Vor ihm das Meer, hinter ihm eine Armee. Sein Volk sagt: „Wi",
-        "views": 1879,
-        "reach": 1637,
+        "views": 1880,
+        "reach": 1639,
         "likes": 75,
         "comments": 3,
         "shares": 17,
         "saved": 13,
         "total_interactions": 111,
-        "ig_reels_avg_watch_time": 15511,
-        "ig_reels_video_view_total_time": 25422676
+        "ig_reels_avg_watch_time": 15503,
+        "ig_reels_video_view_total_time": 25425870
       },
       {
         "id": "18116442044136802",
         "permalink": "https://www.instagram.com/reel/DfuE3z7k7NC/",
         "posted": "2026-11-14T11:16:21+0000",
         "caption": "„Die Sonne geht in einer schlammigen Quelle unter.\" (18:87, ",
-        "views": 2383,
+        "views": 2384,
         "reach": 2009,
         "likes": 84,
         "comments": 4,
         "shares": 8,
         "saved": 20,
         "total_interactions": 118,
-        "ig_reels_avg_watch_time": 16876,
-        "ig_reels_video_view_total_time": 35491383
+        "ig_reels_avg_watch_time": 16878,
+        "ig_reels_video_view_total_time": 35513220
       },
       {
         "id": "18141452479629059",
         "permalink": "https://www.instagram.com/reel/DfsQ6hxmYvx/",
         "posted": "2026-11-13T18:23:47+0000",
         "caption": "Du willst ein Haus kaufen. In Deutschland führt praktisch je",
-        "views": 8910,
-        "reach": 7017,
+        "views": 8920,
+        "reach": 7026,
         "likes": 228,
         "comments": 11,
         "shares": 137,
         "saved": 126,
         "total_interactions": 517,
-        "ig_reels_avg_watch_time": 33162,
-        "ig_reels_video_view_total_time": 239864891
+        "ig_reels_avg_watch_time": 33157,
+        "ig_reels_video_view_total_time": 240126508
       },
       {
         "id": "18120562949074138",
         "permalink": "https://www.instagram.com/reel/DfrkzXeJSK9/",
         "posted": "2026-11-13T11:58:21+0000",
         "caption": "Es gibt eine Position, in der du Allah näher bist als in jed",
-        "views": 5578,
+        "views": 5580,
         "reach": 4443,
         "likes": 334,
         "comments": 4,
         "shares": 117,
         "saved": 110,
         "total_interactions": 582,
-        "ig_reels_avg_watch_time": 26117,
-        "ig_reels_video_view_total_time": 121967534
+        "ig_reels_avg_watch_time": 26104,
+        "ig_reels_video_view_total_time": 121986069
       },
       {
         "id": "18291512128295247",
@@ -3460,20 +3465,20 @@
   "health": {
     "min_runway": 3,
     "last_post": "2026-11-27T13:33:41.651Z",
-    "last_post_hours": 5,
-    "last_engage": "2026-11-27T18:53:30.342Z",
+    "last_post_hours": 12,
+    "last_engage": "2026-11-28T01:54:50.628Z",
     "last_engage_hours": 0,
     "scripts_total": 48,
-    "videos_ready": 2,
+    "videos_ready": 1,
     "alerts": [
       {
-        "level": "warn",
+        "level": "error",
         "brand": "nurwissen",
-        "text": "Vorrat nur 2 Tag(e) in der Queue (Soll 3). 0 gepruefte Scripts warten auf Produktion.",
+        "text": "Vorrat nur 1 Tag(e) in der Queue (Soll 3). 0 gepruefte Scripts warten auf Produktion.",
         "action": "produce"
       }
     ],
-    "status": "warn"
+    "status": "error"
   },
   "jobs": [
     {
